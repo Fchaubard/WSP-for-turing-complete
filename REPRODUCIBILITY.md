@@ -76,6 +76,6 @@ The manuscript build uses pdflatex and BibTeX. The paper uses the official NeurI
 
 ## Publication status
 
-This is a local preprint draft. The three-day publication target is a public preprint release. The 2026 NeurIPS main-track deadline was May 6. Before release, the author should review the exact-edit proof and numerical assumptions. A frozen copy on another BLAS/runtime would be a useful independent replication. A submission or public upload has not been made. [NeurIPS call](https://neurips.cc/Conferences/2026/CallForPapers)
+This research preprint and its supporting code, results, and analysis are publicly available in [WSP-for-turing-complete](https://github.com/Fchaubard/WSP-for-turing-complete). The repository does not represent a NeurIPS submission or acceptance. Independent replication on another numerical runtime remains useful.
 
 The Python experiments and figures were developed with coding-agent assistance. Literal experiments preserve the original 21 CLI proposals, a 60-call matched comparison (180 arrays), branching-machine proposals, and directly synthesized circuits. Algorithmic compilers and subsequent stress-test-driven improvements are engineering work described in their own sections of the paper.
