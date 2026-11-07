@@ -1,3 +1,7 @@
+![Square, sine, and hyperbolic-tangent predictions inside and outside the training interval](output/function-prediction-curves.png)
+
+**Improved central fit can coexist with a worse extrapolation rule.** Each panel uses a 16-unit scalar network with 50 coefficients, the first recorded random start (164), and examples-only weight-space programming (WSP). Shading marks the training and development interval; dots are the twelve training pairs. Curves are evaluations of the frozen networks, not averages over runs. These illustrative regressions show how similar central predictions conceal different outer continuations; they do not estimate how often this happens. Tables 3 and 4 in the [paper](paper.pdf) summarize errors across all three starts.
+
 # WSP-for-turing-complete
 
 **Weight-Space Programming and Gradient Optimization on Nonconvex Algorithmic Tasks**
