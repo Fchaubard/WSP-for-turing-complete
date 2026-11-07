@@ -1,0 +1,1120 @@
+{
+  "python": "3.13.12",
+  "numpy": "2.5.4",
+  "scipy": "1.18.1",
+  "seeds": [
+    11,
+    22,
+    33
+  ],
+  "split_seed": 20261106,
+  "initialization": "run.initial; all D,W,E entries Xavier uniform",
+  "rows": [
+    {
+      "task": "add",
+      "method": "bp_11",
+      "slots": 35,
+      "fit": {
+        "selected": "adam_200",
+        "dev_half_mse": 0.5932458040395583,
+        "lbfgs_steps": 41,
+        "lbfgs_status": 0,
+        "gradient_check_absolute": 2.9089669215109915e-10,
+        "history": [
+          [
+            "adam_200",
+            0.5932458040395583
+          ],
+          [
+            "adam_400",
+            0.5934811663749694
+          ],
+          [
+            "adam_600",
+            0.5936432997011473
+          ],
+          [
+            "adam_800",
+            0.5937168804784595
+          ],
+          [
+            "adam_1000",
+            0.5937450877391793
+          ],
+          [
+            "adam_1200",
+            0.5937530195040647
+          ],
+          [
+            "lbfgs",
+            0.5937549804186955
+          ]
+        ]
+      },
+      "step": {
+        "train": {
+          "n": 36,
+          "exact": 0,
+          "rounded": 7,
+          "rmse": 1.0011305586664474
+        },
+        "dev": {
+          "n": 12,
+          "exact": 0,
+          "rounded": 1,
+          "rmse": 1.0892619556741696
+        },
+        "outer": {
+          "n": 147,
+          "exact": 0,
+          "rounded": 0,
+          "rmse": 3.447273056970218
+        },
+        "mixed": {
+          "n": 75,
+          "exact": 0,
+          "rounded": 5,
+          "rmse": 219.03504796330475
+        }
+      },
+      "trace": {
+        "central": {
+          "n": 16,
+          "whole_exact": 0,
+          "whole_rounded": 1,
+          "final_exact": 1,
+          "final_rounded": 1,
+          "max_ticks": 7,
+          "ticks": 64,
+          "teacher_rounded_steps": 4,
+          "teacher_rounded_traces": 1,
+          "projected_final": 1
+        },
+        "outer": {
+          "n": 49,
+          "whole_exact": 0,
+          "whole_rounded": 0,
+          "final_exact": 0,
+          "final_rounded": 0,
+          "max_ticks": 21,
+          "ticks": 735,
+          "teacher_rounded_steps": 0,
+          "teacher_rounded_traces": 0,
+          "projected_final": 0
+        }
+      }
+    },
+    {
+      "task": "add",
+      "method": "bp_22",
+      "slots": 35,
+      "fit": {
+        "selected": "adam_1200",
+        "dev_half_mse": 0.03333333333333333,
+        "lbfgs_steps": 1,
+        "lbfgs_status": 0,
+        "gradient_check_absolute": 2.5245881773994228e-11,
+        "history": [
+          [
+            "adam_200",
+            0.03418467889948039
+          ],
+          [
+            "adam_400",
+            0.03334681074619827
+          ],
+          [
+            "adam_600",
+            0.033333369884815466
+          ],
+          [
+            "adam_800",
+            0.03333333334849517
+          ],
+          [
+            "adam_1000",
+            0.03333333333333698
+          ],
+          [
+            "adam_1200",
+            0.03333333333333333
+          ],
+          [
+            "lbfgs",
+            0.03333333333333378
+          ]
+        ]
+      },
+      "step": {
+        "train": {
+          "n": 36,
+          "exact": 0,
+          "rounded": 24,
+          "rmse": 0.2581988897471662
+        },
+        "dev": {
+          "n": 12,
+          "exact": 0,
+          "rounded": 8,
+          "rmse": 0.2581988897471611
+        },
+        "outer": {
+          "n": 147,
+          "exact": 0,
+          "rounded": 98,
+          "rmse": 0.2581988897471617
+        },
+        "mixed": {
+          "n": 75,
+          "exact": 0,
+          "rounded": 50,
+          "rmse": 0.2581988897501256
+        }
+      },
+      "trace": {
+        "central": {
+          "n": 16,
+          "whole_exact": 0,
+          "whole_rounded": 0,
+          "final_exact": 1,
+          "final_rounded": 4,
+          "max_ticks": 7,
+          "ticks": 64,
+          "teacher_rounded_steps": 24,
+          "teacher_rounded_traces": 0,
+          "projected_final": 4
+        },
+        "outer": {
+          "n": 49,
+          "whole_exact": 0,
+          "whole_rounded": 0,
+          "final_exact": 0,
+          "final_rounded": 0,
+          "max_ticks": 21,
+          "ticks": 735,
+          "teacher_rounded_steps": 343,
+          "teacher_rounded_traces": 0,
+          "projected_final": 0
+        }
+      }
+    },
+    {
+      "task": "add",
+      "method": "bp_33",
+      "slots": 35,
+      "fit": {
+        "selected": "adam_400",
+        "dev_half_mse": 0.04346395765815062,
+        "lbfgs_steps": 400,
+        "lbfgs_status": 1,
+        "gradient_check_absolute": 1.0841771924674504e-11,
+        "history": [
+          [
+            "adam_200",
+            0.043517439714162956
+          ],
+          [
+            "adam_400",
+            0.04346395765815062
+          ],
+          [
+            "adam_600",
+            0.04356950415768349
+          ],
+          [
+            "adam_800",
+            0.04362693571801345
+          ],
+          [
+            "adam_1000",
+            0.043654145441676444
+          ],
+          [
+            "adam_1200",
+            0.043655606891780066
+          ],
+          [
+            "lbfgs",
+            0.04346482701331444
+          ]
+        ]
+      },
+      "step": {
+        "train": {
+          "n": 36,
+          "exact": 0,
+          "rounded": 24,
+          "rmse": 0.28060712250306336
+        },
+        "dev": {
+          "n": 12,
+          "exact": 0,
+          "rounded": 7,
+          "rmse": 0.2948354037701396
+        },
+        "outer": {
+          "n": 147,
+          "exact": 0,
+          "rounded": 11,
+          "rmse": 0.7006124185796165
+        },
+        "mixed": {
+          "n": 75,
+          "exact": 0,
+          "rounded": 20,
+          "rmse": 53.7780217002918
+        }
+      },
+      "trace": {
+        "central": {
+          "n": 16,
+          "whole_exact": 0,
+          "whole_rounded": 3,
+          "final_exact": 0,
+          "final_rounded": 8,
+          "max_ticks": 7,
+          "ticks": 64,
+          "teacher_rounded_steps": 30,
+          "teacher_rounded_traces": 3,
+          "projected_final": 12
+        },
+        "outer": {
+          "n": 49,
+          "whole_exact": 0,
+          "whole_rounded": 0,
+          "final_exact": 0,
+          "final_rounded": 2,
+          "max_ticks": 21,
+          "ticks": 735,
+          "teacher_rounded_steps": 168,
+          "teacher_rounded_traces": 0,
+          "projected_final": 6
+        }
+      }
+    },
+    {
+      "task": "add",
+      "method": "structured",
+      "slots": 35,
+      "fit": {
+        "isa_candidates_per_pc": 25,
+        "recovered": [
+          [
+            "dec",
+            1,
+            2,
+            1
+          ],
+          [
+            "inc",
+            0,
+            0
+          ],
+          [
+            "halt"
+          ]
+        ],
+        "feature_rank": 6,
+        "columns": 6,
+        "largest_snap": 1.3322676295501878e-15
+      },
+      "step": {
+        "train": {
+          "n": 36,
+          "exact": 36,
+          "rounded": 36,
+          "rmse": 0.0
+        },
+        "dev": {
+          "n": 12,
+          "exact": 12,
+          "rounded": 12,
+          "rmse": 0.0
+        },
+        "outer": {
+          "n": 147,
+          "exact": 147,
+          "rounded": 147,
+          "rmse": 0.0
+        },
+        "mixed": {
+          "n": 75,
+          "exact": 75,
+          "rounded": 75,
+          "rmse": 0.0
+        }
+      },
+      "trace": {
+        "central": {
+          "n": 16,
+          "whole_exact": 16,
+          "whole_rounded": 16,
+          "final_exact": 16,
+          "final_rounded": 16,
+          "max_ticks": 7,
+          "ticks": 64,
+          "teacher_rounded_steps": 64,
+          "teacher_rounded_traces": 16,
+          "projected_final": 16
+        },
+        "outer": {
+          "n": 49,
+          "whole_exact": 49,
+          "whole_rounded": 49,
+          "final_exact": 49,
+          "final_rounded": 49,
+          "max_ticks": 21,
+          "ticks": 735,
+          "teacher_rounded_steps": 735,
+          "teacher_rounded_traces": 49,
+          "projected_final": 49
+        }
+      }
+    },
+    {
+      "task": "subtract_floor",
+      "method": "bp_11",
+      "slots": 45,
+      "fit": {
+        "selected": "lbfgs",
+        "dev_half_mse": 0.3416666666666672,
+        "lbfgs_steps": 58,
+        "lbfgs_status": 0,
+        "gradient_check_absolute": 7.785390387926583e-12,
+        "history": [
+          [
+            "adam_200",
+            0.34606208967852026
+          ],
+          [
+            "adam_400",
+            0.3430545293630311
+          ],
+          [
+            "adam_600",
+            0.3420757833293288
+          ],
+          [
+            "adam_800",
+            0.3417603301359383
+          ],
+          [
+            "adam_1000",
+            0.34168162373853916
+          ],
+          [
+            "adam_1200",
+            0.3416682866046899
+          ],
+          [
+            "lbfgs",
+            0.3416666666666672
+          ]
+        ]
+      },
+      "step": {
+        "train": {
+          "n": 36,
+          "exact": 0,
+          "rounded": 7,
+          "rmse": 0.7710022337480257
+        },
+        "dev": {
+          "n": 12,
+          "exact": 0,
+          "rounded": 1,
+          "rmse": 0.8266397845091502
+        },
+        "outer": {
+          "n": 147,
+          "exact": 0,
+          "rounded": 0,
+          "rmse": 3.130495168499711
+        },
+        "mixed": {
+          "n": 75,
+          "exact": 0,
+          "rounded": 6,
+          "rmse": 210.67853166635237
+        }
+      },
+      "trace": {
+        "central": {
+          "n": 16,
+          "whole_exact": 0,
+          "whole_rounded": 1,
+          "final_exact": 10,
+          "final_rounded": 10,
+          "max_ticks": 7,
+          "ticks": 50,
+          "teacher_rounded_steps": 10,
+          "teacher_rounded_traces": 1,
+          "projected_final": 10
+        },
+        "outer": {
+          "n": 49,
+          "whole_exact": 0,
+          "whole_rounded": 0,
+          "final_exact": 28,
+          "final_rounded": 28,
+          "max_ticks": 21,
+          "ticks": 644,
+          "teacher_rounded_steps": 25,
+          "teacher_rounded_traces": 0,
+          "projected_final": 28
+        }
+      }
+    },
+    {
+      "task": "subtract_floor",
+      "method": "bp_22",
+      "slots": 45,
+      "fit": {
+        "selected": "lbfgs",
+        "dev_half_mse": 0.33333333333681525,
+        "lbfgs_steps": 400,
+        "lbfgs_status": 1,
+        "gradient_check_absolute": 2.4199243303657525e-11,
+        "history": [
+          [
+            "adam_200",
+            0.3611756065006195
+          ],
+          [
+            "adam_400",
+            0.34635667978374113
+          ],
+          [
+            "adam_600",
+            0.3423774832406968
+          ],
+          [
+            "adam_800",
+            0.3423495711369458
+          ],
+          [
+            "adam_1000",
+            0.34213979765408425
+          ],
+          [
+            "adam_1200",
+            0.34200110456607324
+          ],
+          [
+            "lbfgs",
+            0.33333333333681525
+          ]
+        ]
+      },
+      "step": {
+        "train": {
+          "n": 36,
+          "exact": 0,
+          "rounded": 12,
+          "rmse": 0.7601169500706667
+        },
+        "dev": {
+          "n": 12,
+          "exact": 0,
+          "rounded": 1,
+          "rmse": 0.8164965809319905
+        },
+        "outer": {
+          "n": 147,
+          "exact": 0,
+          "rounded": 0,
+          "rmse": 3.1304951685469273
+        },
+        "mixed": {
+          "n": 75,
+          "exact": 0,
+          "rounded": 13,
+          "rmse": 204.74409671862702
+        }
+      },
+      "trace": {
+        "central": {
+          "n": 16,
+          "whole_exact": 0,
+          "whole_rounded": 1,
+          "final_exact": 10,
+          "final_rounded": 10,
+          "max_ticks": 7,
+          "ticks": 50,
+          "teacher_rounded_steps": 16,
+          "teacher_rounded_traces": 1,
+          "projected_final": 10
+        },
+        "outer": {
+          "n": 49,
+          "whole_exact": 0,
+          "whole_rounded": 0,
+          "final_exact": 28,
+          "final_rounded": 28,
+          "max_ticks": 21,
+          "ticks": 644,
+          "teacher_rounded_steps": 53,
+          "teacher_rounded_traces": 0,
+          "projected_final": 28
+        }
+      }
+    },
+    {
+      "task": "subtract_floor",
+      "method": "bp_33",
+      "slots": 45,
+      "fit": {
+        "selected": "lbfgs",
+        "dev_half_mse": 0.03333333333334571,
+        "lbfgs_steps": 171,
+        "lbfgs_status": 0,
+        "gradient_check_absolute": 6.109288769318155e-11,
+        "history": [
+          [
+            "adam_200",
+            0.06548057671312434
+          ],
+          [
+            "adam_400",
+            0.06696230430154491
+          ],
+          [
+            "adam_600",
+            0.0676380015947781
+          ],
+          [
+            "adam_800",
+            0.06216859335993858
+          ],
+          [
+            "adam_1000",
+            0.034356501199400376
+          ],
+          [
+            "adam_1200",
+            0.033366875748221655
+          ],
+          [
+            "lbfgs",
+            0.03333333333334571
+          ]
+        ]
+      },
+      "step": {
+        "train": {
+          "n": 36,
+          "exact": 0,
+          "rounded": 24,
+          "rmse": 0.25819888974717636
+        },
+        "dev": {
+          "n": 12,
+          "exact": 0,
+          "rounded": 8,
+          "rmse": 0.25819888974720906
+        },
+        "outer": {
+          "n": 147,
+          "exact": 0,
+          "rounded": 98,
+          "rmse": 0.25819888974768423
+        },
+        "mixed": {
+          "n": 75,
+          "exact": 0,
+          "rounded": 50,
+          "rmse": 0.258198893844972
+        }
+      },
+      "trace": {
+        "central": {
+          "n": 16,
+          "whole_exact": 0,
+          "whole_rounded": 4,
+          "final_exact": 4,
+          "final_rounded": 12,
+          "max_ticks": 7,
+          "ticks": 50,
+          "teacher_rounded_steps": 30,
+          "teacher_rounded_traces": 4,
+          "projected_final": 12
+        },
+        "outer": {
+          "n": 49,
+          "whole_exact": 0,
+          "whole_rounded": 0,
+          "final_exact": 0,
+          "final_rounded": 0,
+          "max_ticks": 21,
+          "ticks": 644,
+          "teacher_rounded_steps": 336,
+          "teacher_rounded_traces": 0,
+          "projected_final": 0
+        }
+      }
+    },
+    {
+      "task": "subtract_floor",
+      "method": "structured",
+      "slots": 45,
+      "fit": {
+        "isa_candidates_per_pc": 25,
+        "recovered": [
+          [
+            "dec",
+            1,
+            2,
+            1
+          ],
+          [
+            "dec",
+            0,
+            2,
+            0
+          ],
+          [
+            "halt"
+          ]
+        ],
+        "feature_rank": 7,
+        "columns": 7,
+        "largest_snap": 4.6629367034256575e-15
+      },
+      "step": {
+        "train": {
+          "n": 36,
+          "exact": 36,
+          "rounded": 36,
+          "rmse": 0.0
+        },
+        "dev": {
+          "n": 12,
+          "exact": 12,
+          "rounded": 12,
+          "rmse": 0.0
+        },
+        "outer": {
+          "n": 147,
+          "exact": 147,
+          "rounded": 147,
+          "rmse": 0.0
+        },
+        "mixed": {
+          "n": 75,
+          "exact": 75,
+          "rounded": 75,
+          "rmse": 0.0
+        }
+      },
+      "trace": {
+        "central": {
+          "n": 16,
+          "whole_exact": 16,
+          "whole_rounded": 16,
+          "final_exact": 16,
+          "final_rounded": 16,
+          "max_ticks": 7,
+          "ticks": 50,
+          "teacher_rounded_steps": 50,
+          "teacher_rounded_traces": 16,
+          "projected_final": 16
+        },
+        "outer": {
+          "n": 49,
+          "whole_exact": 49,
+          "whole_rounded": 49,
+          "final_exact": 49,
+          "final_rounded": 49,
+          "max_ticks": 21,
+          "ticks": 644,
+          "teacher_rounded_steps": 644,
+          "teacher_rounded_traces": 49,
+          "projected_final": 49
+        }
+      }
+    },
+    {
+      "task": "multiply",
+      "method": "bp_11",
+      "slots": 187,
+      "fit": {
+        "selected": "lbfgs",
+        "dev_half_mse": 0.16375815077927988,
+        "lbfgs_steps": 400,
+        "lbfgs_status": 1,
+        "gradient_check_absolute": 2.683049615814781e-11,
+        "history": [
+          [
+            "adam_200",
+            0.1709123529274442
+          ],
+          [
+            "adam_400",
+            0.16598793241148987
+          ],
+          [
+            "adam_600",
+            0.16566804200309818
+          ],
+          [
+            "adam_800",
+            0.1654356366900877
+          ],
+          [
+            "adam_1000",
+            0.1654147519748597
+          ],
+          [
+            "adam_1200",
+            0.1658150019744146
+          ],
+          [
+            "lbfgs",
+            0.16375815077927988
+          ]
+        ]
+      },
+      "step": {
+        "train": {
+          "n": 1344,
+          "exact": 0,
+          "rounded": 334,
+          "rmse": 0.5416875419990489
+        },
+        "dev": {
+          "n": 448,
+          "exact": 0,
+          "rounded": 114,
+          "rmse": 0.5722903996735921
+        },
+        "outer": {
+          "n": 16807,
+          "exact": 0,
+          "rounded": 0,
+          "rmse": 2.1592451853368915
+        },
+        "mixed": {
+          "n": 4375,
+          "exact": 0,
+          "rounded": 774,
+          "rmse": 138.06453007828668
+        }
+      },
+      "trace": {
+        "central": {
+          "n": 16,
+          "whole_exact": 0,
+          "whole_rounded": 4,
+          "final_exact": 4,
+          "final_rounded": 10,
+          "max_ticks": 55,
+          "ticks": 268,
+          "teacher_rounded_steps": 112,
+          "teacher_rounded_traces": 4,
+          "projected_final": 10
+        },
+        "outer": {
+          "n": 49,
+          "whole_exact": 0,
+          "whole_rounded": 0,
+          "final_exact": 0,
+          "final_rounded": 0,
+          "max_ticks": 531,
+          "ticks": 13083,
+          "teacher_rounded_steps": 1519,
+          "teacher_rounded_traces": 0,
+          "projected_final": 0
+        }
+      }
+    },
+    {
+      "task": "multiply",
+      "method": "bp_22",
+      "slots": 187,
+      "fit": {
+        "selected": "lbfgs",
+        "dev_half_mse": 0.0032467553503137507,
+        "lbfgs_steps": 400,
+        "lbfgs_status": 1,
+        "gradient_check_absolute": 1.0159597468861747e-10,
+        "history": [
+          [
+            "adam_200",
+            0.006272987721030266
+          ],
+          [
+            "adam_400",
+            0.005465790392248508
+          ],
+          [
+            "adam_600",
+            0.004275360477803594
+          ],
+          [
+            "adam_800",
+            0.003928178581851145
+          ],
+          [
+            "adam_1000",
+            0.0038383093622971647
+          ],
+          [
+            "adam_1200",
+            0.0038531272389821358
+          ],
+          [
+            "lbfgs",
+            0.0032467553503137507
+          ]
+        ]
+      },
+      "step": {
+        "train": {
+          "n": 1344,
+          "exact": 0,
+          "rounded": 1248,
+          "rmse": 0.08058232608752652
+        },
+        "dev": {
+          "n": 448,
+          "exact": 0,
+          "rounded": 416,
+          "rmse": 0.08058232250703315
+        },
+        "outer": {
+          "n": 16807,
+          "exact": 0,
+          "rounded": 16807,
+          "rmse": 0.00035468179834639694
+        },
+        "mixed": {
+          "n": 4375,
+          "exact": 0,
+          "rounded": 3885,
+          "rmse": 0.1248629642034426
+        }
+      },
+      "trace": {
+        "central": {
+          "n": 16,
+          "whole_exact": 0,
+          "whole_rounded": 4,
+          "final_exact": 3,
+          "final_rounded": 10,
+          "max_ticks": 55,
+          "ticks": 268,
+          "teacher_rounded_steps": 220,
+          "teacher_rounded_traces": 4,
+          "projected_final": 10
+        },
+        "outer": {
+          "n": 49,
+          "whole_exact": 0,
+          "whole_rounded": 0,
+          "final_exact": 0,
+          "final_rounded": 0,
+          "max_ticks": 531,
+          "ticks": 13083,
+          "teacher_rounded_steps": 12397,
+          "teacher_rounded_traces": 0,
+          "projected_final": 0
+        }
+      }
+    },
+    {
+      "task": "multiply",
+      "method": "bp_33",
+      "slots": 187,
+      "fit": {
+        "selected": "lbfgs",
+        "dev_half_mse": 0.0015909960194730708,
+        "lbfgs_steps": 400,
+        "lbfgs_status": 1,
+        "gradient_check_absolute": 3.15709264286923e-11,
+        "history": [
+          [
+            "adam_200",
+            0.16639010011733382
+          ],
+          [
+            "adam_400",
+            0.16461146867904636
+          ],
+          [
+            "adam_600",
+            0.16327580738642847
+          ],
+          [
+            "adam_800",
+            0.163061779988924
+          ],
+          [
+            "adam_1000",
+            0.1629916084764535
+          ],
+          [
+            "adam_1200",
+            0.16289326345422295
+          ],
+          [
+            "lbfgs",
+            0.0015909960194730708
+          ]
+        ]
+      },
+      "step": {
+        "train": {
+          "n": 1344,
+          "exact": 0,
+          "rounded": 1291,
+          "rmse": 0.06752374479223325
+        },
+        "dev": {
+          "n": 448,
+          "exact": 0,
+          "rounded": 437,
+          "rmse": 0.05640914853945361
+        },
+        "outer": {
+          "n": 16807,
+          "exact": 0,
+          "rounded": 5376,
+          "rmse": 0.33893462119173967
+        },
+        "mixed": {
+          "n": 4375,
+          "exact": 0,
+          "rounded": 1675,
+          "rmse": 40.563790534361964
+        }
+      },
+      "trace": {
+        "central": {
+          "n": 16,
+          "whole_exact": 0,
+          "whole_rounded": 0,
+          "final_exact": 4,
+          "final_rounded": 12,
+          "max_ticks": 55,
+          "ticks": 268,
+          "teacher_rounded_steps": 252,
+          "teacher_rounded_traces": 0,
+          "projected_final": 16
+        },
+        "outer": {
+          "n": 49,
+          "whole_exact": 0,
+          "whole_rounded": 0,
+          "final_exact": 0,
+          "final_rounded": 0,
+          "max_ticks": 531,
+          "ticks": 13083,
+          "teacher_rounded_steps": 10495,
+          "teacher_rounded_traces": 0,
+          "projected_final": 3
+        }
+      }
+    },
+    {
+      "task": "multiply",
+      "method": "structured",
+      "slots": 187,
+      "fit": {
+        "isa_candidates_per_pc": 225,
+        "recovered": [
+          [
+            "dec",
+            0,
+            6,
+            1
+          ],
+          [
+            "dec",
+            1,
+            4,
+            2
+          ],
+          [
+            "inc",
+            2,
+            3
+          ],
+          [
+            "inc",
+            3,
+            1
+          ],
+          [
+            "dec",
+            3,
+            0,
+            5
+          ],
+          [
+            "inc",
+            1,
+            4
+          ],
+          [
+            "halt"
+          ]
+        ],
+        "feature_rank": 14,
+        "columns": 14,
+        "largest_snap": 1.887379141862766e-15
+      },
+      "step": {
+        "train": {
+          "n": 1344,
+          "exact": 1344,
+          "rounded": 1344,
+          "rmse": 0.0
+        },
+        "dev": {
+          "n": 448,
+          "exact": 448,
+          "rounded": 448,
+          "rmse": 0.0
+        },
+        "outer": {
+          "n": 16807,
+          "exact": 16807,
+          "rounded": 16807,
+          "rmse": 0.0
+        },
+        "mixed": {
+          "n": 4375,
+          "exact": 4375,
+          "rounded": 4375,
+          "rmse": 0.0
+        }
+      },
+      "trace": {
+        "central": {
+          "n": 16,
+          "whole_exact": 16,
+          "whole_rounded": 16,
+          "final_exact": 16,
+          "final_rounded": 16,
+          "max_ticks": 55,
+          "ticks": 268,
+          "teacher_rounded_steps": 268,
+          "teacher_rounded_traces": 16,
+          "projected_final": 16
+        },
+        "outer": {
+          "n": 49,
+          "whole_exact": 49,
+          "whole_rounded": 49,
+          "final_exact": 49,
+          "final_rounded": 49,
+          "max_ticks": 531,
+          "ticks": 13083,
+          "teacher_rounded_steps": 13083,
+          "teacher_rounded_traces": 49,
+          "projected_final": 49
+        }
+      }
+    }
+  ]
+}

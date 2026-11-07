@@ -1,0 +1,17 @@
+{
+  "requested_model": "gpt-6-astra",
+  "reasoning_effort": "medium",
+  "completed_item_types": {
+    "agent_message": 2,
+    "command_execution": 2
+  },
+  "usage": [
+    {
+      "input_tokens": 106883,
+      "cached_input_tokens": 102016,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 2644,
+      "reasoning_output_tokens": 934
+    }
+  ]
+}

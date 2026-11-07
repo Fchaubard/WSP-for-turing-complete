@@ -1,0 +1,25 @@
+{
+  "family": "Scalar affine network with multiplicative gating",
+  "inferred_rule": "Triangular numbers: y(n) = n(n + 1)/2.",
+  "construction_summary": "An affine node computes (n + 1)/2, and a multiplicative gate multiplies it by n. The network stores two scalar coefficients and uses two scalar multiplications and one addition per inference, with constant workspace and no iteration.",
+  "certificate": "The output is n(0.5n + 0.5) = n(n + 1)/2. This gives y(0) = 0 and y(n + 1) - y(n) = n + 1, matching the observed successive increments. For every integer 0 <= n <= 64, all intermediate values are exactly representable in binary64, so the inferred rule is computed exactly. Finite examples do not uniquely determine extrapolation.",
+  "network": {
+    "kind": "graph",
+    "nodes": [
+      {
+        "name": "half_successor",
+        "op": "affine",
+        "source": "input",
+        "weight": [[0.5]],
+        "bias": [0.5]
+      },
+      {
+        "name": "result",
+        "op": "multiply",
+        "left": "input",
+        "right": "half_successor"
+      }
+    ],
+    "output": "result"
+  }
+}

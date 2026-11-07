@@ -1,0 +1,18 @@
+{
+  "family": "Single-layer linear network",
+  "inferred_rule": "y = x₁ − x₂.",
+  "construction_summary": "One affine node subtracts the second coordinate from the first using weights [1, -1] and no bias. It stores two scalar coefficients and produces one activation scalar, with no hidden layers. The same rule applies throughout [-10,10]².",
+  "certificate": "For every input (a,b), the network computes [1,-1]·[a,b] = a-b in exact arithmetic. All displayed outputs agree with this rule to binary64 rounding precision. The weights are exactly representable in binary64. This certifies implementation of the inferred rule across the domain; finite observations alone cannot uniquely determine an arbitrary unseen target.",
+  "network": {
+    "kind": "graph",
+    "nodes": [
+      {
+        "name": "difference",
+        "op": "affine",
+        "source": "input",
+        "weight": [[1, -1]]
+      }
+    ],
+    "output": "difference"
+  }
+}

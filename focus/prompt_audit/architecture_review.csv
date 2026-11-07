@@ -1,0 +1,33 @@
+task,seed,status,examples_checked,reason
+square,164,valid_checked,46,"coefficients, arithmetic, comparisons, transcendental calls and peak live tensors agree"
+square,317,valid_checked,46,"coefficients, arithmetic, comparisons, transcendental calls and peak live tensors agree"
+square,583,valid_checked,46,"coefficients, arithmetic, comparisons, transcendental calls and peak live tensors agree"
+sin,164,valid_checked,46,"coefficients, arithmetic, comparisons, transcendental calls and peak live tensors agree"
+sin,317,valid_checked,46,"coefficients, arithmetic, comparisons, transcendental calls and peak live tensors agree"
+sin,583,valid_checked,46,"coefficients, arithmetic, comparisons, transcendental calls and peak live tensors agree"
+selfpower,164,valid_checked,46,"coefficients, arithmetic, comparisons, transcendental calls and peak live tensors agree"
+selfpower,317,invalid_confirmed,0,undefined input reference minus_one
+selfpower,583,invalid_confirmed,0,65 nodes exceed the 64-node predeclared bound
+tanh,164,valid_checked,46,"coefficients, arithmetic, comparisons, transcendental calls and peak live tensors agree"
+tanh,317,valid_checked,46,"coefficients, arithmetic, comparisons, transcendental calls and peak live tensors agree"
+tanh,583,valid_checked,46,"coefficients, arithmetic, comparisons, transcendental calls and peak live tensors agree"
+add,164,valid_checked,46,"coefficients, arithmetic, comparisons, transcendental calls and peak live tensors agree"
+add,317,valid_checked,46,"coefficients, arithmetic, comparisons, transcendental calls and peak live tensors agree"
+add,583,valid_checked,46,"coefficients, arithmetic, comparisons, transcendental calls and peak live tensors agree"
+subtract,164,valid_checked,46,"coefficients, arithmetic, comparisons, transcendental calls and peak live tensors agree"
+subtract,317,valid_checked,46,"coefficients, arithmetic, comparisons, transcendental calls and peak live tensors agree"
+subtract,583,valid_checked,46,"coefficients, arithmetic, comparisons, transcendental calls and peak live tensors agree"
+sum,164,valid_checked,48,"coefficients, arithmetic, comparisons, transcendental calls and peak live tensors agree"
+sum,317,valid_checked,48,"coefficients, arithmetic, comparisons, transcendental calls and peak live tensors agree"
+sum,583,valid_checked,48,"coefficients, arithmetic, comparisons, transcendental calls and peak live tensors agree"
+sort,164,valid_checked,46,"coefficients, arithmetic, comparisons, transcendental calls and peak live tensors agree"
+sort,317,valid_checked,46,"coefficients, arithmetic, comparisons, transcendental calls and peak live tensors agree"
+sort,583,valid_checked,46,"coefficients, arithmetic, comparisons, transcendental calls and peak live tensors agree"
+fib,164,valid_checked,43,"coefficients, arithmetic, comparisons, transcendental calls and peak live tensors agree"
+fib,317,valid_checked,43,"coefficients, arithmetic, comparisons, transcendental calls and peak live tensors agree"
+fib,583,valid_checked,43,"coefficients, arithmetic, comparisons, transcendental calls and peak live tensors agree"
+tri,164,valid_checked,43,"coefficients, arithmetic, comparisons, transcendental calls and peak live tensors agree"
+tri,317,valid_checked,43,"coefficients, arithmetic, comparisons, transcendental calls and peak live tensors agree"
+tri,583,valid_checked,43,"coefficients, arithmetic, comparisons, transcendental calls and peak live tensors agree"
+convolution,,synthetic_operator_check,1,8 FLOPs; output and liveness verified
+attention,,synthetic_operator_check,1,20 FLOPs; output and liveness verified

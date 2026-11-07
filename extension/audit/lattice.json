@@ -1,0 +1,2906 @@
+{
+  "grid": "x=n/16, n=-160,...,160; inner |x|<=3; outer 3<|x|<=10",
+  "architecture": "a*x+b plus width many v*ReLU(u*x+c) residual terms",
+  "coefficient_cap": 128,
+  "xavier_init_seed": 2147,
+  "iid_outer_seed": 77391,
+  "execution": "separate binary64 operations in increasing unit index, RN ties-to-even",
+  "resolution_sweep": [
+    {
+      "denominator": 16,
+      "minimum_width": 160,
+      "slots": 482,
+      "certified_roundoff_upper": 3.3224996798253414e-07,
+      "forbidden_gap": 0.001953125,
+      "on_grid": {
+        "n": 321,
+        "exact": 321,
+        "max_abs": 0.0,
+        "rmse": 0.0
+      },
+      "one_hinge_below": {
+        "n": 321,
+        "exact": 320,
+        "max_abs": 0.0078125,
+        "rmse": 0.0004360512282702715
+      },
+      "midpoints": {
+        "n": 320,
+        "exact": 0,
+        "max_abs": 0.0029296875,
+        "rmse": 0.002178194142890182
+      }
+    },
+    {
+      "denominator": 32,
+      "minimum_width": 320,
+      "slots": 962,
+      "certified_roundoff_upper": 1.176731217356064e-06,
+      "forbidden_gap": 0.00048828125,
+      "on_grid": {
+        "n": 641,
+        "exact": 641,
+        "max_abs": 0.0,
+        "rmse": 0.0
+      },
+      "one_hinge_below": {
+        "n": 641,
+        "exact": 640,
+        "max_abs": 0.001953125,
+        "rmse": 7.714379936849261e-05
+      },
+      "midpoints": {
+        "n": 640,
+        "exact": 0,
+        "max_abs": 0.000732421875,
+        "rmse": 0.0005452322127472484
+      }
+    },
+    {
+      "denominator": 64,
+      "minimum_width": 640,
+      "slots": 1922,
+      "certified_roundoff_upper": 4.4023930172443215e-06,
+      "forbidden_gap": 0.0001220703125,
+      "on_grid": {
+        "n": 1281,
+        "exact": 1281,
+        "max_abs": 0.0,
+        "rmse": 0.0
+      },
+      "one_hinge_below": {
+        "n": 1281,
+        "exact": 1280,
+        "max_abs": 0.00048828125,
+        "rmse": 1.3642547759450991e-05
+      },
+      "midpoints": {
+        "n": 1280,
+        "exact": 0,
+        "max_abs": 0.00018310546875,
+        "rmse": 0.00013639343249564542
+      }
+    },
+    {
+      "denominator": 128,
+      "minimum_width": 1280,
+      "slots": 3842,
+      "certified_roundoff_upper": 1.7000513821585628e-05,
+      "forbidden_gap": 3.0517578125e-05,
+      "on_grid": {
+        "n": 2561,
+        "exact": 2561,
+        "max_abs": 0.0,
+        "rmse": 0.0
+      },
+      "one_hinge_below": {
+        "n": 2561,
+        "exact": 2560,
+        "max_abs": 0.0001220703125,
+        "rmse": 2.412155310593395e-06
+      },
+      "midpoints": {
+        "n": 2560,
+        "exact": 0,
+        "max_abs": 4.57763671875e-05,
+        "rmse": 3.410902552855959e-05
+      }
+    }
+  ],
+  "quadratic_prior_label_control": {
+    "seeds": 5,
+    "observed_x": [
+      -1,
+      0,
+      1
+    ],
+    "training_labels": [
+      1,
+      0,
+      1
+    ],
+    "recovered_nodal_coefficients": [
+      1.0,
+      0.0,
+      1.0
+    ],
+    "knowns": "degree at most two, deployment grid, Lagrange basis, secant compiler",
+    "complete_network_sha256": "31460235897a58105b6b2c40ff2797d0cdc6dcb2511e660eb9615fcd26f5614f",
+    "shell": {
+      "n": 224,
+      "exact": 224,
+      "max_abs": 0.0,
+      "rmse": 0.0
+    }
+  },
+  "rows": [
+    {
+      "grid": "full",
+      "width": 0,
+      "slots": 2,
+      "exact": 2,
+      "max_abs": 398.75,
+      "rmse": 178.6051295951724
+    },
+    {
+      "grid": "full",
+      "width": 1,
+      "slots": 5,
+      "exact": 4,
+      "max_abs": 393.7734375,
+      "rmse": 175.82747418314162
+    },
+    {
+      "grid": "full",
+      "width": 2,
+      "slots": 8,
+      "exact": 6,
+      "max_abs": 388.828125,
+      "rmse": 173.07589994988737
+    },
+    {
+      "grid": "full",
+      "width": 3,
+      "slots": 11,
+      "exact": 8,
+      "max_abs": 383.9140625,
+      "rmse": 170.35032474966994
+    },
+    {
+      "grid": "full",
+      "width": 4,
+      "slots": 14,
+      "exact": 10,
+      "max_abs": 379.03125,
+      "rmse": 167.65066617638
+    },
+    {
+      "grid": "full",
+      "width": 5,
+      "slots": 17,
+      "exact": 12,
+      "max_abs": 374.1796875,
+      "rmse": 164.97684156104685
+    },
+    {
+      "grid": "full",
+      "width": 6,
+      "slots": 20,
+      "exact": 14,
+      "max_abs": 369.359375,
+      "rmse": 162.32876796930694
+    },
+    {
+      "grid": "full",
+      "width": 7,
+      "slots": 23,
+      "exact": 16,
+      "max_abs": 364.5703125,
+      "rmse": 159.70636219883127
+    },
+    {
+      "grid": "full",
+      "width": 8,
+      "slots": 26,
+      "exact": 18,
+      "max_abs": 359.8125,
+      "rmse": 157.10954077671101
+    },
+    {
+      "grid": "full",
+      "width": 9,
+      "slots": 29,
+      "exact": 20,
+      "max_abs": 355.0859375,
+      "rmse": 154.53821995680053
+    },
+    {
+      "grid": "full",
+      "width": 10,
+      "slots": 32,
+      "exact": 22,
+      "max_abs": 350.390625,
+      "rmse": 151.99231571701625
+    },
+    {
+      "grid": "full",
+      "width": 11,
+      "slots": 35,
+      "exact": 24,
+      "max_abs": 345.7265625,
+      "rmse": 149.47174375659122
+    },
+    {
+      "grid": "full",
+      "width": 12,
+      "slots": 38,
+      "exact": 26,
+      "max_abs": 341.09375,
+      "rmse": 146.97641949328323
+    },
+    {
+      "grid": "full",
+      "width": 13,
+      "slots": 41,
+      "exact": 28,
+      "max_abs": 336.4921875,
+      "rmse": 144.5062580605367
+    },
+    {
+      "grid": "full",
+      "width": 14,
+      "slots": 44,
+      "exact": 30,
+      "max_abs": 331.921875,
+      "rmse": 142.06117430459597
+    },
+    {
+      "grid": "full",
+      "width": 15,
+      "slots": 47,
+      "exact": 32,
+      "max_abs": 327.3828125,
+      "rmse": 139.64108278156962
+    },
+    {
+      "grid": "full",
+      "width": 16,
+      "slots": 50,
+      "exact": 34,
+      "max_abs": 322.875,
+      "rmse": 137.24589775444466
+    },
+    {
+      "grid": "full",
+      "width": 17,
+      "slots": 53,
+      "exact": 36,
+      "max_abs": 318.3984375,
+      "rmse": 134.8755331900487
+    },
+    {
+      "grid": "full",
+      "width": 18,
+      "slots": 56,
+      "exact": 38,
+      "max_abs": 313.953125,
+      "rmse": 132.52990275595963
+    },
+    {
+      "grid": "full",
+      "width": 19,
+      "slots": 59,
+      "exact": 40,
+      "max_abs": 309.5390625,
+      "rmse": 130.20891981736102
+    },
+    {
+      "grid": "full",
+      "width": 20,
+      "slots": 62,
+      "exact": 42,
+      "max_abs": 305.15625,
+      "rmse": 127.91249743384226
+    },
+    {
+      "grid": "full",
+      "width": 21,
+      "slots": 65,
+      "exact": 44,
+      "max_abs": 300.8046875,
+      "rmse": 125.6405483561415
+    },
+    {
+      "grid": "full",
+      "width": 22,
+      "slots": 68,
+      "exact": 46,
+      "max_abs": 296.484375,
+      "rmse": 123.39298502283063
+    },
+    {
+      "grid": "full",
+      "width": 23,
+      "slots": 71,
+      "exact": 48,
+      "max_abs": 292.1953125,
+      "rmse": 121.16971955694049
+    },
+    {
+      "grid": "full",
+      "width": 24,
+      "slots": 74,
+      "exact": 50,
+      "max_abs": 287.9375,
+      "rmse": 118.97066376252465
+    },
+    {
+      "grid": "full",
+      "width": 25,
+      "slots": 77,
+      "exact": 52,
+      "max_abs": 283.7109375,
+      "rmse": 116.7957291211606
+    },
+    {
+      "grid": "full",
+      "width": 26,
+      "slots": 80,
+      "exact": 54,
+      "max_abs": 279.515625,
+      "rmse": 114.64482678838633
+    },
+    {
+      "grid": "full",
+      "width": 27,
+      "slots": 83,
+      "exact": 56,
+      "max_abs": 275.3515625,
+      "rmse": 112.51786759007081
+    },
+    {
+      "grid": "full",
+      "width": 28,
+      "slots": 86,
+      "exact": 58,
+      "max_abs": 271.21875,
+      "rmse": 110.41476201871683
+    },
+    {
+      "grid": "full",
+      "width": 29,
+      "slots": 89,
+      "exact": 60,
+      "max_abs": 267.1171875,
+      "rmse": 108.3354202296939
+    },
+    {
+      "grid": "full",
+      "width": 30,
+      "slots": 92,
+      "exact": 62,
+      "max_abs": 263.046875,
+      "rmse": 106.27975203739989
+    },
+    {
+      "grid": "full",
+      "width": 31,
+      "slots": 95,
+      "exact": 64,
+      "max_abs": 259.0078125,
+      "rmse": 104.2476669113492
+    },
+    {
+      "grid": "full",
+      "width": 32,
+      "slots": 98,
+      "exact": 66,
+      "max_abs": 255.0,
+      "rmse": 102.23907397218557
+    },
+    {
+      "grid": "full",
+      "width": 33,
+      "slots": 101,
+      "exact": 68,
+      "max_abs": 251.0234375,
+      "rmse": 100.2538819876174
+    },
+    {
+      "grid": "full",
+      "width": 34,
+      "slots": 104,
+      "exact": 70,
+      "max_abs": 247.078125,
+      "rmse": 98.29199936827371
+    },
+    {
+      "grid": "full",
+      "width": 35,
+      "slots": 107,
+      "exact": 72,
+      "max_abs": 243.1640625,
+      "rmse": 96.35333416347807
+    },
+    {
+      "grid": "full",
+      "width": 36,
+      "slots": 110,
+      "exact": 74,
+      "max_abs": 239.28125,
+      "rmse": 94.43779405693878
+    },
+    {
+      "grid": "full",
+      "width": 37,
+      "slots": 113,
+      "exact": 76,
+      "max_abs": 235.4296875,
+      "rmse": 92.54528636235254
+    },
+    {
+      "grid": "full",
+      "width": 38,
+      "slots": 116,
+      "exact": 78,
+      "max_abs": 231.609375,
+      "rmse": 90.67571801891931
+    },
+    {
+      "grid": "full",
+      "width": 39,
+      "slots": 119,
+      "exact": 80,
+      "max_abs": 227.8203125,
+      "rmse": 88.82899558676588
+    },
+    {
+      "grid": "full",
+      "width": 40,
+      "slots": 122,
+      "exact": 82,
+      "max_abs": 224.0625,
+      "rmse": 87.00502524227538
+    },
+    {
+      "grid": "full",
+      "width": 41,
+      "slots": 125,
+      "exact": 84,
+      "max_abs": 220.3359375,
+      "rmse": 85.20371277332015
+    },
+    {
+      "grid": "full",
+      "width": 42,
+      "slots": 128,
+      "exact": 86,
+      "max_abs": 216.640625,
+      "rmse": 83.42496357439505
+    },
+    {
+      "grid": "full",
+      "width": 43,
+      "slots": 131,
+      "exact": 88,
+      "max_abs": 212.9765625,
+      "rmse": 81.66868264164836
+    },
+    {
+      "grid": "full",
+      "width": 44,
+      "slots": 134,
+      "exact": 90,
+      "max_abs": 209.34375,
+      "rmse": 79.93477456780711
+    },
+    {
+      "grid": "full",
+      "width": 45,
+      "slots": 137,
+      "exact": 92,
+      "max_abs": 205.7421875,
+      "rmse": 78.22314353699376
+    },
+    {
+      "grid": "full",
+      "width": 46,
+      "slots": 140,
+      "exact": 94,
+      "max_abs": 202.171875,
+      "rmse": 76.53369331943095
+    },
+    {
+      "grid": "full",
+      "width": 47,
+      "slots": 143,
+      "exact": 96,
+      "max_abs": 198.6328125,
+      "rmse": 74.86632726603084
+    },
+    {
+      "grid": "full",
+      "width": 48,
+      "slots": 146,
+      "exact": 98,
+      "max_abs": 195.125,
+      "rmse": 73.22094830286557
+    },
+    {
+      "grid": "full",
+      "width": 49,
+      "slots": 149,
+      "exact": 100,
+      "max_abs": 191.6484375,
+      "rmse": 71.59745892551507
+    },
+    {
+      "grid": "full",
+      "width": 50,
+      "slots": 152,
+      "exact": 102,
+      "max_abs": 188.203125,
+      "rmse": 69.99576119328846
+    },
+    {
+      "grid": "full",
+      "width": 51,
+      "slots": 155,
+      "exact": 104,
+      "max_abs": 184.7890625,
+      "rmse": 68.41575672331496
+    },
+    {
+      "grid": "full",
+      "width": 52,
+      "slots": 158,
+      "exact": 106,
+      "max_abs": 181.40625,
+      "rmse": 66.85734668450014
+    },
+    {
+      "grid": "full",
+      "width": 53,
+      "slots": 161,
+      "exact": 108,
+      "max_abs": 178.0546875,
+      "rmse": 65.32043179134345
+    },
+    {
+      "grid": "full",
+      "width": 54,
+      "slots": 164,
+      "exact": 110,
+      "max_abs": 174.734375,
+      "rmse": 63.80491229761195
+    },
+    {
+      "grid": "full",
+      "width": 55,
+      "slots": 167,
+      "exact": 112,
+      "max_abs": 171.4453125,
+      "rmse": 62.3106879898662
+    },
+    {
+      "grid": "full",
+      "width": 56,
+      "slots": 170,
+      "exact": 114,
+      "max_abs": 168.1875,
+      "rmse": 60.83765818083288
+    },
+    {
+      "grid": "full",
+      "width": 57,
+      "slots": 173,
+      "exact": 116,
+      "max_abs": 164.9609375,
+      "rmse": 59.38572170261934
+    },
+    {
+      "grid": "full",
+      "width": 58,
+      "slots": 176,
+      "exact": 118,
+      "max_abs": 161.765625,
+      "rmse": 57.95477689976457
+    },
+    {
+      "grid": "full",
+      "width": 59,
+      "slots": 179,
+      "exact": 120,
+      "max_abs": 158.6015625,
+      "rmse": 56.54472162212112
+    },
+    {
+      "grid": "full",
+      "width": 60,
+      "slots": 182,
+      "exact": 122,
+      "max_abs": 155.46875,
+      "rmse": 55.15545321756215
+    },
+    {
+      "grid": "full",
+      "width": 61,
+      "slots": 185,
+      "exact": 124,
+      "max_abs": 152.3671875,
+      "rmse": 53.78686852450737
+    },
+    {
+      "grid": "full",
+      "width": 62,
+      "slots": 188,
+      "exact": 126,
+      "max_abs": 149.296875,
+      "rmse": 52.43886386426184
+    },
+    {
+      "grid": "full",
+      "width": 63,
+      "slots": 191,
+      "exact": 128,
+      "max_abs": 146.2578125,
+      "rmse": 51.11133503316064
+    },
+    {
+      "grid": "full",
+      "width": 64,
+      "slots": 194,
+      "exact": 130,
+      "max_abs": 143.25,
+      "rmse": 49.80417729451271
+    },
+    {
+      "grid": "full",
+      "width": 65,
+      "slots": 197,
+      "exact": 132,
+      "max_abs": 140.2734375,
+      "rmse": 48.51728537033648
+    },
+    {
+      "grid": "full",
+      "width": 66,
+      "slots": 200,
+      "exact": 134,
+      "max_abs": 137.328125,
+      "rmse": 47.250553432879705
+    },
+    {
+      "grid": "full",
+      "width": 67,
+      "slots": 203,
+      "exact": 136,
+      "max_abs": 134.4140625,
+      "rmse": 46.00387509591554
+    },
+    {
+      "grid": "full",
+      "width": 68,
+      "slots": 206,
+      "exact": 138,
+      "max_abs": 131.53125,
+      "rmse": 44.777143405806505
+    },
+    {
+      "grid": "full",
+      "width": 69,
+      "slots": 209,
+      "exact": 140,
+      "max_abs": 128.6796875,
+      "rmse": 43.57025083232752
+    },
+    {
+      "grid": "full",
+      "width": 70,
+      "slots": 212,
+      "exact": 142,
+      "max_abs": 125.859375,
+      "rmse": 42.383089259238936
+    },
+    {
+      "grid": "full",
+      "width": 71,
+      "slots": 215,
+      "exact": 144,
+      "max_abs": 123.0703125,
+      "rmse": 41.21554997459982
+    },
+    {
+      "grid": "full",
+      "width": 72,
+      "slots": 218,
+      "exact": 146,
+      "max_abs": 120.3125,
+      "rmse": 40.06752366081134
+    },
+    {
+      "grid": "full",
+      "width": 73,
+      "slots": 221,
+      "exact": 148,
+      "max_abs": 117.5859375,
+      "rmse": 38.93890038437979
+    },
+    {
+      "grid": "full",
+      "width": 74,
+      "slots": 224,
+      "exact": 150,
+      "max_abs": 114.890625,
+      "rmse": 37.82956958538781
+    },
+    {
+      "grid": "full",
+      "width": 75,
+      "slots": 227,
+      "exact": 152,
+      "max_abs": 112.2265625,
+      "rmse": 36.739420066662184
+    },
+    {
+      "grid": "full",
+      "width": 76,
+      "slots": 230,
+      "exact": 154,
+      "max_abs": 109.59375,
+      "rmse": 35.6683399826259
+    },
+    {
+      "grid": "full",
+      "width": 77,
+      "slots": 233,
+      "exact": 156,
+      "max_abs": 106.9921875,
+      "rmse": 34.616216827821226
+    },
+    {
+      "grid": "full",
+      "width": 78,
+      "slots": 236,
+      "exact": 158,
+      "max_abs": 104.421875,
+      "rmse": 33.58293742509017
+    },
+    {
+      "grid": "full",
+      "width": 79,
+      "slots": 239,
+      "exact": 160,
+      "max_abs": 101.8828125,
+      "rmse": 32.568387913397906
+    },
+    {
+      "grid": "full",
+      "width": 80,
+      "slots": 242,
+      "exact": 162,
+      "max_abs": 99.375,
+      "rmse": 31.57245373528367
+    },
+    {
+      "grid": "full",
+      "width": 81,
+      "slots": 245,
+      "exact": 164,
+      "max_abs": 96.8984375,
+      "rmse": 30.595019623923225
+    },
+    {
+      "grid": "full",
+      "width": 82,
+      "slots": 248,
+      "exact": 166,
+      "max_abs": 94.453125,
+      "rmse": 29.63596958978563
+    },
+    {
+      "grid": "full",
+      "width": 83,
+      "slots": 251,
+      "exact": 168,
+      "max_abs": 92.0390625,
+      "rmse": 28.69518690686643
+    },
+    {
+      "grid": "full",
+      "width": 84,
+      "slots": 254,
+      "exact": 170,
+      "max_abs": 89.65625,
+      "rmse": 27.772554098478075
+    },
+    {
+      "grid": "full",
+      "width": 85,
+      "slots": 257,
+      "exact": 172,
+      "max_abs": 87.3046875,
+      "rmse": 26.86795292257752
+    },
+    {
+      "grid": "full",
+      "width": 86,
+      "slots": 260,
+      "exact": 174,
+      "max_abs": 84.984375,
+      "rmse": 25.98126435660945
+    },
+    {
+      "grid": "full",
+      "width": 87,
+      "slots": 263,
+      "exact": 176,
+      "max_abs": 82.6953125,
+      "rmse": 25.112368581842613
+    },
+    {
+      "grid": "full",
+      "width": 88,
+      "slots": 266,
+      "exact": 178,
+      "max_abs": 80.4375,
+      "rmse": 24.26114496717504
+    },
+    {
+      "grid": "full",
+      "width": 89,
+      "slots": 269,
+      "exact": 180,
+      "max_abs": 78.2109375,
+      "rmse": 23.427472052382747
+    },
+    {
+      "grid": "full",
+      "width": 90,
+      "slots": 272,
+      "exact": 182,
+      "max_abs": 76.015625,
+      "rmse": 22.611227530784667
+    },
+    {
+      "grid": "full",
+      "width": 91,
+      "slots": 275,
+      "exact": 184,
+      "max_abs": 73.8515625,
+      "rmse": 21.81228823129495
+    },
+    {
+      "grid": "full",
+      "width": 92,
+      "slots": 278,
+      "exact": 186,
+      "max_abs": 71.71875,
+      "rmse": 21.030530099831903
+    },
+    {
+      "grid": "full",
+      "width": 93,
+      "slots": 281,
+      "exact": 188,
+      "max_abs": 69.6171875,
+      "rmse": 20.265828180050836
+    },
+    {
+      "grid": "full",
+      "width": 94,
+      "slots": 284,
+      "exact": 190,
+      "max_abs": 67.546875,
+      "rmse": 19.518056593365774
+    },
+    {
+      "grid": "full",
+      "width": 95,
+      "slots": 287,
+      "exact": 192,
+      "max_abs": 65.5078125,
+      "rmse": 18.787088518222895
+    },
+    {
+      "grid": "full",
+      "width": 96,
+      "slots": 290,
+      "exact": 194,
+      "max_abs": 63.5,
+      "rmse": 18.072796168585704
+    },
+    {
+      "grid": "full",
+      "width": 97,
+      "slots": 293,
+      "exact": 196,
+      "max_abs": 61.5234375,
+      "rmse": 17.375050771589446
+    },
+    {
+      "grid": "full",
+      "width": 98,
+      "slots": 296,
+      "exact": 198,
+      "max_abs": 59.578125,
+      "rmse": 16.693722544319066
+    },
+    {
+      "grid": "full",
+      "width": 99,
+      "slots": 299,
+      "exact": 200,
+      "max_abs": 57.6640625,
+      "rmse": 16.028680669661828
+    },
+    {
+      "grid": "full",
+      "width": 100,
+      "slots": 302,
+      "exact": 202,
+      "max_abs": 55.78125,
+      "rmse": 15.37979327118219
+    },
+    {
+      "grid": "full",
+      "width": 101,
+      "slots": 305,
+      "exact": 204,
+      "max_abs": 53.9296875,
+      "rmse": 14.74692738696251
+    },
+    {
+      "grid": "full",
+      "width": 102,
+      "slots": 308,
+      "exact": 206,
+      "max_abs": 52.109375,
+      "rmse": 14.12994894234904
+    },
+    {
+      "grid": "full",
+      "width": 103,
+      "slots": 311,
+      "exact": 208,
+      "max_abs": 50.3203125,
+      "rmse": 13.52872272153799
+    },
+    {
+      "grid": "full",
+      "width": 104,
+      "slots": 314,
+      "exact": 210,
+      "max_abs": 48.5625,
+      "rmse": 12.943112337931291
+    },
+    {
+      "grid": "full",
+      "width": 105,
+      "slots": 317,
+      "exact": 212,
+      "max_abs": 46.8359375,
+      "rmse": 12.372980203186215
+    },
+    {
+      "grid": "full",
+      "width": 106,
+      "slots": 320,
+      "exact": 214,
+      "max_abs": 45.140625,
+      "rmse": 11.818187494876806
+    },
+    {
+      "grid": "full",
+      "width": 107,
+      "slots": 323,
+      "exact": 216,
+      "max_abs": 43.4765625,
+      "rmse": 11.278594122678347
+    },
+    {
+      "grid": "full",
+      "width": 108,
+      "slots": 326,
+      "exact": 218,
+      "max_abs": 41.84375,
+      "rmse": 10.7540586929787
+    },
+    {
+      "grid": "full",
+      "width": 109,
+      "slots": 329,
+      "exact": 220,
+      "max_abs": 40.2421875,
+      "rmse": 10.244438471812053
+    },
+    {
+      "grid": "full",
+      "width": 110,
+      "slots": 332,
+      "exact": 222,
+      "max_abs": 38.671875,
+      "rmse": 9.749589346001645
+    },
+    {
+      "grid": "full",
+      "width": 111,
+      "slots": 335,
+      "exact": 224,
+      "max_abs": 37.1328125,
+      "rmse": 9.269365782387863
+    },
+    {
+      "grid": "full",
+      "width": 112,
+      "slots": 338,
+      "exact": 226,
+      "max_abs": 35.625,
+      "rmse": 8.803620785006995
+    },
+    {
+      "grid": "full",
+      "width": 113,
+      "slots": 341,
+      "exact": 228,
+      "max_abs": 34.1484375,
+      "rmse": 8.352205850073444
+    },
+    {
+      "grid": "full",
+      "width": 114,
+      "slots": 344,
+      "exact": 230,
+      "max_abs": 32.703125,
+      "rmse": 7.914970918604376
+    },
+    {
+      "grid": "full",
+      "width": 115,
+      "slots": 347,
+      "exact": 232,
+      "max_abs": 31.2890625,
+      "rmse": 7.491764326510179
+    },
+    {
+      "grid": "full",
+      "width": 116,
+      "slots": 350,
+      "exact": 234,
+      "max_abs": 29.90625,
+      "rmse": 7.082432751956848
+    },
+    {
+      "grid": "full",
+      "width": 117,
+      "slots": 353,
+      "exact": 236,
+      "max_abs": 28.5546875,
+      "rmse": 6.686821159786812
+    },
+    {
+      "grid": "full",
+      "width": 118,
+      "slots": 356,
+      "exact": 238,
+      "max_abs": 27.234375,
+      "rmse": 6.304772742762783
+    },
+    {
+      "grid": "full",
+      "width": 119,
+      "slots": 359,
+      "exact": 240,
+      "max_abs": 25.9453125,
+      "rmse": 5.936128859374419
+    },
+    {
+      "grid": "full",
+      "width": 120,
+      "slots": 362,
+      "exact": 242,
+      "max_abs": 24.6875,
+      "rmse": 5.580728967919529
+    },
+    {
+      "grid": "full",
+      "width": 121,
+      "slots": 365,
+      "exact": 244,
+      "max_abs": 23.4609375,
+      "rmse": 5.2384105565396775
+    },
+    {
+      "grid": "full",
+      "width": 122,
+      "slots": 368,
+      "exact": 246,
+      "max_abs": 22.265625,
+      "rmse": 4.909009068853813
+    },
+    {
+      "grid": "full",
+      "width": 123,
+      "slots": 371,
+      "exact": 248,
+      "max_abs": 21.1015625,
+      "rmse": 4.592357824792099
+    },
+    {
+      "grid": "full",
+      "width": 124,
+      "slots": 374,
+      "exact": 250,
+      "max_abs": 19.96875,
+      "rmse": 4.2882879361847115
+    },
+    {
+      "grid": "full",
+      "width": 125,
+      "slots": 377,
+      "exact": 252,
+      "max_abs": 18.8671875,
+      "rmse": 3.9966282166057643
+    },
+    {
+      "grid": "full",
+      "width": 126,
+      "slots": 380,
+      "exact": 254,
+      "max_abs": 17.796875,
+      "rmse": 3.7172050849096077
+    },
+    {
+      "grid": "full",
+      "width": 127,
+      "slots": 383,
+      "exact": 256,
+      "max_abs": 16.7578125,
+      "rmse": 3.4498424618237795
+    },
+    {
+      "grid": "full",
+      "width": 128,
+      "slots": 386,
+      "exact": 258,
+      "max_abs": 15.75,
+      "rmse": 3.1943616588780737
+    },
+    {
+      "grid": "full",
+      "width": 129,
+      "slots": 389,
+      "exact": 260,
+      "max_abs": 14.7734375,
+      "rmse": 2.950581258850092
+    },
+    {
+      "grid": "full",
+      "width": 130,
+      "slots": 392,
+      "exact": 262,
+      "max_abs": 13.828125,
+      "rmse": 2.7183169867913755
+    },
+    {
+      "grid": "full",
+      "width": 131,
+      "slots": 395,
+      "exact": 264,
+      "max_abs": 12.9140625,
+      "rmse": 2.497381570561113
+    },
+    {
+      "grid": "full",
+      "width": 132,
+      "slots": 398,
+      "exact": 266,
+      "max_abs": 12.03125,
+      "rmse": 2.2875845896319493
+    },
+    {
+      "grid": "full",
+      "width": 133,
+      "slots": 401,
+      "exact": 268,
+      "max_abs": 11.1796875,
+      "rmse": 2.0887323107388265
+    },
+    {
+      "grid": "full",
+      "width": 134,
+      "slots": 404,
+      "exact": 270,
+      "max_abs": 10.359375,
+      "rmse": 1.900627508709766
+    },
+    {
+      "grid": "full",
+      "width": 135,
+      "slots": 407,
+      "exact": 272,
+      "max_abs": 9.5703125,
+      "rmse": 1.7230692705377109
+    },
+    {
+      "grid": "full",
+      "width": 136,
+      "slots": 410,
+      "exact": 274,
+      "max_abs": 8.8125,
+      "rmse": 1.555852780412895
+    },
+    {
+      "grid": "full",
+      "width": 137,
+      "slots": 413,
+      "exact": 276,
+      "max_abs": 8.0859375,
+      "rmse": 1.3987690830199393
+    },
+    {
+      "grid": "full",
+      "width": 138,
+      "slots": 416,
+      "exact": 278,
+      "max_abs": 7.390625,
+      "rmse": 1.2516048218922757
+    },
+    {
+      "grid": "full",
+      "width": 139,
+      "slots": 419,
+      "exact": 280,
+      "max_abs": 6.7265625,
+      "rmse": 1.1141419489809496
+    },
+    {
+      "grid": "full",
+      "width": 140,
+      "slots": 422,
+      "exact": 282,
+      "max_abs": 6.09375,
+      "rmse": 0.9861574007982413
+    },
+    {
+      "grid": "full",
+      "width": 141,
+      "slots": 425,
+      "exact": 284,
+      "max_abs": 5.4921875,
+      "rmse": 0.8674227354882732
+    },
+    {
+      "grid": "full",
+      "width": 142,
+      "slots": 428,
+      "exact": 286,
+      "max_abs": 4.921875,
+      "rmse": 0.7577037238869642
+    },
+    {
+      "grid": "full",
+      "width": 143,
+      "slots": 431,
+      "exact": 288,
+      "max_abs": 4.3828125,
+      "rmse": 0.6567598859644316
+    },
+    {
+      "grid": "full",
+      "width": 144,
+      "slots": 434,
+      "exact": 290,
+      "max_abs": 3.875,
+      "rmse": 0.5643439618547641
+    },
+    {
+      "grid": "full",
+      "width": 145,
+      "slots": 437,
+      "exact": 292,
+      "max_abs": 3.3984375,
+      "rmse": 0.48020130376880255
+    },
+    {
+      "grid": "full",
+      "width": 146,
+      "slots": 440,
+      "exact": 294,
+      "max_abs": 2.953125,
+      "rmse": 0.4040691711561959
+    },
+    {
+      "grid": "full",
+      "width": 147,
+      "slots": 443,
+      "exact": 296,
+      "max_abs": 2.5390625,
+      "rmse": 0.3356759060817046
+    },
+    {
+      "grid": "full",
+      "width": 148,
+      "slots": 446,
+      "exact": 298,
+      "max_abs": 2.15625,
+      "rmse": 0.2747399582075811
+    },
+    {
+      "grid": "full",
+      "width": 149,
+      "slots": 449,
+      "exact": 300,
+      "max_abs": 1.8046875,
+      "rmse": 0.22096871791416908
+    },
+    {
+      "grid": "full",
+      "width": 150,
+      "slots": 452,
+      "exact": 302,
+      "max_abs": 1.484375,
+      "rmse": 0.17405710011227282
+    },
+    {
+      "grid": "full",
+      "width": 151,
+      "slots": 455,
+      "exact": 304,
+      "max_abs": 1.1953125,
+      "rmse": 0.13368579707968023
+    },
+    {
+      "grid": "full",
+      "width": 152,
+      "slots": 458,
+      "exact": 306,
+      "max_abs": 0.9375,
+      "rmse": 0.09951908063500253
+    },
+    {
+      "grid": "full",
+      "width": 153,
+      "slots": 461,
+      "exact": 308,
+      "max_abs": 0.7109375,
+      "rmse": 0.07120197175797535
+    },
+    {
+      "grid": "full",
+      "width": 154,
+      "slots": 464,
+      "exact": 310,
+      "max_abs": 0.515625,
+      "rmse": 0.04835648875660434
+    },
+    {
+      "grid": "full",
+      "width": 155,
+      "slots": 467,
+      "exact": 312,
+      "max_abs": 0.3515625,
+      "rmse": 0.030576489210910943
+    },
+    {
+      "grid": "full",
+      "width": 156,
+      "slots": 470,
+      "exact": 314,
+      "max_abs": 0.21875,
+      "rmse": 0.017420232925736554
+    },
+    {
+      "grid": "full",
+      "width": 157,
+      "slots": 473,
+      "exact": 316,
+      "max_abs": 0.1171875,
+      "rmse": 0.008398939810107024
+    },
+    {
+      "grid": "full",
+      "width": 158,
+      "slots": 476,
+      "exact": 318,
+      "max_abs": 0.046875,
+      "rmse": 0.002957443319676063
+    },
+    {
+      "grid": "full",
+      "width": 159,
+      "slots": 479,
+      "exact": 320,
+      "max_abs": 0.0078125,
+      "rmse": 0.0004360512282702715,
+      "configuration": {
+        "initial_sha256": "e6b7340abe6efde76916a0846843c2af6305d00fbfa8f07711b14dfdd919c9d5",
+        "final_sha256": "ec0cd0d15c3b49f0890590b6ec3aa431b7d3c8ff58c325eb8ae91f11df91f3e0",
+        "edits": 479,
+        "max_abs_coefficient": 99.375
+      },
+      "transfer": {
+        "inner": {
+          "n": 97,
+          "exact": 97,
+          "max_abs": 0.0,
+          "rmse": 0.0
+        },
+        "outer": {
+          "n": 224,
+          "exact": 223,
+          "max_abs": 0.0078125,
+          "rmse": 0.0005219946131102039
+        },
+        "full_midpoints": {
+          "n": 320,
+          "exact": 0,
+          "max_abs": 0.0029296875,
+          "rmse": 0.0021836601342771385
+        },
+        "iid_outer": {
+          "n": 4096,
+          "exact": 0,
+          "max_abs": 0.007795721168406544,
+          "rmse": 0.0012166636714131915
+        }
+      }
+    },
+    {
+      "grid": "full",
+      "width": 160,
+      "slots": 482,
+      "exact": 321,
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "configuration": {
+        "initial_sha256": "6d2a892c26099f12a2908fc2189a4a43591600f06a2a2402ed0388235e3758ec",
+        "final_sha256": "31460235897a58105b6b2c40ff2797d0cdc6dcb2511e660eb9615fcd26f5614f",
+        "edits": 482,
+        "max_abs_coefficient": 99.375
+      },
+      "transfer": {
+        "inner": {
+          "n": 97,
+          "exact": 97,
+          "max_abs": 0.0,
+          "rmse": 0.0
+        },
+        "outer": {
+          "n": 224,
+          "exact": 224,
+          "max_abs": 0.0,
+          "rmse": 0.0
+        },
+        "full_midpoints": {
+          "n": 320,
+          "exact": 0,
+          "max_abs": 0.0029296875,
+          "rmse": 0.002178194142890182
+        },
+        "iid_outer": {
+          "n": 4096,
+          "exact": 0,
+          "max_abs": 0.002926419520790091,
+          "rmse": 0.0011727269003952304
+        }
+      }
+    },
+    {
+      "grid": "inner",
+      "width": 0,
+      "slots": 2,
+      "exact": 2,
+      "max_abs": 35.625,
+      "rmse": 16.01503809900245
+    },
+    {
+      "grid": "inner",
+      "width": 1,
+      "slots": 5,
+      "exact": 4,
+      "max_abs": 34.1484375,
+      "rmse": 15.19385014032395
+    },
+    {
+      "grid": "inner",
+      "width": 2,
+      "slots": 8,
+      "exact": 6,
+      "max_abs": 32.703125,
+      "rmse": 14.398457624369925
+    },
+    {
+      "grid": "inner",
+      "width": 3,
+      "slots": 11,
+      "exact": 8,
+      "max_abs": 31.2890625,
+      "rmse": 13.628584652594462
+    },
+    {
+      "grid": "inner",
+      "width": 4,
+      "slots": 14,
+      "exact": 10,
+      "max_abs": 29.90625,
+      "rmse": 12.883952310778861
+    },
+    {
+      "grid": "inner",
+      "width": 5,
+      "slots": 17,
+      "exact": 12,
+      "max_abs": 28.5546875,
+      "rmse": 12.164278567925216
+    },
+    {
+      "grid": "inner",
+      "width": 6,
+      "slots": 20,
+      "exact": 14,
+      "max_abs": 27.234375,
+      "rmse": 11.469278169370618
+    },
+    {
+      "grid": "inner",
+      "width": 7,
+      "slots": 23,
+      "exact": 16,
+      "max_abs": 25.9453125,
+      "rmse": 10.798662523648643
+    },
+    {
+      "grid": "inner",
+      "width": 8,
+      "slots": 26,
+      "exact": 18,
+      "max_abs": 24.6875,
+      "rmse": 10.15213958257368
+    },
+    {
+      "grid": "inner",
+      "width": 9,
+      "slots": 29,
+      "exact": 20,
+      "max_abs": 23.4609375,
+      "rmse": 9.529413713965749
+    },
+    {
+      "grid": "inner",
+      "width": 10,
+      "slots": 32,
+      "exact": 22,
+      "max_abs": 22.265625,
+      "rmse": 8.930185566367497
+    },
+    {
+      "grid": "inner",
+      "width": 11,
+      "slots": 35,
+      "exact": 24,
+      "max_abs": 21.1015625,
+      "rmse": 8.354151925029681
+    },
+    {
+      "grid": "inner",
+      "width": 12,
+      "slots": 38,
+      "exact": 26,
+      "max_abs": 19.96875,
+      "rmse": 7.801005558355179
+    },
+    {
+      "grid": "inner",
+      "width": 13,
+      "slots": 41,
+      "exact": 28,
+      "max_abs": 18.8671875,
+      "rmse": 7.270435053892281
+    },
+    {
+      "grid": "inner",
+      "width": 14,
+      "slots": 44,
+      "exact": 30,
+      "max_abs": 17.796875,
+      "rmse": 6.762124642853492
+    },
+    {
+      "grid": "inner",
+      "width": 15,
+      "slots": 47,
+      "exact": 32,
+      "max_abs": 16.7578125,
+      "rmse": 6.275754012003407
+    },
+    {
+      "grid": "inner",
+      "width": 16,
+      "slots": 50,
+      "exact": 34,
+      "max_abs": 15.75,
+      "rmse": 5.810998101604893
+    },
+    {
+      "grid": "inner",
+      "width": 17,
+      "slots": 53,
+      "exact": 36,
+      "max_abs": 14.7734375,
+      "rmse": 5.367526887932542
+    },
+    {
+      "grid": "inner",
+      "width": 18,
+      "slots": 56,
+      "exact": 38,
+      "max_abs": 13.828125,
+      "rmse": 4.945005148650872
+    },
+    {
+      "grid": "inner",
+      "width": 19,
+      "slots": 59,
+      "exact": 40,
+      "max_abs": 12.9140625,
+      "rmse": 4.543092209105304
+    },
+    {
+      "grid": "inner",
+      "width": 20,
+      "slots": 62,
+      "exact": 42,
+      "max_abs": 12.03125,
+      "rmse": 4.161441667278431
+    },
+    {
+      "grid": "inner",
+      "width": 21,
+      "slots": 65,
+      "exact": 44,
+      "max_abs": 11.1796875,
+      "rmse": 3.7997010948118835
+    },
+    {
+      "grid": "inner",
+      "width": 22,
+      "slots": 68,
+      "exact": 46,
+      "max_abs": 10.359375,
+      "rmse": 3.4575117110720517
+    },
+    {
+      "grid": "inner",
+      "width": 23,
+      "slots": 71,
+      "exact": 48,
+      "max_abs": 9.5703125,
+      "rmse": 3.1345080267288994
+    },
+    {
+      "grid": "inner",
+      "width": 24,
+      "slots": 74,
+      "exact": 50,
+      "max_abs": 8.8125,
+      "rmse": 2.8303174526992767
+    },
+    {
+      "grid": "inner",
+      "width": 25,
+      "slots": 77,
+      "exact": 52,
+      "max_abs": 8.0859375,
+      "rmse": 2.5445598695506795
+    },
+    {
+      "grid": "inner",
+      "width": 26,
+      "slots": 80,
+      "exact": 54,
+      "max_abs": 7.390625,
+      "rmse": 2.276847151530738
+    },
+    {
+      "grid": "inner",
+      "width": 27,
+      "slots": 83,
+      "exact": 56,
+      "max_abs": 6.7265625,
+      "rmse": 2.0267826382315692
+    },
+    {
+      "grid": "inner",
+      "width": 28,
+      "slots": 86,
+      "exact": 58,
+      "max_abs": 6.09375,
+      "rmse": 1.793960545448973
+    },
+    {
+      "grid": "inner",
+      "width": 29,
+      "slots": 89,
+      "exact": 60,
+      "max_abs": 5.4921875,
+      "rmse": 1.5779653049622562
+    },
+    {
+      "grid": "inner",
+      "width": 30,
+      "slots": 92,
+      "exact": 62,
+      "max_abs": 4.921875,
+      "rmse": 1.3783708206141372
+    },
+    {
+      "grid": "inner",
+      "width": 31,
+      "slots": 95,
+      "exact": 64,
+      "max_abs": 4.3828125,
+      "rmse": 1.194739625033556
+    },
+    {
+      "grid": "inner",
+      "width": 32,
+      "slots": 98,
+      "exact": 66,
+      "max_abs": 3.875,
+      "rmse": 1.0266219173636126
+    },
+    {
+      "grid": "inner",
+      "width": 33,
+      "slots": 101,
+      "exact": 68,
+      "max_abs": 3.3984375,
+      "rmse": 0.873554457064442
+    },
+    {
+      "grid": "inner",
+      "width": 34,
+      "slots": 104,
+      "exact": 70,
+      "max_abs": 2.953125,
+      "rmse": 0.7350592817127661
+    },
+    {
+      "grid": "inner",
+      "width": 35,
+      "slots": 107,
+      "exact": 72,
+      "max_abs": 2.5390625,
+      "rmse": 0.6106422068941258
+    },
+    {
+      "grid": "inner",
+      "width": 36,
+      "slots": 110,
+      "exact": 74,
+      "max_abs": 2.15625,
+      "rmse": 0.49979105250718237
+    },
+    {
+      "grid": "inner",
+      "width": 37,
+      "slots": 113,
+      "exact": 76,
+      "max_abs": 1.8046875,
+      "rmse": 0.4019735200441543
+    },
+    {
+      "grid": "inner",
+      "width": 38,
+      "slots": 116,
+      "exact": 78,
+      "max_abs": 1.484375,
+      "rmse": 0.316634616344134
+    },
+    {
+      "grid": "inner",
+      "width": 39,
+      "slots": 119,
+      "exact": 80,
+      "max_abs": 1.1953125,
+      "rmse": 0.24319347525427157
+    },
+    {
+      "grid": "inner",
+      "width": 40,
+      "slots": 122,
+      "exact": 82,
+      "max_abs": 0.9375,
+      "rmse": 0.18103935947145597
+    },
+    {
+      "grid": "inner",
+      "width": 41,
+      "slots": 125,
+      "exact": 84,
+      "max_abs": 0.7109375,
+      "rmse": 0.12952651167915633
+    },
+    {
+      "grid": "inner",
+      "width": 42,
+      "slots": 128,
+      "exact": 86,
+      "max_abs": 0.515625,
+      "rmse": 0.08796732942994281
+    },
+    {
+      "grid": "inner",
+      "width": 43,
+      "slots": 131,
+      "exact": 88,
+      "max_abs": 0.3515625,
+      "rmse": 0.055622981907675055
+    },
+    {
+      "grid": "inner",
+      "width": 44,
+      "slots": 134,
+      "exact": 90,
+      "max_abs": 0.21875,
+      "rmse": 0.03168988088109092
+    },
+    {
+      "grid": "inner",
+      "width": 45,
+      "slots": 137,
+      "exact": 92,
+      "max_abs": 0.1171875,
+      "rmse": 0.015278865859280141
+    },
+    {
+      "grid": "inner",
+      "width": 46,
+      "slots": 140,
+      "exact": 94,
+      "max_abs": 0.046875,
+      "rmse": 0.00538000995237266
+    },
+    {
+      "grid": "inner",
+      "width": 47,
+      "slots": 143,
+      "exact": 96,
+      "max_abs": 0.0078125,
+      "rmse": 0.0007932391915106399,
+      "configuration": {
+        "initial_sha256": "3ca14095734d7b1e87f3d7f2042c58a2cd8931824c0b5c2a3ce8298dad0b5c97",
+        "final_sha256": "2d1b5177c407458903a7bfa903a8f27665ad2b566088a2bf4d3ef2a6a7abf0fa",
+        "edits": 143,
+        "max_abs_coefficient": 8.8125
+      },
+      "transfer": {
+        "full": {
+          "n": 321,
+          "exact": 96,
+          "max_abs": 50.3203125,
+          "rmse": 18.925232085940966
+        },
+        "outer": {
+          "n": 224,
+          "exact": 0,
+          "max_abs": 50.3203125,
+          "rmse": 22.655294969095387
+        },
+        "full_midpoints": {
+          "n": 320,
+          "exact": 0,
+          "max_abs": 49.8779296875,
+          "rmse": 18.74672123533874
+        },
+        "iid_outer": {
+          "n": 4096,
+          "exact": 0,
+          "max_abs": 50.31904230325296,
+          "rmse": 22.29580605906378
+        }
+      }
+    },
+    {
+      "grid": "inner",
+      "width": 48,
+      "slots": 146,
+      "exact": 97,
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "configuration": {
+        "initial_sha256": "675251bc88b7ad904bc8a105826e2a4d345170723343f8f96ce9b2bb6e0d6aad",
+        "final_sha256": "ea2bebe05d2f6ee67a902628d8204a8297a937d8fd976e5b28b3aefdc6671ca8",
+        "edits": 146,
+        "max_abs_coefficient": 8.8125
+      },
+      "transfer": {
+        "full": {
+          "n": 321,
+          "exact": 97,
+          "max_abs": 49.4375,
+          "rmse": 18.71566568575487
+        },
+        "outer": {
+          "n": 224,
+          "exact": 0,
+          "max_abs": 49.4375,
+          "rmse": 22.404424148715513
+        },
+        "full_midpoints": {
+          "n": 320,
+          "exact": 0,
+          "max_abs": 48.9990234375,
+          "rmse": 18.538208044064245
+        },
+        "iid_outer": {
+          "n": 4096,
+          "exact": 0,
+          "max_abs": 49.43624099448434,
+          "rmse": 22.051799704200697
+        }
+      }
+    },
+    {
+      "grid": "outer",
+      "width": 0,
+      "slots": 2,
+      "exact": 2,
+      "max_abs": 398.75,
+      "rmse": 201.59141893743637
+    },
+    {
+      "grid": "outer",
+      "width": 1,
+      "slots": 5,
+      "exact": 4,
+      "max_abs": 393.7734375,
+      "rmse": 198.6416020909507
+    },
+    {
+      "grid": "outer",
+      "width": 2,
+      "slots": 8,
+      "exact": 6,
+      "max_abs": 388.828125,
+      "rmse": 195.71613321416822
+    },
+    {
+      "grid": "outer",
+      "width": 3,
+      "slots": 11,
+      "exact": 8,
+      "max_abs": 383.9140625,
+      "rmse": 192.81493132061465
+    },
+    {
+      "grid": "outer",
+      "width": 4,
+      "slots": 14,
+      "exact": 10,
+      "max_abs": 379.03125,
+      "rmse": 189.937916233889
+    },
+    {
+      "grid": "outer",
+      "width": 5,
+      "slots": 17,
+      "exact": 12,
+      "max_abs": 374.1796875,
+      "rmse": 187.08500861448366
+    },
+    {
+      "grid": "outer",
+      "width": 6,
+      "slots": 20,
+      "exact": 14,
+      "max_abs": 369.359375,
+      "rmse": 184.2561299871342
+    },
+    {
+      "grid": "outer",
+      "width": 7,
+      "slots": 23,
+      "exact": 16,
+      "max_abs": 364.5703125,
+      "rmse": 181.45120276869497
+    },
+    {
+      "grid": "outer",
+      "width": 8,
+      "slots": 26,
+      "exact": 18,
+      "max_abs": 359.8125,
+      "rmse": 178.67015029653362
+    },
+    {
+      "grid": "outer",
+      "width": 9,
+      "slots": 29,
+      "exact": 20,
+      "max_abs": 355.0859375,
+      "rmse": 175.91289685743567
+    },
+    {
+      "grid": "outer",
+      "width": 10,
+      "slots": 32,
+      "exact": 22,
+      "max_abs": 350.390625,
+      "rmse": 173.17936771700764
+    },
+    {
+      "grid": "outer",
+      "width": 11,
+      "slots": 35,
+      "exact": 24,
+      "max_abs": 345.7265625,
+      "rmse": 170.46948914956434
+    },
+    {
+      "grid": "outer",
+      "width": 12,
+      "slots": 38,
+      "exact": 26,
+      "max_abs": 341.09375,
+      "rmse": 167.7831884684825
+    },
+    {
+      "grid": "outer",
+      "width": 13,
+      "slots": 41,
+      "exact": 28,
+      "max_abs": 336.4921875,
+      "rmse": 165.12039405699957
+    },
+    {
+      "grid": "outer",
+      "width": 14,
+      "slots": 44,
+      "exact": 30,
+      "max_abs": 331.921875,
+      "rmse": 162.48103539943187
+    },
+    {
+      "grid": "outer",
+      "width": 15,
+      "slots": 47,
+      "exact": 32,
+      "max_abs": 327.3828125,
+      "rmse": 159.86504311278225
+    },
+    {
+      "grid": "outer",
+      "width": 16,
+      "slots": 50,
+      "exact": 34,
+      "max_abs": 322.875,
+      "rmse": 157.27234897870147
+    },
+    {
+      "grid": "outer",
+      "width": 17,
+      "slots": 53,
+      "exact": 36,
+      "max_abs": 318.3984375,
+      "rmse": 154.70288597576237
+    },
+    {
+      "grid": "outer",
+      "width": 18,
+      "slots": 56,
+      "exact": 38,
+      "max_abs": 313.953125,
+      "rmse": 152.1565883119991
+    },
+    {
+      "grid": "outer",
+      "width": 19,
+      "slots": 59,
+      "exact": 40,
+      "max_abs": 309.5390625,
+      "rmse": 149.63339145765576
+    },
+    {
+      "grid": "outer",
+      "width": 20,
+      "slots": 62,
+      "exact": 42,
+      "max_abs": 305.15625,
+      "rmse": 147.13323217808215
+    },
+    {
+      "grid": "outer",
+      "width": 21,
+      "slots": 65,
+      "exact": 44,
+      "max_abs": 300.8046875,
+      "rmse": 144.65604856670313
+    },
+    {
+      "grid": "outer",
+      "width": 22,
+      "slots": 68,
+      "exact": 46,
+      "max_abs": 296.484375,
+      "rmse": 142.20178007797938
+    },
+    {
+      "grid": "outer",
+      "width": 23,
+      "slots": 71,
+      "exact": 48,
+      "max_abs": 292.1953125,
+      "rmse": 139.77036756026573
+    },
+    {
+      "grid": "outer",
+      "width": 24,
+      "slots": 74,
+      "exact": 50,
+      "max_abs": 287.9375,
+      "rmse": 137.36175328845906
+    },
+    {
+      "grid": "outer",
+      "width": 25,
+      "slots": 77,
+      "exact": 52,
+      "max_abs": 283.7109375,
+      "rmse": 134.9758809963156
+    },
+    {
+      "grid": "outer",
+      "width": 26,
+      "slots": 80,
+      "exact": 54,
+      "max_abs": 279.515625,
+      "rmse": 132.61269590829932
+    },
+    {
+      "grid": "outer",
+      "width": 27,
+      "slots": 83,
+      "exact": 56,
+      "max_abs": 275.3515625,
+      "rmse": 130.27214477080676
+    },
+    {
+      "grid": "outer",
+      "width": 28,
+      "slots": 86,
+      "exact": 58,
+      "max_abs": 271.21875,
+      "rmse": 127.95417588259266
+    },
+    {
+      "grid": "outer",
+      "width": 29,
+      "slots": 89,
+      "exact": 60,
+      "max_abs": 267.1171875,
+      "rmse": 125.65873912419906
+    },
+    {
+      "grid": "outer",
+      "width": 30,
+      "slots": 92,
+      "exact": 62,
+      "max_abs": 263.046875,
+      "rmse": 123.38578598616505
+    },
+    {
+      "grid": "outer",
+      "width": 31,
+      "slots": 95,
+      "exact": 64,
+      "max_abs": 259.0078125,
+      "rmse": 121.13526959576663
+    },
+    {
+      "grid": "outer",
+      "width": 32,
+      "slots": 98,
+      "exact": 66,
+      "max_abs": 255.0,
+      "rmse": 118.90714474200509
+    },
+    {
+      "grid": "outer",
+      "width": 33,
+      "slots": 101,
+      "exact": 68,
+      "max_abs": 251.0234375,
+      "rmse": 116.70136789852714
+    },
+    {
+      "grid": "outer",
+      "width": 34,
+      "slots": 104,
+      "exact": 70,
+      "max_abs": 247.078125,
+      "rmse": 114.51789724412114
+    },
+    {
+      "grid": "outer",
+      "width": 35,
+      "slots": 107,
+      "exact": 72,
+      "max_abs": 243.1640625,
+      "rmse": 112.35669268039035
+    },
+    {
+      "grid": "outer",
+      "width": 36,
+      "slots": 110,
+      "exact": 74,
+      "max_abs": 239.28125,
+      "rmse": 110.21771584615524
+    },
+    {
+      "grid": "outer",
+      "width": 37,
+      "slots": 113,
+      "exact": 76,
+      "max_abs": 235.4296875,
+      "rmse": 108.10093012808233
+    },
+    {
+      "grid": "outer",
+      "width": 38,
+      "slots": 116,
+      "exact": 78,
+      "max_abs": 231.609375,
+      "rmse": 106.00630066697646
+    },
+    {
+      "grid": "outer",
+      "width": 39,
+      "slots": 119,
+      "exact": 80,
+      "max_abs": 227.8203125,
+      "rmse": 103.93379435910497
+    },
+    {
+      "grid": "outer",
+      "width": 40,
+      "slots": 122,
+      "exact": 82,
+      "max_abs": 224.0625,
+      "rmse": 101.88337985184617
+    },
+    {
+      "grid": "outer",
+      "width": 41,
+      "slots": 125,
+      "exact": 84,
+      "max_abs": 220.3359375,
+      "rmse": 99.85502753286931
+    },
+    {
+      "grid": "outer",
+      "width": 42,
+      "slots": 128,
+      "exact": 86,
+      "max_abs": 216.640625,
+      "rmse": 97.84870951195789
+    },
+    {
+      "grid": "outer",
+      "width": 43,
+      "slots": 131,
+      "exact": 88,
+      "max_abs": 212.9765625,
+      "rmse": 95.86439959448148
+    },
+    {
+      "grid": "outer",
+      "width": 44,
+      "slots": 134,
+      "exact": 90,
+      "max_abs": 209.34375,
+      "rmse": 93.90207324540182
+    },
+    {
+      "grid": "outer",
+      "width": 45,
+      "slots": 137,
+      "exact": 92,
+      "max_abs": 205.7421875,
+      "rmse": 91.96170754256516
+    },
+    {
+      "grid": "outer",
+      "width": 46,
+      "slots": 140,
+      "exact": 94,
+      "max_abs": 202.171875,
+      "rmse": 90.04328111788367
+    },
+    {
+      "grid": "outer",
+      "width": 47,
+      "slots": 143,
+      "exact": 96,
+      "max_abs": 198.6328125,
+      "rmse": 88.14677408484042
+    },
+    {
+      "grid": "outer",
+      "width": 48,
+      "slots": 146,
+      "exact": 98,
+      "max_abs": 195.125,
+      "rmse": 86.27216795056576
+    },
+    {
+      "grid": "outer",
+      "width": 49,
+      "slots": 149,
+      "exact": 100,
+      "max_abs": 191.6484375,
+      "rmse": 84.41944551052177
+    },
+    {
+      "grid": "outer",
+      "width": 50,
+      "slots": 152,
+      "exact": 102,
+      "max_abs": 188.203125,
+      "rmse": 82.58859072359685
+    },
+    {
+      "grid": "outer",
+      "width": 51,
+      "slots": 155,
+      "exact": 104,
+      "max_abs": 184.7890625,
+      "rmse": 80.77958856514766
+    },
+    {
+      "grid": "outer",
+      "width": 52,
+      "slots": 158,
+      "exact": 106,
+      "max_abs": 181.40625,
+      "rmse": 78.99242485523075
+    },
+    {
+      "grid": "outer",
+      "width": 53,
+      "slots": 161,
+      "exact": 108,
+      "max_abs": 178.0546875,
+      "rmse": 77.22708605893345
+    },
+    {
+      "grid": "outer",
+      "width": 54,
+      "slots": 164,
+      "exact": 110,
+      "max_abs": 174.734375,
+      "rmse": 75.48355905534203
+    },
+    {
+      "grid": "outer",
+      "width": 55,
+      "slots": 167,
+      "exact": 112,
+      "max_abs": 171.4453125,
+      "rmse": 73.76183087126732
+    },
+    {
+      "grid": "outer",
+      "width": 56,
+      "slots": 170,
+      "exact": 114,
+      "max_abs": 47.6953125,
+      "rmse": 15.150574303748305
+    },
+    {
+      "grid": "outer",
+      "width": 57,
+      "slots": 173,
+      "exact": 116,
+      "max_abs": 45.984375,
+      "rmse": 14.477274388352454
+    },
+    {
+      "grid": "outer",
+      "width": 58,
+      "slots": 176,
+      "exact": 118,
+      "max_abs": 44.3046875,
+      "rmse": 13.822253560636351
+    },
+    {
+      "grid": "outer",
+      "width": 59,
+      "slots": 179,
+      "exact": 120,
+      "max_abs": 42.65625,
+      "rmse": 13.185343344553813
+    },
+    {
+      "grid": "outer",
+      "width": 60,
+      "slots": 182,
+      "exact": 122,
+      "max_abs": 41.0390625,
+      "rmse": 12.56637368197354
+    },
+    {
+      "grid": "outer",
+      "width": 61,
+      "slots": 185,
+      "exact": 124,
+      "max_abs": 39.453125,
+      "rmse": 11.965172887252992
+    },
+    {
+      "grid": "outer",
+      "width": 62,
+      "slots": 188,
+      "exact": 126,
+      "max_abs": 37.8984375,
+      "rmse": 11.381567599595845
+    },
+    {
+      "grid": "outer",
+      "width": 63,
+      "slots": 191,
+      "exact": 128,
+      "max_abs": 36.375,
+      "rmse": 10.815382733038595
+    },
+    {
+      "grid": "outer",
+      "width": 64,
+      "slots": 194,
+      "exact": 130,
+      "max_abs": 34.8828125,
+      "rmse": 10.266441423897751
+    },
+    {
+      "grid": "outer",
+      "width": 65,
+      "slots": 197,
+      "exact": 132,
+      "max_abs": 33.421875,
+      "rmse": 9.73456497549338
+    },
+    {
+      "grid": "outer",
+      "width": 66,
+      "slots": 200,
+      "exact": 134,
+      "max_abs": 31.9921875,
+      "rmse": 9.219572799947153
+    },
+    {
+      "grid": "outer",
+      "width": 67,
+      "slots": 203,
+      "exact": 136,
+      "max_abs": 30.59375,
+      "rmse": 8.721282356833449
+    },
+    {
+      "grid": "outer",
+      "width": 68,
+      "slots": 206,
+      "exact": 138,
+      "max_abs": 29.2265625,
+      "rmse": 8.239509088439974
+    },
+    {
+      "grid": "outer",
+      "width": 69,
+      "slots": 209,
+      "exact": 140,
+      "max_abs": 27.890625,
+      "rmse": 7.774066351369664
+    },
+    {
+      "grid": "outer",
+      "width": 70,
+      "slots": 212,
+      "exact": 142,
+      "max_abs": 26.5859375,
+      "rmse": 7.324765344187629
+    },
+    {
+      "grid": "outer",
+      "width": 71,
+      "slots": 215,
+      "exact": 144,
+      "max_abs": 25.3125,
+      "rmse": 6.891415030785375
+    },
+    {
+      "grid": "outer",
+      "width": 72,
+      "slots": 218,
+      "exact": 146,
+      "max_abs": 24.0703125,
+      "rmse": 6.473822059098773
+    },
+    {
+      "grid": "outer",
+      "width": 73,
+      "slots": 221,
+      "exact": 148,
+      "max_abs": 22.859375,
+      "rmse": 6.071790674775524
+    },
+    {
+      "grid": "outer",
+      "width": 74,
+      "slots": 224,
+      "exact": 150,
+      "max_abs": 21.6796875,
+      "rmse": 5.685122629341562
+    },
+    {
+      "grid": "outer",
+      "width": 75,
+      "slots": 227,
+      "exact": 152,
+      "max_abs": 20.53125,
+      "rmse": 5.31361708236274
+    },
+    {
+      "grid": "outer",
+      "width": 76,
+      "slots": 230,
+      "exact": 154,
+      "max_abs": 19.4140625,
+      "rmse": 4.957070497037304
+    },
+    {
+      "grid": "outer",
+      "width": 77,
+      "slots": 233,
+      "exact": 156,
+      "max_abs": 18.328125,
+      "rmse": 4.615276528584472
+    },
+    {
+      "grid": "outer",
+      "width": 78,
+      "slots": 236,
+      "exact": 158,
+      "max_abs": 17.2734375,
+      "rmse": 4.2880259047134475
+    },
+    {
+      "grid": "outer",
+      "width": 79,
+      "slots": 239,
+      "exact": 160,
+      "max_abs": 16.25,
+      "rmse": 3.9751062973629803
+    },
+    {
+      "grid": "outer",
+      "width": 80,
+      "slots": 242,
+      "exact": 162,
+      "max_abs": 15.2578125,
+      "rmse": 3.6763021847919752
+    },
+    {
+      "grid": "outer",
+      "width": 81,
+      "slots": 245,
+      "exact": 164,
+      "max_abs": 14.296875,
+      "rmse": 3.391394702973193
+    },
+    {
+      "grid": "outer",
+      "width": 82,
+      "slots": 248,
+      "exact": 166,
+      "max_abs": 13.3671875,
+      "rmse": 3.1201614850910326
+    },
+    {
+      "grid": "outer",
+      "width": 83,
+      "slots": 251,
+      "exact": 168,
+      "max_abs": 12.46875,
+      "rmse": 2.862376487765864
+    },
+    {
+      "grid": "outer",
+      "width": 84,
+      "slots": 254,
+      "exact": 170,
+      "max_abs": 11.6015625,
+      "rmse": 2.6178098024151972
+    },
+    {
+      "grid": "outer",
+      "width": 85,
+      "slots": 257,
+      "exact": 172,
+      "max_abs": 10.765625,
+      "rmse": 2.3862274499084757
+    },
+    {
+      "grid": "outer",
+      "width": 86,
+      "slots": 260,
+      "exact": 174,
+      "max_abs": 9.9609375,
+      "rmse": 2.1673911563675015
+    },
+    {
+      "grid": "outer",
+      "width": 87,
+      "slots": 263,
+      "exact": 176,
+      "max_abs": 9.1875,
+      "rmse": 1.9610581075957916
+    },
+    {
+      "grid": "outer",
+      "width": 88,
+      "slots": 266,
+      "exact": 178,
+      "max_abs": 8.4453125,
+      "rmse": 1.766980679171002
+    },
+    {
+      "grid": "outer",
+      "width": 89,
+      "slots": 269,
+      "exact": 180,
+      "max_abs": 7.734375,
+      "rmse": 1.5849061386833307
+    },
+    {
+      "grid": "outer",
+      "width": 90,
+      "slots": 272,
+      "exact": 182,
+      "max_abs": 7.0546875,
+      "rmse": 1.414576315920938
+    },
+    {
+      "grid": "outer",
+      "width": 91,
+      "slots": 275,
+      "exact": 184,
+      "max_abs": 6.40625,
+      "rmse": 1.2557272359526497
+    },
+    {
+      "grid": "outer",
+      "width": 92,
+      "slots": 278,
+      "exact": 186,
+      "max_abs": 5.7890625,
+      "rmse": 1.1080887089867024
+    },
+    {
+      "grid": "outer",
+      "width": 93,
+      "slots": 281,
+      "exact": 188,
+      "max_abs": 5.203125,
+      "rmse": 0.9713838695210462
+    },
+    {
+      "grid": "outer",
+      "width": 94,
+      "slots": 284,
+      "exact": 190,
+      "max_abs": 4.6484375,
+      "rmse": 0.8453286555468659
+    },
+    {
+      "grid": "outer",
+      "width": 95,
+      "slots": 287,
+      "exact": 192,
+      "max_abs": 4.125,
+      "rmse": 0.7296312162829615
+    },
+    {
+      "grid": "outer",
+      "width": 96,
+      "slots": 290,
+      "exact": 194,
+      "max_abs": 3.6328125,
+      "rmse": 0.623991233903842
+    },
+    {
+      "grid": "outer",
+      "width": 97,
+      "slots": 293,
+      "exact": 196,
+      "max_abs": 3.171875,
+      "rmse": 0.5280991406853245
+    },
+    {
+      "grid": "outer",
+      "width": 98,
+      "slots": 296,
+      "exact": 198,
+      "max_abs": 2.7421875,
+      "rmse": 0.44163520748932666
+    },
+    {
+      "grid": "outer",
+      "width": 99,
+      "slots": 299,
+      "exact": 200,
+      "max_abs": 2.34375,
+      "rmse": 0.36426847187343087
+    },
+    {
+      "grid": "outer",
+      "width": 100,
+      "slots": 302,
+      "exact": 202,
+      "max_abs": 1.9765625,
+      "rmse": 0.2956554632871515
+    },
+    {
+      "grid": "outer",
+      "width": 101,
+      "slots": 305,
+      "exact": 204,
+      "max_abs": 1.640625,
+      "rmse": 0.23543866710206476
+    },
+    {
+      "grid": "outer",
+      "width": 102,
+      "slots": 308,
+      "exact": 206,
+      "max_abs": 1.3359375,
+      "rmse": 0.18324464576703992
+    },
+    {
+      "grid": "outer",
+      "width": 103,
+      "slots": 311,
+      "exact": 208,
+      "max_abs": 1.0625,
+      "rmse": 0.13868169922443546
+    },
+    {
+      "grid": "outer",
+      "width": 104,
+      "slots": 314,
+      "exact": 210,
+      "max_abs": 0.8203125,
+      "rmse": 0.10133688883650661
+    },
+    {
+      "grid": "outer",
+      "width": 105,
+      "slots": 317,
+      "exact": 212,
+      "max_abs": 0.609375,
+      "rmse": 0.07077215207809937
+    },
+    {
+      "grid": "outer",
+      "width": 106,
+      "slots": 320,
+      "exact": 214,
+      "max_abs": 0.4296875,
+      "rmse": 0.04651906343762565
+    },
+    {
+      "grid": "outer",
+      "width": 107,
+      "slots": 323,
+      "exact": 216,
+      "max_abs": 0.28125,
+      "rmse": 0.028071470637066356
+    },
+    {
+      "grid": "outer",
+      "width": 108,
+      "slots": 326,
+      "exact": 218,
+      "max_abs": 0.1640625,
+      "rmse": 0.014874556847390447
+    },
+    {
+      "grid": "outer",
+      "width": 109,
+      "slots": 329,
+      "exact": 220,
+      "max_abs": 0.078125,
+      "rmse": 0.006307284908179306
+    },
+    {
+      "grid": "outer",
+      "width": 110,
+      "slots": 332,
+      "exact": 222,
+      "max_abs": 0.0234375,
+      "rmse": 0.001650691903766634,
+      "configuration": {
+        "initial_sha256": "f35193cf2ed8d93d4d5b0f619b1097ac04c6beeb37d72f6db857c6555e00f07d",
+        "final_sha256": "76d0fce6f2539e44dededc77f142c77a681762dbd4ca3a3dc0a979a46c2d31b8",
+        "edits": 331,
+        "max_abs_coefficient": 99.375
+      },
+      "transfer": {
+        "full": {
+          "n": 321,
+          "exact": 222,
+          "max_abs": 9.5703125,
+          "rmse": 2.377521288046521
+        },
+        "inner": {
+          "n": 97,
+          "exact": 0,
+          "max_abs": 9.5703125,
+          "rmse": 4.325048583435078
+        },
+        "full_midpoints": {
+          "n": 320,
+          "exact": 0,
+          "max_abs": 9.3779296875,
+          "rmse": 2.3800191947419433
+        },
+        "iid_outer": {
+          "n": 4096,
+          "exact": 0,
+          "max_abs": 0.023409529936998297,
+          "rmse": 0.00173680749618294
+        }
+      }
+    },
+    {
+      "grid": "outer",
+      "width": 111,
+      "slots": 335,
+      "exact": 224,
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "configuration": {
+        "initial_sha256": "af6a4be55f3d7f9598b861c27c7e9deaa8ba94e6456d5bc44766634675e0edb0",
+        "final_sha256": "c35ae141cfd9af20ea3063943796aa5a1df66d7bafe0a4ebfe9bcdae5d7c683e",
+        "edits": 334,
+        "max_abs_coefficient": 99.375
+      },
+      "transfer": {
+        "full": {
+          "n": 321,
+          "exact": 224,
+          "max_abs": 9.5703125,
+          "rmse": 2.377520888174834
+        },
+        "inner": {
+          "n": 97,
+          "exact": 0,
+          "max_abs": 9.5703125,
+          "rmse": 4.325048583435078
+        },
+        "full_midpoints": {
+          "n": 320,
+          "exact": 0,
+          "max_abs": 9.3779296875,
+          "rmse": 2.3800190544968474
+        },
+        "iid_outer": {
+          "n": 4096,
+          "exact": 0,
+          "max_abs": 0.007703835550810112,
+          "rmse": 0.0012328405856059951
+        }
+      }
+    }
+  ]
+}

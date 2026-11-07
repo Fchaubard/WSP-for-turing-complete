@@ -1,0 +1,29 @@
+# Learning the register-machine transition from central examples
+
+We trained the complete recurrent cell used by the instruction compiler, including all entries of D, W and E. Addition, floor subtraction and multiplication use 35, 45 and 187 stored scalars respectively. Three independent Xavier initializations per task yielded zero exactly correct entire outer transition states and zero exactly correct full outer traces. A structured solver given the same transition examples recovered all three instruction tables and all three exact compiled cells.
+
+## Matched graph and observations
+
+The architecture is z′ = ReLU(Dz + E ReLU(Wz)), with the same register/program-counter encoding, matrix shapes, output activation, binary64 forward implementation and Xavier sampler as in run.py. The dense BP learner receives only labeled one-step states. Every valid program counter is represented. Each register lies in {0,1,2,3}. A deterministic random split holds out one quarter of the rows of each instruction (split seed 20261106); the inner train/dev counts are 36/12, 36/12 and 1,344/448. The same split is used for every initialization and the structured fit. Inputs outside this region enter scoring only.
+
+The objective is half mean squared error, averaged over examples and all next-state coordinates. Reverse-mode derivatives use the ReLU derivative zero at zero. A centered directional derivative check at each Xavier start agreed with reverse mode to <3×10⁻¹⁰ absolute error. Each run used 1,200 Adam steps with learning rate 0.015, β₁=0.9, β₂=0.999, ε=10⁻⁸, and batches of min(128, training-set size). Full-batch L-BFGS-B started from the best central-dev Adam checkpoint and ran for at most 400 iterations. The checkpoint with lowest central-dev MSE among initialization, six Adam checkpoints spaced 200 steps apart, and the L-BFGS endpoint was evaluated. Starts were 11, 22 and 33. The supplied dense execution graph and the training labels carry no explicit instruction table.
+
+## Held-out tests
+
+An outer one-step state has every register in {4,…,10} and a valid program counter. Evaluating all such inputs yields 147, 147 and 16,807 transitions. A mixed test additionally includes zero and larger counts in {0,1,4,10,1024}; all split scores are in bp_results.json. An autonomous program starts at its true initial counter/PC state and runs the network for the reference's number of ticks, with no state resets, integer clipping or reference intermediate states fed back to the main rollout. All 49 pairs of outer input registers are scored, through 21 ticks on add/subtract and 531 on multiply. Inner rollouts use all 16 central starting pairs.
+
+| Program | BP exact full states per seed | BP nearest-integer full states (seeds 11,22,33) | BP exact full traces per seed | BP exact final output (seeds 11,22,33) |
+|---|---:|---:|---:|---:|
+| Add | 0/147 | 0, 98, 11 of 147 | 0/49 | 0, 0, 0 of 49 |
+| Floor subtract | 0/147 | 0, 0, 98 of 147 | 0/49 | 28, 28, 0 of 49 |
+| Multiply | 0/16,807 | 0, 16,807, 5,376 of 16,807 | 0/49 | 0, 0, 0 of 49 |
+
+Nearest-integer scoring rounds for comparison only. The two subtraction models that returned 28 exact final outputs matched only the 28 examples whose answer is zero. Multiplication at seed 22 illustrates the difference between the test populations. It had 0.000355 outer one-step RMSE and rounded all 16,807 strictly positive-register transition states correctly. On the actual reference trajectories, the same one-step model, supplied the true pre-state at every tick, rounded correctly on 12,397 of 13,083 transitions and on zero entire traces. The autonomous model obtained zero exact or rounded final products. As a separate change to the forward rule, inserting a nearest-integer projection after every recurrent update still yielded zero correct final products at that seed. The JSON stores this projected-trajectory diagnostic independently of ordinary BP scoring.
+
+## Positive control from the same observations
+
+The structured solver receives the grammar of the allowed instructions (increment, test-and-decrement, and halt), the register/PC layout and the same central training rows. Its access to the instruction grammar is a stronger prior than the dense learner has. The solver enumerates legal single instructions at each program counter. Exactly one candidate reproduces all training transitions at each instruction, in all three programs. Using only the inferred DEC register/PC pairs, it fixes the zero-test gate features W. With the recovered gate features and the original states as regressors, least squares solves for every entry of D and E from labeled next states. The features have full column ranks 6, 7 and 14 respectively. Snapping these regression coefficients to the nearest integer moved no coefficient by more than 4.7×10⁻¹⁵. The resulting D, W and E agree element-for-element with the compiler output on all three programs. These states achieved exact equality on every held-out one-step state, every autonomous trace, and every final output. The positive control uses discrete structure identification and a linear fit; the iterative BP branch optimizes all continuous graph parameters end to end.
+
+## Reproducibility
+
+Run `VECLIB_MAXIMUM_THREADS=1 OPENBLAS_NUM_THREADS=1 python train.py` from this directory. Original environment: Python 3.13.12, NumPy 2.5.4, SciPy 1.18.1. The finite games and compiler definitions are imported from run.py. bp_results.json stores seed-level metrics, selected checkpoints, optimizer statistics, central-dev histories, precise test denominators, structured fits and execution versions. bp_states.npz contains the complete selected D, W and E arrays for all twelve models, keyed by program, method and matrix. The reported finite-budget results do not preclude other gradient objectives, initializations, curricula or training lengths from succeeding.

@@ -1,0 +1,9 @@
+arm,round,attempted,accepted,perfect,lower,tie,higher
+examples,0,0,0,30,0,87,0
+examples,1,57,51,30,24,36,27
+examples,2,57,32,30,28,35,24
+examples,3,52,22,30,28,35,24
+formula,0,0,0,30,0,87,0
+formula,1,57,51,30,27,36,24
+formula,2,57,34,30,27,35,25
+formula,3,52,27,30,27,35,25

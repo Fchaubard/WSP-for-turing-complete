@@ -1,0 +1,18 @@
+{
+  "family": "Single bias-free linear neuron",
+  "inferred_rule": "y = x₀ − x₁",
+  "construction_summary": "A single affine node uses weights [1, -1] and no bias. It stores two scalar coefficients and produces one output activation, with no hidden layers or intermediate activation tensors. The same subtraction rule applies throughout the deployment domain.",
+  "certificate": "For every input, [1, -1] · [x₀, x₁] = x₀ − x₁. This matches all displayed outputs to binary64 rounding precision. Multiplication by ±1 is exact on the specified domain, so evaluation yields the correctly rounded subtraction throughout [-10,10]². The examples support this rule but cannot uniquely determine an unrestricted function.",
+  "network": {
+    "kind": "graph",
+    "nodes": [
+      {
+        "name": "difference",
+        "op": "affine",
+        "source": "input",
+        "weight": [[1, -1]]
+      }
+    ],
+    "output": "difference"
+  }
+}

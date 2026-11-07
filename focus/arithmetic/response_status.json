@@ -1,0 +1,326 @@
+[
+  {
+    "id": "7dc10447adea",
+    "task": "add",
+    "seed": 164,
+    "arm": "formula",
+    "width": 1,
+    "valid": true,
+    "reply_sha256": "16def9cb4cc5e0f35bc97bf2871a0e8387ba74c199ae05971de253bca5c6a0f5"
+  },
+  {
+    "id": "7dc10447adea",
+    "task": "add",
+    "seed": 164,
+    "arm": "formula",
+    "width": 2,
+    "valid": true,
+    "reply_sha256": "16def9cb4cc5e0f35bc97bf2871a0e8387ba74c199ae05971de253bca5c6a0f5"
+  },
+  {
+    "id": "7dc10447adea",
+    "task": "add",
+    "seed": 164,
+    "arm": "formula",
+    "width": 4,
+    "valid": true,
+    "reply_sha256": "16def9cb4cc5e0f35bc97bf2871a0e8387ba74c199ae05971de253bca5c6a0f5"
+  },
+  {
+    "id": "47325749c57b",
+    "task": "add",
+    "seed": 164,
+    "arm": "examples",
+    "width": 1,
+    "valid": true,
+    "reply_sha256": "5d46cfe8a56b9f05596ad7fb97343c6640a42b37f473ede3820379bb2fbb7dbd"
+  },
+  {
+    "id": "47325749c57b",
+    "task": "add",
+    "seed": 164,
+    "arm": "examples",
+    "width": 2,
+    "valid": true,
+    "reply_sha256": "5d46cfe8a56b9f05596ad7fb97343c6640a42b37f473ede3820379bb2fbb7dbd"
+  },
+  {
+    "id": "47325749c57b",
+    "task": "add",
+    "seed": 164,
+    "arm": "examples",
+    "width": 4,
+    "valid": true,
+    "reply_sha256": "5d46cfe8a56b9f05596ad7fb97343c6640a42b37f473ede3820379bb2fbb7dbd"
+  },
+  {
+    "id": "9f5d45bf5ea0",
+    "task": "add",
+    "seed": 317,
+    "arm": "formula",
+    "width": 1,
+    "valid": true,
+    "reply_sha256": "064de38755657524d8f465f060777679c52990ca1661ca11046ce23faba497ee"
+  },
+  {
+    "id": "9f5d45bf5ea0",
+    "task": "add",
+    "seed": 317,
+    "arm": "formula",
+    "width": 2,
+    "valid": true,
+    "reply_sha256": "064de38755657524d8f465f060777679c52990ca1661ca11046ce23faba497ee"
+  },
+  {
+    "id": "9f5d45bf5ea0",
+    "task": "add",
+    "seed": 317,
+    "arm": "formula",
+    "width": 4,
+    "valid": true,
+    "reply_sha256": "064de38755657524d8f465f060777679c52990ca1661ca11046ce23faba497ee"
+  },
+  {
+    "id": "106a4ce1f4af",
+    "task": "add",
+    "seed": 317,
+    "arm": "examples",
+    "width": 1,
+    "valid": true,
+    "reply_sha256": "19b9a387443541e479193ab7fef8cf530a21492b766e5d9b3dade2f0c701281e"
+  },
+  {
+    "id": "106a4ce1f4af",
+    "task": "add",
+    "seed": 317,
+    "arm": "examples",
+    "width": 2,
+    "valid": true,
+    "reply_sha256": "19b9a387443541e479193ab7fef8cf530a21492b766e5d9b3dade2f0c701281e"
+  },
+  {
+    "id": "106a4ce1f4af",
+    "task": "add",
+    "seed": 317,
+    "arm": "examples",
+    "width": 4,
+    "valid": true,
+    "reply_sha256": "19b9a387443541e479193ab7fef8cf530a21492b766e5d9b3dade2f0c701281e"
+  },
+  {
+    "id": "63fd94279664",
+    "task": "add",
+    "seed": 583,
+    "arm": "formula",
+    "width": 1,
+    "valid": true,
+    "reply_sha256": "3ade6dee68d25a329157a7acdad8fefb68145064cd45ae86fc27ca9642dbab4a"
+  },
+  {
+    "id": "63fd94279664",
+    "task": "add",
+    "seed": 583,
+    "arm": "formula",
+    "width": 2,
+    "valid": true,
+    "reply_sha256": "3ade6dee68d25a329157a7acdad8fefb68145064cd45ae86fc27ca9642dbab4a"
+  },
+  {
+    "id": "63fd94279664",
+    "task": "add",
+    "seed": 583,
+    "arm": "formula",
+    "width": 4,
+    "valid": true,
+    "reply_sha256": "3ade6dee68d25a329157a7acdad8fefb68145064cd45ae86fc27ca9642dbab4a"
+  },
+  {
+    "id": "c1749175e68a",
+    "task": "add",
+    "seed": 583,
+    "arm": "examples",
+    "width": 1,
+    "valid": true,
+    "reply_sha256": "064de38755657524d8f465f060777679c52990ca1661ca11046ce23faba497ee"
+  },
+  {
+    "id": "c1749175e68a",
+    "task": "add",
+    "seed": 583,
+    "arm": "examples",
+    "width": 2,
+    "valid": true,
+    "reply_sha256": "064de38755657524d8f465f060777679c52990ca1661ca11046ce23faba497ee"
+  },
+  {
+    "id": "c1749175e68a",
+    "task": "add",
+    "seed": 583,
+    "arm": "examples",
+    "width": 4,
+    "valid": true,
+    "reply_sha256": "064de38755657524d8f465f060777679c52990ca1661ca11046ce23faba497ee"
+  },
+  {
+    "id": "8dbbb47a461d",
+    "task": "subtract",
+    "seed": 164,
+    "arm": "formula",
+    "width": 1,
+    "valid": true,
+    "reply_sha256": "14fb50fa94fd697f88a75ffbe4b73e2b3ac5a2e19225598fdc0bd850b2b7d1ff"
+  },
+  {
+    "id": "8dbbb47a461d",
+    "task": "subtract",
+    "seed": 164,
+    "arm": "formula",
+    "width": 2,
+    "valid": true,
+    "reply_sha256": "14fb50fa94fd697f88a75ffbe4b73e2b3ac5a2e19225598fdc0bd850b2b7d1ff"
+  },
+  {
+    "id": "8dbbb47a461d",
+    "task": "subtract",
+    "seed": 164,
+    "arm": "formula",
+    "width": 4,
+    "valid": true,
+    "reply_sha256": "14fb50fa94fd697f88a75ffbe4b73e2b3ac5a2e19225598fdc0bd850b2b7d1ff"
+  },
+  {
+    "id": "738159e5daa8",
+    "task": "subtract",
+    "seed": 164,
+    "arm": "examples",
+    "width": 1,
+    "valid": true,
+    "reply_sha256": "14fb50fa94fd697f88a75ffbe4b73e2b3ac5a2e19225598fdc0bd850b2b7d1ff"
+  },
+  {
+    "id": "738159e5daa8",
+    "task": "subtract",
+    "seed": 164,
+    "arm": "examples",
+    "width": 2,
+    "valid": true,
+    "reply_sha256": "14fb50fa94fd697f88a75ffbe4b73e2b3ac5a2e19225598fdc0bd850b2b7d1ff"
+  },
+  {
+    "id": "738159e5daa8",
+    "task": "subtract",
+    "seed": 164,
+    "arm": "examples",
+    "width": 4,
+    "valid": true,
+    "reply_sha256": "14fb50fa94fd697f88a75ffbe4b73e2b3ac5a2e19225598fdc0bd850b2b7d1ff"
+  },
+  {
+    "id": "ec6ea1b82494",
+    "task": "subtract",
+    "seed": 317,
+    "arm": "formula",
+    "width": 1,
+    "valid": true,
+    "reply_sha256": "cab90deeac400716fdbe5f729303f4f32d333b3741221947fa6a8b6119140c0b"
+  },
+  {
+    "id": "ec6ea1b82494",
+    "task": "subtract",
+    "seed": 317,
+    "arm": "formula",
+    "width": 2,
+    "valid": true,
+    "reply_sha256": "cab90deeac400716fdbe5f729303f4f32d333b3741221947fa6a8b6119140c0b"
+  },
+  {
+    "id": "ec6ea1b82494",
+    "task": "subtract",
+    "seed": 317,
+    "arm": "formula",
+    "width": 4,
+    "valid": true,
+    "reply_sha256": "cab90deeac400716fdbe5f729303f4f32d333b3741221947fa6a8b6119140c0b"
+  },
+  {
+    "id": "305685e3a2f9",
+    "task": "subtract",
+    "seed": 317,
+    "arm": "examples",
+    "width": 1,
+    "valid": true,
+    "reply_sha256": "b9a7a4b52aed190fca5bc9cfa8c18fb492bc37c9443783f38edde08d23511079"
+  },
+  {
+    "id": "305685e3a2f9",
+    "task": "subtract",
+    "seed": 317,
+    "arm": "examples",
+    "width": 2,
+    "valid": true,
+    "reply_sha256": "b9a7a4b52aed190fca5bc9cfa8c18fb492bc37c9443783f38edde08d23511079"
+  },
+  {
+    "id": "305685e3a2f9",
+    "task": "subtract",
+    "seed": 317,
+    "arm": "examples",
+    "width": 4,
+    "valid": true,
+    "reply_sha256": "b9a7a4b52aed190fca5bc9cfa8c18fb492bc37c9443783f38edde08d23511079"
+  },
+  {
+    "id": "3f3847883924",
+    "task": "subtract",
+    "seed": 583,
+    "arm": "formula",
+    "width": 1,
+    "valid": true,
+    "reply_sha256": "14fb50fa94fd697f88a75ffbe4b73e2b3ac5a2e19225598fdc0bd850b2b7d1ff"
+  },
+  {
+    "id": "3f3847883924",
+    "task": "subtract",
+    "seed": 583,
+    "arm": "formula",
+    "width": 2,
+    "valid": true,
+    "reply_sha256": "14fb50fa94fd697f88a75ffbe4b73e2b3ac5a2e19225598fdc0bd850b2b7d1ff"
+  },
+  {
+    "id": "3f3847883924",
+    "task": "subtract",
+    "seed": 583,
+    "arm": "formula",
+    "width": 4,
+    "valid": true,
+    "reply_sha256": "14fb50fa94fd697f88a75ffbe4b73e2b3ac5a2e19225598fdc0bd850b2b7d1ff"
+  },
+  {
+    "id": "3419a8de958b",
+    "task": "subtract",
+    "seed": 583,
+    "arm": "examples",
+    "width": 1,
+    "valid": true,
+    "reply_sha256": "14fb50fa94fd697f88a75ffbe4b73e2b3ac5a2e19225598fdc0bd850b2b7d1ff"
+  },
+  {
+    "id": "3419a8de958b",
+    "task": "subtract",
+    "seed": 583,
+    "arm": "examples",
+    "width": 2,
+    "valid": true,
+    "reply_sha256": "14fb50fa94fd697f88a75ffbe4b73e2b3ac5a2e19225598fdc0bd850b2b7d1ff"
+  },
+  {
+    "id": "3419a8de958b",
+    "task": "subtract",
+    "seed": 583,
+    "arm": "examples",
+    "width": 4,
+    "valid": true,
+    "reply_sha256": "14fb50fa94fd697f88a75ffbe4b73e2b3ac5a2e19225598fdc0bd850b2b7d1ff"
+  }
+]

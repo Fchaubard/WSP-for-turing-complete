@@ -1,0 +1,18 @@
+\begin{table}[t]
+\centering
+\caption{Within-setting comparisons for all four choices of endpoints. A setting specifies a task, architecture and starting weights. Each triple counts settings with a smaller WSP error, a tie, or a smaller gradient error, in that order. Strict comparisons use the unrounded recorded scores. The middle column treats absolute training-loss differences of at most $10^{-10}$ as ties. Each method received the same training examples and objective. The Formula and examples condition also received the rule.}
+\label{tab:paired_methods}
+\small
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}llr rrr@{}}\toprule
+ & & & \multicolumn{2}{c}{Observed training loss} & Outer RMSE\\
+\cmidrule(lr){4-5}\cmidrule(l){6-6}
+WSP condition & Gradient optimizer & Settings & Strict & $10^{-10}$ tolerance & Strict\\
+\midrule
+Examples only & Adam + BFGS & 87 & 79 / 0 / 8 & 48 / 33 / 6 & 73 / 0 / 14 \\
+Examples only & Least squares & 87 & 71 / 2 / 14 & 42 / 35 / 10 & 76 / 0 / 11 \\
+Formula and examples & Adam + BFGS & 87 & 79 / 0 / 8 & 47 / 35 / 5 & 75 / 0 / 12 \\
+Formula and examples & Least squares & 87 & 71 / 2 / 14 & 41 / 37 / 9 & 75 / 0 / 12 \\
+\bottomrule
+\end{tabular}
+\end{table}

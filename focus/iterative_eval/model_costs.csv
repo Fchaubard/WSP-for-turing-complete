@@ -1,0 +1,7 @@
+stage,arm,requests,completed,summed_request_seconds,median_request_seconds,input_tokens,cached_input_tokens,output_tokens,reasoning_output_tokens
+original_reused,formula,30,30,2414.29,78.0,504023,453504,56957,50746
+original_reused,examples,30,30,2163.21,71.765,501987,449920,51892,45806
+revisions,formula,81,81,4325.68,48.91,1454651,1190400,101369,87770
+revisions,examples,80,80,4098.57,54.644999999999996,1427125,1143552,97077,83393
+total,formula,111,111,6739.97,51.89,1958674,1643904,158326,138516
+total,examples,110,110,6261.78,56.69,1929112,1593472,148969,129199

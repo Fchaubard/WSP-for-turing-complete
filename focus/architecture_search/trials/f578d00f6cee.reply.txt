@@ -1,0 +1,17 @@
+{
+  "family": "Parameter-free scalar tanh network",
+  "inferred_rule": "y = tanh(x).",
+  "construction_summary": "Apply one tanh activation directly to the scalar input. The network stores zero numerical coefficients, uses one scalar activation output, and requires one tanh evaluation with no additional arithmetic. It implements the inferred rule across the entire deployment interval [-10,10].",
+  "certificate": "The sole node computes tanh(x) by definition, so in exact arithmetic the graph equals the inferred rule for every real x. Binary64 inference introduces only the activation implementation's numerical error. The observed pairs agree with this rule to the displayed precision; finite samples alone do not uniquely determine an underlying function.",
+  "network": {
+    "kind": "graph",
+    "nodes": [
+      {
+        "name": "y",
+        "op": "tanh",
+        "source": "input"
+      }
+    ],
+    "output": "y"
+  }
+}

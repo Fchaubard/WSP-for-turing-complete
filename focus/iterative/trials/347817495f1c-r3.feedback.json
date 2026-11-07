@@ -1,0 +1,73 @@
+{
+ "case": "347817495f1c",
+ "round": 3,
+ "active": [
+  1
+ ],
+ "feedback": [
+  {
+   "size": 1,
+   "incumbent_weights": [
+    1.61801576665,
+    1.0,
+    0.4472835515
+   ],
+   "diagnostic": {
+    "train": {
+     "loss": 0.017164348721448525,
+     "exact": 0,
+     "n": 9,
+     "rmse": 0.18961928605001555,
+     "examples": [
+      {
+       "input": 0,
+       "target": 0.0,
+       "prediction": 0.4472835515,
+       "maximum_scaled_error": 0.4472835515
+      },
+      {
+       "input": 1,
+       "target": 1.0,
+       "prediction": 0.7237118384902071,
+       "maximum_scaled_error": 0.27628816150979285
+      },
+      {
+       "input": 2,
+       "target": 1.0,
+       "prediction": 1.1709771651884135,
+       "maximum_scaled_error": 0.17097716518841355
+      }
+     ]
+    },
+    "dev": {
+     "loss": 1.7360670526545635e-09,
+     "exact": 0,
+     "n": 8,
+     "rmse": 0.009217508921201802,
+     "examples": [
+      {
+       "input": 9,
+       "target": 34.0,
+       "prediction": 33.99598828350935,
+       "maximum_scaled_error": 0.00011799166148976196
+      },
+      {
+       "input": 10,
+       "target": 55.0,
+       "prediction": 55.006045045566786,
+       "maximum_scaled_error": 0.00010990991939611273
+      },
+      {
+       "input": 12,
+       "target": 144.0,
+       "prediction": 144.00445194033472,
+       "maximum_scaled_error": 3.091625232443107e-05
+      }
+     ]
+    }
+   }
+  }
+ ],
+ "prompt_sha256": "b4583afe9529f555d83c24ab8c093f0414b773d5b8a4380cd0cbc0fc5a9e581b",
+ "protocol_sha256": "75c8a10bc407ddd2808e3a7101a82fcda21fe45b42c8d28ecd48cad31cc88638"
+}

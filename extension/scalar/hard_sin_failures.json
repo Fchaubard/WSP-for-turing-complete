@@ -1,0 +1,62 @@
+[
+  {
+    "x": "0x1.803af6f1aa7edp-17",
+    "output": "0x1.803af6f1866e4p-17",
+    "mpfr": "0x1.803af6f1866e3p-17"
+  },
+  {
+    "x": "0x1.ba2d809acd0a5p-17",
+    "output": "0x1.ba2d809a9612ep-17",
+    "mpfr": "0x1.ba2d809a9612dp-17"
+  },
+  {
+    "x": "0x1.d0d7487245534p-16",
+    "output": "0x1.d0d7487145e3ap-16",
+    "mpfr": "0x1.d0d7487145e3bp-16"
+  },
+  {
+    "x": "0x1.dac5979a737b4p-11",
+    "output": "0x1.dac59359d00b4p-11",
+    "mpfr": "0x1.dac59359d00b3p-11"
+  },
+  {
+    "x": "0x1.269c7dcf5bfa6p-10",
+    "output": "0x1.269c79bedf204p-10",
+    "mpfr": "0x1.269c79bedf203p-10"
+  },
+  {
+    "x": "0x1.598bae9e632f6p-7",
+    "output": "0x1.598a0aea48997p-7",
+    "mpfr": "0x1.598a0aea48996p-7"
+  },
+  {
+    "x": "0x1.1d60c80ae0d38p-6",
+    "output": "0x1.1d5d165cf4840p-6",
+    "mpfr": "0x1.1d5d165cf4841p-6"
+  },
+  {
+    "x": "0x1.dd01dea404e96p-6",
+    "output": "0x1.dcf09e7949080p-6",
+    "mpfr": "0x1.dcf09e7949081p-6"
+  },
+  {
+    "x": "0x1.2fc3d8d81b559p-3",
+    "output": "0x1.2ea707f215deap-3",
+    "mpfr": "0x1.2ea707f215de9p-3"
+  },
+  {
+    "x": "0x1.cca755e12a003p-2",
+    "output": "0x1.bd45de7570ea0p-2",
+    "mpfr": "0x1.bd45de7570e9fp-2"
+  },
+  {
+    "x": "0x1.54b3504c6b4a3p-1",
+    "output": "0x1.3c1b936417ddcp-1",
+    "mpfr": "0x1.3c1b936417dddp-1"
+  },
+  {
+    "x": "0x1.9239c4bbb44a4p+1",
+    "output": "-0x1.a0f77436186eap-11",
+    "mpfr": "-0x1.a0f77436186e9p-11"
+  }
+]

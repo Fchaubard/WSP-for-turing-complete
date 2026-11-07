@@ -1,0 +1,9 @@
+{
+  "curve_prediction_values_checked": 9009,
+  "target_values_checked": 3003,
+  "training_coordinates_checked": 36,
+  "max_rounding_difference_from_scalar_accumulation": 5.684341886080802e-14,
+  "weights": "Archived original, retained iterative, and gradient+L-BFGS weights; no imported prediction helper",
+  "visual_review": "Clear axes, training/dev shading, all methods distinguished, no clipping",
+  "interpretation": "Three illustrative regressions, not aggregate rank or representative median"
+}

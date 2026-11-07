@@ -1,0 +1,97 @@
+{
+  "file": "circuits.npz",
+  "sha256": "962cbbbd8b1c16f9901e2b2d7007f2ad329df8efe49d5ae9290a5215c85a2e0d",
+  "dtype": "binary64, except integer graph indices and shapes",
+  "tasks": {
+    "square": "48 compensated dyadic-tent stages, 9,779 dense scalar slots",
+    "sin": "6 phase-folding hinges, 63 readout hinges fit on central labels",
+    "tanh": "one native NumPy tanh neuron with identity affine coefficients",
+    "xpowx": "63 relative-curvature hinges, full-envelope balanced relative readout; negative integers use the saved 572-slot signed-grid lookup",
+    "add": "two-weight linear readout",
+    "subtract": "two-weight linear readout",
+    "rolling_sum": "one-state linear recurrent prefix sum",
+    "sort": "50-slot, 13-ReLU binary64 comparator shared across a Batcher schedule",
+    "fibonacci": "signed unit clock, two-state reversible linear recurrence",
+    "triangular": "signed unit clock, three-state reversible linear recurrence"
+  },
+  "arrays": {
+    "square_shapes": [
+      292,
+      2
+    ],
+    "square_values": [
+      9779
+    ],
+    "sin_fold": [
+      20
+    ],
+    "sin_spline": [
+      191
+    ],
+    "selfpower_spline": [
+      191
+    ],
+    "integer_power_shapes": [
+      3,
+      2
+    ],
+    "integer_power_values": [
+      572
+    ],
+    "tanh": [
+      4
+    ],
+    "add": [
+      2
+    ],
+    "subtract": [
+      2
+    ],
+    "rolling_sum": [
+      3
+    ],
+    "fibonacci_forward": [
+      2,
+      2
+    ],
+    "fibonacci_backward": [
+      2,
+      2
+    ],
+    "fibonacci_initial": [
+      2
+    ],
+    "fibonacci_readout": [
+      2
+    ],
+    "triangular_forward": [
+      3,
+      3
+    ],
+    "triangular_backward": [
+      3,
+      3
+    ],
+    "triangular_initial": [
+      3
+    ],
+    "triangular_readout": [
+      3
+    ],
+    "sort_ptr": [
+      27
+    ],
+    "sort_src": [
+      43
+    ],
+    "sort_coef": [
+      43
+    ],
+    "sort_bias": [
+      26
+    ],
+    "sort_relu": [
+      26
+    ]
+  }
+}

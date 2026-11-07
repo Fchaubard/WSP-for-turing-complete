@@ -1,0 +1,128 @@
+[
+  {
+    "seed": 898,
+    "valid": true,
+    "algebraic_certificate": "output_relu_clips_decrement",
+    "central": {
+      "correct": 64,
+      "n": 64
+    },
+    "outer": {
+      "correct": 196,
+      "n": 196
+    },
+    "mixed": {
+      "correct": 144,
+      "n": 144
+    },
+    "trace128": {
+      "correct": 64,
+      "n": 64
+    }
+  },
+  {
+    "seed": 899,
+    "valid": true,
+    "algebraic_certificate": "output_relu_clips_decrement",
+    "central": {
+      "correct": 64,
+      "n": 64
+    },
+    "outer": {
+      "correct": 196,
+      "n": 196
+    },
+    "mixed": {
+      "correct": 144,
+      "n": 144
+    },
+    "trace128": {
+      "correct": 64,
+      "n": 64
+    }
+  },
+  {
+    "seed": 900,
+    "valid": true,
+    "algebraic_certificate": "output_relu_clips_decrement",
+    "central": {
+      "correct": 64,
+      "n": 64
+    },
+    "outer": {
+      "correct": 196,
+      "n": 196
+    },
+    "mixed": {
+      "correct": 144,
+      "n": 144
+    },
+    "trace128": {
+      "correct": 64,
+      "n": 64
+    }
+  },
+  {
+    "seed": 901,
+    "valid": true,
+    "algebraic_certificate": "output_relu_clips_decrement",
+    "central": {
+      "correct": 64,
+      "n": 64
+    },
+    "outer": {
+      "correct": 196,
+      "n": 196
+    },
+    "mixed": {
+      "correct": 144,
+      "n": 144
+    },
+    "trace128": {
+      "correct": 64,
+      "n": 64
+    }
+  },
+  {
+    "seed": 902,
+    "valid": true,
+    "algebraic_certificate": "output_relu_clips_decrement",
+    "central": {
+      "correct": 64,
+      "n": 64
+    },
+    "outer": {
+      "correct": 196,
+      "n": 196
+    },
+    "mixed": {
+      "correct": 144,
+      "n": 144
+    },
+    "trace128": {
+      "correct": 64,
+      "n": 64
+    }
+  },
+  {
+    "seed": 903,
+    "valid": true,
+    "algebraic_certificate": "output_relu_clips_decrement",
+    "central": {
+      "correct": 64,
+      "n": 64
+    },
+    "outer": {
+      "correct": 196,
+      "n": 196
+    },
+    "mixed": {
+      "correct": 144,
+      "n": 144
+    },
+    "trace128": {
+      "correct": 64,
+      "n": 64
+    }
+  }
+]

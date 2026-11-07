@@ -1,0 +1,11 @@
+{
+  "valid_models_checked": 28,
+  "invalid_models_confirmed": 2,
+  "examples_checked": 1278,
+  "extra_operators_checked": [
+    "convolution",
+    "attention with softmax"
+  ],
+  "source_sha256": "e437a39d64f6106daa51a8b559b1f5d2364feee685c85c462167fa12c4f5caf7",
+  "no_material_accounting_discrepancy": true
+}

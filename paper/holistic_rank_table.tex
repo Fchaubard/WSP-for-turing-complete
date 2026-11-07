@@ -1,0 +1,19 @@
+\begin{table}[htbp]\centering\footnotesize
+\caption{Raw-error totals and their dominant task. The total sums each task's mean RMSE across sizes and starts. The final two columns identify the largest task contribution and its share of that method's total. The graph-choosing proposals are evaluated separately in Appendix~\ref{app:architecture_search}.}\label{tab:holisticrank}
+\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}rlrlr@{}}\toprule
+Rank & Method & Raw-error sum & Largest contribution & Share \\\midrule
+1 & Iterative WSP, formula + examples & $2.02598\times 10^{9}$ & Positive self-power & 78.12\%\\
+2 & Iterative WSP, examples only & $2.02598\times 10^{9}$ & Positive self-power & 78.12\%\\
+3 & L-BFGS from Xavier & $7.97356\times 10^{11}$ & Fibonacci & 99.74\%\\
+4 & Trust-region least squares & $8.84785\times 10^{11}$ & Fibonacci & 99.77\%\\
+5 & One-shot WSP, formula + examples & $9.38023\times 10^{11}$ & Fibonacci & 99.80\%\\
+6 & One-shot WSP, examples only & $1.05832\times 10^{12}$ & Fibonacci & 99.80\%\\
+7 & One-shot WSP + least squares, examples only & $1.05966\times 10^{12}$ & Fibonacci & 99.80\%\\
+8 & Gradient descent, full feedback pool & $2.64518\times 10^{16}$ & Fibonacci & 100.00\%\\
+9 & Gradient descent & $7.79363\times 10^{22}$ & Fibonacci & 100.00\%\\
+10 & Adam, 800 updates & $1.83949\times 10^{30}$ & Fibonacci & 100.00\%\\
+11 & Gradient descent + L-BFGS & $5.88992\times 10^{32}$ & Fibonacci & 100.00\%\\
+12 & Gradient descent + L-BFGS, full feedback pool & $2.29320\times 10^{33}$ & Fibonacci & 100.00\%\\
+13 & Adam + L-BFGS & $2.24329\times 10^{83}$ & Fibonacci & 100.00\%\\
+14 & Adam + full BFGS & $8.22122\times 10^{232}$ & Fibonacci & 100.00\%\\
+\bottomrule\end{tabular*}\end{table}

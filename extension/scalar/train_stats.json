@@ -1,0 +1,26 @@
+[
+  {
+    "seed": 11,
+    "steps": 100,
+    "batch": 32,
+    "lr": 0.01,
+    "weights_changed": 2,
+    "max_gradient_norm": 1.8896786090167392
+  },
+  {
+    "seed": 22,
+    "steps": 100,
+    "batch": 32,
+    "lr": 0.01,
+    "weights_changed": 2,
+    "max_gradient_norm": 15.225114664014425
+  },
+  {
+    "seed": 33,
+    "steps": 100,
+    "batch": 32,
+    "lr": 0.01,
+    "weights_changed": 0,
+    "max_gradient_norm": 0.0
+  }
+]

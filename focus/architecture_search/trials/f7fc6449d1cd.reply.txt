@@ -1,0 +1,30 @@
+{
+  "family": "Parameter-free additive graph",
+  "inferred_rule": "y = x₀ + x₁",
+  "construction_summary": "Extract the two input coordinates and add them directly. The graph stores no numerical weights, biases, or constants and performs one scalar addition. It uses two one-entry selections and a one-entry output. This construction implements the inferred rule throughout [-10,10]², including inputs far beyond the observed examples.",
+  "certificate": "Every displayed output agrees with x₀ + x₁ to binary64 rounding precision. For any input, the take nodes return x₀ and x₁ exactly, so the output is fl(x₀ + x₁), the correctly rounded binary64 sum. Thus the graph implements the inferred addition rule over the full domain. Finite observations alone do not uniquely determine the underlying rule.",
+  "network": {
+    "kind": "graph",
+    "nodes": [
+      {
+        "name": "first",
+        "op": "take",
+        "source": "input",
+        "indices": [0]
+      },
+      {
+        "name": "second",
+        "op": "take",
+        "source": "input",
+        "indices": [1]
+      },
+      {
+        "name": "sum",
+        "op": "add",
+        "left": "first",
+        "right": "second"
+      }
+    ],
+    "output": "sum"
+  }
+}

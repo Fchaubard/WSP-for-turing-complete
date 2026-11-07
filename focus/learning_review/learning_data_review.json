@@ -1,0 +1,9 @@
+{
+  "selected_rows_checked": 2088,
+  "selected_metric_cells_checked": 10440,
+  "valid_proposal_metric_cells_checked": 3972,
+  "invalid_split_records_retained": 3,
+  "summary_metric_cells_checked": 768,
+  "matched_original_trajectories_and_frozen_evaluation": true,
+  "main_aggregate_medians_include_all_zeros": true
+}

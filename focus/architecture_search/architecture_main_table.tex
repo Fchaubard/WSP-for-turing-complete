@@ -1,0 +1,16 @@
+\begin{table}[htbp]\centering\small
+\caption{Architecture selection from examples alone. Each task has three first-response trials. RMSE is the median over executable proposals, with invalid trials retained in the valid-count column. Resources give ranges across executable proposals at the longest outer input. The arithmetic count excludes comparisons and transcendental calls, which are reported separately in the appendix.}\label{tab:architecture_search}
+\setlength{\tabcolsep}{2.5pt}
+\begin{tabular}{@{}lrrrrrr@{}}\toprule
+Target & Valid & Exact sets & RMSE & Coefficients & FLOPs & Workspace bytes\\\midrule
+Square & 3/3 & 3/3 & 0 & 0 & 1 & 16\\
+Sine & 3/3 & 0/3 & $7.79\times10^{-16}$ & 10--19 & 27--32 & 32--88\\
+Positive self-power & 1/3 & 0/3 & $1.68\times10^{4}$ & 93 & 250 & 1040\\
+Hyperbolic tangent & 3/3 & 3/3 & 0 & 0 & 0 & 16\\
+Addition & 3/3 & 3/3 & 0 & 0 & 1 & 32\\
+Subtraction & 3/3 & 3/3 & 0 & 2 & 3 & 24\\
+Running sum & 3/3 & 3/3 & 0 & 1 & 6 & 112\\
+Sort four & 3/3 & 0/3 & $5.23\times10^{-16}$ & 1--8 & 25--35 & 88--112\\
+Fibonacci & 3/3 & 3/3 & 0 & 2 & 64 & 48\\
+Triangular & 3/3 & 3/3 & 0 & 1--2 & 3 & 24\\
+\bottomrule\end{tabular}\end{table}

@@ -1,0 +1,16 @@
+{
+  "original_primary": "Your primary objective is to minimize the training loss on the supplied observations",
+  "original_extrapolation": "Among similarly fitting solutions, aim for exact outputs on unseen inputs across the stated domain.",
+  "iterative_generalization": "Seek a rule that also generalizes to examples not shown.",
+  "iterative_acceptance": "Smaller development loss improves the candidate; among identical development losses smaller training loss improves it.",
+  "counts": {
+    "original": 60,
+    "iterative": 161
+  },
+  "original_completed_items": {
+    "agent_message": 60
+  },
+  "iterative_completed_items": {
+    "agent_message": 161
+  }
+}

@@ -1,0 +1,28 @@
+\section{A recurrent network that executes branching instructions}\label{app:machine}
+A register machine stores a nonnegative integer in each register and executes one instruction at a time. Its program counter identifies the active instruction. Let $r$ index a register, let $z_r$ be its current value, and let $k,k_0,k_+$ index destination instructions. The increment instruction $\mathrm{INC}(r,k)$ adds one to $z_r$ and jumps to $k$. The conditional decrement $\mathrm{DECJZ}(r,k_0,k_+)$ jumps to $k_0$ if $z_r=0$. Otherwise it subtracts one and jumps to $k_+$. The halt instruction holds the complete state fixed. With unbounded integer counters and time, these instructions include a universal two-counter machine, which can simulate any Turing-computable procedure under an appropriate encoding~\cite{dudenhefner2022machines}. Binary64 cannot distinguish the adjacent register values $2^{53}$ and $2^{53}+1$. We examine both an exact-arithmetic instruction identity and finite binary64 executions. Related work characterizes when learned rectifier cells count exactly~\cite{elnaggar2023counting}.
+
+\paragraph{One update per instruction.}
+Let $R$ be the number of registers, $P$ the number of instructions, $G$ the number of conditional decrements, and $d=R+P$ the number of stored coordinates. Append to the register values a one-hot vector of $P$ instruction indicators, with entry $p_j$ equal to one for the active instruction $j$ and zero for the others. Write $z\in\mathbb{R}^d$ for the resulting state and $z'$ for the next state. Let $D$ be a $d\times d$ matrix that directly updates the state, $W$ a $G\times d$ matrix testing conditional instructions, and $E$ a $d\times G$ matrix routing the branch corrections. With a componentwise rectifier, one update is
+\[
+       z'=\relu\bigl(Dz+E\relu(Wz)\bigr).
+\]
+The register block of $D$ copies each register. Its column for an increment adds one to the named register and places the active bit at the destination. Its halt column retains the current instruction bit. For a conditional decrement of register $r$ at instruction $j$, the corresponding hidden unit computes $\relu(p_j-z_r)$. This equals one precisely when this instruction is active and the register value is zero. The corresponding column of $D$ attempts a decrement and selects the positive destination. A unit hidden bit switches the destination through $E$. It can also cancel the attempted decrement. Alternatively the outer rectifier clips the attempted $-1$ to zero. In both cases every legal integer state advances exactly one instruction under exact arithmetic. Induction gives the specified states at every finite time.
+
+\begin{table}[htbp]
+\centering\small\setlength{\tabcolsep}{4pt}
+\caption{Five instruction lists compiled independently of the Astra trials. A dense slot is one matrix entry, including zero entries. The last column sums the number of executed instructions, or ticks, over all outer inputs. Every intermediate state and final scalar matched the integer interpreter, giving raw RMSE zero on each of these five outer sets.}
+\label{tab:register-circuits}
+\begin{tabular}{@{}lrrrrrr@{}}\toprule
+Target & Registers & Instructions & Branch gates & Dense slots & Outer inputs & Total ticks\\\midrule
+Addition & 2 & 3 & 1 & 35 & 49 & 735\\
+Truncated subtraction & 2 & 3 & 2 & 45 & 49 & 644\\
+Multiplication & 4 & 7 & 3 & 187 & 49 & 13,083\\
+Triangular number & 3 & 8 & 3 & 187 & 7 & 1,008\\
+Fibonacci number & 4 & 9 & 4 & 273 & 7 & 2,860\\\bottomrule
+\end{tabular}
+\end{table}
+
+The integer interpreter in Table~\ref{tab:register-circuits} determined how many updates to score. The recurrent cell evolved autonomously from each initial state. Inputs ranged over all tuples from $\{0,1,2,3\}$ centrally and $\{4,\ldots,10\}$ on the outer set. For nonnegative integers $a,b$, truncated subtraction returns $\max(a-b,0)$. In a separate test, six fresh Astra calls each received a relabeled two-register, four-instruction list and Xavier-initialized matrices. Across the calls we changed two branch wirings and permuted the state coordinates. All six replies gave the clipped-decrement construction up to gate and coordinate permutations. Each passed every one of 196 outer one-step states and 64 traces of 128 steps, with zero state RMSE. The six trials share two instruction structures.
+
+\paragraph{Learning the transitions.}
+For addition, truncated subtraction and multiplication, we trained every continuous weight on central one-step input--output labels from three Xavier starts. On each task, zero of the three BP fits produced any entirely exact outer trace. For the final scalar on each of the 49 outer inputs, median raw RMSE across starts was 10.60, 2.00 and 45.99 respectively. The corresponding WSP compiler and a solver that inferred the discrete instruction table from the central labels both had zero RMSE. One fitted multiplication cell produced the right rounded next state on all 16,807 outer one-step cases, while none of its 49 autonomous final scalar outputs matched. We rounded the single-step prediction only for this diagnostic. Autonomous execution passed the unrounded state to the next update. The electronic tables distinguish one-step state error, state error pooled across ticks and coordinates, and final scalar error.

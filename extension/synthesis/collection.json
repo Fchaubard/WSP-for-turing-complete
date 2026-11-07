@@ -1,0 +1,12 @@
+{
+  "model": "gpt-6-astra",
+  "primary_requests": 18,
+  "primary_timeout_seconds": 300,
+  "primary_returned_replies": 16,
+  "timed_out_ids": ["0985eff9a","03fa4e3ef"],
+  "retry_policy": "Retry requests that returned no response; never retry scored requests based on performance.",
+  "retry_timeout_seconds": 900,
+  "retry_returned_replies": 2,
+  "scored_programs": 16,
+  "invalid_returned_programs": 2
+}

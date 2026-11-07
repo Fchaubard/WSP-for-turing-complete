@@ -1,0 +1,29 @@
+{
+  "edition": "2026-11-06-architecture",
+  "pdf": "output/pdf/weight-space-programming-2026-11-06-architecture.pdf",
+  "pages": 83,
+  "last_main_text_page": 9,
+  "tex_overfull_boxes": 0,
+  "tex_undefined_references": 0,
+  "standalone_source_rebuild": "passed; pdftotext matches canonical on all pages",
+  "preserved_original_artifacts": 193,
+  "raw_ranking_cells_independently_checked": 1218,
+  "architecture_requests": 30,
+  "executable_architecture_requests": 28,
+  "fully_exact_outer_requests": 21,
+  "reviewed_sections": [
+    "abstract",
+    "main raw-RMSE chart",
+    "architecture section",
+    "square regression diagnosis",
+    "restored plots",
+    "cost definitions and tables",
+    "complete prompt listings",
+    "all30 public explanations"
+  ],
+  "independent_reviews": [
+    "focus/prompt_audit/ranking_review.json",
+    "focus/prompt_audit/architecture_review.json"
+  ],
+  "pdf_sha256": "7789107b79e838af973c8a751493b363dfca743eb4c235944db36e1c5e4afa79"
+}

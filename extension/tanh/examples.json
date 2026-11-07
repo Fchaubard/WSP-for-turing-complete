@@ -1,0 +1,467 @@
+{
+ "numpy_tanh_0_inner": {
+  "x": "0x1.b404c59689d71p+0",
+  "output": "0x1.df222da887605p-1",
+  "mpfr": "0x1.df222da887604p-1"
+ },
+ "numpy_tanh_0_left": {
+  "x": "-0x1.b0ddf35a253a7p+1",
+  "output": "-0x1.fed18a51f33c9p-1",
+  "mpfr": "-0x1.fed18a51f33cap-1"
+ },
+ "numpy_tanh_0_right": {
+  "x": "0x1.dc74dace8898cp+1",
+  "output": "0x1.ff66d90558b17p-1",
+  "mpfr": "0x1.ff66d90558b18p-1"
+ },
+ "numpy_tanh_0_fresh_outer": {
+  "x": "-0x1.0f661ef548eeep+3",
+  "output": "-0x1.fffffd1d893d5p-1",
+  "mpfr": "-0x1.fffffd1d893d6p-1"
+ },
+ "numpy_tanh_0_mid_inner": {
+  "x": "-0x1.7fd802756ed6ep+1",
+  "output": "-0x1.fd763c8fde41bp-1",
+  "mpfr": "-0x1.fd763c8fde41ap-1"
+ },
+ "numpy_tanh_0_mid_outer": {
+  "x": "-0x1.3fcc1c674fbecp+3",
+  "output": "-0x1.ffffffdc2361cp-1",
+  "mpfr": "-0x1.ffffffdc2361dp-1"
+ },
+ "numpy_tanh_0_core_inner": {
+  "x": "-0x1.7f5c7503cc2d7p+1",
+  "output": "-0x1.fd71549763f1cp-1",
+  "mpfr": "-0x1.fd71549763f1bp-1"
+ },
+ "numpy_tanh_0_core_outer": {
+  "x": "-0x1.3f97bbfeffc1cp+3",
+  "output": "-0x1.ffffffdbad3bbp-1",
+  "mpfr": "-0x1.ffffffdbad3bcp-1"
+ },
+ "numpy_tanh_0_anchors": {
+  "x": "-0x1.fffffffffffffp+2",
+  "output": "-0x1.fffff872a91f9p-1",
+  "mpfr": "-0x1.fffff872a91f8p-1"
+ },
+ "one_word_20_inner": {
+  "x": "-0x1.355798af74b48p+1",
+  "output": "-0x1.f7ea000000000p-1",
+  "mpfr": "-0x1.f7ea1c5122fd1p-1"
+ },
+ "one_word_20_left": {
+  "x": "-0x1.b60fb421156c4p+2",
+  "output": "-0x1.ffffa00000000p-1",
+  "mpfr": "-0x1.ffffb3df60ea3p-1"
+ },
+ "one_word_20_right": {
+  "x": "0x1.dc74dace8898cp+1",
+  "output": "0x1.ff66c00000000p-1",
+  "mpfr": "0x1.ff66d90558b18p-1"
+ },
+ "one_word_20_mid_inner": {
+  "x": "-0x1.7fd802756ed6fp+1",
+  "output": "-0x1.fd76200000000p-1",
+  "mpfr": "-0x1.fd763c8fde41bp-1"
+ },
+ "one_word_20_mid_outer": {
+  "x": "-0x1.3fcc1c674fbecp+3",
+  "output": "-0x1.ffffe00000000p-1",
+  "mpfr": "-0x1.ffffffdc2361dp-1"
+ },
+ "two_word_20_inner": {
+  "x": "-0x1.355798af74b48p+1",
+  "output": "-0x1.f7ea000000000p-1",
+  "mpfr": "-0x1.f7ea1c5122fd1p-1"
+ },
+ "two_word_20_left": {
+  "x": "-0x1.b60fb421156c4p+2",
+  "output": "-0x1.ffffa00000000p-1",
+  "mpfr": "-0x1.ffffb3df60ea3p-1"
+ },
+ "two_word_20_right": {
+  "x": "0x1.dc74dace8898cp+1",
+  "output": "0x1.ff66c00000000p-1",
+  "mpfr": "0x1.ff66d90558b18p-1"
+ },
+ "two_word_20_mid_inner": {
+  "x": "-0x1.7fd802756ed6fp+1",
+  "output": "-0x1.fd76200000000p-1",
+  "mpfr": "-0x1.fd763c8fde41bp-1"
+ },
+ "two_word_20_mid_outer": {
+  "x": "-0x1.3fcc1c674fbecp+3",
+  "output": "-0x1.ffffe00000000p-1",
+  "mpfr": "-0x1.ffffffdc2361dp-1"
+ },
+ "one_word_36_inner": {
+  "x": "-0x1.355798af74b48p+1",
+  "output": "-0x1.f7ea1c5120000p-1",
+  "mpfr": "-0x1.f7ea1c5122fd1p-1"
+ },
+ "one_word_36_left": {
+  "x": "-0x1.b60fb421156c4p+2",
+  "output": "-0x1.ffffb3df60000p-1",
+  "mpfr": "-0x1.ffffb3df60ea3p-1"
+ },
+ "one_word_36_right": {
+  "x": "0x1.dc74dace8898cp+1",
+  "output": "0x1.ff66d90540000p-1",
+  "mpfr": "0x1.ff66d90558b18p-1"
+ },
+ "one_word_36_mid_inner": {
+  "x": "-0x1.7fd802756ed6fp+1",
+  "output": "-0x1.fd763c8fc0000p-1",
+  "mpfr": "-0x1.fd763c8fde41bp-1"
+ },
+ "one_word_36_mid_outer": {
+  "x": "-0x1.3fcc1c674fbecp+3",
+  "output": "-0x1.ffffffdc20000p-1",
+  "mpfr": "-0x1.ffffffdc2361dp-1"
+ },
+ "two_word_36_inner": {
+  "x": "-0x1.355798af74b48p+1",
+  "output": "-0x1.f7ea1c5120000p-1",
+  "mpfr": "-0x1.f7ea1c5122fd1p-1"
+ },
+ "two_word_36_left": {
+  "x": "-0x1.b60fb421156c4p+2",
+  "output": "-0x1.ffffb3df60000p-1",
+  "mpfr": "-0x1.ffffb3df60ea3p-1"
+ },
+ "two_word_36_right": {
+  "x": "0x1.dc74dace8898cp+1",
+  "output": "0x1.ff66d90540000p-1",
+  "mpfr": "0x1.ff66d90558b18p-1"
+ },
+ "two_word_36_mid_inner": {
+  "x": "-0x1.7fd802756ed6fp+1",
+  "output": "-0x1.fd763c8fc0000p-1",
+  "mpfr": "-0x1.fd763c8fde41bp-1"
+ },
+ "two_word_36_mid_outer": {
+  "x": "-0x1.3fcc1c674fbecp+3",
+  "output": "-0x1.ffffffdc20000p-1",
+  "mpfr": "-0x1.ffffffdc2361dp-1"
+ },
+ "one_word_52_inner": {
+  "x": "-0x1.355798af74b48p+1",
+  "output": "-0x1.f7ea1c5122fd0p-1",
+  "mpfr": "-0x1.f7ea1c5122fd1p-1"
+ },
+ "one_word_52_left": {
+  "x": "-0x1.b60fb421156c4p+2",
+  "output": "-0x1.ffffb3df60ea4p-1",
+  "mpfr": "-0x1.ffffb3df60ea3p-1"
+ },
+ "one_word_52_right": {
+  "x": "0x1.f6a2f0aade4a9p+2",
+  "output": "0x1.fffff5e17aeccp-1",
+  "mpfr": "0x1.fffff5e17aecep-1"
+ },
+ "one_word_52_mid_inner": {
+  "x": "-0x1.7fd802756ed6fp+1",
+  "output": "-0x1.fd763c8fde41ap-1",
+  "mpfr": "-0x1.fd763c8fde41bp-1"
+ },
+ "one_word_52_mid_outer": {
+  "x": "-0x1.3fcc1c674fbecp+3",
+  "output": "-0x1.ffffffdc2361cp-1",
+  "mpfr": "-0x1.ffffffdc2361dp-1"
+ },
+ "two_word_52_inner": {
+  "x": "-0x1.355798af74b48p+1",
+  "output": "-0x1.f7ea1c5122fd0p-1",
+  "mpfr": "-0x1.f7ea1c5122fd1p-1"
+ },
+ "two_word_52_left": {
+  "x": "-0x1.b60fb421156c4p+2",
+  "output": "-0x1.ffffb3df60ea2p-1",
+  "mpfr": "-0x1.ffffb3df60ea3p-1"
+ },
+ "two_word_52_right": {
+  "x": "0x1.dc74dace8898cp+1",
+  "output": "0x1.ff66d90558b16p-1",
+  "mpfr": "0x1.ff66d90558b18p-1"
+ },
+ "two_word_52_mid_inner": {
+  "x": "-0x1.7fd802756ed6fp+1",
+  "output": "-0x1.fd763c8fde41ap-1",
+  "mpfr": "-0x1.fd763c8fde41bp-1"
+ },
+ "two_word_52_mid_outer": {
+  "x": "-0x1.3fcc1c674fbecp+3",
+  "output": "-0x1.ffffffdc2361cp-1",
+  "mpfr": "-0x1.ffffffdc2361dp-1"
+ },
+ "one_word_64_inner": {
+  "x": "-0x1.355798af74b48p+1",
+  "output": "-0x1.f7ea1c5122fd0p-1",
+  "mpfr": "-0x1.f7ea1c5122fd1p-1"
+ },
+ "one_word_64_left": {
+  "x": "-0x1.b60fb421156c4p+2",
+  "output": "-0x1.ffffb3df60ea6p-1",
+  "mpfr": "-0x1.ffffb3df60ea3p-1"
+ },
+ "one_word_64_right": {
+  "x": "0x1.dc74dace8898cp+1",
+  "output": "0x1.ff66d90558b1ap-1",
+  "mpfr": "0x1.ff66d90558b18p-1"
+ },
+ "one_word_64_mid_inner": {
+  "x": "-0x1.7fd802756ed6fp+1",
+  "output": "-0x1.fd763c8fde41ap-1",
+  "mpfr": "-0x1.fd763c8fde41bp-1"
+ },
+ "one_word_64_mid_outer": {
+  "x": "-0x1.3fcc1c674fbecp+3",
+  "output": "-0x1.ffffffdc2361cp-1",
+  "mpfr": "-0x1.ffffffdc2361dp-1"
+ },
+ "two_word_64_inner": {
+  "x": "-0x1.2b18068de2756p+1",
+  "output": "-0x1.f685f91a3066cp-1",
+  "mpfr": "-0x1.f685f91a3066dp-1"
+ },
+ "two_word_64_mid_outer": {
+  "x": "-0x1.3fcc1c674fbecp+3",
+  "output": "-0x1.ffffffdc2361cp-1",
+  "mpfr": "-0x1.ffffffdc2361dp-1"
+ },
+ "one_word_76_inner": {
+  "x": "-0x1.355798af74b48p+1",
+  "output": "-0x1.f7ea1c5122fd0p-1",
+  "mpfr": "-0x1.f7ea1c5122fd1p-1"
+ },
+ "one_word_76_left": {
+  "x": "-0x1.b60fb421156c4p+2",
+  "output": "-0x1.ffffb3df60ea6p-1",
+  "mpfr": "-0x1.ffffb3df60ea3p-1"
+ },
+ "one_word_76_right": {
+  "x": "0x1.dc74dace8898cp+1",
+  "output": "0x1.ff66d90558b1ap-1",
+  "mpfr": "0x1.ff66d90558b18p-1"
+ },
+ "one_word_76_mid_inner": {
+  "x": "-0x1.7fd802756ed6fp+1",
+  "output": "-0x1.fd763c8fde41ap-1",
+  "mpfr": "-0x1.fd763c8fde41bp-1"
+ },
+ "one_word_76_mid_outer": {
+  "x": "-0x1.3fcc1c674fbecp+3",
+  "output": "-0x1.ffffffdc2361cp-1",
+  "mpfr": "-0x1.ffffffdc2361dp-1"
+ },
+ "two_word_76_mid_outer": {
+  "x": "-0x1.3fcc1c674fbebp+3",
+  "output": "-0x1.ffffffdc2361cp-1",
+  "mpfr": "-0x1.ffffffdc2361dp-1"
+ },
+ "one_word_88_inner": {
+  "x": "-0x1.355798af74b48p+1",
+  "output": "-0x1.f7ea1c5122fd0p-1",
+  "mpfr": "-0x1.f7ea1c5122fd1p-1"
+ },
+ "one_word_88_left": {
+  "x": "-0x1.b60fb421156c4p+2",
+  "output": "-0x1.ffffb3df60ea6p-1",
+  "mpfr": "-0x1.ffffb3df60ea3p-1"
+ },
+ "one_word_88_right": {
+  "x": "0x1.dc74dace8898cp+1",
+  "output": "0x1.ff66d90558b1ap-1",
+  "mpfr": "0x1.ff66d90558b18p-1"
+ },
+ "one_word_88_fresh_outer": {
+  "x": "-0x1.0f661ef548eeep+3",
+  "output": "-0x1.fffffd1d893d4p-1",
+  "mpfr": "-0x1.fffffd1d893d6p-1"
+ },
+ "one_word_88_mid_inner": {
+  "x": "-0x1.7fd802756ed6fp+1",
+  "output": "-0x1.fd763c8fde41ap-1",
+  "mpfr": "-0x1.fd763c8fde41bp-1"
+ },
+ "one_word_88_mid_outer": {
+  "x": "-0x1.3fcc1c674fbecp+3",
+  "output": "-0x1.ffffffdc2361cp-1",
+  "mpfr": "-0x1.ffffffdc2361dp-1"
+ },
+ "one_word_88_core_inner": {
+  "x": "-0x1.7fdf44641d78cp+1",
+  "output": "-0x1.fd76860bb9c1cp-1",
+  "mpfr": "-0x1.fd76860bb9c20p-1"
+ },
+ "one_word_88_core_outer": {
+  "x": "-0x1.3ff5863f57512p+3",
+  "output": "-0x1.ffffffdc7fbc6p-1",
+  "mpfr": "-0x1.ffffffdc7fbcap-1"
+ },
+ "one_word_88_anchors": {
+  "x": "-0x1.4000000000000p+3",
+  "output": "-0x1.ffffffdc96f36p-1",
+  "mpfr": "-0x1.ffffffdc96f35p-1"
+ },
+ "two_word_88_core_inner": {
+  "x": "-0x1.7bfa1f2427a25p+1",
+  "output": "-0x1.fd4de023cc9e8p-1",
+  "mpfr": "-0x1.fd4de023cc9e9p-1"
+ },
+ "two_word_88_core_outer": {
+  "x": "-0x1.3a193c33c7005p+3",
+  "output": "-0x1.ffffffcccb70ep-1",
+  "mpfr": "-0x1.ffffffcccb70fp-1"
+ },
+ "one_word_104_inner": {
+  "x": "-0x1.355798af74b48p+1",
+  "output": "-0x1.f7ea1c5122fd0p-1",
+  "mpfr": "-0x1.f7ea1c5122fd1p-1"
+ },
+ "one_word_104_left": {
+  "x": "-0x1.b60fb421156c4p+2",
+  "output": "-0x1.ffffb3df60ea6p-1",
+  "mpfr": "-0x1.ffffb3df60ea3p-1"
+ },
+ "one_word_104_right": {
+  "x": "0x1.dc74dace8898cp+1",
+  "output": "0x1.ff66d90558b1ap-1",
+  "mpfr": "0x1.ff66d90558b18p-1"
+ },
+ "one_word_104_mid_inner": {
+  "x": "-0x1.7fd802756ed6fp+1",
+  "output": "-0x1.fd763c8fde41ap-1",
+  "mpfr": "-0x1.fd763c8fde41bp-1"
+ },
+ "one_word_104_mid_outer": {
+  "x": "-0x1.3fcc1c674fbecp+3",
+  "output": "-0x1.ffffffdc2361cp-1",
+  "mpfr": "-0x1.ffffffdc2361dp-1"
+ },
+ "one_word_120_inner": {
+  "x": "-0x1.355798af74b48p+1",
+  "output": "-0x1.f7ea1c5122fd0p-1",
+  "mpfr": "-0x1.f7ea1c5122fd1p-1"
+ },
+ "one_word_120_left": {
+  "x": "-0x1.b60fb421156c4p+2",
+  "output": "-0x1.ffffb3df60ea6p-1",
+  "mpfr": "-0x1.ffffb3df60ea3p-1"
+ },
+ "one_word_120_right": {
+  "x": "0x1.dc74dace8898cp+1",
+  "output": "0x1.ff66d90558b1ap-1",
+  "mpfr": "0x1.ff66d90558b18p-1"
+ },
+ "one_word_120_fresh_outer": {
+  "x": "-0x1.0f661ef548eeep+3",
+  "output": "-0x1.fffffd1d893d4p-1",
+  "mpfr": "-0x1.fffffd1d893d6p-1"
+ },
+ "one_word_120_mid_inner": {
+  "x": "-0x1.7fd802756ed6fp+1",
+  "output": "-0x1.fd763c8fde41ap-1",
+  "mpfr": "-0x1.fd763c8fde41bp-1"
+ },
+ "one_word_120_mid_outer": {
+  "x": "-0x1.3fcc1c674fbecp+3",
+  "output": "-0x1.ffffffdc2361cp-1",
+  "mpfr": "-0x1.ffffffdc2361dp-1"
+ },
+ "one_word_120_core_inner": {
+  "x": "-0x1.7fdf44641d78cp+1",
+  "output": "-0x1.fd76860bb9c1cp-1",
+  "mpfr": "-0x1.fd76860bb9c20p-1"
+ },
+ "one_word_120_core_outer": {
+  "x": "-0x1.3ff5863f57512p+3",
+  "output": "-0x1.ffffffdc7fbc6p-1",
+  "mpfr": "-0x1.ffffffdc7fbcap-1"
+ },
+ "one_word_120_anchors": {
+  "x": "-0x1.4000000000000p+3",
+  "output": "-0x1.ffffffdc96f36p-1",
+  "mpfr": "-0x1.ffffffdc96f35p-1"
+ },
+ "two_word_120_core_inner": {
+  "x": "-0x1.5319f57633346p+0",
+  "output": "-0x1.bc60ed585d874p-1",
+  "mpfr": "-0x1.bc60ed585d873p-1"
+ },
+ "two_word_120_core_outer": {
+  "x": "-0x1.b3932561f068ap+1",
+  "output": "-0x1.fede0e6e8ae6ap-1",
+  "mpfr": "-0x1.fede0e6e8ae6bp-1"
+ },
+ "guard_two_word_84_core_inner": {
+  "x": "-0x1.5319f57633346p+0",
+  "output": "-0x1.bc60ed585d874p-1",
+  "mpfr": "-0x1.bc60ed585d873p-1"
+ },
+ "guard_two_word_84_core_outer": {
+  "x": "-0x1.8449d79ba2c11p+2",
+  "output": "-0x1.fffe9762e2c2bp-1",
+  "mpfr": "-0x1.fffe9762e2c2cp-1"
+ },
+ "guard_three_word_60_inner": {
+  "x": "0x1.2b95b87b3e800p-11",
+  "output": "0x1.2b95b65834850p-11",
+  "mpfr": "0x1.2b95b65834855p-11"
+ },
+ "guard_three_word_60_mid_inner": {
+  "x": "-0x1.2ca25ea00c102p-8",
+  "output": "-0x1.2ca1d46ca4753p-8",
+  "mpfr": "-0x1.2ca1d46ca4754p-8"
+ },
+ "guard_three_word_60_core_inner": {
+  "x": "-0x1.ff4da08b088c1p-8",
+  "output": "-0x1.ff4af8ad20144p-8",
+  "mpfr": "-0x1.ff4af8ad20145p-8"
+ },
+ "guard_three_word_60_anchors": {
+  "x": "-0x1.0000000000001p-25",
+  "output": "-0x1.ffffffffc0000p-26",
+  "mpfr": "-0x1.fffffffffffffp-26"
+ },
+ "guard_three_word_72_core_inner": {
+  "x": "-0x1.ff0ee3dc29d44p-20",
+  "output": "-0x1.ff0ee3dc272d5p-20",
+  "mpfr": "-0x1.ff0ee3dc272d6p-20"
+ },
+ "guard_three_word_72_anchors": {
+  "x": "-0x1.0000000000001p-25",
+  "output": "-0x1.fffffffffffc0p-26",
+  "mpfr": "-0x1.fffffffffffffp-26"
+ },
+ "guard_three_word_76_core_inner": {
+  "x": "-0x1.ff551c52171edp-24",
+  "output": "-0x1.ff551c52171c2p-24",
+  "mpfr": "-0x1.ff551c52171c3p-24"
+ },
+ "guard_three_word_76_anchors": {
+  "x": "-0x1.0000000000001p-25",
+  "output": "-0x1.ffffffffffffcp-26",
+  "mpfr": "-0x1.fffffffffffffp-26"
+ },
+ "guard_three_word_78_core_inner": {
+  "x": "-0x1.f51a62037e956p-26",
+  "output": "-0x1.f51a62037e953p-26",
+  "mpfr": "-0x1.f51a62037e954p-26"
+ },
+ "guard_three_word_78_anchors": {
+  "x": "-0x1.0000000000001p-26",
+  "output": "-0x1.0000000000000p-26",
+  "mpfr": "-0x1.0000000000001p-26"
+ },
+ "guard_three_word_79_core_inner": {
+  "x": "-0x1.d12ed0af1a27fp-27",
+  "output": "-0x1.d12ed0af1a27ep-27",
+  "mpfr": "-0x1.d12ed0af1a27fp-27"
+ },
+ "guard_three_word_79_anchors": {
+  "x": "-0x1.0000000000001p-27",
+  "output": "-0x1.0000000000000p-27",
+  "mpfr": "-0x1.0000000000001p-27"
+ }
+}

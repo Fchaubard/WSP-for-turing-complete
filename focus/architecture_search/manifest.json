@@ -1,0 +1,212 @@
+[
+ {
+  "id": "666ce35a3c39",
+  "task": "square",
+  "seed": 164,
+  "arm": "free_architecture_examples",
+  "mode": "scalar"
+ },
+ {
+  "id": "9542ec0be6a0",
+  "task": "square",
+  "seed": 317,
+  "arm": "free_architecture_examples",
+  "mode": "scalar"
+ },
+ {
+  "id": "becdc51a87fd",
+  "task": "square",
+  "seed": 583,
+  "arm": "free_architecture_examples",
+  "mode": "scalar"
+ },
+ {
+  "id": "c4d3487233eb",
+  "task": "sin",
+  "seed": 164,
+  "arm": "free_architecture_examples",
+  "mode": "scalar"
+ },
+ {
+  "id": "d5a5382c186f",
+  "task": "sin",
+  "seed": 317,
+  "arm": "free_architecture_examples",
+  "mode": "scalar"
+ },
+ {
+  "id": "af642b5b08e0",
+  "task": "sin",
+  "seed": 583,
+  "arm": "free_architecture_examples",
+  "mode": "scalar"
+ },
+ {
+  "id": "fc6ac7755ec9",
+  "task": "selfpower",
+  "seed": 164,
+  "arm": "free_architecture_examples",
+  "mode": "scalar"
+ },
+ {
+  "id": "80d934db102f",
+  "task": "selfpower",
+  "seed": 317,
+  "arm": "free_architecture_examples",
+  "mode": "scalar"
+ },
+ {
+  "id": "21058e2aefca",
+  "task": "selfpower",
+  "seed": 583,
+  "arm": "free_architecture_examples",
+  "mode": "scalar"
+ },
+ {
+  "id": "a87c119ca37d",
+  "task": "tanh",
+  "seed": 164,
+  "arm": "free_architecture_examples",
+  "mode": "scalar"
+ },
+ {
+  "id": "f578d00f6cee",
+  "task": "tanh",
+  "seed": 317,
+  "arm": "free_architecture_examples",
+  "mode": "scalar"
+ },
+ {
+  "id": "15270c319ad2",
+  "task": "tanh",
+  "seed": 583,
+  "arm": "free_architecture_examples",
+  "mode": "scalar"
+ },
+ {
+  "id": "d0bdb834ccdd",
+  "task": "add",
+  "seed": 164,
+  "arm": "free_architecture_examples",
+  "mode": "vector"
+ },
+ {
+  "id": "543adda44628",
+  "task": "add",
+  "seed": 317,
+  "arm": "free_architecture_examples",
+  "mode": "vector"
+ },
+ {
+  "id": "f7fc6449d1cd",
+  "task": "add",
+  "seed": 583,
+  "arm": "free_architecture_examples",
+  "mode": "vector"
+ },
+ {
+  "id": "7cfa6973faf8",
+  "task": "subtract",
+  "seed": 164,
+  "arm": "free_architecture_examples",
+  "mode": "vector"
+ },
+ {
+  "id": "f2bf5d12cd7f",
+  "task": "subtract",
+  "seed": 317,
+  "arm": "free_architecture_examples",
+  "mode": "vector"
+ },
+ {
+  "id": "3b8b23a58881",
+  "task": "subtract",
+  "seed": 583,
+  "arm": "free_architecture_examples",
+  "mode": "vector"
+ },
+ {
+  "id": "8e4ac7034bd9",
+  "task": "sum",
+  "seed": 164,
+  "arm": "free_architecture_examples",
+  "mode": "sequence"
+ },
+ {
+  "id": "4d3bed888c82",
+  "task": "sum",
+  "seed": 317,
+  "arm": "free_architecture_examples",
+  "mode": "sequence"
+ },
+ {
+  "id": "77bab1f3473a",
+  "task": "sum",
+  "seed": 583,
+  "arm": "free_architecture_examples",
+  "mode": "sequence"
+ },
+ {
+  "id": "b913040f9d22",
+  "task": "sort",
+  "seed": 164,
+  "arm": "free_architecture_examples",
+  "mode": "vector"
+ },
+ {
+  "id": "6b9e6b674353",
+  "task": "sort",
+  "seed": 317,
+  "arm": "free_architecture_examples",
+  "mode": "vector"
+ },
+ {
+  "id": "7c878a9b3005",
+  "task": "sort",
+  "seed": 583,
+  "arm": "free_architecture_examples",
+  "mode": "vector"
+ },
+ {
+  "id": "266d1275cf63",
+  "task": "fib",
+  "seed": 164,
+  "arm": "free_architecture_examples",
+  "mode": "index"
+ },
+ {
+  "id": "9cc4fd449a09",
+  "task": "fib",
+  "seed": 317,
+  "arm": "free_architecture_examples",
+  "mode": "index"
+ },
+ {
+  "id": "9fbba35ecd37",
+  "task": "fib",
+  "seed": 583,
+  "arm": "free_architecture_examples",
+  "mode": "index"
+ },
+ {
+  "id": "afc5a2676102",
+  "task": "tri",
+  "seed": 164,
+  "arm": "free_architecture_examples",
+  "mode": "index"
+ },
+ {
+  "id": "2db8f82abdf6",
+  "task": "tri",
+  "seed": 317,
+  "arm": "free_architecture_examples",
+  "mode": "index"
+ },
+ {
+  "id": "5a7ea089bebc",
+  "task": "tri",
+  "seed": 583,
+  "arm": "free_architecture_examples",
+  "mode": "index"
+ }
+]

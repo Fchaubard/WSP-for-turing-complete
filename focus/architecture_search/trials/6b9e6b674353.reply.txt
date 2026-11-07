@@ -1,0 +1,127 @@
+{
+  "family": "Three-stage ReLU sorting network",
+  "inferred_rule": "Return the four input coordinates in ascending order.",
+  "construction_summary": "Five compare-exchange units sort four values in three stages. Each unit computes r = ReLU(a − b), then returns (a − r, b + r). The first stage sorts two input pairs; the second compares their minima and their maxima; the final stage sorts the middle two values. Parallel units share convolution coefficients, and all stages share the correction vector. The graph stores eight scalar coefficients, including zeros and ones, and uses no biases. It implements sorting throughout the deployment domain, with only binary64 rounding error.",
+  "certificate": "In exact arithmetic, (a−ReLU(a−b), b+ReLU(a−b)) = (min(a,b),max(a,b)). After stage one, write the pairs as l0≤h0 and l1≤h1. Stage two produces [min(l0,l1),max(l0,l1),min(h0,h1),max(h0,h1)]. Its first and last entries are the global minimum and maximum. Sorting its two middle entries therefore sorts all four coordinates. This proof includes ties and holds for all real inputs. Binary64 subtraction and addition can introduce rounding; exact bitwise preservation is not asserted.",
+  "network": {
+    "kind": "graph",
+    "nodes": [
+      {
+        "name": "correction_sign",
+        "op": "constant",
+        "value": [-1, 1]
+      },
+      {
+        "name": "pairs1",
+        "op": "reshape",
+        "source": "input",
+        "shape": [2, 2]
+      },
+      {
+        "name": "difference1",
+        "op": "conv1d",
+        "source": "pairs1",
+        "weight": [[[1], [-1]]]
+      },
+      {
+        "name": "positive1",
+        "op": "relu",
+        "source": "difference1"
+      },
+      {
+        "name": "correction1",
+        "op": "multiply",
+        "left": "positive1",
+        "right": "correction_sign"
+      },
+      {
+        "name": "sorted_pairs1",
+        "op": "add",
+        "left": "pairs1",
+        "right": "correction1"
+      },
+      {
+        "name": "routing1",
+        "op": "take",
+        "source": "sorted_pairs1",
+        "indices": [0, 2, 1, 3]
+      },
+      {
+        "name": "pairs2",
+        "op": "reshape",
+        "source": "routing1",
+        "shape": [2, 2]
+      },
+      {
+        "name": "difference2",
+        "op": "conv1d",
+        "source": "pairs2",
+        "weight": [[[1], [-1]]]
+      },
+      {
+        "name": "positive2",
+        "op": "relu",
+        "source": "difference2"
+      },
+      {
+        "name": "correction2",
+        "op": "multiply",
+        "left": "positive2",
+        "right": "correction_sign"
+      },
+      {
+        "name": "sorted_pairs2",
+        "op": "add",
+        "left": "pairs2",
+        "right": "correction2"
+      },
+      {
+        "name": "middle",
+        "op": "take",
+        "source": "sorted_pairs2",
+        "indices": [1, 2]
+      },
+      {
+        "name": "difference3",
+        "op": "affine",
+        "source": "middle",
+        "weight": [[1, -1]]
+      },
+      {
+        "name": "positive3",
+        "op": "relu",
+        "source": "difference3"
+      },
+      {
+        "name": "correction3",
+        "op": "multiply",
+        "left": "positive3",
+        "right": "correction_sign"
+      },
+      {
+        "name": "sorted_middle",
+        "op": "add",
+        "left": "middle",
+        "right": "correction3"
+      },
+      {
+        "name": "minimum",
+        "op": "take",
+        "source": "sorted_pairs2",
+        "indices": [0]
+      },
+      {
+        "name": "maximum",
+        "op": "take",
+        "source": "sorted_pairs2",
+        "indices": [3]
+      },
+      {
+        "name": "sorted_output",
+        "op": "concat",
+        "sources": ["minimum", "sorted_middle", "maximum"]
+      }
+    ],
+    "output": "sorted_output"
+  }
+}

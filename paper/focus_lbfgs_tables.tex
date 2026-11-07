@@ -1,0 +1,163 @@
+\subsection{Gradient descent and limited-memory optimization}\label{app:limitedmemory}
+This subsection retains the original training-only gradient comparisons. Its early integer diagnostic uses the original indices 9--32. For a comparison with iterative WSP on untouched indices 17--32, see Table~\ref{tab:sizes_dev}. These fits use the same nonconvex networks, initial weights, training observations and loss as the main comparison. Plain full-batch gradient descent starts from Xavier and takes at most 800 updates. At each update it tries step size one and halves it until the training loss decreases sufficiently. Limited-memory Broyden--Fletcher--Goldfarb--Shanno (L-BFGS) uses the most recent ten pairs of changes in weights and gradients to approximate curvature. We run it with no parameter bounds for up to 1,000 iterations. Its reported endpoint has the lowest training loss among the supplied starting point and its accepted iterates. Selection uses training loss throughout.
+
+We start L-BFGS from three separate points: the original Xavier weights, the gradient-descent endpoint, or the endpoint after 800 adaptive moment estimation (Adam) updates. The Adam checkpoint in Table~\ref{tab:limitedmemory_overview} is scored before refinement. The separate Adam--BFGS baseline applies full-memory BFGS after Adam. Each additional fit uses derivatives of the empirical loss obtained by backpropagation through the network. The complete records include optimizer termination, per-setting scores and fitted weights.
+
+Tables~\ref{tab:limitedmemory_outer}, \ref{tab:limitedmemory_dev} and~\ref{tab:limitedmemory_train} give raw root mean squared error (RMSE) and exact matches at each tested size. Tables~\ref{tab:sizes_outer}--\ref{tab:sizes_train} give WSP and gradient results on the same outer and training inputs and on the current held-out central or early split, which uses indices 17--32 for the two integer sequences. Size denotes hidden width or the number of residual blocks for sorting. Slots count trainable scalar coefficients.
+
+\begin{table}[htbp]\centering\small
+\caption{Optimizer outcomes relative to all 87 matched settings. Near the optimum means an absolute loss gap of at most $10^{-10}$ to the independently certified minimum in the 12 one-hinge settings. The last column counts settings with strictly smaller outer raw RMSE for the first examples-only WSP response than for the named fit. Each setting contributes one comparison.}
+\label{tab:limitedmemory_overview}
+\setlength{\tabcolsep}{3.2pt}
+\begin{tabular}{@{}lrrrrr@{}}
+\toprule
+ & \multicolumn{2}{c}{Observed training set} & Near the & Entire outer & WSP lower\\
+\cmidrule(lr){2-3}
+Method & Median loss & Loss $\leq 10^{-10}$ & optimum /12 & set exact /87 & RMSE /87\\
+\midrule
+Gradient descent & 0.0026 & 6 & 0 & 0 & 75 \\
+Gradient descent $\to$ L-BFGS & $5.46\!\times\!10^{-4}$ & 32 & 1 & 0 & 75 \\
+Adam (800 updates) & 0.00111 & 11 & 0 & 0 & 74 \\
+Adam $\to$ L-BFGS & $5.34\!\times\!10^{-4}$ & 34 & 1 & 0 & 74 \\
+L-BFGS from Xavier & $3.22\!\times\!10^{-5}$ & 37 & 3 & 0 & 71 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[htbp]\centering\scriptsize
+\caption{Exact counts and raw RMSE for gradient optimizers on the outer test. Continuous inputs have magnitudes from 3 to 10. Integer sequences use indices 33--64. Each entry is a median over the same three starts. Exact counts require every output of a stream or list, or one number at a given integer index. RMSE includes every scalar output in the target's units.}
+\label{tab:limitedmemory_outer}
+\setlength{\tabcolsep}{2pt}
+\resizebox{\linewidth}{!}{\begin{tabular}{@{}lrr *{8}{r}@{}}
+\toprule
+ & & & \multicolumn{2}{c}{Gradient descent} &
+ \multicolumn{2}{c}{\shortstack{Gradient descent\\then L-BFGS}} &
+ \multicolumn{2}{c}{\shortstack{Adam\\then L-BFGS}} &
+ \multicolumn{2}{c}{\shortstack{L-BFGS\\from Xavier}}\\
+\cmidrule(lr){4-5}\cmidrule(lr){6-7}\cmidrule(lr){8-9}\cmidrule(l){10-11}
+Target & Size & Slots & Exact & RMSE & Exact & RMSE & Exact & RMSE & Exact & RMSE\\
+\midrule
+Square & 1 & 5 & 0/4096 & 51.8 & 0/4096 & 51.8 & 0/4096 & 51.8 & 0/4096 & 51.8 \\
+ & 4 & 14 & 0/4096 & 39.1 & 0/4096 & 39.1 & 0/4096 & 37.3 & 0/4096 & 40.1 \\
+ & 16 & 50 & 0/4096 & 34.8 & 0/4096 & 33.5 & 0/4096 & 29 & 0/4096 & 28.5 \\
+Sine & 1 & 5 & 0/4096 & 2.57 & 0/4096 & 2.57 & 0/4096 & 2.18 & 0/4096 & 2.56 \\
+ & 4 & 14 & 0/4096 & 2.15 & 0/4096 & 2.45 & 0/4096 & 2.26 & 0/4096 & 2.57 \\
+ & 16 & 50 & 0/4096 & 2.33 & 0/4096 & 2.52 & 0/4096 & 2.45 & 0/4096 & 2.81 \\
+Positive self-power & 1 & 5 & 0/2048 & $1.58\!\times\!10^{9}$ & 0/2048 & $1.58\!\times\!10^{9}$ & 0/2048 & $1.58\!\times\!10^{9}$ & 0/2048 & $1.58\!\times\!10^{9}$ \\
+ & 4 & 14 & 0/2048 & $1.58\!\times\!10^{9}$ & 0/2048 & $1.58\!\times\!10^{9}$ & 0/2048 & $1.58\!\times\!10^{9}$ & 0/2048 & $1.58\!\times\!10^{9}$ \\
+ & 16 & 50 & 0/2048 & $1.58\!\times\!10^{9}$ & 0/2048 & $1.58\!\times\!10^{9}$ & 0/2048 & $1.58\!\times\!10^{9}$ & 0/2048 & $1.58\!\times\!10^{9}$ \\
+Hyperbolic tangent & 1 & 5 & 0/4096 & 2.23 & 0/4096 & 2.23 & 0/4096 & 1.77 & 0/4096 & 1.94 \\
+ & 4 & 14 & 0/4096 & 0.916 & 0/4096 & 0.618 & 0/4096 & 0.741 & 0/4096 & 0.551 \\
+ & 16 & 50 & 0/4096 & 0.649 & 0/4096 & 0.343 & 0/4096 & 0.307 & 0/4096 & 0.195 \\
+Addition & 1 & 5 & 0/2048 & 9.68 & 0/2048 & 9.68 & 0/2048 & 9.63 & 22/2048 & 5.19 \\
+ & 2 & 9 & 0/2048 & 4.9 & 0/2048 & 4.2 & 31/2048 & 2.09 & 8/2048 & 5.48 \\
+ & 4 & 17 & 0/2048 & 0.266 & 2/2048 & 0.266 & 0/2048 & 0.815 & 2/2048 & 0.0279 \\
+Subtraction & 1 & 5 & 0/2048 & 4.92 & 30/2048 & 4.77 & 211/2048 & 4.46 & 449/2048 & 4.47 \\
+ & 2 & 9 & 0/2048 & 0.831 & 14/2048 & $1.44\!\times\!10^{-13}$ & 63/2048 & 3.64 & 5/2048 & $6.49\!\times\!10^{-14}$ \\
+ & 4 & 17 & 0/2048 & 0.754 & 2/2048 & 0.00435 & 4/2048 & $5.61\!\times\!10^{-13}$ & 1/2048 & $6.84\!\times\!10^{-13}$ \\
+Running sum & 1 & 3 & 0/2048 & $7.02\!\times\!10^{-14}$ & 0/2048 & $7.02\!\times\!10^{-14}$ & 0/2048 & $2.27\!\times\!10^{-14}$ & 0/2048 & $3.48\!\times\!10^{-15}$ \\
+ & 2 & 8 & 0/2048 & $1.01\!\times\!10^{-13}$ & 0/2048 & $1.01\!\times\!10^{-13}$ & 23/2048 & $1.95\!\times\!10^{-15}$ & 9/2048 & $2.72\!\times\!10^{-15}$ \\
+Sort four & 4 & 32 & 29/2048 & 5 & 46/2048 & 5.86 & 32/2048 & 4.88 & 20/2048 & 4.81 \\
+ & 5 & 40 & 26/2048 & 4.44 & 8/2048 & 6.09 & 17/2048 & 8.61 & 30/2048 & 3.93 \\
+ & 6 & 48 & 0/2048 & 5.71 & 0/2048 & 5.52 & 0/2048 & 5.11 & 0/2048 & 5.77 \\
+Fibonacci & 1 & 3 & 0/32 & $3.17\!\times\!10^{12}$ & 0/32 & $3.17\!\times\!10^{12}$ & 0/32 & $3.17\!\times\!10^{12}$ & 0/32 & $2.39\!\times\!10^{12}$ \\
+ & 2 & 8 & 0/32 & $2.44\!\times\!10^{10}$ & 0/32 & 0.0715 & 0/32 & 0.0503 & 0/32 & 0.0257 \\
+ & 3 & 15 & 0/32 & $4.94\!\times\!10^{11}$ & 0/32 & 0.0279 & 0/32 & 0.0152 & 0/32 & 0.24 \\
+Triangular & 2 & 8 & 0/32 & $1.47\!\times\!10^{9}$ & 0/32 & $1.47\!\times\!10^{9}$ & 0/32 & $1.47\!\times\!10^{9}$ & 0/32 & $1.47\!\times\!10^{9}$ \\
+ & 3 & 15 & 0/32 & $8.30\!\times\!10^{5}$ & 0/32 & $7.51\!\times\!10^{-8}$ & 0/32 & $3.15\!\times\!10^{-7}$ & 0/32 & $1.99\!\times\!10^{-8}$ \\
+ & 4 & 24 & 0/32 & $1.59\!\times\!10^{7}$ & 0/32 & $6.88\!\times\!10^{-7}$ & 0/32 & $6.69\!\times\!10^{-7}$ & 0/32 & $5.65\!\times\!10^{-7}$ \\
+\bottomrule
+\end{tabular}}
+\end{table}
+
+\begin{table}[htbp]\centering\scriptsize
+\caption{Exact counts and raw RMSE for gradient optimizers on the central or early-index test. Continuous inputs have central magnitudes up to 3. Integer sequences use unseen indices 9--32. Each entry is a median over the same three starts. Exact counts require every output of a stream or list, or one number at a given integer index. RMSE includes every scalar output in the target's units.}
+\label{tab:limitedmemory_dev}
+\setlength{\tabcolsep}{2pt}
+\resizebox{\linewidth}{!}{\begin{tabular}{@{}lrr *{8}{r}@{}}
+\toprule
+ & & & \multicolumn{2}{c}{Gradient descent} &
+ \multicolumn{2}{c}{\shortstack{Gradient descent\\then L-BFGS}} &
+ \multicolumn{2}{c}{\shortstack{Adam\\then L-BFGS}} &
+ \multicolumn{2}{c}{\shortstack{L-BFGS\\from Xavier}}\\
+\cmidrule(lr){4-5}\cmidrule(lr){6-7}\cmidrule(lr){8-9}\cmidrule(l){10-11}
+Target & Size & Slots & Exact & RMSE & Exact & RMSE & Exact & RMSE & Exact & RMSE\\
+\midrule
+Square & 1 & 5 & 0/2048 & 3.27 & 0/2048 & 3.27 & 0/2048 & 3.27 & 0/2048 & 3.27 \\
+ & 4 & 14 & 0/2048 & 1.24 & 0/2048 & 1.24 & 0/2048 & 1.05 & 0/2048 & 1.24 \\
+ & 16 & 50 & 0/2048 & 0.765 & 0/2048 & 0.575 & 0/2048 & 0.194 & 0/2048 & 0.309 \\
+Sine & 1 & 5 & 0/2048 & 0.445 & 0/2048 & 0.445 & 0/2048 & 0.386 & 0/2048 & 0.381 \\
+ & 4 & 14 & 0/2048 & 0.242 & 0/2048 & 0.109 & 0/2048 & 0.169 & 0/2048 & 0.137 \\
+ & 16 & 50 & 0/2048 & 0.132 & 0/2048 & 0.0671 & 0/2048 & 0.111 & 0/2048 & 0.0902 \\
+Positive self-power & 1 & 5 & 0/2048 & 5.59 & 0/2048 & 5.59 & 0/2048 & 5.59 & 0/2048 & 5.59 \\
+ & 4 & 14 & 0/2048 & 5.59 & 0/2048 & 5.59 & 0/2048 & 3.62 & 0/2048 & 5.59 \\
+ & 16 & 50 & 0/2048 & 3.81 & 0/2048 & 3.81 & 0/2048 & 4.45 & 0/2048 & 3.23 \\
+Hyperbolic tangent & 1 & 5 & 0/2048 & 0.237 & 0/2048 & 0.237 & 0/2048 & 0.204 & 0/2048 & 0.209 \\
+ & 4 & 14 & 0/2048 & 0.114 & 0/2048 & 0.133 & 0/2048 & 0.0923 & 0/2048 & 0.0412 \\
+ & 16 & 50 & 0/2048 & 0.0421 & 0/2048 & 0.0368 & 0/2048 & 0.0266 & 0/2048 & 0.015 \\
+Addition & 1 & 5 & 0/2048 & 2.43 & 0/2048 & 2.43 & 0/2048 & 2.44 & 97/2048 & 0.43 \\
+ & 2 & 9 & 0/2048 & 0.248 & 1/2048 & 0.0323 & 51/2048 & 0.331 & 25/2048 & 0.258 \\
+ & 4 & 17 & 0/2048 & 0.0161 & 9/2048 & 0.0156 & 4/2048 & 0.109 & 6/2048 & $1.34\!\times\!10^{-13}$ \\
+Subtraction & 1 & 5 & 0/2048 & 0.304 & 185/2048 & 0.24 & 426/2048 & 0.152 & 539/2048 & 0.154 \\
+ & 2 & 9 & 0/2048 & 0.167 & 65/2048 & $2.85\!\times\!10^{-14}$ & 134/2048 & 0.0952 & 8/2048 & $1.67\!\times\!10^{-14}$ \\
+ & 4 & 17 & 0/2048 & 0.152 & 6/2048 & 0.00129 & 2/2048 & $1.11\!\times\!10^{-13}$ & 3/2048 & $1.50\!\times\!10^{-13}$ \\
+Running sum & 1 & 3 & 0/2048 & $1.79\!\times\!10^{-14}$ & 0/2048 & $1.79\!\times\!10^{-14}$ & 0/2048 & $5.79\!\times\!10^{-15}$ & 1/2048 & $8.88\!\times\!10^{-16}$ \\
+ & 2 & 8 & 0/2048 & $2.56\!\times\!10^{-14}$ & 0/2048 & $2.56\!\times\!10^{-14}$ & 21/2048 & $5.09\!\times\!10^{-16}$ & 8/2048 & $7.14\!\times\!10^{-16}$ \\
+Sort four & 4 & 32 & 21/2048 & 1.32 & 43/2048 & 1.58 & 29/2048 & 1.28 & 10/2048 & 1.22 \\
+ & 5 & 40 & 25/2048 & 1.11 & 9/2048 & 1.65 & 20/2048 & 2.26 & 35/2048 & 1.01 \\
+ & 6 & 48 & 0/2048 & 1.44 & 0/2048 & 1.43 & 0/2048 & 1.3 & 0/2048 & 1.5 \\
+Fibonacci & 1 & 3 & 0/24 & $5.66\!\times\!10^{5}$ & 0/24 & $5.66\!\times\!10^{5}$ & 0/24 & $5.66\!\times\!10^{5}$ & 0/24 & $5.66\!\times\!10^{5}$ \\
+ & 2 & 8 & 0/24 & $2.73\!\times\!10^{3}$ & 0/24 & $7.67\!\times\!10^{-9}$ & 0/24 & $5.48\!\times\!10^{-9}$ & 0/24 & $3.12\!\times\!10^{-9}$ \\
+ & 3 & 15 & 0/24 & $4.93\!\times\!10^{4}$ & 0/24 & $3.09\!\times\!10^{-9}$ & 0/24 & $1.78\!\times\!10^{-9}$ & 0/24 & $2.54\!\times\!10^{-8}$ \\
+Triangular & 2 & 8 & 0/24 & $3.00\!\times\!10^{4}$ & 0/24 & $3.00\!\times\!10^{4}$ & 0/24 & $3.00\!\times\!10^{4}$ & 0/24 & $3.00\!\times\!10^{4}$ \\
+ & 3 & 15 & 0/24 & $1.30\!\times\!10^{3}$ & 0/24 & $1.05\!\times\!10^{-9}$ & 0/24 & $5.78\!\times\!10^{-9}$ & 0/24 & $3.79\!\times\!10^{-10}$ \\
+ & 4 & 24 & 0/24 & $5.09\!\times\!10^{3}$ & 0/24 & $1.38\!\times\!10^{-8}$ & 0/24 & $1.27\!\times\!10^{-8}$ & 0/24 & $9.38\!\times\!10^{-9}$ \\
+\bottomrule
+\end{tabular}}
+\end{table}
+
+\begin{table}[htbp]\centering\scriptsize
+\caption{Exact counts and raw RMSE for gradient optimizers on the observed training set. Each setting has 12 labeled examples, or nine integer indices 0--8 for a number sequence. Each entry is a median over the same three starts. Exact counts require every output of a stream or list, or one number at a given integer index. RMSE includes every scalar output in the target's units.}
+\label{tab:limitedmemory_train}
+\setlength{\tabcolsep}{2pt}
+\resizebox{\linewidth}{!}{\begin{tabular}{@{}lrr *{8}{r}@{}}
+\toprule
+ & & & \multicolumn{2}{c}{Gradient descent} &
+ \multicolumn{2}{c}{\shortstack{Gradient descent\\then L-BFGS}} &
+ \multicolumn{2}{c}{\shortstack{Adam\\then L-BFGS}} &
+ \multicolumn{2}{c}{\shortstack{L-BFGS\\from Xavier}}\\
+\cmidrule(lr){4-5}\cmidrule(lr){6-7}\cmidrule(lr){8-9}\cmidrule(l){10-11}
+Target & Size & Slots & Exact & RMSE & Exact & RMSE & Exact & RMSE & Exact & RMSE\\
+\midrule
+Square & 1 & 5 & 0/12 & 2.8 & 0/12 & 2.8 & 0/12 & 2.8 & 0/12 & 2.8 \\
+ & 4 & 14 & 0/12 & 0.792 & 0/12 & 0.792 & 0/12 & 0.434 & 0/12 & 1.07 \\
+ & 16 & 50 & 0/12 & 0.296 & 0/12 & 0.29 & 0/12 & 0.00464 & 0/12 & 0.0291 \\
+Sine & 1 & 5 & 0/12 & 0.399 & 0/12 & 0.399 & 0/12 & 0.399 & 0/12 & 0.325 \\
+ & 4 & 14 & 0/12 & 0.0679 & 0/12 & 0.0327 & 0/12 & 0.0339 & 0/12 & 0.0339 \\
+ & 16 & 50 & 0/12 & 0.0272 & 0/12 & 0.00294 & 0/12 & 0.0017 & 0/12 & $4.30\!\times\!10^{-4}$ \\
+Positive self-power & 1 & 5 & 0/12 & 3.03 & 0/12 & 3.03 & 0/12 & 3.03 & 0/12 & 3.03 \\
+ & 4 & 14 & 0/12 & 3.03 & 0/12 & 3.03 & 0/12 & 1.48 & 0/12 & 2.67 \\
+ & 16 & 50 & 0/12 & 0.912 & 0/12 & 0.912 & 0/12 & 2.07 & 0/12 & 0.603 \\
+Hyperbolic tangent & 1 & 5 & 0/12 & 0.211 & 0/12 & 0.211 & 0/12 & 0.21 & 0/12 & 0.175 \\
+ & 4 & 14 & 0/12 & 0.0327 & 0/12 & 0.0279 & 0/12 & 0.0135 & 0/12 & 0.0107 \\
+ & 16 & 50 & 0/12 & 0.0097 & 0/12 & 0.00527 & 0/12 & 0.00169 & 0/12 & 0.00115 \\
+Addition & 1 & 5 & 0/12 & 1.72 & 0/12 & 1.72 & 0/12 & 1.72 & 0/12 & $2.55\!\times\!10^{-15}$ \\
+ & 2 & 9 & 0/12 & 0.427 & 0/12 & $1.09\!\times\!10^{-13}$ & 0/12 & $6.11\!\times\!10^{-15}$ & 0/12 & $2.95\!\times\!10^{-15}$ \\
+ & 4 & 17 & 0/12 & 0.00363 & 0/12 & $2.08\!\times\!10^{-14}$ & 0/12 & $2.86\!\times\!10^{-14}$ & 0/12 & $2.27\!\times\!10^{-14}$ \\
+Subtraction & 1 & 5 & 0/12 & 0.0851 & 2/12 & $1.15\!\times\!10^{-15}$ & 2/12 & $5.62\!\times\!10^{-16}$ & 2/12 & $5.48\!\times\!10^{-16}$ \\
+ & 2 & 9 & 0/12 & 0.106 & 0/12 & $5.02\!\times\!10^{-15}$ & 0/12 & $2.17\!\times\!10^{-15}$ & 0/12 & $1.53\!\times\!10^{-14}$ \\
+ & 4 & 17 & 0/12 & 0.00799 & 0/12 & $3.14\!\times\!10^{-14}$ & 0/12 & $4.77\!\times\!10^{-14}$ & 0/12 & $5.56\!\times\!10^{-14}$ \\
+Running sum & 1 & 3 & 0/12 & $1.25\!\times\!10^{-14}$ & 0/12 & $1.25\!\times\!10^{-14}$ & 0/12 & $5.07\!\times\!10^{-15}$ & 0/12 & $8.42\!\times\!10^{-16}$ \\
+ & 2 & 8 & 0/12 & $2.03\!\times\!10^{-14}$ & 0/12 & $2.03\!\times\!10^{-14}$ & 0/12 & $4.84\!\times\!10^{-16}$ & 0/12 & $5.68\!\times\!10^{-16}$ \\
+Sort four & 4 & 32 & 0/12 & 1.07 & 0/12 & 0.243 & 0/12 & 0.316 & 0/12 & 0.325 \\
+ & 5 & 40 & 0/12 & 0.279 & 0/12 & 0.238 & 0/12 & 0.135 & 0/12 & 0.271 \\
+ & 6 & 48 & 0/12 & 0.722 & 0/12 & 0.167 & 0/12 & 0.158 & 0/12 & 0.181 \\
+Fibonacci & 1 & 3 & 0/9 & 7.53 & 0/9 & 6.78 & 0/9 & 5.68 & 0/9 & 8.91 \\
+ & 2 & 8 & 0/9 & 0.00781 & 1/9 & $6.71\!\times\!10^{-15}$ & 1/9 & $1.35\!\times\!10^{-14}$ & 1/9 & $8.14\!\times\!10^{-15}$ \\
+ & 3 & 15 & 0/9 & 0.0644 & 0/9 & $6.71\!\times\!10^{-15}$ & 0/9 & $5.76\!\times\!10^{-15}$ & 0/9 & $3.64\!\times\!10^{-14}$ \\
+Triangular & 2 & 8 & 0/9 & 0.491 & 0/9 & 0.491 & 0/9 & 0.491 & 0/9 & 0.491 \\
+ & 3 & 15 & 0/9 & 0.18 & 0/9 & $2.71\!\times\!10^{-14}$ & 0/9 & $1.15\!\times\!10^{-13}$ & 0/9 & $5.79\!\times\!10^{-14}$ \\
+ & 4 & 24 & 0/9 & 0.214 & 0/9 & $2.44\!\times\!10^{-13}$ & 0/9 & $1.40\!\times\!10^{-13}$ & 0/9 & $1.01\!\times\!10^{-13}$ \\
+\bottomrule
+\end{tabular}}
+\end{table}

@@ -1,0 +1,146 @@
+[
+  {
+    "id": "7dc10447adea",
+    "task": "add",
+    "seed": 164,
+    "arm": "formula",
+    "sizes": [
+      1,
+      2,
+      4
+    ],
+    "prompt_sha256": "4bf1e6e9653af02019c39ab3bf9f2348d3054b2505cbaca5557dc2e68eb058ba"
+  },
+  {
+    "id": "47325749c57b",
+    "task": "add",
+    "seed": 164,
+    "arm": "examples",
+    "sizes": [
+      1,
+      2,
+      4
+    ],
+    "prompt_sha256": "20ccc41540822b2b950b307420900cb1e54ff60887c2217a5c5286e0f3477869"
+  },
+  {
+    "id": "9f5d45bf5ea0",
+    "task": "add",
+    "seed": 317,
+    "arm": "formula",
+    "sizes": [
+      1,
+      2,
+      4
+    ],
+    "prompt_sha256": "2f72d0e1c91caa544698704d33d9db39d1b5bae82c309b8c5869eef8ee7460f8"
+  },
+  {
+    "id": "106a4ce1f4af",
+    "task": "add",
+    "seed": 317,
+    "arm": "examples",
+    "sizes": [
+      1,
+      2,
+      4
+    ],
+    "prompt_sha256": "525da01e75e4838dff4cf37578b7bbab7b08a8c85890250a40dbb6471949b32d"
+  },
+  {
+    "id": "63fd94279664",
+    "task": "add",
+    "seed": 583,
+    "arm": "formula",
+    "sizes": [
+      1,
+      2,
+      4
+    ],
+    "prompt_sha256": "a937f5cf4b6c5776e9bd8d04e7ba962d1e6210b731325efdfe2561cb95f68bc3"
+  },
+  {
+    "id": "c1749175e68a",
+    "task": "add",
+    "seed": 583,
+    "arm": "examples",
+    "sizes": [
+      1,
+      2,
+      4
+    ],
+    "prompt_sha256": "fcc0bc49dad8e1c35f94196a3a344165a3ba99c4636ef85c66af62d6f50aeb26"
+  },
+  {
+    "id": "8dbbb47a461d",
+    "task": "subtract",
+    "seed": 164,
+    "arm": "formula",
+    "sizes": [
+      1,
+      2,
+      4
+    ],
+    "prompt_sha256": "b592427acf50c664afd59c37d29ae62ee290f9ba3cbce478d4bc45f7c8db8c08"
+  },
+  {
+    "id": "738159e5daa8",
+    "task": "subtract",
+    "seed": 164,
+    "arm": "examples",
+    "sizes": [
+      1,
+      2,
+      4
+    ],
+    "prompt_sha256": "a8743cfa65a34b0db55a67d060b60176a4185f9bb8a486f69f806761d053b0a8"
+  },
+  {
+    "id": "ec6ea1b82494",
+    "task": "subtract",
+    "seed": 317,
+    "arm": "formula",
+    "sizes": [
+      1,
+      2,
+      4
+    ],
+    "prompt_sha256": "4564ae6353c9549d01b5e754c51e9f6f848e0b3d63cd5b7f5073fdaea0887808"
+  },
+  {
+    "id": "305685e3a2f9",
+    "task": "subtract",
+    "seed": 317,
+    "arm": "examples",
+    "sizes": [
+      1,
+      2,
+      4
+    ],
+    "prompt_sha256": "83bbeefa37479b8050a98f5ff5c5be01528dcc4b75b056c50a8dc3a8b04c634a"
+  },
+  {
+    "id": "3f3847883924",
+    "task": "subtract",
+    "seed": 583,
+    "arm": "formula",
+    "sizes": [
+      1,
+      2,
+      4
+    ],
+    "prompt_sha256": "dde7253dddb1714a361f55997b191749808a0437f88f63f0c98d87a8d06a999f"
+  },
+  {
+    "id": "3419a8de958b",
+    "task": "subtract",
+    "seed": 583,
+    "arm": "examples",
+    "sizes": [
+      1,
+      2,
+      4
+    ],
+    "prompt_sha256": "d58e3255049a541551d09991cc1ff4152ce97b788e528dadd8d765efdc7d8172"
+  }
+]

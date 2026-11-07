@@ -1,0 +1,33 @@
+\section{Additional value and sequence extrapolation controls}\label{app:additional}
+The extrapolation-first experiment in Appendix~\ref{app:historical} reports error in target units. Table~\ref{tab:scaled} gives that experiment's scaled absolute errors so that large targets, such as positive self-power near ten, can also be interpreted on a relative scale.
+
+\begin{table}[htbp]\centering\small
+\caption{The same ten architectures and outer inputs as Table~\ref{tab:paired}. Entries are mean absolute errors after dividing each error by the larger of one and the absolute reference value, followed by the median over three starts.}\label{tab:scaled}
+\begin{tabular}{@{}lrrr@{}}\toprule
+&\multicolumn{2}{c}{Weight-space programming (WSP)}&Backpropagation\\
+Target & Formula and examples & Examples only & Examples only\\\midrule
+\input{scaled_rows}\end{tabular}\end{table}
+
+\paragraph{Analytic choices of hinge positions.}
+For the earlier scalar study, two WSP constructions choose knot locations from the known target expression. Central WSP uses only knots in the central interval. Full-envelope WSP uses formula values outside it. Both use 63 hinges plus a direct affine path (191 slots). The BP comparator sees central labels and uses Adam followed by limited-memory BFGS, which estimates curvature from a short history of changes in weights and gradients. Table~\ref{tab:scalar} shows mean absolute error (MAE), the average of $|\hat y_i-y_i|$, alongside RMSE.
+
+\begin{table}[htbp]\centering\small\setlength{\tabcolsep}{4pt}
+\caption{Outer errors for the analytic WSP and gradient controls. Mean absolute error (MAE) is the average absolute prediction error. All methods had 0\% exact on all four tasks at this width. Evaluation uses 4,096 samples per available shell side. BP columns give medians over three starts. The two signed sides are pooled before computing RMSE.}\label{tab:scalar}
+\begin{tabular}{@{}l rr rr rr@{}}\toprule
+&\multicolumn{2}{c}{Central WSP}&\multicolumn{2}{c}{Full-envelope WSP}&\multicolumn{2}{c}{Backpropagation}\\
+Target&MAE&RMSE&MAE&RMSE&MAE&RMSE\\\midrule
+\input{legacy_scalar_rows}\end{tabular}\end{table}
+
+A WSP sine construction first folds the input using its known period and reflection symmetry, then fits its final spline to 1,024 central labels. Outer MAE was $4.75\times10^{-5}$ at 211 slots. For self-power, reallocating knots and centering the error using the formula reduced maximum relative shell error to 1.01\%. A single native hyperbolic-tangent activation between identity maps matches the same library function by construction. Ten Gauss--Newton steps, which approximate nonlinear least squares by successive linear least-squares updates, gave 100\% shell accuracy from all three starts and 89.1--93.2\% inner accuracy. A two-weight affine model learned addition and subtraction exactly in three starts with 64 full-batch gradient updates. Per-split errors for these variants are in the accompanying data.
+
+\paragraph{Fixed sequence interfaces.}
+Table~\ref{tab:seq} compares WSP and BP on the original multistep tasks. In an autonomous linear network, a column $v$ reads out starting state $h_0$ after $n$ transitions as $v^\top A^n h_0$. Its state width must be at least the recurrence order. Fibonacci and triangular numbers require widths two and three, respectively, in this homogeneous model (no additive state offset). A one-state running sum uses unit input, transition and readout weights. Setting the scalar input weight to one and adjusting the readout to preserve their product leaves the real input--output function unchanged. On the same 256 training streams this parameterization yielded exact weights in four of five fresh starts, or three of five starts matched for initial function. Each successful run matched all tested streams at both lengths.
+
+\begin{table}[htbp]\centering\small
+\caption{Exact rate and raw root mean squared error (RMSE) for WSP and backpropagation. Sums use 2,048 central length-eight streams and 2,048 outer length-32 streams. Sorting uses 2,048 four-item lists per split. These two exact rates require complete outputs. Fibonacci and triangular rates count indices on one trajectory, the nine \emph{fitted} indices 0--8 versus the 32 \emph{held-out} indices 33--64. Values are medians over five starts.}\label{tab:seq}
+\begin{tabular}{@{}lrl r r r r@{}}\toprule
+&&&\multicolumn{2}{c}{WSP}&\multicolumn{2}{c}{Backpropagation}\\
+Target & Slots & Split & Exact \% & RMSE & Exact \% & RMSE\\\midrule
+\input{legacy_sequence_rows}\end{tabular}\end{table}
+
+The sorter in this table fixes the order of five pair comparisons and stores three adjustable gains per comparison (15 slots). Tying these five sets uses three stored gains. The 40-slot sorter in the main comparison instead learns eight coefficients per step on four wires, including which wires to combine. The operand-preserving comparator stores 50 coefficients in one block shared across all comparisons. From central labels, a search over 9,331 schedules of up to five pair comparisons found 12 shortest sorting schedules. A rational linear solve recovered Fibonacci and triangular recurrences from nine central labels. These controls supply mathematical structure to the solver.

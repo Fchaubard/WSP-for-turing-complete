@@ -1,0 +1,14 @@
+{
+  "edition": "2026-11-06-learning-curves",
+  "pages": 88,
+  "last_main_text_page": 9,
+  "main_figures": 3,
+  "source_zip_rebuild": "passed; extracted text identical",
+  "tex_overfull_boxes": 0,
+  "undefined_references": 0,
+  "oversized_floats": 0,
+  "original_artifacts_preserved": 193,
+  "new_model_calls": 0,
+  "new_fits": 0,
+  "independent_review": "focus/learning_review/README.md"
+}

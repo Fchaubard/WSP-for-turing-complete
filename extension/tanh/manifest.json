@@ -1,0 +1,17 @@
+{
+  "core_url": "https://raw.githubusercontent.com/mockingbirdnest/core-math/3ce26eb72b71ffe95784e42e280149a8c7e015d5/src/binary64/tanh/tanh.wc",
+  "core_sha256": "4fc9a5682cedd0b79e624c7cd236bc88f6965fe8a0e88ca401ca938acd293bdf",
+  "numpy": "2.5.4",
+  "gmpy2": "2.3.2",
+  "mpfr": "MPFR 4.2.2",
+  "bits": 84,
+  "division_digits": 82,
+  "words": 3,
+  "rounding": "significand_and_guard",
+  "format": "binary64",
+  "domain": [
+    -10,
+    10
+  ],
+  "checkpoint_sha256": "d7dde15a3a40e3fdec0fdfcba18cac0ebc8a789f75193d7e8bb90085ee609678"
+}

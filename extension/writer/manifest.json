@@ -1,0 +1,662 @@
+[
+  {
+    "id": "2d28aa9d1f",
+    "task": "square",
+    "seed": 164,
+    "arm": "formula",
+    "sizes": [
+      1,
+      4,
+      16
+    ]
+  },
+  {
+    "id": "4aec17a52b",
+    "task": "square",
+    "seed": 164,
+    "arm": "examples",
+    "sizes": [
+      1,
+      4,
+      16
+    ]
+  },
+  {
+    "id": "d23980b988",
+    "task": "square",
+    "seed": 317,
+    "arm": "formula",
+    "sizes": [
+      1,
+      4,
+      16
+    ]
+  },
+  {
+    "id": "65651916a3",
+    "task": "square",
+    "seed": 317,
+    "arm": "examples",
+    "sizes": [
+      1,
+      4,
+      16
+    ]
+  },
+  {
+    "id": "bebd482c6d",
+    "task": "square",
+    "seed": 583,
+    "arm": "formula",
+    "sizes": [
+      1,
+      4,
+      16
+    ]
+  },
+  {
+    "id": "c199626b41",
+    "task": "square",
+    "seed": 583,
+    "arm": "examples",
+    "sizes": [
+      1,
+      4,
+      16
+    ]
+  },
+  {
+    "id": "e216b0e77a",
+    "task": "sin",
+    "seed": 164,
+    "arm": "formula",
+    "sizes": [
+      1,
+      4,
+      16
+    ]
+  },
+  {
+    "id": "04937d9bbd",
+    "task": "sin",
+    "seed": 164,
+    "arm": "examples",
+    "sizes": [
+      1,
+      4,
+      16
+    ]
+  },
+  {
+    "id": "845ab514ca",
+    "task": "sin",
+    "seed": 317,
+    "arm": "formula",
+    "sizes": [
+      1,
+      4,
+      16
+    ]
+  },
+  {
+    "id": "36ca56d63c",
+    "task": "sin",
+    "seed": 317,
+    "arm": "examples",
+    "sizes": [
+      1,
+      4,
+      16
+    ]
+  },
+  {
+    "id": "c800ec8bbf",
+    "task": "sin",
+    "seed": 583,
+    "arm": "formula",
+    "sizes": [
+      1,
+      4,
+      16
+    ]
+  },
+  {
+    "id": "6813628c56",
+    "task": "sin",
+    "seed": 583,
+    "arm": "examples",
+    "sizes": [
+      1,
+      4,
+      16
+    ]
+  },
+  {
+    "id": "93db274ac3",
+    "task": "selfpower",
+    "seed": 164,
+    "arm": "formula",
+    "sizes": [
+      1,
+      4,
+      16
+    ]
+  },
+  {
+    "id": "5a9f010034",
+    "task": "selfpower",
+    "seed": 164,
+    "arm": "examples",
+    "sizes": [
+      1,
+      4,
+      16
+    ]
+  },
+  {
+    "id": "b31f9aeff7",
+    "task": "selfpower",
+    "seed": 317,
+    "arm": "formula",
+    "sizes": [
+      1,
+      4,
+      16
+    ]
+  },
+  {
+    "id": "df09ecc6ea",
+    "task": "selfpower",
+    "seed": 317,
+    "arm": "examples",
+    "sizes": [
+      1,
+      4,
+      16
+    ]
+  },
+  {
+    "id": "73fbbaa43c",
+    "task": "selfpower",
+    "seed": 583,
+    "arm": "formula",
+    "sizes": [
+      1,
+      4,
+      16
+    ]
+  },
+  {
+    "id": "88ad9fb6c1",
+    "task": "selfpower",
+    "seed": 583,
+    "arm": "examples",
+    "sizes": [
+      1,
+      4,
+      16
+    ]
+  },
+  {
+    "id": "520fd8236a",
+    "task": "tanh",
+    "seed": 164,
+    "arm": "formula",
+    "sizes": [
+      1,
+      4,
+      16
+    ]
+  },
+  {
+    "id": "60b949fcbb",
+    "task": "tanh",
+    "seed": 164,
+    "arm": "examples",
+    "sizes": [
+      1,
+      4,
+      16
+    ]
+  },
+  {
+    "id": "046842a5e3",
+    "task": "tanh",
+    "seed": 317,
+    "arm": "formula",
+    "sizes": [
+      1,
+      4,
+      16
+    ]
+  },
+  {
+    "id": "b105d222b2",
+    "task": "tanh",
+    "seed": 317,
+    "arm": "examples",
+    "sizes": [
+      1,
+      4,
+      16
+    ]
+  },
+  {
+    "id": "9e07c44982",
+    "task": "tanh",
+    "seed": 583,
+    "arm": "formula",
+    "sizes": [
+      1,
+      4,
+      16
+    ]
+  },
+  {
+    "id": "939e335004",
+    "task": "tanh",
+    "seed": 583,
+    "arm": "examples",
+    "sizes": [
+      1,
+      4,
+      16
+    ]
+  },
+  {
+    "id": "97b7475a35",
+    "task": "add",
+    "seed": 164,
+    "arm": "formula",
+    "sizes": [
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "45d90e6700",
+    "task": "add",
+    "seed": 164,
+    "arm": "examples",
+    "sizes": [
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "181b1650d5",
+    "task": "add",
+    "seed": 317,
+    "arm": "formula",
+    "sizes": [
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "2b9c968953",
+    "task": "add",
+    "seed": 317,
+    "arm": "examples",
+    "sizes": [
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "d5ce0ddbd4",
+    "task": "add",
+    "seed": 583,
+    "arm": "formula",
+    "sizes": [
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "deb894955b",
+    "task": "add",
+    "seed": 583,
+    "arm": "examples",
+    "sizes": [
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "a81833a201",
+    "task": "subtract",
+    "seed": 164,
+    "arm": "formula",
+    "sizes": [
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "2815bdbfa0",
+    "task": "subtract",
+    "seed": 164,
+    "arm": "examples",
+    "sizes": [
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "f5aae608d7",
+    "task": "subtract",
+    "seed": 317,
+    "arm": "formula",
+    "sizes": [
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "1f6bdaa73e",
+    "task": "subtract",
+    "seed": 317,
+    "arm": "examples",
+    "sizes": [
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "dd0dc9bb10",
+    "task": "subtract",
+    "seed": 583,
+    "arm": "formula",
+    "sizes": [
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "fa7f6127a7",
+    "task": "subtract",
+    "seed": 583,
+    "arm": "examples",
+    "sizes": [
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "a32e9f48e0",
+    "task": "sum",
+    "seed": 164,
+    "arm": "formula",
+    "sizes": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "032c8b262c",
+    "task": "sum",
+    "seed": 164,
+    "arm": "examples",
+    "sizes": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "58a44c3254",
+    "task": "sum",
+    "seed": 317,
+    "arm": "formula",
+    "sizes": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "f6f751457d",
+    "task": "sum",
+    "seed": 317,
+    "arm": "examples",
+    "sizes": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "8d6636dc5e",
+    "task": "sum",
+    "seed": 583,
+    "arm": "formula",
+    "sizes": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "3fd4b78e08",
+    "task": "sum",
+    "seed": 583,
+    "arm": "examples",
+    "sizes": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "2b551c327b",
+    "task": "sort",
+    "seed": 164,
+    "arm": "formula",
+    "sizes": [
+      4,
+      5,
+      6
+    ]
+  },
+  {
+    "id": "5d81e915aa",
+    "task": "sort",
+    "seed": 164,
+    "arm": "examples",
+    "sizes": [
+      4,
+      5,
+      6
+    ]
+  },
+  {
+    "id": "1df1870673",
+    "task": "sort",
+    "seed": 317,
+    "arm": "formula",
+    "sizes": [
+      4,
+      5,
+      6
+    ]
+  },
+  {
+    "id": "38765e96d5",
+    "task": "sort",
+    "seed": 317,
+    "arm": "examples",
+    "sizes": [
+      4,
+      5,
+      6
+    ]
+  },
+  {
+    "id": "d0c4da7a29",
+    "task": "sort",
+    "seed": 583,
+    "arm": "formula",
+    "sizes": [
+      4,
+      5,
+      6
+    ]
+  },
+  {
+    "id": "550f35c259",
+    "task": "sort",
+    "seed": 583,
+    "arm": "examples",
+    "sizes": [
+      4,
+      5,
+      6
+    ]
+  },
+  {
+    "id": "4980f37b08",
+    "task": "fib",
+    "seed": 164,
+    "arm": "formula",
+    "sizes": [
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "5319d0e66b",
+    "task": "fib",
+    "seed": 164,
+    "arm": "examples",
+    "sizes": [
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "c6bc1fe868",
+    "task": "fib",
+    "seed": 317,
+    "arm": "formula",
+    "sizes": [
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "52ea634032",
+    "task": "fib",
+    "seed": 317,
+    "arm": "examples",
+    "sizes": [
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "1f463fc8a7",
+    "task": "fib",
+    "seed": 583,
+    "arm": "formula",
+    "sizes": [
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "b84656a3ae",
+    "task": "fib",
+    "seed": 583,
+    "arm": "examples",
+    "sizes": [
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "9220daef49",
+    "task": "tri",
+    "seed": 164,
+    "arm": "formula",
+    "sizes": [
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "id": "0279c39a7f",
+    "task": "tri",
+    "seed": 164,
+    "arm": "examples",
+    "sizes": [
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "id": "8ddc5510ee",
+    "task": "tri",
+    "seed": 317,
+    "arm": "formula",
+    "sizes": [
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "id": "8e0aca04e4",
+    "task": "tri",
+    "seed": 317,
+    "arm": "examples",
+    "sizes": [
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "id": "1c65afa333",
+    "task": "tri",
+    "seed": 583,
+    "arm": "formula",
+    "sizes": [
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "id": "561e58a899",
+    "task": "tri",
+    "seed": 583,
+    "arm": "examples",
+    "sizes": [
+      2,
+      3,
+      4
+    ]
+  }
+]

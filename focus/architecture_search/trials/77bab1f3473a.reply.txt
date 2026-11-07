@@ -1,0 +1,21 @@
+{
+  "family": "Single-state additive recurrent network",
+  "inferred_rule": "Each output is the inclusive prefix sum of the input sequence: y_t = x_1 + ... + x_t.",
+  "construction_summary": "Initialize one scalar state to zero. At each step, add the current input to the state and emit the updated state directly. The network stores one scalar coefficient, uses one addition per element, and requires constant streaming workspace, excluding retained inputs and outputs. No trained weights or nonlinearities are needed. The same recurrence applies to arbitrary sequence lengths and all inputs in [-10,10].",
+  "certificate": "Initially s_0 = 0. If s_(t-1) equals the sum of the first t-1 inputs, the cell gives s_t = s_(t-1) + x_t, the sum of the first t inputs. Induction proves the prefix-sum rule in exact arithmetic. Binary64 inference computes the corresponding left-to-right floating-point sums, subject to rounding and representable range.",
+  "network": {
+    "kind": "recurrent",
+    "initial_state": [0],
+    "cell": [
+      {
+        "name": "updated_sum",
+        "op": "add",
+        "left": "state",
+        "right": "input"
+      }
+    ],
+    "state_output": "updated_sum",
+    "readout": [],
+    "output": "state"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "selection": {
+    "tasks": [
+      "square",
+      "sin",
+      "tanh"
+    ],
+    "size": 16,
+    "seed": 164,
+    "arm": "examples",
+    "rule": "First recorded random start and largest tested scalar width; illustrative fixed cases, not median predictions"
+  },
+  "verified_saved_metric_rows": 36,
+  "checked_fields": [
+    "raw_rmse",
+    "exact_count"
+  ],
+  "source_sha256": {
+    "focus/lbfgs/weights.npz": "bfb0793b52a1827b2d056edcf3baba1a3752126eca70f4a59ec011f12cf2fee2",
+    "focus/iterative_eval/comparators.csv": "fb5a93e25bcf844ee0bf100d301253335c9ceb0c2334e842e1aadd3247c3c97e",
+    "focus/iterative_eval/endpoints.csv": "cae1fada42fdaa5979450f29910030f967602a72b86181a66f8b029f1cf0a3bc",
+    "focus/iterative_eval/extended.csv": "2377b74e6b9dec121aa97ead72311b086ee50fad5c9c8f234eae1db43fa1ed74",
+    "focus/iterative/trajectories/55f271689837.json": "9146928a7ae87cb6f9b5b7b6d56284c6b43c80459d687cfb87786b6057b05ad9",
+    "focus/iterative/trajectories/3b244afdc6df.json": "35b61db00ea648da5c49d34f571c744d47e322408c4581c5f1c12880ce37c4b2",
+    "focus/iterative/trajectories/47fa13cbf717.json": "613df9a6f5bf823e3e01faa5011e01ec456d83482ce4182df11e17542bcf0fd4"
+  },
+  "evaluation": "Offline replay of frozen weights; no fitting or model calls"
+}

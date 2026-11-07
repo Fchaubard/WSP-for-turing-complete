@@ -1,0 +1,158 @@
+[
+  {
+    "id": "3354251e2",
+    "task": "square",
+    "arm": "affine_relu",
+    "stage": "original",
+    "seconds": 161.58,
+    "events": {
+      "agent_message": 1
+    },
+    "sha256": "aca0c3ddf093c8ed86cc50e136bc586f1a239e2547524d965694e41827f1ac55",
+    "status": "valid",
+    "ops": 2543
+  },
+  {
+    "id": "3354251e2",
+    "task": "square",
+    "arm": "affine_relu",
+    "stage": "repair",
+    "seconds": 37.4,
+    "events": {
+      "agent_message": 1
+    },
+    "sha256": "aca0c3ddf093c8ed86cc50e136bc586f1a239e2547524d965694e41827f1ac55",
+    "status": "valid",
+    "ops": 2543
+  },
+  {
+    "id": "54d25bc20",
+    "task": "square",
+    "arm": "arithmetic_relu",
+    "stage": "original",
+    "seconds": 5.49,
+    "events": {
+      "agent_message": 1
+    },
+    "sha256": "d676f42a8e9a4af6b4d05dadc455f00e080f331a503a355c2f5c6a398d55419d",
+    "status": "valid",
+    "ops": 1
+  },
+  {
+    "id": "54d25bc20",
+    "task": "square",
+    "arm": "arithmetic_relu",
+    "stage": "repair",
+    "seconds": 5.79,
+    "events": {
+      "agent_message": 1
+    },
+    "sha256": "d676f42a8e9a4af6b4d05dadc455f00e080f331a503a355c2f5c6a398d55419d",
+    "status": "valid",
+    "ops": 1
+  },
+  {
+    "id": "c4bd488a9",
+    "task": "sin",
+    "arm": "affine_relu",
+    "stage": "original",
+    "seconds": 172.26,
+    "events": {
+      "agent_message": 1
+    },
+    "sha256": "3015c70dea3440917fe3a8002bbd847b8d3dee86cdd91a95d21cbeca1762c054",
+    "status": "valid",
+    "ops": 4067
+  },
+  {
+    "id": "c4bd488a9",
+    "task": "sin",
+    "arm": "affine_relu",
+    "stage": "repair",
+    "seconds": 139.59,
+    "events": {
+      "agent_message": 1
+    },
+    "sha256": "0ba9f3efab56824f3e16e182d7036f45459f351ba218a18821fee16cbf299e67",
+    "status": "valid",
+    "ops": 3878
+  },
+  {
+    "id": "43a09bb78",
+    "task": "sin",
+    "arm": "arithmetic_relu",
+    "stage": "original",
+    "seconds": 57.73,
+    "events": {
+      "agent_message": 1
+    },
+    "sha256": "b35652ad1384c22a17b66e775c2850000aa19be4d0199df00a7630ee0ae981b4",
+    "status": "valid",
+    "ops": 587
+  },
+  {
+    "id": "43a09bb78",
+    "task": "sin",
+    "arm": "arithmetic_relu",
+    "stage": "repair",
+    "seconds": 26.89,
+    "events": {
+      "agent_message": 1
+    },
+    "sha256": "b35652ad1384c22a17b66e775c2850000aa19be4d0199df00a7630ee0ae981b4",
+    "status": "valid",
+    "ops": 587
+  },
+  {
+    "id": "d96064e94",
+    "task": "selfpower",
+    "arm": "affine_relu",
+    "stage": "original",
+    "seconds": 224.82,
+    "events": {
+      "agent_message": 1
+    },
+    "sha256": "d3f96ef146552d3199ecb51cc6ba789a81b16000b0bcd1797ee3225de8d7bc4b",
+    "status": "valid",
+    "ops": 4026
+  },
+  {
+    "id": "d96064e94",
+    "task": "selfpower",
+    "arm": "affine_relu",
+    "stage": "repair",
+    "seconds": 120.79,
+    "events": {
+      "agent_message": 1
+    },
+    "sha256": "9bac15ff89f540c83fabb865edbe833fcf1afb110b52dc2cf1a15c62e9e5300e",
+    "status": "valid",
+    "ops": 4049
+  },
+  {
+    "id": "3d067d9fc",
+    "task": "selfpower",
+    "arm": "arithmetic_relu",
+    "stage": "original",
+    "seconds": 93.99,
+    "events": {
+      "agent_message": 1
+    },
+    "sha256": "f43f90bd84bcf26f6cc125e9c12eb09b6cfa93e97644edcdd65695e88c97c50f",
+    "status": "valid",
+    "ops": 2622
+  },
+  {
+    "id": "3d067d9fc",
+    "task": "selfpower",
+    "arm": "arithmetic_relu",
+    "stage": "repair",
+    "seconds": 42.61,
+    "events": {
+      "agent_message": 1
+    },
+    "sha256": "705e691bedc08bc3c34cba9199eac279f8f19d7ddc668fccb62b2b014d1efa60",
+    "status": "valid",
+    "ops": 3358
+  }
+]

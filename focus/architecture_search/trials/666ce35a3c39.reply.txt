@@ -1,0 +1,18 @@
+{
+  "family": "Single multiplicative gate with no stored coefficients",
+  "inferred_rule": "y = x²",
+  "construction_summary": "Multiply the scalar input by itself. The graph uses one node, zero stored coefficients, one scalar multiplication, and one output scalar, with no intermediate activations. It implements the inferred square rule throughout [-10,10], including beyond the observed input range.",
+  "certificate": "For every real x, the graph computes x·x = x². The observed pairs agree with this rule to binary64 precision. Binary64 inference performs one rounded multiplication; on [-10,10] there is no overflow, and absolute rounding error is at most 2^-47. Finite examples do not uniquely determine a rule, so this certificate establishes implementation of the inferred rule rather than uniqueness of inference.",
+  "network": {
+    "kind": "graph",
+    "nodes": [
+      {
+        "name": "square",
+        "op": "multiply",
+        "left": "input",
+        "right": "input"
+      }
+    ],
+    "output": "square"
+  }
+}

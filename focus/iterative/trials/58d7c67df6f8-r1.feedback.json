@@ -1,0 +1,73 @@
+{
+ "case": "58d7c67df6f8",
+ "round": 1,
+ "active": [
+  1
+ ],
+ "feedback": [
+  {
+   "size": 1,
+   "incumbent_weights": [
+    1.642033,
+    1.0,
+    0.409651
+   ],
+   "diagnostic": {
+    "train": {
+     "loss": 0.016460182566097468,
+     "exact": 0,
+     "n": 9,
+     "rmse": 0.2965670671203688,
+     "examples": [
+      {
+       "input": 0,
+       "target": 0.0,
+       "prediction": 0.409651,
+       "maximum_scaled_error": 0.409651
+      },
+      {
+       "input": 1,
+       "target": 1.0,
+       "prediction": 0.672660460483,
+       "maximum_scaled_error": 0.327339539517
+      },
+      {
+       "input": 2,
+       "target": 1.0,
+       "prediction": 1.1045306739082819,
+       "maximum_scaled_error": 0.10453067390828186
+      }
+     ]
+    },
+    "dev": {
+     "loss": 0.00586407551468524,
+     "exact": 0,
+     "n": 8,
+     "rmse": 66.52757855100117,
+     "examples": [
+      {
+       "input": 16,
+       "target": 987.0,
+       "prediction": 1144.258411989474,
+       "maximum_scaled_error": 0.15932969806431013
+      },
+      {
+       "input": 15,
+       "target": 610.0,
+       "prediction": 696.8546990160819,
+       "maximum_scaled_error": 0.14238475248538016
+      },
+      {
+       "input": 14,
+       "target": 377.0,
+       "prediction": 424.3853193060565,
+       "maximum_scaled_error": 0.12569050213808086
+      }
+     ]
+    }
+   }
+  }
+ ],
+ "prompt_sha256": "e5542aa93b1f90f6dc156e66f18e736724f9cea41d701ffd8c7c9610937d1bd7",
+ "protocol_sha256": "75c8a10bc407ddd2808e3a7101a82fcda21fe45b42c8d28ecd48cad31cc88638"
+}

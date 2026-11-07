@@ -1,0 +1,402 @@
+[
+  {
+    "id": "3354251e2",
+    "task": "square",
+    "arm": "affine_relu",
+    "seed": 9213,
+    "ops": 2543,
+    "inner": {
+      "n": 4096,
+      "exact": 4096,
+      "ulp1": 4096,
+      "finite": 4096,
+      "mae": 0.0,
+      "max_scaled": 0.0
+    },
+    "outer": {
+      "n": 16384,
+      "exact": 16384,
+      "ulp1": 16384,
+      "finite": 16384,
+      "mae": 0.0,
+      "max_scaled": 0.0
+    },
+    "status": "scored"
+  },
+  {
+    "id": "13a55e07e",
+    "task": "square",
+    "arm": "affine_relu",
+    "seed": 2451,
+    "ops": 4081,
+    "inner": {
+      "n": 4096,
+      "exact": 4096,
+      "ulp1": 4096,
+      "finite": 4096,
+      "mae": 0.0,
+      "max_scaled": 0.0
+    },
+    "outer": {
+      "n": 16384,
+      "exact": 16384,
+      "ulp1": 16384,
+      "finite": 16384,
+      "mae": 0.0,
+      "max_scaled": 0.0
+    },
+    "status": "scored"
+  },
+  {
+    "id": "d6a36e94c",
+    "task": "square",
+    "arm": "affine_relu",
+    "seed": 8282,
+    "ops": 2833,
+    "inner": {
+      "n": 4096,
+      "exact": 4096,
+      "ulp1": 4096,
+      "finite": 4096,
+      "mae": 0.0,
+      "max_scaled": 0.0
+    },
+    "outer": {
+      "n": 16384,
+      "exact": 16384,
+      "ulp1": 16384,
+      "finite": 16384,
+      "mae": 0.0,
+      "max_scaled": 0.0
+    },
+    "status": "scored"
+  },
+  {
+    "id": "54d25bc20",
+    "task": "square",
+    "arm": "arithmetic_relu",
+    "seed": 9213,
+    "ops": 1,
+    "inner": {
+      "n": 4096,
+      "exact": 4096,
+      "ulp1": 4096,
+      "finite": 4096,
+      "mae": 0.0,
+      "max_scaled": 0.0
+    },
+    "outer": {
+      "n": 16384,
+      "exact": 16384,
+      "ulp1": 16384,
+      "finite": 16384,
+      "mae": 0.0,
+      "max_scaled": 0.0
+    },
+    "status": "scored"
+  },
+  {
+    "id": "42c7c5dbc",
+    "task": "square",
+    "arm": "arithmetic_relu",
+    "seed": 2451,
+    "ops": 1,
+    "inner": {
+      "n": 4096,
+      "exact": 4096,
+      "ulp1": 4096,
+      "finite": 4096,
+      "mae": 0.0,
+      "max_scaled": 0.0
+    },
+    "outer": {
+      "n": 16384,
+      "exact": 16384,
+      "ulp1": 16384,
+      "finite": 16384,
+      "mae": 0.0,
+      "max_scaled": 0.0
+    },
+    "status": "scored"
+  },
+  {
+    "id": "1337e52fe",
+    "task": "square",
+    "arm": "arithmetic_relu",
+    "seed": 8282,
+    "ops": 1,
+    "inner": {
+      "n": 4096,
+      "exact": 4096,
+      "ulp1": 4096,
+      "finite": 4096,
+      "mae": 0.0,
+      "max_scaled": 0.0
+    },
+    "outer": {
+      "n": 16384,
+      "exact": 16384,
+      "ulp1": 16384,
+      "finite": 16384,
+      "mae": 0.0,
+      "max_scaled": 0.0
+    },
+    "status": "scored"
+  },
+  {
+    "id": "c4bd488a9",
+    "task": "sin",
+    "arm": "affine_relu",
+    "seed": 9213,
+    "ops": 4067,
+    "inner": {
+      "n": 4096,
+      "exact": 2055,
+      "ulp1": 3357,
+      "finite": 4096,
+      "mae": 8.833028980557295e-17,
+      "max_scaled": 8.881784197001252e-16
+    },
+    "outer": {
+      "n": 16384,
+      "exact": 8191,
+      "ulp1": 13604,
+      "finite": 16384,
+      "mae": 8.084670987600874e-17,
+      "max_scaled": 9.992007221626409e-16
+    },
+    "status": "scored"
+  },
+  {
+    "id": "56b5f85e4",
+    "task": "sin",
+    "arm": "affine_relu",
+    "seed": 2451,
+    "ops": 3959,
+    "inner": {
+      "n": 4096,
+      "exact": 2406,
+      "ulp1": 3667,
+      "finite": 4096,
+      "mae": 5.892405875983161e-17,
+      "max_scaled": 6.661338147750939e-16
+    },
+    "outer": {
+      "n": 16384,
+      "exact": 9272,
+      "ulp1": 14932,
+      "finite": 16384,
+      "mae": 5.401974913631809e-17,
+      "max_scaled": 8.881784197001252e-16
+    },
+    "status": "scored"
+  },
+  {
+    "id": "95b408935",
+    "task": "sin",
+    "arm": "affine_relu",
+    "seed": 8282,
+    "ops": 3790,
+    "inner": {
+      "n": 4096,
+      "exact": 1465,
+      "ulp1": 3408,
+      "finite": 4096,
+      "mae": 7.597117915847564e-17,
+      "max_scaled": 4.440892098500626e-16
+    },
+    "outer": {
+      "n": 16384,
+      "exact": 5662,
+      "ulp1": 13315,
+      "finite": 16384,
+      "mae": 7.144079115419273e-17,
+      "max_scaled": 5.551115123125783e-16
+    },
+    "status": "scored"
+  },
+  {
+    "id": "43a09bb78",
+    "task": "sin",
+    "arm": "arithmetic_relu",
+    "seed": 9213,
+    "ops": 587,
+    "inner": {
+      "n": 4096,
+      "exact": 4096,
+      "ulp1": 4096,
+      "finite": 4096,
+      "mae": 0.0,
+      "max_scaled": 0.0
+    },
+    "outer": {
+      "n": 16384,
+      "exact": 16384,
+      "ulp1": 16384,
+      "finite": 16384,
+      "mae": 0.0,
+      "max_scaled": 0.0
+    },
+    "status": "scored"
+  },
+  {
+    "id": "2f2284a64",
+    "task": "sin",
+    "arm": "arithmetic_relu",
+    "seed": 2451,
+    "ops": 526,
+    "inner": {
+      "n": 4096,
+      "exact": 4096,
+      "ulp1": 4096,
+      "finite": 4096,
+      "mae": 0.0,
+      "max_scaled": 0.0
+    },
+    "outer": {
+      "n": 16384,
+      "exact": 16384,
+      "ulp1": 16384,
+      "finite": 16384,
+      "mae": 0.0,
+      "max_scaled": 0.0
+    },
+    "status": "scored"
+  },
+  {
+    "id": "847f708ca",
+    "task": "sin",
+    "arm": "arithmetic_relu",
+    "seed": 8282,
+    "ops": 772,
+    "inner": {
+      "n": 4096,
+      "exact": 4096,
+      "ulp1": 4096,
+      "finite": 4096,
+      "mae": 0.0,
+      "max_scaled": 0.0
+    },
+    "outer": {
+      "n": 16384,
+      "exact": 16384,
+      "ulp1": 16384,
+      "finite": 16384,
+      "mae": 0.0,
+      "max_scaled": 0.0
+    },
+    "status": "scored"
+  },
+  {
+    "id": "d96064e94",
+    "task": "selfpower",
+    "arm": "affine_relu",
+    "seed": 9213,
+    "ops": 4026,
+    "inner": {
+      "n": 4096,
+      "exact": 1,
+      "ulp1": 2,
+      "finite": 4096,
+      "mae": 5.967175457097587e-12,
+      "max_scaled": 1.1756895457182281e-10
+    },
+    "outer": {
+      "n": 16384,
+      "exact": 0,
+      "ulp1": 0,
+      "finite": 16384,
+      "mae": 0.004025153033000044,
+      "max_scaled": 3.781792229719523e-11
+    },
+    "status": "scored"
+  },
+  {
+    "id": "0985eff9a",
+    "task": "selfpower",
+    "arm": "affine_relu",
+    "seed": 2451,
+    "status": "invalid",
+    "reason": "Expecting ',' delimiter: line 111 column 5 (char 2736)"
+  },
+  {
+    "id": "03fa4e3ef",
+    "task": "selfpower",
+    "arm": "affine_relu",
+    "seed": 8282,
+    "status": "invalid",
+    "reason": "operation budget"
+  },
+  {
+    "id": "3d067d9fc",
+    "task": "selfpower",
+    "arm": "arithmetic_relu",
+    "seed": 9213,
+    "ops": 2622,
+    "inner": {
+      "n": 4096,
+      "exact": 4096,
+      "ulp1": 4096,
+      "finite": 4096,
+      "mae": 0.0,
+      "max_scaled": 0.0
+    },
+    "outer": {
+      "n": 16384,
+      "exact": 16384,
+      "ulp1": 16384,
+      "finite": 16384,
+      "mae": 0.0,
+      "max_scaled": 0.0
+    },
+    "status": "scored"
+  },
+  {
+    "id": "b38048c6d",
+    "task": "selfpower",
+    "arm": "arithmetic_relu",
+    "seed": 2451,
+    "ops": 3008,
+    "inner": {
+      "n": 4096,
+      "exact": 4096,
+      "ulp1": 4096,
+      "finite": 4096,
+      "mae": 0.0,
+      "max_scaled": 0.0
+    },
+    "outer": {
+      "n": 16384,
+      "exact": 16384,
+      "ulp1": 16384,
+      "finite": 16384,
+      "mae": 0.0,
+      "max_scaled": 0.0
+    },
+    "status": "scored"
+  },
+  {
+    "id": "016ed599a",
+    "task": "selfpower",
+    "arm": "arithmetic_relu",
+    "seed": 8282,
+    "ops": 2881,
+    "inner": {
+      "n": 4096,
+      "exact": 4095,
+      "ulp1": 4096,
+      "finite": 4096,
+      "mae": 8.673617379884035e-19,
+      "max_scaled": 1.8283253293981549e-16
+    },
+    "outer": {
+      "n": 16384,
+      "exact": 16380,
+      "ulp1": 16384,
+      "finite": 16384,
+      "mae": 1.2281842209915794e-15,
+      "max_scaled": 2.1057555681532445e-16
+    },
+    "status": "scored"
+  }
+]

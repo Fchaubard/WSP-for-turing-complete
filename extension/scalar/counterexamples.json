@@ -1,0 +1,30 @@
+[
+  {
+    "task": "selfpower",
+    "split": "near_midpoints",
+    "x": "0x1.8e2e5fb51604cp-60",
+    "output": "0x1.0000000000000p+0",
+    "mpfr": "0x1.fffffffffffffp-1"
+  },
+  {
+    "task": "selfpower",
+    "split": "near_midpoints",
+    "x": "0x1.8e2e5fb51604dp-60",
+    "output": "0x1.0000000000000p+0",
+    "mpfr": "0x1.fffffffffffffp-1"
+  },
+  {
+    "task": "selfpower",
+    "split": "near_midpoints",
+    "x": "0x1.8e2e5fb51604ep-60",
+    "output": "0x1.0000000000000p+0",
+    "mpfr": "0x1.fffffffffffffp-1"
+  },
+  {
+    "task": "selfpower",
+    "split": "near_midpoints",
+    "x": "0x1.330a754a65334p-58",
+    "output": "0x1.fffffffffffffp-1",
+    "mpfr": "0x1.ffffffffffffep-1"
+  }
+]

@@ -1,0 +1,18 @@
+\section{Results}\label{sec:results}
+\paragraph{Total error across all tasks.}
+Figure~\ref{fig:holisticraw} ranks all 14 evaluated optimizer pipelines by summed raw extrapolation RMSE. Each task contributes its mean error across sizes and starts. Iterative WSP has the smallest sum in both information conditions, approximately $2.03\times10^9$. The examples-only one-shot sum is $1.06\times10^{12}$. More than 99.8\% of that one-shot total comes from Fibonacci, while positive self-power contributes 78.1\% of the iterative total. The aggregate therefore emphasizes errors on targets with large values. Figure~\ref{fig:holisticfull} shows the full range including divergent recurrent fits.
+
+\paragraph{Central and extrapolation behavior.}
+The median scaled error answers a different aggregation question. With examples alone, iteration reduces the held-out central or early median from 0.0214 to 0.000765, while the extrapolation median rises from 0.057 to 0.235. The scaled error divides each output residual by the larger of one and the target magnitude before computing RMSE. Figure~\ref{fig:priorscaledmedian} retains that view in the appendix. Table~\ref{tab:paired_methods} gives the eight primary endpoints.
+\paragraph{What changes during revision?}
+Figure~\ref{fig:wsp-learning} separates training fit, development feedback and untouched extrapolation across three revision opportunities. Development loss cannot rise under the selection rule, but neither training nor extrapolation error has that guarantee. With formulas and examples, median scaled outer RMSE falls from 0.0731 to 0.00590 after the first opportunity, then rises to 0.227 after the second. The final table alone hides this transient improvement. Test scores are retrospective and never select weights; stopped runs retain their last state. Appendix~\ref{app:learning-curves} separates proposed and retained weights and gives raw errors by task.
+\input{learning_main}
+\input{iterative_paired_table}
+\input{focus_iteration_outcomes}
+\input{prediction_curves}
+
+\paragraph{How large were the errors?}
+Table~\ref{tab:focusouter} in the appendix gives the size of the errors and the exact-match counts at a specified network size for every task. Figures~\ref{fig:taskbars1}--\ref{fig:taskbars5} plot those same values for all eight methods. We chose sizes from the architecture and representability arguments: the largest tested scalar width, the two-unit arithmetic construction, and the smallest known sufficient real-arithmetic size for the sequence and sorting tasks. Table~\ref{tab:sizes_outer} gives all 29 pairs on the outer test. Tables~\ref{tab:sizes_dev} and~\ref{tab:sizes_train} report the central or early test and the training examples. No test score was used to pick an optimizer checkpoint.
+
+\paragraph{Did the optimizer reach the global training minimum?}
+For the four scalar tasks with one hidden unit we can compute the global optimum on the supplied labels in real arithmetic. After sorting the training inputs there are finitely many intervals for the change of slope. For each interval we fit the two affine pieces subject to continuity, also checking the boundaries, and take the smallest feasible loss. Appendix~\ref{app:optimizer} gives the rational arithmetic procedure for these same training data. This yields an independent benchmark in 12 settings. \input{focus_certified}

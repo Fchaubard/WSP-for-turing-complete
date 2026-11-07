@@ -1,0 +1,10 @@
+{
+  "trajectories": 174,
+  "arms": 2,
+  "settings_per_arm": 87,
+  "retained_split_round_records": 1392,
+  "proposal_split_records": 662,
+  "final_split_endpoints_checked": 348,
+  "all_dev_losses_nonincreasing": true,
+  "all_acceptance_decisions_reproduced": true
+}

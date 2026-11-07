@@ -1,0 +1,14 @@
+\section{What changes after one round of central feedback?}
+\label{app:repair}
+For each of the three scalar targets and two operator sets in Appendix~\ref{app:synthesis}, we selected the first trial in advance using its replicate label, 9213. This gives six pairs of circuits. Each follow-up request included the original specification, the verbatim first reply, and a diagnostic computed on all 4,096 central inputs. For an executable circuit the diagnostic listed operation count, number of finite outputs, exact matches and matches at distance at most one ULP (including exact matches). It supplied the input, prediction and reference for only the three largest ULP errors. Nonfinite predictions received priority and the earlier input broke ties. If every case matched, the three supplied examples all showed equality. For a circuit that failed to compile, the prescribed diagnostic was the parser error and the first three central labels. Astra could return its previous answer. Each revision used one separate medium-effort Astra request with a 300-second timeout and the same 4,096-operation cap. The six requests contained only this central feedback.
+
+\begin{table}[htbp]
+\centering\small\setlength{\tabcolsep}{3.5pt}
+\caption{Effect of one WSP revision given central feedback. An arrow separates the first result from the revised one, and a single number denotes equality before and after. The operations column counts input-dependent operations. The other columns count exact matches to MPFR. Both circuits were evaluated on identical inputs. The existing outer sample was used for the first-response study. The fresh sample was drawn with an independent seed.}
+\label{tab:repair}
+\begin{tabular}{@{}llrrrr@{}}\toprule
+Target & Operators & Operations & Central (4,096) & Outer (16,384) & Fresh (32,768)\\\midrule
+\input{repair_rows}\end{tabular}
+\end{table}
+
+All six revisions compiled. The recorded interaction for each has one model reply and no tool action. Three replies were byte-for-byte identical to the originals. Requests took 5.8--139.6 seconds. For affine/rectifier sine, 9,608 fresh outer inputs became exact while 2,577 formerly exact predictions changed to a neighboring or more distant float. Across those same 32,768 inputs, raw RMSE fell from $1.47\times10^{-16}$ to $5.07\times10^{-17}$. For affine/rectifier self-power it fell from 0.0163 to $6.32\times10^{-6}$, with maximum ULP distance falling from 324,964 to 187. The other four pairs matched every fresh outer output and had RMSE zero before and after repair. The electronic table records all four evaluated splits, including a fresh central set. A single feedback round measures these six specific revisions, conditional on the first reply and the three cases shown.

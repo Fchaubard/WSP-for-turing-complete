@@ -1,0 +1,27 @@
+{
+  "family": "Scalar gated arithmetic network with rational quadrature and polynomial exponentiation",
+  "inferred_rule": "y = x^x. The graph approximates this rule over 0 < x <= 10.",
+  "construction_summary": "Approximate log(x) by 16-point Gauss–Legendre quadrature of (x-1)/(1+t(x-1)). Fourteen parallel Newton iterations compute the quadrature reciprocals. Multiply by x, evaluate a fourth-degree exponential polynomial at one 256th of the result, and square eight times. This construction follows a domain-wide mathematical rule rather than interpolating the observations. It uses 64 nodes and 59 stored scalar coefficients. Accuracy is strongest away from zero; the certificate supplies a conservative uniform relative-error bound, not a claim of machine-precision accuracy or global architectural optimality.",
+  "certificate": "The observations are consistent with exp(x log(x)). For exact reciprocals, quadrature is exact through degree 31. Expanding the integral geometrically bounds the log error by (1-x)^32/33 for x<=1 and (1-1/x)^32/33 for x>=1. Thus the error in x log(x) is at most 1/33 throughout the domain. Each normalized reciprocal has residual (1-d)^16384; d>=0.0005299532504175, so its residual is below 0.000170. For x<=1 its additional exponent error is below 0.000170/e; for x>=1 it is negligible. The scaled exponent lies between -1/(256e) and 10 log(10)/256. Taylor's remainder bounds the final exponentiation relative error below 0.000014. Together these give a conservative uniform relative error below 0.032, with ample margin for binary64 rounding. The graph is an approximation, not an exact representation of x^x.",
+  "network": {
+    "kind": "graph",
+    "nodes": [
+      {
+        "name": "d",
+        "op": "affine",
+        "source": "input",
+        "weight": [[0.0005299532504175],[0.00277124884633837],[0.00671843988060841],[0.01222977958224985],[0.01910618777986781],[0.02709916111713863],[0.03591982246103705],[0.04524937450811813],[0.05475062549188187],[0.06408017753896295],[0.07290083888286137],[0.08089381222013219],[0.08777022041775015],[0.09328156011939159],[0.09722875115366163],[0.0994700467495825]],
+        "bias": [0.0994700467495825,0.09722875115366163,0.09328156011939159,0.08777022041775015,0.08089381222013219,0.07290083888286137,0.06408017753896295,0.05475062549188187,0.04524937450811813,0.03591982246103705,0.02709916111713863,0.01910618777986781,0.01222977958224985,0.00671843988060841,0.00277124884633837,0.0005299532504175]
+      },
+      {"name":"two","op":"constant","value":[2]},
+      {"name":"neg_d","op":"affine","source":"input","weight":[[-0.1]],"bias":[0]},
+      {"name":"e0","op":"multiply","left":"d","right":"neg_d"},
+      {"name":"r0","op":"constant","value":[1]},
+      {"name":"p1","op":"multiply","left":"d","right":"r0"},
+      {"name":"n1","op":"multiply","left":"p1","right":"minus_one"},
+      {"name":"c1","op":"add","left":"two","right":"n1"},
+      {"name":"r1","op":"multiply","left":"r0","right":"c1"}
+    ],
+    "output": "r1"
+  }
+}

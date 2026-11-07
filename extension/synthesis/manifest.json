@@ -1,0 +1,110 @@
+[
+  {
+    "id": "3354251e2",
+    "task": "square",
+    "arm": "affine_relu",
+    "seed": 9213
+  },
+  {
+    "id": "13a55e07e",
+    "task": "square",
+    "arm": "affine_relu",
+    "seed": 2451
+  },
+  {
+    "id": "d6a36e94c",
+    "task": "square",
+    "arm": "affine_relu",
+    "seed": 8282
+  },
+  {
+    "id": "54d25bc20",
+    "task": "square",
+    "arm": "arithmetic_relu",
+    "seed": 9213
+  },
+  {
+    "id": "42c7c5dbc",
+    "task": "square",
+    "arm": "arithmetic_relu",
+    "seed": 2451
+  },
+  {
+    "id": "1337e52fe",
+    "task": "square",
+    "arm": "arithmetic_relu",
+    "seed": 8282
+  },
+  {
+    "id": "c4bd488a9",
+    "task": "sin",
+    "arm": "affine_relu",
+    "seed": 9213
+  },
+  {
+    "id": "56b5f85e4",
+    "task": "sin",
+    "arm": "affine_relu",
+    "seed": 2451
+  },
+  {
+    "id": "95b408935",
+    "task": "sin",
+    "arm": "affine_relu",
+    "seed": 8282
+  },
+  {
+    "id": "43a09bb78",
+    "task": "sin",
+    "arm": "arithmetic_relu",
+    "seed": 9213
+  },
+  {
+    "id": "2f2284a64",
+    "task": "sin",
+    "arm": "arithmetic_relu",
+    "seed": 2451
+  },
+  {
+    "id": "847f708ca",
+    "task": "sin",
+    "arm": "arithmetic_relu",
+    "seed": 8282
+  },
+  {
+    "id": "d96064e94",
+    "task": "selfpower",
+    "arm": "affine_relu",
+    "seed": 9213
+  },
+  {
+    "id": "0985eff9a",
+    "task": "selfpower",
+    "arm": "affine_relu",
+    "seed": 2451
+  },
+  {
+    "id": "03fa4e3ef",
+    "task": "selfpower",
+    "arm": "affine_relu",
+    "seed": 8282
+  },
+  {
+    "id": "3d067d9fc",
+    "task": "selfpower",
+    "arm": "arithmetic_relu",
+    "seed": 9213
+  },
+  {
+    "id": "b38048c6d",
+    "task": "selfpower",
+    "arm": "arithmetic_relu",
+    "seed": 2451
+  },
+  {
+    "id": "016ed599a",
+    "task": "selfpower",
+    "arm": "arithmetic_relu",
+    "seed": 8282
+  }
+]

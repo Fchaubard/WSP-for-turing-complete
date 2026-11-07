@@ -1,0 +1,28 @@
+{
+  "python": "3.12.12",
+  "numpy": "2.5.4",
+  "scipy": "1.18.1",
+  "platform": "macOS-26.0-arm64-arm-64bit",
+  "workers": 5,
+  "blas_environment": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1"
+  },
+  "gd": {
+    "max_updates": 800,
+    "initial_rate": 1.0,
+    "armijo": 0.0001,
+    "max_halvings": 80,
+    "gradient_infinity_tolerance": 1e-14
+  },
+  "lbfgs": {
+    "method": "L-BFGS-B",
+    "bounds": null,
+    "maxcor": 10,
+    "maxiter": 1000,
+    "maxfun": 20000,
+    "maxls": 40,
+    "gtol": 1e-14,
+    "ftol": 0.0
+  }
+}

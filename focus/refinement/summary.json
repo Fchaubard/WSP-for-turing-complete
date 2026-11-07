@@ -1,0 +1,69 @@
+{
+  "planned": 87,
+  "statuses": {
+    "valid": 87
+  },
+  "change_counts": {
+    "strict": {
+      "train_improved": 49,
+      "train_improved_outer_loss_worse": 29,
+      "train_improved_outer_rmse_worse": 29,
+      "train_improved_outer_loss_better": 20,
+      "outer_loss_better": 20,
+      "outer_loss_worse": 29,
+      "perfect_before": 30,
+      "perfect_after": 30
+    },
+    "threshold_1e_minus_10": {
+      "train_improved": 22,
+      "train_improved_outer_loss_worse": 13,
+      "train_improved_outer_rmse_worse": 13,
+      "train_improved_outer_loss_better": 9,
+      "outer_loss_better": 15,
+      "outer_loss_worse": 23,
+      "perfect_before": 30,
+      "perfect_after": 30
+    }
+  },
+  "certified": {
+    "formula": {
+      "all": 12,
+      "valid": 12,
+      "within": 2
+    },
+    "examples": {
+      "all": 12,
+      "valid": 12,
+      "within": 1
+    },
+    "adam_bfgs": {
+      "all": 12,
+      "valid": 12,
+      "within": 1
+    },
+    "trf_xavier": {
+      "all": 12,
+      "valid": 12,
+      "within": 5
+    },
+    "refined_examples": {
+      "all": 12,
+      "valid": 12,
+      "within": 12
+    }
+  },
+  "one_hinge_tradeoffs": {
+    "strict": {
+      "valid": 12,
+      "train_improved": 12,
+      "train_improved_outer_loss_worse": 6,
+      "train_improved_outer_rmse_worse": 6
+    },
+    "threshold_1e_minus_10": {
+      "valid": 12,
+      "train_improved": 11,
+      "train_improved_outer_loss_worse": 6,
+      "train_improved_outer_rmse_worse": 6
+    }
+  }
+}

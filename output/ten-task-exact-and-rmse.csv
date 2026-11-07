@@ -1,0 +1,1477 @@
+task,seed,method,information,architecture_size,stored_weights,split,example_count,exact_fraction,raw_rmse,mean_scaled_absolute_error
+square,164,Weight-space programming (WSP),Formula and examples,1,5,observed,12,0.0,0.8244813606647065,0.2867877846103094
+square,164,Weight-space programming (WSP),Formula and examples,1,5,inner,2048,0.0,0.7881793466593393,0.3094496558894899
+square,164,Weight-space programming (WSP),Formula and examples,1,5,left,2048,0.0,36.924150778823766,0.5859968397717986
+square,164,Weight-space programming (WSP),Formula and examples,1,5,right,2048,0.0,36.97220694356844,0.5897134099758259
+square,164,Weight-space programming (WSP),Formula and examples,1,5,outer,4096,0.0,36.948186674147905,0.5878551248738122
+square,164,Weight-space programming (WSP),Formula and examples,4,14,observed,12,0.0,0.4852912816071856,0.12017100149243996
+square,164,Weight-space programming (WSP),Formula and examples,4,14,inner,2048,0.0,0.453977649881639,0.11217752551926612
+square,164,Weight-space programming (WSP),Formula and examples,4,14,left,2048,0.0,7.0793428222656125,0.11869323770785241
+square,164,Weight-space programming (WSP),Formula and examples,4,14,right,2048,0.0,7.010468444055872,0.118708101429392
+square,164,Weight-space programming (WSP),Formula and examples,4,14,outer,4096,0.0,7.044989801279588,0.11870066956862221
+square,164,Weight-space programming (WSP),Formula and examples,16,50,observed,12,0.0,0.04392069326355319,0.010723578000517396
+square,164,Weight-space programming (WSP),Formula and examples,16,50,inner,2048,0.0,0.04437642608963819,0.010978583262241735
+square,164,Weight-space programming (WSP),Formula and examples,16,50,left,2048,0.0,0.637391072269865,0.01119520110999013
+square,164,Weight-space programming (WSP),Formula and examples,16,50,right,2048,0.0,0.6348149004037716,0.011200819825262123
+square,164,Weight-space programming (WSP),Formula and examples,16,50,outer,4096,0.0,0.636104290499592,0.011198010467626127
+square,164,Weight-space programming (WSP),Examples only,1,5,observed,12,0.0,0.8244813606647062,0.28678778461030957
+square,164,Weight-space programming (WSP),Examples only,1,5,inner,2048,0.0,0.7881793466593391,0.3094496558894901
+square,164,Weight-space programming (WSP),Examples only,1,5,left,2048,0.0,36.924150778823766,0.5859968397717985
+square,164,Weight-space programming (WSP),Examples only,1,5,right,2048,0.0,36.97220694356844,0.5897134099758259
+square,164,Weight-space programming (WSP),Examples only,1,5,outer,4096,0.0,36.948186674147905,0.5878551248738122
+square,164,Weight-space programming (WSP),Examples only,4,14,observed,12,0.0,0.4699049752158996,0.11796038428853932
+square,164,Weight-space programming (WSP),Examples only,4,14,inner,2048,0.0,0.44941728877241377,0.11081218924883693
+square,164,Weight-space programming (WSP),Examples only,4,14,left,2048,0.0,7.099029699932468,0.11976360872853976
+square,164,Weight-space programming (WSP),Examples only,4,14,right,2048,0.0,7.030107643844132,0.11972808250329972
+square,164,Weight-space programming (WSP),Examples only,4,14,outer,4096,0.0,7.064652721987081,0.11974584561591975
+square,164,Weight-space programming (WSP),Examples only,16,50,observed,12,0.0,0.04583410390838507,0.010832338197122112
+square,164,Weight-space programming (WSP),Examples only,16,50,inner,2048,0.0,0.04572256100952923,0.011089873708967878
+square,164,Weight-space programming (WSP),Examples only,16,50,left,2048,0.0,0.6339279757029685,0.011217161051069692
+square,164,Weight-space programming (WSP),Examples only,16,50,right,2048,0.0,0.6313522569791075,0.011218253435676074
+square,164,Weight-space programming (WSP),Examples only,16,50,outer,4096,0.0,0.6326414271810994,0.011217707243372883
+square,317,Weight-space programming (WSP),Formula and examples,1,5,observed,12,0.0,0.7503813301139297,0.39781475230845137
+square,317,Weight-space programming (WSP),Formula and examples,1,5,inner,2048,0.0,0.7881793466593391,0.3094496558894901
+square,317,Weight-space programming (WSP),Formula and examples,1,5,left,2048,0.0,36.924150778823766,0.5859968397717985
+square,317,Weight-space programming (WSP),Formula and examples,1,5,right,2048,0.0,36.97220694356844,0.5897134099758259
+square,317,Weight-space programming (WSP),Formula and examples,1,5,outer,4096,0.0,36.948186674147905,0.5878551248738122
+square,317,Weight-space programming (WSP),Formula and examples,4,14,observed,12,0.0,0.3485962513455929,0.10578207437999476
+square,317,Weight-space programming (WSP),Formula and examples,4,14,inner,2048,0.0,0.44941728877241377,0.11081218924883693
+square,317,Weight-space programming (WSP),Formula and examples,4,14,left,2048,0.0,7.099029699932468,0.11976360872853976
+square,317,Weight-space programming (WSP),Formula and examples,4,14,right,2048,0.0,7.030107643844132,0.11972808250329972
+square,317,Weight-space programming (WSP),Formula and examples,4,14,outer,4096,0.0,7.064652721987081,0.11974584561591975
+square,317,Weight-space programming (WSP),Formula and examples,16,50,observed,12,0.0,0.029216798791565017,0.011401273893838748
+square,317,Weight-space programming (WSP),Formula and examples,16,50,inner,2048,0.0,0.0449390208668295,0.010985269028320001
+square,317,Weight-space programming (WSP),Formula and examples,16,50,left,2048,0.0,0.6447904346725263,0.011320882408282764
+square,317,Weight-space programming (WSP),Formula and examples,16,50,right,2048,0.0,0.6426093696031754,0.011349968769332697
+square,317,Weight-space programming (WSP),Formula and examples,16,50,outer,4096,0.0,0.6437008259071041,0.011335425588807731
+square,317,Weight-space programming (WSP),Examples only,1,5,observed,12,0.0,0.7503813301139297,0.39781475230845137
+square,317,Weight-space programming (WSP),Examples only,1,5,inner,2048,0.0,0.7881793466593391,0.3094496558894901
+square,317,Weight-space programming (WSP),Examples only,1,5,left,2048,0.0,36.924150778823766,0.5859968397717985
+square,317,Weight-space programming (WSP),Examples only,1,5,right,2048,0.0,36.97220694356844,0.5897134099758259
+square,317,Weight-space programming (WSP),Examples only,1,5,outer,4096,0.0,36.948186674147905,0.5878551248738122
+square,317,Weight-space programming (WSP),Examples only,4,14,observed,12,0.0,0.3459401561734264,0.10562851407774022
+square,317,Weight-space programming (WSP),Examples only,4,14,inner,2048,0.0,0.4479656731275815,0.11060606514232428
+square,317,Weight-space programming (WSP),Examples only,4,14,left,2048,0.0,7.10093957907337,0.12012923517871908
+square,317,Weight-space programming (WSP),Examples only,4,14,right,2048,0.0,7.032015768901299,0.12007558173943023
+square,317,Weight-space programming (WSP),Examples only,4,14,outer,4096,0.0,7.066561705657399,0.12010240845907466
+square,317,Weight-space programming (WSP),Examples only,16,50,observed,12,0.0,0.03044814306078845,0.011429174350630289
+square,317,Weight-space programming (WSP),Examples only,16,50,inner,2048,0.0,0.045596769184589526,0.011104563767155936
+square,317,Weight-space programming (WSP),Examples only,16,50,left,2048,0.0,0.6389683296611685,0.01126871284477656
+square,317,Weight-space programming (WSP),Examples only,16,50,right,2048,0.0,0.6367081062586871,0.011279243271838137
+square,317,Weight-space programming (WSP),Examples only,16,50,outer,4096,0.0,0.6378392191161919,0.011273978058307349
+square,583,Weight-space programming (WSP),Formula and examples,1,5,observed,12,0.0,0.8085726885035176,0.3250978132473288
+square,583,Weight-space programming (WSP),Formula and examples,1,5,inner,2048,0.0,0.7881793466593393,0.3094496558894899
+square,583,Weight-space programming (WSP),Formula and examples,1,5,left,2048,0.0,36.924150778823766,0.5859968397717986
+square,583,Weight-space programming (WSP),Formula and examples,1,5,right,2048,0.0,36.97220694356844,0.5897134099758259
+square,583,Weight-space programming (WSP),Formula and examples,1,5,outer,4096,0.0,36.948186674147905,0.5878551248738122
+square,583,Weight-space programming (WSP),Formula and examples,4,14,observed,12,0.0,0.22906267634388558,0.08242919362616452
+square,583,Weight-space programming (WSP),Formula and examples,4,14,inner,2048,0.0,0.4582415275180669,0.11238999972716372
+square,583,Weight-space programming (WSP),Formula and examples,4,14,left,2048,0.0,7.153505041178185,0.11754604903103334
+square,583,Weight-space programming (WSP),Formula and examples,4,14,right,2048,0.0,7.084407883092147,0.11762486272974729
+square,583,Weight-space programming (WSP),Formula and examples,4,14,outer,4096,0.0,7.119040294456124,0.11758545588039032
+square,583,Weight-space programming (WSP),Formula and examples,16,50,observed,12,0.0,0.028977063240284335,0.008654506604144852
+square,583,Weight-space programming (WSP),Formula and examples,16,50,inner,2048,0.0,0.04640518408281338,0.011160929785517339
+square,583,Weight-space programming (WSP),Formula and examples,16,50,left,2048,0.0,0.6488268974521841,0.011466829354138005
+square,583,Weight-space programming (WSP),Formula and examples,16,50,right,2048,0.0,0.6472955978521726,0.011513867532858607
+square,583,Weight-space programming (WSP),Formula and examples,16,50,outer,4096,0.0,0.6480616999392221,0.011490348443498305
+square,583,Weight-space programming (WSP),Examples only,1,5,observed,12,0.0,0.8085726885035176,0.3250978132473288
+square,583,Weight-space programming (WSP),Examples only,1,5,inner,2048,0.0,0.7881793466593393,0.3094496558894899
+square,583,Weight-space programming (WSP),Examples only,1,5,left,2048,0.0,36.924150778823766,0.5859968397717986
+square,583,Weight-space programming (WSP),Examples only,1,5,right,2048,0.0,36.97220694356844,0.5897134099758259
+square,583,Weight-space programming (WSP),Examples only,1,5,outer,4096,0.0,36.948186674147905,0.5878551248738122
+square,583,Weight-space programming (WSP),Examples only,4,14,observed,12,0.0,0.22880174992257915,0.08129696045516473
+square,583,Weight-space programming (WSP),Examples only,4,14,inner,2048,0.0,0.4492433582777056,0.11043523286392543
+square,583,Weight-space programming (WSP),Examples only,4,14,left,2048,0.0,7.118263201483817,0.11992064405763889
+square,583,Weight-space programming (WSP),Examples only,4,14,right,2048,0.0,7.049283306407171,0.11988020447811956
+square,583,Weight-space programming (WSP),Examples only,4,14,outer,4096,0.0,7.08385721692601,0.11990042426787922
+square,583,Weight-space programming (WSP),Examples only,16,50,observed,12,0.0,0.025387003881225206,0.008734983083410888
+square,583,Weight-space programming (WSP),Examples only,16,50,inner,2048,0.0,0.04551097404948456,0.011095273711857888
+square,583,Weight-space programming (WSP),Examples only,16,50,left,2048,0.0,0.6328649087182703,0.011159928371941446
+square,583,Weight-space programming (WSP),Examples only,16,50,right,2048,0.0,0.6301706894804691,0.011150293203681121
+square,583,Weight-space programming (WSP),Examples only,16,50,outer,4096,0.0,0.6315192358777657,0.011155110787811284
+sin,164,Weight-space programming (WSP),Formula and examples,1,5,observed,12,0.0,0.7609277857275869,0.7074553327888746
+sin,164,Weight-space programming (WSP),Formula and examples,1,5,inner,2048,0.0,0.7308048928585932,0.6718825647430736
+sin,164,Weight-space programming (WSP),Formula and examples,1,5,left,2048,0.0,0.6716804162571498,0.5893078056445706
+sin,164,Weight-space programming (WSP),Formula and examples,1,5,right,2048,0.0,0.6806467935310835,0.600841146999199
+sin,164,Weight-space programming (WSP),Formula and examples,1,5,outer,4096,0.0,0.6761784672434946,0.5950744763218848
+sin,164,Weight-space programming (WSP),Formula and examples,4,14,observed,12,0.0,0.10489228981813098,0.0940416655588265
+sin,164,Weight-space programming (WSP),Formula and examples,4,14,inner,2048,0.0,0.11316883281100774,0.09530752442229457
+sin,164,Weight-space programming (WSP),Formula and examples,4,14,left,2048,0.0,0.5947671957548112,0.5368641711513282
+sin,164,Weight-space programming (WSP),Formula and examples,4,14,right,2048,0.0,0.6008543094552521,0.5447244111944247
+sin,164,Weight-space programming (WSP),Formula and examples,4,14,outer,4096,0.0,0.5978185001892254,0.5407942911728765
+sin,164,Weight-space programming (WSP),Formula and examples,16,50,observed,12,0.0,0.03025220199704651,0.02447198413517075
+sin,164,Weight-space programming (WSP),Formula and examples,16,50,inner,2048,0.0,0.024704805630369205,0.01975799769425807
+sin,164,Weight-space programming (WSP),Formula and examples,16,50,left,2048,0.0,0.03790678776609881,0.03071093298408194
+sin,164,Weight-space programming (WSP),Formula and examples,16,50,right,2048,0.0,0.03764137093254312,0.03057269901568089
+sin,164,Weight-space programming (WSP),Formula and examples,16,50,outer,4096,0.0,0.03777431246512212,0.030641815999881417
+sin,164,Weight-space programming (WSP),Examples only,1,5,observed,12,0.0,0.7609277857275869,0.7074553327888746
+sin,164,Weight-space programming (WSP),Examples only,1,5,inner,2048,0.0,0.7308048928585932,0.6718825647430736
+sin,164,Weight-space programming (WSP),Examples only,1,5,left,2048,0.0,0.6716804162571498,0.5893078056445706
+sin,164,Weight-space programming (WSP),Examples only,1,5,right,2048,0.0,0.6806467935310835,0.600841146999199
+sin,164,Weight-space programming (WSP),Examples only,1,5,outer,4096,0.0,0.6761784672434946,0.5950744763218848
+sin,164,Weight-space programming (WSP),Examples only,4,14,observed,12,0.0,0.1350760550789203,0.12471638379895456
+sin,164,Weight-space programming (WSP),Examples only,4,14,inner,2048,0.0,0.1406710105317431,0.12595050451111653
+sin,164,Weight-space programming (WSP),Examples only,4,14,left,2048,0.0,0.6016127444469993,0.5449276853122271
+sin,164,Weight-space programming (WSP),Examples only,4,14,right,2048,0.0,0.6077333179879649,0.5527992200064784
+sin,164,Weight-space programming (WSP),Examples only,4,14,outer,4096,0.0,0.60468077531608,0.5488634526593528
+sin,164,Weight-space programming (WSP),Examples only,16,50,observed,12,0.0,0.02865215708237443,0.024953588913988134
+sin,164,Weight-space programming (WSP),Examples only,16,50,inner,2048,0.0,0.023311014752981446,0.019141045606681763
+sin,164,Weight-space programming (WSP),Examples only,16,50,left,2048,0.0,0.032275623162896665,0.027815676420664816
+sin,164,Weight-space programming (WSP),Examples only,16,50,right,2048,0.0,0.03274672432927355,0.028451608018182147
+sin,164,Weight-space programming (WSP),Examples only,16,50,outer,4096,0.0,0.03251202704270181,0.02813364221942348
+sin,317,Weight-space programming (WSP),Formula and examples,1,5,observed,12,0.0,0.7711536368980141,0.7137292283582878
+sin,317,Weight-space programming (WSP),Formula and examples,1,5,inner,2048,0.0,0.7308048928585932,0.6718825647430736
+sin,317,Weight-space programming (WSP),Formula and examples,1,5,left,2048,0.0,0.6716804162571498,0.5893078056445706
+sin,317,Weight-space programming (WSP),Formula and examples,1,5,right,2048,0.0,0.6752479287133034,0.5811376035092197
+sin,317,Weight-space programming (WSP),Formula and examples,1,5,outer,4096,0.0,0.6734665347346461,0.5852227045768952
+sin,317,Weight-space programming (WSP),Formula and examples,4,14,observed,12,0.0,0.14106483539362566,0.11456306713746404
+sin,317,Weight-space programming (WSP),Formula and examples,4,14,inner,2048,0.0,0.13864000365148937,0.12445133252512
+sin,317,Weight-space programming (WSP),Formula and examples,4,14,left,2048,0.0,0.5832991724625655,0.514203197928522
+sin,317,Weight-space programming (WSP),Formula and examples,4,14,right,2048,0.0,0.5903639630653086,0.5242087374376078
+sin,317,Weight-space programming (WSP),Formula and examples,4,14,outer,4096,0.0,0.5868421991820675,0.5192059676830649
+sin,317,Weight-space programming (WSP),Formula and examples,16,50,observed,12,0.0,0.02454372360885353,0.019044120905071796
+sin,317,Weight-space programming (WSP),Formula and examples,16,50,inner,2048,0.0,0.03085356915490091,0.02590561969045678
+sin,317,Weight-space programming (WSP),Formula and examples,16,50,left,2048,0.0,0.033363116460827395,0.028686985785851046
+sin,317,Weight-space programming (WSP),Formula and examples,16,50,right,2048,0.0,0.03370227724502073,0.029138318238129946
+sin,317,Weight-space programming (WSP),Formula and examples,16,50,outer,4096,0.0,0.03353312564822263,0.028912652011990496
+sin,317,Weight-space programming (WSP),Examples only,1,5,observed,12,0.0,0.7711536368980141,0.7137292283582878
+sin,317,Weight-space programming (WSP),Examples only,1,5,inner,2048,0.0,0.7308048928585932,0.6718825647430736
+sin,317,Weight-space programming (WSP),Examples only,1,5,left,2048,0.0,0.6716804162571498,0.5893078056445706
+sin,317,Weight-space programming (WSP),Examples only,1,5,right,2048,0.0,0.6806467935310835,0.600841146999199
+sin,317,Weight-space programming (WSP),Examples only,1,5,outer,4096,0.0,0.6761784672434946,0.5950744763218848
+sin,317,Weight-space programming (WSP),Examples only,4,14,observed,12,0.0,0.14156891460977772,0.11042229742332987
+sin,317,Weight-space programming (WSP),Examples only,4,14,inner,2048,0.0,0.1438779743366452,0.11940828259730085
+sin,317,Weight-space programming (WSP),Examples only,4,14,left,2048,0.0,0.6507625685918169,0.5924693162444452
+sin,317,Weight-space programming (WSP),Examples only,4,14,right,2048,0.0,0.6562813976315272,0.5992402519146014
+sin,317,Weight-space programming (WSP),Examples only,4,14,outer,4096,0.0,0.6535278087263808,0.5958547840795233
+sin,317,Weight-space programming (WSP),Examples only,16,50,observed,12,0.0,0.022528006115891473,0.017715353193240573
+sin,317,Weight-space programming (WSP),Examples only,16,50,inner,2048,0.0,0.028570474461702775,0.023863660559684766
+sin,317,Weight-space programming (WSP),Examples only,16,50,left,2048,0.0,0.032494095093899784,0.028092356835878875
+sin,317,Weight-space programming (WSP),Examples only,16,50,right,2048,0.0,0.03225024934673563,0.02776301469293523
+sin,317,Weight-space programming (WSP),Examples only,16,50,outer,4096,0.0,0.032372401817736846,0.027927685764407052
+sin,583,Weight-space programming (WSP),Formula and examples,1,5,observed,12,0.0,0.8207529525018761,0.7901637250959669
+sin,583,Weight-space programming (WSP),Formula and examples,1,5,inner,2048,0.0,0.7308048928585932,0.6718825647430736
+sin,583,Weight-space programming (WSP),Formula and examples,1,5,left,2048,0.0,0.6716804162571498,0.5893078056445706
+sin,583,Weight-space programming (WSP),Formula and examples,1,5,right,2048,0.0,0.6806467935310835,0.600841146999199
+sin,583,Weight-space programming (WSP),Formula and examples,1,5,outer,4096,0.0,0.6761784672434946,0.5950744763218848
+sin,583,Weight-space programming (WSP),Formula and examples,4,14,observed,12,0.0,0.14045242884760312,0.13054741253517066
+sin,583,Weight-space programming (WSP),Formula and examples,4,14,inner,2048,0.0,0.1215617929476593,0.10924397117707746
+sin,583,Weight-space programming (WSP),Formula and examples,4,14,left,2048,0.0,0.5930828371916789,0.5336800058443602
+sin,583,Weight-space programming (WSP),Formula and examples,4,14,right,2048,0.0,0.5993154719943289,0.5419269381320211
+sin,583,Weight-space programming (WSP),Formula and examples,4,14,outer,4096,0.0,0.5962072989921863,0.5378034719881906
+sin,583,Weight-space programming (WSP),Formula and examples,16,50,observed,12,0.0,0.035539035862899894,0.03136211668009808
+sin,583,Weight-space programming (WSP),Formula and examples,16,50,inner,2048,0.0,0.035071423155279446,0.0316626955863857
+sin,583,Weight-space programming (WSP),Formula and examples,16,50,left,2048,0.0,0.030403525564022434,0.026634086078808947
+sin,583,Weight-space programming (WSP),Formula and examples,16,50,right,2048,0.0,0.030242181405472506,0.02649331184185446
+sin,583,Weight-space programming (WSP),Formula and examples,16,50,outer,4096,0.0,0.03032296079610031,0.026563698960331703
+sin,583,Weight-space programming (WSP),Examples only,1,5,observed,12,0.0,0.8207529525018761,0.7901637250959669
+sin,583,Weight-space programming (WSP),Examples only,1,5,inner,2048,0.0,0.7308048928585932,0.6718825647430736
+sin,583,Weight-space programming (WSP),Examples only,1,5,left,2048,0.0,0.6716804162571498,0.5893078056445706
+sin,583,Weight-space programming (WSP),Examples only,1,5,right,2048,0.0,0.6806467935310835,0.600841146999199
+sin,583,Weight-space programming (WSP),Examples only,1,5,outer,4096,0.0,0.6761784672434946,0.5950744763218848
+sin,583,Weight-space programming (WSP),Examples only,4,14,observed,12,0.0,0.15174059303780132,0.1386333275066041
+sin,583,Weight-space programming (WSP),Examples only,4,14,inner,2048,0.0,0.13630055060568189,0.12000492679798982
+sin,583,Weight-space programming (WSP),Examples only,4,14,left,2048,0.0,0.5866088196687426,0.5220785199476281
+sin,583,Weight-space programming (WSP),Examples only,4,14,right,2048,0.0,0.5932946464270562,0.53120979229272
+sin,583,Weight-space programming (WSP),Examples only,4,14,outer,4096,0.0,0.5899612041448831,0.526644156120174
+sin,583,Weight-space programming (WSP),Examples only,16,50,observed,12,0.0,0.035954939619591376,0.03201374665885037
+sin,583,Weight-space programming (WSP),Examples only,16,50,inner,2048,0.0,0.03561134524794574,0.03214469971282424
+sin,583,Weight-space programming (WSP),Examples only,16,50,left,2048,0.0,0.03160654118653707,0.02788467454732832
+sin,583,Weight-space programming (WSP),Examples only,16,50,right,2048,0.0,0.03146653298614753,0.027776545072707
+sin,583,Weight-space programming (WSP),Examples only,16,50,outer,4096,0.0,0.031536614783015116,0.02783060981001766
+selfpower,164,Weight-space programming (WSP),Formula and examples,1,5,observed,12,0.0,1.7971356989256473,0.48540515884106666
+selfpower,164,Weight-space programming (WSP),Formula and examples,1,5,inner,2048,0.0,5.000405384483668,0.5259235228400319
+selfpower,164,Weight-space programming (WSP),Formula and examples,1,5,right,2048,0.0,1581965979.7631526,0.8619424850629755
+selfpower,164,Weight-space programming (WSP),Formula and examples,1,5,outer,2048,0.0,1581965979.7631526,0.8619424850629755
+selfpower,164,Weight-space programming (WSP),Formula and examples,4,14,observed,12,0.0,2.033233155371487,0.4350432404724476
+selfpower,164,Weight-space programming (WSP),Formula and examples,4,14,inner,2048,0.0,5.289683037619954,0.4723338885129835
+selfpower,164,Weight-space programming (WSP),Formula and examples,4,14,right,2048,0.0,1202096205.478958,0.4911680217642477
+selfpower,164,Weight-space programming (WSP),Formula and examples,4,14,outer,2048,0.0,1202096205.478958,0.4911680217642477
+selfpower,164,Weight-space programming (WSP),Formula and examples,16,50,observed,12,0.0,0.32043728492061563,0.08703552070116698
+selfpower,164,Weight-space programming (WSP),Formula and examples,16,50,inner,2048,0.0,0.6909976458382106,0.08275100122887241
+selfpower,164,Weight-space programming (WSP),Formula and examples,16,50,right,2048,0.0,129430047.807921,0.07739577952641612
+selfpower,164,Weight-space programming (WSP),Formula and examples,16,50,outer,2048,0.0,129430047.807921,0.07739577952641612
+selfpower,164,Weight-space programming (WSP),Examples only,1,5,observed,12,0.0,1.7971362457887863,0.48540507673567124
+selfpower,164,Weight-space programming (WSP),Examples only,1,5,inner,2048,0.0,5.000406050052613,0.5259229283475448
+selfpower,164,Weight-space programming (WSP),Examples only,1,5,right,2048,0.0,1581965213.5995846,0.8620579351835694
+selfpower,164,Weight-space programming (WSP),Examples only,1,5,outer,2048,0.0,1581965213.5995846,0.8620579351835694
+selfpower,164,Weight-space programming (WSP),Examples only,4,14,observed,12,0.0,2.04398155681961,0.4330403506713029
+selfpower,164,Weight-space programming (WSP),Examples only,4,14,inner,2048,0.0,5.302008358833994,0.4695983567988673
+selfpower,164,Weight-space programming (WSP),Examples only,4,14,right,2048,0.0,1196802337.2964237,0.4906513348113269
+selfpower,164,Weight-space programming (WSP),Examples only,4,14,outer,2048,0.0,1196802337.2964237,0.4906513348113269
+selfpower,164,Weight-space programming (WSP),Examples only,16,50,observed,12,0.0,0.3041711562395985,0.05262054028744347
+selfpower,164,Weight-space programming (WSP),Examples only,16,50,inner,2048,0.0,0.6446856671301201,0.06941417141559628
+selfpower,164,Weight-space programming (WSP),Examples only,16,50,right,2048,0.0,134179945.33245558,0.07874429369995388
+selfpower,164,Weight-space programming (WSP),Examples only,16,50,outer,2048,0.0,134179945.33245558,0.07874429369995388
+selfpower,317,Weight-space programming (WSP),Formula and examples,1,5,observed,12,0.0,2.487328305853725,0.3923676979356597
+selfpower,317,Weight-space programming (WSP),Formula and examples,1,5,inner,2048,0.0,5.000406382837352,0.5259226311013013
+selfpower,317,Weight-space programming (WSP),Formula and examples,1,5,right,2048,0.0,1581967751.515277,0.8607559599298847
+selfpower,317,Weight-space programming (WSP),Formula and examples,1,5,outer,2048,0.0,1581967751.515277,0.8607559599298847
+selfpower,317,Weight-space programming (WSP),Formula and examples,4,14,observed,12,0.0,2.758013704917894,0.3649790981232492
+selfpower,317,Weight-space programming (WSP),Formula and examples,4,14,inner,2048,0.0,5.3158578891190995,0.46630952643942464
+selfpower,317,Weight-space programming (WSP),Formula and examples,4,14,right,2048,0.0,1193482246.4325576,0.501521069967562
+selfpower,317,Weight-space programming (WSP),Formula and examples,4,14,outer,2048,0.0,1193482246.4325576,0.501521069967562
+selfpower,317,Weight-space programming (WSP),Formula and examples,16,50,observed,12,0.0,0.5466473236410253,0.08603030107692371
+selfpower,317,Weight-space programming (WSP),Formula and examples,16,50,inner,2048,0.0,0.5766753330263507,0.06740020794820686
+selfpower,317,Weight-space programming (WSP),Formula and examples,16,50,right,2048,0.0,129263591.62521996,0.08242968746337473
+selfpower,317,Weight-space programming (WSP),Formula and examples,16,50,outer,2048,0.0,129263591.62521996,0.08242968746337473
+selfpower,317,Weight-space programming (WSP),Examples only,1,5,observed,12,0.0,2.5867040993702424,0.3812641954775758
+selfpower,317,Weight-space programming (WSP),Examples only,1,5,inner,2048,0.0,5.122173938636217,0.5076902102938532
+selfpower,317,Weight-space programming (WSP),Examples only,1,5,right,2048,0.0,1582028322.492568,0.8618185344489051
+selfpower,317,Weight-space programming (WSP),Examples only,1,5,outer,2048,0.0,1582028322.492568,0.8618185344489051
+selfpower,317,Weight-space programming (WSP),Examples only,4,14,observed,12,0.0,2.809267535300741,0.37468684812356107
+selfpower,317,Weight-space programming (WSP),Examples only,4,14,inner,2048,0.0,5.375723098774536,0.4791392883741178
+selfpower,317,Weight-space programming (WSP),Examples only,4,14,right,2048,0.0,1188834570.7714496,0.5081402200053555
+selfpower,317,Weight-space programming (WSP),Examples only,4,14,outer,2048,0.0,1188834570.7714496,0.5081402200053555
+selfpower,317,Weight-space programming (WSP),Examples only,16,50,observed,12,0.0,0.3755145545154019,0.06050258980921316
+selfpower,317,Weight-space programming (WSP),Examples only,16,50,inner,2048,0.0,0.8489161098986057,0.05792106443977519
+selfpower,317,Weight-space programming (WSP),Examples only,16,50,right,2048,0.0,151727049.76965362,0.09317519725713283
+selfpower,317,Weight-space programming (WSP),Examples only,16,50,outer,2048,0.0,151727049.76965362,0.09317519725713283
+selfpower,583,Weight-space programming (WSP),Formula and examples,1,5,observed,12,0.0,2.9816175265618083,0.44217003196657845
+selfpower,583,Weight-space programming (WSP),Formula and examples,1,5,inner,2048,0.0,5.000408712335505,0.5259205503775968
+selfpower,583,Weight-space programming (WSP),Formula and examples,1,5,right,2048,0.0,1581976977.144787,0.8550907097690752
+selfpower,583,Weight-space programming (WSP),Formula and examples,1,5,outer,2048,0.0,1581976977.144787,0.8550907097690752
+selfpower,583,Weight-space programming (WSP),Formula and examples,4,14,observed,12,0.0,3.6107448358445895,0.391443688333416
+selfpower,583,Weight-space programming (WSP),Formula and examples,4,14,inner,2048,0.0,5.576934182913124,0.40561884288219074
+selfpower,583,Weight-space programming (WSP),Formula and examples,4,14,right,2048,0.0,1225082949.7760568,0.47402021968710617
+selfpower,583,Weight-space programming (WSP),Formula and examples,4,14,outer,2048,0.0,1225082949.7760568,0.47402021968710617
+selfpower,583,Weight-space programming (WSP),Formula and examples,16,50,observed,12,0.0,0.5010529603529725,0.0664012664090885
+selfpower,583,Weight-space programming (WSP),Formula and examples,16,50,inner,2048,0.0,0.7275350241779823,0.08037910856420283
+selfpower,583,Weight-space programming (WSP),Formula and examples,16,50,right,2048,0.0,125102589.08287749,0.07600146984440335
+selfpower,583,Weight-space programming (WSP),Formula and examples,16,50,outer,2048,0.0,125102589.08287749,0.07600146984440335
+selfpower,583,Weight-space programming (WSP),Examples only,1,5,observed,12,0.0,2.9813677337436637,0.44220014649296147
+selfpower,583,Weight-space programming (WSP),Examples only,1,5,inner,2048,0.0,5.0001667427455505,0.5259483787485904
+selfpower,583,Weight-space programming (WSP),Examples only,1,5,right,2048,0.0,1581963675.5126357,0.8622908284067439
+selfpower,583,Weight-space programming (WSP),Examples only,1,5,outer,2048,0.0,1581963675.5126357,0.8622908284067439
+selfpower,583,Weight-space programming (WSP),Examples only,4,14,observed,12,0.0,3.3659193595775676,0.3977479393488106
+selfpower,583,Weight-space programming (WSP),Examples only,4,14,inner,2048,0.0,5.3582216382346095,0.45671948885697755
+selfpower,583,Weight-space programming (WSP),Examples only,4,14,right,2048,0.0,1202240729.550447,0.4895728983510047
+selfpower,583,Weight-space programming (WSP),Examples only,4,14,outer,2048,0.0,1202240729.550447,0.4895728983510047
+selfpower,583,Weight-space programming (WSP),Examples only,16,50,observed,12,0.0,0.6585045635878062,0.06893805605084284
+selfpower,583,Weight-space programming (WSP),Examples only,16,50,inner,2048,0.0,0.6955854808229733,0.07144758460861728
+selfpower,583,Weight-space programming (WSP),Examples only,16,50,right,2048,0.0,132301876.88077527,0.08038898425827651
+selfpower,583,Weight-space programming (WSP),Examples only,16,50,outer,2048,0.0,132301876.88077527,0.08038898425827651
+tanh,164,Weight-space programming (WSP),Formula and examples,1,5,observed,12,0.0,0.5667425622646278,0.5494957973684522
+tanh,164,Weight-space programming (WSP),Formula and examples,1,5,inner,2048,0.0,0.5477497474580034,0.5234756304729209
+tanh,164,Weight-space programming (WSP),Formula and examples,1,5,left,2048,0.0,0.34423476773897504,0.2959434234230953
+tanh,164,Weight-space programming (WSP),Formula and examples,1,5,right,2048,0.0,0.34055788881007054,0.2933124214016728
+tanh,164,Weight-space programming (WSP),Formula and examples,1,5,outer,4096,0.0,0.3424012638346115,0.29462792241238406
+tanh,164,Weight-space programming (WSP),Formula and examples,4,14,observed,12,0.0,0.022125227879131258,0.020471937543642748
+tanh,164,Weight-space programming (WSP),Formula and examples,4,14,inner,2048,0.0,0.019333353617139788,0.017275547965308946
+tanh,164,Weight-space programming (WSP),Formula and examples,4,14,left,2048,0.0,0.016573276648145566,0.014412750406518508
+tanh,164,Weight-space programming (WSP),Formula and examples,4,14,right,2048,0.0,0.01632942572142852,0.014167548338651867
+tanh,164,Weight-space programming (WSP),Formula and examples,4,14,outer,4096,0.0,0.016451802990061885,0.014290149372585187
+tanh,164,Weight-space programming (WSP),Formula and examples,16,50,observed,12,0.0,0.0014846932974901961,0.001300193582315201
+tanh,164,Weight-space programming (WSP),Formula and examples,16,50,inner,2048,0.0,0.0016998059617119139,0.001517462674383028
+tanh,164,Weight-space programming (WSP),Formula and examples,16,50,left,2048,0.0,0.0015368658312597987,0.001335750042899495
+tanh,164,Weight-space programming (WSP),Formula and examples,16,50,right,2048,0.0,0.0015357592964430923,0.0013326477537160706
+tanh,164,Weight-space programming (WSP),Formula and examples,16,50,outer,4096,0.0,0.0015363126634746675,0.0013341988983077827
+tanh,164,Weight-space programming (WSP),Examples only,1,5,observed,12,0.0,0.5667753355407709,0.549527499486924
+tanh,164,Weight-space programming (WSP),Examples only,1,5,inner,2048,0.0,0.5477809496007017,0.5235050796741187
+tanh,164,Weight-space programming (WSP),Examples only,1,5,left,2048,0.0,0.3441714501682601,0.295896337564364
+tanh,164,Weight-space programming (WSP),Examples only,1,5,right,2048,0.0,0.3404927427292168,0.2932650689110422
+tanh,164,Weight-space programming (WSP),Examples only,1,5,outer,4096,0.0,0.3423370378458835,0.29458070323770313
+tanh,164,Weight-space programming (WSP),Examples only,4,14,observed,12,0.0,0.020654767141669545,0.018838012217387675
+tanh,164,Weight-space programming (WSP),Examples only,4,14,inner,2048,0.0,0.018047139513830423,0.01611669008748297
+tanh,164,Weight-space programming (WSP),Examples only,4,14,left,2048,0.0,0.016148987703018015,0.014133906268540346
+tanh,164,Weight-space programming (WSP),Examples only,4,14,right,2048,0.0,0.015945805666727278,0.013956910206076388
+tanh,164,Weight-space programming (WSP),Examples only,4,14,outer,4096,0.0,0.016047718252032883,0.014045408237308366
+tanh,164,Weight-space programming (WSP),Examples only,16,50,observed,12,0.0,0.001587073547151058,0.001300457894585355
+tanh,164,Weight-space programming (WSP),Examples only,16,50,inner,2048,0.0,0.0017367374007785275,0.0015454144022367404
+tanh,164,Weight-space programming (WSP),Examples only,16,50,left,2048,0.0,0.0013415356946957196,0.0011819947370603975
+tanh,164,Weight-space programming (WSP),Examples only,16,50,right,2048,0.0,0.0013342939599090278,0.0011745059693889887
+tanh,164,Weight-space programming (WSP),Examples only,16,50,outer,4096,0.0,0.0013379197269628026,0.001178250353224693
+tanh,317,Weight-space programming (WSP),Formula and examples,1,5,observed,12,0.0,0.5595773573336112,0.5306994194737444
+tanh,317,Weight-space programming (WSP),Formula and examples,1,5,inner,2048,0.0,0.5476873441802482,0.5234167320705252
+tanh,317,Weight-space programming (WSP),Formula and examples,1,5,left,2048,0.0,0.34436152560169125,0.29603759514055794
+tanh,317,Weight-space programming (WSP),Formula and examples,1,5,right,2048,0.0,0.34068830411061074,0.2934071263829339
+tanh,317,Weight-space programming (WSP),Formula and examples,1,5,outer,4096,0.0,0.34252983875312837,0.29472236076174596
+tanh,317,Weight-space programming (WSP),Formula and examples,4,14,observed,12,0.0,0.015259960028087837,0.01242899082377989
+tanh,317,Weight-space programming (WSP),Formula and examples,4,14,inner,2048,0.0,0.01870935226678061,0.016720150083667725
+tanh,317,Weight-space programming (WSP),Formula and examples,4,14,left,2048,0.0,0.017006798439521596,0.014873453109309034
+tanh,317,Weight-space programming (WSP),Formula and examples,4,14,right,2048,0.0,0.016771678205342998,0.014647673836069082
+tanh,317,Weight-space programming (WSP),Formula and examples,4,14,outer,4096,0.0,0.016889647465031524,0.014760563472689059
+tanh,317,Weight-space programming (WSP),Formula and examples,16,50,observed,12,0.0,0.0014361620584864476,0.0012589272153873195
+tanh,317,Weight-space programming (WSP),Formula and examples,16,50,inner,2048,0.0,0.0016391208291435956,0.0014723281883924264
+tanh,317,Weight-space programming (WSP),Formula and examples,16,50,left,2048,0.0,0.0016931588012370636,0.0014834532829988115
+tanh,317,Weight-space programming (WSP),Formula and examples,16,50,right,2048,0.0,0.0016916698428301761,0.001480433509832007
+tanh,317,Weight-space programming (WSP),Formula and examples,16,50,outer,4096,0.0,0.001692414485778765,0.0014819433964154093
+tanh,317,Weight-space programming (WSP),Examples only,1,5,observed,12,0.0,0.5596057109124198,0.5307261571180335
+tanh,317,Weight-space programming (WSP),Examples only,1,5,inner,2048,0.0,0.5477185456511665,0.523446181271723
+tanh,317,Weight-space programming (WSP),Examples only,1,5,left,2048,0.0,0.34429812622431316,0.29599050928182663
+tanh,317,Weight-space programming (WSP),Examples only,1,5,right,2048,0.0,0.34062307594505714,0.2933597738923033
+tanh,317,Weight-space programming (WSP),Examples only,1,5,outer,4096,0.0,0.3424655308113835,0.294675141587065
+tanh,317,Weight-space programming (WSP),Examples only,4,14,observed,12,0.0,0.015460339936661932,0.012846983219117614
+tanh,317,Weight-space programming (WSP),Examples only,4,14,inner,2048,0.0,0.01880483833834638,0.016789120826051763
+tanh,317,Weight-space programming (WSP),Examples only,4,14,left,2048,0.0,0.017203018267974633,0.015037884740182724
+tanh,317,Weight-space programming (WSP),Examples only,4,14,right,2048,0.0,0.01696190639008743,0.014803124991398183
+tanh,317,Weight-space programming (WSP),Examples only,4,14,outer,4096,0.0,0.01708288772301624,0.014920504865790454
+tanh,317,Weight-space programming (WSP),Examples only,16,50,observed,12,0.0,0.0020267874381776564,0.0017661301056757148
+tanh,317,Weight-space programming (WSP),Examples only,16,50,inner,2048,0.0,0.0016003022818226941,0.0013574061533717136
+tanh,317,Weight-space programming (WSP),Examples only,16,50,left,2048,0.0,0.001541974248742608,0.0013539395816300672
+tanh,317,Weight-space programming (WSP),Examples only,16,50,right,2048,0.0,0.0015373000800158931,0.0013522972036215382
+tanh,317,Weight-space programming (WSP),Examples only,16,50,outer,4096,0.0,0.00153963893816086,0.0013531183926258027
+tanh,583,Weight-space programming (WSP),Formula and examples,1,5,observed,12,0.0,0.5925692417138803,0.5890006222875243
+tanh,583,Weight-space programming (WSP),Formula and examples,1,5,inner,2048,0.0,0.5477497474580034,0.5234756304729209
+tanh,583,Weight-space programming (WSP),Formula and examples,1,5,left,2048,0.0,0.34423476773897504,0.2959434234230953
+tanh,583,Weight-space programming (WSP),Formula and examples,1,5,right,2048,0.0,0.34055788881007054,0.2933124214016728
+tanh,583,Weight-space programming (WSP),Formula and examples,1,5,outer,4096,0.0,0.3424012638346115,0.29462792241238406
+tanh,583,Weight-space programming (WSP),Formula and examples,4,14,observed,12,0.0,0.014151504911952687,0.010902015893073288
+tanh,583,Weight-space programming (WSP),Formula and examples,4,14,inner,2048,0.0,0.018530670382544728,0.016525825033504873
+tanh,583,Weight-space programming (WSP),Formula and examples,4,14,left,2048,0.0,0.017107904960659955,0.014965738762634814
+tanh,583,Weight-space programming (WSP),Formula and examples,4,14,right,2048,0.0,0.016873824052458564,0.014744550272254318
+tanh,583,Weight-space programming (WSP),Formula and examples,4,14,outer,4096,0.0,0.016991267614517504,0.014855144517444567
+tanh,583,Weight-space programming (WSP),Formula and examples,16,50,observed,12,0.0,0.0012537876075266127,0.0010120039218424286
+tanh,583,Weight-space programming (WSP),Formula and examples,16,50,inner,2048,0.0,0.00158767308988702,0.0013980641304371971
+tanh,583,Weight-space programming (WSP),Formula and examples,16,50,left,2048,0.0,0.0015082690706389257,0.0013269255031170023
+tanh,583,Weight-space programming (WSP),Formula and examples,16,50,right,2048,0.0,0.0015039113221714882,0.0013247068467447643
+tanh,583,Weight-space programming (WSP),Formula and examples,16,50,outer,4096,0.0,0.0015060917725028583,0.0013258161749308832
+tanh,583,Weight-space programming (WSP),Examples only,1,5,observed,12,0.0,0.5924424653787727,0.5888747702853874
+tanh,583,Weight-space programming (WSP),Examples only,1,5,inner,2048,0.0,0.5476249422463975,0.5233578336681296
+tanh,583,Weight-space programming (WSP),Examples only,1,5,left,2048,0.0,0.34448844694224345,0.2961317668580207
+tanh,583,Weight-space programming (WSP),Examples only,1,5,right,2048,0.0,0.3408188834391717,0.2935020206099092
+tanh,583,Weight-space programming (WSP),Examples only,1,5,outer,4096,0.0,0.34265857743926575,0.2948168937339649
+tanh,583,Weight-space programming (WSP),Examples only,4,14,observed,12,0.0,0.013546427225099225,0.010513531482146907
+tanh,583,Weight-space programming (WSP),Examples only,4,14,inner,2048,0.0,0.018579418864626402,0.016616772646286672
+tanh,583,Weight-space programming (WSP),Examples only,4,14,left,2048,0.0,0.016784838145649676,0.014686251990268597
+tanh,583,Weight-space programming (WSP),Examples only,4,14,right,2048,0.0,0.01655694545444755,0.014471725971700013
+tanh,583,Weight-space programming (WSP),Examples only,4,14,outer,4096,0.0,0.01667128120987118,0.014578988980984305
+tanh,583,Weight-space programming (WSP),Examples only,16,50,observed,12,0.0,0.001871571419000221,0.0017997615628992196
+tanh,583,Weight-space programming (WSP),Examples only,16,50,inner,2048,0.0,0.0016063360550234288,0.0014328227190885312
+tanh,583,Weight-space programming (WSP),Examples only,16,50,left,2048,0.0,0.0015005564867863472,0.0013206280979293052
+tanh,583,Weight-space programming (WSP),Examples only,16,50,right,2048,0.0,0.0014963702468868217,0.00131787888372961
+tanh,583,Weight-space programming (WSP),Examples only,16,50,outer,4096,0.0,0.0014984648287171627,0.0013192534908294576
+add,164,Weight-space programming (WSP),Formula and examples,1,1,observed,12,0.0,2.2899085498990432,0.7870654603498904
+add,164,Weight-space programming (WSP),Formula and examples,1,1,inner,2048,0.0,2.415581075976787,0.8317137743722749
+add,164,Weight-space programming (WSP),Formula and examples,1,1,outer,2048,0.0,9.626319564121017,0.9432749002065856
+add,164,Weight-space programming (WSP),Formula and examples,2,2,observed,12,1.0,0.0,0.0
+add,164,Weight-space programming (WSP),Formula and examples,2,2,inner,2048,1.0,0.0,0.0
+add,164,Weight-space programming (WSP),Formula and examples,2,2,outer,2048,1.0,0.0,0.0
+add,164,Weight-space programming (WSP),Formula and examples,3,3,observed,12,1.0,0.0,0.0
+add,164,Weight-space programming (WSP),Formula and examples,3,3,inner,2048,1.0,0.0,0.0
+add,164,Weight-space programming (WSP),Formula and examples,3,3,outer,2048,1.0,0.0,0.0
+add,164,Weight-space programming (WSP),Examples only,1,1,observed,12,0.0,2.2899085498990432,0.7870654603498904
+add,164,Weight-space programming (WSP),Examples only,1,1,inner,2048,0.0,2.415581075976787,0.8317137743722749
+add,164,Weight-space programming (WSP),Examples only,1,1,outer,2048,0.0,9.626319564121017,0.9432749002065856
+add,164,Weight-space programming (WSP),Examples only,2,2,observed,12,1.0,0.0,0.0
+add,164,Weight-space programming (WSP),Examples only,2,2,inner,2048,1.0,0.0,0.0
+add,164,Weight-space programming (WSP),Examples only,2,2,outer,2048,1.0,0.0,0.0
+add,164,Weight-space programming (WSP),Examples only,3,3,observed,12,1.0,0.0,0.0
+add,164,Weight-space programming (WSP),Examples only,3,3,inner,2048,1.0,0.0,0.0
+add,164,Weight-space programming (WSP),Examples only,3,3,outer,2048,1.0,0.0,0.0
+add,317,Weight-space programming (WSP),Formula and examples,1,1,observed,12,0.0,1.7387441214756938,0.8747740591281502
+add,317,Weight-space programming (WSP),Formula and examples,1,1,inner,2048,0.0,2.415581075976787,0.8317137743722749
+add,317,Weight-space programming (WSP),Formula and examples,1,1,outer,2048,0.0,9.626319564121017,0.9432749002065856
+add,317,Weight-space programming (WSP),Formula and examples,2,2,observed,12,1.0,0.0,0.0
+add,317,Weight-space programming (WSP),Formula and examples,2,2,inner,2048,1.0,0.0,0.0
+add,317,Weight-space programming (WSP),Formula and examples,2,2,outer,2048,1.0,0.0,0.0
+add,317,Weight-space programming (WSP),Formula and examples,3,3,observed,12,1.0,0.0,0.0
+add,317,Weight-space programming (WSP),Formula and examples,3,3,inner,2048,1.0,0.0,0.0
+add,317,Weight-space programming (WSP),Formula and examples,3,3,outer,2048,1.0,0.0,0.0
+add,317,Weight-space programming (WSP),Examples only,1,1,observed,12,0.0,1.7387441214756938,0.8747740591281502
+add,317,Weight-space programming (WSP),Examples only,1,1,inner,2048,0.0,2.415581075976787,0.8317137743722749
+add,317,Weight-space programming (WSP),Examples only,1,1,outer,2048,0.0,9.626319564121017,0.9432749002065856
+add,317,Weight-space programming (WSP),Examples only,2,2,observed,12,1.0,0.0,0.0
+add,317,Weight-space programming (WSP),Examples only,2,2,inner,2048,1.0,0.0,0.0
+add,317,Weight-space programming (WSP),Examples only,2,2,outer,2048,1.0,0.0,0.0
+add,317,Weight-space programming (WSP),Examples only,3,3,observed,12,1.0,0.0,0.0
+add,317,Weight-space programming (WSP),Examples only,3,3,inner,2048,1.0,0.0,0.0
+add,317,Weight-space programming (WSP),Examples only,3,3,outer,2048,1.0,0.0,0.0
+add,583,Weight-space programming (WSP),Formula and examples,1,1,observed,12,0.0,2.1094691194150905,0.727453736415153
+add,583,Weight-space programming (WSP),Formula and examples,1,1,inner,2048,0.0,2.415581075976787,0.8317137743722749
+add,583,Weight-space programming (WSP),Formula and examples,1,1,outer,2048,0.0,9.626319564121017,0.9432749002065856
+add,583,Weight-space programming (WSP),Formula and examples,2,2,observed,12,1.0,0.0,0.0
+add,583,Weight-space programming (WSP),Formula and examples,2,2,inner,2048,1.0,0.0,0.0
+add,583,Weight-space programming (WSP),Formula and examples,2,2,outer,2048,1.0,0.0,0.0
+add,583,Weight-space programming (WSP),Formula and examples,3,3,observed,12,1.0,0.0,0.0
+add,583,Weight-space programming (WSP),Formula and examples,3,3,inner,2048,1.0,0.0,0.0
+add,583,Weight-space programming (WSP),Formula and examples,3,3,outer,2048,1.0,0.0,0.0
+add,583,Weight-space programming (WSP),Examples only,1,1,observed,12,0.0,2.1094691194150905,0.727453736415153
+add,583,Weight-space programming (WSP),Examples only,1,1,inner,2048,0.0,2.415581075976787,0.8317137743722749
+add,583,Weight-space programming (WSP),Examples only,1,1,outer,2048,0.0,9.626319564121017,0.9432749002065856
+add,583,Weight-space programming (WSP),Examples only,2,2,observed,12,1.0,0.0,0.0
+add,583,Weight-space programming (WSP),Examples only,2,2,inner,2048,1.0,0.0,0.0
+add,583,Weight-space programming (WSP),Examples only,2,2,outer,2048,1.0,0.0,0.0
+add,583,Weight-space programming (WSP),Examples only,3,3,observed,12,1.0,0.0,0.0
+add,583,Weight-space programming (WSP),Examples only,3,3,inner,2048,1.0,0.0,0.0
+add,583,Weight-space programming (WSP),Examples only,3,3,outer,2048,1.0,0.0,0.0
+subtract,164,Weight-space programming (WSP),Formula and examples,1,1,observed,12,0.0,2.518672835836565,0.7285735102597268
+subtract,164,Weight-space programming (WSP),Formula and examples,1,1,inner,2048,0.0,2.474353627552094,0.8412479355931254
+subtract,164,Weight-space programming (WSP),Formula and examples,1,1,outer,2048,0.0,9.514733723306009,0.9309777484628895
+subtract,164,Weight-space programming (WSP),Formula and examples,2,2,observed,12,1.0,0.0,0.0
+subtract,164,Weight-space programming (WSP),Formula and examples,2,2,inner,2048,1.0,0.0,0.0
+subtract,164,Weight-space programming (WSP),Formula and examples,2,2,outer,2048,1.0,0.0,0.0
+subtract,164,Weight-space programming (WSP),Formula and examples,3,3,observed,12,1.0,0.0,0.0
+subtract,164,Weight-space programming (WSP),Formula and examples,3,3,inner,2048,1.0,0.0,0.0
+subtract,164,Weight-space programming (WSP),Formula and examples,3,3,outer,2048,1.0,0.0,0.0
+subtract,164,Weight-space programming (WSP),Examples only,1,1,observed,12,0.0,2.518672835836565,0.7285735102597268
+subtract,164,Weight-space programming (WSP),Examples only,1,1,inner,2048,0.0,2.474353627552094,0.8412479355931254
+subtract,164,Weight-space programming (WSP),Examples only,1,1,outer,2048,0.0,9.514733723306009,0.9309777484628895
+subtract,164,Weight-space programming (WSP),Examples only,2,2,observed,12,1.0,0.0,0.0
+subtract,164,Weight-space programming (WSP),Examples only,2,2,inner,2048,1.0,0.0,0.0
+subtract,164,Weight-space programming (WSP),Examples only,2,2,outer,2048,1.0,0.0,0.0
+subtract,164,Weight-space programming (WSP),Examples only,3,3,observed,12,1.0,0.0,0.0
+subtract,164,Weight-space programming (WSP),Examples only,3,3,inner,2048,1.0,0.0,0.0
+subtract,164,Weight-space programming (WSP),Examples only,3,3,outer,2048,1.0,0.0,0.0
+subtract,317,Weight-space programming (WSP),Formula and examples,1,1,observed,12,0.0,2.54839402221401,0.8656283833976074
+subtract,317,Weight-space programming (WSP),Formula and examples,1,1,inner,2048,0.0,2.474353627552094,0.8412479355931254
+subtract,317,Weight-space programming (WSP),Formula and examples,1,1,outer,2048,0.0,9.514733723306009,0.9309777484628895
+subtract,317,Weight-space programming (WSP),Formula and examples,2,2,observed,12,1.0,0.0,0.0
+subtract,317,Weight-space programming (WSP),Formula and examples,2,2,inner,2048,1.0,0.0,0.0
+subtract,317,Weight-space programming (WSP),Formula and examples,2,2,outer,2048,1.0,0.0,0.0
+subtract,317,Weight-space programming (WSP),Formula and examples,3,3,observed,12,1.0,0.0,0.0
+subtract,317,Weight-space programming (WSP),Formula and examples,3,3,inner,2048,1.0,0.0,0.0
+subtract,317,Weight-space programming (WSP),Formula and examples,3,3,outer,2048,1.0,0.0,0.0
+subtract,317,Weight-space programming (WSP),Examples only,1,1,observed,12,0.0,2.54839402221401,0.8656283833976074
+subtract,317,Weight-space programming (WSP),Examples only,1,1,inner,2048,0.0,2.474353627552094,0.8412479355931254
+subtract,317,Weight-space programming (WSP),Examples only,1,1,outer,2048,0.0,9.514733723306009,0.9309777484628895
+subtract,317,Weight-space programming (WSP),Examples only,2,2,observed,12,1.0,0.0,0.0
+subtract,317,Weight-space programming (WSP),Examples only,2,2,inner,2048,1.0,0.0,0.0
+subtract,317,Weight-space programming (WSP),Examples only,2,2,outer,2048,1.0,0.0,0.0
+subtract,317,Weight-space programming (WSP),Examples only,3,3,observed,12,1.0,0.0,0.0
+subtract,317,Weight-space programming (WSP),Examples only,3,3,inner,2048,1.0,0.0,0.0
+subtract,317,Weight-space programming (WSP),Examples only,3,3,outer,2048,1.0,0.0,0.0
+subtract,583,Weight-space programming (WSP),Formula and examples,1,1,observed,12,0.0,2.9037934244171386,0.9644584739159902
+subtract,583,Weight-space programming (WSP),Formula and examples,1,1,inner,2048,0.0,2.474353627552094,0.8412479355931254
+subtract,583,Weight-space programming (WSP),Formula and examples,1,1,outer,2048,0.0,9.514733723306009,0.9309777484628895
+subtract,583,Weight-space programming (WSP),Formula and examples,2,2,observed,12,1.0,0.0,0.0
+subtract,583,Weight-space programming (WSP),Formula and examples,2,2,inner,2048,1.0,0.0,0.0
+subtract,583,Weight-space programming (WSP),Formula and examples,2,2,outer,2048,1.0,0.0,0.0
+subtract,583,Weight-space programming (WSP),Formula and examples,3,3,observed,12,1.0,0.0,0.0
+subtract,583,Weight-space programming (WSP),Formula and examples,3,3,inner,2048,1.0,0.0,0.0
+subtract,583,Weight-space programming (WSP),Formula and examples,3,3,outer,2048,1.0,0.0,0.0
+subtract,583,Weight-space programming (WSP),Examples only,1,1,observed,12,0.0,2.9037934244171386,0.9644584739159902
+subtract,583,Weight-space programming (WSP),Examples only,1,1,inner,2048,0.0,2.474353627552094,0.8412479355931254
+subtract,583,Weight-space programming (WSP),Examples only,1,1,outer,2048,0.0,9.514733723306009,0.9309777484628895
+subtract,583,Weight-space programming (WSP),Examples only,2,2,observed,12,1.0,0.0,0.0
+subtract,583,Weight-space programming (WSP),Examples only,2,2,inner,2048,1.0,0.0,0.0
+subtract,583,Weight-space programming (WSP),Examples only,2,2,outer,2048,1.0,0.0,0.0
+subtract,583,Weight-space programming (WSP),Examples only,3,3,observed,12,1.0,0.0,0.0
+subtract,583,Weight-space programming (WSP),Examples only,3,3,inner,2048,1.0,0.0,0.0
+subtract,583,Weight-space programming (WSP),Examples only,3,3,outer,2048,1.0,0.0,0.0
+sum,164,Weight-space programming (WSP),Formula and examples,0,1,observed,12,0.0,2.5805537344773257,0.821960483012128
+sum,164,Weight-space programming (WSP),Formula and examples,0,1,inner,2048,0.0,3.2201560912131018,0.8706581869757434
+sum,164,Weight-space programming (WSP),Formula and examples,0,1,outer,2048,0.0,12.510210448740484,0.9714501042122091
+sum,164,Weight-space programming (WSP),Formula and examples,0,1,length,2048,0.0,7.179217936355971,0.932286367644745
+sum,164,Weight-space programming (WSP),Formula and examples,0,1,joint,2048,0.0,27.840292311570515,0.9836002862664094
+sum,164,Weight-space programming (WSP),Formula and examples,1,3,observed,12,1.0,0.0,0.0
+sum,164,Weight-space programming (WSP),Formula and examples,1,3,inner,2048,1.0,0.0,0.0
+sum,164,Weight-space programming (WSP),Formula and examples,1,3,outer,2048,1.0,0.0,0.0
+sum,164,Weight-space programming (WSP),Formula and examples,1,3,length,2048,1.0,0.0,0.0
+sum,164,Weight-space programming (WSP),Formula and examples,1,3,joint,2048,1.0,0.0,0.0
+sum,164,Weight-space programming (WSP),Formula and examples,2,8,observed,12,1.0,0.0,0.0
+sum,164,Weight-space programming (WSP),Formula and examples,2,8,inner,2048,1.0,0.0,0.0
+sum,164,Weight-space programming (WSP),Formula and examples,2,8,outer,2048,1.0,0.0,0.0
+sum,164,Weight-space programming (WSP),Formula and examples,2,8,length,2048,1.0,0.0,0.0
+sum,164,Weight-space programming (WSP),Formula and examples,2,8,joint,2048,1.0,0.0,0.0
+sum,164,Weight-space programming (WSP),Examples only,0,1,observed,12,0.0,2.5805537344773257,0.821960483012128
+sum,164,Weight-space programming (WSP),Examples only,0,1,inner,2048,0.0,3.2201560912131018,0.8706581869757434
+sum,164,Weight-space programming (WSP),Examples only,0,1,outer,2048,0.0,12.510210448740484,0.9714501042122091
+sum,164,Weight-space programming (WSP),Examples only,0,1,length,2048,0.0,7.179217936355971,0.932286367644745
+sum,164,Weight-space programming (WSP),Examples only,0,1,joint,2048,0.0,27.840292311570515,0.9836002862664094
+sum,164,Weight-space programming (WSP),Examples only,1,3,observed,12,1.0,0.0,0.0
+sum,164,Weight-space programming (WSP),Examples only,1,3,inner,2048,1.0,0.0,0.0
+sum,164,Weight-space programming (WSP),Examples only,1,3,outer,2048,1.0,0.0,0.0
+sum,164,Weight-space programming (WSP),Examples only,1,3,length,2048,1.0,0.0,0.0
+sum,164,Weight-space programming (WSP),Examples only,1,3,joint,2048,1.0,0.0,0.0
+sum,164,Weight-space programming (WSP),Examples only,2,8,observed,12,1.0,0.0,0.0
+sum,164,Weight-space programming (WSP),Examples only,2,8,inner,2048,1.0,0.0,0.0
+sum,164,Weight-space programming (WSP),Examples only,2,8,outer,2048,1.0,0.0,0.0
+sum,164,Weight-space programming (WSP),Examples only,2,8,length,2048,1.0,0.0,0.0
+sum,164,Weight-space programming (WSP),Examples only,2,8,joint,2048,1.0,0.0,0.0
+sum,317,Weight-space programming (WSP),Formula and examples,0,1,observed,12,0.0,2.894502843309696,0.895137671089819
+sum,317,Weight-space programming (WSP),Formula and examples,0,1,inner,2048,0.0,3.2201560912131018,0.8706581869757434
+sum,317,Weight-space programming (WSP),Formula and examples,0,1,outer,2048,0.0,12.510210448740484,0.9714501042122091
+sum,317,Weight-space programming (WSP),Formula and examples,0,1,length,2048,0.0,7.179217936355971,0.932286367644745
+sum,317,Weight-space programming (WSP),Formula and examples,0,1,joint,2048,0.0,27.840292311570515,0.9836002862664094
+sum,317,Weight-space programming (WSP),Formula and examples,1,3,observed,12,1.0,0.0,0.0
+sum,317,Weight-space programming (WSP),Formula and examples,1,3,inner,2048,1.0,0.0,0.0
+sum,317,Weight-space programming (WSP),Formula and examples,1,3,outer,2048,1.0,0.0,0.0
+sum,317,Weight-space programming (WSP),Formula and examples,1,3,length,2048,1.0,0.0,0.0
+sum,317,Weight-space programming (WSP),Formula and examples,1,3,joint,2048,1.0,0.0,0.0
+sum,317,Weight-space programming (WSP),Formula and examples,2,8,observed,12,1.0,0.0,0.0
+sum,317,Weight-space programming (WSP),Formula and examples,2,8,inner,2048,1.0,0.0,0.0
+sum,317,Weight-space programming (WSP),Formula and examples,2,8,outer,2048,1.0,0.0,0.0
+sum,317,Weight-space programming (WSP),Formula and examples,2,8,length,2048,1.0,0.0,0.0
+sum,317,Weight-space programming (WSP),Formula and examples,2,8,joint,2048,1.0,0.0,0.0
+sum,317,Weight-space programming (WSP),Examples only,0,1,observed,12,0.0,2.894502843309696,0.895137671089819
+sum,317,Weight-space programming (WSP),Examples only,0,1,inner,2048,0.0,3.2201560912131018,0.8706581869757434
+sum,317,Weight-space programming (WSP),Examples only,0,1,outer,2048,0.0,12.510210448740484,0.9714501042122091
+sum,317,Weight-space programming (WSP),Examples only,0,1,length,2048,0.0,7.179217936355971,0.932286367644745
+sum,317,Weight-space programming (WSP),Examples only,0,1,joint,2048,0.0,27.840292311570515,0.9836002862664094
+sum,317,Weight-space programming (WSP),Examples only,1,3,observed,12,1.0,0.0,0.0
+sum,317,Weight-space programming (WSP),Examples only,1,3,inner,2048,1.0,0.0,0.0
+sum,317,Weight-space programming (WSP),Examples only,1,3,outer,2048,1.0,0.0,0.0
+sum,317,Weight-space programming (WSP),Examples only,1,3,length,2048,1.0,0.0,0.0
+sum,317,Weight-space programming (WSP),Examples only,1,3,joint,2048,1.0,0.0,0.0
+sum,317,Weight-space programming (WSP),Examples only,2,8,observed,12,1.0,0.0,0.0
+sum,317,Weight-space programming (WSP),Examples only,2,8,inner,2048,1.0,0.0,0.0
+sum,317,Weight-space programming (WSP),Examples only,2,8,outer,2048,1.0,0.0,0.0
+sum,317,Weight-space programming (WSP),Examples only,2,8,length,2048,1.0,0.0,0.0
+sum,317,Weight-space programming (WSP),Examples only,2,8,joint,2048,1.0,0.0,0.0
+sum,583,Weight-space programming (WSP),Formula and examples,0,1,observed,12,0.0,2.736832816898661,0.8635463631034778
+sum,583,Weight-space programming (WSP),Formula and examples,0,1,inner,2048,0.0,3.2201560912131018,0.8706581869757434
+sum,583,Weight-space programming (WSP),Formula and examples,0,1,outer,2048,0.0,12.510210448740484,0.9714501042122091
+sum,583,Weight-space programming (WSP),Formula and examples,0,1,length,2048,0.0,7.179217936355971,0.932286367644745
+sum,583,Weight-space programming (WSP),Formula and examples,0,1,joint,2048,0.0,27.840292311570515,0.9836002862664094
+sum,583,Weight-space programming (WSP),Formula and examples,1,3,observed,12,1.0,0.0,0.0
+sum,583,Weight-space programming (WSP),Formula and examples,1,3,inner,2048,1.0,0.0,0.0
+sum,583,Weight-space programming (WSP),Formula and examples,1,3,outer,2048,1.0,0.0,0.0
+sum,583,Weight-space programming (WSP),Formula and examples,1,3,length,2048,1.0,0.0,0.0
+sum,583,Weight-space programming (WSP),Formula and examples,1,3,joint,2048,1.0,0.0,0.0
+sum,583,Weight-space programming (WSP),Formula and examples,2,8,observed,12,1.0,0.0,0.0
+sum,583,Weight-space programming (WSP),Formula and examples,2,8,inner,2048,1.0,0.0,0.0
+sum,583,Weight-space programming (WSP),Formula and examples,2,8,outer,2048,1.0,0.0,0.0
+sum,583,Weight-space programming (WSP),Formula and examples,2,8,length,2048,1.0,0.0,0.0
+sum,583,Weight-space programming (WSP),Formula and examples,2,8,joint,2048,1.0,0.0,0.0
+sum,583,Weight-space programming (WSP),Examples only,0,1,observed,12,0.0,2.736832816898661,0.8635463631034778
+sum,583,Weight-space programming (WSP),Examples only,0,1,inner,2048,0.0,3.2201560912131018,0.8706581869757434
+sum,583,Weight-space programming (WSP),Examples only,0,1,outer,2048,0.0,12.510210448740484,0.9714501042122091
+sum,583,Weight-space programming (WSP),Examples only,0,1,length,2048,0.0,7.179217936355971,0.932286367644745
+sum,583,Weight-space programming (WSP),Examples only,0,1,joint,2048,0.0,27.840292311570515,0.9836002862664094
+sum,583,Weight-space programming (WSP),Examples only,1,3,observed,12,1.0,0.0,0.0
+sum,583,Weight-space programming (WSP),Examples only,1,3,inner,2048,1.0,0.0,0.0
+sum,583,Weight-space programming (WSP),Examples only,1,3,outer,2048,1.0,0.0,0.0
+sum,583,Weight-space programming (WSP),Examples only,1,3,length,2048,1.0,0.0,0.0
+sum,583,Weight-space programming (WSP),Examples only,1,3,joint,2048,1.0,0.0,0.0
+sum,583,Weight-space programming (WSP),Examples only,2,8,observed,12,1.0,0.0,0.0
+sum,583,Weight-space programming (WSP),Examples only,2,8,inner,2048,1.0,0.0,0.0
+sum,583,Weight-space programming (WSP),Examples only,2,8,outer,2048,1.0,0.0,0.0
+sum,583,Weight-space programming (WSP),Examples only,2,8,length,2048,1.0,0.0,0.0
+sum,583,Weight-space programming (WSP),Examples only,2,8,joint,2048,1.0,0.0,0.0
+sort,164,Weight-space programming (WSP),Formula and examples,4,32,observed,12,0.08333333333333333,0.4229570538852336,0.14871599090655732
+sort,164,Weight-space programming (WSP),Formula and examples,4,32,inner,2048,0.10107421875,0.5217710343599917,0.21157721628317233
+sort,164,Weight-space programming (WSP),Formula and examples,4,32,outer,2048,0.09765625,2.165428762102526,0.20865570414530896
+sort,164,Weight-space programming (WSP),Formula and examples,5,40,observed,12,0.5833333333333334,1.199177923332954e-16,2.930036769611709e-17
+sort,164,Weight-space programming (WSP),Formula and examples,5,40,inner,2048,0.65185546875,1.1475428530014783e-16,2.834758846955335e-17
+sort,164,Weight-space programming (WSP),Formula and examples,5,40,outer,2048,0.53515625,5.228169922230517e-16,3.905072698170518e-17
+sort,164,Weight-space programming (WSP),Formula and examples,6,48,observed,12,0.5833333333333334,1.199177923332954e-16,2.930036769611709e-17
+sort,164,Weight-space programming (WSP),Formula and examples,6,48,inner,2048,0.65185546875,1.1475428530014783e-16,2.834758846955335e-17
+sort,164,Weight-space programming (WSP),Formula and examples,6,48,outer,2048,0.53515625,5.228169922230517e-16,3.905072698170518e-17
+sort,164,Weight-space programming (WSP),Examples only,4,32,observed,12,0.4166666666666667,1.099472435237122,0.27653832616461355
+sort,164,Weight-space programming (WSP),Examples only,4,32,inner,2048,0.45947265625,0.6182096902287876,0.14883086274437887
+sort,164,Weight-space programming (WSP),Examples only,4,32,outer,2048,0.37744140625,3.0137064481798506,0.17493290266061334
+sort,164,Weight-space programming (WSP),Examples only,5,40,observed,12,0.5,1.3970000036909087e-16,3.679072061721954e-17
+sort,164,Weight-space programming (WSP),Examples only,5,40,inner,2048,0.6513671875,1.166012937370707e-16,2.7585164036312148e-17
+sort,164,Weight-space programming (WSP),Examples only,5,40,outer,2048,0.5361328125,4.984666858981233e-16,3.7241806526729747e-17
+sort,164,Weight-space programming (WSP),Examples only,6,48,observed,12,0.5,1.3970000036909087e-16,3.679072061721954e-17
+sort,164,Weight-space programming (WSP),Examples only,6,48,inner,2048,0.6513671875,1.166012937370707e-16,2.7585164036312148e-17
+sort,164,Weight-space programming (WSP),Examples only,6,48,outer,2048,0.5361328125,4.984666858981233e-16,3.7241806526729747e-17
+sort,317,Weight-space programming (WSP),Formula and examples,4,32,observed,12,0.08333333333333333,0.296859083941002,0.12736588055763817
+sort,317,Weight-space programming (WSP),Formula and examples,4,32,inner,2048,0.10107421875,0.5048870649707347,0.19711334432793268
+sort,317,Weight-space programming (WSP),Formula and examples,4,32,outer,2048,0.09765625,2.11013362491472,0.19423117535656298
+sort,317,Weight-space programming (WSP),Formula and examples,5,40,observed,12,0.5,1.6653345369377348e-16,4.554275087611347e-17
+sort,317,Weight-space programming (WSP),Formula and examples,5,40,inner,2048,0.65185546875,1.1475428530014783e-16,2.834758846955335e-17
+sort,317,Weight-space programming (WSP),Formula and examples,5,40,outer,2048,0.53515625,5.228169922230517e-16,3.905072698170518e-17
+sort,317,Weight-space programming (WSP),Formula and examples,6,48,observed,12,0.5,1.6653345369377348e-16,4.554275087611347e-17
+sort,317,Weight-space programming (WSP),Formula and examples,6,48,inner,2048,0.65185546875,1.1475428530014783e-16,2.834758846955335e-17
+sort,317,Weight-space programming (WSP),Formula and examples,6,48,outer,2048,0.53515625,5.228169922230517e-16,3.905072698170518e-17
+sort,317,Weight-space programming (WSP),Examples only,4,32,observed,12,0.25,0.7083001800780675,0.18732095616982306
+sort,317,Weight-space programming (WSP),Examples only,4,32,inner,2048,0.45947265625,0.6182096902287876,0.14883086274437887
+sort,317,Weight-space programming (WSP),Examples only,4,32,outer,2048,0.37744140625,3.0137064481798506,0.17493290266061334
+sort,317,Weight-space programming (WSP),Examples only,5,40,observed,12,0.5,1.013490324081353e-16,3.712056321967997e-17
+sort,317,Weight-space programming (WSP),Examples only,5,40,inner,2048,0.6513671875,1.166012937370707e-16,2.7585164036312148e-17
+sort,317,Weight-space programming (WSP),Examples only,5,40,outer,2048,0.5361328125,4.984666858981233e-16,3.7241806526729747e-17
+sort,317,Weight-space programming (WSP),Examples only,6,48,observed,12,0.5,1.013490324081353e-16,3.712056321967997e-17
+sort,317,Weight-space programming (WSP),Examples only,6,48,inner,2048,0.6513671875,1.166012937370707e-16,2.7585164036312148e-17
+sort,317,Weight-space programming (WSP),Examples only,6,48,outer,2048,0.5361328125,4.984666858981233e-16,3.7241806526729747e-17
+sort,583,Weight-space programming (WSP),Formula and examples,4,32,observed,12,0.08333333333333333,0.7547080614925967,0.30419349043023863
+sort,583,Weight-space programming (WSP),Formula and examples,4,32,inner,2048,0.10107421875,0.5217710343599917,0.21157721628317233
+sort,583,Weight-space programming (WSP),Formula and examples,4,32,outer,2048,0.09765625,2.165428762102526,0.20865570414530896
+sort,583,Weight-space programming (WSP),Formula and examples,5,40,observed,12,0.4166666666666667,1.2412670766236366e-16,4.9169003340930674e-17
+sort,583,Weight-space programming (WSP),Formula and examples,5,40,inner,2048,0.65185546875,1.1475428530014783e-16,2.834758846955335e-17
+sort,583,Weight-space programming (WSP),Formula and examples,5,40,outer,2048,0.53515625,5.228169922230517e-16,3.905072698170518e-17
+sort,583,Weight-space programming (WSP),Formula and examples,6,48,observed,12,0.4166666666666667,1.2412670766236366e-16,4.9169003340930674e-17
+sort,583,Weight-space programming (WSP),Formula and examples,6,48,inner,2048,0.65185546875,1.1475428530014783e-16,2.834758846955335e-17
+sort,583,Weight-space programming (WSP),Formula and examples,6,48,outer,2048,0.53515625,5.228169922230517e-16,3.905072698170518e-17
+sort,583,Weight-space programming (WSP),Examples only,4,32,observed,12,0.25,0.6987832014710925,0.19208729493509166
+sort,583,Weight-space programming (WSP),Examples only,4,32,inner,2048,0.45947265625,0.6182096902287876,0.14883086274437887
+sort,583,Weight-space programming (WSP),Examples only,4,32,outer,2048,0.37744140625,3.0137064481798506,0.17493290266061334
+sort,583,Weight-space programming (WSP),Examples only,5,40,observed,12,0.3333333333333333,1.4332917616497527e-16,4.9837526455894066e-17
+sort,583,Weight-space programming (WSP),Examples only,5,40,inner,2048,0.6513671875,1.166012937370707e-16,2.7585164036312148e-17
+sort,583,Weight-space programming (WSP),Examples only,5,40,outer,2048,0.5361328125,4.984666858981233e-16,3.7241806526729747e-17
+sort,583,Weight-space programming (WSP),Examples only,6,48,observed,12,0.3333333333333333,1.4332917616497527e-16,4.9837526455894066e-17
+sort,583,Weight-space programming (WSP),Examples only,6,48,inner,2048,0.6513671875,1.166012937370707e-16,2.7585164036312148e-17
+sort,583,Weight-space programming (WSP),Examples only,6,48,outer,2048,0.5361328125,4.984666858981233e-16,3.7241806526729747e-17
+fib,164,Weight-space programming (WSP),Formula and examples,1,3,observed,9,0.0,0.9183082870093972,0.16497257942206894
+fib,164,Weight-space programming (WSP),Formula and examples,1,3,fit_indices,9,0.0,0.9183082870093972,0.16497257942206894
+fib,164,Weight-space programming (WSP),Formula and examples,1,3,early,24,0.0,44421.275756909636,0.04541730759128244
+fib,164,Weight-space programming (WSP),Formula and examples,1,3,outer,32,0.0,891836979660.1494,0.23026149243545277
+fib,164,Weight-space programming (WSP),Formula and examples,2,8,observed,9,1.0,0.0,0.0
+fib,164,Weight-space programming (WSP),Formula and examples,2,8,fit_indices,9,1.0,0.0,0.0
+fib,164,Weight-space programming (WSP),Formula and examples,2,8,early,24,1.0,0.0,0.0
+fib,164,Weight-space programming (WSP),Formula and examples,2,8,outer,32,1.0,0.0,0.0
+fib,164,Weight-space programming (WSP),Formula and examples,3,15,observed,9,1.0,0.0,0.0
+fib,164,Weight-space programming (WSP),Formula and examples,3,15,fit_indices,9,1.0,0.0,0.0
+fib,164,Weight-space programming (WSP),Formula and examples,3,15,early,24,1.0,0.0,0.0
+fib,164,Weight-space programming (WSP),Formula and examples,3,15,outer,32,1.0,0.0,0.0
+fib,164,Weight-space programming (WSP),Examples only,1,3,observed,9,0.0,0.9183086983636833,0.16497260581448794
+fib,164,Weight-space programming (WSP),Examples only,1,3,fit_indices,9,0.0,0.9183086983636833,0.16497260581448794
+fib,164,Weight-space programming (WSP),Examples only,1,3,early,24,0.0,44421.24382430197,0.04541730958591552
+fib,164,Weight-space programming (WSP),Examples only,1,3,outer,32,0.0,891836807280.0566,0.23026142771558136
+fib,164,Weight-space programming (WSP),Examples only,2,8,observed,9,1.0,0.0,0.0
+fib,164,Weight-space programming (WSP),Examples only,2,8,fit_indices,9,1.0,0.0,0.0
+fib,164,Weight-space programming (WSP),Examples only,2,8,early,24,1.0,0.0,0.0
+fib,164,Weight-space programming (WSP),Examples only,2,8,outer,32,1.0,0.0,0.0
+fib,164,Weight-space programming (WSP),Examples only,3,15,observed,9,1.0,0.0,0.0
+fib,164,Weight-space programming (WSP),Examples only,3,15,fit_indices,9,1.0,0.0,0.0
+fib,164,Weight-space programming (WSP),Examples only,3,15,early,24,1.0,0.0,0.0
+fib,164,Weight-space programming (WSP),Examples only,3,15,outer,32,1.0,0.0,0.0
+fib,317,Weight-space programming (WSP),Formula and examples,1,3,observed,9,0.0,0.9182445112895615,0.1649692014491618
+fib,317,Weight-space programming (WSP),Formula and examples,1,3,fit_indices,9,0.0,0.9182445112895615,0.1649692014491618
+fib,317,Weight-space programming (WSP),Formula and examples,1,3,early,24,0.0,44444.21506476794,0.045423657892728446
+fib,317,Weight-space programming (WSP),Formula and examples,1,3,outer,32,0.0,892089151396.1504,0.23033462927546278
+fib,317,Weight-space programming (WSP),Formula and examples,2,8,observed,9,1.0,0.0,0.0
+fib,317,Weight-space programming (WSP),Formula and examples,2,8,fit_indices,9,1.0,0.0,0.0
+fib,317,Weight-space programming (WSP),Formula and examples,2,8,early,24,1.0,0.0,0.0
+fib,317,Weight-space programming (WSP),Formula and examples,2,8,outer,32,1.0,0.0,0.0
+fib,317,Weight-space programming (WSP),Formula and examples,3,15,observed,9,1.0,0.0,0.0
+fib,317,Weight-space programming (WSP),Formula and examples,3,15,fit_indices,9,1.0,0.0,0.0
+fib,317,Weight-space programming (WSP),Formula and examples,3,15,early,24,1.0,0.0,0.0
+fib,317,Weight-space programming (WSP),Formula and examples,3,15,outer,32,1.0,0.0,0.0
+fib,317,Weight-space programming (WSP),Examples only,1,3,observed,9,0.0,0.9186306615143209,0.1649896933430467
+fib,317,Weight-space programming (WSP),Examples only,1,3,fit_indices,9,0.0,0.9186306615143209,0.1649896933430467
+fib,317,Weight-space programming (WSP),Examples only,1,3,early,24,0.0,44306.321146725255,0.04538557797562733
+fib,317,Weight-space programming (WSP),Examples only,1,3,outer,32,0.0,890574942728.8059,0.2298953244734268
+fib,317,Weight-space programming (WSP),Examples only,2,8,observed,9,1.0,0.0,0.0
+fib,317,Weight-space programming (WSP),Examples only,2,8,fit_indices,9,1.0,0.0,0.0
+fib,317,Weight-space programming (WSP),Examples only,2,8,early,24,1.0,0.0,0.0
+fib,317,Weight-space programming (WSP),Examples only,2,8,outer,32,1.0,0.0,0.0
+fib,317,Weight-space programming (WSP),Examples only,3,15,observed,9,1.0,0.0,0.0
+fib,317,Weight-space programming (WSP),Examples only,3,15,fit_indices,9,1.0,0.0,0.0
+fib,317,Weight-space programming (WSP),Examples only,3,15,early,24,1.0,0.0,0.0
+fib,317,Weight-space programming (WSP),Examples only,3,15,outer,32,1.0,0.0,0.0
+fib,583,Weight-space programming (WSP),Formula and examples,1,3,observed,9,0.0,0.9186281934489718,0.16498953499452998
+fib,583,Weight-space programming (WSP),Formula and examples,1,3,fit_indices,9,0.0,0.9186281934489718,0.16498953499452998
+fib,583,Weight-space programming (WSP),Formula and examples,1,3,early,24,0.0,44306.51270231873,0.045385565997858625
+fib,583,Weight-space programming (WSP),Formula and examples,1,3,outer,32,0.0,890575976606.9974,0.2298957126756187
+fib,583,Weight-space programming (WSP),Formula and examples,2,8,observed,9,1.0,0.0,0.0
+fib,583,Weight-space programming (WSP),Formula and examples,2,8,fit_indices,9,1.0,0.0,0.0
+fib,583,Weight-space programming (WSP),Formula and examples,2,8,early,24,1.0,0.0,0.0
+fib,583,Weight-space programming (WSP),Formula and examples,2,8,outer,32,1.0,0.0,0.0
+fib,583,Weight-space programming (WSP),Formula and examples,3,15,observed,9,1.0,0.0,0.0
+fib,583,Weight-space programming (WSP),Formula and examples,3,15,fit_indices,9,1.0,0.0,0.0
+fib,583,Weight-space programming (WSP),Formula and examples,3,15,early,24,1.0,0.0,0.0
+fib,583,Weight-space programming (WSP),Formula and examples,3,15,outer,32,1.0,0.0,0.0
+fib,583,Weight-space programming (WSP),Examples only,1,3,observed,9,0.0,0.9182761934761454,0.164970877241611
+fib,583,Weight-space programming (WSP),Examples only,1,3,fit_indices,9,0.0,0.9182761934761454,0.164970877241611
+fib,583,Weight-space programming (WSP),Examples only,1,3,early,24,0.0,44432.76126665684,0.045420481703743555
+fib,583,Weight-space programming (WSP),Examples only,1,3,outer,32,0.0,891963149334.4805,0.23029809266471474
+fib,583,Weight-space programming (WSP),Examples only,2,8,observed,9,1.0,0.0,0.0
+fib,583,Weight-space programming (WSP),Examples only,2,8,fit_indices,9,1.0,0.0,0.0
+fib,583,Weight-space programming (WSP),Examples only,2,8,early,24,1.0,0.0,0.0
+fib,583,Weight-space programming (WSP),Examples only,2,8,outer,32,1.0,0.0,0.0
+fib,583,Weight-space programming (WSP),Examples only,3,15,observed,9,1.0,0.0,0.0
+fib,583,Weight-space programming (WSP),Examples only,3,15,fit_indices,9,1.0,0.0,0.0
+fib,583,Weight-space programming (WSP),Examples only,3,15,early,24,1.0,0.0,0.0
+fib,583,Weight-space programming (WSP),Examples only,3,15,outer,32,1.0,0.0,0.0
+tri,164,Weight-space programming (WSP),Formula and examples,2,8,observed,9,0.0,5.393566609045677,0.2416231629050486
+tri,164,Weight-space programming (WSP),Formula and examples,2,8,fit_indices,9,0.0,5.393566609045677,0.2416231629050486
+tri,164,Weight-space programming (WSP),Formula and examples,2,8,early,24,0.0,47.15013507826723,0.24546565297181777
+tri,164,Weight-space programming (WSP),Formula and examples,2,8,outer,32,0.0,352.79839370921616,0.23191128974423358
+tri,164,Weight-space programming (WSP),Formula and examples,3,15,observed,9,1.0,0.0,0.0
+tri,164,Weight-space programming (WSP),Formula and examples,3,15,fit_indices,9,1.0,0.0,0.0
+tri,164,Weight-space programming (WSP),Formula and examples,3,15,early,24,1.0,0.0,0.0
+tri,164,Weight-space programming (WSP),Formula and examples,3,15,outer,32,1.0,0.0,0.0
+tri,164,Weight-space programming (WSP),Formula and examples,4,24,observed,9,1.0,0.0,0.0
+tri,164,Weight-space programming (WSP),Formula and examples,4,24,fit_indices,9,1.0,0.0,0.0
+tri,164,Weight-space programming (WSP),Formula and examples,4,24,early,24,1.0,0.0,0.0
+tri,164,Weight-space programming (WSP),Formula and examples,4,24,outer,32,1.0,0.0,0.0
+tri,164,Weight-space programming (WSP),Examples only,2,8,observed,9,0.0,5.42213969317096,0.242361094073475
+tri,164,Weight-space programming (WSP),Examples only,2,8,fit_indices,9,0.0,5.42213969317096,0.242361094073475
+tri,164,Weight-space programming (WSP),Examples only,2,8,early,24,0.0,48.52498464894079,0.25029374436362084
+tri,164,Weight-space programming (WSP),Examples only,2,8,outer,32,0.0,338.8601347566874,0.21956563777537186
+tri,164,Weight-space programming (WSP),Examples only,3,15,observed,9,1.0,0.0,0.0
+tri,164,Weight-space programming (WSP),Examples only,3,15,fit_indices,9,1.0,0.0,0.0
+tri,164,Weight-space programming (WSP),Examples only,3,15,early,24,1.0,0.0,0.0
+tri,164,Weight-space programming (WSP),Examples only,3,15,outer,32,1.0,0.0,0.0
+tri,164,Weight-space programming (WSP),Examples only,4,24,observed,9,1.0,0.0,0.0
+tri,164,Weight-space programming (WSP),Examples only,4,24,fit_indices,9,1.0,0.0,0.0
+tri,164,Weight-space programming (WSP),Examples only,4,24,early,24,1.0,0.0,0.0
+tri,164,Weight-space programming (WSP),Examples only,4,24,outer,32,1.0,0.0,0.0
+tri,317,Weight-space programming (WSP),Formula and examples,2,8,observed,9,0.0,5.399809547389482,0.24226183659746173
+tri,317,Weight-space programming (WSP),Formula and examples,2,8,fit_indices,9,0.0,5.399809547389482,0.24226183659746173
+tri,317,Weight-space programming (WSP),Formula and examples,2,8,early,24,0.0,49.110181118263846,0.2519136333155942
+tri,317,Weight-space programming (WSP),Formula and examples,2,8,outer,32,0.0,329.8851827674767,0.21230544053372957
+tri,317,Weight-space programming (WSP),Formula and examples,3,15,observed,9,1.0,0.0,0.0
+tri,317,Weight-space programming (WSP),Formula and examples,3,15,fit_indices,9,1.0,0.0,0.0
+tri,317,Weight-space programming (WSP),Formula and examples,3,15,early,24,1.0,0.0,0.0
+tri,317,Weight-space programming (WSP),Formula and examples,3,15,outer,32,1.0,0.0,0.0
+tri,317,Weight-space programming (WSP),Formula and examples,4,24,observed,9,1.0,0.0,0.0
+tri,317,Weight-space programming (WSP),Formula and examples,4,24,fit_indices,9,1.0,0.0,0.0
+tri,317,Weight-space programming (WSP),Formula and examples,4,24,early,24,1.0,0.0,0.0
+tri,317,Weight-space programming (WSP),Formula and examples,4,24,outer,32,1.0,0.0,0.0
+tri,317,Weight-space programming (WSP),Examples only,2,8,observed,9,0.0,5.370700002791781,0.24177760713094015
+tri,317,Weight-space programming (WSP),Examples only,2,8,fit_indices,9,0.0,5.370700002791781,0.24177760713094015
+tri,317,Weight-space programming (WSP),Examples only,2,8,early,24,0.0,48.59740406496647,0.2499475935776455
+tri,317,Weight-space programming (WSP),Examples only,2,8,outer,32,0.0,332.6981258872151,0.2152200641967686
+tri,317,Weight-space programming (WSP),Examples only,3,15,observed,9,1.0,0.0,0.0
+tri,317,Weight-space programming (WSP),Examples only,3,15,fit_indices,9,1.0,0.0,0.0
+tri,317,Weight-space programming (WSP),Examples only,3,15,early,24,1.0,0.0,0.0
+tri,317,Weight-space programming (WSP),Examples only,3,15,outer,32,1.0,0.0,0.0
+tri,317,Weight-space programming (WSP),Examples only,4,24,observed,9,1.0,0.0,0.0
+tri,317,Weight-space programming (WSP),Examples only,4,24,fit_indices,9,1.0,0.0,0.0
+tri,317,Weight-space programming (WSP),Examples only,4,24,early,24,1.0,0.0,0.0
+tri,317,Weight-space programming (WSP),Examples only,4,24,outer,32,1.0,0.0,0.0
+tri,583,Weight-space programming (WSP),Formula and examples,2,8,observed,9,0.0,5.419432146974231,0.24235963945174147
+tri,583,Weight-space programming (WSP),Formula and examples,2,8,fit_indices,9,0.0,5.419432146974231,0.24235963945174147
+tri,583,Weight-space programming (WSP),Formula and examples,2,8,early,24,0.0,48.357657485772584,0.24976291633398381
+tri,583,Weight-space programming (WSP),Formula and examples,2,8,outer,32,0.0,343.4737683358013,0.22520761092729868
+tri,583,Weight-space programming (WSP),Formula and examples,3,15,observed,9,1.0,0.0,0.0
+tri,583,Weight-space programming (WSP),Formula and examples,3,15,fit_indices,9,1.0,0.0,0.0
+tri,583,Weight-space programming (WSP),Formula and examples,3,15,early,24,1.0,0.0,0.0
+tri,583,Weight-space programming (WSP),Formula and examples,3,15,outer,32,1.0,0.0,0.0
+tri,583,Weight-space programming (WSP),Formula and examples,4,24,observed,9,1.0,0.0,0.0
+tri,583,Weight-space programming (WSP),Formula and examples,4,24,fit_indices,9,1.0,0.0,0.0
+tri,583,Weight-space programming (WSP),Formula and examples,4,24,early,24,1.0,0.0,0.0
+tri,583,Weight-space programming (WSP),Formula and examples,4,24,outer,32,1.0,0.0,0.0
+tri,583,Weight-space programming (WSP),Examples only,2,8,observed,9,0.0,5.398469359065946,0.24179144185613588
+tri,583,Weight-space programming (WSP),Examples only,2,8,fit_indices,9,0.0,5.398469359065946,0.24179144185613588
+tri,583,Weight-space programming (WSP),Examples only,2,8,early,24,0.0,47.313354481829634,0.24608902857710294
+tri,583,Weight-space programming (WSP),Examples only,2,8,outer,32,0.0,354.1746184967459,0.2342700943133864
+tri,583,Weight-space programming (WSP),Examples only,3,15,observed,9,1.0,0.0,0.0
+tri,583,Weight-space programming (WSP),Examples only,3,15,fit_indices,9,1.0,0.0,0.0
+tri,583,Weight-space programming (WSP),Examples only,3,15,early,24,1.0,0.0,0.0
+tri,583,Weight-space programming (WSP),Examples only,3,15,outer,32,1.0,0.0,0.0
+tri,583,Weight-space programming (WSP),Examples only,4,24,observed,9,1.0,0.0,0.0
+tri,583,Weight-space programming (WSP),Examples only,4,24,fit_indices,9,1.0,0.0,0.0
+tri,583,Weight-space programming (WSP),Examples only,4,24,early,24,1.0,0.0,0.0
+tri,583,Weight-space programming (WSP),Examples only,4,24,outer,32,1.0,0.0,0.0
+square,164,Backpropagation with Adam and BFGS,Examples only,1,5,observed,12,0.0,3.3638900212364495,0.635711772978063
+square,164,Backpropagation with Adam and BFGS,Examples only,1,5,inner,2048,0.0,3.272870684477673,0.6475292237227606
+square,164,Backpropagation with Adam and BFGS,Examples only,1,5,left,2048,0.0,51.39750307343088,0.9575707203773132
+square,164,Backpropagation with Adam and BFGS,Examples only,1,5,right,2048,0.0,52.20297017867977,0.976906237756657
+square,164,Backpropagation with Adam and BFGS,Examples only,1,5,outer,4096,0.0,51.80180217743137,0.967238479066985
+square,164,Untrained Xavier initialization,No fitting,1,5,observed,12,0.0,3.423272277769538,0.9969935161879095
+square,164,Untrained Xavier initialization,No fitting,1,5,inner,2048,0.0,4.857690374271836,1.0121358563833245
+square,164,Untrained Xavier initialization,No fitting,1,5,left,2048,0.0,41.51999459911161,0.7024362940193467
+square,164,Untrained Xavier initialization,No fitting,1,5,right,2048,0.0,64.09602234113571,1.2998103347957406
+square,164,Untrained Xavier initialization,No fitting,1,5,outer,4096,0.0,54.000972359141954,1.0011233144075438
+square,164,Backpropagation with Adam and BFGS,Examples only,4,14,observed,12,0.0,0.4339089471508668,0.09407483189254968
+square,164,Backpropagation with Adam and BFGS,Examples only,4,14,inner,2048,0.0,1.054435096602846,0.16143705525939095
+square,164,Backpropagation with Adam and BFGS,Examples only,4,14,left,2048,0.0,32.55960253835926,0.4865340398959528
+square,164,Backpropagation with Adam and BFGS,Examples only,4,14,right,2048,0.0,41.51069486960242,0.7085309114218311
+square,164,Backpropagation with Adam and BFGS,Examples only,4,14,outer,4096,0.0,37.30459426138533,0.597532475658892
+square,164,Untrained Xavier initialization,No fitting,4,14,observed,12,0.0,3.063561553568733,0.7345956358528566
+square,164,Untrained Xavier initialization,No fitting,4,14,inner,2048,0.0,3.8787683413482426,0.732000930673065
+square,164,Untrained Xavier initialization,No fitting,4,14,left,2048,0.0,45.05611490435963,0.7983378432759953
+square,164,Untrained Xavier initialization,No fitting,4,14,right,2048,0.0,57.432497878687116,1.1251762060520973
+square,164,Untrained Xavier initialization,No fitting,4,14,outer,4096,0.0,51.61659279175766,0.9617570246640463
+square,164,Backpropagation with Adam and BFGS,Examples only,16,50,observed,12,0.0,0.6083233954472261,0.17870906903009834
+square,164,Backpropagation with Adam and BFGS,Examples only,16,50,inner,2048,0.0,1.4424487701415483,0.2774661661249734
+square,164,Backpropagation with Adam and BFGS,Examples only,16,50,left,2048,0.0,32.46052437926582,0.4847213315657227
+square,164,Backpropagation with Adam and BFGS,Examples only,16,50,right,2048,0.0,45.621613677235,0.8037402514378453
+square,164,Backpropagation with Adam and BFGS,Examples only,16,50,outer,4096,0.0,39.59177488754315,0.644230791501784
+square,164,Untrained Xavier initialization,No fitting,16,50,observed,12,0.0,3.302751056714114,0.8059995639190953
+square,164,Untrained Xavier initialization,No fitting,16,50,inner,2048,0.0,4.193103670124378,0.8047420135966618
+square,164,Untrained Xavier initialization,No fitting,16,50,left,2048,0.0,45.465968310925994,0.8094128814410406
+square,164,Untrained Xavier initialization,No fitting,16,50,right,2048,0.0,59.199356132142235,1.1715580317107928
+square,164,Untrained Xavier initialization,No fitting,16,50,outer,4096,0.0,52.781237390337544,0.9904854565759167
+square,317,Backpropagation with Adam and BFGS,Examples only,1,5,observed,12,0.0,2.802574067655705,0.5467873874672576
+square,317,Backpropagation with Adam and BFGS,Examples only,1,5,inner,2048,0.0,3.373833110437625,0.6380283817243199
+square,317,Backpropagation with Adam and BFGS,Examples only,1,5,left,2048,0.0,52.21633477847023,0.9815987112607443
+square,317,Backpropagation with Adam and BFGS,Examples only,1,5,right,2048,0.0,52.015648853992076,0.9704779144571128
+square,317,Backpropagation with Adam and BFGS,Examples only,1,5,outer,4096,0.0,52.11608841518657,0.9760383128589285
+square,317,Untrained Xavier initialization,No fitting,1,5,observed,12,0.0,5.2099413418533445,1.3646623883929132
+square,317,Untrained Xavier initialization,No fitting,1,5,inner,2048,0.0,5.898191511652326,1.413379731842516
+square,317,Untrained Xavier initialization,No fitting,1,5,left,2048,0.0,63.48892560888274,1.2911443593568264
+square,317,Untrained Xavier initialization,No fitting,1,5,right,2048,0.0,56.74756736258639,1.1071791307131118
+square,317,Untrained Xavier initialization,No fitting,1,5,outer,4096,0.0,60.21266509855516,1.199161745034969
+square,317,Backpropagation with Adam and BFGS,Examples only,4,14,observed,12,0.0,2.802574067654072,0.5467873874675765
+square,317,Backpropagation with Adam and BFGS,Examples only,4,14,inner,2048,0.0,3.382316050221242,0.6385565937374496
+square,317,Backpropagation with Adam and BFGS,Examples only,4,14,left,2048,0.0,52.216334778456,0.9815987112603504
+square,317,Backpropagation with Adam and BFGS,Examples only,4,14,right,2048,0.0,52.55299787544907,0.981539093977341
+square,317,Backpropagation with Adam and BFGS,Examples only,4,14,outer,4096,0.0,52.38493678240315,0.9815689026188457
+square,317,Untrained Xavier initialization,No fitting,4,14,observed,12,0.0,5.681459697602085,2.051650032195332
+square,317,Untrained Xavier initialization,No fitting,4,14,inner,2048,0.0,7.0445275490822885,1.463844699308996
+square,317,Untrained Xavier initialization,No fitting,4,14,left,2048,0.0,45.82937719561304,0.8192265868980355
+square,317,Untrained Xavier initialization,No fitting,4,14,right,2048,0.0,75.92486117445006,1.6083106006287862
+square,317,Untrained Xavier initialization,No fitting,4,14,outer,4096,0.0,62.70931493206289,1.2137685937634108
+square,317,Backpropagation with Adam and BFGS,Examples only,16,50,observed,12,0.0,0.0021950011819466793,0.0003947577520225828
+square,317,Backpropagation with Adam and BFGS,Examples only,16,50,inner,2048,0.0,0.1925113605393519,0.03810252241888627
+square,317,Backpropagation with Adam and BFGS,Examples only,16,50,left,2048,0.0,28.042699358076852,0.38110653098896907
+square,317,Backpropagation with Adam and BFGS,Examples only,16,50,right,2048,0.0,30.926608624611003,0.45679229786683906
+square,317,Backpropagation with Adam and BFGS,Examples only,16,50,outer,4096,0.0,29.519892515957334,0.41894941442790407
+square,317,Untrained Xavier initialization,No fitting,16,50,observed,12,0.0,4.096559794532913,0.6940628753142968
+square,317,Untrained Xavier initialization,No fitting,16,50,inner,2048,0.0,4.4016667227052,0.8910446871285634
+square,317,Untrained Xavier initialization,No fitting,16,50,left,2048,0.0,60.25922343186255,1.2053773147328197
+square,317,Untrained Xavier initialization,No fitting,16,50,right,2048,0.0,44.450134459419395,0.7818743331511521
+square,317,Untrained Xavier initialization,No fitting,16,50,outer,4096,0.0,52.94803330659032,0.993625823941986
+square,583,Backpropagation with Adam and BFGS,Examples only,1,5,observed,12,0.0,0.28989483627755513,0.06838966274040652
+square,583,Backpropagation with Adam and BFGS,Examples only,1,5,inner,2048,0.0,0.9568840226151715,0.4532721151189405
+square,583,Backpropagation with Adam and BFGS,Examples only,1,5,left,2048,0.0,30.108684210492257,0.4334143048428275
+square,583,Backpropagation with Adam and BFGS,Examples only,1,5,right,2048,0.0,36.604987097990595,0.5880187808234949
+square,583,Backpropagation with Adam and BFGS,Examples only,1,5,outer,4096,0.0,33.51460834719096,0.5107165428331613
+square,583,Untrained Xavier initialization,No fitting,1,5,observed,12,0.0,3.4329737358612467,0.845870932578148
+square,583,Untrained Xavier initialization,No fitting,1,5,inner,2048,0.0,3.7219903211503365,0.6973246970361295
+square,583,Untrained Xavier initialization,No fitting,1,5,left,2048,0.0,49.00502296781148,0.9047528972536025
+square,583,Untrained Xavier initialization,No fitting,1,5,right,2048,0.0,54.294873591915035,1.0426476734520438
+square,583,Untrained Xavier initialization,No fitting,1,5,outer,4096,0.0,51.717625498652595,0.9737002853528232
+square,583,Backpropagation with Adam and BFGS,Examples only,4,14,observed,12,0.0,0.39160195967813705,0.02265134069330697
+square,583,Backpropagation with Adam and BFGS,Examples only,4,14,inner,2048,0.0,0.574812956839014,0.25452827272191325
+square,583,Backpropagation with Adam and BFGS,Examples only,4,14,left,2048,0.0,39.26103244120347,0.6132134962331481
+square,583,Backpropagation with Adam and BFGS,Examples only,4,14,right,2048,0.0,30.23366709346843,0.4434794738980677
+square,583,Backpropagation with Adam and BFGS,Examples only,4,14,outer,4096,0.0,35.039287195003745,0.5283464850656079
+square,583,Untrained Xavier initialization,No fitting,4,14,observed,12,0.0,5.236971812270977,0.9779795063770781
+square,583,Untrained Xavier initialization,No fitting,4,14,inner,2048,0.0,5.081156679586858,1.0589663304198378
+square,583,Untrained Xavier initialization,No fitting,4,14,left,2048,0.0,63.33158113578658,1.2869699576930445
+square,583,Untrained Xavier initialization,No fitting,4,14,right,2048,0.0,47.24607695617296,0.8562815261592245
+square,583,Untrained Xavier initialization,No fitting,4,14,outer,4096,0.0,55.87074796755157,1.0716257419261344
+square,583,Backpropagation with Adam and BFGS,Examples only,16,50,observed,12,0.0,0.0046407948954646765,0.002445795276013333
+square,583,Backpropagation with Adam and BFGS,Examples only,16,50,inner,2048,0.0,0.1812686197441297,0.0777302444777958
+square,583,Backpropagation with Adam and BFGS,Examples only,16,50,left,2048,0.0,25.36112712076155,0.33118119143856994
+square,583,Backpropagation with Adam and BFGS,Examples only,16,50,right,2048,0.0,28.73719924344299,0.41020742563229995
+square,583,Backpropagation with Adam and BFGS,Examples only,16,50,outer,4096,0.0,27.101783974424706,0.37069430853543495
+square,583,Untrained Xavier initialization,No fitting,16,50,observed,12,0.0,4.076644966870586,0.9488599922840977
+square,583,Untrained Xavier initialization,No fitting,16,50,inner,2048,0.0,4.190051717870821,0.8678832109879712
+square,583,Untrained Xavier initialization,No fitting,16,50,left,2048,0.0,54.79497732496094,1.0598140206810212
+square,583,Untrained Xavier initialization,No fitting,16,50,right,2048,0.0,52.4630315739018,0.9943557252381348
+square,583,Untrained Xavier initialization,No fitting,16,50,outer,4096,0.0,53.64167792848766,1.0270848729595778
+sin,164,Backpropagation with Adam and BFGS,Examples only,1,5,observed,12,0.0,0.39941121826951054,0.33402144143151463
+sin,164,Backpropagation with Adam and BFGS,Examples only,1,5,inner,2048,0.0,0.38596326426009675,0.3276588612251767
+sin,164,Backpropagation with Adam and BFGS,Examples only,1,5,left,2048,0.0,2.4232153749591467,2.33207422121876
+sin,164,Backpropagation with Adam and BFGS,Examples only,1,5,right,2048,0.0,0.972647713749798,0.8938989975859752
+sin,164,Backpropagation with Adam and BFGS,Examples only,1,5,outer,4096,0.0,1.8463499571453277,1.6129866094023677
+sin,164,Untrained Xavier initialization,No fitting,1,5,observed,12,0.0,3.6910652479372006,3.4157870145159173
+sin,164,Untrained Xavier initialization,No fitting,1,5,inner,2048,0.0,3.5437110565087933,3.1940806427496833
+sin,164,Untrained Xavier initialization,No fitting,1,5,left,2048,0.0,11.517031350246535,10.831472248716118
+sin,164,Untrained Xavier initialization,No fitting,1,5,right,2048,0.0,11.772700683578645,11.092870078888385
+sin,164,Untrained Xavier initialization,No fitting,1,5,outer,4096,0.0,11.645567665590514,10.962171163802251
+sin,164,Backpropagation with Adam and BFGS,Examples only,4,14,observed,12,0.0,0.03267414079860372,0.028538744468406235
+sin,164,Backpropagation with Adam and BFGS,Examples only,4,14,inner,2048,0.0,0.16886825417632464,0.07862589367535334
+sin,164,Backpropagation with Adam and BFGS,Examples only,4,14,left,2048,0.0,2.799056976516053,2.180460807569962
+sin,164,Backpropagation with Adam and BFGS,Examples only,4,14,right,2048,0.0,1.1394861433279773,0.9348407702980364
+sin,164,Backpropagation with Adam and BFGS,Examples only,4,14,outer,4096,0.0,2.1369544483469527,1.5576507889339992
+sin,164,Untrained Xavier initialization,No fitting,4,14,observed,12,0.0,2.499218745280592,2.3009145736283254
+sin,164,Untrained Xavier initialization,No fitting,4,14,inner,2048,0.0,2.276432524590789,2.0609717060362445
+sin,164,Untrained Xavier initialization,No fitting,4,14,left,2048,0.0,7.844277621223357,7.324276933293957
+sin,164,Untrained Xavier initialization,No fitting,4,14,right,2048,0.0,5.00316484424563,4.607499133616104
+sin,164,Untrained Xavier initialization,No fitting,4,14,outer,4096,0.0,6.578918978735069,5.96588803345503
+sin,164,Backpropagation with Adam and BFGS,Examples only,16,50,observed,12,0.0,0.0017032620620495438,0.0007719814529209048
+sin,164,Backpropagation with Adam and BFGS,Examples only,16,50,inner,2048,0.0,0.11056874869451473,0.04909793363521236
+sin,164,Backpropagation with Adam and BFGS,Examples only,16,50,left,2048,0.0,3.5121865208409293,2.740110646563811
+sin,164,Backpropagation with Adam and BFGS,Examples only,16,50,right,2048,0.0,0.9913572209905666,0.9195874477313312
+sin,164,Backpropagation with Adam and BFGS,Examples only,16,50,outer,4096,0.0,2.580527397334395,1.829849047147571
+sin,164,Untrained Xavier initialization,No fitting,16,50,observed,12,0.0,2.5470992495075127,2.378621431916702
+sin,164,Untrained Xavier initialization,No fitting,16,50,inner,2048,0.0,2.4112549190424826,2.203306690432781
+sin,164,Untrained Xavier initialization,No fitting,16,50,left,2048,0.0,7.420716146613184,6.91925405022645
+sin,164,Untrained Xavier initialization,No fitting,16,50,right,2048,0.0,6.795979408078542,6.3299765593039385
+sin,164,Untrained Xavier initialization,No fitting,16,50,outer,4096,0.0,7.115207805947525,6.624615304765195
+sin,317,Backpropagation with Adam and BFGS,Examples only,1,5,observed,12,0.0,0.32459686049314385,0.2256750736288884
+sin,317,Backpropagation with Adam and BFGS,Examples only,1,5,inner,2048,0.0,0.3708565207804526,0.2940143903383946
+sin,317,Backpropagation with Adam and BFGS,Examples only,1,5,left,2048,0.0,2.8958345490881947,2.792816443501462
+sin,317,Backpropagation with Adam and BFGS,Examples only,1,5,right,2048,0.0,1.0470530874846606,0.971932228539488
+sin,317,Backpropagation with Adam and BFGS,Examples only,1,5,outer,4096,0.0,2.1774041774213613,1.882374336020475
+sin,317,Untrained Xavier initialization,No fitting,1,5,observed,12,0.0,1.9966844294860038,1.6917480216668046
+sin,317,Untrained Xavier initialization,No fitting,1,5,inner,2048,0.0,2.0000006690141228,1.6730079984165773
+sin,317,Untrained Xavier initialization,No fitting,1,5,left,2048,0.0,11.124051810025273,10.698046147043398
+sin,317,Untrained Xavier initialization,No fitting,1,5,right,2048,0.0,4.3102476006646775,3.9391434671548833
+sin,317,Untrained Xavier initialization,No fitting,1,5,outer,4096,0.0,8.435720569434546,7.3185948070991405
+sin,317,Backpropagation with Adam and BFGS,Examples only,4,14,observed,12,0.0,0.3245968604931439,0.22567507363334136
+sin,317,Backpropagation with Adam and BFGS,Examples only,4,14,inner,2048,0.0,0.3666866405308611,0.28677608485673134
+sin,317,Backpropagation with Adam and BFGS,Examples only,4,14,left,2048,0.0,2.916962152424158,2.8112309017151027
+sin,317,Backpropagation with Adam and BFGS,Examples only,4,14,right,2048,0.0,1.6115807554568695,1.375652549457297
+sin,317,Backpropagation with Adam and BFGS,Examples only,4,14,outer,4096,0.0,2.356465651143032,2.0934417255862
+sin,317,Untrained Xavier initialization,No fitting,4,14,observed,12,0.0,4.520335764729345,3.8914805783198685
+sin,317,Untrained Xavier initialization,No fitting,4,14,inner,2048,0.0,4.902444402822669,3.953622615060379
+sin,317,Untrained Xavier initialization,No fitting,4,14,left,2048,0.0,7.0455581567788785,6.560359099388939
+sin,317,Untrained Xavier initialization,No fitting,4,14,right,2048,0.0,23.768271092845836,22.54961496052274
+sin,317,Untrained Xavier initialization,No fitting,4,14,outer,4096,0.0,17.529555049737635,14.55498702995584
+sin,317,Backpropagation with Adam and BFGS,Examples only,16,50,observed,12,0.0,0.0023653012884287776,0.001430168422124559
+sin,317,Backpropagation with Adam and BFGS,Examples only,16,50,inner,2048,0.0,0.07289654685068807,0.03371354315851181
+sin,317,Backpropagation with Adam and BFGS,Examples only,16,50,left,2048,0.0,3.1641784312243595,2.4609961497987367
+sin,317,Backpropagation with Adam and BFGS,Examples only,16,50,right,2048,0.0,1.3059660089741252,1.1663082747493698
+sin,317,Backpropagation with Adam and BFGS,Examples only,16,50,outer,4096,0.0,2.4204929623137987,1.8136522122740533
+sin,317,Untrained Xavier initialization,No fitting,16,50,observed,12,0.0,1.2584356718700767,0.9153497368138511
+sin,317,Untrained Xavier initialization,No fitting,16,50,inner,2048,0.0,1.5170630109270147,1.1148964675163544
+sin,317,Untrained Xavier initialization,No fitting,16,50,left,2048,0.0,7.839712909484951,7.561477661398566
+sin,317,Untrained Xavier initialization,No fitting,16,50,right,2048,0.0,8.429353044920472,8.141669702892854
+sin,317,Untrained Xavier initialization,No fitting,16,50,outer,4096,0.0,8.139873809189398,7.85157368214571
+sin,583,Backpropagation with Adam and BFGS,Examples only,1,5,observed,12,0.0,0.40779689010902354,0.3359303854435882
+sin,583,Backpropagation with Adam and BFGS,Examples only,1,5,inner,2048,0.0,0.4378465677183733,0.36257394964934675
+sin,583,Backpropagation with Adam and BFGS,Examples only,1,5,left,2048,0.0,2.6522867138276585,2.56083605164388
+sin,583,Backpropagation with Adam and BFGS,Examples only,1,5,right,2048,0.0,2.882340902122943,2.80280266294872
+sin,583,Backpropagation with Adam and BFGS,Examples only,1,5,outer,4096,0.0,2.7697034036515196,2.6818193572963
+sin,583,Untrained Xavier initialization,No fitting,1,5,observed,12,0.0,1.4707927089957686,1.4119157724971922
+sin,583,Untrained Xavier initialization,No fitting,1,5,inner,2048,0.0,1.3725460789168251,1.2603350019120376
+sin,583,Untrained Xavier initialization,No fitting,1,5,left,2048,0.0,3.7896047638273207,3.432594455862173
+sin,583,Untrained Xavier initialization,No fitting,1,5,right,2048,0.0,1.8717949150065223,1.542644907635791
+sin,583,Untrained Xavier initialization,No fitting,1,5,outer,4096,0.0,2.9887054446588572,2.487619681748982
+sin,583,Backpropagation with Adam and BFGS,Examples only,4,14,observed,12,0.0,0.03394200396065637,0.021307602452145285
+sin,583,Backpropagation with Adam and BFGS,Examples only,4,14,inner,2048,0.0,0.11021677730989046,0.08716176298686805
+sin,583,Backpropagation with Adam and BFGS,Examples only,4,14,left,2048,0.0,2.4985792551935817,1.9470289419679525
+sin,583,Backpropagation with Adam and BFGS,Examples only,4,14,right,2048,0.0,1.982517931504228,1.6216834931538564
+sin,583,Backpropagation with Adam and BFGS,Examples only,4,14,outer,4096,0.0,2.25535758176165,1.7843562175609045
+sin,583,Untrained Xavier initialization,No fitting,4,14,observed,12,0.0,1.7440558954763874,1.18626713786432
+sin,583,Untrained Xavier initialization,No fitting,4,14,inner,2048,0.0,1.7049217501593574,1.1779653006041286
+sin,583,Untrained Xavier initialization,No fitting,4,14,left,2048,0.0,10.964081423459195,10.545384984910067
+sin,583,Untrained Xavier initialization,No fitting,4,14,right,2048,0.0,5.547934252355971,5.378416888993012
+sin,583,Untrained Xavier initialization,No fitting,4,14,outer,4096,0.0,8.688804748891172,7.961900936951539
+sin,583,Backpropagation with Adam and BFGS,Examples only,16,50,observed,12,0.0,0.001524611574474857,0.0009703313351612994
+sin,583,Backpropagation with Adam and BFGS,Examples only,16,50,inner,2048,0.0,0.10627575909342327,0.07095832836204252
+sin,583,Backpropagation with Adam and BFGS,Examples only,16,50,left,2048,0.0,3.183633087748794,2.4731911733961915
+sin,583,Backpropagation with Adam and BFGS,Examples only,16,50,right,2048,0.0,1.39953157291966,1.2306371146242743
+sin,583,Backpropagation with Adam and BFGS,Examples only,16,50,outer,4096,0.0,2.4590860356042747,1.851914144010233
+sin,583,Untrained Xavier initialization,No fitting,16,50,observed,12,0.0,0.6619658831023238,0.6347243738014604
+sin,583,Untrained Xavier initialization,No fitting,16,50,inner,2048,0.0,0.5570977912225858,0.4845626250304401
+sin,583,Untrained Xavier initialization,No fitting,16,50,left,2048,0.0,2.3208724745060123,2.238113159437783
+sin,583,Untrained Xavier initialization,No fitting,16,50,right,2048,0.0,0.6882477281554743,0.603539325257048
+sin,583,Untrained Xavier initialization,No fitting,16,50,outer,4096,0.0,1.7117438444800717,1.4208262423474156
+selfpower,164,Backpropagation with Adam and BFGS,Examples only,1,5,observed,12,0.0,2.667123343671292,0.34499584399084776
+selfpower,164,Backpropagation with Adam and BFGS,Examples only,1,5,inner,2048,0.0,5.976691787901955,0.3724240331494393
+selfpower,164,Backpropagation with Adam and BFGS,Examples only,1,5,right,2048,0.0,1582733580.0320442,0.9909987113846577
+selfpower,164,Backpropagation with Adam and BFGS,Examples only,1,5,outer,2048,0.0,1582733580.0320442,0.9909987113846577
+selfpower,164,Untrained Xavier initialization,No fitting,1,5,observed,12,0.0,6.766074506940809,1.7780017630498126
+selfpower,164,Untrained Xavier initialization,No fitting,1,5,inner,2048,0.0,10.177999076741301,1.8594173522552675
+selfpower,164,Untrained Xavier initialization,No fitting,1,5,right,2048,0.0,1582733588.4184656,1.0138026456277398
+selfpower,164,Untrained Xavier initialization,No fitting,1,5,outer,2048,0.0,1582733588.4184656,1.0138026456277398
+selfpower,164,Backpropagation with Adam and BFGS,Examples only,4,14,observed,12,0.0,2.6671233536208123,0.34499584311507236
+selfpower,164,Backpropagation with Adam and BFGS,Examples only,4,14,inner,2048,0.0,5.9766917986753745,0.37242403304291305
+selfpower,164,Backpropagation with Adam and BFGS,Examples only,4,14,right,2048,0.0,1582733580.0320442,0.9909987114585281
+selfpower,164,Backpropagation with Adam and BFGS,Examples only,4,14,outer,2048,0.0,1582733580.0320442,0.9909987114585281
+selfpower,164,Untrained Xavier initialization,No fitting,4,14,observed,12,0.0,5.291046644402924,1.2697794846724897
+selfpower,164,Untrained Xavier initialization,No fitting,4,14,inner,2048,0.0,8.626784780583664,1.3167103750477185
+selfpower,164,Untrained Xavier initialization,No fitting,4,14,right,2048,0.0,1582733585.3926787,1.0057628527526883
+selfpower,164,Untrained Xavier initialization,No fitting,4,14,outer,2048,0.0,1582733585.3926787,1.0057628527526883
+selfpower,164,Backpropagation with Adam and BFGS,Examples only,16,50,observed,12,0.0,2.6671233536208128,0.3449958431150722
+selfpower,164,Backpropagation with Adam and BFGS,Examples only,16,50,inner,2048,0.0,5.976691798675375,0.37242403304291305
+selfpower,164,Backpropagation with Adam and BFGS,Examples only,16,50,right,2048,0.0,1582733580.0125597,0.9909964912870136
+selfpower,164,Backpropagation with Adam and BFGS,Examples only,16,50,outer,2048,0.0,1582733580.0125597,0.9909964912870136
+selfpower,164,Untrained Xavier initialization,No fitting,16,50,observed,12,0.0,5.680183426212469,1.4047604146954251
+selfpower,164,Untrained Xavier initialization,No fitting,16,50,inner,2048,0.0,9.033015499320923,1.460850243821877
+selfpower,164,Untrained Xavier initialization,No fitting,16,50,right,2048,0.0,1582733586.1963105,1.0078981757513792
+selfpower,164,Untrained Xavier initialization,No fitting,16,50,outer,2048,0.0,1582733586.1963105,1.0078981757513792
+selfpower,317,Backpropagation with Adam and BFGS,Examples only,1,5,observed,12,0.0,3.0288979217236136,0.33461894790923835
+selfpower,317,Backpropagation with Adam and BFGS,Examples only,1,5,inner,2048,0.0,5.590834052040712,0.3941607640103044
+selfpower,317,Backpropagation with Adam and BFGS,Examples only,1,5,right,2048,0.0,1582733578.8657959,0.9883067276236401
+selfpower,317,Backpropagation with Adam and BFGS,Examples only,1,5,outer,2048,0.0,1582733578.8657959,0.9883067276236401
+selfpower,317,Untrained Xavier initialization,No fitting,1,5,observed,12,0.0,6.138990845549739,1.2588737525911164
+selfpower,317,Untrained Xavier initialization,No fitting,1,5,inner,2048,0.0,8.470506553073816,1.2607812251956005
+selfpower,317,Untrained Xavier initialization,No fitting,1,5,right,2048,0.0,1582733585.0808535,1.0049343047528037
+selfpower,317,Untrained Xavier initialization,No fitting,1,5,outer,2048,0.0,1582733585.0808535,1.0049343047528037
+selfpower,317,Backpropagation with Adam and BFGS,Examples only,4,14,observed,12,0.0,1.4794355229422294,0.11950595726425962
+selfpower,317,Backpropagation with Adam and BFGS,Examples only,4,14,inner,2048,0.0,3.6246526126394527,0.162684845163088
+selfpower,317,Backpropagation with Adam and BFGS,Examples only,4,14,right,2048,0.0,1582733568.2730503,0.9704876957457784
+selfpower,317,Backpropagation with Adam and BFGS,Examples only,4,14,outer,2048,0.0,1582733568.2730503,0.9704876957457784
+selfpower,317,Untrained Xavier initialization,No fitting,4,14,observed,12,0.0,10.992091818852746,2.751018471741299
+selfpower,317,Untrained Xavier initialization,No fitting,4,14,inner,2048,0.0,13.018907530914733,2.8181374371692067
+selfpower,317,Untrained Xavier initialization,No fitting,4,14,right,2048,0.0,1582733593.7636757,1.0280053576465167
+selfpower,317,Untrained Xavier initialization,No fitting,4,14,outer,2048,0.0,1582733593.7636757,1.0280053576465167
+selfpower,317,Backpropagation with Adam and BFGS,Examples only,16,50,observed,12,0.0,2.0669173429522587,0.15737460555031815
+selfpower,317,Backpropagation with Adam and BFGS,Examples only,16,50,inner,2048,0.0,4.445841650892835,0.20388085385373172
+selfpower,317,Backpropagation with Adam and BFGS,Examples only,16,50,right,2048,0.0,1582733573.5468946,0.9787235321145579
+selfpower,317,Backpropagation with Adam and BFGS,Examples only,16,50,outer,2048,0.0,1582733573.5468946,0.9787235321145579
+selfpower,317,Untrained Xavier initialization,No fitting,16,50,observed,12,0.0,3.299399201282546,0.3565121003088661
+selfpower,317,Untrained Xavier initialization,No fitting,16,50,inner,2048,0.0,5.84977808020161,0.3614987329322967
+selfpower,317,Untrained Xavier initialization,No fitting,16,50,right,2048,0.0,1582733579.444481,0.9899579469671042
+selfpower,317,Untrained Xavier initialization,No fitting,16,50,outer,2048,0.0,1582733579.444481,0.9899579469671042
+selfpower,583,Backpropagation with Adam and BFGS,Examples only,1,5,observed,12,0.0,3.628960845323399,0.37966883810390845
+selfpower,583,Backpropagation with Adam and BFGS,Examples only,1,5,inner,2048,0.0,5.5893336406518985,0.39298232680268663
+selfpower,583,Backpropagation with Adam and BFGS,Examples only,1,5,right,2048,0.0,1582733578.8506331,0.9882883375471699
+selfpower,583,Backpropagation with Adam and BFGS,Examples only,1,5,outer,2048,0.0,1582733578.8506331,0.9882883375471699
+selfpower,583,Untrained Xavier initialization,No fitting,1,5,observed,12,0.0,6.22196214100197,1.0395694876557713
+selfpower,583,Untrained Xavier initialization,No fitting,1,5,inner,2048,0.0,7.917213475969344,1.0602381105312093
+selfpower,583,Untrained Xavier initialization,No fitting,1,5,right,2048,0.0,1582733583.9627535,1.0019634103804567
+selfpower,583,Untrained Xavier initialization,No fitting,1,5,outer,2048,0.0,1582733583.9627535,1.0019634103804567
+selfpower,583,Backpropagation with Adam and BFGS,Examples only,4,14,observed,12,0.0,0.4436548650710621,0.06017533812296005
+selfpower,583,Backpropagation with Adam and BFGS,Examples only,4,14,inner,2048,0.0,2.237656601747585,0.21250184818361723
+selfpower,583,Backpropagation with Adam and BFGS,Examples only,4,14,right,2048,0.0,1582733556.0315073,0.9535128878227902
+selfpower,583,Backpropagation with Adam and BFGS,Examples only,4,14,outer,2048,0.0,1582733556.0315073,0.9535128878227902
+selfpower,583,Untrained Xavier initialization,No fitting,4,14,observed,12,0.0,4.546869002452263,0.5205264479672994
+selfpower,583,Untrained Xavier initialization,No fitting,4,14,inner,2048,0.0,6.403455678472295,0.48107177472536006
+selfpower,583,Untrained Xavier initialization,No fitting,4,14,right,2048,0.0,1582733580.7336924,0.9933834997184627
+selfpower,583,Untrained Xavier initialization,No fitting,4,14,outer,2048,0.0,1582733580.7336924,0.9933834997184627
+selfpower,583,Backpropagation with Adam and BFGS,Examples only,16,50,observed,12,0.0,0.4436548647960468,0.06017533812613466
+selfpower,583,Backpropagation with Adam and BFGS,Examples only,16,50,inner,2048,0.0,2.2273657699669958,0.2024289328946663
+selfpower,583,Backpropagation with Adam and BFGS,Examples only,16,50,right,2048,0.0,1582733556.0068777,0.953512885459578
+selfpower,583,Backpropagation with Adam and BFGS,Examples only,16,50,outer,2048,0.0,1582733556.0068777,0.953512885459578
+selfpower,583,Untrained Xavier initialization,No fitting,16,50,observed,12,0.0,5.777078819916275,0.9050729604831491
+selfpower,583,Untrained Xavier initialization,No fitting,16,50,inner,2048,0.0,7.511466375053185,0.9101621922259909
+selfpower,583,Untrained Xavier initialization,No fitting,16,50,right,2048,0.0,1582733583.1260262,0.9997401493033364
+selfpower,583,Untrained Xavier initialization,No fitting,16,50,outer,2048,0.0,1582733583.1260262,0.9997401493033364
+tanh,164,Backpropagation with Adam and BFGS,Examples only,1,5,observed,12,0.0,0.20995713024722543,0.17734714092465295
+tanh,164,Backpropagation with Adam and BFGS,Examples only,1,5,inner,2048,0.0,0.2043964954202433,0.17214410441380518
+tanh,164,Backpropagation with Adam and BFGS,Examples only,1,5,left,2048,0.0,2.195142733062734,1.968195132174529
+tanh,164,Backpropagation with Adam and BFGS,Examples only,1,5,right,2048,0.0,0.6750291109879845,0.6198582345370114
+tanh,164,Backpropagation with Adam and BFGS,Examples only,1,5,outer,4096,0.0,1.6239328679473422,1.2940266833557703
+tanh,164,Untrained Xavier initialization,No fitting,1,5,observed,12,0.0,3.859296456823937,3.5204636795758755
+tanh,164,Untrained Xavier initialization,No fitting,1,5,inner,2048,0.0,3.7047718191175196,3.2896456158029634
+tanh,164,Untrained Xavier initialization,No fitting,1,5,left,2048,0.0,12.380143275340448,11.881748412823697
+tanh,164,Untrained Xavier initialization,No fitting,1,5,right,2048,0.0,12.624829055110443,12.133679723448402
+tanh,164,Untrained Xavier initialization,No fitting,1,5,outer,4096,0.0,12.50308474314875,12.00771406813605
+tanh,164,Backpropagation with Adam and BFGS,Examples only,4,14,observed,12,0.0,0.007460562706726407,0.004907858915247744
+tanh,164,Backpropagation with Adam and BFGS,Examples only,4,14,inner,2048,0.0,0.04118847078566223,0.024913236246969617
+tanh,164,Backpropagation with Adam and BFGS,Examples only,4,14,left,2048,0.0,0.2507519791857315,0.2164460171674777
+tanh,164,Backpropagation with Adam and BFGS,Examples only,4,14,right,2048,0.0,0.7899038885013889,0.7148723506235143
+tanh,164,Backpropagation with Adam and BFGS,Examples only,4,14,outer,4096,0.0,0.5860139538164497,0.465659183895496
+tanh,164,Untrained Xavier initialization,No fitting,4,14,observed,12,0.0,2.6774551344992363,2.405591238688283
+tanh,164,Untrained Xavier initialization,No fitting,4,14,inner,2048,0.0,2.4245314174241486,2.156536679089525
+tanh,164,Untrained Xavier initialization,No fitting,4,14,left,2048,0.0,8.699870560162054,8.374553097401538
+tanh,164,Untrained Xavier initialization,No fitting,4,14,right,2048,0.0,5.8330103675278195,5.64830877817612
+tanh,164,Untrained Xavier initialization,No fitting,4,14,outer,4096,0.0,7.40647546783426,7.011430937788829
+tanh,164,Backpropagation with Adam and BFGS,Examples only,16,50,observed,12,0.0,0.0031249558354645122,0.001997398935971173
+tanh,164,Backpropagation with Adam and BFGS,Examples only,16,50,inner,2048,0.0,0.03228358730182349,0.017628475044273294
+tanh,164,Backpropagation with Adam and BFGS,Examples only,16,50,left,2048,0.0,0.14763278122447615,0.12726020634443502
+tanh,164,Backpropagation with Adam and BFGS,Examples only,16,50,right,2048,0.0,0.8240985629972384,0.7410203845246002
+tanh,164,Backpropagation with Adam and BFGS,Examples only,16,50,outer,4096,0.0,0.5920024829450411,0.4341402954345176
+tanh,164,Untrained Xavier initialization,No fitting,16,50,observed,12,0.0,2.7120307669216723,2.48329809697666
+tanh,164,Untrained Xavier initialization,No fitting,16,50,inner,2048,0.0,2.563653610324632,2.2988716634860618
+tanh,164,Untrained Xavier initialization,No fitting,16,50,left,2048,0.0,8.2749504642638,7.969530214334032
+tanh,164,Untrained Xavier initialization,No fitting,16,50,right,2048,0.0,7.636165902606205,7.370786203863956
+tanh,164,Untrained Xavier initialization,No fitting,16,50,outer,4096,0.0,7.961966932804523,7.670158209098994
+tanh,317,Backpropagation with Adam and BFGS,Examples only,1,5,observed,12,0.0,0.17527474079703492,0.12340512828256518
+tanh,317,Backpropagation with Adam and BFGS,Examples only,1,5,inner,2048,0.0,0.20206048542781338,0.1506973921196793
+tanh,317,Backpropagation with Adam and BFGS,Examples only,1,5,left,2048,0.0,2.4674061190553016,2.2230263094694225
+tanh,317,Backpropagation with Adam and BFGS,Examples only,1,5,right,2048,0.0,0.4054932417269562,0.36096801640538356
+tanh,317,Backpropagation with Adam and BFGS,Examples only,1,5,outer,4096,0.0,1.768122977261166,1.291997162937403
+tanh,317,Untrained Xavier initialization,No fitting,1,5,observed,12,0.0,1.8694820710414266,1.621984881309359
+tanh,317,Untrained Xavier initialization,No fitting,1,5,inner,2048,0.0,1.9525781689281498,1.6737798143024296
+tanh,317,Untrained Xavier initialization,No fitting,1,5,left,2048,0.0,10.229753715020491,9.647769982935815
+tanh,317,Untrained Xavier initialization,No fitting,1,5,right,2048,0.0,5.133691314748163,4.9799531117149005
+tanh,317,Untrained Xavier initialization,No fitting,1,5,outer,4096,0.0,8.09328881188285,7.313861547325358
+tanh,317,Backpropagation with Adam and BFGS,Examples only,4,14,observed,12,0.0,0.1752747407970349,0.12340512782011837
+tanh,317,Backpropagation with Adam and BFGS,Examples only,4,14,inner,2048,0.0,0.2018659009122625,0.14873235989029976
+tanh,317,Backpropagation with Adam and BFGS,Examples only,4,14,left,2048,0.0,2.492119132370782,2.241545466538178
+tanh,317,Backpropagation with Adam and BFGS,Examples only,4,14,right,2048,0.0,0.10520121096499617,0.08636311506983088
+tanh,317,Backpropagation with Adam and BFGS,Examples only,4,14,outer,4096,0.0,1.7637637405158606,1.1639542908040046
+tanh,317,Untrained Xavier initialization,No fitting,4,14,observed,12,0.0,4.564226513391297,3.930012258836071
+tanh,317,Untrained Xavier initialization,No fitting,4,14,inner,2048,0.0,5.053608641927015,4.049187588113659
+tanh,317,Untrained Xavier initialization,No fitting,4,14,left,2048,0.0,7.8984488921752325,7.610635263496521
+tanh,317,Untrained Xavier initialization,No fitting,4,14,right,2048,0.0,24.628467111274865,23.59042460508276
+tanh,317,Untrained Xavier initialization,No fitting,4,14,outer,4096,0.0,18.288615135562505,15.60052993428964
+tanh,317,Backpropagation with Adam and BFGS,Examples only,16,50,observed,12,0.0,0.0016925751260203248,0.0008844868628700573
+tanh,317,Backpropagation with Adam and BFGS,Examples only,16,50,inner,2048,0.0,0.018504099344370854,0.01344973784185413
+tanh,317,Backpropagation with Adam and BFGS,Examples only,16,50,left,2048,0.0,0.1168066490836031,0.10009847655076899
+tanh,317,Backpropagation with Adam and BFGS,Examples only,16,50,right,2048,0.0,0.41756511473465474,0.37179569954855907
+tanh,317,Backpropagation with Adam and BFGS,Examples only,16,50,outer,4096,0.0,0.30659779705136936,0.23594708804966402
+tanh,317,Untrained Xavier initialization,No fitting,16,50,observed,12,0.0,1.1148001620876868,0.8768180562976484
+tanh,317,Untrained Xavier initialization,No fitting,16,50,inner,2048,0.0,1.3013268941146265,1.0193314944630738
+tanh,317,Untrained Xavier initialization,No fitting,16,50,left,2048,0.0,6.939127709531714,6.511201497290983
+tanh,317,Untrained Xavier initialization,No fitting,16,50,right,2048,0.0,7.540189258848514,7.1008600583328345
+tanh,317,Untrained Xavier initialization,No fitting,16,50,outer,4096,0.0,7.245893575965815,6.806030777811909
+tanh,583,Backpropagation with Adam and BFGS,Examples only,1,5,observed,12,0.0,0.21188035671070904,0.19285563615170354
+tanh,583,Backpropagation with Adam and BFGS,Examples only,1,5,inner,2048,0.0,0.2365717946663018,0.20346309131741178
+tanh,583,Backpropagation with Adam and BFGS,Examples only,1,5,left,2048,0.0,2.2696406142537504,2.0402080415137007
+tanh,583,Backpropagation with Adam and BFGS,Examples only,1,5,right,2048,0.0,2.4137549670499503,2.205843988620733
+tanh,583,Backpropagation with Adam and BFGS,Examples only,1,5,outer,4096,0.0,2.3428061762369983,2.123026015067217
+tanh,583,Untrained Xavier initialization,No fitting,1,5,observed,12,0.0,1.5650199868284704,1.4714078976145437
+tanh,583,Untrained Xavier initialization,No fitting,1,5,inner,2048,0.0,1.500582264750452,1.3558999749653182
+tanh,583,Untrained Xavier initialization,No fitting,1,5,left,2048,0.0,4.619078946179498,4.482870619969754
+tanh,583,Untrained Xavier initialization,No fitting,1,5,right,2048,0.0,2.6307263068995392,2.5834545521958083
+tanh,583,Untrained Xavier initialization,No fitting,1,5,outer,4096,0.0,3.758763840204117,3.5331625860827813
+tanh,583,Backpropagation with Adam and BFGS,Examples only,4,14,observed,12,0.0,0.013542485498545937,0.011219641164957606
+tanh,583,Backpropagation with Adam and BFGS,Examples only,4,14,inner,2048,0.0,0.09228977916950404,0.06365575518726159
+tanh,583,Backpropagation with Adam and BFGS,Examples only,4,14,left,2048,0.0,0.4395402709548385,0.3690463536186697
+tanh,583,Backpropagation with Adam and BFGS,Examples only,4,14,right,2048,0.0,0.9507197241621536,0.8571208677637315
+tanh,583,Backpropagation with Adam and BFGS,Examples only,4,14,outer,4096,0.0,0.7406293417432278,0.6130836106912007
+tanh,583,Untrained Xavier initialization,No fitting,4,14,observed,12,0.0,1.5653526994368858,1.0997647156403396
+tanh,583,Untrained Xavier initialization,No fitting,4,14,inner,2048,0.0,1.512534896962458,1.0757448379392676
+tanh,583,Untrained Xavier initialization,No fitting,4,14,left,2048,0.0,10.069561969542836,9.495108820802486
+tanh,583,Untrained Xavier initialization,No fitting,4,14,right,2048,0.0,4.648294562546777,4.337607244432995
+tanh,583,Untrained Xavier initialization,No fitting,4,14,outer,4096,0.0,7.842280299717211,6.91635803261774
+tanh,583,Backpropagation with Adam and BFGS,Examples only,16,50,observed,12,0.0,0.007178433782227959,0.004419387681274238
+tanh,583,Backpropagation with Adam and BFGS,Examples only,16,50,inner,2048,0.0,0.032219321767107054,0.019843791275710586
+tanh,583,Backpropagation with Adam and BFGS,Examples only,16,50,left,2048,0.0,0.09366307519979594,0.0782184290748753
+tanh,583,Backpropagation with Adam and BFGS,Examples only,16,50,right,2048,0.0,0.7296725048646739,0.6566877768629987
+tanh,583,Backpropagation with Adam and BFGS,Examples only,16,50,outer,4096,0.0,0.5201897423110967,0.367453102968937
+tanh,583,Untrained Xavier initialization,No fitting,16,50,observed,12,0.0,0.6174271193890544,0.5576903216739915
+tanh,583,Untrained Xavier initialization,No fitting,16,50,inner,2048,0.0,0.5706421674512774,0.48510221432241174
+tanh,583,Untrained Xavier initialization,No fitting,16,50,left,2048,0.0,1.377900683320768,1.1878369953302013
+tanh,583,Untrained Xavier initialization,No fitting,16,50,right,2048,0.0,0.7927221963660482,0.7900410877702374
+tanh,583,Untrained Xavier initialization,No fitting,16,50,outer,4096,0.0,1.1240593342228984,0.9889390415502193
+add,164,Backpropagation with Adam and BFGS,Examples only,1,1,observed,12,0.0,1.74376232679558,0.6370844164429706
+add,164,Backpropagation with Adam and BFGS,Examples only,1,1,inner,2048,0.0,1.9672482230389545,0.7586522051990146
+add,164,Backpropagation with Adam and BFGS,Examples only,1,1,outer,2048,0.0,7.8008032486989105,1.193916779985539
+add,164,Untrained Xavier initialization,No fitting,1,1,observed,12,0.0,5.189499095257643,2.17943031171588
+add,164,Untrained Xavier initialization,No fitting,1,1,inner,2048,0.0,4.937439573296509,2.0834481503536066
+add,164,Untrained Xavier initialization,No fitting,1,1,outer,2048,0.0,19.622730411806415,4.020129864203518
+add,164,Backpropagation with Adam and BFGS,Examples only,2,2,observed,12,0.5,2.6622212897024595e-16,1.120096576095291e-16
+add,164,Backpropagation with Adam and BFGS,Examples only,2,2,inner,2048,0.34521484375,3.505269722528668e-16,1.439249503865966e-16
+add,164,Backpropagation with Adam and BFGS,Examples only,2,2,outer,2048,0.27197265625,1.3796712871315126e-15,3.3787587529063503e-16
+add,164,Untrained Xavier initialization,No fitting,2,2,observed,12,0.0,1.2420623726917388,0.6664059191218726
+add,164,Untrained Xavier initialization,No fitting,2,2,inner,2048,0.0,1.135784624943276,0.6504741222324648
+add,164,Untrained Xavier initialization,No fitting,2,2,outer,2048,0.0,4.4160372632246565,1.5994043829991238
+add,164,Backpropagation with Adam and BFGS,Examples only,3,3,observed,12,0.9166666666666666,4.006172263299091e-18,1.1564823173178713e-18
+add,164,Backpropagation with Adam and BFGS,Examples only,3,3,inner,2048,0.95654296875,2.8473896645324356e-18,5.93028942196417e-19
+add,164,Backpropagation with Adam and BFGS,Examples only,3,3,outer,2048,0.98828125,1.4880052258267368e-18,1.6098919953752046e-19
+add,164,Untrained Xavier initialization,No fitting,3,3,observed,12,0.0,4.60203231867805,2.310453879408117
+add,164,Untrained Xavier initialization,No fitting,3,3,inner,2048,0.0,4.1805499219058495,2.2421084116294705
+add,164,Untrained Xavier initialization,No fitting,3,3,outer,2048,0.0,16.38295716679759,5.332207584897365
+add,317,Backpropagation with Adam and BFGS,Examples only,1,1,observed,12,0.0,1.5614984688840796,0.7490778168403079
+add,317,Backpropagation with Adam and BFGS,Examples only,1,1,inner,2048,0.0,2.0858936156318544,0.76153714524083
+add,317,Backpropagation with Adam and BFGS,Examples only,1,1,outer,2048,0.0,8.289997824871058,1.0377458016012135
+add,317,Untrained Xavier initialization,No fitting,1,1,observed,12,0.0,2.1655943694958695,1.2772753148052145
+add,317,Untrained Xavier initialization,No fitting,1,1,inner,2048,0.0,2.095972837801936,1.2514826787769595
+add,317,Untrained Xavier initialization,No fitting,1,1,outer,2048,0.0,8.055837947352076,3.111723860084641
+add,317,Backpropagation with Adam and BFGS,Examples only,2,2,observed,12,0.08333333333333333,9.52896516476878e-16,4.989418911272437e-16
+add,317,Backpropagation with Adam and BFGS,Examples only,2,2,inner,2048,0.0478515625,1.3763093155040764e-15,4.9339137919036145e-16
+add,317,Backpropagation with Adam and BFGS,Examples only,2,2,outer,2048,0.064453125,5.493921558271174e-15,7.34253227067242e-16
+add,317,Untrained Xavier initialization,No fitting,2,2,observed,12,0.0,1.5325849077464846,0.8753994397395276
+add,317,Untrained Xavier initialization,No fitting,2,2,inner,2048,0.0,2.1012213130896558,0.8277596458648638
+add,317,Untrained Xavier initialization,No fitting,2,2,outer,2048,0.0,8.366430873563125,1.4351852433253307
+add,317,Backpropagation with Adam and BFGS,Examples only,3,3,observed,12,0.0,1.4578944703323878e-15,7.060628089637643e-16
+add,317,Backpropagation with Adam and BFGS,Examples only,3,3,inner,2048,0.00927734375,2.124416623634135e-15,7.635106839139359e-16
+add,317,Backpropagation with Adam and BFGS,Examples only,3,3,outer,2048,0.0,8.131207232686137e-15,8.558058236858798e-16
+add,317,Untrained Xavier initialization,No fitting,3,3,observed,12,0.0,2.2352123579769008,1.3378482814964927
+add,317,Untrained Xavier initialization,No fitting,3,3,inner,2048,0.0,2.575461726898216,1.3567718845738614
+add,317,Untrained Xavier initialization,No fitting,3,3,outer,2048,0.0,10.109568524069136,3.1938407567429956
+add,583,Backpropagation with Adam and BFGS,Examples only,1,1,observed,12,0.0,2.0360166997994504,0.7286895498098427
+add,583,Backpropagation with Adam and BFGS,Examples only,1,1,inner,2048,0.0,2.2984583549064337,0.7975710136598275
+add,583,Backpropagation with Adam and BFGS,Examples only,1,1,outer,2048,0.0,9.154167939274641,0.9139300062014267
+add,583,Untrained Xavier initialization,No fitting,1,1,observed,12,0.0,2.329497833306011,0.7643371354099441
+add,583,Untrained Xavier initialization,No fitting,1,1,inner,2048,0.0,2.7296619514099603,0.9579244006634982
+add,583,Untrained Xavier initialization,No fitting,1,1,outer,2048,0.0,10.884344453901488,1.1993954530581916
+add,583,Backpropagation with Adam and BFGS,Examples only,2,2,observed,12,0.5,2.9373740229761033e-16,7.928972276447276e-17
+add,583,Backpropagation with Adam and BFGS,Examples only,2,2,inner,2048,0.21142578125,5.187436873313936e-16,1.5970791602770071e-16
+add,583,Backpropagation with Adam and BFGS,Examples only,2,2,outer,2048,0.27685546875,2.266034955097835e-15,1.9369206549752737e-16
+add,583,Untrained Xavier initialization,No fitting,2,2,observed,12,0.0,0.6649667214554649,0.3392630302975102
+add,583,Untrained Xavier initialization,No fitting,2,2,inner,2048,0.0,0.7747128020656626,0.3341767609797919
+add,583,Untrained Xavier initialization,No fitting,2,2,outer,2048,0.0,3.0766364103127875,0.6629184866687972
+add,583,Backpropagation with Adam and BFGS,Examples only,3,3,observed,12,0.0,1.800890291227465e-15,6.023849270155736e-16
+add,583,Backpropagation with Adam and BFGS,Examples only,3,3,inner,2048,0.0009765625,2.184992920363448e-15,7.6535902347056e-16
+add,583,Backpropagation with Adam and BFGS,Examples only,3,3,outer,2048,0.0,8.650891002772143e-15,8.759155852354353e-16
+add,583,Untrained Xavier initialization,No fitting,3,3,observed,12,0.0,3.0575054674853646,1.1195466156004066
+add,583,Untrained Xavier initialization,No fitting,3,3,inner,2048,0.0,3.412051745814573,1.1984021285017903
+add,583,Untrained Xavier initialization,No fitting,3,3,outer,2048,0.0,13.581762985986568,1.4314653599496703
+subtract,164,Backpropagation with Adam and BFGS,Examples only,1,1,observed,12,0.0,2.034281716829826,0.6924380057599505
+subtract,164,Backpropagation with Adam and BFGS,Examples only,1,1,inner,2048,0.0,2.0967667912762873,0.7512051188073741
+subtract,164,Backpropagation with Adam and BFGS,Examples only,1,1,outer,2048,0.0,8.058867273255178,1.095928798263921
+subtract,164,Untrained Xavier initialization,No fitting,1,1,observed,12,0.0,5.468026285556091,2.003173864479425
+subtract,164,Untrained Xavier initialization,No fitting,1,1,inner,2048,0.0,5.015359964995379,2.081861170817245
+subtract,164,Untrained Xavier initialization,No fitting,1,1,outer,2048,0.0,19.475316443237755,4.179082499497504
+subtract,164,Backpropagation with Adam and BFGS,Examples only,2,2,observed,12,0.0,3.3901592198782156e-15,1.8246390949343823e-15
+subtract,164,Backpropagation with Adam and BFGS,Examples only,2,2,inner,2048,0.02294921875,3.9821687318992315e-15,2.21108799704852e-15
+subtract,164,Backpropagation with Adam and BFGS,Examples only,2,2,outer,2048,0.00634765625,1.567481849579823e-14,5.824996382153033e-15
+subtract,164,Untrained Xavier initialization,No fitting,2,2,observed,12,0.0,3.574479856159943,1.5422381756080996
+subtract,164,Untrained Xavier initialization,No fitting,2,2,inner,2048,0.0,3.9810321638162907,1.723665899130832
+subtract,164,Untrained Xavier initialization,No fitting,2,2,outer,2048,0.0,15.375296810746747,3.6694077220658032
+subtract,164,Backpropagation with Adam and BFGS,Examples only,3,3,observed,12,0.0,1.0698783056557538e-14,4.662213888986175e-15
+subtract,164,Backpropagation with Adam and BFGS,Examples only,3,3,inner,2048,0.00732421875,1.2190906925734836e-14,5.2309463892417455e-15
+subtract,164,Backpropagation with Adam and BFGS,Examples only,3,3,outer,2048,0.0009765625,4.6796154844219066e-14,1.0882646096053979e-14
+subtract,164,Untrained Xavier initialization,No fitting,3,3,observed,12,0.0,5.886462242049498,1.6751345536556925
+subtract,164,Untrained Xavier initialization,No fitting,3,3,inner,2048,0.0,5.738234699987514,1.9583769694127031
+subtract,164,Untrained Xavier initialization,No fitting,3,3,outer,2048,0.0,22.07403390497594,2.1940650559267034
+subtract,317,Backpropagation with Adam and BFGS,Examples only,1,1,observed,12,0.0,1.7805861697965373,0.5792032198325897
+subtract,317,Backpropagation with Adam and BFGS,Examples only,1,1,inner,2048,0.0,1.793352721933108,0.7885521807488619
+subtract,317,Backpropagation with Adam and BFGS,Examples only,1,1,outer,2048,0.0,6.930896862501795,1.7119402061665556
+subtract,317,Untrained Xavier initialization,No fitting,1,1,observed,12,0.0,1.5467748240833878,0.8347833650620982
+subtract,317,Untrained Xavier initialization,No fitting,1,1,inner,2048,0.0,2.0500962072648687,1.1998961516775974
+subtract,317,Untrained Xavier initialization,No fitting,1,1,outer,2048,0.0,8.143102676817492,3.2460715453892757
+subtract,317,Backpropagation with Adam and BFGS,Examples only,2,2,observed,12,0.3333333333333333,4.0666101922614934e-16,2.285809862724392e-16
+subtract,317,Backpropagation with Adam and BFGS,Examples only,2,2,inner,2048,0.29443359375,4.821702440332204e-16,2.7970567804305693e-16
+subtract,317,Backpropagation with Adam and BFGS,Examples only,2,2,outer,2048,0.37353515625,2.11024529792443e-15,8.323241820647222e-16
+subtract,317,Untrained Xavier initialization,No fitting,2,2,observed,12,0.0,3.3000672438578227,1.0488512828638987
+subtract,317,Untrained Xavier initialization,No fitting,2,2,inner,2048,0.0,3.19025195628396,1.1120287024035391
+subtract,317,Untrained Xavier initialization,No fitting,2,2,outer,2048,0.0,12.259667907948018,1.455253524094088
+subtract,317,Backpropagation with Adam and BFGS,Examples only,3,3,observed,12,0.0,1.8429829351726324e-15,6.687019714928814e-16
+subtract,317,Backpropagation with Adam and BFGS,Examples only,3,3,inner,2048,0.0419921875,1.9199700729377065e-15,9.57517390249485e-16
+subtract,317,Backpropagation with Adam and BFGS,Examples only,3,3,outer,2048,0.0,7.532121070800811e-15,2.3633607777376697e-15
+subtract,317,Untrained Xavier initialization,No fitting,3,3,observed,12,0.0,4.617992719627167,1.4556451078163424
+subtract,317,Untrained Xavier initialization,No fitting,3,3,inner,2048,0.0,4.465458483078487,1.5733939670429513
+subtract,317,Untrained Xavier initialization,No fitting,3,3,outer,2048,0.0,17.160694204976767,2.156913735898428
+subtract,583,Backpropagation with Adam and BFGS,Examples only,1,1,observed,12,0.0,2.2258804430747103,0.6789323311707268
+subtract,583,Backpropagation with Adam and BFGS,Examples only,1,1,inner,2048,0.0,1.8686872018150547,0.7630899091594042
+subtract,583,Backpropagation with Adam and BFGS,Examples only,1,1,outer,2048,0.0,7.201617557299919,1.4914196614992368
+subtract,583,Untrained Xavier initialization,No fitting,1,1,observed,12,0.0,3.223001889334294,1.1386894374770804
+subtract,583,Untrained Xavier initialization,No fitting,1,1,inner,2048,0.0,2.7944775803001787,0.972478902088878
+subtract,583,Untrained Xavier initialization,No fitting,1,1,outer,2048,0.0,10.761411323235812,1.2134766262027268
+subtract,583,Backpropagation with Adam and BFGS,Examples only,2,2,observed,12,0.0,1.4304223057953896e-15,4.4287924137614684e-16
+subtract,583,Backpropagation with Adam and BFGS,Examples only,2,2,inner,2048,0.04736328125,1.2061502358106256e-15,5.103994323754095e-16
+subtract,583,Backpropagation with Adam and BFGS,Examples only,2,2,outer,2048,0.01318359375,4.738578724904665e-15,1.0506034637753677e-15
+subtract,583,Untrained Xavier initialization,No fitting,2,2,observed,12,0.0,3.889846949261287,1.3292049149429488
+subtract,583,Untrained Xavier initialization,No fitting,2,2,inner,2048,0.0,3.312341156000369,1.4747016342268373
+subtract,583,Untrained Xavier initialization,No fitting,2,2,outer,2048,0.0,12.808928932356345,3.24974804687558
+subtract,583,Backpropagation with Adam and BFGS,Examples only,3,3,observed,12,1.0,0.0,0.0
+subtract,583,Backpropagation with Adam and BFGS,Examples only,3,3,inner,2048,0.83349609375,1.8188117555382365e-17,7.067642911889882e-18
+subtract,583,Backpropagation with Adam and BFGS,Examples only,3,3,outer,2048,0.931640625,1.171587656218788e-17,2.918769657119912e-18
+subtract,583,Untrained Xavier initialization,No fitting,3,3,observed,12,0.0,2.518636270355451,1.0249438138996627
+subtract,583,Untrained Xavier initialization,No fitting,3,3,inner,2048,0.0,2.370595862566282,0.9875227315072185
+subtract,583,Untrained Xavier initialization,No fitting,3,3,outer,2048,0.0,9.20709275216948,1.9930855632685978
+sum,164,Backpropagation with Adam and BFGS,Examples only,0,1,observed,12,0.0,2.2388066535911713,0.689088116506781
+sum,164,Backpropagation with Adam and BFGS,Examples only,0,1,inner,2048,0.0,2.9173702128535175,0.7784307667245294
+sum,164,Backpropagation with Adam and BFGS,Examples only,0,1,outer,2048,0.0,11.330881872488781,0.9899680954149463
+sum,164,Backpropagation with Adam and BFGS,Examples only,0,1,length,2048,0.0,7.042852698911127,0.914256866878079
+sum,164,Backpropagation with Adam and BFGS,Examples only,0,1,joint,2048,0.0,27.320021571410248,1.0328488379159273
+sum,164,Untrained Xavier initialization,No fitting,0,1,observed,12,0.0,3.97082893227675,1.5522159245578673
+sum,164,Untrained Xavier initialization,No fitting,0,1,inner,2048,0.0,4.487698096223124,1.4685462894406722
+sum,164,Untrained Xavier initialization,No fitting,0,1,outer,2048,0.0,17.49031581002683,2.0855835325374557
+sum,164,Untrained Xavier initialization,No fitting,0,1,length,2048,0.0,7.842514913029611,1.2201344211228802
+sum,164,Untrained Xavier initialization,No fitting,0,1,joint,2048,0.0,30.428301742802333,1.5534264842572445
+sum,164,Backpropagation with Adam and BFGS,Examples only,1,3,observed,12,0.0,3.534744264605034e-15,1.4673827154505065e-15
+sum,164,Backpropagation with Adam and BFGS,Examples only,1,3,inner,2048,0.0,4.29104186694323e-15,1.6414490438594e-15
+sum,164,Backpropagation with Adam and BFGS,Examples only,1,3,outer,2048,0.0,1.692281905892451e-14,2.640634419146094e-15
+sum,164,Backpropagation with Adam and BFGS,Examples only,1,3,length,2048,0.0,7.394361122850859e-14,1.040738693640412e-14
+sum,164,Backpropagation with Adam and BFGS,Examples only,1,3,joint,2048,0.0,2.908476137878332e-13,1.4244053396571396e-14
+sum,164,Untrained Xavier initialization,No fitting,1,3,observed,12,0.0,2.6407698607668326,0.8584050904038357
+sum,164,Untrained Xavier initialization,No fitting,1,3,inner,2048,0.0,3.236572085233415,0.8926750416222022
+sum,164,Untrained Xavier initialization,No fitting,1,3,outer,2048,0.0,12.556812553176123,1.0440086129683543
+sum,164,Untrained Xavier initialization,No fitting,1,3,length,2048,0.0,185655.22335133678,14221.35496545827
+sum,164,Untrained Xavier initialization,No fitting,1,3,joint,2048,0.0,755262.7365062732,22933.136315979173
+sum,164,Backpropagation with Adam and BFGS,Examples only,2,8,observed,12,0.0,2.6094613404773415e-15,8.89435470886674e-16
+sum,164,Backpropagation with Adam and BFGS,Examples only,2,8,inner,2048,0.0,3.233257635497817e-15,9.32097280542516e-16
+sum,164,Backpropagation with Adam and BFGS,Examples only,2,8,outer,2048,0.0,1.2615397836218181e-14,1.2173999373969513e-15
+sum,164,Backpropagation with Adam and BFGS,Examples only,2,8,length,2048,0.0,1.5921059070538152e-14,2.0896264617793553e-15
+sum,164,Backpropagation with Adam and BFGS,Examples only,2,8,joint,2048,0.0,6.154247857995017e-14,2.6412851280734763e-15
+sum,164,Untrained Xavier initialization,No fitting,2,8,observed,12,0.0,4.566243235905454,1.9114017027894574
+sum,164,Untrained Xavier initialization,No fitting,2,8,inner,2048,0.0,5.021089394053656,1.7463254538571065
+sum,164,Untrained Xavier initialization,No fitting,2,8,outer,2048,0.0,19.64244576161854,2.6402777396346906
+sum,164,Untrained Xavier initialization,No fitting,2,8,length,2048,0.0,8.772218616972081,1.4397854728310024
+sum,164,Untrained Xavier initialization,No fitting,2,8,joint,2048,0.0,34.084952241923126,1.878339256287308
+sum,317,Backpropagation with Adam and BFGS,Examples only,0,1,observed,12,0.0,2.6599326034115003,0.808634049168393
+sum,317,Backpropagation with Adam and BFGS,Examples only,0,1,inner,2048,0.0,2.932809184165629,0.7817033159901117
+sum,317,Backpropagation with Adam and BFGS,Examples only,0,1,outer,2048,0.0,11.390626108479049,0.9817290803009108
+sum,317,Backpropagation with Adam and BFGS,Examples only,0,1,length,2048,0.0,7.0496352833461025,0.9137024703091058
+sum,317,Backpropagation with Adam and BFGS,Examples only,0,1,joint,2048,0.0,27.34554494482553,1.0256626120018826
+sum,317,Untrained Xavier initialization,No fitting,0,1,observed,12,0.0,2.540314353432611,0.7800535075136872
+sum,317,Untrained Xavier initialization,No fitting,0,1,inner,2048,0.0,2.7401735960283684,0.7735906776724156
+sum,317,Untrained Xavier initialization,No fitting,0,1,outer,2048,0.0,10.657124213045016,1.2021695147106424
+sum,317,Untrained Xavier initialization,No fitting,0,1,length,2048,0.0,6.9644765243615465,0.9552086096776682
+sum,317,Untrained Xavier initialization,No fitting,0,1,joint,2048,0.0,27.034884508410016,1.2001553210897362
+sum,317,Backpropagation with Adam and BFGS,Examples only,1,3,observed,12,0.0,5.751973466987066e-15,1.8980810759517395e-15
+sum,317,Backpropagation with Adam and BFGS,Examples only,1,3,inner,2048,0.0,6.652528010400744e-15,1.989223919758073e-15
+sum,317,Backpropagation with Adam and BFGS,Examples only,1,3,outer,2048,0.0,2.5922490262989e-14,2.4566547971002228e-15
+sum,317,Backpropagation with Adam and BFGS,Examples only,1,3,length,2048,0.0,2.08923147189093e-14,3.847156786498705e-15
+sum,317,Backpropagation with Adam and BFGS,Examples only,1,3,joint,2048,0.0,8.23778014396264e-14,5.416390658792263e-15
+sum,317,Untrained Xavier initialization,No fitting,1,3,observed,12,0.0,33.83514867076501,9.705695541074883
+sum,317,Untrained Xavier initialization,No fitting,1,3,inner,2048,0.0,33.916890877599,8.65829686360371
+sum,317,Untrained Xavier initialization,No fitting,1,3,outer,2048,0.0,133.33850963606423,12.620855572102448
+sum,317,Untrained Xavier initialization,No fitting,1,3,length,2048,0.0,7546448.382582692,558256.4720502762
+sum,317,Untrained Xavier initialization,No fitting,1,3,joint,2048,0.0,29507591.51302655,841068.0736601171
+sum,317,Backpropagation with Adam and BFGS,Examples only,2,8,observed,12,0.0,4.840372430272362e-16,1.327733962040708e-16
+sum,317,Backpropagation with Adam and BFGS,Examples only,2,8,inner,2048,0.01025390625,5.08961066130137e-16,1.4193071469236487e-16
+sum,317,Backpropagation with Adam and BFGS,Examples only,2,8,outer,2048,0.01123046875,1.951014375504203e-15,2.283720641969514e-16
+sum,317,Backpropagation with Adam and BFGS,Examples only,2,8,length,2048,0.0,3.856932666384533e-15,5.387990420334029e-16
+sum,317,Backpropagation with Adam and BFGS,Examples only,2,8,joint,2048,0.0,1.4572161273527463e-14,7.369477544265481e-16
+sum,317,Untrained Xavier initialization,No fitting,2,8,observed,12,0.0,3.2451073543646722,1.069328798769018
+sum,317,Untrained Xavier initialization,No fitting,2,8,inner,2048,0.0,3.6205136527865664,1.0953598058447593
+sum,317,Untrained Xavier initialization,No fitting,2,8,outer,2048,0.0,14.09360961747239,1.4545550217785699
+sum,317,Untrained Xavier initialization,No fitting,2,8,length,2048,0.0,7.363471400222173,1.0282951248228471
+sum,317,Untrained Xavier initialization,No fitting,2,8,joint,2048,0.0,28.564871679690572,1.1975094650715215
+sum,583,Backpropagation with Adam and BFGS,Examples only,0,1,observed,12,0.0,2.519569305021594,0.7969730830531857
+sum,583,Backpropagation with Adam and BFGS,Examples only,0,1,inner,2048,0.0,2.9980076417119887,0.7976886946522864
+sum,583,Backpropagation with Adam and BFGS,Examples only,0,1,outer,2048,0.0,11.643583188080758,0.9559850540950503
+sum,583,Backpropagation with Adam and BFGS,Examples only,0,1,length,2048,0.0,7.078443911589572,0.9138872833015454
+sum,583,Backpropagation with Adam and BFGS,Examples only,0,1,joint,2048,0.0,27.454533718926843,1.001418048105429
+sum,583,Untrained Xavier initialization,No fitting,0,1,observed,12,0.0,2.3484457269228844,0.7951792602390668
+sum,583,Untrained Xavier initialization,No fitting,0,1,inner,2048,0.0,2.771620642157157,0.7661631996951502
+sum,583,Untrained Xavier initialization,No fitting,0,1,outer,2048,0.0,10.773102418245685,1.1323255989828922
+sum,583,Untrained Xavier initialization,No fitting,0,1,length,2048,0.0,6.9788866938652765,0.938323950056267
+sum,583,Untrained Xavier initialization,No fitting,0,1,joint,2048,0.0,27.084467021440823,1.146661951767656
+sum,583,Backpropagation with Adam and BFGS,Examples only,1,3,observed,12,0.0,5.070534079573903e-15,1.6656985280485227e-15
+sum,583,Backpropagation with Adam and BFGS,Examples only,1,3,inner,2048,0.0,5.785952988432459e-15,1.5235209378859283e-15
+sum,583,Backpropagation with Adam and BFGS,Examples only,1,3,outer,2048,0.0,2.265881496983106e-14,2.242160669069053e-15
+sum,583,Backpropagation with Adam and BFGS,Examples only,1,3,length,2048,0.0,6.380372592065742e-14,8.615309658594289e-15
+sum,583,Backpropagation with Adam and BFGS,Examples only,1,3,joint,2048,0.0,2.5018434019903615e-13,1.1466457306569975e-14
+sum,583,Untrained Xavier initialization,No fitting,1,3,observed,12,0.0,3.0231631395330054,0.993423989803074
+sum,583,Untrained Xavier initialization,No fitting,1,3,inner,2048,0.0,3.481022275055882,0.991006372265999
+sum,583,Untrained Xavier initialization,No fitting,1,3,outer,2048,0.0,13.536026987656626,1.1986047924921779
+sum,583,Untrained Xavier initialization,No fitting,1,3,length,2048,0.0,7.30088931064372,0.9800726440741492
+sum,583,Untrained Xavier initialization,No fitting,1,3,joint,2048,0.0,28.313542046192985,1.0819625881672676
+sum,583,Backpropagation with Adam and BFGS,Examples only,2,8,observed,12,0.0,3.841282173960105e-16,1.1646391606709117e-16
+sum,583,Backpropagation with Adam and BFGS,Examples only,2,8,inner,2048,0.03173828125,4.716913368795095e-16,1.103979807171507e-16
+sum,583,Backpropagation with Adam and BFGS,Examples only,2,8,outer,2048,0.0205078125,1.879771051582212e-15,1.7735983714366474e-16
+sum,583,Backpropagation with Adam and BFGS,Examples only,2,8,length,2048,0.0,2.693956121372483e-15,3.636862284644803e-16
+sum,583,Backpropagation with Adam and BFGS,Examples only,2,8,joint,2048,0.0,9.734275396209571e-15,5.032792327100565e-16
+sum,583,Untrained Xavier initialization,No fitting,2,8,observed,12,0.0,2.4901592821018284,0.7854098669388309
+sum,583,Untrained Xavier initialization,No fitting,2,8,inner,2048,0.0,2.9511132891072367,0.781472237418348
+sum,583,Untrained Xavier initialization,No fitting,2,8,outer,2048,0.0,11.460844758982951,0.9232516161427412
+sum,583,Untrained Xavier initialization,No fitting,2,8,length,2048,0.0,7.061542087414903,0.9131893701154085
+sum,583,Untrained Xavier initialization,No fitting,2,8,joint,2048,0.0,27.39260893883514,1.0047039631387988
+sort,164,Backpropagation with Adam and BFGS,Examples only,4,32,observed,12,0.0,0.26137310790733936,0.11285735666717815
+sort,164,Backpropagation with Adam and BFGS,Examples only,4,32,inner,2048,0.01806640625,1.2757592445745423,0.5931259199090766
+sort,164,Backpropagation with Adam and BFGS,Examples only,4,32,outer,2048,0.02587890625,4.883965284112998,0.5843279621344684
+sort,164,Untrained Xavier initialization,No fitting,4,32,observed,12,0.0,2.142043542508084,0.8043711616609867
+sort,164,Untrained Xavier initialization,No fitting,4,32,inner,2048,0.00244140625,1.9736192106887145,0.93823621790944
+sort,164,Untrained Xavier initialization,No fitting,4,32,outer,2048,0.0107421875,7.771721373368051,0.9597760632339069
+sort,164,Backpropagation with Adam and BFGS,Examples only,5,40,observed,12,0.0,0.09778110544772708,0.03912202628683741
+sort,164,Backpropagation with Adam and BFGS,Examples only,5,40,inner,2048,0.0,1.532454806057894,0.7778168045441101
+sort,164,Backpropagation with Adam and BFGS,Examples only,5,40,outer,2048,0.0,5.953830933344141,0.7760861602271532
+sort,164,Untrained Xavier initialization,No fitting,5,40,observed,12,0.0,3.543555262864219,1.6134044910571426
+sort,164,Untrained Xavier initialization,No fitting,5,40,inner,2048,0.0,3.2152439961046793,1.4938443000464905
+sort,164,Untrained Xavier initialization,No fitting,5,40,outer,2048,0.0,12.301393563565531,1.505209090009962
+sort,164,Backpropagation with Adam and BFGS,Examples only,6,48,observed,12,0.0,0.14520022524076187,0.0536335851681154
+sort,164,Backpropagation with Adam and BFGS,Examples only,6,48,inner,2048,0.0,1.6447295257571317,0.8275614954023434
+sort,164,Backpropagation with Adam and BFGS,Examples only,6,48,outer,2048,0.0,6.700473506663889,0.8556687149650236
+sort,164,Untrained Xavier initialization,No fitting,6,48,observed,12,0.0,10.80088371921736,3.9314845764063615
+sort,164,Untrained Xavier initialization,No fitting,6,48,inner,2048,0.0,9.558746022897706,4.260223218593271
+sort,164,Untrained Xavier initialization,No fitting,6,48,outer,2048,0.0,35.87818211595799,4.079533305647768
+sort,317,Backpropagation with Adam and BFGS,Examples only,4,32,observed,12,0.0,0.3710760536145266,0.16912074796488988
+sort,317,Backpropagation with Adam and BFGS,Examples only,4,32,inner,2048,0.0,7.173217046960114,2.682045403002183
+sort,317,Backpropagation with Adam and BFGS,Examples only,4,32,outer,2048,0.0,30.741298965219745,3.1048731469084956
+sort,317,Untrained Xavier initialization,No fitting,4,32,observed,12,0.0,3.6484788306837497,2.1041253313846036
+sort,317,Untrained Xavier initialization,No fitting,4,32,inner,2048,0.0,4.531515536142777,2.353823563152025
+sort,317,Untrained Xavier initialization,No fitting,4,32,outer,2048,0.0,17.732805564559026,2.3855868648671965
+sort,317,Backpropagation with Adam and BFGS,Examples only,5,40,observed,12,0.0,0.13289868261778157,0.06703974597831426
+sort,317,Backpropagation with Adam and BFGS,Examples only,5,40,inner,2048,0.02294921875,1.282341359604523,0.5910987936462976
+sort,317,Backpropagation with Adam and BFGS,Examples only,5,40,outer,2048,0.01806640625,4.800236831274505,0.568847310850993
+sort,317,Untrained Xavier initialization,No fitting,5,40,observed,12,0.0,3.3681685362539056,1.9455925280756645
+sort,317,Untrained Xavier initialization,No fitting,5,40,inner,2048,0.0,3.8537388206838497,1.9312890043586437
+sort,317,Untrained Xavier initialization,No fitting,5,40,outer,2048,0.0,15.324037943242867,1.9524706924377724
+sort,317,Backpropagation with Adam and BFGS,Examples only,6,48,observed,12,0.0,0.08573816045408358,0.040650678096163295
+sort,317,Backpropagation with Adam and BFGS,Examples only,6,48,inner,2048,0.0,1.9335887238512888,0.8362507652765789
+sort,317,Backpropagation with Adam and BFGS,Examples only,6,48,outer,2048,0.0,7.985779030394476,0.8552071874744871
+sort,317,Untrained Xavier initialization,No fitting,6,48,observed,12,0.0,2.0168754935470288,1.2115501951417953
+sort,317,Untrained Xavier initialization,No fitting,6,48,inner,2048,0.0,2.3385642591920863,1.2485986665577369
+sort,317,Untrained Xavier initialization,No fitting,6,48,outer,2048,0.0,8.87626651704124,1.2374076530995168
+sort,583,Backpropagation with Adam and BFGS,Examples only,4,32,observed,12,0.0,0.38607610428534267,0.1465633647463934
+sort,583,Backpropagation with Adam and BFGS,Examples only,4,32,inner,2048,0.00439453125,1.4713920500795263,0.6074414584482407
+sort,583,Backpropagation with Adam and BFGS,Examples only,4,32,outer,2048,0.0068359375,6.173288692387064,0.6506344984627881
+sort,583,Untrained Xavier initialization,No fitting,4,32,observed,12,0.0,2.6981206351295555,1.5968167763381935
+sort,583,Untrained Xavier initialization,No fitting,4,32,inner,2048,0.00146484375,2.9046924783027177,1.467537760854275
+sort,583,Untrained Xavier initialization,No fitting,4,32,outer,2048,0.001953125,11.267615285834536,1.4462423798132162
+sort,583,Backpropagation with Adam and BFGS,Examples only,5,40,observed,12,0.0,0.2099098924729775,0.07642229448223097
+sort,583,Backpropagation with Adam and BFGS,Examples only,5,40,inner,2048,0.0078125,25.94449105962175,6.838225728074972
+sort,583,Backpropagation with Adam and BFGS,Examples only,5,40,outer,2048,0.005859375,76.50491498096962,4.894116957843156
+sort,583,Untrained Xavier initialization,No fitting,5,40,observed,12,0.0,4.151307559870754,1.9158463584730427
+sort,583,Untrained Xavier initialization,No fitting,5,40,inner,2048,0.001953125,4.773221725818061,1.9651553650123825
+sort,583,Untrained Xavier initialization,No fitting,5,40,outer,2048,0.001953125,18.79851854677602,2.003179732816562
+sort,583,Backpropagation with Adam and BFGS,Examples only,6,48,observed,12,0.0,0.19097437415670024,0.08795941004827945
+sort,583,Backpropagation with Adam and BFGS,Examples only,6,48,inner,2048,0.0,0.8446865328163551,0.40815464641934496
+sort,583,Backpropagation with Adam and BFGS,Examples only,6,48,outer,2048,0.0,3.4350153561683423,0.44446729466376805
+sort,583,Untrained Xavier initialization,No fitting,6,48,observed,12,0.0,3.470270051824745,1.8583745671889824
+sort,583,Untrained Xavier initialization,No fitting,6,48,inner,2048,0.0,3.5821209916449543,1.7372050749356038
+sort,583,Untrained Xavier initialization,No fitting,6,48,outer,2048,0.0,13.976542991406518,1.8097217473421872
+fib,164,Backpropagation with Adam and BFGS,Examples only,1,3,observed,9,0.0,5.507946416553863,0.7778143055720618
+fib,164,Backpropagation with Adam and BFGS,Examples only,1,3,fit_indices,9,0.0,5.507946416553863,0.7778143055720618
+fib,164,Backpropagation with Adam and BFGS,Examples only,1,3,early,24,0.0,4.1454750441170545e+100,3.885054727786328e+93
+fib,164,Backpropagation with Adam and BFGS,Examples only,1,3,outer,32,0.0,7.399102226067012e+233,1.2329004390249216e+220
+fib,164,Untrained Xavier initialization,No fitting,1,3,observed,9,0.0,9.333059135492968,0.8983284358314366
+fib,164,Untrained Xavier initialization,No fitting,1,3,fit_indices,9,0.0,9.333059135492968,0.8983284358314366
+fib,164,Untrained Xavier initialization,No fitting,1,3,early,24,0.0,664389.8752338598,1.0046301285998627
+fib,164,Untrained Xavier initialization,No fitting,1,3,outer,32,0.0,5032439379766.981,1.0773146740256905
+fib,164,Backpropagation with Adam and BFGS,Examples only,2,8,observed,9,0.0,4.9217619624019625e-14,6.278512282499444e-15
+fib,164,Backpropagation with Adam and BFGS,Examples only,2,8,fit_indices,9,0.0,4.9217619624019625e-14,6.278512282499444e-15
+fib,164,Backpropagation with Adam and BFGS,Examples only,2,8,early,24,0.0,3.7347516143993274e-08,3.8262863198764506e-14
+fib,164,Backpropagation with Adam and BFGS,Examples only,2,8,outer,32,0.0,0.3534948531785887,1.0998148361341143e-13
+fib,164,Untrained Xavier initialization,No fitting,2,8,observed,9,0.0,9.016842840919546,1.059592828536208
+fib,164,Untrained Xavier initialization,No fitting,2,8,fit_indices,9,0.0,9.016842840919546,1.059592828536208
+fib,164,Untrained Xavier initialization,No fitting,2,8,early,24,0.0,565597.785932041,1.0003715518098186
+fib,164,Untrained Xavier initialization,No fitting,2,8,outer,32,0.0,2385848181558.2173,1.0000000009252674
+fib,164,Backpropagation with Adam and BFGS,Examples only,3,15,observed,9,0.0,3.7489754617335635e-14,9.13899264229109e-15
+fib,164,Backpropagation with Adam and BFGS,Examples only,3,15,fit_indices,9,0.0,3.7489754617335635e-14,9.13899264229109e-15
+fib,164,Backpropagation with Adam and BFGS,Examples only,3,15,early,24,0.0,2.266664273898171e-08,2.3532108776842563e-14
+fib,164,Backpropagation with Adam and BFGS,Examples only,3,15,outer,32,0.0,0.21236486206290967,6.60247735249191e-14
+fib,164,Untrained Xavier initialization,No fitting,3,15,observed,9,0.0,8.898834072009457,0.7213934623682006
+fib,164,Untrained Xavier initialization,No fitting,3,15,fit_indices,9,0.0,8.898834072009457,0.7213934623682006
+fib,164,Untrained Xavier initialization,No fitting,3,15,early,24,0.0,565659.5075802851,0.9982009591724058
+fib,164,Untrained Xavier initialization,No fitting,3,15,outer,32,0.0,2385848352210.097,0.999996384338607
+fib,317,Backpropagation with Adam and BFGS,Examples only,1,3,observed,9,0.0,0.2965760611310569,0.11254456716223214
+fib,317,Backpropagation with Adam and BFGS,Examples only,1,3,fit_indices,9,0.0,0.2965760611310569,0.11254456716223214
+fib,317,Backpropagation with Adam and BFGS,Examples only,1,3,early,24,0.0,257154.7883568858,0.24519137603770727
+fib,317,Backpropagation with Adam and BFGS,Examples only,1,3,outer,32,0.0,3172705886243.001,0.8881476510429773
+fib,317,Untrained Xavier initialization,No fitting,1,3,observed,9,0.0,64.24550244033294,6.180608556508705
+fib,317,Untrained Xavier initialization,No fitting,1,3,fit_indices,9,0.0,64.24550244033294,6.180608556508705
+fib,317,Untrained Xavier initialization,No fitting,1,3,early,24,0.0,7236800.370828775,9.96540771275926
+fib,317,Untrained Xavier initialization,No fitting,1,3,outer,32,0.0,68540890869558.875,20.191845764584087
+fib,317,Backpropagation with Adam and BFGS,Examples only,2,8,observed,9,0.0,5.5511792689743644e-14,7.286027251163144e-15
+fib,317,Backpropagation with Adam and BFGS,Examples only,2,8,fit_indices,9,0.0,5.5511792689743644e-14,7.286027251163144e-15
+fib,317,Backpropagation with Adam and BFGS,Examples only,2,8,early,24,0.0,2.9121924124452648e-08,3.077286589169422e-14
+fib,317,Backpropagation with Adam and BFGS,Examples only,2,8,outer,32,0.0,0.2687933903215357,8.427724277063385e-14
+fib,317,Untrained Xavier initialization,No fitting,2,8,observed,9,0.0,8.90630920335138,0.9208265602984292
+fib,317,Untrained Xavier initialization,No fitting,2,8,fit_indices,9,0.0,8.90630920335138,0.9208265602984292
+fib,317,Untrained Xavier initialization,No fitting,2,8,early,24,0.0,565597.7655648934,1.000000003770831
+fib,317,Untrained Xavier initialization,No fitting,2,8,outer,32,0.0,2385848181558.213,1.0
+fib,317,Backpropagation with Adam and BFGS,Examples only,3,15,observed,9,0.0,4.25796403627513e-14,4.060413087475482e-15
+fib,317,Backpropagation with Adam and BFGS,Examples only,3,15,fit_indices,9,0.0,4.25796403627513e-14,4.060413087475482e-15
+fib,317,Backpropagation with Adam and BFGS,Examples only,3,15,early,24,0.0,2.9114675191205087e-08,3.007155665827681e-14
+fib,317,Backpropagation with Adam and BFGS,Examples only,3,15,outer,32,0.0,0.2730833988628524,8.51323819364639e-14
+fib,317,Untrained Xavier initialization,No fitting,3,15,observed,9,0.0,8.904890219635513,0.884997848965057
+fib,317,Untrained Xavier initialization,No fitting,3,15,fit_indices,9,0.0,8.904890219635513,0.884997848965057
+fib,317,Untrained Xavier initialization,No fitting,3,15,early,24,0.0,565597.7655648934,1.0000000810124516
+fib,317,Untrained Xavier initialization,No fitting,3,15,outer,32,0.0,2385848181558.213,1.0
+fib,583,Backpropagation with Adam and BFGS,Examples only,1,3,observed,9,0.0,8.90636712902474,0.9058507728211023
+fib,583,Backpropagation with Adam and BFGS,Examples only,1,3,fit_indices,9,0.0,8.90636712902474,0.9058507728211023
+fib,583,Backpropagation with Adam and BFGS,Examples only,1,3,early,24,0.0,565597.7655648921,0.9999991460147504
+fib,583,Backpropagation with Adam and BFGS,Examples only,1,3,outer,32,0.0,2385848181558.213,1.0
+fib,583,Untrained Xavier initialization,No fitting,1,3,observed,9,0.0,8.90674471909376,0.9156331927141204
+fib,583,Untrained Xavier initialization,No fitting,1,3,fit_indices,9,0.0,8.90674471909376,0.9156331927141204
+fib,583,Untrained Xavier initialization,No fitting,1,3,early,24,0.0,565597.7655648934,0.999999998960362
+fib,583,Untrained Xavier initialization,No fitting,1,3,outer,32,0.0,2385848181558.213,1.0
+fib,583,Backpropagation with Adam and BFGS,Examples only,2,8,observed,9,0.1111111111111111,5.202177812917484e-15,4.44852855316736e-16
+fib,583,Backpropagation with Adam and BFGS,Examples only,2,8,fit_indices,9,0.1111111111111111,5.202177812917484e-15,4.44852855316736e-16
+fib,583,Backpropagation with Adam and BFGS,Examples only,2,8,early,24,0.3333333333333333,2.473386804497421e-10,2.3938197281263233e-16
+fib,583,Backpropagation with Adam and BFGS,Examples only,2,8,outer,32,0.03125,0.00264820711068507,7.735766119959994e-16
+fib,583,Untrained Xavier initialization,No fitting,2,8,observed,9,0.0,8.906350291732089,0.9103579975137512
+fib,583,Untrained Xavier initialization,No fitting,2,8,fit_indices,9,0.0,8.906350291732089,0.9103579975137512
+fib,583,Untrained Xavier initialization,No fitting,2,8,early,24,0.0,565597.7655648952,1.0000006128194643
+fib,583,Untrained Xavier initialization,No fitting,2,8,outer,32,0.0,2385848181558.213,1.0
+fib,583,Backpropagation with Adam and BFGS,Examples only,3,15,observed,9,0.2222222222222222,2.686099914351569e-15,2.098217588460283e-16
+fib,583,Backpropagation with Adam and BFGS,Examples only,3,15,fit_indices,9,0.2222222222222222,2.686099914351569e-15,2.098217588460283e-16
+fib,583,Backpropagation with Adam and BFGS,Examples only,3,15,early,24,0.0,2.1283854485180295e-09,2.193486841174725e-15
+fib,583,Backpropagation with Adam and BFGS,Examples only,3,15,outer,32,0.0,0.01957579723728367,6.010182885534768e-15
+fib,583,Untrained Xavier initialization,No fitting,3,15,observed,9,0.0,9.045877440591541,1.0987682556078644
+fib,583,Untrained Xavier initialization,No fitting,3,15,fit_indices,9,0.0,9.045877440591541,1.0987682556078644
+fib,583,Untrained Xavier initialization,No fitting,3,15,early,24,0.0,565597.7672709082,0.9996141894396301
+fib,583,Untrained Xavier initialization,No fitting,3,15,outer,32,0.0,2385848181558.213,0.9999999999093268
+tri,164,Backpropagation with Adam and BFGS,Examples only,2,8,observed,9,0.0,0.4912835195500058,0.031153252415614112
+tri,164,Backpropagation with Adam and BFGS,Examples only,2,8,fit_indices,9,0.0,0.4912835195500058,0.031153252415614112
+tri,164,Backpropagation with Adam and BFGS,Examples only,2,8,early,24,0.0,30038.760937534524,34.831699012431926
+tri,164,Backpropagation with Adam and BFGS,Examples only,2,8,outer,32,0.0,1472041241.425586,286592.88371708797
+tri,164,Untrained Xavier initialization,No fitting,2,8,observed,9,0.0,18.044593205027986,1.0053947246954726
+tri,164,Untrained Xavier initialization,No fitting,2,8,fit_indices,9,0.0,18.044593205027986,1.0053947246954726
+tri,164,Untrained Xavier initialization,No fitting,2,8,early,24,0.0,285.1644735206362,1.000656180482
+tri,164,Untrained Xavier initialization,No fitting,2,8,outer,32,0.0,1323.3412339997124,1.0000248826187146
+tri,164,Backpropagation with Adam and BFGS,Examples only,3,15,observed,9,0.1111111111111111,7.796545087913205e-15,3.739121495280774e-16
+tri,164,Backpropagation with Adam and BFGS,Examples only,3,15,fit_indices,9,0.1111111111111111,7.796545087913205e-15,3.739121495280774e-16
+tri,164,Backpropagation with Adam and BFGS,Examples only,3,15,early,24,0.0,9.019861152350948e-11,1.4514655402878781e-13
+tri,164,Backpropagation with Adam and BFGS,Examples only,3,15,outer,32,0.0,4.15110201996422e-09,2.104242671846345e-12
+tri,164,Untrained Xavier initialization,No fitting,3,15,observed,9,0.0,17.790046726814115,0.84617731872281
+tri,164,Untrained Xavier initialization,No fitting,3,15,fit_indices,9,0.0,17.790046726814115,0.84617731872281
+tri,164,Untrained Xavier initialization,No fitting,3,15,early,24,0.0,360.3386149399225,1.023057352043195
+tri,164,Untrained Xavier initialization,No fitting,3,15,outer,32,0.0,510719.1454048985,138.96080124166087
+tri,164,Backpropagation with Adam and BFGS,Examples only,4,24,observed,9,0.0,2.177926582239727e-13,1.1739541339822987e-14
+tri,164,Backpropagation with Adam and BFGS,Examples only,4,24,fit_indices,9,0.0,2.177926582239727e-13,1.1739541339822987e-14
+tri,164,Backpropagation with Adam and BFGS,Examples only,4,24,early,24,0.0,2.622073613174838e-09,3.5962013015167834e-12
+tri,164,Backpropagation with Adam and BFGS,Examples only,4,24,outer,32,0.0,1.872766177486222e-07,9.036183001413114e-11
+tri,164,Untrained Xavier initialization,No fitting,4,24,observed,9,0.0,17.877886623944356,0.9134334290402697
+tri,164,Untrained Xavier initialization,No fitting,4,24,fit_indices,9,0.0,17.877886623944356,0.9134334290402697
+tri,164,Untrained Xavier initialization,No fitting,4,24,early,24,0.0,285.10774288923267,0.9998895637045407
+tri,164,Untrained Xavier initialization,No fitting,4,24,outer,32,0.0,1323.3228891500146,0.9999999715551694
+tri,317,Backpropagation with Adam and BFGS,Examples only,2,8,observed,9,0.0,0.49128351954998034,0.03115325241561388
+tri,317,Backpropagation with Adam and BFGS,Examples only,2,8,fit_indices,9,0.0,0.49128351954998034,0.03115325241561388
+tri,317,Backpropagation with Adam and BFGS,Examples only,2,8,early,24,0.0,30038.760937533425,34.831699012430285
+tri,317,Backpropagation with Adam and BFGS,Examples only,2,8,outer,32,0.0,1472041241.4253533,286592.88371703867
+tri,317,Untrained Xavier initialization,No fitting,2,8,observed,9,0.0,17.925817154581953,0.919176083367549
+tri,317,Untrained Xavier initialization,No fitting,2,8,fit_indices,9,0.0,17.925817154581953,0.919176083367549
+tri,317,Untrained Xavier initialization,No fitting,2,8,early,24,0.0,285.10845891226086,1.0000000027206897
+tri,317,Untrained Xavier initialization,No fitting,2,8,outer,32,0.0,1323.3229008824717,1.0
+tri,317,Backpropagation with Adam and BFGS,Examples only,3,15,observed,9,0.1111111111111111,1.5709862846919275e-14,1.359014801536748e-15
+tri,317,Backpropagation with Adam and BFGS,Examples only,3,15,fit_indices,9,0.1111111111111111,1.5709862846919275e-14,1.359014801536748e-15
+tri,317,Backpropagation with Adam and BFGS,Examples only,3,15,early,24,0.0,5.69656756824756e-10,8.662753966903923e-13
+tri,317,Backpropagation with Adam and BFGS,Examples only,3,15,outer,32,0.0,3.1072559177290234e-08,1.5428748871161023e-11
+tri,317,Untrained Xavier initialization,No fitting,3,15,observed,9,0.0,17.926054445908893,0.8766883047368074
+tri,317,Untrained Xavier initialization,No fitting,3,15,fit_indices,9,0.0,17.926054445908893,0.8766883047368074
+tri,317,Untrained Xavier initialization,No fitting,3,15,early,24,0.0,285.1084592093899,1.0000000547563186
+tri,317,Untrained Xavier initialization,No fitting,3,15,outer,32,0.0,1323.3229008824717,1.0
+tri,317,Backpropagation with Adam and BFGS,Examples only,4,24,observed,9,0.1111111111111111,2.1781791065780478e-14,6.882599526556305e-16
+tri,317,Backpropagation with Adam and BFGS,Examples only,4,24,fit_indices,9,0.1111111111111111,2.1781791065780478e-14,6.882599526556305e-16
+tri,317,Backpropagation with Adam and BFGS,Examples only,4,24,early,24,0.20833333333333334,0.0001501565529620559,7.148242057735648e-08
+tri,317,Backpropagation with Adam and BFGS,Examples only,4,24,outer,32,0.03125,4450005522.881114,666181.9811426094
+tri,317,Untrained Xavier initialization,No fitting,4,24,observed,9,0.0,18.04457236223825,1.0997581183564114
+tri,317,Untrained Xavier initialization,No fitting,4,24,fit_indices,9,0.0,18.04457236223825,1.0997581183564114
+tri,317,Untrained Xavier initialization,No fitting,4,24,early,24,0.0,37160.29720648434,35.81740987479254
+tri,317,Untrained Xavier initialization,No fitting,4,24,outer,32,0.0,36990568694.34418,7219842.188416536
+tri,583,Backpropagation with Adam and BFGS,Examples only,2,8,observed,9,0.0,0.49128351954997884,0.031153252415613977
+tri,583,Backpropagation with Adam and BFGS,Examples only,2,8,fit_indices,9,0.0,0.49128351954997884,0.031153252415613977
+tri,583,Backpropagation with Adam and BFGS,Examples only,2,8,early,24,0.0,30038.760937533654,34.831699012430526
+tri,583,Backpropagation with Adam and BFGS,Examples only,2,8,outer,32,0.0,1472041241.4253764,286592.8837170431
+tri,583,Untrained Xavier initialization,No fitting,2,8,observed,9,0.0,17.926374873705527,0.9028550975800189
+tri,583,Untrained Xavier initialization,No fitting,2,8,fit_indices,9,0.0,17.926374873705527,0.9028550975800189
+tri,583,Untrained Xavier initialization,No fitting,2,8,early,24,0.0,285.1084636965101,1.000000551245057
+tri,583,Untrained Xavier initialization,No fitting,2,8,outer,32,0.0,1323.3229008824728,1.000000000000006
+tri,583,Backpropagation with Adam and BFGS,Examples only,3,15,observed,9,0.1111111111111111,6.016753275534738e-15,6.465140004774855e-16
+tri,583,Backpropagation with Adam and BFGS,Examples only,3,15,fit_indices,9,0.1111111111111111,6.016753275534738e-15,6.465140004774855e-16
+tri,583,Backpropagation with Adam and BFGS,Examples only,3,15,early,24,0.0,4.0522768978713185e-10,6.248763626354881e-13
+tri,583,Backpropagation with Adam and BFGS,Examples only,3,15,outer,32,0.0,2.1176511681682707e-08,1.0570221774958295e-11
+tri,583,Untrained Xavier initialization,No fitting,3,15,observed,9,0.0,18.028145001255602,1.0257201116561987
+tri,583,Untrained Xavier initialization,No fitting,3,15,fit_indices,9,0.0,18.028145001255602,1.0257201116561987
+tri,583,Untrained Xavier initialization,No fitting,3,15,early,24,0.0,285.1078218525235,0.9997412246974219
+tri,583,Untrained Xavier initialization,No fitting,3,15,outer,32,0.0,1323.3227971049273,0.9999995204128532
+tri,583,Backpropagation with Adam and BFGS,Examples only,4,24,observed,9,0.1111111111111111,2.6833146035984473e-14,2.9040849677999197e-15
+tri,583,Backpropagation with Adam and BFGS,Examples only,4,24,fit_indices,9,0.1111111111111111,2.6833146035984473e-14,2.9040849677999197e-15
+tri,583,Backpropagation with Adam and BFGS,Examples only,4,24,early,24,0.0,4.595812400418878e-09,6.918381179297488e-12
+tri,583,Backpropagation with Adam and BFGS,Examples only,4,24,outer,32,0.0,2.608947747869904e-07,1.2890047290651915e-10
+tri,583,Untrained Xavier initialization,No fitting,4,24,observed,9,0.0,18.215689680475794,0.9665440811017737
+tri,583,Untrained Xavier initialization,No fitting,4,24,fit_indices,9,0.0,18.215689680475794,0.9665440811017737
+tri,583,Untrained Xavier initialization,No fitting,4,24,early,24,0.0,287.9308965327234,1.009210343353659
+tri,583,Untrained Xavier initialization,No fitting,4,24,outer,32,0.0,1394.2038678294862,1.037695940234273

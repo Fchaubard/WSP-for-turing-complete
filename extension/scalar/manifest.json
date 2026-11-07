@@ -1,0 +1,36 @@
+{
+  "environment": {
+    "python": "3.13.12",
+    "numpy": "2.5.4",
+    "gmpy2": "2.3.2",
+    "mpfr": "4.2.2",
+    "gmp": "6.3.0",
+    "cpu": "Apple M5",
+    "os": "macOS 26.0 arm64"
+  },
+  "seed": {
+    "main": 20261105,
+    "fresh": 911285,
+    "exponent_challenge": 45217,
+    "optimizer": [
+      11,
+      22,
+      33
+    ]
+  },
+  "reference": "MPFR nearest/even at precision 53 checked against rounded higher precision",
+  "external_sine_corpus": {
+    "core_math_commit": "77792c2c3933e950ae6b058e65018376402f0692",
+    "llvm_commit": "1bfdad8e5c16f98c7a6aa531eb061fd2550ba169",
+    "input_sha256": "d3ddc272c3fb23a4d07295cac7576d689e2ac3b99c1d4d7882f0939dafba9d96"
+  },
+  "artifact_sha256": {
+    "hard_sin.csv": "0cb286199db7e64bd7b4067810b6bfe445c565061d1091af6ab6f0e507cd7663",
+    "relu.csv": "d4ffbdf67b246c09184d6c5546ed6de6a9b68e6ef51370155dc631cb14a5288d",
+    "relu_power.csv": "82c90243e984f8e45a038126b3caff57f771a02f0457b5a0ac8783942cc33bcd",
+    "stress.csv": "acec39bdf0925af321298086af1683515af44c802564ccb95328a442402bc4a2",
+    "sweep.csv": "daecd2b4465f5208fe70d6704ccf4f63d549ea1b94558937e9df2957670e6da5",
+    "train.csv": "d7ec6a0359c9f873277071e2b97b53fb6340238973432c5b5795160cda9d3045",
+    "programs.npz": "f3af196411db5dfc448fa9f39e3fed7c41b5da865997e763aeab952ecd813310"
+  }
+}

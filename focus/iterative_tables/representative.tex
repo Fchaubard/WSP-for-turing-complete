@@ -1,0 +1,58 @@
+\begin{table}[htbp]\centering
+\caption{Outer-test results at one prespecified size per task. Continuous inputs have training magnitudes up to 3 and outer values in $[-10,-3]$ or $[3,10]$, with positive self-power restricted to $[3,10]$. Sequences test indices 33--64. Entries are three-start medians. Exact counts whole examples out of $N$. Root mean squared error (RMSE) is in output units. Bold marks the highest positive exact count and lowest RMSE across both panels, including all ties before rounding. Size counts hidden units, state coordinates or residual blocks. Slots count trainable coefficients. Adam is adaptive moment estimation. L-BFGS is limited-memory Broyden--Fletcher--Goldfarb--Shanno (BFGS).}
+\label{tab:focusouter}
+\begingroup\fontsize{7.3}{7.9}\selectfont
+\setlength{\tabcolsep}{1.3pt}\renewcommand{\arraystretch}{0.93}
+\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}lrrr *{4}{rr}@{}}
+\toprule
+\multicolumn{4}{@{}l}{\textbf{A. Weight-space programming}} & \multicolumn{2}{c}{\shortstack{One-shot\\Examples only}} & \multicolumn{2}{c}{\shortstack{Iterative\\Examples only}} & \multicolumn{2}{c}{\shortstack{One-shot\\Formula and examples}} & \multicolumn{2}{c}{\shortstack{Iterative\\Formula and examples}}\\
+\cmidrule(lr){5-6}\cmidrule(lr){7-8}\cmidrule(lr){9-10}\cmidrule(l){11-12}
+Target & Size & Slots & $N$ & Exact & RMSE & Exact & RMSE & Exact & RMSE & Exact & RMSE \\
+\midrule
+Square & 16 & 50 & 4096 & 0 & {\bfseries\boldmath 1.83} & 0 & 23.9 & 0 & 1.9 & 0 & 23.8 \\
+\addlinespace[0.7pt]
+Sine & 16 & 50 & 4096 & 0 & 0.1725 & 0 & 3.85 & 0 & {\bfseries\boldmath 0.1724} & 0 & 3.85 \\
+\addlinespace[0.7pt]
+Positive self-power & 16 & 50 & 2048 & 0 & $1.79\!\times\!10^{9}$ & 0 & $1.58\!\times\!10^{9}$ & 0 & {\bfseries\boldmath $1.37\!\times\!10^{9}$} & 0 & $1.58\!\times\!10^{9}$ \\
+\addlinespace[0.7pt]
+Hyperbolic tangent & 16 & 50 & 4096 & 0 & {\bfseries\boldmath $4.45\!\times\!10^{-4}$} & 0 & 0.0769 & 0 & $6.8\!\times\!10^{-4}$ & 0 & 0.0781 \\
+\addlinespace[0.7pt]
+Addition & 2 & 9 & 2048 & {\bfseries\boldmath 2048} & {\bfseries\boldmath 0} & {\bfseries\boldmath 2048} & {\bfseries\boldmath 0} & {\bfseries\boldmath 2048} & {\bfseries\boldmath 0} & {\bfseries\boldmath 2048} & {\bfseries\boldmath 0} \\
+\addlinespace[0.7pt]
+Subtraction & 2 & 9 & 2048 & {\bfseries\boldmath 2048} & {\bfseries\boldmath 0} & {\bfseries\boldmath 2048} & {\bfseries\boldmath 0} & {\bfseries\boldmath 2048} & {\bfseries\boldmath 0} & {\bfseries\boldmath 2048} & {\bfseries\boldmath 0} \\
+\addlinespace[0.7pt]
+Running sum & 1 & 3 & 2048 & {\bfseries\boldmath 2048} & {\bfseries\boldmath 0} & {\bfseries\boldmath 2048} & {\bfseries\boldmath 0} & {\bfseries\boldmath 2048} & {\bfseries\boldmath 0} & {\bfseries\boldmath 2048} & {\bfseries\boldmath 0} \\
+\addlinespace[0.7pt]
+Sort four & 5 & 40 & 2048 & {\bfseries\boldmath 1096} & $5.23\!\times\!10^{-16}$ & 1091 & {\bfseries\boldmath $4.94\!\times\!10^{-16}$} & {\bfseries\boldmath 1096} & $5.23\!\times\!10^{-16}$ & {\bfseries\boldmath 1096} & $5.23\!\times\!10^{-16}$ \\
+\addlinespace[0.7pt]
+Fibonacci & 2 & 8 & 32 & {\bfseries\boldmath 32} & {\bfseries\boldmath 0} & {\bfseries\boldmath 32} & {\bfseries\boldmath 0} & {\bfseries\boldmath 32} & {\bfseries\boldmath 0} & {\bfseries\boldmath 32} & {\bfseries\boldmath 0} \\
+\addlinespace[0.7pt]
+Triangular & 3 & 15 & 32 & {\bfseries\boldmath 32} & {\bfseries\boldmath 0} & {\bfseries\boldmath 32} & {\bfseries\boldmath 0} & {\bfseries\boldmath 32} & {\bfseries\boldmath 0} & {\bfseries\boldmath 32} & {\bfseries\boldmath 0} \\
+\addlinespace[3pt]
+\midrule
+\multicolumn{4}{@{}l}{\textbf{B. Gradient methods}} & \multicolumn{2}{c}{\shortstack{Gradient descent\\Full-batch}} & \multicolumn{2}{c}{\shortstack{Gradient descent\\then L-BFGS}} & \multicolumn{2}{c}{\shortstack{Adam\\then full BFGS}} & \multicolumn{2}{c}{\shortstack{Trust-region\\least squares}}\\
+\cmidrule(lr){5-6}\cmidrule(lr){7-8}\cmidrule(lr){9-10}\cmidrule(l){11-12}
+Target & Size & Slots & $N$ & Exact & RMSE & Exact & RMSE & Exact & RMSE & Exact & RMSE \\
+\midrule
+Square & 16 & 50 & 4096 & 0 & 34.8 & 0 & 33.5 & 0 & 29.5 & 0 & 31.9 \\
+\addlinespace[0.7pt]
+Sine & 16 & 50 & 4096 & 0 & 2.33 & 0 & 2.52 & 0 & 2.46 & 0 & 2.49 \\
+\addlinespace[0.7pt]
+Positive self-power & 16 & 50 & 2048 & 0 & $1.58\!\times\!10^{9}$ & 0 & $1.58\!\times\!10^{9}$ & 0 & $1.58\!\times\!10^{9}$ & 0 & $1.58\!\times\!10^{9}$ \\
+\addlinespace[0.7pt]
+Hyperbolic tangent & 16 & 50 & 4096 & 0 & 0.649 & 0 & 0.343 & 0 & 0.52 & 0 & 0.394 \\
+\addlinespace[0.7pt]
+Addition & 2 & 9 & 2048 & 0 & 4.9 & 0 & 4.2 & 1 & 2.1 & 324 & 4.55 \\
+\addlinespace[0.7pt]
+Subtraction & 2 & 9 & 2048 & 0 & 0.831 & 14 & $1.44\!\times\!10^{-13}$ & 50 & 3.64 & 769 & $1.22\!\times\!10^{-15}$ \\
+\addlinespace[0.7pt]
+Running sum & 1 & 3 & 2048 & 0 & $7.02\!\times\!10^{-14}$ & 0 & $7.02\!\times\!10^{-14}$ & 0 & $2.27\!\times\!10^{-14}$ & 65 & $1.73\!\times\!10^{-15}$ \\
+\addlinespace[0.7pt]
+Sort four & 5 & 40 & 2048 & 26 & 4.44 & 8 & 6.09 & 12 & 5.95 & 4 & 5.11 \\
+\addlinespace[0.7pt]
+Fibonacci & 2 & 8 & 32 & 0 & $2.44\!\times\!10^{10}$ & 0 & 0.0715 & 0 & 0.269 & 0 & 0.0102 \\
+\addlinespace[0.7pt]
+Triangular & 3 & 15 & 32 & 0 & $8.3\!\times\!10^{5}$ & 0 & $7.51\!\times\!10^{-8}$ & 0 & $2.12\!\times\!10^{-8}$ & 0 & $5.78\!\times\!10^{-10}$ \\
+\bottomrule
+\end{tabular*}\endgroup
+\end{table}

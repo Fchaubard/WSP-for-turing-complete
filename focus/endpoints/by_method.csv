@@ -1,0 +1,196 @@
+scope,group,method,split,settings,all_exact_settings,median_raw_rmse,median_train_loss
+all,all,xavier,train,87,0,,0.6826309872152367
+protocol,matched objective on eight existing graphs,xavier,train,69,0,,0.7918301701175454
+task,square,xavier,train,9,0,4.076644966870586,0.5257287786544059
+all,all,xavier,dev,87,0,,0.6826309872152367
+protocol,matched objective on eight existing graphs,xavier,dev,69,0,,0.7918301701175454
+task,square,xavier,dev,9,0,4.4016667227052,0.5257287786544059
+all,all,xavier,outer,87,0,,0.6826309872152367
+protocol,matched objective on eight existing graphs,xavier,outer,69,0,,0.7918301701175454
+task,square,xavier,outer,9,0,53.64167792848766,0.5257287786544059
+all,all,adam_bfgs,train,87,0,,0.0005337997384634903
+protocol,matched objective on eight existing graphs,adam_bfgs,train,69,0,,0.0012147703838432896
+task,square,adam_bfgs,train,9,0,0.4339089471508668,0.006542816746569112
+all,all,adam_bfgs,dev,87,0,,0.0005337997384634903
+protocol,matched objective on eight existing graphs,adam_bfgs,dev,69,0,,0.0012147703838432896
+task,square,adam_bfgs,dev,9,0,1.054435096602846,0.006542816746569112
+all,all,adam_bfgs,outer,87,0,,0.0005337997384634903
+protocol,matched objective on eight existing graphs,adam_bfgs,outer,69,0,,0.0012147703838432896
+task,square,adam_bfgs,outer,9,0,37.30459426138533,0.006542816746569112
+all,all,ls_xavier,train,87,2,,0.0003234611435852071
+protocol,matched objective on eight existing graphs,ls_xavier,train,69,2,,0.0007947829451056366
+task,square,ls_xavier,train,9,0,0.3468798444033506,0.0036305665435938292
+all,all,ls_xavier,dev,87,0,,0.0003234611435852071
+protocol,matched objective on eight existing graphs,ls_xavier,dev,69,0,,0.0007947829451056366
+task,square,ls_xavier,dev,9,0,0.9568840229602875,0.0036305665435938292
+all,all,ls_xavier,outer,87,0,,0.0003234611435852071
+protocol,matched objective on eight existing graphs,ls_xavier,outer,69,0,,0.0007947829451056366
+task,square,ls_xavier,outer,9,0,33.514608356735465,0.0036305665435938292
+task,sin,xavier,train,9,0,1.9966844294860038,1.9933743554759245
+task,sin,xavier,dev,9,0,2.0000006690141228,1.9933743554759245
+task,sin,xavier,outer,9,0,8.139873809189398,1.9933743554759245
+task,sin,adam_bfgs,train,9,0,0.03394200396065637,0.0005760298164326066
+task,sin,adam_bfgs,dev,9,0,0.16886825417632464,0.0005760298164326066
+task,sin,adam_bfgs,outer,9,0,2.356465651143032,0.0005760298164326066
+task,sin,ls_xavier,train,9,0,0.03394200396065633,0.000576029816432605
+task,sin,ls_xavier,dev,9,0,0.17133107056058178,0.000576029816432605
+task,sin,ls_xavier,outer,9,0,2.501925931078,0.000576029816432605
+task,selfpower,xavier,train,9,0,5.777078819916275,0.8127856918380529
+task,selfpower,xavier,dev,9,0,8.470506553073816,0.8127856918380529
+task,selfpower,xavier,outer,9,0,1582733585.0808535,0.8127856918380529
+task,selfpower,adam_bfgs,train,9,0,2.667123343671292,0.07672194850609355
+task,selfpower,adam_bfgs,dev,9,0,5.5893336406518985,0.07672194850609355
+task,selfpower,adam_bfgs,outer,9,0,1582733578.8506331,0.07672194850609355
+task,selfpower,ls_xavier,train,9,0,2.6671233536208128,0.07672194850609354
+task,selfpower,ls_xavier,dev,9,0,5.590833241349994,0.07672194850609354
+task,selfpower,ls_xavier,outer,9,0,1582733578.8657959,0.07672194850609354
+task,tanh,xavier,train,9,0,1.8694820710414266,1.7474816069726706
+task,tanh,xavier,dev,9,0,1.9525781689281498,1.7474816069726706
+task,tanh,xavier,outer,9,0,7.842280299717211,1.7474816069726706
+task,tanh,adam_bfgs,train,9,0,0.013542485498545937,9.169945673916348e-05
+task,tanh,adam_bfgs,dev,9,0,0.09228977916950404,9.169945673916348e-05
+task,tanh,adam_bfgs,outer,9,0,0.7406293417432278,9.169945673916348e-05
+task,tanh,ls_xavier,train,9,0,0.014629224161228983,0.00010700709977974291
+task,tanh,ls_xavier,dev,9,0,0.04268893706200028,0.00010700709977974291
+task,tanh,ls_xavier,outer,9,0,0.7005449732339741,0.00010700709977974291
+task,sum,xavier,train,6,0,3.134135246948839,0.623893418549434
+task,sum,xavier,dev,6,0,3.550767963921224,0.623893418549434
+task,sum,xavier,outer,6,0,13.814818302564507,0.623893418549434
+task,sum,adam_bfgs,train,6,0,3.0721028025411875e-15,1.153214848448814e-30
+task,sum,adam_bfgs,dev,6,0,3.762149751220524e-15,1.153214848448814e-30
+task,sum,adam_bfgs,outer,6,0,1.4769108447571348e-14,1.153214848448814e-30
+task,sum,ls_xavier,train,6,0,3.301282920716953e-16,1.1144041631699936e-32
+task,sum,ls_xavier,dev,6,0,4.814730520841882e-16,1.1144041631699936e-32
+task,sum,ls_xavier,outer,6,0,1.8951330789563882e-15,1.1144041631699936e-32
+task,sort,xavier,train,9,0,3.470270051824745,2.428333762517178
+task,sort,xavier,dev,9,0,3.5821209916449543,2.428333762517178
+task,sort,xavier,outer,9,0,13.976542991406518,2.428333762517178
+task,sort,adam_bfgs,train,9,0,0.19097437415670024,0.005306104694418975
+task,sort,adam_bfgs,dev,9,0,1.532454806057894,0.005306104694418975
+task,sort,adam_bfgs,outer,9,0,6.173288692387064,0.005306104694418975
+task,sort,ls_xavier,train,9,0,0.24966012465136386,0.008289271857002638
+task,sort,ls_xavier,dev,9,0,1.1812028548999358,0.008289271857002638
+task,sort,ls_xavier,outer,9,0,4.5693861061553385,0.008289271857002638
+task,fib,xavier,train,9,0,8.90674471909376,0.44334194036884544
+task,fib,xavier,dev,9,0,565597.7672709082,0.44334194036884544
+task,fib,xavier,outer,9,0,2385848181558.213,0.44334194036884544
+task,fib,adam_bfgs,train,9,0,4.9217619624019625e-14,3.967318501694401e-29
+task,fib,adam_bfgs,dev,9,0,2.9121924124452648e-08,3.967318501694401e-29
+task,fib,adam_bfgs,outer,9,0,0.2730833988628524,3.967318501694401e-29
+task,fib,ls_xavier,train,9,1,1.4004957888496364e-15,1.256546764824801e-32
+task,fib,ls_xavier,dev,9,0,1.0290758064385105e-09,1.256546764824801e-32
+task,fib,ls_xavier,outer,9,0,0.010197603033797681,1.256546764824801e-32
+task,tri,xavier,train,9,0,17.926374873705527,0.46311321108619047
+task,tri,xavier,dev,9,0,285.1084636965101,0.46311321108619047
+task,tri,xavier,outer,9,0,1323.3229008824728,0.46311321108619047
+task,tri,adam_bfgs,train,9,0,2.6833146035984473e-14,7.264042803014411e-30
+task,tri,adam_bfgs,dev,9,0,4.595812400418878e-09,7.264042803014411e-30
+task,tri,adam_bfgs,outer,9,0,2.608947747869904e-07,7.264042803014411e-30
+task,tri,ls_xavier,train,9,1,3.3660621292780283e-15,3.038876232496377e-32
+task,tri,ls_xavier,dev,9,0,6.677843933922772e-11,3.038876232496377e-32
+task,tri,ls_xavier,outer,9,0,3.131819100102349e-05,3.038876232496377e-32
+all,all,formula,train,87,30,,2.193665391708671e-31
+protocol,matched objective on eight existing graphs,formula,train,69,18,,1.30077151824205e-15
+task,square,formula,train,9,0,0.006636090984254625,1.2611130500597101e-05
+all,all,formula,dev,87,30,,2.193665391708671e-31
+protocol,matched objective on eight existing graphs,formula,dev,69,18,,1.30077151824205e-15
+task,square,formula,dev,9,0,0.38307129973905574,1.2611130500597101e-05
+all,all,formula,outer,87,30,,2.193665391708671e-31
+protocol,matched objective on eight existing graphs,formula,outer,69,18,,1.30077151824205e-15
+task,square,formula,outer,9,0,28.424912876384663,1.2611130500597101e-05
+all,all,examples,train,87,30,,4.0738077042911905e-31
+protocol,matched objective on eight existing graphs,examples,train,69,18,,3.1654148421793185e-14
+task,square,examples,train,9,0,0.006123543752353047,1.2610797252662672e-05
+all,all,examples,dev,87,30,,4.0738077042911905e-31
+protocol,matched objective on eight existing graphs,examples,dev,69,18,,3.1654148421793185e-14
+task,square,examples,dev,9,0,0.44096219991187496,1.2610797252662672e-05
+all,all,examples,outer,87,30,,4.0738077042911905e-31
+protocol,matched objective on eight existing graphs,examples,outer,69,18,,3.1654148421793185e-14
+task,square,examples,outer,9,0,28.40161089799677,1.2610797252662672e-05
+task,sin,formula,train,9,0,0.0023661045782922335,2.799225437707734e-06
+task,sin,formula,dev,9,0,0.09773450659066897,2.799225437707734e-06
+task,sin,formula,outer,9,0,2.601127743386626,2.799225437707734e-06
+task,sin,examples,train,9,0,0.0033396909774707144,5.576767912499647e-06
+task,sin,examples,dev,9,0,0.07657490420553649,5.576767912499647e-06
+task,sin,examples,outer,9,0,2.6011568758943704,5.576767912499647e-06
+task,selfpower,formula,train,9,0,0.008626825885036868,3.2740879415746207e-06
+task,selfpower,formula,dev,9,0,1.5863314918847007,3.2740879415746207e-06
+task,selfpower,formula,outer,9,0,1582733544.2876246,3.2740879415746207e-06
+task,selfpower,examples,train,9,0,0.00862682228735346,3.249717743214184e-06
+task,selfpower,examples,dev,9,0,1.2310125992476466,3.249717743214184e-06
+task,selfpower,examples,outer,9,0,1582733556.0329385,3.249717743214184e-06
+task,tanh,formula,train,9,0,0.0015138193770692322,1.1458245531951392e-06
+task,tanh,formula,dev,9,0,0.023574466169834312,1.1458245531951392e-06
+task,tanh,formula,outer,9,0,0.29838955205717976,1.1458245531951392e-06
+task,tanh,examples,train,9,0,0.0015138206191701662,1.1458264335123723e-06
+task,tanh,examples,dev,9,0,0.0235754603285971,1.1458264335123723e-06
+task,tanh,examples,outer,9,0,0.29837971351425374,1.1458264335123723e-06
+task,sum,formula,train,6,6,0.0,0.0
+task,sum,formula,dev,6,6,0.0,0.0
+task,sum,formula,outer,6,6,0.0,0.0
+task,sum,examples,train,6,6,0.0,0.0
+task,sum,examples,dev,6,6,0.0,0.0
+task,sum,examples,outer,6,6,0.0,0.0
+task,sort,formula,train,9,0,1.4332917616497527e-16,4.21997623085354e-33
+task,sort,formula,dev,9,0,1.1626530349664903e-16,4.21997623085354e-33
+task,sort,formula,outer,9,0,5.228169922230517e-16,4.21997623085354e-33
+task,sort,examples,train,9,0,1.4332917616497527e-16,4.21997623085354e-33
+task,sort,examples,dev,9,0,1.1626530349664903e-16,4.21997623085354e-33
+task,sort,examples,outer,9,0,5.228169922230517e-16,4.21997623085354e-33
+task,fib,formula,train,9,6,0.0,0.0
+task,fib,formula,dev,9,6,0.0,0.0
+task,fib,formula,outer,9,6,0.0,0.0
+task,fib,examples,train,9,6,0.0,0.0
+task,fib,examples,dev,9,6,0.0,0.0
+task,fib,examples,outer,9,6,0.0,0.0
+task,tri,formula,train,9,6,0.0,0.0
+task,tri,formula,dev,9,6,0.0,0.0
+task,tri,formula,outer,9,6,0.0,0.0
+task,tri,examples,train,9,6,0.0,0.0
+task,tri,examples,dev,9,6,0.0,0.0
+task,tri,examples,outer,9,6,0.0,0.0
+protocol,matched objective on new arithmetic graphs,formula,train,18,12,,0.0
+task,add,formula,train,9,6,0.0,0.0
+protocol,matched objective on new arithmetic graphs,formula,dev,18,12,,0.0
+task,add,formula,dev,9,6,0.0,0.0
+protocol,matched objective on new arithmetic graphs,formula,outer,18,12,,0.0
+task,add,formula,outer,9,6,0.0,0.0
+protocol,matched objective on new arithmetic graphs,examples,train,18,12,,0.0
+task,add,examples,train,9,6,0.0,0.0
+protocol,matched objective on new arithmetic graphs,examples,dev,18,12,,0.0
+task,add,examples,dev,9,6,0.0,0.0
+protocol,matched objective on new arithmetic graphs,examples,outer,18,12,,0.0
+task,add,examples,outer,9,6,0.0,0.0
+protocol,matched objective on new arithmetic graphs,adam_bfgs,train,18,0,,5.6603392273088514e-30
+task,add,adam_bfgs,train,9,0,1.6028029852621917e-14,2.7055370858193055e-29
+protocol,matched objective on new arithmetic graphs,adam_bfgs,dev,18,0,,5.6603392273088514e-30
+task,add,adam_bfgs,dev,9,0,0.3590920896068153,2.7055370858193055e-29
+protocol,matched objective on new arithmetic graphs,adam_bfgs,outer,18,0,,5.6603392273088514e-30
+task,add,adam_bfgs,outer,9,0,3.97167395507845,2.7055370858193055e-29
+protocol,matched objective on new arithmetic graphs,ls_xavier,train,18,0,,1.264436298807589e-32
+task,add,ls_xavier,train,9,0,2.7194799110210365e-16,1.917814656927003e-32
+protocol,matched objective on new arithmetic graphs,ls_xavier,dev,18,0,,1.264436298807589e-32
+task,add,ls_xavier,dev,9,0,0.291739900088731,1.917814656927003e-32
+protocol,matched objective on new arithmetic graphs,ls_xavier,outer,18,0,,1.264436298807589e-32
+task,add,ls_xavier,outer,9,0,4.54845408747637,1.917814656927003e-32
+protocol,matched objective on new arithmetic graphs,xavier,train,18,0,,0.5042317890622607
+task,add,xavier,train,9,0,2.60472754052848,0.5992273813142752
+protocol,matched objective on new arithmetic graphs,xavier,dev,18,0,,0.5042317890622607
+task,add,xavier,dev,9,0,3.1084192141373377,0.5992273813142752
+protocol,matched objective on new arithmetic graphs,xavier,outer,18,0,,0.5042317890622607
+task,add,xavier,outer,9,0,12.238967302431737,0.5992273813142752
+task,subtract,formula,train,9,6,0.0,0.0
+task,subtract,formula,dev,9,6,0.0,0.0
+task,subtract,formula,outer,9,6,0.0,0.0
+task,subtract,examples,train,9,6,0.0,0.0
+task,subtract,examples,dev,9,6,0.0,0.0
+task,subtract,examples,outer,9,6,0.0,0.0
+task,subtract,adam_bfgs,train,9,0,4.980353738283416e-15,5.030962200286367e-30
+task,subtract,adam_bfgs,dev,9,0,0.05228319385942553,5.030962200286367e-30
+task,subtract,adam_bfgs,outer,9,0,3.6440333906254585,5.030962200286367e-30
+task,subtract,ls_xavier,train,9,0,4.512593409410421e-16,8.94004186504197e-33
+task,subtract,ls_xavier,dev,9,0,6.732007643860627e-16,8.94004186504197e-33
+task,subtract,ls_xavier,outer,9,0,2.9137218358049004e-15,8.94004186504197e-33
+task,subtract,xavier,train,9,0,2.6582958640286054,0.47684749920736635
+task,subtract,xavier,dev,9,0,2.4222615905298253,0.47684749920736635
+task,subtract,xavier,outer,9,0,9.303192160194323,0.47684749920736635

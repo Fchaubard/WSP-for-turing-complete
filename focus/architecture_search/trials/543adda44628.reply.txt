@@ -1,0 +1,30 @@
+{
+  "family": "Parameter-free additive graph",
+  "inferred_rule": "y = x₀ + x₁.",
+  "construction_summary": "Select the two input coordinates and add them. This implementation stores no numerical coefficients and performs one binary64 addition. It requires no hidden layers or nonlinear activations and applies throughout the deployment domain.",
+  "certificate": "The take nodes return [x₀] and [x₁], so the output is [fl(x₀ + x₁)], where fl denotes binary64 rounding. The observed outputs agree with this rule to floating-point precision. The same identity holds for every input in [-10,10]²; the examples support, but do not uniquely determine, the inferred rule.",
+  "network": {
+    "kind": "graph",
+    "nodes": [
+      {
+        "name": "first",
+        "op": "take",
+        "source": "input",
+        "indices": [0]
+      },
+      {
+        "name": "second",
+        "op": "take",
+        "source": "input",
+        "indices": [1]
+      },
+      {
+        "name": "sum",
+        "op": "add",
+        "left": "first",
+        "right": "second"
+      }
+    ],
+    "output": "sum"
+  }
+}

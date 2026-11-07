@@ -1,0 +1,523 @@
+protocol,task,size,params,seed,method,split,split_description,n_examples,n_scalars,exact_count,exact_fraction,raw_rmse,train_loss,split_loss
+objective-matched iterative audit,square,1,5,164,iter_formula,train,observed,12,12,0,0.0,1.3597370260687727,0.027908608362155907,0.027908608362155907
+objective-matched iterative audit,square,1,5,164,iter_formula,dev,untouched original central test,2048,2048,0,0.0,1.2962404563888479,0.027908608362155907,0.034007596212936926
+objective-matched iterative audit,square,1,5,164,iter_formula,outer,original outer held-out,4096,4096,0,0.0,40.46095863112446,0.027908608362155907,0.23797663153149484
+objective-matched iterative audit,square,4,14,164,iter_formula,train,observed,12,12,0,0.0,0.1851887953206116,0.0012448092155803998,0.0012448092155803998
+objective-matched iterative audit,square,4,14,164,iter_formula,dev,untouched original central test,2048,2048,0,0.0,0.18798617202558043,0.0012448092155803998,0.0013205732452880154
+objective-matched iterative audit,square,4,14,164,iter_formula,outer,original outer held-out,4096,4096,0,0.0,29.643922818395826,0.0012448092155803998,0.1027045272665022
+objective-matched iterative audit,square,16,50,164,iter_formula,train,observed,12,12,0,0.0,0.01880422227691332,1.1828206286969326e-05,1.1828206286969326e-05
+objective-matched iterative audit,square,16,50,164,iter_formula,dev,untouched original central test,2048,2048,0,0.0,0.014793525558375086,1.1828206286969326e-05,9.89808937182914e-06
+objective-matched iterative audit,square,16,50,164,iter_formula,outer,original outer held-out,4096,4096,0,0.0,23.759791145783534,1.1828206286969326e-05,0.0586124179774917
+objective-matched iterative audit,square,1,5,164,iter_examples,train,observed,12,12,0,0.0,1.3597370260687727,0.027908608362155907,0.027908608362155907
+objective-matched iterative audit,square,1,5,164,iter_examples,dev,untouched original central test,2048,2048,0,0.0,1.2962404563888479,0.027908608362155907,0.034007596212936926
+objective-matched iterative audit,square,1,5,164,iter_examples,outer,original outer held-out,4096,4096,0,0.0,40.46095863112446,0.027908608362155907,0.23797663153149484
+objective-matched iterative audit,square,4,14,164,iter_examples,train,observed,12,12,0,0.0,0.18276329472218586,0.001368015413591605,0.001368015413591605
+objective-matched iterative audit,square,4,14,164,iter_examples,dev,untouched original central test,2048,2048,0,0.0,0.18850468006011306,0.001368015413591605,0.0013284038444173571
+objective-matched iterative audit,square,4,14,164,iter_examples,outer,original outer held-out,4096,4096,0,0.0,29.63525651460774,0.001368015413591605,0.1025948019267183
+objective-matched iterative audit,square,16,50,164,iter_examples,train,observed,12,12,0,0.0,0.01775345965542251,1.176550971847659e-05,1.176550971847659e-05
+objective-matched iterative audit,square,16,50,164,iter_examples,dev,untouched original central test,2048,2048,0,0.0,0.01471174558353382,1.176550971847659e-05,9.791845055340359e-06
+objective-matched iterative audit,square,16,50,164,iter_examples,outer,original outer held-out,4096,4096,0,0.0,23.958431303136692,1.176550971847659e-05,0.05984537256526172
+objective-matched iterative audit,square,1,5,317,iter_formula,train,observed,12,12,0,0.0,1.046092694126828,0.04155504248114399,0.04155504248114399
+objective-matched iterative audit,square,1,5,317,iter_formula,dev,untouched original central test,2048,2048,0,0.0,1.2956470833528362,0.04155504248114399,0.034069195908857874
+objective-matched iterative audit,square,1,5,317,iter_formula,outer,original outer held-out,4096,4096,0,0.0,40.45962948740252,0.04155504248114399,0.23794813252413582
+objective-matched iterative audit,square,4,14,317,iter_formula,train,observed,12,12,0,0.0,0.1414673388900543,0.001994042394783267,0.001994042394783267
+objective-matched iterative audit,square,4,14,317,iter_formula,dev,untouched original central test,2048,2048,0,0.0,0.1707681882001523,0.001994042394783267,0.0013434773322793213
+objective-matched iterative audit,square,4,14,317,iter_formula,outer,original outer held-out,4096,4096,0,0.0,29.21781158340559,0.001994042394783267,0.09892537267108426
+objective-matched iterative audit,square,16,50,317,iter_formula,train,observed,12,12,0,0.0,0.01437654653297815,1.2540730291879072e-05,1.2540730291879072e-05
+objective-matched iterative audit,square,16,50,317,iter_formula,dev,untouched original central test,2048,2048,0,0.0,0.013999318177328428,1.2540730291879072e-05,1.0769646856494197e-05
+objective-matched iterative audit,square,16,50,317,iter_formula,outer,original outer held-out,4096,4096,0,0.0,23.157155965727586,1.2540730291879072e-05,0.05499273967575504
+objective-matched iterative audit,square,1,5,317,iter_examples,train,observed,12,12,0,0.0,1.0663919396186576,0.039753782713461215,0.039753782713461215
+objective-matched iterative audit,square,1,5,317,iter_examples,dev,untouched original central test,2048,2048,0,0.0,1.3278289150640639,0.039753782713461215,0.033947655468013635
+objective-matched iterative audit,square,1,5,317,iter_examples,outer,original outer held-out,4096,4096,0,0.0,40.640270088790196,0.039753782713461215,0.2410066717552634
+objective-matched iterative audit,square,4,14,317,iter_examples,train,observed,12,12,0,0.0,0.142450358631756,0.001157710341118343,0.001157710341118343
+objective-matched iterative audit,square,4,14,317,iter_examples,dev,untouched original central test,2048,2048,0,0.0,0.19855612949454832,0.001157710341118343,0.0013427227625260815
+objective-matched iterative audit,square,4,14,317,iter_examples,outer,original outer held-out,4096,4096,0,0.0,29.877647302347505,0.001157710341118343,0.10476885142057883
+objective-matched iterative audit,square,16,50,317,iter_examples,train,observed,12,12,0,0.0,0.012097991907929649,1.1881021299318187e-05,1.1881021299318187e-05
+objective-matched iterative audit,square,16,50,317,iter_examples,dev,untouched original central test,2048,2048,0,0.0,0.014619035322833547,1.1881021299318187e-05,1.0123889930987529e-05
+objective-matched iterative audit,square,16,50,317,iter_examples,outer,original outer held-out,4096,4096,0,0.0,23.918199481409747,1.1881021299318187e-05,0.059598227783436944
+objective-matched iterative audit,square,1,5,583,iter_formula,train,observed,12,12,0,0.0,1.1999395597412317,0.028341755342889154,0.028341755342889154
+objective-matched iterative audit,square,1,5,583,iter_formula,dev,untouched original central test,2048,2048,0,0.0,1.3024530686590712,0.028341755342889154,0.03411600183794827
+objective-matched iterative audit,square,1,5,583,iter_formula,outer,original outer held-out,4096,4096,0,0.0,40.526528532178794,0.028341755342889154,0.23898190649460396
+objective-matched iterative audit,square,4,14,583,iter_formula,train,observed,12,12,0,0.0,0.23973388141117205,0.0017649994482057726,0.0017649994482057726
+objective-matched iterative audit,square,4,14,583,iter_formula,dev,untouched original central test,2048,2048,0,0.0,0.1949098900727777,0.0017649994482057726,0.0013149071239726385
+objective-matched iterative audit,square,4,14,583,iter_formula,outer,original outer held-out,4096,4096,0,0.0,29.770446342480458,0.0017649994482057726,0.1038848174122744
+objective-matched iterative audit,square,16,50,583,iter_formula,train,observed,12,12,0,0.0,0.014050935151757645,8.426279414985783e-06,8.426279414985783e-06
+objective-matched iterative audit,square,16,50,583,iter_formula,dev,untouched original central test,2048,2048,0,0.0,0.014055628751855792,8.426279414985783e-06,1.017188110184372e-05
+objective-matched iterative audit,square,16,50,583,iter_formula,outer,original outer held-out,4096,4096,0,0.0,23.780520507957053,8.426279414985783e-06,0.05874107438213045
+objective-matched iterative audit,square,1,5,583,iter_examples,train,observed,12,12,0,0.0,1.196938710481462,0.027596133574227213,0.027596133574227213
+objective-matched iterative audit,square,1,5,583,iter_examples,dev,untouched original central test,2048,2048,0,0.0,1.2996839931095836,0.027596133574227213,0.03403486599570603
+objective-matched iterative audit,square,1,5,583,iter_examples,outer,original outer held-out,4096,4096,0,0.0,40.49217693854812,0.027596133574227213,0.23846429699687388
+objective-matched iterative audit,square,4,14,583,iter_examples,train,observed,12,12,0,0.0,0.2214759593124953,0.0016146013246688868,0.0016146013246688868
+objective-matched iterative audit,square,4,14,583,iter_examples,dev,untouched original central test,2048,2048,0,0.0,0.1777778925544347,0.0016146013246688868,0.0013243115247988245
+objective-matched iterative audit,square,4,14,583,iter_examples,outer,original outer held-out,4096,4096,0,0.0,29.363985394824365,0.0016146013246688868,0.10026065165014966
+objective-matched iterative audit,square,16,50,583,iter_examples,train,observed,12,12,0,0.0,0.01399963777465727,1.4358607466215485e-05,1.4358607466215485e-05
+objective-matched iterative audit,square,16,50,583,iter_examples,dev,untouched original central test,2048,2048,0,0.0,0.014185101375407327,1.4358607466215485e-05,1.0360310814112372e-05
+objective-matched iterative audit,square,16,50,583,iter_examples,outer,original outer held-out,4096,4096,0,0.0,23.718640787484407,1.4358607466215485e-05,0.05835834065650991
+objective-matched iterative audit,sin,1,5,164,iter_formula,train,observed,12,12,0,0.0,0.2731122973760799,0.03729516348902014,0.03729516348902014
+objective-matched iterative audit,sin,1,5,164,iter_formula,dev,untouched original central test,2048,2048,0,0.0,0.33816074253087897,0.03729516348902014,0.057176343894517714
+objective-matched iterative audit,sin,1,5,164,iter_formula,outer,original outer held-out,4096,4096,0,0.0,3.029056941228664,0.03729516348902014,4.587592976602777
+objective-matched iterative audit,sin,4,14,164,iter_formula,train,observed,12,12,0,0.0,0.0303496626697863,0.0004605510120849101,0.0004605510120849101
+objective-matched iterative audit,sin,4,14,164,iter_formula,dev,untouched original central test,2048,2048,0,0.0,0.02816847071927118,0.0004605510120849101,0.0003967313713312188
+objective-matched iterative audit,sin,4,14,164,iter_formula,outer,original outer held-out,4096,4096,0,0.0,3.0842926693915262,0.0004605510120849101,4.756430635231153
+objective-matched iterative audit,sin,16,50,164,iter_formula,train,observed,12,12,0,0.0,0.0032368600861654656,5.2386316087055535e-06,5.2386316087055535e-06
+objective-matched iterative audit,sin,16,50,164,iter_formula,dev,untouched original central test,2048,2048,0,0.0,0.002678130701398306,5.2386316087055535e-06,3.5861920268860915e-06
+objective-matched iterative audit,sin,16,50,164,iter_formula,outer,original outer held-out,4096,4096,0,0.0,3.846983003734242,5.2386316087055535e-06,7.399639115510064
+objective-matched iterative audit,sin,1,5,164,iter_examples,train,observed,12,12,0,0.0,0.4206186678642706,0.0884600318779568,0.0884600318779568
+objective-matched iterative audit,sin,1,5,164,iter_examples,dev,untouched original central test,2048,2048,0,0.0,0.3442830223268136,0.0884600318779568,0.05926539973124262
+objective-matched iterative audit,sin,1,5,164,iter_examples,outer,original outer held-out,4096,4096,0,0.0,3.02977756608456,0.0884600318779568,4.589776049974639
+objective-matched iterative audit,sin,4,14,164,iter_examples,train,observed,12,12,0,0.0,0.030627550270005365,0.00046902341777085274,0.00046902341777085274
+objective-matched iterative audit,sin,4,14,164,iter_examples,dev,untouched original central test,2048,2048,0,0.0,0.02817946433033741,0.00046902341777085274,0.00039704110497237915
+objective-matched iterative audit,sin,4,14,164,iter_examples,outer,original outer held-out,4096,4096,0,0.0,3.0778179911213024,0.00046902341777085274,4.736481793234985
+objective-matched iterative audit,sin,16,50,164,iter_examples,train,observed,12,12,0,0.0,0.0027306840861559666,3.728317789192723e-06,3.728317789192723e-06
+objective-matched iterative audit,sin,16,50,164,iter_examples,dev,untouched original central test,2048,2048,0,0.0,0.002750712960635447,3.728317789192723e-06,3.7832108959039123e-06
+objective-matched iterative audit,sin,16,50,164,iter_examples,outer,original outer held-out,4096,4096,0,0.0,3.8533150623317405,3.728317789192723e-06,7.424018484796332
+objective-matched iterative audit,sin,1,5,317,iter_formula,train,observed,12,12,0,0.0,0.3438875912735366,0.0591293377159575,0.0591293377159575
+objective-matched iterative audit,sin,1,5,317,iter_formula,dev,untouched original central test,2048,2048,0,0.0,0.3438309737388845,0.0591293377159575,0.05910986925111475
+objective-matched iterative audit,sin,1,5,317,iter_formula,outer,original outer held-out,4096,4096,0,0.0,3.0514278957522096,0.0591293377159575,4.655606101487379
+objective-matched iterative audit,sin,4,14,317,iter_formula,train,observed,12,12,0,0.0,0.025767043689475327,0.00033197027024766524,0.00033197027024766524
+objective-matched iterative audit,sin,4,14,317,iter_formula,dev,untouched original central test,2048,2048,0,0.0,0.02817994211458358,0.00033197027024766524,0.00039705456879064066
+objective-matched iterative audit,sin,4,14,317,iter_formula,outer,original outer held-out,4096,4096,0,0.0,3.0798615247420824,0.00033197027024766524,4.742773505793313
+objective-matched iterative audit,sin,16,50,317,iter_formula,train,observed,12,12,0,0.0,0.002775450642060052,3.851563133255777e-06,3.851563133255777e-06
+objective-matched iterative audit,sin,16,50,317,iter_formula,dev,untouched original central test,2048,2048,0,0.0,0.0026768279644457343,3.851563133255777e-06,3.582703975619347e-06
+objective-matched iterative audit,sin,16,50,317,iter_formula,outer,original outer held-out,4096,4096,0,0.0,3.8466324527457125,3.851563133255777e-06,7.398290613258247
+objective-matched iterative audit,sin,1,5,317,iter_examples,train,observed,12,12,0,0.0,0.3256165301178246,0.05301306234298609,0.05301306234298609
+objective-matched iterative audit,sin,1,5,317,iter_examples,dev,untouched original central test,2048,2048,0,0.0,0.33843304093391113,0.05301306234298609,0.05726846159788716
+objective-matched iterative audit,sin,1,5,317,iter_examples,outer,original outer held-out,4096,4096,0,0.0,3.0536714473852267,0.05301306234298609,4.6624546542878935
+objective-matched iterative audit,sin,4,14,317,iter_examples,train,observed,12,12,0,0.0,0.02551084239212064,0.00032540153977780975,0.00032540153977780975
+objective-matched iterative audit,sin,4,14,317,iter_examples,dev,untouched original central test,2048,2048,0,0.0,0.028310238567397127,0.00032540153977780975,0.00040073480387146985
+objective-matched iterative audit,sin,4,14,317,iter_examples,outer,original outer held-out,4096,4096,0,0.0,3.0800411088403523,0.00032540153977780975,4.743326616073254
+objective-matched iterative audit,sin,16,50,317,iter_examples,train,observed,12,12,0,0.0,0.0031082215996536635,4.83052075627679e-06,4.83052075627679e-06
+objective-matched iterative audit,sin,16,50,317,iter_examples,dev,untouched original central test,2048,2048,0,0.0,0.0027344871410279062,4.83052075627679e-06,3.738709962223487e-06
+objective-matched iterative audit,sin,16,50,317,iter_examples,outer,original outer held-out,4096,4096,0,0.0,3.894831558574963,4.83052075627679e-06,7.584856434835739
+objective-matched iterative audit,sin,1,5,583,iter_formula,train,observed,12,12,0,0.0,0.3132177269727337,0.04905267224498298,0.04905267224498298
+objective-matched iterative audit,sin,1,5,583,iter_formula,dev,untouched original central test,2048,2048,0,0.0,0.3392269791978142,0.04905267224498298,0.05753747170783714
+objective-matched iterative audit,sin,1,5,583,iter_formula,outer,original outer held-out,4096,4096,0,0.0,2.988156370957713,0.04905267224498298,4.464539248647585
+objective-matched iterative audit,sin,4,14,583,iter_formula,train,observed,12,12,0,0.0,0.031761265494186716,0.000504388992896108,0.000504388992896108
+objective-matched iterative audit,sin,4,14,583,iter_formula,dev,untouched original central test,2048,2048,0,0.0,0.028269861187079137,0.000504388992896108,0.00039959252576836173
+objective-matched iterative audit,sin,4,14,583,iter_formula,outer,original outer held-out,4096,4096,0,0.0,3.1063926196431235,0.000504388992896108,4.824837553686633
+objective-matched iterative audit,sin,16,50,583,iter_formula,train,observed,12,12,0,0.0,0.0018701292202066672,1.748691650135399e-06,1.748691650135399e-06
+objective-matched iterative audit,sin,16,50,583,iter_formula,dev,untouched original central test,2048,2048,0,0.0,0.0027622492080554622,1.748691650135399e-06,3.815010343701513e-06
+objective-matched iterative audit,sin,16,50,583,iter_formula,outer,original outer held-out,4096,4096,0,0.0,3.8835883686087165,1.748691650135399e-06,7.541129308396457
+objective-matched iterative audit,sin,1,5,583,iter_examples,train,observed,12,12,0,0.0,0.3028551653235468,0.04586062558157642,0.04586062558157642
+objective-matched iterative audit,sin,1,5,583,iter_examples,dev,untouched original central test,2048,2048,0,0.0,0.3382569174289637,0.04586062558157642,0.05720887109427237
+objective-matched iterative audit,sin,1,5,583,iter_examples,outer,original outer held-out,4096,4096,0,0.0,3.024014540839891,0.04586062558157642,4.572331971605548
+objective-matched iterative audit,sin,4,14,583,iter_examples,train,observed,12,12,0,0.0,0.03152350991829919,0.0004968658387845537,0.0004968658387845537
+objective-matched iterative audit,sin,4,14,583,iter_examples,dev,untouched original central test,2048,2048,0,0.0,0.028213807460834482,0.0004968658387845537,0.0003980094657185197
+objective-matched iterative audit,sin,4,14,583,iter_examples,outer,original outer held-out,4096,4096,0,0.0,3.0966900447058476,0.0004968658387845537,4.794744616490153
+objective-matched iterative audit,sin,16,50,583,iter_examples,train,observed,12,12,0,0.0,0.002982078579798623,4.4463963280468855e-06,4.4463963280468855e-06
+objective-matched iterative audit,sin,16,50,583,iter_examples,dev,untouched original central test,2048,2048,0,0.0,0.0026875790749070014,4.4463963280468855e-06,3.6115406419389864e-06
+objective-matched iterative audit,sin,16,50,583,iter_examples,outer,original outer held-out,4096,4096,0,0.0,3.8233083433717994,4.4463963280468855e-06,7.308843344248208
+objective-matched iterative audit,selfpower,1,5,164,iter_formula,train,observed,12,12,0,0.0,0.5514102084458852,0.014136468966065747,0.014136468966065747
+objective-matched iterative audit,selfpower,1,5,164,iter_formula,dev,untouched original central test,2048,2048,0,0.0,1.8864687723588545,0.014136468966065747,0.01679764224510432
+objective-matched iterative audit,selfpower,1,5,164,iter_formula,outer,original outer held-out,2048,2048,0,0.0,1582733552.178193,0.014136468966065747,0.45731716882596335
+objective-matched iterative audit,selfpower,4,14,164,iter_formula,train,observed,12,12,0,0.0,0.20140690626715824,0.0004768969300675398,0.0004768969300675398
+objective-matched iterative audit,selfpower,4,14,164,iter_formula,dev,untouched original central test,2048,2048,0,0.0,0.3915060045318848,0.0004768969300675398,0.0008536077310768763
+objective-matched iterative audit,selfpower,4,14,164,iter_formula,outer,original outer held-out,2048,2048,0,0.0,1582733512.790943,0.0004768969300675398,0.43563160183096733
+objective-matched iterative audit,selfpower,16,50,164,iter_formula,train,observed,12,12,0,0.0,0.01459105577759107,4.174864724990188e-06,4.174864724990188e-06
+objective-matched iterative audit,selfpower,16,50,164,iter_formula,dev,untouched original central test,2048,2048,0,0.0,0.032419384720096506,4.174864724990188e-06,7.631170949926695e-06
+objective-matched iterative audit,selfpower,16,50,164,iter_formula,outer,original outer held-out,2048,2048,0,0.0,1582733475.4751964,4.174864724990188e-06,0.42348822941648906
+objective-matched iterative audit,selfpower,1,5,164,iter_examples,train,observed,12,12,0,0.0,0.5970212505744351,0.014592170856291671,0.014592170856291671
+objective-matched iterative audit,selfpower,1,5,164,iter_examples,dev,untouched original central test,2048,2048,0,0.0,2.0267167151288707,0.014592170856291671,0.016659298924950355
+objective-matched iterative audit,selfpower,1,5,164,iter_examples,outer,original outer held-out,2048,2048,0,0.0,1582733554.2608356,0.014592170856291671,0.4589164343824988
+objective-matched iterative audit,selfpower,4,14,164,iter_examples,train,observed,12,12,0,0.0,0.21905011163987992,0.0007384579013485162,0.0007384579013485162
+objective-matched iterative audit,selfpower,4,14,164,iter_examples,dev,untouched original central test,2048,2048,0,0.0,0.34577420646136914,0.0007384579013485162,0.000869217843031559
+objective-matched iterative audit,selfpower,4,14,164,iter_examples,outer,original outer held-out,2048,2048,0,0.0,1582733510.8090093,0.0007384579013485162,0.4347289729470729
+objective-matched iterative audit,selfpower,16,50,164,iter_examples,train,observed,12,12,0,0.0,0.0146851932310543,6.335028707521202e-06,6.335028707521202e-06
+objective-matched iterative audit,selfpower,16,50,164,iter_examples,dev,untouched original central test,2048,2048,0,0.0,0.02374654319206184,6.335028707521202e-06,8.176418568422646e-06
+objective-matched iterative audit,selfpower,16,50,164,iter_examples,outer,original outer held-out,2048,2048,0,0.0,1582733472.6247115,6.335028707521202e-06,0.42273748737835276
+objective-matched iterative audit,selfpower,1,5,317,iter_formula,train,observed,12,12,0,0.0,0.6538439023318027,0.01500597216428349,0.01500597216428349
+objective-matched iterative audit,selfpower,1,5,317,iter_formula,dev,untouched original central test,2048,2048,0,0.0,1.9213191681467003,0.01500597216428349,0.01671333013408046
+objective-matched iterative audit,selfpower,1,5,317,iter_formula,outer,original outer held-out,2048,2048,0,0.0,1582733552.586241,0.01500597216428349,0.4576742587541004
+objective-matched iterative audit,selfpower,4,14,317,iter_formula,train,observed,12,12,0,0.0,0.19190064736267393,0.0008700812603631422,0.0008700812603631422
+objective-matched iterative audit,selfpower,4,14,317,iter_formula,dev,untouched original central test,2048,2048,0,0.0,0.35146441057190053,0.0008700812603631422,0.0008679099419069682
+objective-matched iterative audit,selfpower,4,14,317,iter_formula,outer,original outer held-out,2048,2048,0,0.0,1582733510.811528,0.0008700812603631422,0.4347364953846822
+objective-matched iterative audit,selfpower,16,50,317,iter_formula,train,observed,12,12,0,0.0,0.054708527212420914,3.3325084178328455e-05,3.3325084178328455e-05
+objective-matched iterative audit,selfpower,16,50,317,iter_formula,dev,untouched original central test,2048,2048,0,0.0,0.0403420658980609,3.3325084178328455e-05,1.142537116445345e-05
+objective-matched iterative audit,selfpower,16,50,317,iter_formula,outer,original outer held-out,2048,2048,0,0.0,1582733478.7244763,3.3325084178328455e-05,0.42437556879709565
+objective-matched iterative audit,selfpower,1,5,317,iter_examples,train,observed,12,12,0,0.0,0.6480248284207161,0.014905754249590173,0.014905754249590173
+objective-matched iterative audit,selfpower,1,5,317,iter_examples,dev,untouched original central test,2048,2048,0,0.0,1.9168311687981519,0.014905754249590173,0.01676899974132183
+objective-matched iterative audit,selfpower,1,5,317,iter_examples,outer,original outer held-out,2048,2048,0,0.0,1582733552.4868057,0.014905754249590173,0.4576106785108229
+objective-matched iterative audit,selfpower,4,14,317,iter_examples,train,observed,12,12,0,0.0,0.2097082145147849,0.0007134443256203724,0.0007134443256203724
+objective-matched iterative audit,selfpower,4,14,317,iter_examples,dev,untouched original central test,2048,2048,0,0.0,0.3929056146470875,0.0007134443256203724,0.0008672275242709434
+objective-matched iterative audit,selfpower,4,14,317,iter_examples,outer,original outer held-out,2048,2048,0,0.0,1582733513.6109595,0.0007134443256203724,0.4358499104723271
+objective-matched iterative audit,selfpower,16,50,317,iter_examples,train,observed,12,12,0,0.0,0.030241303682163934,7.186139355225092e-06,7.186139355225092e-06
+objective-matched iterative audit,selfpower,16,50,317,iter_examples,dev,untouched original central test,2048,2048,0,0.0,0.041705272636760556,7.186139355225092e-06,1.3576914052551956e-05
+objective-matched iterative audit,selfpower,16,50,317,iter_examples,outer,original outer held-out,2048,2048,0,0.0,1582733475.1859806,7.186139355225092e-06,0.42339040119058724
+objective-matched iterative audit,selfpower,1,5,583,iter_formula,train,observed,12,12,0,0.0,0.6098074668771376,0.011921893196362126,0.011921893196362126
+objective-matched iterative audit,selfpower,1,5,583,iter_formula,dev,untouched original central test,2048,2048,0,0.0,2.398715995580234,0.011921893196362126,0.017203048907466538
+objective-matched iterative audit,selfpower,1,5,583,iter_formula,outer,original outer held-out,2048,2048,0,0.0,1582733558.3852444,0.011921893196362126,0.4626614002220571
+objective-matched iterative audit,selfpower,4,14,583,iter_formula,train,observed,12,12,0,0.0,0.31944672546522995,0.0014365723246850014,0.0014365723246850014
+objective-matched iterative audit,selfpower,4,14,583,iter_formula,dev,untouched original central test,2048,2048,0,0.0,0.3833297023665549,0.0014365723246850014,0.0008473317174139333
+objective-matched iterative audit,selfpower,4,14,583,iter_formula,outer,original outer held-out,2048,2048,0,0.0,1582733513.0406575,0.0014365723246850014,0.4356510176538144
+objective-matched iterative audit,selfpower,16,50,583,iter_formula,train,observed,12,12,0,0.0,0.021261654892759066,8.07901495333164e-06,8.07901495333164e-06
+objective-matched iterative audit,selfpower,16,50,583,iter_formula,dev,untouched original central test,2048,2048,0,0.0,0.03331036595164433,8.07901495333164e-06,1.0448083893933842e-05
+objective-matched iterative audit,selfpower,16,50,583,iter_formula,outer,original outer held-out,2048,2048,0,0.0,1582733476.876033,8.07901495333164e-06,0.42386705507211353
+objective-matched iterative audit,selfpower,1,5,583,iter_examples,train,observed,12,12,0,0.0,0.4310388505698609,0.00983623508433725,0.00983623508433725
+objective-matched iterative audit,selfpower,1,5,583,iter_examples,dev,untouched original central test,2048,2048,0,0.0,2.151051183393702,0.00983623508433725,0.016848068186861038
+objective-matched iterative audit,selfpower,1,5,583,iter_examples,outer,original outer held-out,2048,2048,0,0.0,1582733555.4391992,0.00983623508433725,0.4600902977836415
+objective-matched iterative audit,selfpower,4,14,583,iter_examples,train,observed,12,12,0,0.0,0.2939626708636093,0.0010231699282514598,0.0010231699282514598
+objective-matched iterative audit,selfpower,4,14,583,iter_examples,dev,untouched original central test,2048,2048,0,0.0,0.40450964534631373,0.0010231699282514598,0.00087114468732012
+objective-matched iterative audit,selfpower,4,14,583,iter_examples,outer,original outer held-out,2048,2048,0,0.0,1582733514.686914,0.0010231699282514598,0.4362812013857186
+objective-matched iterative audit,selfpower,16,50,583,iter_examples,train,observed,12,12,0,0.0,0.013263052496430826,9.82249413964553e-06,9.82249413964553e-06
+objective-matched iterative audit,selfpower,16,50,583,iter_examples,dev,untouched original central test,2048,2048,0,0.0,0.03660417997923454,9.82249413964553e-06,1.027949260343013e-05
+objective-matched iterative audit,selfpower,16,50,583,iter_examples,outer,original outer held-out,2048,2048,0,0.0,1582733477.5485086,9.82249413964553e-06,0.4240499532289428
+objective-matched iterative audit,tanh,1,5,164,iter_formula,train,observed,12,12,0,0.0,0.15263573139699094,0.01164883324954718,0.01164883324954718
+objective-matched iterative audit,tanh,1,5,164,iter_formula,dev,untouched original central test,2048,2048,0,0.0,0.1877777815678087,0.01164883324954718,0.01763024762526384
+objective-matched iterative audit,tanh,1,5,164,iter_formula,outer,original outer held-out,4096,4096,0,0.0,1.7144675902645188,0.01164883324954718,1.4696995590337125
+objective-matched iterative audit,tanh,4,14,164,iter_formula,train,observed,12,12,0,0.0,0.010591028763361843,5.608494513317895e-05,5.608494513317895e-05
+objective-matched iterative audit,tanh,4,14,164,iter_formula,dev,untouched original central test,2048,2048,0,0.0,0.011870984008401227,5.608494513317895e-05,7.046013066385883e-05
+objective-matched iterative audit,tanh,4,14,164,iter_formula,outer,original outer held-out,4096,4096,0,0.0,0.2334661832673672,5.608494513317895e-05,0.027253229364715942
+objective-matched iterative audit,tanh,16,50,164,iter_formula,train,observed,12,12,0,0.0,0.0009576895018127703,4.585845909411961e-07,4.585845909411961e-07
+objective-matched iterative audit,tanh,16,50,164,iter_formula,dev,untouched original central test,2048,2048,0,0.0,0.0011126918141268448,4.585845909411961e-07,6.190415366124444e-07
+objective-matched iterative audit,tanh,16,50,164,iter_formula,outer,original outer held-out,4096,4096,0,0.0,0.07811460360703541,4.585845909411961e-07,0.0030509456483421345
+objective-matched iterative audit,tanh,1,5,164,iter_examples,train,observed,12,12,0,0.0,0.15217487339904245,0.011578596047007296,0.011578596047007296
+objective-matched iterative audit,tanh,1,5,164,iter_examples,dev,untouched original central test,2048,2048,0,0.0,0.18767234367334465,0.011578596047007296,0.017610454289922996
+objective-matched iterative audit,tanh,1,5,164,iter_examples,outer,original outer held-out,4096,4096,0,0.0,1.719040562696127,0.011578596047007296,1.4775502280973085
+objective-matched iterative audit,tanh,4,14,164,iter_examples,train,observed,12,12,0,0.0,0.010788803398771604,5.8199139388672855e-05,5.8199139388672855e-05
+objective-matched iterative audit,tanh,4,14,164,iter_examples,dev,untouched original central test,2048,2048,0,0.0,0.011752353861882626,5.8199139388672855e-05,6.905891064745373e-05
+objective-matched iterative audit,tanh,4,14,164,iter_examples,outer,original outer held-out,4096,4096,0,0.0,0.23498249719012368,5.8199139388672855e-05,0.02760838699285324
+objective-matched iterative audit,tanh,16,50,164,iter_examples,train,observed,12,12,0,0.0,0.0010560906982072138,5.576637814199002e-07,5.576637814199002e-07
+objective-matched iterative audit,tanh,16,50,164,iter_examples,dev,untouched original central test,2048,2048,0,0.0,0.0011371622894768814,5.576637814199002e-07,6.465690363041514e-07
+objective-matched iterative audit,tanh,16,50,164,iter_examples,outer,original outer held-out,4096,4096,0,0.0,0.07692117332342352,5.576637814199002e-07,0.0029584334527260805
+objective-matched iterative audit,tanh,1,5,317,iter_formula,train,observed,12,12,0,0.0,0.1870993454154795,0.017503082527450458,0.017503082527450458
+objective-matched iterative audit,tanh,1,5,317,iter_formula,dev,untouched original central test,2048,2048,0,0.0,0.1914161085963998,0.017503082527450458,0.01832006331509436
+objective-matched iterative audit,tanh,1,5,317,iter_formula,outer,original outer held-out,4096,4096,0,0.0,1.7179975383344759,0.017503082527450458,1.4757577708616594
+objective-matched iterative audit,tanh,4,14,317,iter_formula,train,observed,12,12,0,0.0,0.013808254939132441,9.533395223203772e-05,9.533395223203772e-05
+objective-matched iterative audit,tanh,4,14,317,iter_formula,dev,untouched original central test,2048,2048,0,0.0,0.012005916815535278,9.533395223203772e-05,7.207101929077638e-05
+objective-matched iterative audit,tanh,4,14,317,iter_formula,outer,original outer held-out,4096,4096,0,0.0,0.20333231060253346,9.533395223203772e-05,0.020672014267482577
+objective-matched iterative audit,tanh,16,50,317,iter_formula,train,observed,12,12,0,0.0,0.0016192791000666491,1.3110324019563283e-06,1.3110324019563283e-06
+objective-matched iterative audit,tanh,16,50,317,iter_formula,dev,untouched original central test,2048,2048,0,0.0,0.0011573941542401896,1.3110324019563283e-06,6.69780614134682e-07
+objective-matched iterative audit,tanh,16,50,317,iter_formula,outer,original outer held-out,4096,4096,0,0.0,0.07673655764397096,1.3110324019563283e-06,0.0029442496395232394
+objective-matched iterative audit,tanh,1,5,317,iter_examples,train,observed,12,12,0,0.0,0.2041636470535178,0.020841397389096697,0.020841397389096697
+objective-matched iterative audit,tanh,1,5,317,iter_examples,dev,untouched original central test,2048,2048,0,0.0,0.18765644803203868,0.020841397389096697,0.01760747124400061
+objective-matched iterative audit,tanh,1,5,317,iter_examples,outer,original outer held-out,4096,4096,0,0.0,1.7207435725255027,0.020841397389096697,1.4804792211939148
+objective-matched iterative audit,tanh,4,14,317,iter_examples,train,observed,12,12,0,0.0,0.011095231543673312,6.155208150386163e-05,6.155208150386163e-05
+objective-matched iterative audit,tanh,4,14,317,iter_examples,dev,untouched original central test,2048,2048,0,0.0,0.01187598083804303,6.155208150386163e-05,7.051946043278262e-05
+objective-matched iterative audit,tanh,4,14,317,iter_examples,outer,original outer held-out,4096,4096,0,0.0,0.2367191864645066,6.155208150386163e-05,0.028017986620208924
+objective-matched iterative audit,tanh,16,50,317,iter_examples,train,observed,12,12,0,0.0,0.0010222627231989097,5.225105376210252e-07,5.225105376210252e-07
+objective-matched iterative audit,tanh,16,50,317,iter_examples,dev,untouched original central test,2048,2048,0,0.0,0.0011624897833138108,5.225105376210252e-07,6.756912481544954e-07
+objective-matched iterative audit,tanh,16,50,317,iter_examples,outer,original outer held-out,4096,4096,0,0.0,0.08817044379326185,5.225105376210252e-07,0.0038870135793503736
+objective-matched iterative audit,tanh,1,5,583,iter_formula,train,observed,12,12,0,0.0,0.1923752296294367,0.018504114487489256,0.018504114487489256
+objective-matched iterative audit,tanh,1,5,583,iter_formula,dev,untouched original central test,2048,2048,0,0.0,0.18808478521154207,0.018504114487489256,0.017687943214035957
+objective-matched iterative audit,tanh,1,5,583,iter_formula,outer,original outer held-out,4096,4096,0,0.0,1.6952685491151764,0.018504114487489256,1.4369677268095375
+objective-matched iterative audit,tanh,4,14,583,iter_formula,train,observed,12,12,0,0.0,0.013608646543621476,9.259763037461042e-05,9.259763037461042e-05
+objective-matched iterative audit,tanh,4,14,583,iter_formula,dev,untouched original central test,2048,2048,0,0.0,0.011740957257480193,9.259763037461042e-05,6.892503866098841e-05
+objective-matched iterative audit,tanh,4,14,583,iter_formula,outer,original outer held-out,4096,4096,0,0.0,0.22695832647430156,9.259763037461042e-05,0.025755040978007827
+objective-matched iterative audit,tanh,16,50,583,iter_formula,train,observed,12,12,0,0.0,0.0013243979515177348,8.770149669921861e-07,8.770149669921861e-07
+objective-matched iterative audit,tanh,16,50,583,iter_formula,dev,untouched original central test,2048,2048,0,0.0,0.0011761193175065985,8.770149669921861e-07,6.916283245060934e-07
+objective-matched iterative audit,tanh,16,50,583,iter_formula,outer,original outer held-out,4096,4096,0,0.0,0.07851155611599848,8.770149669921861e-07,0.003082032221877789
+objective-matched iterative audit,tanh,1,5,583,iter_examples,train,observed,12,12,0,0.0,0.20114964752704018,0.02023059035012625,0.02023059035012625
+objective-matched iterative audit,tanh,1,5,583,iter_examples,dev,untouched original central test,2048,2048,0,0.0,0.19147513650494427,0.02023059035012625,0.01833136394979352
+objective-matched iterative audit,tanh,1,5,583,iter_examples,outer,original outer held-out,4096,4096,0,0.0,1.7084948504962938,0.02023059035012625,1.4594773270861763
+objective-matched iterative audit,tanh,4,14,583,iter_examples,train,observed,12,12,0,0.0,0.013505612212161996,9.120078061264964e-05,9.120078061264964e-05
+objective-matched iterative audit,tanh,4,14,583,iter_examples,dev,untouched original central test,2048,2048,0,0.0,0.011777338633855626,9.120078061264964e-05,6.935285264825416e-05
+objective-matched iterative audit,tanh,4,14,583,iter_examples,outer,original outer held-out,4096,4096,0,0.0,0.222774719140256,9.120078061264964e-05,0.02481428774400997
+objective-matched iterative audit,tanh,16,50,583,iter_examples,train,observed,12,12,0,0.0,0.0013127287845846277,8.616284309385172e-07,8.616284309385172e-07
+objective-matched iterative audit,tanh,16,50,583,iter_examples,dev,untouched original central test,2048,2048,0,0.0,0.0011405154016694468,8.616284309385172e-07,6.503876907226097e-07
+objective-matched iterative audit,tanh,16,50,583,iter_examples,outer,original outer held-out,4096,4096,0,0.0,0.07041476060384355,8.616284309385172e-07,0.002479119255448299
+objective-matched iterative audit,sum,1,3,164,iter_formula,train,observed,12,72,12,1.0,0.0,0.0,0.0
+objective-matched iterative audit,sum,1,3,164,iter_formula,dev,untouched original central test,2048,12288,2048,1.0,0.0,0.0,0.0
+objective-matched iterative audit,sum,1,3,164,iter_formula,outer,original outer held-out,2048,12288,2048,1.0,0.0,0.0,0.0
+objective-matched iterative audit,sum,2,8,164,iter_formula,train,observed,12,72,12,1.0,0.0,0.0,0.0
+objective-matched iterative audit,sum,2,8,164,iter_formula,dev,untouched original central test,2048,12288,2048,1.0,0.0,0.0,0.0
+objective-matched iterative audit,sum,2,8,164,iter_formula,outer,original outer held-out,2048,12288,2048,1.0,0.0,0.0,0.0
+objective-matched iterative audit,sum,1,3,164,iter_examples,train,observed,12,72,12,1.0,0.0,0.0,0.0
+objective-matched iterative audit,sum,1,3,164,iter_examples,dev,untouched original central test,2048,12288,2048,1.0,0.0,0.0,0.0
+objective-matched iterative audit,sum,1,3,164,iter_examples,outer,original outer held-out,2048,12288,2048,1.0,0.0,0.0,0.0
+objective-matched iterative audit,sum,2,8,164,iter_examples,train,observed,12,72,12,1.0,0.0,0.0,0.0
+objective-matched iterative audit,sum,2,8,164,iter_examples,dev,untouched original central test,2048,12288,2048,1.0,0.0,0.0,0.0
+objective-matched iterative audit,sum,2,8,164,iter_examples,outer,original outer held-out,2048,12288,2048,1.0,0.0,0.0,0.0
+objective-matched iterative audit,sum,1,3,317,iter_formula,train,observed,12,72,12,1.0,0.0,0.0,0.0
+objective-matched iterative audit,sum,1,3,317,iter_formula,dev,untouched original central test,2048,12288,2048,1.0,0.0,0.0,0.0
+objective-matched iterative audit,sum,1,3,317,iter_formula,outer,original outer held-out,2048,12288,2048,1.0,0.0,0.0,0.0
+objective-matched iterative audit,sum,2,8,317,iter_formula,train,observed,12,72,12,1.0,0.0,0.0,0.0
+objective-matched iterative audit,sum,2,8,317,iter_formula,dev,untouched original central test,2048,12288,2048,1.0,0.0,0.0,0.0
+objective-matched iterative audit,sum,2,8,317,iter_formula,outer,original outer held-out,2048,12288,2048,1.0,0.0,0.0,0.0
+objective-matched iterative audit,sum,1,3,317,iter_examples,train,observed,12,72,12,1.0,0.0,0.0,0.0
+objective-matched iterative audit,sum,1,3,317,iter_examples,dev,untouched original central test,2048,12288,2048,1.0,0.0,0.0,0.0
+objective-matched iterative audit,sum,1,3,317,iter_examples,outer,original outer held-out,2048,12288,2048,1.0,0.0,0.0,0.0
+objective-matched iterative audit,sum,2,8,317,iter_examples,train,observed,12,72,12,1.0,0.0,0.0,0.0
+objective-matched iterative audit,sum,2,8,317,iter_examples,dev,untouched original central test,2048,12288,2048,1.0,0.0,0.0,0.0
+objective-matched iterative audit,sum,2,8,317,iter_examples,outer,original outer held-out,2048,12288,2048,1.0,0.0,0.0,0.0
+objective-matched iterative audit,sum,1,3,583,iter_formula,train,observed,12,72,12,1.0,0.0,0.0,0.0
+objective-matched iterative audit,sum,1,3,583,iter_formula,dev,untouched original central test,2048,12288,2048,1.0,0.0,0.0,0.0
+objective-matched iterative audit,sum,1,3,583,iter_formula,outer,original outer held-out,2048,12288,2048,1.0,0.0,0.0,0.0
+objective-matched iterative audit,sum,2,8,583,iter_formula,train,observed,12,72,12,1.0,0.0,0.0,0.0
+objective-matched iterative audit,sum,2,8,583,iter_formula,dev,untouched original central test,2048,12288,2048,1.0,0.0,0.0,0.0
+objective-matched iterative audit,sum,2,8,583,iter_formula,outer,original outer held-out,2048,12288,2048,1.0,0.0,0.0,0.0
+objective-matched iterative audit,sum,1,3,583,iter_examples,train,observed,12,72,12,1.0,0.0,0.0,0.0
+objective-matched iterative audit,sum,1,3,583,iter_examples,dev,untouched original central test,2048,12288,2048,1.0,0.0,0.0,0.0
+objective-matched iterative audit,sum,1,3,583,iter_examples,outer,original outer held-out,2048,12288,2048,1.0,0.0,0.0,0.0
+objective-matched iterative audit,sum,2,8,583,iter_examples,train,observed,12,72,12,1.0,0.0,0.0,0.0
+objective-matched iterative audit,sum,2,8,583,iter_examples,dev,untouched original central test,2048,12288,2048,1.0,0.0,0.0,0.0
+objective-matched iterative audit,sum,2,8,583,iter_examples,outer,original outer held-out,2048,12288,2048,1.0,0.0,0.0,0.0
+objective-matched iterative audit,sort,4,32,164,iter_formula,train,observed,12,48,1,0.08333333333333333,0.47245767907700015,0.07139629152417427,0.07139629152417427
+objective-matched iterative audit,sort,4,32,164,iter_formula,dev,untouched original central test,2048,8192,207,0.10107421875,0.5014331046204815,0.07139629152417427,0.07312135407271547
+objective-matched iterative audit,sort,4,32,164,iter_formula,outer,original outer held-out,2048,8192,200,0.09765625,2.101696159361525,0.07139629152417427,0.08594653195493718
+objective-matched iterative audit,sort,5,40,164,iter_formula,train,observed,12,48,7,0.5833333333333334,1.199177923332954e-16,2.9204028517323677e-33,2.9204028517323677e-33
+objective-matched iterative audit,sort,5,40,164,iter_formula,dev,untouched original central test,2048,8192,1335,0.65185546875,1.1475428530014783e-16,2.9204028517323677e-33,2.8636592607885866e-33
+objective-matched iterative audit,sort,5,40,164,iter_formula,outer,original outer held-out,2048,8192,1096,0.53515625,5.228169922230517e-16,2.9204028517323677e-33,3.694686075649114e-33
+objective-matched iterative audit,sort,6,48,164,iter_formula,train,observed,12,48,6,0.5,1.3970000036909087e-16,3.456132809558882e-33,3.456132809558882e-33
+objective-matched iterative audit,sort,6,48,164,iter_formula,dev,untouched original central test,2048,8192,1334,0.6513671875,1.166012937370707e-16,3.456132809558882e-33,2.731053315725609e-33
+objective-matched iterative audit,sort,6,48,164,iter_formula,outer,original outer held-out,2048,8192,1098,0.5361328125,4.984666858981233e-16,3.456132809558882e-33,3.4851652193981953e-33
+objective-matched iterative audit,sort,4,32,164,iter_examples,train,observed,12,48,1,0.08333333333333333,0.4876101148026542,0.07608259654660902,0.07608259654660902
+objective-matched iterative audit,sort,4,32,164,iter_examples,dev,untouched original central test,2048,8192,207,0.10107421875,0.5030090598240307,0.07608259654660902,0.07293962455384143
+objective-matched iterative audit,sort,4,32,164,iter_examples,outer,original outer held-out,2048,8192,200,0.09765625,2.1090053578534795,0.07608259654660902,0.08646385430208985
+objective-matched iterative audit,sort,5,40,164,iter_examples,train,observed,12,48,9,0.75,1.0629576194313574e-16,2.650129561199539e-33,2.650129561199539e-33
+objective-matched iterative audit,sort,5,40,164,iter_examples,dev,untouched original central test,2048,8192,1286,0.6279296875,1.1626530349664903e-16,2.650129561199539e-33,2.959133672648801e-33
+objective-matched iterative audit,sort,5,40,164,iter_examples,outer,original outer held-out,2048,8192,1091,0.53271484375,4.938084700404894e-16,2.650129561199539e-33,3.421206673181697e-33
+objective-matched iterative audit,sort,6,48,164,iter_examples,train,observed,12,48,9,0.75,1.0629576194313574e-16,2.650129561199539e-33,2.650129561199539e-33
+objective-matched iterative audit,sort,6,48,164,iter_examples,dev,untouched original central test,2048,8192,1286,0.6279296875,1.1626530349664903e-16,2.650129561199539e-33,2.959133672648801e-33
+objective-matched iterative audit,sort,6,48,164,iter_examples,outer,original outer held-out,2048,8192,1091,0.53271484375,4.938084700404894e-16,2.650129561199539e-33,3.421206673181697e-33
+objective-matched iterative audit,sort,4,32,317,iter_formula,train,observed,12,48,1,0.08333333333333333,0.30737520178615446,0.03242758101488751,0.03242758101488751
+objective-matched iterative audit,sort,4,32,317,iter_formula,dev,untouched original central test,2048,8192,94,0.0458984375,0.4952376349450953,0.03242758101488751,0.06922409208317758
+objective-matched iterative audit,sort,4,32,317,iter_formula,outer,original outer held-out,2048,8192,84,0.041015625,2.076582612826374,0.03242758101488751,0.08004069216636164
+objective-matched iterative audit,sort,5,40,317,iter_formula,train,observed,12,48,6,0.5,1.4332917616497527e-16,4.21997623085354e-33,4.21997623085354e-33
+objective-matched iterative audit,sort,5,40,317,iter_formula,dev,untouched original central test,2048,8192,1286,0.6279296875,1.1626530349664903e-16,4.21997623085354e-33,2.959133672648801e-33
+objective-matched iterative audit,sort,5,40,317,iter_formula,outer,original outer held-out,2048,8192,1091,0.53271484375,4.938084700404894e-16,4.21997623085354e-33,3.421206673181697e-33
+objective-matched iterative audit,sort,6,48,317,iter_formula,train,observed,12,48,6,0.5,1.4332917616497527e-16,4.21997623085354e-33,4.21997623085354e-33
+objective-matched iterative audit,sort,6,48,317,iter_formula,dev,untouched original central test,2048,8192,1286,0.6279296875,1.1626530349664903e-16,4.21997623085354e-33,2.959133672648801e-33
+objective-matched iterative audit,sort,6,48,317,iter_formula,outer,original outer held-out,2048,8192,1091,0.53271484375,4.938084700404894e-16,4.21997623085354e-33,3.421206673181697e-33
+objective-matched iterative audit,sort,4,32,317,iter_examples,train,observed,12,48,1,0.08333333333333333,0.20768515509070815,0.016562483209581726,0.016562483209581726
+objective-matched iterative audit,sort,4,32,317,iter_examples,dev,untouched original central test,2048,8192,207,0.10107421875,0.5624893314538815,0.016562483209581726,0.09507393330471073
+objective-matched iterative audit,sort,4,32,317,iter_examples,outer,original outer held-out,2048,8192,200,0.09765625,2.2728274232765537,0.016562483209581726,0.10007043283285724
+objective-matched iterative audit,sort,5,40,317,iter_examples,train,observed,12,48,6,0.5,1.4332917616497527e-16,4.21997623085354e-33,4.21997623085354e-33
+objective-matched iterative audit,sort,5,40,317,iter_examples,dev,untouched original central test,2048,8192,1286,0.6279296875,1.1626530349664903e-16,4.21997623085354e-33,2.959133672648801e-33
+objective-matched iterative audit,sort,5,40,317,iter_examples,outer,original outer held-out,2048,8192,1091,0.53271484375,4.938084700404894e-16,4.21997623085354e-33,3.421206673181697e-33
+objective-matched iterative audit,sort,6,48,317,iter_examples,train,observed,12,48,6,0.5,1.4332917616497527e-16,4.21997623085354e-33,4.21997623085354e-33
+objective-matched iterative audit,sort,6,48,317,iter_examples,dev,untouched original central test,2048,8192,1286,0.6279296875,1.1626530349664903e-16,4.21997623085354e-33,2.959133672648801e-33
+objective-matched iterative audit,sort,6,48,317,iter_examples,outer,original outer held-out,2048,8192,1091,0.53271484375,4.938084700404894e-16,4.21997623085354e-33,3.421206673181697e-33
+objective-matched iterative audit,sort,4,32,583,iter_formula,train,observed,12,48,0,0.0,0.7147758160245045,0.11420814282101581,0.11420814282101581
+objective-matched iterative audit,sort,4,32,583,iter_formula,dev,untouched original central test,2048,8192,100,0.048828125,0.5012440176888708,0.11420814282101581,0.07025746129131298
+objective-matched iterative audit,sort,4,32,583,iter_formula,outer,original outer held-out,2048,8192,95,0.04638671875,2.089439405157922,0.11420814282101581,0.08155272760299581
+objective-matched iterative audit,sort,5,40,583,iter_formula,train,observed,12,48,5,0.4166666666666667,1.2412670766236366e-16,4.136460703567035e-33,4.136460703567035e-33
+objective-matched iterative audit,sort,5,40,583,iter_formula,dev,untouched original central test,2048,8192,1335,0.65185546875,1.1475428530014783e-16,4.136460703567035e-33,2.8636592607885866e-33
+objective-matched iterative audit,sort,5,40,583,iter_formula,outer,original outer held-out,2048,8192,1096,0.53515625,5.228169922230517e-16,4.136460703567035e-33,3.694686075649114e-33
+objective-matched iterative audit,sort,6,48,583,iter_formula,train,observed,12,48,5,0.4166666666666667,1.2412670766236366e-16,4.136460703567035e-33,4.136460703567035e-33
+objective-matched iterative audit,sort,6,48,583,iter_formula,dev,untouched original central test,2048,8192,1335,0.65185546875,1.1475428530014783e-16,4.136460703567035e-33,2.8636592607885866e-33
+objective-matched iterative audit,sort,6,48,583,iter_formula,outer,original outer held-out,2048,8192,1096,0.53515625,5.228169922230517e-16,4.136460703567035e-33,3.694686075649114e-33
+objective-matched iterative audit,sort,4,32,583,iter_examples,train,observed,12,48,1,0.08333333333333333,0.9722898539664672,0.20870099269711714,0.20870099269711714
+objective-matched iterative audit,sort,4,32,583,iter_examples,dev,untouched original central test,2048,8192,207,0.10107421875,0.5812083620792605,0.20870099269711714,0.09738236847670534
+objective-matched iterative audit,sort,4,32,583,iter_examples,outer,original outer held-out,2048,8192,200,0.09765625,2.390277621782922,0.20870099269711714,0.11404403092294124
+objective-matched iterative audit,sort,5,40,583,iter_examples,train,observed,12,48,5,0.4166666666666667,1.2412670766236366e-16,4.136460703567035e-33,4.136460703567035e-33
+objective-matched iterative audit,sort,5,40,583,iter_examples,dev,untouched original central test,2048,8192,1335,0.65185546875,1.1475428530014783e-16,4.136460703567035e-33,2.8636592607885866e-33
+objective-matched iterative audit,sort,5,40,583,iter_examples,outer,original outer held-out,2048,8192,1096,0.53515625,5.228169922230517e-16,4.136460703567035e-33,3.694686075649114e-33
+objective-matched iterative audit,sort,6,48,583,iter_examples,train,observed,12,48,5,0.4166666666666667,1.2412670766236366e-16,4.136460703567035e-33,4.136460703567035e-33
+objective-matched iterative audit,sort,6,48,583,iter_examples,dev,untouched original central test,2048,8192,1335,0.65185546875,1.1475428530014783e-16,4.136460703567035e-33,2.8636592607885866e-33
+objective-matched iterative audit,sort,6,48,583,iter_examples,outer,original outer held-out,2048,8192,1096,0.53515625,5.228169922230517e-16,4.136460703567035e-33,3.694686075649114e-33
+objective-matched iterative audit,fib,1,3,164,iter_formula,train,observed,9,9,0,0.0,0.18961928604939643,0.01716434872150777,0.01716434872150777
+objective-matched iterative audit,fib,1,3,164,iter_formula,dev,untouched indices 17–32,16,16,0,0.0,136.67907413292565,0.01716434872150777,8.486896856555616e-09
+objective-matched iterative audit,fib,1,3,164,iter_formula,outer,indices 33–64,32,32,0,0.0,1329748182.567887,0.01716434872150777,8.133840827156379e-08
+objective-matched iterative audit,fib,2,8,164,iter_formula,train,observed,9,9,9,1.0,0.0,0.0,0.0
+objective-matched iterative audit,fib,2,8,164,iter_formula,dev,untouched indices 17–32,16,16,16,1.0,0.0,0.0,0.0
+objective-matched iterative audit,fib,2,8,164,iter_formula,outer,indices 33–64,32,32,32,1.0,0.0,0.0,0.0
+objective-matched iterative audit,fib,3,15,164,iter_formula,train,observed,9,9,9,1.0,0.0,0.0,0.0
+objective-matched iterative audit,fib,3,15,164,iter_formula,dev,untouched indices 17–32,16,16,16,1.0,0.0,0.0,0.0
+objective-matched iterative audit,fib,3,15,164,iter_formula,outer,indices 33–64,32,32,32,1.0,0.0,0.0,0.0
+objective-matched iterative audit,fib,1,3,164,iter_examples,train,observed,9,9,0,0.0,0.18961928605001555,0.017164348721448525,0.017164348721448525
+objective-matched iterative audit,fib,1,3,164,iter_examples,dev,untouched indices 17–32,16,16,0,0.0,136.67903692137287,0.017164348721448525,8.486891520093423e-09
+objective-matched iterative audit,fib,1,3,164,iter_examples,outer,indices 33–64,32,32,0,0.0,1329747912.988729,0.017164348721448525,8.13383732076304e-08
+objective-matched iterative audit,fib,2,8,164,iter_examples,train,observed,9,9,9,1.0,0.0,0.0,0.0
+objective-matched iterative audit,fib,2,8,164,iter_examples,dev,untouched indices 17–32,16,16,16,1.0,0.0,0.0,0.0
+objective-matched iterative audit,fib,2,8,164,iter_examples,outer,indices 33–64,32,32,32,1.0,0.0,0.0,0.0
+objective-matched iterative audit,fib,3,15,164,iter_examples,train,observed,9,9,9,1.0,0.0,0.0,0.0
+objective-matched iterative audit,fib,3,15,164,iter_examples,dev,untouched indices 17–32,16,16,16,1.0,0.0,0.0,0.0
+objective-matched iterative audit,fib,3,15,164,iter_examples,outer,indices 33–64,32,32,32,1.0,0.0,0.0,0.0
+objective-matched iterative audit,fib,1,3,317,iter_formula,train,observed,9,9,0,0.0,0.18961928604670966,0.017164348721032452,0.017164348721032452
+objective-matched iterative audit,fib,1,3,317,iter_formula,dev,untouched indices 17–32,16,16,0,0.0,136.67905238009058,0.017164348721032452,8.486894191359372e-09
+objective-matched iterative audit,fib,1,3,317,iter_formula,outer,indices 33–64,32,32,0,0.0,1329747966.2891433,0.017164348721032452,8.133838191677946e-08
+objective-matched iterative audit,fib,2,8,317,iter_formula,train,observed,9,9,9,1.0,0.0,0.0,0.0
+objective-matched iterative audit,fib,2,8,317,iter_formula,dev,untouched indices 17–32,16,16,16,1.0,0.0,0.0,0.0
+objective-matched iterative audit,fib,2,8,317,iter_formula,outer,indices 33–64,32,32,32,1.0,0.0,0.0,0.0
+objective-matched iterative audit,fib,3,15,317,iter_formula,train,observed,9,9,9,1.0,0.0,0.0,0.0
+objective-matched iterative audit,fib,3,15,317,iter_formula,dev,untouched indices 17–32,16,16,16,1.0,0.0,0.0,0.0
+objective-matched iterative audit,fib,3,15,317,iter_formula,outer,indices 33–64,32,32,32,1.0,0.0,0.0,0.0
+objective-matched iterative audit,fib,1,3,317,iter_examples,train,observed,9,9,0,0.0,0.1896192860456937,0.017164348721544712,0.017164348721544712
+objective-matched iterative audit,fib,1,3,317,iter_examples,dev,untouched indices 17–32,16,16,0,0.0,136.67921728465367,0.017164348721544712,8.486917582668186e-09
+objective-matched iterative audit,fib,1,3,317,iter_examples,outer,indices 33–64,32,32,0,0.0,1329749194.1913602,0.017164348721544712,8.13385406224801e-08
+objective-matched iterative audit,fib,2,8,317,iter_examples,train,observed,9,9,9,1.0,0.0,0.0,0.0
+objective-matched iterative audit,fib,2,8,317,iter_examples,dev,untouched indices 17–32,16,16,16,1.0,0.0,0.0,0.0
+objective-matched iterative audit,fib,2,8,317,iter_examples,outer,indices 33–64,32,32,32,1.0,0.0,0.0,0.0
+objective-matched iterative audit,fib,3,15,317,iter_examples,train,observed,9,9,9,1.0,0.0,0.0,0.0
+objective-matched iterative audit,fib,3,15,317,iter_examples,dev,untouched indices 17–32,16,16,16,1.0,0.0,0.0,0.0
+objective-matched iterative audit,fib,3,15,317,iter_examples,outer,indices 33–64,32,32,32,1.0,0.0,0.0,0.0
+objective-matched iterative audit,fib,1,3,583,iter_formula,train,observed,9,9,0,0.0,0.18961928605104938,0.017164348721715808,0.017164348721715808
+objective-matched iterative audit,fib,1,3,583,iter_formula,dev,untouched indices 17–32,16,16,0,0.0,136.6790664034723,0.017164348721715808,8.486895520920223e-09
+objective-matched iterative audit,fib,1,3,583,iter_formula,outer,indices 33–64,32,32,0,0.0,1329748155.917677,0.017164348721715808,8.133840391698523e-08
+objective-matched iterative audit,fib,2,8,583,iter_formula,train,observed,9,9,9,1.0,0.0,0.0,0.0
+objective-matched iterative audit,fib,2,8,583,iter_formula,dev,untouched indices 17–32,16,16,16,1.0,0.0,0.0,0.0
+objective-matched iterative audit,fib,2,8,583,iter_formula,outer,indices 33–64,32,32,32,1.0,0.0,0.0,0.0
+objective-matched iterative audit,fib,3,15,583,iter_formula,train,observed,9,9,9,1.0,0.0,0.0,0.0
+objective-matched iterative audit,fib,3,15,583,iter_formula,dev,untouched indices 17–32,16,16,16,1.0,0.0,0.0,0.0
+objective-matched iterative audit,fib,3,15,583,iter_formula,outer,indices 33–64,32,32,32,1.0,0.0,0.0,0.0
+objective-matched iterative audit,fib,1,3,583,iter_examples,train,observed,9,9,0,0.0,0.18961928605001555,0.017164348721448525,0.017164348721448525
+objective-matched iterative audit,fib,1,3,583,iter_examples,dev,untouched indices 17–32,16,16,0,0.0,136.67903692137287,0.017164348721448525,8.486891520093423e-09
+objective-matched iterative audit,fib,1,3,583,iter_examples,outer,indices 33–64,32,32,0,0.0,1329747912.988729,0.017164348721448525,8.13383732076304e-08
+objective-matched iterative audit,fib,2,8,583,iter_examples,train,observed,9,9,9,1.0,0.0,0.0,0.0
+objective-matched iterative audit,fib,2,8,583,iter_examples,dev,untouched indices 17–32,16,16,16,1.0,0.0,0.0,0.0
+objective-matched iterative audit,fib,2,8,583,iter_examples,outer,indices 33–64,32,32,32,1.0,0.0,0.0,0.0
+objective-matched iterative audit,fib,3,15,583,iter_examples,train,observed,9,9,9,1.0,0.0,0.0,0.0
+objective-matched iterative audit,fib,3,15,583,iter_examples,dev,untouched indices 17–32,16,16,16,1.0,0.0,0.0,0.0
+objective-matched iterative audit,fib,3,15,583,iter_examples,outer,indices 33–64,32,32,32,1.0,0.0,0.0,0.0
+objective-matched iterative audit,tri,2,8,164,iter_formula,train,observed,9,9,0,0.0,3.4558978865752086,4.739270223498215,4.739270223498215
+objective-matched iterative audit,tri,2,8,164,iter_formula,dev,untouched indices 17–32,16,16,0,0.0,52.13735741827519,4.739270223498215,0.005980405569290906
+objective-matched iterative audit,tri,2,8,164,iter_formula,outer,indices 33–64,32,32,0,0.0,4057.0296532297452,4.739270223498215,2.7774034940249592
+objective-matched iterative audit,tri,3,15,164,iter_formula,train,observed,9,9,9,1.0,0.0,0.0,0.0
+objective-matched iterative audit,tri,3,15,164,iter_formula,dev,untouched indices 17–32,16,16,16,1.0,0.0,0.0,0.0
+objective-matched iterative audit,tri,3,15,164,iter_formula,outer,indices 33–64,32,32,32,1.0,0.0,0.0,0.0
+objective-matched iterative audit,tri,4,24,164,iter_formula,train,observed,9,9,9,1.0,0.0,0.0,0.0
+objective-matched iterative audit,tri,4,24,164,iter_formula,dev,untouched indices 17–32,16,16,16,1.0,0.0,0.0,0.0
+objective-matched iterative audit,tri,4,24,164,iter_formula,outer,indices 33–64,32,32,32,1.0,0.0,0.0,0.0
+objective-matched iterative audit,tri,2,8,164,iter_examples,train,observed,9,9,0,0.0,3.4595031548528716,4.748359891399067,4.748359891399067
+objective-matched iterative audit,tri,2,8,164,iter_examples,dev,untouched indices 17–32,16,16,0,0.0,51.991608003716955,4.748359891399067,0.005946386823520813
+objective-matched iterative audit,tri,2,8,164,iter_examples,outer,indices 33–64,32,32,0,0.0,4052.0992122466373,4.748359891399067,2.7699839770534416
+objective-matched iterative audit,tri,3,15,164,iter_examples,train,observed,9,9,9,1.0,0.0,0.0,0.0
+objective-matched iterative audit,tri,3,15,164,iter_examples,dev,untouched indices 17–32,16,16,16,1.0,0.0,0.0,0.0
+objective-matched iterative audit,tri,3,15,164,iter_examples,outer,indices 33–64,32,32,32,1.0,0.0,0.0,0.0
+objective-matched iterative audit,tri,4,24,164,iter_examples,train,observed,9,9,9,1.0,0.0,0.0,0.0
+objective-matched iterative audit,tri,4,24,164,iter_examples,dev,untouched indices 17–32,16,16,16,1.0,0.0,0.0,0.0
+objective-matched iterative audit,tri,4,24,164,iter_examples,outer,indices 33–64,32,32,32,1.0,0.0,0.0,0.0
+objective-matched iterative audit,tri,2,8,317,iter_formula,train,observed,9,9,0,0.0,3.577232608150684,5.04749688199138,5.04749688199138
+objective-matched iterative audit,tri,2,8,317,iter_formula,dev,untouched indices 17–32,16,16,0,0.0,48.13407968553048,5.04749688199138,0.005084600875859713
+objective-matched iterative audit,tri,2,8,317,iter_formula,outer,indices 33–64,32,32,0,0.0,3903.6873512317484,5.04749688199138,2.5546311813917977
+objective-matched iterative audit,tri,3,15,317,iter_formula,train,observed,9,9,9,1.0,0.0,0.0,0.0
+objective-matched iterative audit,tri,3,15,317,iter_formula,dev,untouched indices 17–32,16,16,16,1.0,0.0,0.0,0.0
+objective-matched iterative audit,tri,3,15,317,iter_formula,outer,indices 33–64,32,32,32,1.0,0.0,0.0,0.0
+objective-matched iterative audit,tri,4,24,317,iter_formula,train,observed,9,9,9,1.0,0.0,0.0,0.0
+objective-matched iterative audit,tri,4,24,317,iter_formula,dev,untouched indices 17–32,16,16,16,1.0,0.0,0.0,0.0
+objective-matched iterative audit,tri,4,24,317,iter_formula,outer,indices 33–64,32,32,32,1.0,0.0,0.0,0.0
+objective-matched iterative audit,tri,2,8,317,iter_examples,train,observed,9,9,0,0.0,3.56573457450513,5.015894088779827,5.015894088779827
+objective-matched iterative audit,tri,2,8,317,iter_examples,dev,untouched indices 17–32,16,16,0,0.0,48.920472896493955,5.015894088779827,0.0052563926939585195
+objective-matched iterative audit,tri,2,8,317,iter_examples,outer,indices 33–64,32,32,0,0.0,3926.8100136437724,5.015894088779827,2.5884707917279446
+objective-matched iterative audit,tri,3,15,317,iter_examples,train,observed,9,9,9,1.0,0.0,0.0,0.0
+objective-matched iterative audit,tri,3,15,317,iter_examples,dev,untouched indices 17–32,16,16,16,1.0,0.0,0.0,0.0
+objective-matched iterative audit,tri,3,15,317,iter_examples,outer,indices 33–64,32,32,32,1.0,0.0,0.0,0.0
+objective-matched iterative audit,tri,4,24,317,iter_examples,train,observed,9,9,9,1.0,0.0,0.0,0.0
+objective-matched iterative audit,tri,4,24,317,iter_examples,dev,untouched indices 17–32,16,16,16,1.0,0.0,0.0,0.0
+objective-matched iterative audit,tri,4,24,317,iter_examples,outer,indices 33–64,32,32,32,1.0,0.0,0.0,0.0
+objective-matched iterative audit,tri,2,8,583,iter_formula,train,observed,9,9,0,0.0,3.496932934310121,4.842120990959141,4.842120990959141
+objective-matched iterative audit,tri,2,8,583,iter_formula,dev,untouched indices 17–32,16,16,0,0.0,50.84973640732662,4.842120990959141,0.005684683844517006
+objective-matched iterative audit,tri,2,8,583,iter_formula,outer,indices 33–64,32,32,0,0.0,4006.867551919,4.842120990959141,2.703469502619312
+objective-matched iterative audit,tri,3,15,583,iter_formula,train,observed,9,9,9,1.0,0.0,0.0,0.0
+objective-matched iterative audit,tri,3,15,583,iter_formula,dev,untouched indices 17–32,16,16,16,1.0,0.0,0.0,0.0
+objective-matched iterative audit,tri,3,15,583,iter_formula,outer,indices 33–64,32,32,32,1.0,0.0,0.0,0.0
+objective-matched iterative audit,tri,4,24,583,iter_formula,train,observed,9,9,9,1.0,0.0,0.0,0.0
+objective-matched iterative audit,tri,4,24,583,iter_formula,dev,untouched indices 17–32,16,16,16,1.0,0.0,0.0,0.0
+objective-matched iterative audit,tri,4,24,583,iter_formula,outer,indices 33–64,32,32,32,1.0,0.0,0.0,0.0
+objective-matched iterative audit,tri,2,8,583,iter_examples,train,observed,9,9,0,0.0,3.4274481014082827,4.668587715345989,4.668587715345989
+objective-matched iterative audit,tri,2,8,583,iter_examples,dev,untouched indices 17–32,16,16,0,0.0,53.04519148020007,4.668587715345989,0.006193383718782048
+objective-matched iterative audit,tri,2,8,583,iter_examples,outer,indices 33–64,32,32,0,0.0,4091.9249318299285,4.668587715345989,2.8295856763575014
+objective-matched iterative audit,tri,3,15,583,iter_examples,train,observed,9,9,9,1.0,0.0,0.0,0.0
+objective-matched iterative audit,tri,3,15,583,iter_examples,dev,untouched indices 17–32,16,16,16,1.0,0.0,0.0,0.0
+objective-matched iterative audit,tri,3,15,583,iter_examples,outer,indices 33–64,32,32,32,1.0,0.0,0.0,0.0
+objective-matched iterative audit,tri,4,24,583,iter_examples,train,observed,9,9,9,1.0,0.0,0.0,0.0
+objective-matched iterative audit,tri,4,24,583,iter_examples,dev,untouched indices 17–32,16,16,16,1.0,0.0,0.0,0.0
+objective-matched iterative audit,tri,4,24,583,iter_examples,outer,indices 33–64,32,32,32,1.0,0.0,0.0,0.0
+objective-matched iterative audit,add,1,5,164,iter_formula,train,observed,12,12,4,0.3333333333333333,3.268408087260198e-16,3.8824738784536675e-32,3.8824738784536675e-32
+objective-matched iterative audit,add,1,5,164,iter_formula,dev,untouched original central test,2048,2048,1022,0.4990234375,0.0016390642311436292,3.8824738784536675e-32,3.795319807418017e-08
+objective-matched iterative audit,add,1,5,164,iter_formula,outer,original outer held-out,2048,2048,1282,0.6259765625,3.863178491157841,3.8824738784536675e-32,0.03569127972861695
+objective-matched iterative audit,add,2,9,164,iter_formula,train,observed,12,12,12,1.0,0.0,0.0,0.0
+objective-matched iterative audit,add,2,9,164,iter_formula,dev,untouched original central test,2048,2048,2048,1.0,0.0,0.0,0.0
+objective-matched iterative audit,add,2,9,164,iter_formula,outer,original outer held-out,2048,2048,2048,1.0,0.0,0.0,0.0
+objective-matched iterative audit,add,4,17,164,iter_formula,train,observed,12,12,12,1.0,0.0,0.0,0.0
+objective-matched iterative audit,add,4,17,164,iter_formula,dev,untouched original central test,2048,2048,2048,1.0,0.0,0.0,0.0
+objective-matched iterative audit,add,4,17,164,iter_formula,outer,original outer held-out,2048,2048,2048,1.0,0.0,0.0,0.0
+objective-matched iterative audit,add,1,5,164,iter_examples,train,observed,12,12,4,0.3333333333333333,3.268408087260198e-16,3.8824738784536675e-32,3.8824738784536675e-32
+objective-matched iterative audit,add,1,5,164,iter_examples,dev,untouched original central test,2048,2048,1046,0.5107421875,0.0045415777920826276,3.8824738784536675e-32,2.9230632251808177e-07
+objective-matched iterative audit,add,1,5,164,iter_examples,outer,original outer held-out,2048,2048,1287,0.62841796875,3.920754896786251,3.8824738784536675e-32,0.036947523779231876
+objective-matched iterative audit,add,2,9,164,iter_examples,train,observed,12,12,12,1.0,0.0,0.0,0.0
+objective-matched iterative audit,add,2,9,164,iter_examples,dev,untouched original central test,2048,2048,2048,1.0,0.0,0.0,0.0
+objective-matched iterative audit,add,2,9,164,iter_examples,outer,original outer held-out,2048,2048,2048,1.0,0.0,0.0,0.0
+objective-matched iterative audit,add,4,17,164,iter_examples,train,observed,12,12,12,1.0,0.0,0.0,0.0
+objective-matched iterative audit,add,4,17,164,iter_examples,dev,untouched original central test,2048,2048,2048,1.0,0.0,0.0,0.0
+objective-matched iterative audit,add,4,17,164,iter_examples,outer,original outer held-out,2048,2048,2048,1.0,0.0,0.0,0.0
+objective-matched iterative audit,add,1,5,317,iter_formula,train,observed,12,12,4,0.3333333333333333,2.8665835232995054e-16,3.666689340863122e-32,3.666689340863122e-32
+objective-matched iterative audit,add,1,5,317,iter_formula,dev,untouched original central test,2048,2048,998,0.4873046875,3.4677117945797924e-16,3.666689340863122e-32,2.0432069300650622e-32
+objective-matched iterative audit,add,1,5,317,iter_formula,outer,original outer held-out,2048,2048,1281,0.62548828125,3.805778986209163,3.666689340863122e-32,0.03446547482803669
+objective-matched iterative audit,add,2,9,317,iter_formula,train,observed,12,12,12,1.0,0.0,0.0,0.0
+objective-matched iterative audit,add,2,9,317,iter_formula,dev,untouched original central test,2048,2048,2048,1.0,0.0,0.0,0.0
+objective-matched iterative audit,add,2,9,317,iter_formula,outer,original outer held-out,2048,2048,2048,1.0,0.0,0.0,0.0
+objective-matched iterative audit,add,4,17,317,iter_formula,train,observed,12,12,12,1.0,0.0,0.0,0.0
+objective-matched iterative audit,add,4,17,317,iter_formula,dev,untouched original central test,2048,2048,2048,1.0,0.0,0.0,0.0
+objective-matched iterative audit,add,4,17,317,iter_formula,outer,original outer held-out,2048,2048,2048,1.0,0.0,0.0,0.0
+objective-matched iterative audit,add,1,5,317,iter_examples,train,observed,12,12,4,0.3333333333333333,2.8665835232995054e-16,3.666689340863122e-32,3.666689340863122e-32
+objective-matched iterative audit,add,1,5,317,iter_examples,dev,untouched original central test,2048,2048,1053,0.51416015625,0.004902275186868356,3.666689340863122e-32,3.4921081882600995e-07
+objective-matched iterative audit,add,1,5,317,iter_examples,outer,original outer held-out,2048,2048,1287,0.62841796875,3.8935070942384007,3.666689340863122e-32,0.03750928508872818
+objective-matched iterative audit,add,2,9,317,iter_examples,train,observed,12,12,12,1.0,0.0,0.0,0.0
+objective-matched iterative audit,add,2,9,317,iter_examples,dev,untouched original central test,2048,2048,2048,1.0,0.0,0.0,0.0
+objective-matched iterative audit,add,2,9,317,iter_examples,outer,original outer held-out,2048,2048,2048,1.0,0.0,0.0,0.0
+objective-matched iterative audit,add,4,17,317,iter_examples,train,observed,12,12,12,1.0,0.0,0.0,0.0
+objective-matched iterative audit,add,4,17,317,iter_examples,dev,untouched original central test,2048,2048,2048,1.0,0.0,0.0,0.0
+objective-matched iterative audit,add,4,17,317,iter_examples,outer,original outer held-out,2048,2048,2048,1.0,0.0,0.0,0.0
+objective-matched iterative audit,add,1,5,583,iter_formula,train,observed,12,12,7,0.5833333333333334,3.074068356504136e-16,1.709322385780912e-32,1.709322385780912e-32
+objective-matched iterative audit,add,1,5,583,iter_formula,dev,untouched original central test,2048,2048,1039,0.50732421875,0.00015265042385899106,1.709322385780912e-32,3.367670197886833e-10
+objective-matched iterative audit,add,1,5,583,iter_formula,outer,original outer held-out,2048,2048,1285,0.62744140625,3.817775403006601,1.709322385780912e-32,0.035824226318600286
+objective-matched iterative audit,add,2,9,583,iter_formula,train,observed,12,12,12,1.0,0.0,0.0,0.0
+objective-matched iterative audit,add,2,9,583,iter_formula,dev,untouched original central test,2048,2048,2048,1.0,0.0,0.0,0.0
+objective-matched iterative audit,add,2,9,583,iter_formula,outer,original outer held-out,2048,2048,2048,1.0,0.0,0.0,0.0
+objective-matched iterative audit,add,4,17,583,iter_formula,train,observed,12,12,12,1.0,0.0,0.0,0.0
+objective-matched iterative audit,add,4,17,583,iter_formula,dev,untouched original central test,2048,2048,2048,1.0,0.0,0.0,0.0
+objective-matched iterative audit,add,4,17,583,iter_formula,outer,original outer held-out,2048,2048,2048,1.0,0.0,0.0,0.0
+objective-matched iterative audit,add,1,5,583,iter_examples,train,observed,12,12,5,0.4166666666666667,4.753690988499733e-16,2.66719730709998e-32,2.66719730709998e-32
+objective-matched iterative audit,add,1,5,583,iter_examples,dev,untouched original central test,2048,2048,1022,0.4990234375,0.0016390642311436292,2.66719730709998e-32,3.795319807418017e-08
+objective-matched iterative audit,add,1,5,583,iter_examples,outer,original outer held-out,2048,2048,1282,0.6259765625,3.863178491157841,2.66719730709998e-32,0.03569127972861695
+objective-matched iterative audit,add,2,9,583,iter_examples,train,observed,12,12,12,1.0,0.0,0.0,0.0
+objective-matched iterative audit,add,2,9,583,iter_examples,dev,untouched original central test,2048,2048,2048,1.0,0.0,0.0,0.0
+objective-matched iterative audit,add,2,9,583,iter_examples,outer,original outer held-out,2048,2048,2048,1.0,0.0,0.0,0.0
+objective-matched iterative audit,add,4,17,583,iter_examples,train,observed,12,12,12,1.0,0.0,0.0,0.0
+objective-matched iterative audit,add,4,17,583,iter_examples,dev,untouched original central test,2048,2048,2048,1.0,0.0,0.0,0.0
+objective-matched iterative audit,add,4,17,583,iter_examples,outer,original outer held-out,2048,2048,2048,1.0,0.0,0.0,0.0
+objective-matched iterative audit,subtract,1,5,164,iter_formula,train,observed,12,12,6,0.5,4.2998752849492583e-16,2.806271805298644e-32,2.806271805298644e-32
+objective-matched iterative audit,subtract,1,5,164,iter_formula,dev,untouched original central test,2048,2048,1019,0.49755859375,0.001550385803161653,2.806271805298644e-32,3.726047601812713e-08
+objective-matched iterative audit,subtract,1,5,164,iter_formula,outer,original outer held-out,2048,2048,1292,0.630859375,3.8205468281263077,2.806271805298644e-32,0.03681824733814007
+objective-matched iterative audit,subtract,2,9,164,iter_formula,train,observed,12,12,12,1.0,0.0,0.0,0.0
+objective-matched iterative audit,subtract,2,9,164,iter_formula,dev,untouched original central test,2048,2048,2048,1.0,0.0,0.0,0.0
+objective-matched iterative audit,subtract,2,9,164,iter_formula,outer,original outer held-out,2048,2048,2048,1.0,0.0,0.0,0.0
+objective-matched iterative audit,subtract,4,17,164,iter_formula,train,observed,12,12,12,1.0,0.0,0.0,0.0
+objective-matched iterative audit,subtract,4,17,164,iter_formula,dev,untouched original central test,2048,2048,2048,1.0,0.0,0.0,0.0
+objective-matched iterative audit,subtract,4,17,164,iter_formula,outer,original outer held-out,2048,2048,2048,1.0,0.0,0.0,0.0
+objective-matched iterative audit,subtract,1,5,164,iter_examples,train,observed,12,12,6,0.5,4.2998752849492583e-16,2.806271805298644e-32,2.806271805298644e-32
+objective-matched iterative audit,subtract,1,5,164,iter_examples,dev,untouched original central test,2048,2048,1007,0.49169921875,3.303452822030939e-16,2.806271805298644e-32,1.9598302957737086e-32
+objective-matched iterative audit,subtract,1,5,164,iter_examples,outer,original outer held-out,2048,2048,1289,0.62939453125,3.777406245396804,2.806271805298644e-32,0.03586021565387311
+objective-matched iterative audit,subtract,2,9,164,iter_examples,train,observed,12,12,12,1.0,0.0,0.0,0.0
+objective-matched iterative audit,subtract,2,9,164,iter_examples,dev,untouched original central test,2048,2048,2048,1.0,0.0,0.0,0.0
+objective-matched iterative audit,subtract,2,9,164,iter_examples,outer,original outer held-out,2048,2048,2048,1.0,0.0,0.0,0.0
+objective-matched iterative audit,subtract,4,17,164,iter_examples,train,observed,12,12,12,1.0,0.0,0.0,0.0
+objective-matched iterative audit,subtract,4,17,164,iter_examples,dev,untouched original central test,2048,2048,2048,1.0,0.0,0.0,0.0
+objective-matched iterative audit,subtract,4,17,164,iter_examples,outer,original outer held-out,2048,2048,2048,1.0,0.0,0.0,0.0
+objective-matched iterative audit,subtract,1,5,317,iter_formula,train,observed,12,12,5,0.4166666666666667,2.3111135221866393e-16,2.3165213507760194e-32,2.3165213507760194e-32
+objective-matched iterative audit,subtract,1,5,317,iter_formula,dev,untouched original central test,2048,2048,990,0.4833984375,3.375541887383563e-16,2.3165213507760194e-32,2.012242879607028e-32
+objective-matched iterative audit,subtract,1,5,317,iter_formula,outer,original outer held-out,2048,2048,1283,0.62646484375,3.7057096750967276,2.3165213507760194e-32,0.03430111385144359
+objective-matched iterative audit,subtract,2,9,317,iter_formula,train,observed,12,12,12,1.0,0.0,0.0,0.0
+objective-matched iterative audit,subtract,2,9,317,iter_formula,dev,untouched original central test,2048,2048,2048,1.0,0.0,0.0,0.0
+objective-matched iterative audit,subtract,2,9,317,iter_formula,outer,original outer held-out,2048,2048,2048,1.0,0.0,0.0,0.0
+objective-matched iterative audit,subtract,4,17,317,iter_formula,train,observed,12,12,12,1.0,0.0,0.0,0.0
+objective-matched iterative audit,subtract,4,17,317,iter_formula,dev,untouched original central test,2048,2048,2048,1.0,0.0,0.0,0.0
+objective-matched iterative audit,subtract,4,17,317,iter_formula,outer,original outer held-out,2048,2048,2048,1.0,0.0,0.0,0.0
+objective-matched iterative audit,subtract,1,5,317,iter_examples,train,observed,12,12,5,0.4166666666666667,2.3111135221866393e-16,2.3165213507760194e-32,2.3165213507760194e-32
+objective-matched iterative audit,subtract,1,5,317,iter_examples,dev,untouched original central test,2048,2048,1004,0.490234375,3.316544496140765e-16,2.3165213507760194e-32,1.9690204893862962e-32
+objective-matched iterative audit,subtract,1,5,317,iter_examples,outer,original outer held-out,2048,2048,1288,0.62890625,3.7630465462722937,2.3165213507760194e-32,0.03554467569236388
+objective-matched iterative audit,subtract,2,9,317,iter_examples,train,observed,12,12,12,1.0,0.0,0.0,0.0
+objective-matched iterative audit,subtract,2,9,317,iter_examples,dev,untouched original central test,2048,2048,2048,1.0,0.0,0.0,0.0
+objective-matched iterative audit,subtract,2,9,317,iter_examples,outer,original outer held-out,2048,2048,2048,1.0,0.0,0.0,0.0
+objective-matched iterative audit,subtract,4,17,317,iter_examples,train,observed,12,12,12,1.0,0.0,0.0,0.0
+objective-matched iterative audit,subtract,4,17,317,iter_examples,dev,untouched original central test,2048,2048,2048,1.0,0.0,0.0,0.0
+objective-matched iterative audit,subtract,4,17,317,iter_examples,outer,original outer held-out,2048,2048,2048,1.0,0.0,0.0,0.0
+objective-matched iterative audit,subtract,1,5,583,iter_formula,train,observed,12,12,8,0.6666666666666666,2.7940000073818173e-16,6.590069332836359e-33,6.590069332836359e-33
+objective-matched iterative audit,subtract,1,5,583,iter_formula,dev,untouched original central test,2048,2048,1004,0.490234375,3.316544496140765e-16,6.590069332836359e-33,1.9690204893862962e-32
+objective-matched iterative audit,subtract,1,5,583,iter_formula,outer,original outer held-out,2048,2048,1288,0.62890625,3.7630465462722937,6.590069332836359e-33,0.03554467569236388
+objective-matched iterative audit,subtract,2,9,583,iter_formula,train,observed,12,12,12,1.0,0.0,0.0,0.0
+objective-matched iterative audit,subtract,2,9,583,iter_formula,dev,untouched original central test,2048,2048,2048,1.0,0.0,0.0,0.0
+objective-matched iterative audit,subtract,2,9,583,iter_formula,outer,original outer held-out,2048,2048,2048,1.0,0.0,0.0,0.0
+objective-matched iterative audit,subtract,4,17,583,iter_formula,train,observed,12,12,12,1.0,0.0,0.0,0.0
+objective-matched iterative audit,subtract,4,17,583,iter_formula,dev,untouched original central test,2048,2048,2048,1.0,0.0,0.0,0.0
+objective-matched iterative audit,subtract,4,17,583,iter_formula,outer,original outer held-out,2048,2048,2048,1.0,0.0,0.0,0.0
+objective-matched iterative audit,subtract,1,5,583,iter_examples,train,observed,12,12,8,0.6666666666666666,2.7940000073818173e-16,6.590069332836359e-33,6.590069332836359e-33
+objective-matched iterative audit,subtract,1,5,583,iter_examples,dev,untouched original central test,2048,2048,973,0.47509765625,3.4419291931142313e-16,6.590069332836359e-33,2.0657368250798668e-32
+objective-matched iterative audit,subtract,1,5,583,iter_examples,outer,original outer held-out,2048,2048,1278,0.6240234375,3.648538915403176,6.590069332836359e-33,0.0330870160393686
+objective-matched iterative audit,subtract,2,9,583,iter_examples,train,observed,12,12,12,1.0,0.0,0.0,0.0
+objective-matched iterative audit,subtract,2,9,583,iter_examples,dev,untouched original central test,2048,2048,2048,1.0,0.0,0.0,0.0
+objective-matched iterative audit,subtract,2,9,583,iter_examples,outer,original outer held-out,2048,2048,2048,1.0,0.0,0.0,0.0
+objective-matched iterative audit,subtract,4,17,583,iter_examples,train,observed,12,12,12,1.0,0.0,0.0,0.0
+objective-matched iterative audit,subtract,4,17,583,iter_examples,dev,untouched original central test,2048,2048,2048,1.0,0.0,0.0,0.0
+objective-matched iterative audit,subtract,4,17,583,iter_examples,outer,original outer held-out,2048,2048,2048,1.0,0.0,0.0,0.0

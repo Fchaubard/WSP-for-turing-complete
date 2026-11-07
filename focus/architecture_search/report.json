@@ -1,0 +1,110 @@
+{
+ "summary": [
+  {
+   "task": "square",
+   "attempted": 3,
+   "valid": 3,
+   "fully_exact": 3,
+   "median_raw_rmse_valid": 0.0,
+   "coefficients_range": "0",
+   "flops_max_range": "1",
+   "workspace_max_range": "16"
+  },
+  {
+   "task": "sin",
+   "attempted": 3,
+   "valid": 3,
+   "fully_exact": 0,
+   "median_raw_rmse_valid": 7.790120819679062e-16,
+   "coefficients_range": "10--19",
+   "flops_max_range": "27--32",
+   "workspace_max_range": "32--88"
+  },
+  {
+   "task": "selfpower",
+   "attempted": 3,
+   "valid": 1,
+   "fully_exact": 0,
+   "median_raw_rmse_valid": 16759.378581076264,
+   "coefficients_range": "93",
+   "flops_max_range": "250",
+   "workspace_max_range": "1040"
+  },
+  {
+   "task": "tanh",
+   "attempted": 3,
+   "valid": 3,
+   "fully_exact": 3,
+   "median_raw_rmse_valid": 0.0,
+   "coefficients_range": "0",
+   "flops_max_range": "0",
+   "workspace_max_range": "16"
+  },
+  {
+   "task": "add",
+   "attempted": 3,
+   "valid": 3,
+   "fully_exact": 3,
+   "median_raw_rmse_valid": 0.0,
+   "coefficients_range": "0",
+   "flops_max_range": "1",
+   "workspace_max_range": "32"
+  },
+  {
+   "task": "subtract",
+   "attempted": 3,
+   "valid": 3,
+   "fully_exact": 3,
+   "median_raw_rmse_valid": 0.0,
+   "coefficients_range": "2",
+   "flops_max_range": "3",
+   "workspace_max_range": "24"
+  },
+  {
+   "task": "sum",
+   "attempted": 3,
+   "valid": 3,
+   "fully_exact": 3,
+   "median_raw_rmse_valid": 0.0,
+   "coefficients_range": "1",
+   "flops_max_range": "6",
+   "workspace_max_range": "112"
+  },
+  {
+   "task": "sort",
+   "attempted": 3,
+   "valid": 3,
+   "fully_exact": 0,
+   "median_raw_rmse_valid": 5.228169922230517e-16,
+   "coefficients_range": "1--8",
+   "flops_max_range": "25--35",
+   "workspace_max_range": "88--112"
+  },
+  {
+   "task": "fib",
+   "attempted": 3,
+   "valid": 3,
+   "fully_exact": 3,
+   "median_raw_rmse_valid": 0.0,
+   "coefficients_range": "2",
+   "flops_max_range": "64",
+   "workspace_max_range": "48"
+  },
+  {
+   "task": "tri",
+   "attempted": 3,
+   "valid": 3,
+   "fully_exact": 3,
+   "median_raw_rmse_valid": 0.0,
+   "coefficients_range": "1--2",
+   "flops_max_range": "3",
+   "workspace_max_range": "24"
+  }
+ ],
+ "collection": {
+  "requests": 30,
+  "recorded_tool_events": 0,
+  "summed_request_seconds": 1335.75,
+  "output_tokens": 30014
+ }
+}

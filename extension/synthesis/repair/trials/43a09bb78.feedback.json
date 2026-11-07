@@ -1,0 +1,28 @@
+{
+  "status": "valid",
+  "dynamic_ops": 587,
+  "n": 4096,
+  "exact": 4096,
+  "within_one_ulp": 4096,
+  "finite": 4096,
+  "three_central_examples": [
+    {
+      "x": "-0x1.59fe998eaaa48p+0",
+      "correctly_rounded_reference": "-0x1.f3be196e74944p-1",
+      "your_output": "-0x1.f3be196e74944p-1",
+      "ulp_error": 0
+    },
+    {
+      "x": "-0x1.669be004fbae4p-1",
+      "correctly_rounded_reference": "-0x1.49ffcb2dc5e53p-1",
+      "your_output": "-0x1.49ffcb2dc5e53p-1",
+      "ulp_error": 0
+    },
+    {
+      "x": "0x1.91cc0e488eb62p-1",
+      "correctly_rounded_reference": "0x1.69cebae524709p-1",
+      "your_output": "0x1.69cebae524709p-1",
+      "ulp_error": 0
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "family": "Two-state additive recurrent network",
+  "inferred_rule": "Fibonacci sequence: F(0)=0, F(1)=1, and F(n+2)=F(n+1)+F(n).",
+  "construction_summary": "Initialize the state to [0,1]. Each iteration replaces [a,b] with [b,a+b]. After n iterations, return the first coordinate. The network stores only two numerical initialization coefficients and uses one scalar addition per iteration, with constant-size inference workspace. Indexing and concatenation require no scalar arithmetic. This implements the inferred recurrence across the entire deployment domain rather than approximating the displayed values.",
+  "certificate": "Induction gives state=[F(n),F(n+1)] after n iterations: initialization establishes n=0, and the cell implements the defining recurrence. For n<=64, every state entry and addition result is a nonnegative integer at most F(65)=17167680177565<2^53, so all arithmetic is exact in binary64.",
+  "network": {
+    "kind": "recurrent",
+    "initial_state": [0, 1],
+    "cell": [
+      {"name": "a", "op": "take", "source": "state", "indices": [0]},
+      {"name": "b", "op": "take", "source": "state", "indices": [1]},
+      {"name": "sum", "op": "add", "left": "a", "right": "b"},
+      {"name": "next_state", "op": "concat", "sources": ["b", "sum"]}
+    ],
+    "state_output": "next_state",
+    "readout": [
+      {"name": "result", "op": "take", "source": "state", "indices": [0]}
+    ],
+    "output": "result"
+  }
+}

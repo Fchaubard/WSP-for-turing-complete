@@ -1,0 +1,10 @@
+{
+  "methods": 14,
+  "settings_per_method": 87,
+  "task_mean_sum_checked_with_decimal": true,
+  "sources": {
+    "output/iterative-wsp-endpoints.csv": "3ad3d43e2a50b50ae47cffca718620e6f333b5da4e228c68a89012fd74990848",
+    "focus/lbfgs/scores.csv": "e2e0842d866602a9118cbd4e98b247f3dc34d3019bf3b8bcf5cbc575fe7fdf6c",
+    "focus/refinement/before_after.csv": "1a4addef1f109dcc9823c7c88f993b4a18eb1f39f6df5d60ea21b69d47145d3a"
+  }
+}

@@ -1,0 +1,6 @@
+method,settings,median_train_loss,zero_training_loss,all_training_examples_exact,all_dev_examples_exact,all_outer_examples_exact,within_1e_10_of_best,certified_one_hinge_settings,one_hinge_within_1e_10
+xavier,87,0.6826309872152367,0,0,0,0,,,
+examples,87,4.0738077042911905e-31,30,30,30,30,73,12,1
+formula,87,2.193665391708671e-31,30,30,30,30,66,12,2
+adam_bfgs,87,0.0005337997384634903,0,0,0,0,38,12,1
+ls_xavier,87,0.0003234611435852071,2,2,0,0,45,12,5

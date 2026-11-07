@@ -1,0 +1,18 @@
+{
+  "family": "Parameter-free multiplicative network",
+  "inferred_rule": "y = x²",
+  "construction_summary": "A single multiplication node uses the scalar input as both operands. The network stores zero numerical coefficients and performs one scalar multiplication, producing one output scalar with no intermediate activations. It implements the inferred square rule throughout [-10,10], including outside the observed input range.",
+  "certificate": "In real arithmetic, the node outputs input × input = x² identically. In binary64, it outputs the correctly rounded product fl(x × x); for |x| ≤ 10, no overflow occurs and absolute rounding error is at most 2^(-47). The observed pairs are consistent with the square rule at the displayed precision. Finite examples alone do not uniquely determine the underlying function.",
+  "network": {
+    "kind": "graph",
+    "nodes": [
+      {
+        "name": "square",
+        "op": "multiply",
+        "left": "input",
+        "right": "input"
+      }
+    ],
+    "output": "square"
+  }
+}

@@ -1,0 +1,53 @@
+\section{How well did the optimizers fit the displayed observations?}
+\label{app:optimizer}
+Fix one of the 90 preliminary combinations of task, size and starting weights in Appendix~\ref{app:historical}. Collect the observed inputs into an array \(X\), write \(\theta\) for the candidate parameter vector, and let \(f_\theta(X)\) be the resulting predictions. Flatten the predictions and scalar reference labels into the same order. If \(N\) is their common length and \(y_i\) is label \(i\), the training loss is
+\[
+ L(\theta)=\frac{1}{2N}\sum_{i=1}^{N}
+ \left(\frac{[f_\theta(X)]_i-y_i}{\max(1,|y_i|)}\right)^2 .
+\]
+We used identical observed labels and initial weight arrays to score both WSP information conditions and gradient fits. Replaying 800 full-batch Adam updates followed by BFGS reproduced all 90 archived training and outer scores. Our additional least-squares solver (LS) computed the residual Jacobian, the matrix of all residual derivatives with respect to the parameters. It restricted each candidate parameter step to a region where a local linear model of the residuals was reliable. The budget allowed 250 solver evaluations of the residual vector, followed by at most ten Gauss--Newton updates that decreased the loss. Each such update solves a linearized least-squares problem. Four starting points were the original Xavier weights, the Adam+BFGS result, and the two WSP arrays. The outer scores were computed after fitting. For integer sequences the first held-out indices are 9--32.
+
+\paragraph{Training loss and exact predictions.}
+Each row below uses equally weighted settings. \emph{Near best} counts settings within \(10^{-10}\) in additive training loss of the best measured feasible binary64 candidate at that setting. \emph{Global} counts one-hinge settings within the same tolerance of the independently certified real-arithmetic optimum. \emph{Outer perfect} counts settings with equality for every held-out output, including every coordinate of vector outputs. An arrow means that the solver starts from the weights on its left. A raw WSP row scores the array as returned.
+
+\begin{center}
+\begin{minipage}{\linewidth}
+\centering
+\makeatletter\def\@captype{table}\makeatother
+\caption{Training loss and exact outer predictions for the matched optimizer study. Near best and outer perfect use all 90 configurations. Global uses the 12 one-hinge fits with certified real minima.}\label{tab:loss_audit}
+\small\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}lrrrr@{}}\toprule
+Method or start $\to$ solver & Median $L$ & Near best /90 & Global /12 & Outer perfect /90\\\midrule
+Xavier & $.773$ & 0 & 0 & 0\\
+Xavier $\to$ Adam & $.00190$ & 34 & 0 & 0\\
+Xavier $\to$ Adam+BFGS & $.000823$ & 48 & 1 & 0\\
+Xavier $\to$ LS & $.000613$ & 53 & 5 & 6\\
+Adam+BFGS endpoint $\to$ LS & $.000822$ & 49 & 1 & 5\\
+WSP, Examples only & $.000234$ & 36 & 0 & 30\\
+WSP, Examples only $\to$ LS & $.0000223$ & 72 & 9 & 30\\
+WSP, Formula and examples & $.000273$ & 36 & 0 & 30\\
+WSP, Formula and examples $\to$ LS & $.0000307$ & 66 & 7 & 30\\\bottomrule
+\end{tabular}
+\end{minipage}
+\end{center}
+The six perfect outer sets from Xavier-start LS occurred on addition and subtraction.
+
+\paragraph{Prediction error in original units.}
+For each configuration we computed outer RMSE over all test examples and output coordinates. The table reports the median RMSE over three sizes and three seeds per task, so large and small target magnitudes from different tasks remain separate. The WSP rows name the information supplied to the model, \emph{Formula and examples} or \emph{Examples only}. For each condition we score the returned weights before and after refinement by the same LS solver. The three BP rows start from Xavier weights. The Adam+BFGS row includes 800 initial Adam steps. A zero is a zero median across the nine configurations. The exact rates, all 945 sets of weights and their unrounded training, central and outer RMSEs are retained in the release.
+\begin{center}
+\begin{minipage}{\linewidth}
+\centering
+\makeatletter\def\@captype{table}\makeatother
+\caption{Outer RMSE in target units, with one median over nine size--start combinations per task. WSP rows give the information supplied to the model. An arrow to LS means the returned weights were refined by trust-region least squares.}\label{tab:opt_rmse}
+\scriptsize\setlength{\tabcolsep}{3.5pt}
+\begin{tabular}{@{}lrrrrr@{}}\toprule
+\input{rmse_optimizer}
+\end{tabular}
+\end{minipage}
+\end{center}
+
+\paragraph{A global optimum against which to judge a local solver.} For a single hidden scalar ReLU with affine skip, the model is a continuous two-piece line. Let \(a,b\) be the skip slope and intercept, let \(t\) be the hinge location and \(v\) its change in slope, and let \((u)_+=\max(0,u)\). Its output at input \(x\) is \(ax+b+v(x-t)_+\). A hinge of the other orientation is absorbed by the affine skip. Sort the observations. For each split with at least two sites on each side, let \(\ell_1,\ell_2\) denote independent weighted least-squares lines fitted to the observations on the left and right, with weights \(1/\max(1,|y_i|)^2\). If the lines intersect inside the gap, their joint optimum is feasible. Otherwise an optimum on that gap occurs at a boundary, unless the two lines coincide. To see this, let \(D(x)=\ell_1(x)-\ell_2(x)\). If \(l,r\) are the adjacent sample locations on either side of the gap, intersection is equivalent to $D(l)\le0\le D(r)$ or $D(l)\ge0\ge D(r)$. Each alternative is a closed polyhedral set in the four line coefficients. Its quadratic minimizer is either the unconstrained fit or lies on an equality boundary, which fixes the knot to a sample. If one side contains only one site, a line through that site and the adjacent knot attains its unconstrained one-site fit. We therefore also solve at all interior sample knots and include the global affine fit. We evaluate these small linear systems and losses over exact rationals using the stored binary64 inputs and labels as rationals. This certifies the optimum for the real-arithmetic model. Minor last-bit differences arise when evaluating its coefficients in binary64. We also solve the weighted normal equations for 21 linear cases and construct interpolants on the 12 width-16 smooth cases, for 45 analytical comparison writes in total.
+
+\paragraph{A specific failure and recovery.} On the width-one square network, seed 164, five of twelve inputs initially activated the hinge. After Adam, the maximum input to the rectifier on the observations was $-0.04148$. The sole hinge therefore contributed zero on all observations. The loss $0.2376944$ equaled the affine optimum, and BFGS took zero steps. The margin keeps the unit inactive in a neighborhood of this solution. Exhaustive rational minimization gives minimum training loss \(L_*\approx0.02293119\) with a knot at $-0.140592$. Trust-region LS from the identical Xavier vector reached this optimum. LS from the inactive Adam solution remained at its affine loss. The raw WSP proposal under \emph{Examples only} had $L=0.06706$ and mean outer scaled error $0.58786$. Refining it to the certified optimum raised the outer error to $0.66849$, even as the mean inner scaled error fell from $0.30945$ to $0.22533$.
+
+Across all 90 settings, BFGS after Adam reduced $L$ by more than $10^{-10}$ on 42, and increased mean outer scaled error by more than $10^{-10}$ on 13. Refining the WSP starts under \emph{Examples only} materially reduced $L$ on 54 settings, while outer error improved on six and worsened on 48. For WSP starts under \emph{Formula and examples}, the respective counts were 54, seven and 47. These counts separate failure to fit a given objective from the usefulness of that objective for extrapolation. The archive stores every train loss and gap, inner and outer scores, evaluation counts, and selected parameter vectors. Over all 90 fresh Xavier-start LS runs, there were 4,849 residual evaluations and 2,613 Jacobian evaluations. Adam evaluated 72,000 joint losses and gradients. Computing a full residual Jacobian and computing a scalar loss gradient have different costs.

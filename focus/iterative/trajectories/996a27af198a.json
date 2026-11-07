@@ -1,0 +1,279 @@
+{
+ "id": "996a27af198a",
+ "task": "fib",
+ "seed": 164,
+ "arm": "formula",
+ "sizes": [
+  1,
+  2,
+  3
+ ],
+ "source": "objective",
+ "protocol_sha256": "75c8a10bc407ddd2808e3a7101a82fcda21fe45b42c8d28ecd48cad31cc88638",
+ "states": {
+  "1": {
+   "initial": [
+    1.64204,
+    1.0,
+    0.40969
+   ],
+   "weights": [
+    1.618015766647,
+    1.0,
+    0.447283551502
+   ],
+   "attempts": 3,
+   "accepted_round": 3,
+   "reject_streak": 0,
+   "initial_train": {
+    "loss": 0.016460188296352582,
+    "exact": 0,
+    "n": 9,
+    "rmse": 0.2973383354154843
+   },
+   "initial_dev": {
+    "loss": 0.005881371968489634,
+    "exact": 0,
+    "n": 8,
+    "rmse": 66.60946509738892
+   },
+   "history": [
+    {
+     "round": 1,
+     "request_id": "996a27af198a-r1",
+     "proposal": [
+      1.61801572,
+      1.0,
+      0.4472837
+     ],
+     "valid": true,
+     "accepted": true,
+     "before_train": {
+      "loss": 0.016460188296352582,
+      "exact": 0,
+      "n": 9,
+      "rmse": 0.2973383354154843
+     },
+     "before_dev": {
+      "loss": 0.005881371968489634,
+      "exact": 0,
+      "n": 8,
+      "rmse": 66.60946509738892
+     },
+     "proposal_train": {
+      "loss": 0.0171643545274178,
+      "exact": 0,
+      "n": 9,
+      "rmse": 0.18961931523617526
+     },
+     "proposal_dev": {
+      "loss": 1.7360696366165416e-09,
+      "exact": 0,
+      "n": 8,
+      "rmse": 0.009264145430090883
+     },
+     "incumbent_train": {
+      "loss": 0.0171643545274178,
+      "exact": 0,
+      "n": 9,
+      "rmse": 0.18961931523617526
+     },
+     "incumbent_dev": {
+      "loss": 1.7360696366165416e-09,
+      "exact": 0,
+      "n": 8,
+      "rmse": 0.009264145430090883
+     }
+    },
+    {
+     "round": 2,
+     "request_id": "996a27af198a-r2",
+     "proposal": [
+      1.6180157668,
+      1.0,
+      0.4472835512
+     ],
+     "valid": true,
+     "accepted": true,
+     "before_train": {
+      "loss": 0.0171643545274178,
+      "exact": 0,
+      "n": 9,
+      "rmse": 0.18961931523617526
+     },
+     "before_dev": {
+      "loss": 1.7360696366165416e-09,
+      "exact": 0,
+      "n": 8,
+      "rmse": 0.009264145430090883
+     },
+     "proposal_train": {
+      "loss": 0.017164348710164777,
+      "exact": 0,
+      "n": 9,
+      "rmse": 0.18961928601485548
+     },
+     "proposal_dev": {
+      "loss": 1.7360670528083374e-09,
+      "exact": 0,
+      "n": 8,
+      "rmse": 0.00921721612160772
+     },
+     "incumbent_train": {
+      "loss": 0.017164348710164777,
+      "exact": 0,
+      "n": 9,
+      "rmse": 0.18961928601485548
+     },
+     "incumbent_dev": {
+      "loss": 1.7360670528083374e-09,
+      "exact": 0,
+      "n": 8,
+      "rmse": 0.00921721612160772
+     }
+    },
+    {
+     "round": 3,
+     "request_id": "996a27af198a-r3",
+     "proposal": [
+      1.618015766647,
+      1.0,
+      0.447283551502
+     ],
+     "valid": true,
+     "accepted": true,
+     "before_train": {
+      "loss": 0.017164348710164777,
+      "exact": 0,
+      "n": 9,
+      "rmse": 0.18961928601485548
+     },
+     "before_dev": {
+      "loss": 1.7360670528083374e-09,
+      "exact": 0,
+      "n": 8,
+      "rmse": 0.00921721612160772
+     },
+     "proposal_train": {
+      "loss": 0.01716434872150777,
+      "exact": 0,
+      "n": 9,
+      "rmse": 0.18961928604939643
+     },
+     "proposal_dev": {
+      "loss": 1.7360670526546195e-09,
+      "exact": 0,
+      "n": 8,
+      "rmse": 0.009217517997445579
+     },
+     "incumbent_train": {
+      "loss": 0.01716434872150777,
+      "exact": 0,
+      "n": 9,
+      "rmse": 0.18961928604939643
+     },
+     "incumbent_dev": {
+      "loss": 1.7360670526546195e-09,
+      "exact": 0,
+      "n": 8,
+      "rmse": 0.009217517997445579
+     }
+    }
+   ],
+   "stop": "round_limit"
+  },
+  "2": {
+   "initial": [
+    1.0,
+    1.0,
+    1.0,
+    0.0,
+    1.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "weights": [
+    1.0,
+    1.0,
+    1.0,
+    0.0,
+    1.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "attempts": 0,
+   "accepted_round": 0,
+   "reject_streak": 0,
+   "initial_train": {
+    "loss": 0.0,
+    "exact": 9,
+    "n": 9,
+    "rmse": 0.0
+   },
+   "initial_dev": {
+    "loss": 0.0,
+    "exact": 8,
+    "n": 8,
+    "rmse": 0.0
+   },
+   "history": [],
+   "stop": "exact_train_dev"
+  },
+  "3": {
+   "initial": [
+    1.0,
+    1.0,
+    0.0,
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    0.0
+   ],
+   "weights": [
+    1.0,
+    1.0,
+    0.0,
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    0.0
+   ],
+   "attempts": 0,
+   "accepted_round": 0,
+   "reject_streak": 0,
+   "initial_train": {
+    "loss": 0.0,
+    "exact": 9,
+    "n": 9,
+    "rmse": 0.0
+   },
+   "initial_dev": {
+    "loss": 0.0,
+    "exact": 8,
+    "n": 8,
+    "rmse": 0.0
+   },
+   "history": [],
+   "stop": "exact_train_dev"
+  }
+ },
+ "complete": true
+}

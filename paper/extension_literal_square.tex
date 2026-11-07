@@ -1,0 +1,26 @@
+\section{A first-response ReLU square correct on the entire outer shell}
+\label{app:literal-square-certificate}
+We prove the following all-input statement for a first response in the free-topology WSP experiment. We analyzed the frozen reply \texttt{3354251e2} (replicate 9213, 2,543 expanded input-dependent operations). The graph multiplies a wire only by a fixed coefficient. A loop implements integer multiplication using affine operations and ReLUs. Let $\mathrm{RN}$ denote binary64 rounding to nearest, ties to even. Under the separate-operation contract of the circuit language in Appendix~\ref{app:synthesis}, this reply returns $\mathrm{RN}(x^2)$ for \emph{every} binary64 $x$ with $3\le |x|\le10$.
+
+\paragraph{Normalization.}
+Initialize a nonnegative remainder $r$ to $r_0=|x|/16\in[3/16,5/8]$, exactly representable in this range. In decreasing order of the integer index $j$, a flag $f_j$ records whether to rescale $r$. The flags at thresholds $a=2^{-j}$, for $j=512,256,128,64,32,16,8,4,2,1$, test $r<a$ by
+\[
+ f_j=\relu\!\left(1-2^{j+53}\relu(r-(a-2^{-j-53}))\right).
+\]
+The stored threshold in the inner subtraction is the predecessor of $a$. If $r<a$ then $r$ is at most that predecessor, giving $f_j=1$. At $r=a$ the subtraction is exactly $2^{-j-53}$. For every representable $r\ge a$, monotonic rounding gives a difference at least that large, hence $f_j=0$. Even the largest gain has finite product on this shell. With intermediate $h=\relu(r-f_j)$, the update $r\gets h+(r-h)2^j$ therefore preserves $r$ for a zero flag and scales $r$ by $2^j$ for a unit flag, since $0\le r\le1$. The flags through $j=4$ vanish. Those at $j=2,1$ normalize $r_0$ into $r\in[1/2,1)$ by factors four, two, or one. Thus $m=2^{53}r$ is an exactly represented integer in $[2^{52},2^{53})$.
+
+\paragraph{Exact integer square.}
+Use the integer base $B=2^{27}$. A limb is a digit in this base. The first loop reads the 26 highest-order binary digits of $m$, where higher order means greater place value. It obtains the integer quotient $a=\lfloor m/B\rfloor$ and remainder $b=m-aB$. For an integer remainder $u$ and power of two $p$, the bit test $\relu(1-\relu(p-u))$ returns one if $u\ge p$ and zero otherwise. The next loop reads all 53 bits of $m$ from most to least significant. Let $v$ denote the integer represented by the bits already read. Let $P$ denote their product with $m$, and $H$, $M$ and $L$ its high, middle and low limbs. After each prefix, the stored values satisfy
+\[
+ P=vm=H B^2+M B+L,\qquad 0\le M,L<B .
+\]
+Initially all limbs are zero. For bit $t$ the updated product should be $2P+tm$. The two lower limbs add $tb$ and $ta$ respectively to the doubled old digits, with carry from the lower limb. The actual selectors $\relu(b-(1-t)B)$ and $\relu(a-(1-t)B)$ produce those summands exactly. Let $z$ denote either provisional digit sum before carrying. Both are integers in $[0,3B)$. The carry into the next digit is the quotient $\lfloor z/B\rfloor$. The circuit computes it by adding the two comparison bits at $B$ and $2B$, subtracts the resulting multiple of $B$, and adds the carry to the next digit. The high digit is updated as $2H+\mathrm{carry}$. Each prefix product satisfies $P\le m^2<2^{106}$, so $H<2^{52}$. The digit and bit operations stay within the binary64 exact integer range. After the last iteration $P=m^2$.
+
+\paragraph{One final rounding.}
+The normalized real square is $r^2=2^{-52}(H+M/B+L/B^2)$. Define the sticky bit $s$ to be one if any bit of the discarded low limb $L$ is nonzero, and zero otherwise. Let $v_{\mathrm{sq}}$ denote the rounded normalized square computed by the circuit,
+\[
+ v_{\mathrm{sq}}=2^{-52}\,\mathrm{RN}\!\left(H+\frac{M+s/2}{B}\right).
+\]
+Here $M+s/2$ and division by $B$ are exact. The integer $H$ lies in $[2^{50},2^{52})$. Throughout the possible range of $P/B^2$, binary64 rounding midpoints lie on the $1/B$ lattice (the intervals between successive powers of two in this range have spacings $1/4$ and $1/2$). If $L=0$, the unrounded argument is exact. If $L>0$, both $H+M/B+L/B^2$ and $H+(M+1/2)/B$ lie strictly inside the same interval between adjacent $1/B$ lattice sites. No rounding midpoint separates them. Thus replacing the low limb preserves the side of every midpoint, and $L=0$ preserves an exact tie and its even-neighbor decision. The final addition therefore produces the correctly rounded value of $P/B^2$. The circuit undoes each active normalization by an exact division by four or sixteen, then multiplies by 256 to undo the initial division of the input by sixteen. On the shell all these rescalings by powers of two remain normal, so rounding commutes with them and the result is $\mathrm{RN}(x^2)$.
+
+The shell proof allows a concrete failure closer to zero. At $x=\texttt{0x1.0000000000001p-512}$ the same frozen circuit differs from the reference by one subnormal spacing. A separate audit against once-rounded exact rationals reproduced 104/104 normalization-boundary cases, 2,466/2,466 limb-boundary cases, 2,222/2,222 exact rounding ties, and 1,192/1,192 additional near-midpoint cases in the shell. All four finite panels had raw RMSE zero. The argument above supplies the all-shell guarantee.

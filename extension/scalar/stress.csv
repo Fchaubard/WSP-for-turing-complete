@@ -1,0 +1,7 @@
+task,method,order,stage,split,weights,literals,gates,add,sub,mul,relu,n,correct,within1,worst_ulp,max_abs,mae,numpy_equal,numpy_ref_equal
+sin,relu_rotation_two_word,83,-78,exponent_wide,500,4,17391,3656,8406,3823,1506,8192,8192,8192,0,0.0,0.0,8188,8188
+sin,relu_rotation_two_word,83,-78,tiny,500,4,17391,3656,8406,3823,1506,8,8,8,0,0.0,0.0,8,8
+sin,relu_rotation_two_word,83,-78,near_midpoints,500,4,17391,3656,8406,3823,1506,6594,6594,6594,0,0.0,0.0,3296,3296
+selfpower,relu_selfpower_two_word,84,0,exponent_wide,1352,7,23089,4595,12276,3600,2618,8192,8192,8192,0,0.0,0.0,8191,8191
+selfpower,relu_selfpower_two_word,84,0,tiny,1352,7,23089,4595,12276,3600,2618,4,4,4,0,0.0,0.0,4,4
+selfpower,relu_selfpower_two_word,84,0,near_midpoints,1352,7,23089,4595,12276,3600,2618,896,446,896,1,1.1102230246251565e-16,5.575896887068309e-17,245,445

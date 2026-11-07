@@ -1,0 +1,140 @@
+[
+  {
+    "case": 1,
+    "d": 4,
+    "readout": 2,
+    "leak": 1.0,
+    "gain": 1.0,
+    "edits": 5,
+    "row_certificate": true,
+    "dev": {
+      "complete_exact": 512,
+      "samples": 512,
+      "outputs_per_stream": 8,
+      "rmse": 0.0,
+      "max_abs": 0.0
+    },
+    "shell": {
+      "complete_exact": 512,
+      "samples": 512,
+      "outputs_per_stream": 64,
+      "rmse": 0.0,
+      "max_abs": 0.0
+    }
+  },
+  {
+    "case": 2,
+    "d": 5,
+    "readout": 0,
+    "leak": 1.0,
+    "gain": 1.0,
+    "edits": 6,
+    "row_certificate": true,
+    "dev": {
+      "complete_exact": 512,
+      "samples": 512,
+      "outputs_per_stream": 8,
+      "rmse": 0.0,
+      "max_abs": 0.0
+    },
+    "shell": {
+      "complete_exact": 512,
+      "samples": 512,
+      "outputs_per_stream": 64,
+      "rmse": 0.0,
+      "max_abs": 0.0
+    }
+  },
+  {
+    "case": 3,
+    "d": 6,
+    "readout": 4,
+    "leak": 1.0,
+    "gain": 1.0,
+    "edits": 7,
+    "row_certificate": true,
+    "dev": {
+      "complete_exact": 512,
+      "samples": 512,
+      "outputs_per_stream": 8,
+      "rmse": 0.0,
+      "max_abs": 0.0
+    },
+    "shell": {
+      "complete_exact": 512,
+      "samples": 512,
+      "outputs_per_stream": 64,
+      "rmse": 0.0,
+      "max_abs": 0.0
+    }
+  },
+  {
+    "case": 4,
+    "d": 4,
+    "readout": 1,
+    "leak": -0.5,
+    "gain": 2.0,
+    "edits": 5,
+    "row_certificate": true,
+    "dev": {
+      "complete_exact": 512,
+      "samples": 512,
+      "outputs_per_stream": 8,
+      "rmse": 0.0,
+      "max_abs": 0.0
+    },
+    "shell": {
+      "complete_exact": 512,
+      "samples": 512,
+      "outputs_per_stream": 64,
+      "rmse": 0.0,
+      "max_abs": 0.0
+    }
+  },
+  {
+    "case": 5,
+    "d": 5,
+    "readout": 3,
+    "leak": 0.5,
+    "gain": -1.0,
+    "edits": 6,
+    "row_certificate": true,
+    "dev": {
+      "complete_exact": 512,
+      "samples": 512,
+      "outputs_per_stream": 8,
+      "rmse": 0.0,
+      "max_abs": 0.0
+    },
+    "shell": {
+      "complete_exact": 512,
+      "samples": 512,
+      "outputs_per_stream": 64,
+      "rmse": 0.0,
+      "max_abs": 0.0
+    }
+  },
+  {
+    "case": 6,
+    "d": 6,
+    "readout": 5,
+    "leak": -1.0,
+    "gain": 0.5,
+    "edits": 7,
+    "row_certificate": true,
+    "dev": {
+      "complete_exact": 512,
+      "samples": 512,
+      "outputs_per_stream": 8,
+      "rmse": 0.0,
+      "max_abs": 0.0
+    },
+    "shell": {
+      "complete_exact": 512,
+      "samples": 512,
+      "outputs_per_stream": 64,
+      "rmse": 0.0,
+      "max_abs": 0.0
+    }
+  }
+]

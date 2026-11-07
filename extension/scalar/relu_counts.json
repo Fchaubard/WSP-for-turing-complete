@@ -1,0 +1,58 @@
+{
+  "relu_rotation_single_word_-12": {
+    "dynamic_nodes": 814,
+    "relus": 182
+  },
+  "relu_rotation_two_word_-12": {
+    "dynamic_nodes": 3195,
+    "relus": 318
+  },
+  "relu_rotation_single_word_-24": {
+    "dynamic_nodes": 1366,
+    "relus": 302
+  },
+  "relu_rotation_two_word_-24": {
+    "dynamic_nodes": 5511,
+    "relus": 534
+  },
+  "relu_rotation_single_word_-32": {
+    "dynamic_nodes": 1734,
+    "relus": 382
+  },
+  "relu_rotation_two_word_-32": {
+    "dynamic_nodes": 7055,
+    "relus": 678
+  },
+  "relu_rotation_single_word_-44": {
+    "dynamic_nodes": 2286,
+    "relus": 502
+  },
+  "relu_rotation_two_word_-44": {
+    "dynamic_nodes": 9371,
+    "relus": 894
+  },
+  "relu_rotation_single_word_-52": {
+    "dynamic_nodes": 2654,
+    "relus": 582
+  },
+  "relu_rotation_two_word_-52": {
+    "dynamic_nodes": 10915,
+    "relus": 1038
+  },
+  "relu_rotation_single_word_-64": {
+    "dynamic_nodes": 3206,
+    "relus": 702
+  },
+  "relu_rotation_two_word_-64": {
+    "dynamic_nodes": 13231,
+    "relus": 1254
+  },
+  "relu_rotation_single_word_-78": {
+    "dynamic_nodes": 3850,
+    "relus": 842
+  },
+  "relu_rotation_two_word_-78": {
+    "dynamic_nodes": 15933,
+    "relus": 1506
+  }
+}

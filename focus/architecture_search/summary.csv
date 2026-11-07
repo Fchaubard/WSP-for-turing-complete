@@ -1,0 +1,11 @@
+task,attempted,valid,fully_exact,median_raw_rmse_valid,coefficients_range,flops_max_range,workspace_max_range
+square,3,3,3,0.0,0,1,16
+sin,3,3,0,7.790120819679062e-16,10--19,27--32,32--88
+selfpower,3,1,0,16759.378581076264,93,250,1040
+tanh,3,3,3,0.0,0,0,16
+add,3,3,3,0.0,0,1,32
+subtract,3,3,3,0.0,2,3,24
+sum,3,3,3,0.0,1,6,112
+sort,3,3,0,5.228169922230517e-16,1--8,25--35,88--112
+fib,3,3,3,0.0,2,64,48
+tri,3,3,3,0.0,1--2,3,24

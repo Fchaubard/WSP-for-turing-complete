@@ -1,0 +1,35 @@
+{
+  "family": "Scalar polynomial gating network with triple-angle reconstruction",
+  "inferred_rule": "The examples agree with y = sin(x), inferred over the full domain [-10,10]. Finite examples alone do not uniquely determine this rule.",
+  "construction_summary": "Scale the input by 1/27, evaluate the degree-13 sine Taylor polynomial using Horner gates, and apply s → s(3−4s²) three times. This implements sine across the deployment domain with near-binary64 accuracy, without a sine operation. The graph uses 23 nodes and 19 stored scalar coefficients. With activation reuse, inference requires only a few live scalars and 34 scalar arithmetic operations. No global resource optimality is claimed.",
+  "certificate": "Let P(t)=t−t³/3!+t⁵/5!−t⁷/7!+t⁹/9!−t¹¹/11!+t¹³/13! and F(s)=3s−4s³. For |t|≤10/27, the alternating-series bound gives |P(t)−sin(t)|≤(10/27)^15/15!<2.7e−19. Also F composed three times at sin(t) equals sin(27t). On the intervening initial-value interval, the derivative of this composition has magnitude below 30, using sin(27 arcsin(s)); hence the exact-coefficient real-arithmetic error is below 8.1e−18 throughout [-10,10]. Stored-coefficient rounding and binary64 arithmetic add floating-point error; the real-arithmetic bound is not a bound on that additional error.",
+  "network": {
+    "kind": "graph",
+    "nodes": [
+      {"name":"t","op":"affine","source":"input","weight":[[0.037037037037037035]]},
+      {"name":"z","op":"multiply","left":"t","right":"t"},
+      {"name":"p11","op":"affine","source":"z","weight":[[1.6059043836821613e-10]],"bias":[-2.505210838544172e-8]},
+      {"name":"m9","op":"multiply","left":"z","right":"p11"},
+      {"name":"p9","op":"affine","source":"m9","weight":[[1]],"bias":[0.0000027557319223985893]},
+      {"name":"m7","op":"multiply","left":"z","right":"p9"},
+      {"name":"p7","op":"affine","source":"m7","weight":[[1]],"bias":[-0.0001984126984126984]},
+      {"name":"m5","op":"multiply","left":"z","right":"p7"},
+      {"name":"p5","op":"affine","source":"m5","weight":[[1]],"bias":[0.008333333333333333]},
+      {"name":"m3","op":"multiply","left":"z","right":"p5"},
+      {"name":"p3","op":"affine","source":"m3","weight":[[1]],"bias":[-0.16666666666666666]},
+      {"name":"m1","op":"multiply","left":"z","right":"p3"},
+      {"name":"p1","op":"affine","source":"m1","weight":[[1]],"bias":[1]},
+      {"name":"s0","op":"multiply","left":"t","right":"p1"},
+      {"name":"q0","op":"multiply","left":"s0","right":"s0"},
+      {"name":"g0","op":"affine","source":"q0","weight":[[-4]],"bias":[3]},
+      {"name":"s1","op":"multiply","left":"s0","right":"g0"},
+      {"name":"q1","op":"multiply","left":"s1","right":"s1"},
+      {"name":"g1","op":"affine","source":"q1","weight":[[-4]],"bias":[3]},
+      {"name":"s2","op":"multiply","left":"s1","right":"g1"},
+      {"name":"q2","op":"multiply","left":"s2","right":"s2"},
+      {"name":"g2","op":"affine","source":"q2","weight":[[-4]],"bias":[3]},
+      {"name":"output_sine","op":"multiply","left":"s2","right":"g2"}
+    ],
+    "output":"output_sine"
+  }
+}

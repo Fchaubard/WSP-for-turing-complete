@@ -1,0 +1,38 @@
+{
+  "protocol_sha256": "75c8a10bc407ddd2808e3a7101a82fcda21fe45b42c8d28ecd48cad31cc88638",
+  "original_cases": 60,
+  "new_requests": 161,
+  "requests_by_arm": {
+    "formula": 81,
+    "examples": 80
+  },
+  "stops": {
+    "round_limit": 81,
+    "two_nonimprovements": 33,
+    "exact_train_dev": 60
+  },
+  "arrays_attempted": 332,
+  "arrays_accepted": 217,
+  "invalid_or_nonfinite_attempts": 1,
+  "initially_exact": 60,
+  "selection_by_arm": {
+    "examples": {
+      "settings": 87,
+      "dev_loss_strictly_lower": 52,
+      "training_loss": {
+        "lower": 6,
+        "higher": 46,
+        "equal": 35
+      }
+    },
+    "formula": {
+      "settings": 87,
+      "dev_loss_strictly_lower": 52,
+      "training_loss": {
+        "higher": 47,
+        "lower": 5,
+        "equal": 35
+      }
+    }
+  }
+}

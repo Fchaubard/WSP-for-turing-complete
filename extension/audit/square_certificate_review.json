@@ -1,0 +1,19 @@
+{
+  "source_sha256": "9de53df19e3d12597666be3c1cd6aeebe385447e67079ce5ecbb98e2cc407400",
+  "ops": 3352,
+  "oracle": "float(Fraction.from_float(x)**2)",
+  "suites": {
+    "subnormal_midpoints": {
+      "inputs": 45468,
+      "exact": 45468,
+      "min_abs": 1.571727784702628e-162,
+      "max_abs": 1.4916681462400412e-154
+    },
+    "exponent_strata": {
+      "inputs": 40779,
+      "exact": 40779,
+      "min_abs": 0.0,
+      "max_abs": 10.0
+    }
+  }
+}

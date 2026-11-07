@@ -1,0 +1,32 @@
+{
+  "edition": "2026-11-07",
+  "pages": 88,
+  "last_main_text_page": 9,
+  "main_figures": [
+    {
+      "figure": 1,
+      "question": "Which pipeline has the lowest aggregate endpoint error?",
+      "evidence": "Sum of ten task means, 87 settings per pipeline",
+      "limit": "Raw output scales are not normalized; dominant task contribution is disclosed"
+    },
+    {
+      "figure": 2,
+      "question": "Do accepted development gains transfer to untouched extrapolation?",
+      "evidence": "All87 selected settings per condition, recorded opportunities0through3",
+      "limit": "Retrospective test scoring; no test-guided selection; stopped trajectories retained"
+    },
+    {
+      "figure": 3,
+      "question": "What changes in the actual computed function?",
+      "evidence": "Three fixed width16 seed164 cases with archived coefficients",
+      "limit": "Illustrative regressions, not frequency estimates"
+    }
+  ],
+  "new_model_calls": 0,
+  "new_fits": 0,
+  "new_test_scoring": false,
+  "original_artifacts_preserved": 193,
+  "numerical_review": "Independent verification of all8 outer medians,30exactsettingspercondition,andfinalendpoints",
+  "layout_review": "Mainfigurespages3,6,7rendered; nooverfullboxesorundefinedreferences",
+  "pdf_sha256": "36a80d219482d74a297170e74b643c1be9e86c70c06df6138dfb2d380eec8701"
+}

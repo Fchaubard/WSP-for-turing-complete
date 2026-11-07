@@ -1,0 +1,416 @@
+[
+  {
+    "task": "add",
+    "seed": 164,
+    "width": 1,
+    "gradient_max_error": 3.238366519386915e-11,
+    "adam_bfgs": {
+      "adam_steps": 800,
+      "bfgs_iterations": 10,
+      "nfev": 813,
+      "njev": 813,
+      "status": 0,
+      "termination": "Optimization terminated successfully."
+    },
+    "trf_xavier": {
+      "nfev": 57,
+      "njev": 34,
+      "trf_nfev": 56,
+      "trf_njev": 33,
+      "polish_steps": 0,
+      "status": 1,
+      "termination": "`gtol` termination condition is satisfied."
+    }
+  },
+  {
+    "task": "add",
+    "seed": 164,
+    "width": 2,
+    "gradient_max_error": 1.1809189737199688e-10,
+    "adam_bfgs": {
+      "adam_steps": 800,
+      "bfgs_iterations": 30,
+      "nfev": 836,
+      "njev": 836,
+      "status": 0,
+      "termination": "Optimization terminated successfully."
+    },
+    "trf_xavier": {
+      "nfev": 61,
+      "njev": 23,
+      "trf_nfev": 53,
+      "trf_njev": 22,
+      "polish_steps": 0,
+      "status": 1,
+      "termination": "`gtol` termination condition is satisfied."
+    }
+  },
+  {
+    "task": "add",
+    "seed": 164,
+    "width": 4,
+    "gradient_max_error": 8.931477779583474e-11,
+    "adam_bfgs": {
+      "adam_steps": 800,
+      "bfgs_iterations": 22,
+      "nfev": 825,
+      "njev": 825,
+      "status": 0,
+      "termination": "Optimization terminated successfully."
+    },
+    "trf_xavier": {
+      "nfev": 49,
+      "njev": 19,
+      "trf_nfev": 46,
+      "trf_njev": 17,
+      "polish_steps": 1,
+      "status": 1,
+      "termination": "`gtol` termination condition is satisfied."
+    }
+  },
+  {
+    "task": "add",
+    "seed": 317,
+    "width": 1,
+    "gradient_max_error": 1.4394656967078618e-10,
+    "adam_bfgs": {
+      "adam_steps": 800,
+      "bfgs_iterations": 0,
+      "nfev": 801,
+      "njev": 801,
+      "status": 0,
+      "termination": "Optimization terminated successfully."
+    },
+    "trf_xavier": {
+      "nfev": 28,
+      "njev": 17,
+      "trf_nfev": 24,
+      "trf_njev": 15,
+      "polish_steps": 1,
+      "status": 2,
+      "termination": "`ftol` termination condition is satisfied."
+    }
+  },
+  {
+    "task": "add",
+    "seed": 317,
+    "width": 2,
+    "gradient_max_error": 6.503581007066828e-11,
+    "adam_bfgs": {
+      "adam_steps": 800,
+      "bfgs_iterations": 22,
+      "nfev": 823,
+      "njev": 823,
+      "status": 0,
+      "termination": "Optimization terminated successfully."
+    },
+    "trf_xavier": {
+      "nfev": 33,
+      "njev": 16,
+      "trf_nfev": 31,
+      "trf_njev": 14,
+      "polish_steps": 1,
+      "status": 1,
+      "termination": "`gtol` termination condition is satisfied."
+    }
+  },
+  {
+    "task": "add",
+    "seed": 317,
+    "width": 4,
+    "gradient_max_error": 3.192803799123567e-10,
+    "adam_bfgs": {
+      "adam_steps": 800,
+      "bfgs_iterations": 22,
+      "nfev": 824,
+      "njev": 824,
+      "status": 0,
+      "termination": "Optimization terminated successfully."
+    },
+    "trf_xavier": {
+      "nfev": 45,
+      "njev": 20,
+      "trf_nfev": 36,
+      "trf_njev": 16,
+      "polish_steps": 3,
+      "status": 1,
+      "termination": "`gtol` termination condition is satisfied."
+    }
+  },
+  {
+    "task": "add",
+    "seed": 583,
+    "width": 1,
+    "gradient_max_error": 5.447009510106682e-11,
+    "adam_bfgs": {
+      "adam_steps": 800,
+      "bfgs_iterations": 0,
+      "nfev": 801,
+      "njev": 801,
+      "status": 0,
+      "termination": "Optimization terminated successfully."
+    },
+    "trf_xavier": {
+      "nfev": 51,
+      "njev": 27,
+      "trf_nfev": 48,
+      "trf_njev": 25,
+      "polish_steps": 1,
+      "status": 1,
+      "termination": "`gtol` termination condition is satisfied."
+    }
+  },
+  {
+    "task": "add",
+    "seed": 583,
+    "width": 2,
+    "gradient_max_error": 1.1805811883647266e-10,
+    "adam_bfgs": {
+      "adam_steps": 800,
+      "bfgs_iterations": 0,
+      "nfev": 801,
+      "njev": 801,
+      "status": 0,
+      "termination": "Optimization terminated successfully."
+    },
+    "trf_xavier": {
+      "nfev": 65,
+      "njev": 30,
+      "trf_nfev": 49,
+      "trf_njev": 27,
+      "polish_steps": 2,
+      "status": 1,
+      "termination": "`gtol` termination condition is satisfied."
+    }
+  },
+  {
+    "task": "add",
+    "seed": 583,
+    "width": 4,
+    "gradient_max_error": 4.809358467028346e-11,
+    "adam_bfgs": {
+      "adam_steps": 800,
+      "bfgs_iterations": 39,
+      "nfev": 840,
+      "njev": 840,
+      "status": 0,
+      "termination": "Optimization terminated successfully."
+    },
+    "trf_xavier": {
+      "nfev": 71,
+      "njev": 37,
+      "trf_nfev": 50,
+      "trf_njev": 29,
+      "polish_steps": 7,
+      "status": 1,
+      "termination": "`gtol` termination condition is satisfied."
+    }
+  },
+  {
+    "task": "subtract",
+    "seed": 164,
+    "width": 1,
+    "gradient_max_error": 2.8117577710595754e-11,
+    "adam_bfgs": {
+      "adam_steps": 800,
+      "bfgs_iterations": 12,
+      "nfev": 815,
+      "njev": 815,
+      "status": 0,
+      "termination": "Optimization terminated successfully."
+    },
+    "trf_xavier": {
+      "nfev": 60,
+      "njev": 34,
+      "trf_nfev": 58,
+      "trf_njev": 33,
+      "polish_steps": 0,
+      "status": 1,
+      "termination": "`gtol` termination condition is satisfied."
+    }
+  },
+  {
+    "task": "subtract",
+    "seed": 164,
+    "width": 2,
+    "gradient_max_error": 5.0869322643087855e-11,
+    "adam_bfgs": {
+      "adam_steps": 800,
+      "bfgs_iterations": 38,
+      "nfev": 850,
+      "njev": 850,
+      "status": 0,
+      "termination": "Optimization terminated successfully."
+    },
+    "trf_xavier": {
+      "nfev": 59,
+      "njev": 30,
+      "trf_nfev": 52,
+      "trf_njev": 27,
+      "polish_steps": 2,
+      "status": 1,
+      "termination": "`gtol` termination condition is satisfied."
+    }
+  },
+  {
+    "task": "subtract",
+    "seed": 164,
+    "width": 4,
+    "gradient_max_error": 3.1681074430522926e-11,
+    "adam_bfgs": {
+      "adam_steps": 800,
+      "bfgs_iterations": 40,
+      "nfev": 842,
+      "njev": 842,
+      "status": 0,
+      "termination": "Optimization terminated successfully."
+    },
+    "trf_xavier": {
+      "nfev": 65,
+      "njev": 35,
+      "trf_nfev": 53,
+      "trf_njev": 30,
+      "polish_steps": 4,
+      "status": 1,
+      "termination": "`gtol` termination condition is satisfied."
+    }
+  },
+  {
+    "task": "subtract",
+    "seed": 317,
+    "width": 1,
+    "gradient_max_error": 1.7644100266959972e-10,
+    "adam_bfgs": {
+      "adam_steps": 800,
+      "bfgs_iterations": 23,
+      "nfev": 826,
+      "njev": 826,
+      "status": 0,
+      "termination": "Optimization terminated successfully."
+    },
+    "trf_xavier": {
+      "nfev": 56,
+      "njev": 29,
+      "trf_nfev": 53,
+      "trf_njev": 28,
+      "polish_steps": 0,
+      "status": 1,
+      "termination": "`gtol` termination condition is satisfied."
+    }
+  },
+  {
+    "task": "subtract",
+    "seed": 317,
+    "width": 2,
+    "gradient_max_error": 7.089863418574538e-11,
+    "adam_bfgs": {
+      "adam_steps": 800,
+      "bfgs_iterations": 7,
+      "nfev": 809,
+      "njev": 809,
+      "status": 0,
+      "termination": "Optimization terminated successfully."
+    },
+    "trf_xavier": {
+      "nfev": 61,
+      "njev": 34,
+      "trf_nfev": 51,
+      "trf_njev": 30,
+      "polish_steps": 3,
+      "status": 1,
+      "termination": "`gtol` termination condition is satisfied."
+    }
+  },
+  {
+    "task": "subtract",
+    "seed": 317,
+    "width": 4,
+    "gradient_max_error": 4.4713122093753555e-11,
+    "adam_bfgs": {
+      "adam_steps": 800,
+      "bfgs_iterations": 39,
+      "nfev": 842,
+      "njev": 842,
+      "status": 0,
+      "termination": "Optimization terminated successfully."
+    },
+    "trf_xavier": {
+      "nfev": 57,
+      "njev": 30,
+      "trf_nfev": 49,
+      "trf_njev": 28,
+      "polish_steps": 1,
+      "status": 1,
+      "termination": "`gtol` termination condition is satisfied."
+    }
+  },
+  {
+    "task": "subtract",
+    "seed": 583,
+    "width": 1,
+    "gradient_max_error": 1.1381051656655927e-10,
+    "adam_bfgs": {
+      "adam_steps": 800,
+      "bfgs_iterations": 13,
+      "nfev": 817,
+      "njev": 817,
+      "status": 0,
+      "termination": "Optimization terminated successfully."
+    },
+    "trf_xavier": {
+      "nfev": 59,
+      "njev": 33,
+      "trf_nfev": 57,
+      "trf_njev": 32,
+      "polish_steps": 0,
+      "status": 1,
+      "termination": "`gtol` termination condition is satisfied."
+    }
+  },
+  {
+    "task": "subtract",
+    "seed": 583,
+    "width": 2,
+    "gradient_max_error": 1.311196770899522e-10,
+    "adam_bfgs": {
+      "adam_steps": 800,
+      "bfgs_iterations": 15,
+      "nfev": 818,
+      "njev": 818,
+      "status": 0,
+      "termination": "Optimization terminated successfully."
+    },
+    "trf_xavier": {
+      "nfev": 56,
+      "njev": 32,
+      "trf_nfev": 52,
+      "trf_njev": 29,
+      "polish_steps": 2,
+      "status": 1,
+      "termination": "`gtol` termination condition is satisfied."
+    }
+  },
+  {
+    "task": "subtract",
+    "seed": 583,
+    "width": 4,
+    "gradient_max_error": 1.1297132326837378e-10,
+    "adam_bfgs": {
+      "adam_steps": 800,
+      "bfgs_iterations": 121,
+      "nfev": 945,
+      "njev": 945,
+      "status": 0,
+      "termination": "Optimization terminated successfully."
+    },
+    "trf_xavier": {
+      "nfev": 65,
+      "njev": 29,
+      "trf_nfev": 48,
+      "trf_njev": 25,
+      "polish_steps": 3,
+      "status": 1,
+      "termination": "`gtol` termination condition is satisfied."
+    }
+  }
+]

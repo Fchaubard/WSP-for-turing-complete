@@ -1,0 +1,1132 @@
+[
+ {
+  "kind": "quotient_xavier",
+  "seed": 101,
+  "initial": [
+   1.536441669051615,
+   -0.48697982545585294
+  ],
+  "final": [
+   1.0,
+   1.0
+  ],
+  "fit": {
+   "adam_loss": 0.0,
+   "final_loss": 0.0,
+   "bfgs_iterations": 0,
+   "optimizer_status": "Optimization terminated successfully."
+  },
+  "scores": {
+   "ID_T8": {
+    "n": 2048,
+    "length": 8,
+    "bit_fraction": 1.0,
+    "exact": 1.0,
+    "exact_all": 1.0,
+    "one_ulp": 1.0,
+    "one_ulp_all": 1.0,
+    "eps8": 1.0,
+    "eps8_all": 1.0,
+    "rmse": 0.0,
+    "linf": 0.0,
+    "relative_linf": 0.0
+   },
+   "OOD_T8": {
+    "n": 2048,
+    "length": 8,
+    "bit_fraction": 1.0,
+    "exact": 1.0,
+    "exact_all": 1.0,
+    "one_ulp": 1.0,
+    "one_ulp_all": 1.0,
+    "eps8": 1.0,
+    "eps8_all": 1.0,
+    "rmse": 0.0,
+    "linf": 0.0,
+    "relative_linf": 0.0
+   },
+   "ID_T32": {
+    "n": 2048,
+    "length": 32,
+    "bit_fraction": 1.0,
+    "exact": 1.0,
+    "exact_all": 1.0,
+    "one_ulp": 1.0,
+    "one_ulp_all": 1.0,
+    "eps8": 1.0,
+    "eps8_all": 1.0,
+    "rmse": 0.0,
+    "linf": 0.0,
+    "relative_linf": 0.0
+   },
+   "OOD_T32": {
+    "n": 2048,
+    "length": 32,
+    "bit_fraction": 1.0,
+    "exact": 1.0,
+    "exact_all": 1.0,
+    "one_ulp": 1.0,
+    "one_ulp_all": 1.0,
+    "eps8": 1.0,
+    "eps8_all": 1.0,
+    "rmse": 0.0,
+    "linf": 0.0,
+    "relative_linf": 0.0
+   }
+  }
+ },
+ {
+  "kind": "quotient_xavier",
+  "seed": 202,
+  "initial": [
+   -0.5324757197810265,
+   -0.19518166018932
+  ],
+  "final": [
+   1.0,
+   1.0
+  ],
+  "fit": {
+   "adam_loss": 0.0,
+   "final_loss": 0.0,
+   "bfgs_iterations": 0,
+   "optimizer_status": "Optimization terminated successfully."
+  },
+  "scores": {
+   "ID_T8": {
+    "n": 2048,
+    "length": 8,
+    "bit_fraction": 1.0,
+    "exact": 1.0,
+    "exact_all": 1.0,
+    "one_ulp": 1.0,
+    "one_ulp_all": 1.0,
+    "eps8": 1.0,
+    "eps8_all": 1.0,
+    "rmse": 0.0,
+    "linf": 0.0,
+    "relative_linf": 0.0
+   },
+   "OOD_T8": {
+    "n": 2048,
+    "length": 8,
+    "bit_fraction": 1.0,
+    "exact": 1.0,
+    "exact_all": 1.0,
+    "one_ulp": 1.0,
+    "one_ulp_all": 1.0,
+    "eps8": 1.0,
+    "eps8_all": 1.0,
+    "rmse": 0.0,
+    "linf": 0.0,
+    "relative_linf": 0.0
+   },
+   "ID_T32": {
+    "n": 2048,
+    "length": 32,
+    "bit_fraction": 1.0,
+    "exact": 1.0,
+    "exact_all": 1.0,
+    "one_ulp": 1.0,
+    "one_ulp_all": 1.0,
+    "eps8": 1.0,
+    "eps8_all": 1.0,
+    "rmse": 0.0,
+    "linf": 0.0,
+    "relative_linf": 0.0
+   },
+   "OOD_T32": {
+    "n": 2048,
+    "length": 32,
+    "bit_fraction": 1.0,
+    "exact": 1.0,
+    "exact_all": 1.0,
+    "one_ulp": 1.0,
+    "one_ulp_all": 1.0,
+    "eps8": 1.0,
+    "eps8_all": 1.0,
+    "rmse": 0.0,
+    "linf": 0.0,
+    "relative_linf": 0.0
+   }
+  }
+ },
+ {
+  "kind": "quotient_xavier",
+  "seed": 303,
+  "initial": [
+   -0.9892351180858455,
+   -0.28813766468698676
+  ],
+  "final": [
+   1.0,
+   1.0000000000000002
+  ],
+  "fit": {
+   "adam_loss": 1.0584387890393567e-30,
+   "final_loss": 3.0691512263845667e-31,
+   "bfgs_iterations": 1,
+   "optimizer_status": "Optimization terminated successfully."
+  },
+  "scores": {
+   "ID_T8": {
+    "n": 2048,
+    "length": 8,
+    "bit_fraction": 0.0,
+    "exact": 0.0,
+    "exact_all": 0.0,
+    "one_ulp": 0.59814453125,
+    "one_ulp_all": 0.0107421875,
+    "eps8": 1.0,
+    "eps8_all": 1.0,
+    "rmse": 7.817682630036131e-16,
+    "linf": 3.552713678800501e-15,
+    "relative_linf": 2.96045848060523e-16
+   },
+   "OOD_T8": {
+    "n": 2048,
+    "length": 8,
+    "bit_fraction": 0.0,
+    "exact": 0.0,
+    "exact_all": 0.0,
+    "one_ulp": 0.57830810546875,
+    "one_ulp_all": 0.00537109375,
+    "eps8": 1.0,
+    "eps8_all": 1.0,
+    "rmse": 3.1114070671577254e-15,
+    "linf": 1.4210854715202004e-14,
+    "relative_linf": 2.9605480683122716e-16
+   },
+   "ID_T32": {
+    "n": 2048,
+    "length": 32,
+    "bit_fraction": 0.0,
+    "exact": 0.0,
+    "exact_all": 0.0,
+    "one_ulp": 0.58935546875,
+    "one_ulp_all": 0.0,
+    "eps8": 1.0,
+    "eps8_all": 1.0,
+    "rmse": 1.50816299222035e-15,
+    "linf": 7.105427357601002e-15,
+    "relative_linf": 2.9605218158875684e-16
+   },
+   "OOD_T32": {
+    "n": 2048,
+    "length": 32,
+    "bit_fraction": 0.0,
+    "exact": 0.0,
+    "exact_all": 0.0,
+    "one_ulp": 0.5845794677734375,
+    "one_ulp_all": 0.0,
+    "eps8": 1.0,
+    "eps8_all": 1.0,
+    "rmse": 5.924539595039541e-15,
+    "linf": 2.842170943040401e-14,
+    "relative_linf": 2.960585804730529e-16
+   }
+  }
+ },
+ {
+  "kind": "quotient_xavier",
+  "seed": 404,
+  "initial": [
+   -0.6827592781551776,
+   -0.16495203787378615
+  ],
+  "final": [
+   1.0,
+   1.0
+  ],
+  "fit": {
+   "adam_loss": 0.0,
+   "final_loss": 0.0,
+   "bfgs_iterations": 0,
+   "optimizer_status": "Optimization terminated successfully."
+  },
+  "scores": {
+   "ID_T8": {
+    "n": 2048,
+    "length": 8,
+    "bit_fraction": 1.0,
+    "exact": 1.0,
+    "exact_all": 1.0,
+    "one_ulp": 1.0,
+    "one_ulp_all": 1.0,
+    "eps8": 1.0,
+    "eps8_all": 1.0,
+    "rmse": 0.0,
+    "linf": 0.0,
+    "relative_linf": 0.0
+   },
+   "OOD_T8": {
+    "n": 2048,
+    "length": 8,
+    "bit_fraction": 1.0,
+    "exact": 1.0,
+    "exact_all": 1.0,
+    "one_ulp": 1.0,
+    "one_ulp_all": 1.0,
+    "eps8": 1.0,
+    "eps8_all": 1.0,
+    "rmse": 0.0,
+    "linf": 0.0,
+    "relative_linf": 0.0
+   },
+   "ID_T32": {
+    "n": 2048,
+    "length": 32,
+    "bit_fraction": 1.0,
+    "exact": 1.0,
+    "exact_all": 1.0,
+    "one_ulp": 1.0,
+    "one_ulp_all": 1.0,
+    "eps8": 1.0,
+    "eps8_all": 1.0,
+    "rmse": 0.0,
+    "linf": 0.0,
+    "relative_linf": 0.0
+   },
+   "OOD_T32": {
+    "n": 2048,
+    "length": 32,
+    "bit_fraction": 1.0,
+    "exact": 1.0,
+    "exact_all": 1.0,
+    "one_ulp": 1.0,
+    "one_ulp_all": 1.0,
+    "eps8": 1.0,
+    "eps8_all": 1.0,
+    "rmse": 0.0,
+    "linf": 0.0,
+    "relative_linf": 0.0
+   }
+  }
+ },
+ {
+  "kind": "quotient_xavier",
+  "seed": 505,
+  "initial": [
+   1.213900766594154,
+   0.7043838952928335
+  ],
+  "final": [
+   1.0,
+   1.0
+  ],
+  "fit": {
+   "adam_loss": 0.0,
+   "final_loss": 0.0,
+   "bfgs_iterations": 0,
+   "optimizer_status": "Optimization terminated successfully."
+  },
+  "scores": {
+   "ID_T8": {
+    "n": 2048,
+    "length": 8,
+    "bit_fraction": 1.0,
+    "exact": 1.0,
+    "exact_all": 1.0,
+    "one_ulp": 1.0,
+    "one_ulp_all": 1.0,
+    "eps8": 1.0,
+    "eps8_all": 1.0,
+    "rmse": 0.0,
+    "linf": 0.0,
+    "relative_linf": 0.0
+   },
+   "OOD_T8": {
+    "n": 2048,
+    "length": 8,
+    "bit_fraction": 1.0,
+    "exact": 1.0,
+    "exact_all": 1.0,
+    "one_ulp": 1.0,
+    "one_ulp_all": 1.0,
+    "eps8": 1.0,
+    "eps8_all": 1.0,
+    "rmse": 0.0,
+    "linf": 0.0,
+    "relative_linf": 0.0
+   },
+   "ID_T32": {
+    "n": 2048,
+    "length": 32,
+    "bit_fraction": 1.0,
+    "exact": 1.0,
+    "exact_all": 1.0,
+    "one_ulp": 1.0,
+    "one_ulp_all": 1.0,
+    "eps8": 1.0,
+    "eps8_all": 1.0,
+    "rmse": 0.0,
+    "linf": 0.0,
+    "relative_linf": 0.0
+   },
+   "OOD_T32": {
+    "n": 2048,
+    "length": 32,
+    "bit_fraction": 1.0,
+    "exact": 1.0,
+    "exact_all": 1.0,
+    "one_ulp": 1.0,
+    "one_ulp_all": 1.0,
+    "eps8": 1.0,
+    "eps8_all": 1.0,
+    "rmse": 0.0,
+    "linf": 0.0,
+    "relative_linf": 0.0
+   }
+  }
+ },
+ {
+  "kind": "quotient_mapped",
+  "seed": 101,
+  "initial": [
+   1.536441669051615,
+   -0.48045180616160316
+  ],
+  "final": [
+   1.0,
+   1.0
+  ],
+  "fit": {
+   "adam_loss": 0.0,
+   "final_loss": 0.0,
+   "bfgs_iterations": 0,
+   "optimizer_status": "Optimization terminated successfully."
+  },
+  "scores": {
+   "ID_T8": {
+    "n": 2048,
+    "length": 8,
+    "bit_fraction": 1.0,
+    "exact": 1.0,
+    "exact_all": 1.0,
+    "one_ulp": 1.0,
+    "one_ulp_all": 1.0,
+    "eps8": 1.0,
+    "eps8_all": 1.0,
+    "rmse": 0.0,
+    "linf": 0.0,
+    "relative_linf": 0.0
+   },
+   "OOD_T8": {
+    "n": 2048,
+    "length": 8,
+    "bit_fraction": 1.0,
+    "exact": 1.0,
+    "exact_all": 1.0,
+    "one_ulp": 1.0,
+    "one_ulp_all": 1.0,
+    "eps8": 1.0,
+    "eps8_all": 1.0,
+    "rmse": 0.0,
+    "linf": 0.0,
+    "relative_linf": 0.0
+   },
+   "ID_T32": {
+    "n": 2048,
+    "length": 32,
+    "bit_fraction": 1.0,
+    "exact": 1.0,
+    "exact_all": 1.0,
+    "one_ulp": 1.0,
+    "one_ulp_all": 1.0,
+    "eps8": 1.0,
+    "eps8_all": 1.0,
+    "rmse": 0.0,
+    "linf": 0.0,
+    "relative_linf": 0.0
+   },
+   "OOD_T32": {
+    "n": 2048,
+    "length": 32,
+    "bit_fraction": 1.0,
+    "exact": 1.0,
+    "exact_all": 1.0,
+    "one_ulp": 1.0,
+    "one_ulp_all": 1.0,
+    "eps8": 1.0,
+    "eps8_all": 1.0,
+    "rmse": 0.0,
+    "linf": 0.0,
+    "relative_linf": 0.0
+   }
+  }
+ },
+ {
+  "kind": "quotient_mapped",
+  "seed": 202,
+  "initial": [
+   -0.5324757197810265,
+   -0.21349123564541192
+  ],
+  "final": [
+   1.0,
+   1.0
+  ],
+  "fit": {
+   "adam_loss": 0.0,
+   "final_loss": 0.0,
+   "bfgs_iterations": 0,
+   "optimizer_status": "Optimization terminated successfully."
+  },
+  "scores": {
+   "ID_T8": {
+    "n": 2048,
+    "length": 8,
+    "bit_fraction": 1.0,
+    "exact": 1.0,
+    "exact_all": 1.0,
+    "one_ulp": 1.0,
+    "one_ulp_all": 1.0,
+    "eps8": 1.0,
+    "eps8_all": 1.0,
+    "rmse": 0.0,
+    "linf": 0.0,
+    "relative_linf": 0.0
+   },
+   "OOD_T8": {
+    "n": 2048,
+    "length": 8,
+    "bit_fraction": 1.0,
+    "exact": 1.0,
+    "exact_all": 1.0,
+    "one_ulp": 1.0,
+    "one_ulp_all": 1.0,
+    "eps8": 1.0,
+    "eps8_all": 1.0,
+    "rmse": 0.0,
+    "linf": 0.0,
+    "relative_linf": 0.0
+   },
+   "ID_T32": {
+    "n": 2048,
+    "length": 32,
+    "bit_fraction": 1.0,
+    "exact": 1.0,
+    "exact_all": 1.0,
+    "one_ulp": 1.0,
+    "one_ulp_all": 1.0,
+    "eps8": 1.0,
+    "eps8_all": 1.0,
+    "rmse": 0.0,
+    "linf": 0.0,
+    "relative_linf": 0.0
+   },
+   "OOD_T32": {
+    "n": 2048,
+    "length": 32,
+    "bit_fraction": 1.0,
+    "exact": 1.0,
+    "exact_all": 1.0,
+    "one_ulp": 1.0,
+    "one_ulp_all": 1.0,
+    "eps8": 1.0,
+    "eps8_all": 1.0,
+    "rmse": 0.0,
+    "linf": 0.0,
+    "relative_linf": 0.0
+   }
+  }
+ },
+ {
+  "kind": "quotient_mapped",
+  "seed": 303,
+  "initial": [
+   -0.9892351180858455,
+   -0.3071223573953173
+  ],
+  "final": [
+   1.0,
+   1.0000000000000002
+  ],
+  "fit": {
+   "adam_loss": 3.0691512263845667e-31,
+   "final_loss": 3.0691512263845667e-31,
+   "bfgs_iterations": 0,
+   "optimizer_status": "Optimization terminated successfully."
+  },
+  "scores": {
+   "ID_T8": {
+    "n": 2048,
+    "length": 8,
+    "bit_fraction": 0.0,
+    "exact": 0.0,
+    "exact_all": 0.0,
+    "one_ulp": 0.59814453125,
+    "one_ulp_all": 0.0107421875,
+    "eps8": 1.0,
+    "eps8_all": 1.0,
+    "rmse": 7.817682630036131e-16,
+    "linf": 3.552713678800501e-15,
+    "relative_linf": 2.96045848060523e-16
+   },
+   "OOD_T8": {
+    "n": 2048,
+    "length": 8,
+    "bit_fraction": 0.0,
+    "exact": 0.0,
+    "exact_all": 0.0,
+    "one_ulp": 0.57830810546875,
+    "one_ulp_all": 0.00537109375,
+    "eps8": 1.0,
+    "eps8_all": 1.0,
+    "rmse": 3.1114070671577254e-15,
+    "linf": 1.4210854715202004e-14,
+    "relative_linf": 2.9605480683122716e-16
+   },
+   "ID_T32": {
+    "n": 2048,
+    "length": 32,
+    "bit_fraction": 0.0,
+    "exact": 0.0,
+    "exact_all": 0.0,
+    "one_ulp": 0.58935546875,
+    "one_ulp_all": 0.0,
+    "eps8": 1.0,
+    "eps8_all": 1.0,
+    "rmse": 1.50816299222035e-15,
+    "linf": 7.105427357601002e-15,
+    "relative_linf": 2.9605218158875684e-16
+   },
+   "OOD_T32": {
+    "n": 2048,
+    "length": 32,
+    "bit_fraction": 0.0,
+    "exact": 0.0,
+    "exact_all": 0.0,
+    "one_ulp": 0.5845794677734375,
+    "one_ulp_all": 0.0,
+    "eps8": 1.0,
+    "eps8_all": 1.0,
+    "rmse": 5.924539595039541e-15,
+    "linf": 2.842170943040401e-14,
+    "relative_linf": 2.960585804730529e-16
+   }
+  }
+ },
+ {
+  "kind": "quotient_mapped",
+  "seed": 404,
+  "initial": [
+   -0.6827592781551776,
+   0.11179102044133489
+  ],
+  "final": [
+   1.0,
+   1.0
+  ],
+  "fit": {
+   "adam_loss": 0.0,
+   "final_loss": 0.0,
+   "bfgs_iterations": 0,
+   "optimizer_status": "Optimization terminated successfully."
+  },
+  "scores": {
+   "ID_T8": {
+    "n": 2048,
+    "length": 8,
+    "bit_fraction": 1.0,
+    "exact": 1.0,
+    "exact_all": 1.0,
+    "one_ulp": 1.0,
+    "one_ulp_all": 1.0,
+    "eps8": 1.0,
+    "eps8_all": 1.0,
+    "rmse": 0.0,
+    "linf": 0.0,
+    "relative_linf": 0.0
+   },
+   "OOD_T8": {
+    "n": 2048,
+    "length": 8,
+    "bit_fraction": 1.0,
+    "exact": 1.0,
+    "exact_all": 1.0,
+    "one_ulp": 1.0,
+    "one_ulp_all": 1.0,
+    "eps8": 1.0,
+    "eps8_all": 1.0,
+    "rmse": 0.0,
+    "linf": 0.0,
+    "relative_linf": 0.0
+   },
+   "ID_T32": {
+    "n": 2048,
+    "length": 32,
+    "bit_fraction": 1.0,
+    "exact": 1.0,
+    "exact_all": 1.0,
+    "one_ulp": 1.0,
+    "one_ulp_all": 1.0,
+    "eps8": 1.0,
+    "eps8_all": 1.0,
+    "rmse": 0.0,
+    "linf": 0.0,
+    "relative_linf": 0.0
+   },
+   "OOD_T32": {
+    "n": 2048,
+    "length": 32,
+    "bit_fraction": 1.0,
+    "exact": 1.0,
+    "exact_all": 1.0,
+    "one_ulp": 1.0,
+    "one_ulp_all": 1.0,
+    "eps8": 1.0,
+    "eps8_all": 1.0,
+    "rmse": 0.0,
+    "linf": 0.0,
+    "relative_linf": 0.0
+   }
+  }
+ },
+ {
+  "kind": "quotient_mapped",
+  "seed": 505,
+  "initial": [
+   1.213900766594154,
+   -1.1775098381675984
+  ],
+  "final": [
+   1.0,
+   0.9999999999999999
+  ],
+  "fit": {
+   "adam_loss": 1.7808105644495092e-31,
+   "final_loss": 1.7808105644495092e-31,
+   "bfgs_iterations": 0,
+   "optimizer_status": "Optimization terminated successfully."
+  },
+  "scores": {
+   "ID_T8": {
+    "n": 2048,
+    "length": 8,
+    "bit_fraction": 0.0,
+    "exact": 0.0,
+    "exact_all": 0.0,
+    "one_ulp": 1.0,
+    "one_ulp_all": 1.0,
+    "eps8": 1.0,
+    "eps8_all": 1.0,
+    "rmse": 5.937048569489807e-16,
+    "linf": 3.552713678800501e-15,
+    "relative_linf": 2.2204018047928304e-16
+   },
+   "OOD_T8": {
+    "n": 2048,
+    "length": 8,
+    "bit_fraction": 0.0,
+    "exact": 0.0,
+    "exact_all": 0.0,
+    "one_ulp": 1.0,
+    "one_ulp_all": 1.0,
+    "eps8": 1.0,
+    "eps8_all": 1.0,
+    "rmse": 2.341274935802994e-15,
+    "linf": 7.105427357601002e-15,
+    "relative_linf": 2.2204446096833908e-16
+   },
+   "ID_T32": {
+    "n": 2048,
+    "length": 32,
+    "bit_fraction": 0.0,
+    "exact": 0.0,
+    "exact_all": 0.0,
+    "one_ulp": 1.0,
+    "one_ulp_all": 1.0,
+    "eps8": 1.0,
+    "eps8_all": 1.0,
+    "rmse": 1.1361440629948639e-15,
+    "linf": 7.105427357601002e-15,
+    "relative_linf": 2.2204448499438098e-16
+   },
+   "OOD_T32": {
+    "n": 2048,
+    "length": 32,
+    "bit_fraction": 0.0,
+    "exact": 0.0,
+    "exact_all": 0.0,
+    "one_ulp": 1.0,
+    "one_ulp_all": 1.0,
+    "eps8": 1.0,
+    "eps8_all": 1.0,
+    "rmse": 4.474650379011062e-15,
+    "linf": 2.842170943040401e-14,
+    "relative_linf": 2.220420912851002e-16
+   }
+  }
+ },
+ {
+  "kind": "fixed_output",
+  "seed": 101,
+  "initial": [
+   1.536441669051615
+  ],
+  "final": [
+   1.0
+  ],
+  "fit": {
+   "adam_loss": 0.0,
+   "final_loss": 0.0,
+   "bfgs_iterations": 0,
+   "optimizer_status": "Optimization terminated successfully."
+  },
+  "scores": {
+   "ID_T8": {
+    "n": 2048,
+    "length": 8,
+    "bit_fraction": 1.0,
+    "exact": 1.0,
+    "exact_all": 1.0,
+    "one_ulp": 1.0,
+    "one_ulp_all": 1.0,
+    "eps8": 1.0,
+    "eps8_all": 1.0,
+    "rmse": 0.0,
+    "linf": 0.0,
+    "relative_linf": 0.0
+   },
+   "OOD_T8": {
+    "n": 2048,
+    "length": 8,
+    "bit_fraction": 1.0,
+    "exact": 1.0,
+    "exact_all": 1.0,
+    "one_ulp": 1.0,
+    "one_ulp_all": 1.0,
+    "eps8": 1.0,
+    "eps8_all": 1.0,
+    "rmse": 0.0,
+    "linf": 0.0,
+    "relative_linf": 0.0
+   },
+   "ID_T32": {
+    "n": 2048,
+    "length": 32,
+    "bit_fraction": 1.0,
+    "exact": 1.0,
+    "exact_all": 1.0,
+    "one_ulp": 1.0,
+    "one_ulp_all": 1.0,
+    "eps8": 1.0,
+    "eps8_all": 1.0,
+    "rmse": 0.0,
+    "linf": 0.0,
+    "relative_linf": 0.0
+   },
+   "OOD_T32": {
+    "n": 2048,
+    "length": 32,
+    "bit_fraction": 1.0,
+    "exact": 1.0,
+    "exact_all": 1.0,
+    "one_ulp": 1.0,
+    "one_ulp_all": 1.0,
+    "eps8": 1.0,
+    "eps8_all": 1.0,
+    "rmse": 0.0,
+    "linf": 0.0,
+    "relative_linf": 0.0
+   }
+  }
+ },
+ {
+  "kind": "fixed_output",
+  "seed": 202,
+  "initial": [
+   -0.5324757197810265
+  ],
+  "final": [
+   1.0
+  ],
+  "fit": {
+   "adam_loss": 0.0,
+   "final_loss": 0.0,
+   "bfgs_iterations": 0,
+   "optimizer_status": "Optimization terminated successfully."
+  },
+  "scores": {
+   "ID_T8": {
+    "n": 2048,
+    "length": 8,
+    "bit_fraction": 1.0,
+    "exact": 1.0,
+    "exact_all": 1.0,
+    "one_ulp": 1.0,
+    "one_ulp_all": 1.0,
+    "eps8": 1.0,
+    "eps8_all": 1.0,
+    "rmse": 0.0,
+    "linf": 0.0,
+    "relative_linf": 0.0
+   },
+   "OOD_T8": {
+    "n": 2048,
+    "length": 8,
+    "bit_fraction": 1.0,
+    "exact": 1.0,
+    "exact_all": 1.0,
+    "one_ulp": 1.0,
+    "one_ulp_all": 1.0,
+    "eps8": 1.0,
+    "eps8_all": 1.0,
+    "rmse": 0.0,
+    "linf": 0.0,
+    "relative_linf": 0.0
+   },
+   "ID_T32": {
+    "n": 2048,
+    "length": 32,
+    "bit_fraction": 1.0,
+    "exact": 1.0,
+    "exact_all": 1.0,
+    "one_ulp": 1.0,
+    "one_ulp_all": 1.0,
+    "eps8": 1.0,
+    "eps8_all": 1.0,
+    "rmse": 0.0,
+    "linf": 0.0,
+    "relative_linf": 0.0
+   },
+   "OOD_T32": {
+    "n": 2048,
+    "length": 32,
+    "bit_fraction": 1.0,
+    "exact": 1.0,
+    "exact_all": 1.0,
+    "one_ulp": 1.0,
+    "one_ulp_all": 1.0,
+    "eps8": 1.0,
+    "eps8_all": 1.0,
+    "rmse": 0.0,
+    "linf": 0.0,
+    "relative_linf": 0.0
+   }
+  }
+ },
+ {
+  "kind": "fixed_output",
+  "seed": 303,
+  "initial": [
+   -0.9892351180858455
+  ],
+  "final": [
+   1.0
+  ],
+  "fit": {
+   "adam_loss": 0.0,
+   "final_loss": 0.0,
+   "bfgs_iterations": 0,
+   "optimizer_status": "Optimization terminated successfully."
+  },
+  "scores": {
+   "ID_T8": {
+    "n": 2048,
+    "length": 8,
+    "bit_fraction": 1.0,
+    "exact": 1.0,
+    "exact_all": 1.0,
+    "one_ulp": 1.0,
+    "one_ulp_all": 1.0,
+    "eps8": 1.0,
+    "eps8_all": 1.0,
+    "rmse": 0.0,
+    "linf": 0.0,
+    "relative_linf": 0.0
+   },
+   "OOD_T8": {
+    "n": 2048,
+    "length": 8,
+    "bit_fraction": 1.0,
+    "exact": 1.0,
+    "exact_all": 1.0,
+    "one_ulp": 1.0,
+    "one_ulp_all": 1.0,
+    "eps8": 1.0,
+    "eps8_all": 1.0,
+    "rmse": 0.0,
+    "linf": 0.0,
+    "relative_linf": 0.0
+   },
+   "ID_T32": {
+    "n": 2048,
+    "length": 32,
+    "bit_fraction": 1.0,
+    "exact": 1.0,
+    "exact_all": 1.0,
+    "one_ulp": 1.0,
+    "one_ulp_all": 1.0,
+    "eps8": 1.0,
+    "eps8_all": 1.0,
+    "rmse": 0.0,
+    "linf": 0.0,
+    "relative_linf": 0.0
+   },
+   "OOD_T32": {
+    "n": 2048,
+    "length": 32,
+    "bit_fraction": 1.0,
+    "exact": 1.0,
+    "exact_all": 1.0,
+    "one_ulp": 1.0,
+    "one_ulp_all": 1.0,
+    "eps8": 1.0,
+    "eps8_all": 1.0,
+    "rmse": 0.0,
+    "linf": 0.0,
+    "relative_linf": 0.0
+   }
+  }
+ },
+ {
+  "kind": "fixed_output",
+  "seed": 404,
+  "initial": [
+   -0.6827592781551776
+  ],
+  "final": [
+   1.0
+  ],
+  "fit": {
+   "adam_loss": 0.0,
+   "final_loss": 0.0,
+   "bfgs_iterations": 0,
+   "optimizer_status": "Optimization terminated successfully."
+  },
+  "scores": {
+   "ID_T8": {
+    "n": 2048,
+    "length": 8,
+    "bit_fraction": 1.0,
+    "exact": 1.0,
+    "exact_all": 1.0,
+    "one_ulp": 1.0,
+    "one_ulp_all": 1.0,
+    "eps8": 1.0,
+    "eps8_all": 1.0,
+    "rmse": 0.0,
+    "linf": 0.0,
+    "relative_linf": 0.0
+   },
+   "OOD_T8": {
+    "n": 2048,
+    "length": 8,
+    "bit_fraction": 1.0,
+    "exact": 1.0,
+    "exact_all": 1.0,
+    "one_ulp": 1.0,
+    "one_ulp_all": 1.0,
+    "eps8": 1.0,
+    "eps8_all": 1.0,
+    "rmse": 0.0,
+    "linf": 0.0,
+    "relative_linf": 0.0
+   },
+   "ID_T32": {
+    "n": 2048,
+    "length": 32,
+    "bit_fraction": 1.0,
+    "exact": 1.0,
+    "exact_all": 1.0,
+    "one_ulp": 1.0,
+    "one_ulp_all": 1.0,
+    "eps8": 1.0,
+    "eps8_all": 1.0,
+    "rmse": 0.0,
+    "linf": 0.0,
+    "relative_linf": 0.0
+   },
+   "OOD_T32": {
+    "n": 2048,
+    "length": 32,
+    "bit_fraction": 1.0,
+    "exact": 1.0,
+    "exact_all": 1.0,
+    "one_ulp": 1.0,
+    "one_ulp_all": 1.0,
+    "eps8": 1.0,
+    "eps8_all": 1.0,
+    "rmse": 0.0,
+    "linf": 0.0,
+    "relative_linf": 0.0
+   }
+  }
+ },
+ {
+  "kind": "fixed_output",
+  "seed": 505,
+  "initial": [
+   1.213900766594154
+  ],
+  "final": [
+   1.0
+  ],
+  "fit": {
+   "adam_loss": 0.0,
+   "final_loss": 0.0,
+   "bfgs_iterations": 0,
+   "optimizer_status": "Optimization terminated successfully."
+  },
+  "scores": {
+   "ID_T8": {
+    "n": 2048,
+    "length": 8,
+    "bit_fraction": 1.0,
+    "exact": 1.0,
+    "exact_all": 1.0,
+    "one_ulp": 1.0,
+    "one_ulp_all": 1.0,
+    "eps8": 1.0,
+    "eps8_all": 1.0,
+    "rmse": 0.0,
+    "linf": 0.0,
+    "relative_linf": 0.0
+   },
+   "OOD_T8": {
+    "n": 2048,
+    "length": 8,
+    "bit_fraction": 1.0,
+    "exact": 1.0,
+    "exact_all": 1.0,
+    "one_ulp": 1.0,
+    "one_ulp_all": 1.0,
+    "eps8": 1.0,
+    "eps8_all": 1.0,
+    "rmse": 0.0,
+    "linf": 0.0,
+    "relative_linf": 0.0
+   },
+   "ID_T32": {
+    "n": 2048,
+    "length": 32,
+    "bit_fraction": 1.0,
+    "exact": 1.0,
+    "exact_all": 1.0,
+    "one_ulp": 1.0,
+    "one_ulp_all": 1.0,
+    "eps8": 1.0,
+    "eps8_all": 1.0,
+    "rmse": 0.0,
+    "linf": 0.0,
+    "relative_linf": 0.0
+   },
+   "OOD_T32": {
+    "n": 2048,
+    "length": 32,
+    "bit_fraction": 1.0,
+    "exact": 1.0,
+    "exact_all": 1.0,
+    "one_ulp": 1.0,
+    "one_ulp_all": 1.0,
+    "eps8": 1.0,
+    "eps8_all": 1.0,
+    "rmse": 0.0,
+    "linf": 0.0,
+    "relative_linf": 0.0
+   }
+  }
+ }
+]

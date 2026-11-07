@@ -1,0 +1,3 @@
+# Can the optimizer reach the training optimum?
+
+Run VECLIB_MAXIMUM_THREADS=1 OPENBLAS_NUM_THREADS=1 python run.py with NumPy and SciPy. Scores cover four targets × seven widths × three seeds × three hidden placements × two training envelopes × four estimators = 2,016 rows. The SVD minimum-change solution, one preconditioned backpropagated gradient step, and a simulated 5,000-step idealized full-batch gradient trajectory share readout initialization and design. The fourth row is the untrained readout. Scores include SVD cutoff specifications in code, maximum normal-equation residuals, feature ranks and holdouts. The SVD solves a truncated numerical rank problem; it gives no global certificate for end-to-end movable hinges. Full details in paper/extension_convex.tex.

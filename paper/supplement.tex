@@ -1,0 +1,90 @@
+\section{First-response WSP pilot across nine tasks}\label{app:literal}
+We made nine independent requests, one per task listed below, beyond the twelve recurrence requests of Appendix~\ref{sec:writer}. Each prompt gave Astra the formula, required domain, architecture and exact initialized weights, and requested one complete vector of replacement weights. The model could perform scratch arithmetic. It received no test feedback. For square, sine and positive self-power, the graph used a seven-hinge hidden layer and a direct affine input--output connection (23 stored scalars). Hyperbolic tangent used the native activation between two affine transformations. Addition and subtraction had two coefficients each. The homogeneous recurrent networks for Fibonacci and triangular numbers used widths two and three respectively. The sorting graph used five prespecified pairs of wires and reused three scalar coefficients on every pair. Untying those coefficients at each comparison gives the 15-slot sorter in Table~\ref{tab:seq}. Five freely routed four-wire residual blocks use 40 slots (Appendix~\ref{app:matched}). The 50-slot sorter stores one operand-preserving block for repeated use (Appendix~\ref{app:sort}).
+
+\paragraph{Scoring the nine WSP responses.}
+For continuous inputs, the central and outer tests each contained 4,096 examples. Outer input signs were sampled within this total whenever both signs belonged to the task. Number-sequence rows score the nine individual central indices \(0,\ldots,8\) and 56 later indices \(9,\ldots,64\) from one sequence. Four-item sorting requires all four entries of a vector for an exact match. RMSE includes every scalar output on the split. Scaled absolute error for prediction \(\hat y\) and label \(y\) is \(|\hat y-y|/\max(1,|y|)\). The binary64 reference is the specified NumPy operation, or the integer valued sequence. All entries below are for one response per task. The matched WSP/BP comparison is in Section~\ref{sec:matched}.
+
+\begin{center}
+\begin{minipage}{\linewidth}
+\centering
+\makeatletter\def\@captype{table}\makeatother
+\caption{First WSP response on each of nine tasks. Exact percentages and raw RMSE use the same central and outer observations. Addition and subtraction have separate, identical scores.}\label{tab:pilot}
+\small\setlength{\tabcolsep}{3.5pt}
+\begin{tabular}{@{}lrrrrr@{}}\toprule
+& & \multicolumn{2}{c}{Exact (\%)} & \multicolumn{2}{c}{Raw RMSE}\\
+Target & Slots & Central & Outer & Central & Outer\\\midrule
+\(x^2\) & 23 & 0 & 0 & .514 & .547\\
+\(\sin x\) & 23 & 0 & 0 & .0985 & .0934\\
+\(x^x,\ x>0\) & 23 & 0 & 0 & 2.65 & \(5.24\times 10^8\)\\
+\(\tanh x\) & 4 & 100 & 100 & 0 & 0\\
+Addition and subtraction (each) & 2 & 100 & 100 & 0 & 0\\
+Fibonacci & 8 & 100 & 100 & 0 & 0\\
+Triangular & 15 & 100 & 100 & 0 & 0\\
+Sort four & 3 & 64.33 & 55.13 & \(1.18\times10^{-16}\) & \(4.91\times10^{-16}\)\\\bottomrule
+\end{tabular}
+\end{minipage}
+\end{center}
+The square response used skip slope \(-17.5\), intercept \(-75.78125\), unit hinge input slopes, knots at \(-7.5,-5,-2.5,0,2.5,5,7.5\) and slope increases of 5. This shifted equal-spacing spline attains the width-seven uniform-error optimum \(50/64=0.78125\) over the real interval. The sine response had maximum absolute error 0.13822, positive self-power had maximum scaled error 0.48922, and the maximum coordinate error of the sorter was \(3.55\times10^{-15}\). The exact arithmetic weights were \((1,1)\) for addition and \((1,-1)\) for subtraction. The tanh response used identity maps around the native activation.
+
+For the \emph{initial suite}, the archive contains all 21 prompts and replies. Metadata record the requested service alias \texttt{gpt-6-astra}, reasoning effort setting, completed event types and token counts. Requests used fresh isolated chats. The provider may change the deployment behind this alias. Archived arrays can be replayed independently in the specified numerical environment.
+
+\section{Experimental detail and reproducibility}
+\label{app:exp}
+\paragraph{Hardware and arithmetic.} The initial suite used binary64 arithmetic on an Apple M5 central processing unit. For the initial scalar experiments, the environment used Python 3.13.12. The main sequence, frontier and archive scoring environments used Python 3.12.12. Both used NumPy 2.5.4 and the macOS Accelerate implementation of the Basic Linear Algebra Subprograms (BLAS), with SciPy 1.18.1 for optimization. Exact rational computations, which retain integer numerators and denominators, use Python's \texttt{Fraction}. Stream sums use successive rounded additions in temporal order. In this suite the transcendental labels are the platform NumPy results. Tests compare to that implementation. Correct rounding of transcendental functions is a separate question. Re-running with a different BLAS or math library can affect last bits and optimizer paths.
+
+\paragraph{Initialization and budgets.} Let \(n_{\rm in}\) and \(n_{\rm out}\) be the input and output coordinate counts of a layer (its fan-in and fan-out). Xavier initialization draws each weight uniformly between the negative and positive values of \(\sqrt{6/(n_{\rm in}+n_{\rm out})}\). Biases start at zero. Nominal tensor slots include zeros. We count distinct stored trainable coefficients separately from unrolled uses and count edits separately from either. Scalar widths are \(0,1,3,7,15,31,63\). Compact tent depths are \(1,4,8,12,16,20,24,27,30\). The compensated depths are \(16,24,27,30,35,40,48,55\). In the local and full-envelope WSP spline controls, all coefficients were overwritten using the specified formula. Let \(t_j\) be an interior knot and \(s_{j-1},s_j\) the slopes of the adjacent secants. The corresponding hinge has input weight \(w_j=1\), bias \(c_j=-t_j\) and output weight \(v_j=s_j-s_{j-1}\). A linear skip carries the leftmost secant. No samples from the outer test arrays enter training or checkpoint selection.
+
+Adam, the adaptive moment estimation optimizer, updates weights using running estimates of the first and second moments of the training gradients. The quasi-Newton optimizer BFGS is named for Broyden, Fletcher, Goldfarb and Shanno. Its limited-memory version with support for bounds is L-BFGS-B. A minibatch is a sampled subset of training examples used for one update. The shallow scalar gradient runs use three seeds (11, 22, 33), 1,024 in-range training points, 500 minibatch Adam updates of size 64 with learning rate \(0.01\), then at most 250 full-batch L-BFGS-B iterations. We retain the endpoint with smaller training mean squared error (MSE), the mean of squared scalar prediction errors. The compact deep square runs use 300 Adam updates and at most 100 L-BFGS-B iterations. Inner scoring uses 4,096 points and outer scoring uses 4,096 per sign where defined. Tanh polishing uses ten least-squares solves with the full analytic Jacobian. For the affine control let \(X\) collect the training input rows and \(N\) count the rows. The gradient step size is the reciprocal of the largest eigenvalue of \(X^\top X/N\). Phase folding uses six rectifiers to implement the piecewise-linear triangular wave \(\arcsin(\sin x)\), where \(\arcsin\) is the inverse sine taking values in \([-\pi/2,\pi/2]\), on the declared envelope. Its readout uses a least-squares fit on folded central examples. Identical-shape end-to-end training yields median shell mean absolute error (MAE) 3.169.
+
+Sequence sweeps use widths \(1,2,4\) for rolling sum and \(1,2,3,4\) for the two autonomous sequences. Slots total \(d^2+2d\) including a learned readout. The ordinary four-item sorter sweeps three, four, and five untied gates and an additional full tied model. Training uses 256 inner streams of length eight or 256 four-item sort examples. Test sets use 2,048 examples per split. The autonomous tasks use one integer trajectory, first nine labels for training. Each of the 15 configurations uses five independent Xavier seeds, 800 full-batch Adam updates at 0.02 with gradient-norm cap 5, then BFGS up to 1,000 iterations. Objective is half mean squared residual. For a target sequence value \(g_n\) at index \(n\), integer-sequence residuals are divided by \(\max(1,|g_n|)\) before squaring. We checked reverse-mode gradients, obtained by propagating output derivatives backwards through the graph, against centered finite differences obtained from small positive and negative parameter perturbations. We report medians across seeds and retain each seed's scores, convergence status and final tensors. With shared three-gain sorting, individual BP fits range from zero to \(46.39\%\) whole-shell equality. With \(\epsilon=2^{-52}\) denoting the gap above 1 in binary64 and \(y\) the reference coordinate, the best fit passes the whole-vector \(8\epsilon\max(1,|y|)\) test on every four-item example.
+
+\paragraph{Activation and magnitude controls.} Writing \(x_t\) for the current input, \(h_t\) for the scalar state after tick \(t\) and \(y_t\) for its output, a conventional one-state tanh RNN \(h_t=\tanh(h_{t-1}+2^{-40}x_t)\), \(y_t=2^{40}h_t\), reproduced every measured held-out prefix on the same binary64 tests. For the small arguments encountered on these samples, the library tanh returns its input value. The output is bounded, and scaling subnormal values can erase inputs outside the tested conditions. The matched five-start gradient model had median outer length-32 RMSE 0.452 and zero whole-stream accuracy at the median. The ordinary sorting control with gains fixed to one recovers every lattice vector because differences and outputs stay representable. The 50-weight selection comparator is trained on the same sorting task in a separate matched-architecture run. Its median outer RMSE is 4.35, compared with zero for the WSP comparator on that set. For the full-width, depth-48 square we tested the effect of setting the compensation readout coefficients to zero. The associated gradient experiment trained the compact deep family.
+
+\paragraph{Reproducible outputs.} The accompanying code includes raw per-split tables, fixed generators and seed-level results, exact-rational validations, the individual Astra responses and functions to apply them. A replay of the rational weights obtained by setting the transition matrix characteristic polynomial after rounding them to binary64 produced 32/32 exactly matching impulse values in 15 of 75 cases. These were 14/30 for prefix sum, 1/25 for Fibonacci and 0/20 for triangular numbers under fixed-order separate multiply/add. This is specific to that construction and its reduction order. The isolated-row implementation exploits a different coordinate support. All observations in this initial suite are synthetic. The later transcendental studies also use published difficult-input corpora.
+
+
+\paragraph{Width sweep of shallow scalar networks.}
+For each hidden width, the first table gives mean absolute error on the outer range. Its WSP network uses uniform knots and formula values throughout the deployment envelope. BP uses central data only and its cell is the median of three independently initialized fits. A stored slot is one scalar coefficient, including a coefficient set to zero. The number of slots is three times the hinge count plus two.
+\begin{center}
+\begin{minipage}{\linewidth}
+\centering
+\makeatletter\def\@captype{table}\makeatother
+\caption{Mean absolute error (MAE) on the outer shell for shallow networks of increasing hidden width. WSP has access to the formula throughout the envelope. BP uses central labels.}\label{tab:initial_mae}
+\small
+\begin{tabular}{@{}rr|rr|rr|rr@{}}\toprule
+& & \multicolumn{2}{c|}{\(x^2\)} & \multicolumn{2}{c|}{\(\sin x\)} & \multicolumn{2}{c}{\(x^x\)}\\
+Hinges & Slots & WSP & BP & WSP & BP & WSP & BP \\\midrule
+0  & 2   & 23.3 & 43.0 & 0.692 & 2.23 & \(6.08\times 10^9\) & \(4.32\times 10^8\)\\
+1  & 5   & 8.67 & 28.1 & 0.692 & 2.60 & \(3.15\times 10^9\) & \(4.32\times 10^8\)\\
+3  & 11  & 1.82 & 21.9 & 0.755 & 2.21 & \(1.37\times 10^9\) & \(4.32\times 10^8\)\\
+7  & 23  & 0.485 & 20.8 & 0.212 & 2.75 & \(4.92\times 10^8\) & \(4.32\times 10^8\)\\
+15 & 47  & 0.121 & 18.2 & 0.0726 & 3.05 & \(1.42\times 10^8\) & \(4.32\times 10^8\)\\
+31 & 95  & 0.0296 & 16.4 & 0.0195 & 3.30 & \(3.69\times 10^7\) & \(4.32\times 10^8\)\\
+63 & 191 & 0.00737 & 16.9 & 0.00486 & 3.26 & \(9.55\times 10^6\) & \(4.32\times 10^8\)\\\bottomrule
+\end{tabular}
+\end{minipage}
+\end{center}
+
+The second table reports raw RMSE in the same target units on the same split, pooling scalar observations from the two shell sides before computing the seed median. Positive self-power uses the positive side alone. The closely spaced WSP knots at larger widths reduce absolute errors. The positive self-power target reaches approximately \(10^{10}\) in this shell.
+\begin{center}
+\begin{minipage}{\linewidth}
+\centering
+\makeatletter\def\@captype{table}\makeatother
+\caption{Root mean squared error (RMSE) for the same shallow networks and outer draws. WSP uses full-envelope knots, and BP is the median of three fits.}\label{tab:initial_rmse}
+\scriptsize\setlength{\tabcolsep}{2.8pt}
+\begin{tabular}{@{}rr|rr|rr|rr|rr@{}}\toprule
+ & & \multicolumn{2}{c|}{Square} & \multicolumn{2}{c|}{Sine} & \multicolumn{2}{c|}{Self-power} & \multicolumn{2}{c}{Tanh}\\
+Hinges & Slots & WSP & BP & WSP & BP & WSP & BP & WSP & BP\\\midrule
+\input{rmse_shallow}
+\end{tabular}
+\end{minipage}
+\end{center}
+
+\section{Signed indices and the negative shell}\label{app:signed}
+The central integer set is \(\{-3,\ldots,3\}\). The outer sets are \(\{-10,\ldots,-4\}\) and \(\{4,\ldots,10\}\). For negative binary64 inputs, each noninteger has a reduced rational representation with an even denominator. Raising a negative base to that exponent has no conventional real value. On the 21 integers from \(-10\) to 10, by contrast, \(n^n\) is rational, with \(0^0=1\) by continuity from the positive side. NumPy's result equals the once-rounded rational reference at every index. A 572-slot rectifier lookup uses one triangular hat per integer. A hat equals one at its own integer and zero at all other integers. Setting its readout coefficient to the target value matched all seven central integers, seven negative-shell integers and seven positive-shell integers. Among the linear output weights that fit the seven central labels, the solution of smallest Euclidean norm in the same feature map missed all 14 shell integers. On the seven negative and seven positive outer integers, WSP gave RMSE zero for both signs. BP from a Xavier readout on the same frozen hats gave outer RMSE .314 and \(3.78\times10^9\), respectively. The minimum-norm readout instead gave .00148 and \(3.78\times10^9\). Each central-only fit missed every outer index. The full WSP lookup stores the specified answers.
+
+For integer index \(n\), let \(F_n\) denote the Fibonacci value and \(T_n=n(n+1)/2\) the triangular value. For \(n>0\) the signed Fibonacci convention is \(F_{-n}=(-1)^{n+1}F_n\). The input consists of \(|n|\) unit ticks and a supplied sign selecting the forward or inverse transition. Each model stores forward and inverse transition matrices, an initial state, and a readout. The width-two Fibonacci and width-three triangular models therefore use 12 and 24 scalar slots. A direct write and a rational recurrence inferred from only \(n=-3,\ldots,3\) both matched 7/7 central, 7/7 negative-shell, and 7/7 positive-shell labels, compared with independent integer formulas. In teacher-forced training, the true preceding values are fed into each one-step update. A gradient fit on those same central windows and the supplied shift structure achieved 14/14 shell accuracy in one of five starts for each task. WSP gave zero RMSE for each task and each sign. The median BP RMSE over five starts on the negative and positive shells, respectively, was \(3.93\times10^{-14}\) and \(3.49\times10^{-14}\) for Fibonacci and \(7.21\times10^{-14}\) and \(1.33\times10^{-13}\) for triangular numbers.
+
+\paragraph{Observed sizes versus certified minima.}
+The minimum state widths are one for the driven linear accumulator and two and three for the homogeneous, autonomous Fibonacci and triangular generators, respectively. For four-input real sorting, 5 ReLU gates are both sufficient and necessary, while 65 executions suffice for the bounded binary64 guarantee. The binary64 gate minimum is unknown. The shallow square has a sharp real-error frontier at every width. For the compensated deep square, the lowest tested step count reaching 100\% on the ordinary shell was 35 (7,140 slots). The first to pass all ordinary inner inputs was 48, and the first tested to pass the midpoint suite was 55. Those are sweep outcomes, not lower bounds for the architecture. The residual sine/self-power models reach positive approximation error at the assessed budgets, with no global optimum claimed. For a finite real-arithmetic ReLU network, restriction to a line is piecewise affine with finitely many pieces. Exact agreement on an open interval of curvature with any of the smooth nonlinear targets is impossible. Finite binary64 and finite test sets require their own arguments.
+

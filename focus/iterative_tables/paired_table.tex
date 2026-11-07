@@ -1,0 +1,23 @@
+\begin{table}[htbp]\centering
+\caption{Final prediction errors on the same 87 settings. Each error column gives the median scaled root mean squared error (RMSE) across settings. For each prediction, the error is divided by the larger of one and the absolute target value. The final column counts settings in which every extrapolation output was exactly correct. Bold marks the best value in each column, including ties.}
+\label{tab:paired_methods}
+\small\setlength{\tabcolsep}{3pt}
+\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}lrrrr@{}}\toprule
+&\multicolumn{3}{c}{Median scaled RMSE}&\shortstack{Fully exact}\\
+\cmidrule(lr){2-4}
+Method & Training & Central / early & Extrapolation & outer sets (of 87) \\
+\midrule
+\multicolumn{5}{@{}l}{\textit{Weight-space programming (WSP)}}\\
+One-shot, examples only & $9.03\!\times\!10^{-16}$ & 0.0214 & {\bfseries\boldmath 0.0571} & {\bfseries\boldmath 30} \\
+Iterative, examples only & 0.00106 & $7.65\!\times\!10^{-4}$ & 0.235 & {\bfseries\boldmath 30} \\
+One-shot, formula and examples & {\bfseries\boldmath $6.62\!\times\!10^{-16}$} & 0.0236 & 0.0731 & {\bfseries\boldmath 30} \\
+Iterative, formula and examples & 0.00132 & {\bfseries\boldmath $2.73\!\times\!10^{-4}$} & 0.227 & {\bfseries\boldmath 30} \\
+\addlinespace[2pt]
+\multicolumn{5}{@{}l}{\textit{Gradient methods}}\\
+Gradient descent & 0.072 & 0.254 & 0.961 & 0 \\
+Gradient descent then L-BFGS & 0.0331 & 0.168 & 0.775 & 0 \\
+Adam then full BFGS & 0.0327 & 0.169 & 0.818 & 0 \\
+Trust-region least squares & 0.0254 & 0.116 & 0.536 & 0 \\
+\addlinespace[2pt]
+\bottomrule\end{tabular*}
+\end{table}

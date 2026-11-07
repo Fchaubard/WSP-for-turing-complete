@@ -1,0 +1,14 @@
+{
+ "freeze_sha256": "900832af343946b0f22bac75952e4b97aeb59d55dc1cf8bb2c172b2b8220ae1d",
+ "models": 30,
+ "status": {
+  "valid": 28,
+  "invalid": 2
+ },
+ "outer_exact_sets": 21,
+ "result_sha256": {
+  "models.csv": "bc2844a5320128d65488a4c8af24fe02388ed2322345acaa115b4e265ae3ea83",
+  "scores.csv": "339a3ba0666e1ed47d5e106978fb203f5145939311545e188869afe9c4a97701",
+  "costs.csv": "14ee318633ad0af220bcc5c2ed5fc8b49dcb548f7fc694b26f82e8899c6a3a07"
+ }
+}

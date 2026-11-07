@@ -1,0 +1,28 @@
+{
+  "trial_id": "3354251e2",
+  "raw_sha256": "aca0c3ddf093c8ed86cc50e136bc586f1a239e2547524d965694e41827f1ac55",
+  "ops": 2543,
+  "oracle": "float(Fraction.from_float(x)**2)",
+  "signed_shell": [
+    3,
+    10
+  ],
+  "suites": {
+    "normalization_boundaries": {
+      "n": 104,
+      "exact": 104
+    },
+    "limb_boundaries": {
+      "n": 2466,
+      "exact": 2466
+    },
+    "round_to_even_ties": {
+      "n": 2222,
+      "exact": 2222
+    },
+    "near_midpoints": {
+      "n": 1192,
+      "exact": 1192
+    }
+  }
+}

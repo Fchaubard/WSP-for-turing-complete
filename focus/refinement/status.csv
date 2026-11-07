@@ -1,0 +1,88 @@
+task,size,seed,protocol,call,reply_sha256,status,trf_nfev,trf_njev,total_residual_evaluations,total_jacobian_evaluations,accepted_polish,termination
+square,1,164,objective,3b244afdc6df,adfceaac592c824bcd24d903d4ce76158474c487f1eeaf13952eed58ed4bdde7,valid,20,9,28,10,0,`ftol` termination condition is satisfied.
+square,4,164,objective,3b244afdc6df,adfceaac592c824bcd24d903d4ce76158474c487f1eeaf13952eed58ed4bdde7,valid,27,10,42,13,2,`ftol` termination condition is satisfied.
+square,16,164,objective,3b244afdc6df,adfceaac592c824bcd24d903d4ce76158474c487f1eeaf13952eed58ed4bdde7,valid,26,1,38,4,2,`xtol` termination condition is satisfied.
+square,1,317,objective,7d762f353f16,7927b063021f9bd1954749acace9d5e70ad3566931a99f9a8b4c47648057a01f,valid,20,9,27,13,3,`ftol` termination condition is satisfied.
+square,4,317,objective,7d762f353f16,7927b063021f9bd1954749acace9d5e70ad3566931a99f9a8b4c47648057a01f,valid,37,11,58,16,4,`ftol` termination condition is satisfied.
+square,16,317,objective,7d762f353f16,7927b063021f9bd1954749acace9d5e70ad3566931a99f9a8b4c47648057a01f,valid,1,1,26,7,5,`gtol` termination condition is satisfied.
+square,1,583,objective,e6adf5672aff,7ed9f0d7aad040ba4d632119afa8c008ee2ee72543c170df198b0c79e59bacf3,valid,20,8,26,10,1,`ftol` termination condition is satisfied.
+square,4,583,objective,e6adf5672aff,7ed9f0d7aad040ba4d632119afa8c008ee2ee72543c170df198b0c79e59bacf3,valid,37,10,45,11,0,`xtol` termination condition is satisfied.
+square,16,583,objective,e6adf5672aff,7ed9f0d7aad040ba4d632119afa8c008ee2ee72543c170df198b0c79e59bacf3,valid,1,1,12,4,2,`gtol` termination condition is satisfied.
+sin,1,164,objective,47fa13cbf717,63c01349d46e51c47412f91838cc46a50dfc1b7ad3e5c285396e93499db1fdde,valid,19,8,24,10,1,`ftol` termination condition is satisfied.
+sin,4,164,objective,47fa13cbf717,63c01349d46e51c47412f91838cc46a50dfc1b7ad3e5c285396e93499db1fdde,valid,38,10,46,11,0,`xtol` termination condition is satisfied.
+sin,16,164,objective,47fa13cbf717,63c01349d46e51c47412f91838cc46a50dfc1b7ad3e5c285396e93499db1fdde,valid,44,13,58,20,6,`xtol` termination condition is satisfied.
+sin,1,317,objective,22f94d42fc0f,a1f7f18099876a4afc2aa383cd7f00277e55b691ad898fe3d56ec53db955801b,valid,18,8,26,9,0,`ftol` termination condition is satisfied.
+sin,4,317,objective,22f94d42fc0f,a1f7f18099876a4afc2aa383cd7f00277e55b691ad898fe3d56ec53db955801b,valid,32,12,40,13,0,`gtol` termination condition is satisfied.
+sin,16,317,objective,22f94d42fc0f,a1f7f18099876a4afc2aa383cd7f00277e55b691ad898fe3d56ec53db955801b,valid,31,9,38,14,4,`gtol` termination condition is satisfied.
+sin,1,583,objective,74d3edaea808,b819225ea03f19fb96e62b67f80cc44203cfc8266c86e1a896acf61d39a9f059,valid,18,9,26,10,0,`ftol` termination condition is satisfied.
+sin,4,583,objective,74d3edaea808,b819225ea03f19fb96e62b67f80cc44203cfc8266c86e1a896acf61d39a9f059,valid,29,10,37,11,0,`gtol` termination condition is satisfied.
+sin,16,583,objective,74d3edaea808,b819225ea03f19fb96e62b67f80cc44203cfc8266c86e1a896acf61d39a9f059,valid,30,8,40,11,2,`gtol` termination condition is satisfied.
+selfpower,1,164,objective,f280507b9826,e244df332ead994b688391fc624e30733c67afb2870dba047cf5561bfdeb7fb6,valid,20,9,30,11,1,`ftol` termination condition is satisfied.
+selfpower,4,164,objective,f280507b9826,e244df332ead994b688391fc624e30733c67afb2870dba047cf5561bfdeb7fb6,valid,21,8,43,12,3,`ftol` termination condition is satisfied.
+selfpower,16,164,objective,f280507b9826,e244df332ead994b688391fc624e30733c67afb2870dba047cf5561bfdeb7fb6,valid,26,1,37,11,10,`xtol` termination condition is satisfied.
+selfpower,1,317,objective,5402052c9107,b563b39f0fc74e37b79f1eb605fe541a998c32cc5f54cc37123a942f4d1de896,valid,21,10,26,13,2,`ftol` termination condition is satisfied.
+selfpower,4,317,objective,5402052c9107,b563b39f0fc74e37b79f1eb605fe541a998c32cc5f54cc37123a942f4d1de896,valid,35,7,43,8,0,`xtol` termination condition is satisfied.
+selfpower,16,317,objective,5402052c9107,b563b39f0fc74e37b79f1eb605fe541a998c32cc5f54cc37123a942f4d1de896,valid,26,1,55,11,10,`xtol` termination condition is satisfied.
+selfpower,1,583,objective,3a5a504988de,01fe19f64752ce34ad98bbff67b194030f3d6fd21379f28e9bb4a3c5eea69dc4,valid,20,9,28,10,0,`ftol` termination condition is satisfied.
+selfpower,4,583,objective,3a5a504988de,01fe19f64752ce34ad98bbff67b194030f3d6fd21379f28e9bb4a3c5eea69dc4,valid,40,12,48,13,0,`xtol` termination condition is satisfied.
+selfpower,16,583,objective,3a5a504988de,01fe19f64752ce34ad98bbff67b194030f3d6fd21379f28e9bb4a3c5eea69dc4,valid,26,1,40,5,3,`xtol` termination condition is satisfied.
+tanh,1,164,objective,55f271689837,7abfea537664cc0d9e4c7d52262bb003c5364f5bee74b213741281f0217deb7d,valid,22,10,36,12,1,`ftol` termination condition is satisfied.
+tanh,4,164,objective,55f271689837,7abfea537664cc0d9e4c7d52262bb003c5364f5bee74b213741281f0217deb7d,valid,21,9,29,10,0,`ftol` termination condition is satisfied.
+tanh,16,164,objective,55f271689837,7abfea537664cc0d9e4c7d52262bb003c5364f5bee74b213741281f0217deb7d,valid,28,4,38,7,2,`gtol` termination condition is satisfied.
+tanh,1,317,objective,ed5059a94c76,e63aff7b8115d85dddc38c23372b44792dc2b908e2b8c9c396f7d537c63798b8,valid,19,7,33,9,1,`ftol` termination condition is satisfied.
+tanh,4,317,objective,ed5059a94c76,e63aff7b8115d85dddc38c23372b44792dc2b908e2b8c9c396f7d537c63798b8,valid,30,12,39,14,1,`gtol` termination condition is satisfied.
+tanh,16,317,objective,ed5059a94c76,e63aff7b8115d85dddc38c23372b44792dc2b908e2b8c9c396f7d537c63798b8,valid,63,32,71,33,0,`xtol` termination condition is satisfied.
+tanh,1,583,objective,0e8961ffc438,5b2afd658244f32832b328f652697d636683899b9c5fd1b5a508f11ec5fdfb05,valid,17,7,29,10,2,`ftol` termination condition is satisfied.
+tanh,4,583,objective,0e8961ffc438,5b2afd658244f32832b328f652697d636683899b9c5fd1b5a508f11ec5fdfb05,valid,41,14,61,17,2,`xtol` termination condition is satisfied.
+tanh,16,583,objective,0e8961ffc438,5b2afd658244f32832b328f652697d636683899b9c5fd1b5a508f11ec5fdfb05,valid,31,8,43,12,3,`gtol` termination condition is satisfied.
+sum,1,164,objective,01b2506d25d2,383cf9d75ba95dc06b04a46e94e3820cd5eb241025de69c9341a1c7b9724434c,valid,0,0,1,0,0,initial zero
+sum,2,164,objective,01b2506d25d2,383cf9d75ba95dc06b04a46e94e3820cd5eb241025de69c9341a1c7b9724434c,valid,0,0,1,0,0,initial zero
+sum,1,317,objective,d97250835a0b,383cf9d75ba95dc06b04a46e94e3820cd5eb241025de69c9341a1c7b9724434c,valid,0,0,1,0,0,initial zero
+sum,2,317,objective,d97250835a0b,383cf9d75ba95dc06b04a46e94e3820cd5eb241025de69c9341a1c7b9724434c,valid,0,0,1,0,0,initial zero
+sum,1,583,objective,0bb039c45ff7,383cf9d75ba95dc06b04a46e94e3820cd5eb241025de69c9341a1c7b9724434c,valid,0,0,1,0,0,initial zero
+sum,2,583,objective,0bb039c45ff7,383cf9d75ba95dc06b04a46e94e3820cd5eb241025de69c9341a1c7b9724434c,valid,0,0,1,0,0,initial zero
+sort,4,164,objective,b760774784a3,c5b85d3475b030c9545a2dcb238a63cca5e238a097bd040add865f3c2f91a597,valid,82,61,90,62,0,`ftol` termination condition is satisfied.
+sort,5,164,objective,b760774784a3,c5b85d3475b030c9545a2dcb238a63cca5e238a097bd040add865f3c2f91a597,valid,1,1,9,2,0,`gtol` termination condition is satisfied.
+sort,6,164,objective,b760774784a3,c5b85d3475b030c9545a2dcb238a63cca5e238a097bd040add865f3c2f91a597,valid,1,1,9,2,0,`gtol` termination condition is satisfied.
+sort,4,317,objective,5a1d4f1b6c44,c8724f9a2f6dbb4394351178c111e707ffd89b5e9ecb8b4d78457e7c02f55f18,valid,63,31,71,32,0,`xtol` termination condition is satisfied.
+sort,5,317,objective,5a1d4f1b6c44,c8724f9a2f6dbb4394351178c111e707ffd89b5e9ecb8b4d78457e7c02f55f18,valid,1,1,14,3,1,`gtol` termination condition is satisfied.
+sort,6,317,objective,5a1d4f1b6c44,c8724f9a2f6dbb4394351178c111e707ffd89b5e9ecb8b4d78457e7c02f55f18,valid,1,1,14,3,1,`gtol` termination condition is satisfied.
+sort,4,583,objective,f7558d92a1eb,b329c2ce533aaf6bd01963754bced23b091e1473855ad3884218d479e15de8ad,valid,28,14,36,15,0,`ftol` termination condition is satisfied.
+sort,5,583,objective,f7558d92a1eb,b329c2ce533aaf6bd01963754bced23b091e1473855ad3884218d479e15de8ad,valid,1,1,13,3,1,`gtol` termination condition is satisfied.
+sort,6,583,objective,f7558d92a1eb,b329c2ce533aaf6bd01963754bced23b091e1473855ad3884218d479e15de8ad,valid,1,1,13,3,1,`gtol` termination condition is satisfied.
+fib,1,164,objective,347817495f1c,2a7c5197a5ba9602b4f8bcaeb9ab656aa29e4beb2a8b45bfa982bab0d00b8519,valid,17,7,25,9,1,`ftol` termination condition is satisfied.
+fib,2,164,objective,347817495f1c,2a7c5197a5ba9602b4f8bcaeb9ab656aa29e4beb2a8b45bfa982bab0d00b8519,valid,0,0,1,0,0,initial zero
+fib,3,164,objective,347817495f1c,2a7c5197a5ba9602b4f8bcaeb9ab656aa29e4beb2a8b45bfa982bab0d00b8519,valid,0,0,1,0,0,initial zero
+fib,1,317,objective,5849e93f576b,67da21241a01410b0893ee48334df58ef85d32069f300597f96e15e55affded5,valid,18,9,26,10,0,`ftol` termination condition is satisfied.
+fib,2,317,objective,5849e93f576b,67da21241a01410b0893ee48334df58ef85d32069f300597f96e15e55affded5,valid,0,0,1,0,0,initial zero
+fib,3,317,objective,5849e93f576b,67da21241a01410b0893ee48334df58ef85d32069f300597f96e15e55affded5,valid,0,0,1,0,0,initial zero
+fib,1,583,objective,6cdc5acaace7,157c8bc35f546263e9d3acdc018e1e77f6e8db9a462c4be5f0a227f698fca713,valid,15,6,36,10,3,`ftol` termination condition is satisfied.
+fib,2,583,objective,6cdc5acaace7,157c8bc35f546263e9d3acdc018e1e77f6e8db9a462c4be5f0a227f698fca713,valid,0,0,1,0,0,initial zero
+fib,3,583,objective,6cdc5acaace7,157c8bc35f546263e9d3acdc018e1e77f6e8db9a462c4be5f0a227f698fca713,valid,0,0,1,0,0,initial zero
+tri,2,164,objective,cf3f56f626a7,8c722803d5804c391db994f635c3f0fdc4ca784615b5c4ebd9841b43ad78ca43,valid,26,12,40,16,3,`ftol` termination condition is satisfied.
+tri,3,164,objective,cf3f56f626a7,8c722803d5804c391db994f635c3f0fdc4ca784615b5c4ebd9841b43ad78ca43,valid,0,0,1,0,0,initial zero
+tri,4,164,objective,cf3f56f626a7,8c722803d5804c391db994f635c3f0fdc4ca784615b5c4ebd9841b43ad78ca43,valid,0,0,1,0,0,initial zero
+tri,2,317,objective,2dd7d563cf24,010950517be9dafbffa5ba2afa49375a2a00ab5807238ce5913916ae2af90793,valid,44,14,52,15,0,`xtol` termination condition is satisfied.
+tri,3,317,objective,2dd7d563cf24,010950517be9dafbffa5ba2afa49375a2a00ab5807238ce5913916ae2af90793,valid,0,0,1,0,0,initial zero
+tri,4,317,objective,2dd7d563cf24,010950517be9dafbffa5ba2afa49375a2a00ab5807238ce5913916ae2af90793,valid,0,0,1,0,0,initial zero
+tri,2,583,objective,b84b5d7b8c98,6c6e718e83c6fd22533fb03ada3896784ccfcb77f9e9cc0d0c9d13f81fa0ca5a,valid,30,16,48,22,5,`ftol` termination condition is satisfied.
+tri,3,583,objective,b84b5d7b8c98,6c6e718e83c6fd22533fb03ada3896784ccfcb77f9e9cc0d0c9d13f81fa0ca5a,valid,0,0,1,0,0,initial zero
+tri,4,583,objective,b84b5d7b8c98,6c6e718e83c6fd22533fb03ada3896784ccfcb77f9e9cc0d0c9d13f81fa0ca5a,valid,0,0,1,0,0,initial zero
+add,1,164,arithmetic,47325749c57b,5d46cfe8a56b9f05596ad7fb97343c6640a42b37f473ede3820379bb2fbb7dbd,valid,26,1,30,2,0,`xtol` termination condition is satisfied.
+add,2,164,arithmetic,47325749c57b,5d46cfe8a56b9f05596ad7fb97343c6640a42b37f473ede3820379bb2fbb7dbd,valid,0,0,1,0,0,initial zero
+add,4,164,arithmetic,47325749c57b,5d46cfe8a56b9f05596ad7fb97343c6640a42b37f473ede3820379bb2fbb7dbd,valid,0,0,1,0,0,initial zero
+add,1,317,arithmetic,106a4ce1f4af,19b9a387443541e479193ab7fef8cf530a21492b766e5d9b3dade2f0c701281e,valid,1,1,2,2,0,`gtol` termination condition is satisfied.
+add,2,317,arithmetic,106a4ce1f4af,19b9a387443541e479193ab7fef8cf530a21492b766e5d9b3dade2f0c701281e,valid,0,0,1,0,0,initial zero
+add,4,317,arithmetic,106a4ce1f4af,19b9a387443541e479193ab7fef8cf530a21492b766e5d9b3dade2f0c701281e,valid,0,0,1,0,0,initial zero
+add,1,583,arithmetic,c1749175e68a,064de38755657524d8f465f060777679c52990ca1661ca11046ce23faba497ee,valid,26,1,29,2,0,`xtol` termination condition is satisfied.
+add,2,583,arithmetic,c1749175e68a,064de38755657524d8f465f060777679c52990ca1661ca11046ce23faba497ee,valid,0,0,1,0,0,initial zero
+add,4,583,arithmetic,c1749175e68a,064de38755657524d8f465f060777679c52990ca1661ca11046ce23faba497ee,valid,0,0,1,0,0,initial zero
+subtract,1,164,arithmetic,738159e5daa8,14fb50fa94fd697f88a75ffbe4b73e2b3ac5a2e19225598fdc0bd850b2b7d1ff,valid,26,1,27,2,0,`xtol` termination condition is satisfied.
+subtract,2,164,arithmetic,738159e5daa8,14fb50fa94fd697f88a75ffbe4b73e2b3ac5a2e19225598fdc0bd850b2b7d1ff,valid,0,0,1,0,0,initial zero
+subtract,4,164,arithmetic,738159e5daa8,14fb50fa94fd697f88a75ffbe4b73e2b3ac5a2e19225598fdc0bd850b2b7d1ff,valid,0,0,1,0,0,initial zero
+subtract,1,317,arithmetic,305685e3a2f9,b9a7a4b52aed190fca5bc9cfa8c18fb492bc37c9443783f38edde08d23511079,valid,1,1,2,2,0,`gtol` termination condition is satisfied.
+subtract,2,317,arithmetic,305685e3a2f9,b9a7a4b52aed190fca5bc9cfa8c18fb492bc37c9443783f38edde08d23511079,valid,0,0,1,0,0,initial zero
+subtract,4,317,arithmetic,305685e3a2f9,b9a7a4b52aed190fca5bc9cfa8c18fb492bc37c9443783f38edde08d23511079,valid,0,0,1,0,0,initial zero
+subtract,1,583,arithmetic,3419a8de958b,14fb50fa94fd697f88a75ffbe4b73e2b3ac5a2e19225598fdc0bd850b2b7d1ff,valid,26,1,30,2,0,`xtol` termination condition is satisfied.
+subtract,2,583,arithmetic,3419a8de958b,14fb50fa94fd697f88a75ffbe4b73e2b3ac5a2e19225598fdc0bd850b2b7d1ff,valid,0,0,1,0,0,initial zero
+subtract,4,583,arithmetic,3419a8de958b,14fb50fa94fd697f88a75ffbe4b73e2b3ac5a2e19225598fdc0bd850b2b7d1ff,valid,0,0,1,0,0,initial zero

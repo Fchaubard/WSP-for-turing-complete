@@ -1,0 +1,40 @@
+{
+  "family": "Sparse ReLU sorting network with five compare-exchange units",
+  "inferred_rule": "Return the four input coordinates in ascending order.",
+  "construction_summary": "Three stages compare two disjoint pairs, compare their respective minima and maxima, then order the two middle candidates. Each compare-exchange uses subtraction, ReLU, and addition, implemented with one shared stored coefficient, -1. Indexing and concatenation route values without dense matrices. The construction implements sorting throughout [-10,10]^4, including ties and unseen permutations, subject to binary64 rounding. No global resource optimality is claimed.",
+  "certificate": "For a pair (a,b), let t=ReLU(a-b). Then (a-t,b+t)=(min(a,b),max(a,b)) in exact arithmetic. After the first stage, write the sorted pairs as l0<=h0 and l1<=h1. The second stage produces L=min(l0,l1), U=min(h0,h1), V=max(l0,l1), H=max(h0,h1). L is the global minimum, H the global maximum, and U,V are the remaining elements. Sorting U,V therefore sorts all four values. Binary64 introduces only rounding error; on the stated domain a conservative absolute error bound per output relative to exact sorting is 1e-13.",
+  "network": {
+    "kind": "graph",
+    "nodes": [
+      {"name":"neg","op":"constant","value":[-1]},
+      {"name":"a1","op":"take","source":"input","indices":[0,2]},
+      {"name":"b1","op":"take","source":"input","indices":[1,3]},
+      {"name":"nb1","op":"multiply","left":"b1","right":"neg"},
+      {"name":"d1","op":"add","left":"a1","right":"nb1"},
+      {"name":"t1","op":"relu","source":"d1"},
+      {"name":"nt1","op":"multiply","left":"t1","right":"neg"},
+      {"name":"lo1","op":"add","left":"a1","right":"nt1"},
+      {"name":"hi1","op":"add","left":"b1","right":"t1"},
+      {"name":"s1","op":"concat","sources":["lo1","hi1"]},
+      {"name":"a2","op":"take","source":"s1","indices":[0,2]},
+      {"name":"b2","op":"take","source":"s1","indices":[1,3]},
+      {"name":"nb2","op":"multiply","left":"b2","right":"neg"},
+      {"name":"d2","op":"add","left":"a2","right":"nb2"},
+      {"name":"t2","op":"relu","source":"d2"},
+      {"name":"nt2","op":"multiply","left":"t2","right":"neg"},
+      {"name":"lo2","op":"add","left":"a2","right":"nt2"},
+      {"name":"hi2","op":"add","left":"b2","right":"t2"},
+      {"name":"a3","op":"take","source":"lo2","indices":[1]},
+      {"name":"b3","op":"take","source":"hi2","indices":[0]},
+      {"name":"nb3","op":"multiply","left":"b3","right":"neg"},
+      {"name":"d3","op":"add","left":"a3","right":"nb3"},
+      {"name":"t3","op":"relu","source":"d3"},
+      {"name":"nt3","op":"multiply","left":"t3","right":"neg"},
+      {"name":"lo3","op":"add","left":"a3","right":"nt3"},
+      {"name":"hi3","op":"add","left":"b3","right":"t3"},
+      {"name":"assembled","op":"concat","sources":["lo2","lo3","hi3","hi2"]},
+      {"name":"sorted","op":"take","source":"assembled","indices":[0,2,3,5]}
+    ],
+    "output": "sorted"
+  }
+}

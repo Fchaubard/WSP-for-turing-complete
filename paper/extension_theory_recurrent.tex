@@ -1,0 +1,154 @@
+\section{Passive training of recurrent networks}\label{app:passive-rnn}
+
+\paragraph{Recurrent cells and task interfaces.}
+Passive training here means learning from fixed central input--output examples. We compare a recurrent neural network (RNN) that uses the hyperbolic tangent \(\tanh(a)=(e^a-e^{-a})/(e^a+e^{-a})\) with a gated recurrent unit (GRU). At integer tick \(t\), let \(x_t\) be the input vector, let \(h_t\in\mathbb R^d\) be the hidden state of width \(d\), and let \(v\in\mathbb R^d,b_y\in\mathbb R\) be the readout weights and bias. Both cells predict \(\hat y_t=v^\top h_t+b_y\). The tanh cell applies \(\tanh\) coordinatewise to the sum of affine transforms of \(x_t\) and \(h_{t-1}\).
+
+For the GRU, use subscripts \(r,z,n\) for reset, update and candidate, respectively. For each subscript \(j\), let \(I_j(x)=W_jx+b_j\) and \(H_j(h)=U_jh+c_j\) be learned affine maps to \(d\) coordinates. The parameters \(W_j,U_j\) are matrices and \(b_j,c_j\) biases. The sigmoid \(\sigma(a)=1/(1+e^{-a})\) converts a real input, or logit, into a gate between 0 and 1. With \(\odot\) denoting coordinatewise multiplication, the reset and update gates \(r_t,z_t\), the candidate \(\tilde h_t\), and the updated state are
+\[
+\begin{aligned}
+ r_t&=\sigma(I_r(x_t)+H_r(h_{t-1})), &z_t&=\sigma(I_z(x_t)+H_z(h_{t-1})),\\
+ \tilde h_t&=\tanh(I_n(x_t)+r_t\odot H_n(h_{t-1})),&
+ h_t&=(1-z_t)\odot\tilde h_t+z_t\odot h_{t-1}.
+\end{aligned}
+\]
+For running sums it reads one scalar per tick, starts from zero and predicts the sequential binary64 sum after each update. For Fibonacci and triangular sequences we draw two initial values \((a,b)\) for each example and train on a family of trajectories. Fibonacci starts at \((y_0,y_1)=(a,b)\) and follows \(y_{t+2}=y_{t+1}+y_t\). In the triangular family let \(u_t\) denote the increment to add at tick \(t\). We initialize \((y_0,u_0)=(a,b)\) and update
+\[
+          (y_{t+1},u_{t+1})=(y_t+u_t,u_t+1).
+\]
+Let \(E\) be the learned \(d\)-by-2 input encoder matrix and \(e\) its bias column. Both models initialize \(h_0=\tanh(E(a,b)^\top+e)\), read it out at tick zero and receive zero inputs thereafter. The classical sequence in each family uses \((a,b)=(0,1)\). Sorting a list of length \(T\) takes \(2T\) ticks. The cell first reads \((x_i,0)\) for each list element, then receives \((0,1)\) on each of \(T\) emission ticks. The readout must emit the sorted values in order. Only the final encoder state carries information about the list into emission.
+
+\paragraph{Necessary state dimensions over the reals.}
+Define the Jacobian of a map as its matrix of first derivatives, and its rank as the number of independent output directions. The map from \((a,b)\) to the first two outputs has Jacobian determinant one in both seeded tasks. It factors through \(h_0\in\mathbb R^d\), so the chain rule requires \(d\ge2\) for exact reproduction on an open set of seeds. For sorting, restrict the inputs to the open region \(x_1<\cdots<x_T\). The desired output map is the identity there and has Jacobian rank \(T\). All emission ticks factor through one state, so \(d\ge T\) is necessary. This accounts for the width-four boundary for the four-input encoder. The tanh and GRU maps are smooth, while real sorting has a kink when two coordinates cross. Width alone therefore cannot certify continuum sorting for these cells. Both rank arguments concern exact real maps on open sets. Finite binary64 tests have different implications.
+
+\paragraph{Data and optimization.}
+Each training length has 512 training and 160 independent validation examples. The lengths are \(4,6,8\) for sums and seeded trajectories and \(2,3,4\) for sorting. Training inputs and initial seeds are uniform on \([-3,3]\). For each task we evaluate four independently generated sets of 1,024 examples. We cross the largest training length (8, or 4 for sorting) with a longer length (32, or 8 for sorting), and the central value distribution with independently signed magnitudes from \((3,10]\). Range shift for a seeded trajectory acts on \((a,b)\).
+
+Widths are \(1,2,4,8\), with width 16 added for sorting. Three Xavier initializations per cell and width yield \(2\cdot3\cdot(3\cdot4+5)=102\) fits per budget. Each GRU gate block has its own Xavier draw. Biases start at zero. Both budgets use the same starts and data. Each Adam update samples a length uniformly, then 64 examples with replacement. Root mean square (RMS) is the square root of the arithmetic mean of squared values. Squared residuals are divided by the squared empirical training RMS of the corresponding output position, with RMS floored at one. We clip the gradient norm at 5 and use learning rate 0.01 for the first three quarters of the updates and 0.003 for the rest. Every 50 updates we score the central validation lengths with equal weight. Starting at the saved weights with the lowest validation loss, we run the limited-memory BFGS optimizer (L-BFGS) with a line search that requires a sufficient decrease in loss and a bound on the directional derivative (the strong Wolfe conditions) and retain whichever checkpoint has lower validation loss. The two budgets allow 1,000 or 5,000 Adam updates and 35 or 200 L-BFGS iterations, respectively.
+
+Let \(Y\) and \(\hat Y\) be the rectangular arrays of reference and predicted outputs over the test examples and emission ticks. Write \(\|M\|_F=(\sum_{i,j}M_{ij}^2)^{1/2}\) for the Frobenius norm of a matrix \(M\). Normalized root mean squared error (NRMSE) here means \(\|\hat Y-Y\|_F/\|Y\|_F\), which divides the raw RMSE by the reference RMS. All denominators in these tests are positive.
+
+\begin{table}[htbp]
+\centering\small
+\caption{Median normalized root mean squared error for BP from three Xavier starts, with 5,000 Adam updates and up to 200 L-BFGS iterations. The metric is \(\|\hat Y-Y\|_F/\|Y\|_F\) over all examples and ticks. Central and range retain length eight (four for sort). Length and joint use length 32 (eight for sort). Range and joint use outer magnitudes. Slots include both recurrent bias vectors, the readout, and the seed encoder where present.}
+\label{tab:passive-rnn}
+\begin{tabular}{@{}llrrrrrr@{}}\toprule
+Task & Cell & Width & Slots & Central & Range & Length & Joint\\\midrule
+Sum & tanh & 1 & 6 & .00248 & .0514 & .0467 & .3094\\
+Sum & GRU & 1 & 14 & .00547 & .0999 & .0837 & .4288\\
+Fibonacci & tanh & 2 & 19 & .2283 & .6581 & .99998 & .9999955\\
+Fibonacci & GRU & 2 & 39 & .2163 & .6557 & .99998 & .9999955\\
+Triangular & tanh & 2 & 19 & .1316 & .5141 & .9046 & .9297\\
+Triangular & GRU & 2 & 39 & .1437 & .4972 & .9072 & .9165\\
+Sort & tanh & 4 & 37 & .3031 & .7769 & .6959 & .8945\\
+Sort & GRU & 4 & 101 & .1975 & .6235 & .4747 & .6827\\
+\bottomrule\end{tabular}
+\end{table}
+
+\paragraph{Raw RMSE by width.}
+The table below reports the same NumPy/PyTorch binary64 sequential targets in their original units, pooling the squared errors across all 1,024 examples and their emitted ticks before taking a square root. For each cell, WSP gives the directly written state at that width, and BP gives the median over three starts after 5,000 Adam steps and up to 200 L-BFGS iterations. Central uses learned-range magnitudes and the largest training length. Joint uses outer magnitudes and the longer test length. A dash means this experiment contained no WSP checkpoint on that graph. The published feedforward sorters use a separate interface. Both budgets, every start, all four test conditions and the canonical sequence checks are available as per-checkpoint raw RMSE and exact-match fractions in the release.
+\begin{center}
+\begin{minipage}{\linewidth}
+\centering
+\makeatletter\def\@captype{table}\makeatother
+\caption{Raw central and joint-shift RMSE for the conventional recurrent cells at every tested width. A dash marks an unavailable WSP comparison. BP reports the three-start median at the longer budget.}\label{tab:recur_rmse}
+\scriptsize\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}lr rrrr rrrr@{}}\toprule
+&&\multicolumn{4}{c}{Tanh RNN} & \multicolumn{4}{c}{GRU}\\
+&&\multicolumn{2}{c}{WSP}&\multicolumn{2}{c}{BP}&\multicolumn{2}{c}{WSP}&\multicolumn{2}{c}{BP}\\
+Task & Width & Central & Joint & Central & Joint & Central & Joint & Central & Joint\\\midrule
+\input{rmse_recurrent}
+\end{tabular}
+\end{minipage}
+\end{center}
+
+Across both budgets, every one of the 204 unconstrained fits had zero complete, numerically exact sequences on each test split. Approximation quality varied considerably (Table~\ref{tab:passive-rnn}). For example, increasing sorting GRU width from 4 to 16 reduced central NRMSE from .1975 to .0816 but increased joint NRMSE from .6827 to .7811. We can diagnose a specific failure using the fitted output head. Both cells keep every state coordinate within \([-1,1]\). Let \(B=\sum_{j=1}^d |v_j|+|b_y|\), an upper bound on the output magnitude. With \((a)_+=\max(a,0)\) applied entrywise, the relative RMS error is bounded below by
+\[
+              \frac{\|(|Y|-B)_+\|_F}{\|Y\|_F}.
+\]
+For width-two triangular models, the median floor is .9234 for tanh and .8947 for GRU, close to the observed .9297 and .9165. The width-four tanh sorting floor is only .1783, leaving more of its observed error unexplained by the output range.
+
+\paragraph{WSP cells and a passive gradient success.}
+Let \(q\) be a fixed power of two that scales the stored state. For sums we set \(h_t=\tanh(h_{t-1}+q x_t)\) and \(\hat y_t=h_t/q\) with \(q=2^{-40}\). For the two seeded families the active state encodes the two recurrence registers at scale \(q\), with \(q=2^{-52}\) for Fibonacci and \(q=2^{-40}\) for triangular numbers. The Fibonacci transition has rows \((0,1)\) and \((1,1)\). The triangular transition has rows \((1,1)\) and \((0,1)\) and adds \(q\) to its second coordinate. In each GRU we use the same candidate transition and set reset and update logits to \(+1000\) and \(-1000\), which give exactly one and zero in the measured binary64 implementation. These weights reproduce every trajectory on the four test splits for sums and both seeded tasks. The finite horizon matters. The WSP Fibonacci cell first departs from the integer reference at classical index 39 and has NRMSE \(3.73\times10^{-6}\) over indices 33--64.
+
+Finally, fix the scale and readout and train only the two Xavier scalars \((A,C)\) in
+\[
+             h_t=\tanh(Ah_{t-1}+qC x_t),\qquad \hat y_t=h_t/q .
+\]
+The data, validation rule and longer optimizer budget are the same as above. With \(q=1\), none of five starts matches a complete joint-test stream. With \(q=2^{-40}\), three of five reach \((A,C)=(1,1)\) exactly and match every output on all four splits. The other two attain joint NRMSE \(3.04\times10^{-16}\) and \(1.60\times10^{-15}\). For \(q=2^{-40}\) the median raw joint RMSE across all five fits is zero and the other two values are \(8.52\times10^{-15}\) and \(4.48\times10^{-14}\). At \(q=1\), median raw joint RMSE is 27.8. Over those same 1,024 joint streams the deterministic WSP weights \((A,C)=(1,1)\) give RMSE 27.8 and zero exact streams at \(q=1\), and RMSE zero and 1,024 exact streams at \(q=2^{-40}\).
+
+\section{A sharp binary64 size threshold for square on a lattice}
+\label{app:lattice-square}
+
+For an integer grid index \(n\), let \(D_0=\{n/16:-160\le n\le160,\ n\in\mathbb Z\}\), \(D_{\rm in}=\{x\in D_0:|x|\le3\}\), and \(D_{\rm out}=D_0\setminus D_{\rm in}\). Fix a residual scalar ReLU with \(w\) hinges and \(3w+2\) stored scalars. Every coefficient is binary64 with magnitude at most 128. Write \(\mathrm{fl}\) for binary64 rounding to nearest, ties to even, with gradual underflow. For input \(x\), let \(a,b\) be the skip slope and bias. For each hinge \(j=1,\ldots,w\), let \(u_j,c_j,v_j\) be its input slope, input bias and output weight, respectively. Let \(s_0\) be the rounded skip, \(h_j\) the rounded rectifier value, \(s_j\) the sum after hinge \(j\), and \(F(x)\) the binary64 output. The forward pass is
+\[
+\begin{aligned}
+s_0&=\mathrm{fl}(\mathrm{fl}(ax)+b),\qquad
+h_j=\relu\big(\mathrm{fl}(\mathrm{fl}(u_jx)+c_j)\big),\\
+s_j&=\mathrm{fl}\big(s_{j-1}+\mathrm{fl}(v_j h_j)\big),\qquad F(x)=s_w.
+\end{aligned}
+\]
+Every target \(x^2=n^2/256\) on \(D_0\) is exactly representable.
+
+\begin{theorem}[Lattice square capacity]\label{th:lattice-square}
+For any \(D\in\{D_0,D_{\rm in},D_{\rm out}\}\) of cardinality \(N\), the maximum number of sites with \(F(x)=x^2\) is \(\min\{N,2(w+1)\}\). Exactness throughout \(D\) first becomes possible at \(w=\lceil N/2\rceil-1\).
+\end{theorem}
+
+\begin{proof}
+Let \(f\) evaluate the same stored coefficients in real arithmetic. It has at most \(w+1\) affine pieces. We first control \(F-f\) for \(w\le160\). Both the input product and its biased sum in a hinge (or the skip) have magnitude below \(2^{11}\), giving absolute error below \(2^{-40}\) per rounding. The rectifier changes its output by at most the magnitude of a change in its input, so the hidden error is at most \(2^{-39}\). The output-weight product has magnitude below \(2^{18}\) and its rounding costs at most \(2^{-34}\). Propagating the hidden error through a weight of magnitude at most 128 gives absolute term error below \(2^{-31}\). The running sum remains below \(2^{26}\) in magnitude, since it starts below \(2^{11}\) and adds at most 160 terms of magnitude below \(2^{18}\), with less than one unit of absolute rounding error per addition. Each such addition therefore costs at most \(2^{-26}\). Consequently
+\[
+             \sup_{|x|\le10}|F(x)-f(x)|
+              \le 2^{-39}+160(2^{-31}+2^{-26})<2^{-18}
+\]
+on binary64 inputs.
+
+Take three sites \(x_1<x_2<x_3\) within one affine piece. The secant, the affine line joining the two outer square values, exceeds \(x_2^2\) at \(x_2\) by \((x_2-x_1)(x_3-x_2)\ge1/256\). For a common error bound \(E\), if \(|f(x_i)-x_i^2|\le E\) at all three sites, linear interpolation of the endpoint residuals bounds that excess by \(2E\). Thus at least one real residual has magnitude at least \(1/512\). Three exact machine hits would instead give \(E<2^{-18}\). Assigning a site at a knot to either adjacent piece, each piece accounts for at most two hits. This also gives a machine-error witness of at least \(1/512-2^{-18}\) whenever there are more than \(2(w+1)\) sites.
+
+For attainment, choose the first \(\min\{N,2(w+1)\}\) sorted sites and pair them consecutively. If the selected count is odd, use the last two sites for the final pair, sharing its first site with the preceding pair. Write the secant through each pair. Consecutive slopes strictly increase. For disjoint pairs each secant lies below the square on the other pair, so their intersection lies in the intervening gap. For the overlapping pair it is the shared site. Store the first secant in the skip and, at each intersection \(t\), add the slope increment times \(\relu(x-t)\). This realizes the desired secant on every selected pair. On a uniformly spaced run, an intersection between disjoint pairs is the midpoint of the intervening gap. The outer set has 112 sites on each side, so the secants on either side of its central gap meet at zero. Every knot is a multiple of \(1/32\), every slope increment a multiple of \(1/16\), and every secant intercept a multiple of \(1/256\). The coefficients obey the cap. Each intermediate on a grid site is a multiple of \(1/512\) of magnitude below \(2^{26}\), and therefore each operation is exact in binary64. For larger widths, append hinges with zero output weight. This construction reaches all sites by width 160 even for the largest set, so the trivial upper bound \(N\) covers every remaining width.
+\end{proof}
+
+\paragraph{Capacity and information.}
+The full, inner and outer sets contain 321, 97 and 224 sites. Their minimum widths are 160, 48 and 111, requiring 482, 146 and 335 slots. The full-grid WSP construction has RMSE zero on the grid, but misses all 320 intervening midpoints (RMSE .00218) and all 4,096 random outer examples (RMSE .00117). The inner-only secant fit has zero exact hits on the 224 outer sites and raw RMSE 22.4. These counts concern the displayed witnesses. The theorem bounds the best achievable score on the designated lattice under its coefficient cap and arithmetic contract.
+
+A separate control specifies a polynomial of degree at most two and supplies only the labels \((-1,1),(0,0),(1,1)\) and the deployment grid. For each node, its quadratic Lagrange basis function has value one there and zero at the other two nodes. Evaluating the three functions on the training nodes therefore gives the identity matrix. A unit gradient step on half-summed squared loss recovers their nodal coefficients in real arithmetic. Two binary64 steps from each of five Xavier draws give the same coefficients \((1,0,1)\). Evaluating the fitted polynomial offline and compiling its resulting ordinates yields the same ReLU coefficients as the full-grid witness, byte for byte, and recovers all 224 outer sites with RMSE zero. This control attributes the continuation to the supplied degree bound.
+
+\begin{proposition}[Finer grids and a lower bound on the entire interval]
+\label{prop:fine-lattice}
+Under the same coefficient cap and binary64 operation order, choose an integer grid denominator \(q\) and let
+\(D_q=\{n/q:n\in\mathbb Z,\ |n|\le10q\}\) for
+\(q\in\{16,32,64,128\}\). Exactly \(10q\) hinges suffice and are necessary
+to hit all \(20q+1\) sites. Consequently, any network in this class that
+correctly rounds the square at every binary64 input in \([-10,10]\)
+requires at least 1,280 hinges, or 3,842 stored scalar slots.
+\end{proposition}
+
+\begin{proof}
+Let \(E(w)\) denote an upper bound on the absolute deviation between the binary64 calculation and the spline evaluated with the same weights in real arithmetic. The preceding proof bounds each computed hidden value by
+\(1408+2^{-39}\) in magnitude and its rounded output-weight product by
+\(180225\). The initial skip has magnitude below 1410. For \(w\le1280\),
+the pre-rounded sum at addition \(k\) has magnitude at most
+\(1410+180226k<2^{28}\). Indeed, each preceding addition in this range
+contributes less than one unit of absolute rounding error. Its stronger
+individual rounding bound is \((1411+180226k)2^{-53}\), which also covers
+subnormal values. Summing these bounds and the propagated term errors gives
+\[
+ E(w)=2^{-39}+w2^{-31}
+       +2^{-53}\left(1411w+180226\frac{w(w+1)}{2}\right).
+\]
+At the largest width, \(E(1280)<1.701\times10^{-5}<
+1/(2\cdot128^2)\). For all four grids, three distinct sites in the same
+affine piece give a secant excess of at least \(1/q^2\). Hence three exact
+machine hits in that piece would require \(2E(w)\ge1/q^2\), which the bound
+excludes when \(w\le10q\). If \(w<10q\), at most \(2(w+1)\le20q\) sites
+can be hit.
+
+The consecutive-pair secant construction attains the bound at \(w=10q\).
+The knots, slopes and intercepts have denominators dividing \(2q\), \(q\)
+and \(q^2\), respectively. The coefficient magnitudes stay below 128.
+At grid sites and their intervening midpoints every intermediate is a
+multiple of \(1/(2q^2)\) of magnitude below \(2^{28}\). The corresponding
+integer numerator has magnitude below \(2^{43}\), so the specified
+operations are exact. In particular the 1,280-hinge witness hits all
+2,561 sites of \(D_{128}\) and misses all 2,560 intervening midpoints
+in the numerical audit (midpoint RMSE \(3.41\times10^{-5}\)). Containment of \(D_{128}\) in the binary64
+interval gives the stated necessary width for the entire interval.
+\end{proof}

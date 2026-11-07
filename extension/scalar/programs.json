@@ -1,0 +1,51 @@
+{
+  "sin": {
+    "weights": 500,
+    "literals": 4,
+    "gates": 17391,
+    "add": 3656,
+    "sub": 8406,
+    "mul": 3823,
+    "relu": 1506,
+    "dynamic_nodes": 15933,
+    "relus": 1506,
+    "unshared_affine_occurrences": 25395,
+    "static_literals": [
+      0.0,
+      1.0,
+      134217729.0,
+      32.0
+    ],
+    "declared_domain": [
+      -16,
+      16
+    ],
+    "writer": "binary angle rotations"
+  },
+  "selfpower": {
+    "weights": 1352,
+    "literals": 7,
+    "gates": 23089,
+    "add": 4595,
+    "sub": 12276,
+    "mul": 3600,
+    "relu": 2618,
+    "dynamic_nodes": 22282,
+    "relus": 2618,
+    "unshared_affine_occurrences": 35908,
+    "static_literals": [
+      0.0,
+      1.0,
+      128.0,
+      134217729.0,
+      4.0,
+      64.0,
+      1.1235582092889474e+307
+    ],
+    "declared_domain": [
+      0,
+      128
+    ],
+    "writer": "greedy log and binary product/exponential"
+  }
+}

@@ -1,0 +1,375 @@
+{
+  "tolerance": 1e-10,
+  "methods": {
+    "xavier": {
+      "n": 87,
+      "train_near_zero": 0,
+      "median_train_loss": 0.6826309872152367,
+      "near_certified": 0,
+      "n_certified": 12,
+      "perfect": {
+        "train": 0,
+        "dev": 0,
+        "outer": 0
+      }
+    },
+    "adam800": {
+      "n": 87,
+      "train_near_zero": 11,
+      "median_train_loss": 0.0011063906914132663,
+      "near_certified": 0,
+      "n_certified": 12,
+      "perfect": {
+        "train": 0,
+        "dev": 0,
+        "outer": 0
+      }
+    },
+    "gd": {
+      "n": 87,
+      "train_near_zero": 6,
+      "median_train_loss": 0.0025952331419695275,
+      "near_certified": 0,
+      "n_certified": 12,
+      "perfect": {
+        "train": 0,
+        "dev": 0,
+        "outer": 0
+      },
+      "joint_evals": 171024,
+      "stage_selection": {
+        "GD": 87
+      },
+      "vs_examples": {
+        "train_loss_delta": {
+          "lower": 4,
+          "higher": 77,
+          "tied": 6
+        },
+        "outer_rmse_delta": {
+          "lower": 12,
+          "higher": 69,
+          "tied": 6
+        },
+        "outer_exact_delta": {
+          "lower": 45,
+          "higher": 0,
+          "tied": 42
+        }
+      },
+      "vs_formula": {
+        "train_loss_delta": {
+          "lower": 3,
+          "higher": 77,
+          "tied": 7
+        },
+        "outer_rmse_delta": {
+          "lower": 9,
+          "higher": 72,
+          "tied": 6
+        },
+        "outer_exact_delta": {
+          "lower": 45,
+          "higher": 0,
+          "tied": 42
+        }
+      },
+      "vs_adam_bfgs": {
+        "train_loss_delta": {
+          "lower": 7,
+          "higher": 60,
+          "tied": 20
+        },
+        "outer_rmse_delta": {
+          "lower": 26,
+          "higher": 52,
+          "tied": 9
+        },
+        "outer_exact_delta": {
+          "lower": 20,
+          "higher": 4,
+          "tied": 63
+        }
+      },
+      "vs_ls_xavier": {
+        "train_loss_delta": {
+          "lower": 9,
+          "higher": 60,
+          "tied": 18
+        },
+        "outer_rmse_delta": {
+          "lower": 23,
+          "higher": 55,
+          "tied": 9
+        },
+        "outer_exact_delta": {
+          "lower": 30,
+          "higher": 4,
+          "tied": 53
+        }
+      }
+    },
+    "gd_lbfgs": {
+      "n": 87,
+      "train_near_zero": 32,
+      "median_train_loss": 0.000546301389578962,
+      "near_certified": 1,
+      "n_certified": 12,
+      "perfect": {
+        "train": 0,
+        "dev": 0,
+        "outer": 0
+      },
+      "joint_evals": 14057,
+      "stage_selection": {
+        "start": 18,
+        "L-BFGS final": 50,
+        "L-BFGS accepted intermediate": 19
+      },
+      "vs_examples": {
+        "train_loss_delta": {
+          "lower": 7,
+          "higher": 48,
+          "tied": 32
+        },
+        "outer_rmse_delta": {
+          "lower": 12,
+          "higher": 65,
+          "tied": 10
+        },
+        "outer_exact_delta": {
+          "lower": 45,
+          "higher": 0,
+          "tied": 42
+        }
+      },
+      "vs_formula": {
+        "train_loss_delta": {
+          "lower": 5,
+          "higher": 48,
+          "tied": 34
+        },
+        "outer_rmse_delta": {
+          "lower": 10,
+          "higher": 67,
+          "tied": 10
+        },
+        "outer_exact_delta": {
+          "lower": 45,
+          "higher": 0,
+          "tied": 42
+        }
+      },
+      "vs_adam_bfgs": {
+        "train_loss_delta": {
+          "lower": 15,
+          "higher": 23,
+          "tied": 49
+        },
+        "outer_rmse_delta": {
+          "lower": 28,
+          "higher": 47,
+          "tied": 12
+        },
+        "outer_exact_delta": {
+          "lower": 16,
+          "higher": 9,
+          "tied": 62
+        }
+      },
+      "vs_ls_xavier": {
+        "train_loss_delta": {
+          "lower": 17,
+          "higher": 25,
+          "tied": 45
+        },
+        "outer_rmse_delta": {
+          "lower": 26,
+          "higher": 49,
+          "tied": 12
+        },
+        "outer_exact_delta": {
+          "lower": 30,
+          "higher": 4,
+          "tied": 53
+        }
+      }
+    },
+    "adam_lbfgs": {
+      "n": 87,
+      "train_near_zero": 34,
+      "median_train_loss": 0.0005337997384634889,
+      "near_certified": 1,
+      "n_certified": 12,
+      "perfect": {
+        "train": 0,
+        "dev": 0,
+        "outer": 0
+      },
+      "joint_evals": 15514,
+      "stage_selection": {
+        "start": 23,
+        "L-BFGS final": 44,
+        "L-BFGS accepted intermediate": 20
+      },
+      "vs_examples": {
+        "train_loss_delta": {
+          "lower": 6,
+          "higher": 47,
+          "tied": 34
+        },
+        "outer_rmse_delta": {
+          "lower": 13,
+          "higher": 62,
+          "tied": 12
+        },
+        "outer_exact_delta": {
+          "lower": 45,
+          "higher": 0,
+          "tied": 42
+        }
+      },
+      "vs_formula": {
+        "train_loss_delta": {
+          "lower": 5,
+          "higher": 46,
+          "tied": 36
+        },
+        "outer_rmse_delta": {
+          "lower": 11,
+          "higher": 64,
+          "tied": 12
+        },
+        "outer_exact_delta": {
+          "lower": 45,
+          "higher": 0,
+          "tied": 42
+        }
+      },
+      "vs_adam_bfgs": {
+        "train_loss_delta": {
+          "lower": 8,
+          "higher": 6,
+          "tied": 73
+        },
+        "outer_rmse_delta": {
+          "lower": 26,
+          "higher": 23,
+          "tied": 38
+        },
+        "outer_exact_delta": {
+          "lower": 8,
+          "higher": 12,
+          "tied": 67
+        }
+      },
+      "vs_ls_xavier": {
+        "train_loss_delta": {
+          "lower": 21,
+          "higher": 16,
+          "tied": 50
+        },
+        "outer_rmse_delta": {
+          "lower": 27,
+          "higher": 46,
+          "tied": 14
+        },
+        "outer_exact_delta": {
+          "lower": 26,
+          "higher": 8,
+          "tied": 53
+        }
+      }
+    },
+    "lbfgs_xavier": {
+      "n": 87,
+      "train_near_zero": 37,
+      "median_train_loss": 3.217689286573508e-05,
+      "near_certified": 3,
+      "n_certified": 12,
+      "perfect": {
+        "train": 0,
+        "dev": 0,
+        "outer": 0
+      },
+      "joint_evals": 17551,
+      "stage_selection": {
+        "L-BFGS accepted intermediate": 30,
+        "L-BFGS final": 57
+      },
+      "vs_examples": {
+        "train_loss_delta": {
+          "lower": 6,
+          "higher": 43,
+          "tied": 38
+        },
+        "outer_rmse_delta": {
+          "lower": 16,
+          "higher": 58,
+          "tied": 13
+        },
+        "outer_exact_delta": {
+          "lower": 45,
+          "higher": 0,
+          "tied": 42
+        }
+      },
+      "vs_formula": {
+        "train_loss_delta": {
+          "lower": 6,
+          "higher": 42,
+          "tied": 39
+        },
+        "outer_rmse_delta": {
+          "lower": 15,
+          "higher": 59,
+          "tied": 13
+        },
+        "outer_exact_delta": {
+          "lower": 45,
+          "higher": 0,
+          "tied": 42
+        }
+      },
+      "vs_adam_bfgs": {
+        "train_loss_delta": {
+          "lower": 21,
+          "higher": 16,
+          "tied": 50
+        },
+        "outer_rmse_delta": {
+          "lower": 42,
+          "higher": 30,
+          "tied": 15
+        },
+        "outer_exact_delta": {
+          "lower": 16,
+          "higher": 11,
+          "tied": 60
+        }
+      },
+      "vs_ls_xavier": {
+        "train_loss_delta": {
+          "lower": 22,
+          "higher": 17,
+          "tied": 48
+        },
+        "outer_rmse_delta": {
+          "lower": 34,
+          "higher": 34,
+          "tied": 19
+        },
+        "outer_exact_delta": {
+          "lower": 28,
+          "higher": 5,
+          "tied": 54
+        }
+      }
+    }
+  },
+  "verified": {
+    "xavier_score_rows": 261,
+    "original_adam_score_rows": 207,
+    "arithmetic_replayed_adam_full_bfgs_matches": 18
+  }
+}

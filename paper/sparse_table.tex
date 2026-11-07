@@ -1,0 +1,6 @@
+\begin{table}[htbp]\centering\small\setlength{\tabcolsep}{3.4pt}
+\caption{Paired WSP requests for $s_t=\lambda s_{t-1}+\gamma x_t$, and a BP control given the same editable entries. Here $d$ is state width and $H$ is the short horizon and short edit count. Fit exact counts matching impulse coefficients out of $H$. Next gives the absolute error on coefficient $g_H$, also its single-output RMSE. WSP and BP agree to the three decimal places shown for Next. The last column counts all-horizon WSP edits.}\label{tab:astra}
+\begin{tabular}{@{}lrr rr rr rr@{}}\toprule
+&&&\multicolumn{2}{c}{Short WSP}&\multicolumn{2}{c}{Short BP}&&All-horizon\\
+$(\lambda,\gamma)$&$d$&$H$&Fit exact&Fit RMSE&Fit exact&Fit RMSE&Next&WSP edits\\\midrule
+\input{sparse_rows}\end{tabular}\end{table}

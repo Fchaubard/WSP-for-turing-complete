@@ -1,0 +1,3 @@
+\paragraph{How we checked nonconvexity.}
+For each of the 87 fixed-network settings, we exhibit two weight vectors whose midpoint has loss strictly greater than the average endpoint loss. Each witness uses two trainable coefficients that multiply along an active path. Swapping those coefficients preserves the endpoint prediction while changing the midpoint prediction. Exact rational evaluation on the actual training observations certifies the violation. Appendix~\ref{app:nonconvex-details} supplies the construction and its scope. The additional architecture-selection experiment can choose a different graph and is reported separately.
+

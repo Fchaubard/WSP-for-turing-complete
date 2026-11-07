@@ -1,0 +1,64 @@
+{
+  "original_sha256": "aca0c3ddf093c8ed86cc50e136bc586f1a239e2547524d965694e41827f1ac55",
+  "program_sha256": "9de53df19e3d12597666be3c1cd6aeebe385447e67079ce5ecbb98e2cc407400",
+  "original": {
+    "operations": 2543,
+    "operation_types": {
+      "relu": 732,
+      "sub": 989,
+      "add": 367,
+      "mul": 455
+    },
+    "reachable_operations": 2541,
+    "literal_operand_occurrences": 1117
+  },
+  "shared_expanded_operations": 2492,
+  "engineered": {
+    "operations": 3352,
+    "operation_types": {
+      "relu": 949,
+      "sub": 1313,
+      "add": 483,
+      "mul": 607
+    },
+    "reachable_operations": 3338,
+    "literal_operand_occurrences": 1489
+  },
+  "exact_bits": 79106,
+  "distinct_inputs": 79106,
+  "suites": {
+    "signed_zeros_and_blind_failure": {
+      "inputs": 4,
+      "exact_bits": 4
+    },
+    "powers_and_neighbors": {
+      "inputs": 15068,
+      "exact_bits": 15068
+    },
+    "stratified_binades": {
+      "inputs": 30058,
+      "exact_bits": 30058
+    },
+    "subnormal_half_step_neighbors": {
+      "inputs": 18732,
+      "exact_bits": 18732
+    },
+    "normal_ties_and_near_ties": {
+      "inputs": 11460,
+      "exact_bits": 11460
+    },
+    "original_shell_stress": {
+      "inputs": 5786,
+      "exact_bits": 5786
+    }
+  },
+  "oracle": "float(Fraction.from_float(x)**2); both signed zero inputs included",
+  "blind_failure": {
+    "x": "0x1.0000000000001p-508",
+    "blind": "0x1.0000000000000p-1016",
+    "repaired": "0x1.0000000000002p-1016",
+    "correct": "0x1.0000000000002p-1016"
+  },
+  "python": "3.13.12",
+  "numpy": "2.5.4"
+}

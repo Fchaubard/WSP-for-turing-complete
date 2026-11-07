@@ -1,0 +1,42 @@
+\section{A separately engineered square circuit for every binary64 input in $[-10,10]$}
+\label{app:fullsquare}
+The first-response WSP square circuit in Appendix~\ref{app:literal-square-certificate} fails on some central inputs with normal outputs.
+For the scalar input $x=(1+2^{-52})2^{-508}$ it returns $2^{-1016}$, two output ULPs below the correctly rounded square.
+Its intermediate value represents $x^2/256$ before a final power-of-two rescaling.
+We retain the first 2,492 scalar operations of that proposal and replace its output logic.
+The resulting graph has 3,352 operations (949 ReLUs), compared with 2,543 operations (732 ReLUs) in the first reply.
+Both graphs use the same operation-by-operation binary64 evaluator. These numbers give construction costs.
+
+\paragraph{Claim.}
+Let $x$ denote any binary64 input in $[-10,10]$. Use the binary64 format of the Institute of Electrical and Electronics Engineers (IEEE) standard, round each graph operation separately to nearest with ties to even, and retain subnormal results (gradual underflow). Write $\operatorname{RN}$ for this rounding. The engineered WSP graph returns the bit pattern of $\operatorname{RN}(x^2)$ for every such $x$, including both signed zeros.
+
+\paragraph{Normalization.}
+Initialize a running nonnegative remainder $r$ to $r_0=\operatorname{RN}(|x|/16)$. At each integer $k=512,256,\ldots,1$ in decreasing powers of two, define a flag $f_k$ to be one if the current $r<2^{-k}$ and zero otherwise. The shared prefix multiplies $r$ by $2^k$ exactly when the flag is set.
+For $q=2^{-k}$ the preceding float is $q-\delta$ with $\delta=2^{-k-53}$. The implemented flag is
+$\operatorname{ReLU}(1-\delta^{-1}\operatorname{ReLU}(r-(q-\delta)))$.
+For $r\le q-\delta$ the inner ReLU is zero. For $r\ge q$, monotone rounding gives an inner difference at least $\delta$, so the flag is zero. All intermediates are finite since $r<1$ and $k\le512$.
+The conditional update uses $h=\operatorname{ReLU}(r-f_k)$ and $r\gets h+(r-h)2^k$, with $h=r$ or $0$ exactly.
+The strict threshold keeps $0\le r<1$ throughout.
+Define the total rescaling exponent $S=\sum_k k f_k$. This integer also selects the output branch below. We obtain $r=r_0 2^S$.
+For $r_0>0$ the descending flags perform the binary expansion of the integer shift taking $r_0$ into $[1/2,1)$, capped at 1023. For $r_0=0$, all flags are set.
+If $S\le541$, the normalization reaches $[1/2,1)$ and the initial division by 16 is exact. Indeed, inexact division could only produce $r_0\le2^{-1022}$, which requires a shift of at least 1021.
+Define the significand integer $m=2^{53}r$ and its exact square $P=m^2$. In this case $m$ lies in $[2^{52},2^{53})$ and
+\[
+ |x|=m2^{-49-S},\qquad x^2=P2^{-98-2S},\qquad P=m^2.
+\]
+Even if the shift saturates, $m$ is an integer below $2^{53}$ because $r_0$ is a multiple of $2^{-1074}$ and $1023+53\ge1074$.
+
+\paragraph{Normal outputs, $S\le514$.}
+Let $H,M,L$ be the high, middle and low digits of $P$ in base $2^{27}$, as computed by the integer-product loop in the preceding proof. Thus $P=H2^{54}+M2^{27}+L$, with $H<2^{52}$ and $0\le M,L<2^{27}$.
+The shared prefix uses the nonzero flag of $L$ to return $\operatorname{RN}(r^2)$. Indeed, all rounding midpoints for $P/2^{54}\in[2^{50},2^{52})$ are on the $2^{-27}$ grid. Replacing $L/2^{54}$ by $2^{-28}$ when $L>0$ preserves the side of every midpoint, and $L=0$ preserves ties. The final $2^{-52}$ scaling of this normalized result is exact.
+We first multiply it by 256, then apply the inverse scale $2^{-2k}$ for each active flag. Every intermediate in this branch is normal, since the exact final square is at least $2^{-1022}$, and each active inverse scaling decreases the positive value. Rounding commutes with these power-of-two scalings down to the normal endpoint. For the running result $v$ the circuit computes a selector intermediate $h=\operatorname{ReLU}(v-256f_k)$, valid because $0\le v\le256$.
+
+\paragraph{Subnormal outputs and the transition to zero.}
+The positive subnormal output levels are successive integer multiples of $2^{-1074}$. For $515\le S\le541$, let $j=2(S-515)\in\{0,2,\ldots,52\}$. Measured in these units, the exact result is $P/2^{54+j}$.
+Its integer part is $\lfloor H/2^j\rfloor$. The guard bit is the first bit below the retained integer unit. Numbering bits from zero at the lowest position, this is bit $j-1$ of $H$ when $j>0$. For $j=0$ this bit is bit 26 of $M$. If a nonzero number is an integer divided by a power of two, its square cannot lie exactly halfway between two such output levels. A halfway value is an odd multiple of $2^{-1075}$, whose exponent after removing powers of two is odd, whereas the corresponding exponent of a square is even. Consequently adding the first discarded bit to the integer part rounds exactly. The graph extracts successive bits of $H$ by integer thresholding and subtraction, selects the appropriate prefix and bit from $S$, and scales the resulting integer (at most $2^{52}$) by $2^{-1074}$ exactly. This includes a possible carry to the smallest normal.
+For $S\ge542$, exact initial division gives $|x|=16r2^{-S}<2^{-538}$. Inexact initial division is confined to $|x|<2^{-1018}$. Both cases round to positive zero. The final addition selects the normal branch for $S\le514$, the subnormal calculation for $515\le S\le541$, and zero otherwise, giving positive zero for both zero inputs.
+
+\paragraph{Checks.}
+A rational oracle matched all 79,106 distinct bit patterns tested, including exponent-stratified inputs, neighbors of every input power of two in range, subnormal rounding transitions, and the counterexample to the first reply.
+An independently written integer-square-root stress test matched 45,468 inputs bracketing subnormal half-steps and a second exponent/boundary suite matched all 40,779 inputs. All three panels had raw RMSE zero for the engineered circuit. On the same 79,106 inputs the first reply matched 78,026 and had RMSE $9.15\times 10^{-324}$. We computed the final RMSE scaling in higher precision so this small positive error survives rounding. Inputs can occur in more than one suite.
+The archived generator and full circuit distinguish this engineered result from the frozen first reply.

@@ -1,0 +1,24 @@
+{
+  "seeds": [
+    11,
+    22,
+    33
+  ],
+  "steps": 100,
+  "batch": 32,
+  "reference": "MPFR 4.2.2 RN-even, 53-bit checked at 200-bit",
+  "sha256": {
+    "../scalar/programs.npz": "f3af196411db5dfc448fa9f39e3fed7c41b5da865997e763aeab952ecd813310",
+    "../tanh/program.npz": "d7dde15a3a40e3fdec0fdfcba18cac0ebc8a789f75193d7e8bb90085ee609678",
+    "../scalar/train.py": "d641c45bbd51c3a32fff2c0151c701a004586e8079bb341ed3b93e8e762dd1b4",
+    "../scalar/run.py": "b3ed112f68277deec3623e4a494e6419a7bfcaccad144da8aa3a71240891577e",
+    "bench.py": "648374dd883195d3c8c76d9c260e83ebc0d1db97f79f73604f70140b978c007d",
+    "replay.py": "6af8d0b0c15f4e261b8070eaa85f8c5cad906a8b58161fb94c50f171a26f70ad",
+    "selfpower_weights.npz": "8dc0e53988e346d2529ffbf3462ccffd4868c8bba8ae90a9bc5e599a20a61fa3",
+    "tanh_weights.npz": "cc28de459a507798a08e365944ab12a5efbe36f5ab485cbed834dd9514600e65",
+    "selfpower.json": "4eeb97039cea5272000a3d61df6cf999ab75df292e83d90170fa55aa71e9ea36",
+    "tanh.json": "aea7ea8aacb68030fb121a60b46d8179e878a50bbbc0686db0bfc20961d92698",
+    "selfpower_steps.json": "03bd06425cc399f399b8e2c815aaa87b19e698a5194d117b7bf46e42c3615de2",
+    "tanh_steps.json": "5ea1d30acf1ea6ec0f7859d2e21569462a81310be0d5abc1c9118e381f5beb26"
+  }
+}

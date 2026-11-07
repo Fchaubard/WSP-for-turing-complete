@@ -1,0 +1,58 @@
+{
+  "relu_selfpower_single_word_16": {
+    "dynamic_nodes": 2831,
+    "relus": 634
+  },
+  "relu_selfpower_two_word_16": {
+    "dynamic_nodes": 6302,
+    "relus": 850
+  },
+  "relu_selfpower_single_word_28": {
+    "dynamic_nodes": 3683,
+    "relus": 826
+  },
+  "relu_selfpower_two_word_28": {
+    "dynamic_nodes": 9122,
+    "relus": 1162
+  },
+  "relu_selfpower_single_word_40": {
+    "dynamic_nodes": 4535,
+    "relus": 1018
+  },
+  "relu_selfpower_two_word_40": {
+    "dynamic_nodes": 11942,
+    "relus": 1474
+  },
+  "relu_selfpower_single_word_52": {
+    "dynamic_nodes": 5387,
+    "relus": 1210
+  },
+  "relu_selfpower_two_word_52": {
+    "dynamic_nodes": 14762,
+    "relus": 1786
+  },
+  "relu_selfpower_single_word_60": {
+    "dynamic_nodes": 5955,
+    "relus": 1338
+  },
+  "relu_selfpower_two_word_60": {
+    "dynamic_nodes": 16642,
+    "relus": 1994
+  },
+  "relu_selfpower_single_word_72": {
+    "dynamic_nodes": 6807,
+    "relus": 1530
+  },
+  "relu_selfpower_two_word_72": {
+    "dynamic_nodes": 19462,
+    "relus": 2306
+  },
+  "relu_selfpower_single_word_84": {
+    "dynamic_nodes": 7659,
+    "relus": 1722
+  },
+  "relu_selfpower_two_word_84": {
+    "dynamic_nodes": 22282,
+    "relus": 2618
+  }
+}

@@ -1,0 +1,1306 @@
+task,architecture,size,params,seed,method,split,split_description,n_examples,n_scalars,exact_count,exact_fraction,raw_rmse,train_loss
+square,Scalar ReLU MLP with linear skip,1,5,164,Initial Xavier weights,train,observed,12,12,0,0.0,3.423272277769538,0.8549707572046171
+square,Scalar ReLU MLP with linear skip,1,5,164,Initial Xavier weights,dev,central held-out,2048,2048,0,0.0,4.857690374271836,0.8549707572046171
+square,Scalar ReLU MLP with linear skip,1,5,164,Initial Xavier weights,outer,outer held-out,4096,4096,0,0.0,54.000972359141954,0.8549707572046171
+square,Scalar ReLU MLP with linear skip,1,5,164,Adam followed by BFGS,train,observed,12,12,0,0.0,3.3638900212364495,0.2376943989307596
+square,Scalar ReLU MLP with linear skip,1,5,164,Adam followed by BFGS,dev,central held-out,2048,2048,0,0.0,3.272870684477673,0.2376943989307596
+square,Scalar ReLU MLP with linear skip,1,5,164,Adam followed by BFGS,outer,outer held-out,4096,4096,0,0.0,51.80180217743137,0.2376943989307596
+square,Scalar ReLU MLP with linear skip,1,5,164,Trust-region least squares,train,observed,12,12,0,0.0,1.07434240889034,0.02293119036661724
+square,Scalar ReLU MLP with linear skip,1,5,164,Trust-region least squares,dev,central held-out,2048,2048,0,0.0,1.2456521357434496,0.02293119036661724
+square,Scalar ReLU MLP with linear skip,1,5,164,Trust-region least squares,outer,outer held-out,4096,4096,0,0.0,39.959809444140184,0.02293119036661724
+square,Scalar ReLU MLP with linear skip,4,14,164,Initial Xavier weights,train,observed,12,12,0,0.0,3.063561553568733,0.4242773033855584
+square,Scalar ReLU MLP with linear skip,4,14,164,Initial Xavier weights,dev,central held-out,2048,2048,0,0.0,3.8787683413482426,0.4242773033855584
+square,Scalar ReLU MLP with linear skip,4,14,164,Initial Xavier weights,outer,outer held-out,4096,4096,0,0.0,51.61659279175766,0.4242773033855584
+square,Scalar ReLU MLP with linear skip,4,14,164,Adam followed by BFGS,train,observed,12,12,0,0.0,0.4339089471508668,0.006542816746569112
+square,Scalar ReLU MLP with linear skip,4,14,164,Adam followed by BFGS,dev,central held-out,2048,2048,0,0.0,1.054435096602846,0.006542816746569112
+square,Scalar ReLU MLP with linear skip,4,14,164,Adam followed by BFGS,outer,outer held-out,4096,4096,0,0.0,37.30459426138533,0.006542816746569112
+square,Scalar ReLU MLP with linear skip,4,14,164,Trust-region least squares,train,observed,12,12,1,0.08333333333333333,0.4339089471508663,0.006542816746569102
+square,Scalar ReLU MLP with linear skip,4,14,164,Trust-region least squares,dev,central held-out,2048,2048,0,0.0,1.0541554973983613,0.006542816746569102
+square,Scalar ReLU MLP with linear skip,4,14,164,Trust-region least squares,outer,outer held-out,4096,4096,0,0.0,37.26139712580667,0.006542816746569102
+square,Scalar ReLU MLP with linear skip,16,50,164,Initial Xavier weights,train,observed,12,12,0,0.0,3.302751056714114,0.5257287786544059
+square,Scalar ReLU MLP with linear skip,16,50,164,Initial Xavier weights,dev,central held-out,2048,2048,0,0.0,4.193103670124378,0.5257287786544059
+square,Scalar ReLU MLP with linear skip,16,50,164,Initial Xavier weights,outer,outer held-out,4096,4096,0,0.0,52.781237390337544,0.5257287786544059
+square,Scalar ReLU MLP with linear skip,16,50,164,Adam followed by BFGS,train,observed,12,12,0,0.0,0.6083233954472261,0.025316772588512042
+square,Scalar ReLU MLP with linear skip,16,50,164,Adam followed by BFGS,dev,central held-out,2048,2048,0,0.0,1.4424487701415483,0.025316772588512042
+square,Scalar ReLU MLP with linear skip,16,50,164,Adam followed by BFGS,outer,outer held-out,4096,4096,0,0.0,39.59177488754315,0.025316772588512042
+square,Scalar ReLU MLP with linear skip,16,50,164,Trust-region least squares,train,observed,12,12,0,0.0,0.3468798444033506,0.004344092232435729
+square,Scalar ReLU MLP with linear skip,16,50,164,Trust-region least squares,dev,central held-out,2048,2048,0,0.0,0.9856073030312231,0.004344092232435729
+square,Scalar ReLU MLP with linear skip,16,50,164,Trust-region least squares,outer,outer held-out,4096,4096,0,0.0,36.11756947997576,0.004344092232435729
+square,Scalar ReLU MLP with linear skip,1,5,317,Initial Xavier weights,train,observed,12,12,0,0.0,5.2099413418533445,1.0968295618493031
+square,Scalar ReLU MLP with linear skip,1,5,317,Initial Xavier weights,dev,central held-out,2048,2048,0,0.0,5.898191511652326,1.0968295618493031
+square,Scalar ReLU MLP with linear skip,1,5,317,Initial Xavier weights,outer,outer held-out,4096,4096,0,0.0,60.21266509855516,1.0968295618493031
+square,Scalar ReLU MLP with linear skip,1,5,317,Adam followed by BFGS,train,observed,12,12,0,0.0,2.802574067655705,0.1942519551846277
+square,Scalar ReLU MLP with linear skip,1,5,317,Adam followed by BFGS,dev,central held-out,2048,2048,0,0.0,3.373833110437625,0.1942519551846277
+square,Scalar ReLU MLP with linear skip,1,5,317,Adam followed by BFGS,outer,outer held-out,4096,4096,0,0.0,52.11608841518657,0.1942519551846277
+square,Scalar ReLU MLP with linear skip,1,5,317,Trust-region least squares,train,observed,12,12,0,0.0,2.802574066364339,0.19425195518462768
+square,Scalar ReLU MLP with linear skip,1,5,317,Trust-region least squares,dev,central held-out,2048,2048,0,0.0,3.373833110363205,0.19425195518462768
+square,Scalar ReLU MLP with linear skip,1,5,317,Trust-region least squares,outer,outer held-out,4096,4096,0,0.0,51.98288380287342,0.19425195518462768
+square,Scalar ReLU MLP with linear skip,4,14,317,Initial Xavier weights,train,observed,12,12,0,0.0,5.681459697602085,3.359782058006573
+square,Scalar ReLU MLP with linear skip,4,14,317,Initial Xavier weights,dev,central held-out,2048,2048,0,0.0,7.0445275490822885,3.359782058006573
+square,Scalar ReLU MLP with linear skip,4,14,317,Initial Xavier weights,outer,outer held-out,4096,4096,0,0.0,62.70931493206289,3.359782058006573
+square,Scalar ReLU MLP with linear skip,4,14,317,Adam followed by BFGS,train,observed,12,12,0,0.0,2.802574067654072,0.19425195518462768
+square,Scalar ReLU MLP with linear skip,4,14,317,Adam followed by BFGS,dev,central held-out,2048,2048,0,0.0,3.382316050221242,0.19425195518462768
+square,Scalar ReLU MLP with linear skip,4,14,317,Adam followed by BFGS,outer,outer held-out,4096,4096,0,0.0,52.38493678240315,0.19425195518462768
+square,Scalar ReLU MLP with linear skip,4,14,317,Trust-region least squares,train,observed,12,12,0,0.0,0.4047322917088657,0.0023942763030453625
+square,Scalar ReLU MLP with linear skip,4,14,317,Trust-region least squares,dev,central held-out,2048,2048,0,0.0,0.4521680230491287,0.0023942763030453625
+square,Scalar ReLU MLP with linear skip,4,14,317,Trust-region least squares,outer,outer held-out,4096,4096,0,0.0,32.94453386245503,0.0023942763030453625
+square,Scalar ReLU MLP with linear skip,16,50,317,Initial Xavier weights,train,observed,12,12,0,0.0,4.096559794532913,0.4555374821496024
+square,Scalar ReLU MLP with linear skip,16,50,317,Initial Xavier weights,dev,central held-out,2048,2048,0,0.0,4.4016667227052,0.4555374821496024
+square,Scalar ReLU MLP with linear skip,16,50,317,Initial Xavier weights,outer,outer held-out,4096,4096,0,0.0,52.94803330659032,0.4555374821496024
+square,Scalar ReLU MLP with linear skip,16,50,317,Adam followed by BFGS,train,observed,12,12,0,0.0,0.0021950011819466793,4.495796003253492e-07
+square,Scalar ReLU MLP with linear skip,16,50,317,Adam followed by BFGS,dev,central held-out,2048,2048,0,0.0,0.1925113605393519,4.495796003253492e-07
+square,Scalar ReLU MLP with linear skip,16,50,317,Adam followed by BFGS,outer,outer held-out,4096,4096,0,0.0,29.519892515957334,4.495796003253492e-07
+square,Scalar ReLU MLP with linear skip,16,50,317,Trust-region least squares,train,observed,12,12,0,0.0,0.17262677654127143,0.0007947829451056366
+square,Scalar ReLU MLP with linear skip,16,50,317,Trust-region least squares,dev,central held-out,2048,2048,0,0.0,0.43052353109831626,0.0007947829451056366
+square,Scalar ReLU MLP with linear skip,16,50,317,Trust-region least squares,outer,outer held-out,4096,4096,0,0.0,31.92478712881477,0.0007947829451056366
+square,Scalar ReLU MLP with linear skip,1,5,583,Initial Xavier weights,train,observed,12,12,0,0.0,3.4329737358612467,0.3792224608580441
+square,Scalar ReLU MLP with linear skip,1,5,583,Initial Xavier weights,dev,central held-out,2048,2048,0,0.0,3.7219903211503365,0.3792224608580441
+square,Scalar ReLU MLP with linear skip,1,5,583,Initial Xavier weights,outer,outer held-out,4096,4096,0,0.0,51.717625498652595,0.3792224608580441
+square,Scalar ReLU MLP with linear skip,1,5,583,Adam followed by BFGS,train,observed,12,12,0,0.0,0.28989483627755513,0.003630566543593831
+square,Scalar ReLU MLP with linear skip,1,5,583,Adam followed by BFGS,dev,central held-out,2048,2048,0,0.0,0.9568840226151715,0.003630566543593831
+square,Scalar ReLU MLP with linear skip,1,5,583,Adam followed by BFGS,outer,outer held-out,4096,4096,0,0.0,33.51460834719096,0.003630566543593831
+square,Scalar ReLU MLP with linear skip,1,5,583,Trust-region least squares,train,observed,12,12,0,0.0,0.28989483766101176,0.0036305665435938292
+square,Scalar ReLU MLP with linear skip,1,5,583,Trust-region least squares,dev,central held-out,2048,2048,0,0.0,0.9568840229602875,0.0036305665435938292
+square,Scalar ReLU MLP with linear skip,1,5,583,Trust-region least squares,outer,outer held-out,4096,4096,0,0.0,33.514608356735465,0.0036305665435938292
+square,Scalar ReLU MLP with linear skip,4,14,583,Initial Xavier weights,train,observed,12,12,0,0.0,5.236971812270977,0.836147929118855
+square,Scalar ReLU MLP with linear skip,4,14,583,Initial Xavier weights,dev,central held-out,2048,2048,0,0.0,5.081156679586858,0.836147929118855
+square,Scalar ReLU MLP with linear skip,4,14,583,Initial Xavier weights,outer,outer held-out,4096,4096,0,0.0,55.87074796755157,0.836147929118855
+square,Scalar ReLU MLP with linear skip,4,14,583,Adam followed by BFGS,train,observed,12,12,0,0.0,0.39160195967813705,0.0010692640453637615
+square,Scalar ReLU MLP with linear skip,4,14,583,Adam followed by BFGS,dev,central held-out,2048,2048,0,0.0,0.574812956839014,0.0010692640453637615
+square,Scalar ReLU MLP with linear skip,4,14,583,Adam followed by BFGS,outer,outer held-out,4096,4096,0,0.0,35.039287195003745,0.0010692640453637615
+square,Scalar ReLU MLP with linear skip,4,14,583,Trust-region least squares,train,observed,12,12,0,0.0,0.23894757961812083,0.0008123003099149065
+square,Scalar ReLU MLP with linear skip,4,14,583,Trust-region least squares,dev,central held-out,2048,2048,0,0.0,0.6653800770737831,0.0008123003099149065
+square,Scalar ReLU MLP with linear skip,4,14,583,Trust-region least squares,outer,outer held-out,4096,4096,0,0.0,32.57649677535332,0.0008123003099149065
+square,Scalar ReLU MLP with linear skip,16,50,583,Initial Xavier weights,train,observed,12,12,0,0.0,4.076644966870586,0.48613723853842505
+square,Scalar ReLU MLP with linear skip,16,50,583,Initial Xavier weights,dev,central held-out,2048,2048,0,0.0,4.190051717870821,0.48613723853842505
+square,Scalar ReLU MLP with linear skip,16,50,583,Initial Xavier weights,outer,outer held-out,4096,4096,0,0.0,53.64167792848766,0.48613723853842505
+square,Scalar ReLU MLP with linear skip,16,50,583,Adam followed by BFGS,train,observed,12,12,0,0.0,0.0046407948954646765,1.0768488630885497e-05
+square,Scalar ReLU MLP with linear skip,16,50,583,Adam followed by BFGS,dev,central held-out,2048,2048,0,0.0,0.1812686197441297,1.0768488630885497e-05
+square,Scalar ReLU MLP with linear skip,16,50,583,Adam followed by BFGS,outer,outer held-out,4096,4096,0,0.0,27.101783974424706,1.0768488630885497e-05
+square,Scalar ReLU MLP with linear skip,16,50,583,Trust-region least squares,train,observed,12,12,0,0.0,0.22495314615244474,0.0006493377545671895
+square,Scalar ReLU MLP with linear skip,16,50,583,Trust-region least squares,dev,central held-out,2048,2048,0,0.0,0.5756548098816676,0.0006493377545671895
+square,Scalar ReLU MLP with linear skip,16,50,583,Trust-region least squares,outer,outer held-out,4096,4096,0,0.0,29.652303930520237,0.0006493377545671895
+sin,Scalar ReLU MLP with linear skip,1,5,164,Initial Xavier weights,train,observed,12,12,0,0.0,3.6910652479372006,6.811981332264856
+sin,Scalar ReLU MLP with linear skip,1,5,164,Initial Xavier weights,dev,central held-out,2048,2048,0,0.0,3.5437110565087933,6.811981332264856
+sin,Scalar ReLU MLP with linear skip,1,5,164,Initial Xavier weights,outer,outer held-out,4096,4096,0,0.0,11.645567665590514,6.811981332264856
+sin,Scalar ReLU MLP with linear skip,1,5,164,Adam followed by BFGS,train,observed,12,12,0,0.0,0.39941121826951054,0.07976466063976731
+sin,Scalar ReLU MLP with linear skip,1,5,164,Adam followed by BFGS,dev,central held-out,2048,2048,0,0.0,0.38596326426009675,0.07976466063976731
+sin,Scalar ReLU MLP with linear skip,1,5,164,Adam followed by BFGS,outer,outer held-out,4096,4096,0,0.0,1.8463499571453277,0.07976466063976731
+sin,Scalar ReLU MLP with linear skip,1,5,164,Trust-region least squares,train,observed,12,12,0,0.0,0.14194389918152328,0.010074035257427224
+sin,Scalar ReLU MLP with linear skip,1,5,164,Trust-region least squares,dev,central held-out,2048,2048,0,0.0,0.44268114357984056,0.010074035257427224
+sin,Scalar ReLU MLP with linear skip,1,5,164,Trust-region least squares,outer,outer held-out,4096,4096,0,0.0,3.6851185191395444,0.010074035257427224
+sin,Scalar ReLU MLP with linear skip,4,14,164,Initial Xavier weights,train,observed,12,12,0,0.0,2.499218745280592,3.1230471683809466
+sin,Scalar ReLU MLP with linear skip,4,14,164,Initial Xavier weights,dev,central held-out,2048,2048,0,0.0,2.276432524590789,3.1230471683809466
+sin,Scalar ReLU MLP with linear skip,4,14,164,Initial Xavier weights,outer,outer held-out,4096,4096,0,0.0,6.578918978735069,3.1230471683809466
+sin,Scalar ReLU MLP with linear skip,4,14,164,Adam followed by BFGS,train,observed,12,12,0,0.0,0.03267414079860372,0.0005337997384634903
+sin,Scalar ReLU MLP with linear skip,4,14,164,Adam followed by BFGS,dev,central held-out,2048,2048,0,0.0,0.16886825417632464,0.0005337997384634903
+sin,Scalar ReLU MLP with linear skip,4,14,164,Adam followed by BFGS,outer,outer held-out,4096,4096,0,0.0,2.1369544483469527,0.0005337997384634903
+sin,Scalar ReLU MLP with linear skip,4,14,164,Trust-region least squares,train,observed,12,12,0,0.0,0.02819877254825489,0.0003975853866141068
+sin,Scalar ReLU MLP with linear skip,4,14,164,Trust-region least squares,dev,central held-out,2048,2048,0,0.0,0.17133107056058178,0.0003975853866141068
+sin,Scalar ReLU MLP with linear skip,4,14,164,Trust-region least squares,outer,outer held-out,4096,4096,0,0.0,2.0789045067337164,0.0003975853866141068
+sin,Scalar ReLU MLP with linear skip,16,50,164,Initial Xavier weights,train,observed,12,12,0,0.0,2.5470992495075127,3.2438572934208683
+sin,Scalar ReLU MLP with linear skip,16,50,164,Initial Xavier weights,dev,central held-out,2048,2048,0,0.0,2.4112549190424826,3.2438572934208683
+sin,Scalar ReLU MLP with linear skip,16,50,164,Initial Xavier weights,outer,outer held-out,4096,4096,0,0.0,7.115207805947525,3.2438572934208683
+sin,Scalar ReLU MLP with linear skip,16,50,164,Adam followed by BFGS,train,observed,12,12,0,0.0,0.0017032620620495438,1.4505508260086313e-06
+sin,Scalar ReLU MLP with linear skip,16,50,164,Adam followed by BFGS,dev,central held-out,2048,2048,0,0.0,0.11056874869451473,1.4505508260086313e-06
+sin,Scalar ReLU MLP with linear skip,16,50,164,Adam followed by BFGS,outer,outer held-out,4096,4096,0,0.0,2.580527397334395,1.4505508260086313e-06
+sin,Scalar ReLU MLP with linear skip,16,50,164,Trust-region least squares,train,observed,12,12,2,0.16666666666666666,0.01110931485105784,6.170843822996715e-05
+sin,Scalar ReLU MLP with linear skip,16,50,164,Trust-region least squares,dev,central held-out,2048,2048,0,0.0,0.13406729302242704,6.170843822996715e-05
+sin,Scalar ReLU MLP with linear skip,16,50,164,Trust-region least squares,outer,outer held-out,4096,4096,0,0.0,2.9814161030584136,6.170843822996715e-05
+sin,Scalar ReLU MLP with linear skip,1,5,317,Initial Xavier weights,train,observed,12,12,0,0.0,1.9966844294860038,1.9933743554759245
+sin,Scalar ReLU MLP with linear skip,1,5,317,Initial Xavier weights,dev,central held-out,2048,2048,0,0.0,2.0000006690141228,1.9933743554759245
+sin,Scalar ReLU MLP with linear skip,1,5,317,Initial Xavier weights,outer,outer held-out,4096,4096,0,0.0,8.435720569434546,1.9933743554759245
+sin,Scalar ReLU MLP with linear skip,1,5,317,Adam followed by BFGS,train,observed,12,12,0,0.0,0.32459686049314385,0.052681560921002735
+sin,Scalar ReLU MLP with linear skip,1,5,317,Adam followed by BFGS,dev,central held-out,2048,2048,0,0.0,0.3708565207804526,0.052681560921002735
+sin,Scalar ReLU MLP with linear skip,1,5,317,Adam followed by BFGS,outer,outer held-out,4096,4096,0,0.0,2.1774041774213613,0.052681560921002735
+sin,Scalar ReLU MLP with linear skip,1,5,317,Trust-region least squares,train,observed,12,12,0,0.0,0.35081596604661913,0.06153592101661131
+sin,Scalar ReLU MLP with linear skip,1,5,317,Trust-region least squares,dev,central held-out,2048,2048,0,0.0,0.46371539532080375,0.06153592101661131
+sin,Scalar ReLU MLP with linear skip,1,5,317,Trust-region least squares,outer,outer held-out,4096,4096,0,0.0,2.8450847244461976,0.06153592101661131
+sin,Scalar ReLU MLP with linear skip,4,14,317,Initial Xavier weights,train,observed,12,12,0,0.0,4.520335764729345,10.216717712945615
+sin,Scalar ReLU MLP with linear skip,4,14,317,Initial Xavier weights,dev,central held-out,2048,2048,0,0.0,4.902444402822669,10.216717712945615
+sin,Scalar ReLU MLP with linear skip,4,14,317,Initial Xavier weights,outer,outer held-out,4096,4096,0,0.0,17.529555049737635,10.216717712945615
+sin,Scalar ReLU MLP with linear skip,4,14,317,Adam followed by BFGS,train,observed,12,12,0,0.0,0.3245968604931439,0.05268156092100274
+sin,Scalar ReLU MLP with linear skip,4,14,317,Adam followed by BFGS,dev,central held-out,2048,2048,0,0.0,0.3666866405308611,0.05268156092100274
+sin,Scalar ReLU MLP with linear skip,4,14,317,Adam followed by BFGS,outer,outer held-out,4096,4096,0,0.0,2.356465651143032,0.05268156092100274
+sin,Scalar ReLU MLP with linear skip,4,14,317,Trust-region least squares,train,observed,12,12,0,0.0,0.3245968604931439,0.05268156092100276
+sin,Scalar ReLU MLP with linear skip,4,14,317,Trust-region least squares,dev,central held-out,2048,2048,0,0.0,0.3671702432144874,0.05268156092100276
+sin,Scalar ReLU MLP with linear skip,4,14,317,Trust-region least squares,outer,outer held-out,4096,4096,0,0.0,2.501925931078,0.05268156092100276
+sin,Scalar ReLU MLP with linear skip,16,50,317,Initial Xavier weights,train,observed,12,12,0,0.0,1.2584356718700767,0.7918301701175454
+sin,Scalar ReLU MLP with linear skip,16,50,317,Initial Xavier weights,dev,central held-out,2048,2048,0,0.0,1.5170630109270147,0.7918301701175454
+sin,Scalar ReLU MLP with linear skip,16,50,317,Initial Xavier weights,outer,outer held-out,4096,4096,0,0.0,8.139873809189398,0.7918301701175454
+sin,Scalar ReLU MLP with linear skip,16,50,317,Adam followed by BFGS,train,observed,12,12,0,0.0,0.0023653012884287776,2.797325092521418e-06
+sin,Scalar ReLU MLP with linear skip,16,50,317,Adam followed by BFGS,dev,central held-out,2048,2048,0,0.0,0.07289654685068807,2.797325092521418e-06
+sin,Scalar ReLU MLP with linear skip,16,50,317,Adam followed by BFGS,outer,outer held-out,4096,4096,0,0.0,2.4204929623137987,2.797325092521418e-06
+sin,Scalar ReLU MLP with linear skip,16,50,317,Trust-region least squares,train,observed,12,12,0,0.0,0.010433504442546855,5.442900747632248e-05
+sin,Scalar ReLU MLP with linear skip,16,50,317,Trust-region least squares,dev,central held-out,2048,2048,0,0.0,0.07493641518968776,5.442900747632248e-05
+sin,Scalar ReLU MLP with linear skip,16,50,317,Trust-region least squares,outer,outer held-out,4096,4096,0,0.0,2.369372805119431,5.442900747632248e-05
+sin,Scalar ReLU MLP with linear skip,1,5,583,Initial Xavier weights,train,observed,12,12,0,0.0,1.4707927089957686,1.0816155964175553
+sin,Scalar ReLU MLP with linear skip,1,5,583,Initial Xavier weights,dev,central held-out,2048,2048,0,0.0,1.3725460789168251,1.0816155964175553
+sin,Scalar ReLU MLP with linear skip,1,5,583,Initial Xavier weights,outer,outer held-out,4096,4096,0,0.0,2.9887054446588572,1.0816155964175553
+sin,Scalar ReLU MLP with linear skip,1,5,583,Adam followed by BFGS,train,observed,12,12,0,0.0,0.40779689010902354,0.08314915179129552
+sin,Scalar ReLU MLP with linear skip,1,5,583,Adam followed by BFGS,dev,central held-out,2048,2048,0,0.0,0.4378465677183733,0.08314915179129552
+sin,Scalar ReLU MLP with linear skip,1,5,583,Adam followed by BFGS,outer,outer held-out,4096,4096,0,0.0,2.7697034036515196,0.08314915179129552
+sin,Scalar ReLU MLP with linear skip,1,5,583,Trust-region least squares,train,observed,12,12,0,0.0,0.23757147242043117,0.02822010225400584
+sin,Scalar ReLU MLP with linear skip,1,5,583,Trust-region least squares,dev,central held-out,2048,2048,0,0.0,0.3806472982892821,0.02822010225400584
+sin,Scalar ReLU MLP with linear skip,1,5,583,Trust-region least squares,outer,outer held-out,4096,4096,0,0.0,3.4212638485344016,0.02822010225400584
+sin,Scalar ReLU MLP with linear skip,4,14,583,Initial Xavier weights,train,observed,12,12,0,0.0,1.7440558954763874,1.5208654832729716
+sin,Scalar ReLU MLP with linear skip,4,14,583,Initial Xavier weights,dev,central held-out,2048,2048,0,0.0,1.7049217501593574,1.5208654832729716
+sin,Scalar ReLU MLP with linear skip,4,14,583,Initial Xavier weights,outer,outer held-out,4096,4096,0,0.0,8.688804748891172,1.5208654832729716
+sin,Scalar ReLU MLP with linear skip,4,14,583,Adam followed by BFGS,train,observed,12,12,0,0.0,0.03394200396065637,0.0005760298164326066
+sin,Scalar ReLU MLP with linear skip,4,14,583,Adam followed by BFGS,dev,central held-out,2048,2048,0,0.0,0.11021677730989046,0.0005760298164326066
+sin,Scalar ReLU MLP with linear skip,4,14,583,Adam followed by BFGS,outer,outer held-out,4096,4096,0,0.0,2.25535758176165,0.0005760298164326066
+sin,Scalar ReLU MLP with linear skip,4,14,583,Trust-region least squares,train,observed,12,12,0,0.0,0.03394200396065633,0.000576029816432605
+sin,Scalar ReLU MLP with linear skip,4,14,583,Trust-region least squares,dev,central held-out,2048,2048,0,0.0,0.11326706158445309,0.000576029816432605
+sin,Scalar ReLU MLP with linear skip,4,14,583,Trust-region least squares,outer,outer held-out,4096,4096,0,0.0,1.5243939771454447,0.000576029816432605
+sin,Scalar ReLU MLP with linear skip,16,50,583,Initial Xavier weights,train,observed,12,12,0,0.0,0.6619658831023238,0.21909941519571982
+sin,Scalar ReLU MLP with linear skip,16,50,583,Initial Xavier weights,dev,central held-out,2048,2048,0,0.0,0.5570977912225858,0.21909941519571982
+sin,Scalar ReLU MLP with linear skip,16,50,583,Initial Xavier weights,outer,outer held-out,4096,4096,0,0.0,1.7117438444800717,0.21909941519571982
+sin,Scalar ReLU MLP with linear skip,16,50,583,Adam followed by BFGS,train,observed,12,12,0,0.0,0.001524611574474857,1.162220226511351e-06
+sin,Scalar ReLU MLP with linear skip,16,50,583,Adam followed by BFGS,dev,central held-out,2048,2048,0,0.0,0.10627575909342327,1.162220226511351e-06
+sin,Scalar ReLU MLP with linear skip,16,50,583,Adam followed by BFGS,outer,outer held-out,4096,4096,0,0.0,2.4590860356042747,1.162220226511351e-06
+sin,Scalar ReLU MLP with linear skip,16,50,583,Trust-region least squares,train,observed,12,12,0,0.0,0.015223175021005723,0.0001158725288600863
+sin,Scalar ReLU MLP with linear skip,16,50,583,Trust-region least squares,dev,central held-out,2048,2048,0,0.0,0.08519990455549746,0.0001158725288600863
+sin,Scalar ReLU MLP with linear skip,16,50,583,Trust-region least squares,outer,outer held-out,4096,4096,0,0.0,2.485322234162266,0.0001158725288600863
+selfpower,Scalar ReLU MLP with linear skip,1,5,164,Initial Xavier weights,train,observed,12,12,0,0.0,6.766074506940809,1.7470639858140669
+selfpower,Scalar ReLU MLP with linear skip,1,5,164,Initial Xavier weights,dev,central held-out,2048,2048,0,0.0,10.177999076741301,1.7470639858140669
+selfpower,Scalar ReLU MLP with linear skip,1,5,164,Initial Xavier weights,outer,outer held-out,2048,2048,0,0.0,1582733588.4184656,1.7470639858140669
+selfpower,Scalar ReLU MLP with linear skip,1,5,164,Adam followed by BFGS,train,observed,12,12,0,0.0,2.667123343671292,0.07957689020521028
+selfpower,Scalar ReLU MLP with linear skip,1,5,164,Adam followed by BFGS,dev,central held-out,2048,2048,0,0.0,5.976691787901955,0.07957689020521028
+selfpower,Scalar ReLU MLP with linear skip,1,5,164,Adam followed by BFGS,outer,outer held-out,2048,2048,0,0.0,1582733580.0320442,0.07957689020521028
+selfpower,Scalar ReLU MLP with linear skip,1,5,164,Trust-region least squares,train,observed,12,12,0,0.0,2.6671233536208128,0.07957689020521029
+selfpower,Scalar ReLU MLP with linear skip,1,5,164,Trust-region least squares,dev,central held-out,2048,2048,0,0.0,5.976691798675375,0.07957689020521029
+selfpower,Scalar ReLU MLP with linear skip,1,5,164,Trust-region least squares,outer,outer held-out,2048,2048,0,0.0,1582733580.0320442,0.07957689020521029
+selfpower,Scalar ReLU MLP with linear skip,4,14,164,Initial Xavier weights,train,observed,12,12,0,0.0,5.291046644402924,0.8478556373929026
+selfpower,Scalar ReLU MLP with linear skip,4,14,164,Initial Xavier weights,dev,central held-out,2048,2048,0,0.0,8.626784780583664,0.8478556373929026
+selfpower,Scalar ReLU MLP with linear skip,4,14,164,Initial Xavier weights,outer,outer held-out,2048,2048,0,0.0,1582733585.3926787,0.8478556373929026
+selfpower,Scalar ReLU MLP with linear skip,4,14,164,Adam followed by BFGS,train,observed,12,12,0,0.0,2.6671233536208123,0.07957689020521029
+selfpower,Scalar ReLU MLP with linear skip,4,14,164,Adam followed by BFGS,dev,central held-out,2048,2048,0,0.0,5.9766917986753745,0.07957689020521029
+selfpower,Scalar ReLU MLP with linear skip,4,14,164,Adam followed by BFGS,outer,outer held-out,2048,2048,0,0.0,1582733580.0320442,0.07957689020521029
+selfpower,Scalar ReLU MLP with linear skip,4,14,164,Trust-region least squares,train,observed,12,12,0,0.0,2.6671233543592483,0.07957689020521026
+selfpower,Scalar ReLU MLP with linear skip,4,14,164,Trust-region least squares,dev,central held-out,2048,2048,0,0.0,5.97669179937002,0.07957689020521026
+selfpower,Scalar ReLU MLP with linear skip,4,14,164,Trust-region least squares,outer,outer held-out,2048,2048,0,0.0,1582733580.0320442,0.07957689020521026
+selfpower,Scalar ReLU MLP with linear skip,16,50,164,Initial Xavier weights,train,observed,12,12,0,0.0,5.680183426212469,1.0527450379623626
+selfpower,Scalar ReLU MLP with linear skip,16,50,164,Initial Xavier weights,dev,central held-out,2048,2048,0,0.0,9.033015499320923,1.0527450379623626
+selfpower,Scalar ReLU MLP with linear skip,16,50,164,Initial Xavier weights,outer,outer held-out,2048,2048,0,0.0,1582733586.1963105,1.0527450379623626
+selfpower,Scalar ReLU MLP with linear skip,16,50,164,Adam followed by BFGS,train,observed,12,12,0,0.0,2.6671233536208128,0.07957689020521026
+selfpower,Scalar ReLU MLP with linear skip,16,50,164,Adam followed by BFGS,dev,central held-out,2048,2048,0,0.0,5.976691798675375,0.07957689020521026
+selfpower,Scalar ReLU MLP with linear skip,16,50,164,Adam followed by BFGS,outer,outer held-out,2048,2048,0,0.0,1582733580.0125597,0.07957689020521026
+selfpower,Scalar ReLU MLP with linear skip,16,50,164,Trust-region least squares,train,observed,12,12,0,0.0,2.6671233536208128,0.07957689020521026
+selfpower,Scalar ReLU MLP with linear skip,16,50,164,Trust-region least squares,dev,central held-out,2048,2048,0,0.0,5.976691798675375,0.07957689020521026
+selfpower,Scalar ReLU MLP with linear skip,16,50,164,Trust-region least squares,outer,outer held-out,2048,2048,0,0.0,1582733580.0320442,0.07957689020521026
+selfpower,Scalar ReLU MLP with linear skip,1,5,317,Initial Xavier weights,train,observed,12,12,0,0.0,6.138990845549739,0.8127856918380529
+selfpower,Scalar ReLU MLP with linear skip,1,5,317,Initial Xavier weights,dev,central held-out,2048,2048,0,0.0,8.470506553073816,0.8127856918380529
+selfpower,Scalar ReLU MLP with linear skip,1,5,317,Initial Xavier weights,outer,outer held-out,2048,2048,0,0.0,1582733585.0808535,0.8127856918380529
+selfpower,Scalar ReLU MLP with linear skip,1,5,317,Adam followed by BFGS,train,observed,12,12,0,0.0,3.0288979217236136,0.07672194850609355
+selfpower,Scalar ReLU MLP with linear skip,1,5,317,Adam followed by BFGS,dev,central held-out,2048,2048,0,0.0,5.590834052040712,0.07672194850609355
+selfpower,Scalar ReLU MLP with linear skip,1,5,317,Adam followed by BFGS,outer,outer held-out,2048,2048,0,0.0,1582733578.8657959,0.07672194850609355
+selfpower,Scalar ReLU MLP with linear skip,1,5,317,Trust-region least squares,train,observed,12,12,0,0.0,3.0288979217235816,0.0767219485060935
+selfpower,Scalar ReLU MLP with linear skip,1,5,317,Trust-region least squares,dev,central held-out,2048,2048,0,0.0,5.590833241349994,0.0767219485060935
+selfpower,Scalar ReLU MLP with linear skip,1,5,317,Trust-region least squares,outer,outer held-out,2048,2048,0,0.0,1582733578.8657959,0.0767219485060935
+selfpower,Scalar ReLU MLP with linear skip,4,14,317,Initial Xavier weights,train,observed,12,12,0,0.0,10.992091818852746,4.171214831441359
+selfpower,Scalar ReLU MLP with linear skip,4,14,317,Initial Xavier weights,dev,central held-out,2048,2048,0,0.0,13.018907530914733,4.171214831441359
+selfpower,Scalar ReLU MLP with linear skip,4,14,317,Initial Xavier weights,outer,outer held-out,2048,2048,0,0.0,1582733593.7636757,4.171214831441359
+selfpower,Scalar ReLU MLP with linear skip,4,14,317,Adam followed by BFGS,train,observed,12,12,0,0.0,1.4794355229422294,0.010505224881875753
+selfpower,Scalar ReLU MLP with linear skip,4,14,317,Adam followed by BFGS,dev,central held-out,2048,2048,0,0.0,3.6246526126394527,0.010505224881875753
+selfpower,Scalar ReLU MLP with linear skip,4,14,317,Adam followed by BFGS,outer,outer held-out,2048,2048,0,0.0,1582733568.2730503,0.010505224881875753
+selfpower,Scalar ReLU MLP with linear skip,4,14,317,Trust-region least squares,train,observed,12,12,0,0.0,3.0288979217236136,0.07672194850609354
+selfpower,Scalar ReLU MLP with linear skip,4,14,317,Trust-region least squares,dev,central held-out,2048,2048,0,0.0,5.5908332413500235,0.07672194850609354
+selfpower,Scalar ReLU MLP with linear skip,4,14,317,Trust-region least squares,outer,outer held-out,2048,2048,0,0.0,1582733578.8657959,0.07672194850609354
+selfpower,Scalar ReLU MLP with linear skip,16,50,317,Initial Xavier weights,train,observed,12,12,0,0.0,3.299399201282546,0.08729558105438645
+selfpower,Scalar ReLU MLP with linear skip,16,50,317,Initial Xavier weights,dev,central held-out,2048,2048,0,0.0,5.84977808020161,0.08729558105438645
+selfpower,Scalar ReLU MLP with linear skip,16,50,317,Initial Xavier weights,outer,outer held-out,2048,2048,0,0.0,1582733579.444481,0.08729558105438645
+selfpower,Scalar ReLU MLP with linear skip,16,50,317,Adam followed by BFGS,train,observed,12,12,0,0.0,2.0669173429522587,0.021886059421971693
+selfpower,Scalar ReLU MLP with linear skip,16,50,317,Adam followed by BFGS,dev,central held-out,2048,2048,0,0.0,4.445841650892835,0.021886059421971693
+selfpower,Scalar ReLU MLP with linear skip,16,50,317,Adam followed by BFGS,outer,outer held-out,2048,2048,0,0.0,1582733573.5468946,0.021886059421971693
+selfpower,Scalar ReLU MLP with linear skip,16,50,317,Trust-region least squares,train,observed,12,12,0,0.0,1.4794355229106682,0.01050522488187576
+selfpower,Scalar ReLU MLP with linear skip,16,50,317,Trust-region least squares,dev,central held-out,2048,2048,0,0.0,3.619060780503762,0.01050522488187576
+selfpower,Scalar ReLU MLP with linear skip,16,50,317,Trust-region least squares,outer,outer held-out,2048,2048,0,0.0,1582733567.9491975,0.01050522488187576
+selfpower,Scalar ReLU MLP with linear skip,1,5,583,Initial Xavier weights,train,observed,12,12,0,0.0,6.22196214100197,0.5450526328109985
+selfpower,Scalar ReLU MLP with linear skip,1,5,583,Initial Xavier weights,dev,central held-out,2048,2048,0,0.0,7.917213475969344,0.5450526328109985
+selfpower,Scalar ReLU MLP with linear skip,1,5,583,Initial Xavier weights,outer,outer held-out,2048,2048,0,0.0,1582733583.9627535,0.5450526328109985
+selfpower,Scalar ReLU MLP with linear skip,1,5,583,Adam followed by BFGS,train,observed,12,12,0,0.0,3.628960845323399,0.09924008768435515
+selfpower,Scalar ReLU MLP with linear skip,1,5,583,Adam followed by BFGS,dev,central held-out,2048,2048,0,0.0,5.5893336406518985,0.09924008768435515
+selfpower,Scalar ReLU MLP with linear skip,1,5,583,Adam followed by BFGS,outer,outer held-out,2048,2048,0,0.0,1582733578.8506331,0.09924008768435515
+selfpower,Scalar ReLU MLP with linear skip,1,5,583,Trust-region least squares,train,observed,12,12,0,0.0,3.6289608453237836,0.09924008768435515
+selfpower,Scalar ReLU MLP with linear skip,1,5,583,Trust-region least squares,dev,central held-out,2048,2048,0,0.0,5.589333640652256,0.09924008768435515
+selfpower,Scalar ReLU MLP with linear skip,1,5,583,Trust-region least squares,outer,outer held-out,2048,2048,0,0.0,1582733578.8506331,0.09924008768435515
+selfpower,Scalar ReLU MLP with linear skip,4,14,583,Initial Xavier weights,train,observed,12,12,0,0.0,4.546869002452263,0.1668095006005846
+selfpower,Scalar ReLU MLP with linear skip,4,14,583,Initial Xavier weights,dev,central held-out,2048,2048,0,0.0,6.403455678472295,0.1668095006005846
+selfpower,Scalar ReLU MLP with linear skip,4,14,583,Initial Xavier weights,outer,outer held-out,2048,2048,0,0.0,1582733580.7336924,0.1668095006005846
+selfpower,Scalar ReLU MLP with linear skip,4,14,583,Adam followed by BFGS,train,observed,12,12,0,0.0,0.4436548650710621,0.0025202780839870035
+selfpower,Scalar ReLU MLP with linear skip,4,14,583,Adam followed by BFGS,dev,central held-out,2048,2048,0,0.0,2.237656601747585,0.0025202780839870035
+selfpower,Scalar ReLU MLP with linear skip,4,14,583,Adam followed by BFGS,outer,outer held-out,2048,2048,0,0.0,1582733556.0315073,0.0025202780839870035
+selfpower,Scalar ReLU MLP with linear skip,4,14,583,Trust-region least squares,train,observed,12,12,0,0.0,2.5926911434014266,0.03188700476154599
+selfpower,Scalar ReLU MLP with linear skip,4,14,583,Trust-region least squares,dev,central held-out,2048,2048,0,0.0,4.594903406357264,0.03188700476154599
+selfpower,Scalar ReLU MLP with linear skip,4,14,583,Trust-region least squares,outer,outer held-out,2048,2048,0,0.0,1582733575.0088913,0.03188700476154599
+selfpower,Scalar ReLU MLP with linear skip,16,50,583,Initial Xavier weights,train,observed,12,12,0,0.0,5.777078819916275,0.4150744839268589
+selfpower,Scalar ReLU MLP with linear skip,16,50,583,Initial Xavier weights,dev,central held-out,2048,2048,0,0.0,7.511466375053185,0.4150744839268589
+selfpower,Scalar ReLU MLP with linear skip,16,50,583,Initial Xavier weights,outer,outer held-out,2048,2048,0,0.0,1582733583.1260262,0.4150744839268589
+selfpower,Scalar ReLU MLP with linear skip,16,50,583,Adam followed by BFGS,train,observed,12,12,0,0.0,0.4436548647960468,0.002520278083987008
+selfpower,Scalar ReLU MLP with linear skip,16,50,583,Adam followed by BFGS,dev,central held-out,2048,2048,0,0.0,2.2273657699669958,0.002520278083987008
+selfpower,Scalar ReLU MLP with linear skip,16,50,583,Adam followed by BFGS,outer,outer held-out,2048,2048,0,0.0,1582733556.0068777,0.002520278083987008
+selfpower,Scalar ReLU MLP with linear skip,16,50,583,Trust-region least squares,train,observed,12,12,0,0.0,0.04171794675637257,0.0003234611435852071
+selfpower,Scalar ReLU MLP with linear skip,16,50,583,Trust-region least squares,dev,central held-out,2048,2048,0,0.0,1.0816854255959352,0.0003234611435852071
+selfpower,Scalar ReLU MLP with linear skip,16,50,583,Trust-region least squares,outer,outer held-out,2048,2048,0,0.0,1582733533.217703,0.0003234611435852071
+tanh,Scalar ReLU MLP with linear skip,1,5,164,Initial Xavier weights,train,observed,12,12,0,0.0,3.859296456823937,7.447084570826896
+tanh,Scalar ReLU MLP with linear skip,1,5,164,Initial Xavier weights,dev,central held-out,2048,2048,0,0.0,3.7047718191175196,7.447084570826896
+tanh,Scalar ReLU MLP with linear skip,1,5,164,Initial Xavier weights,outer,outer held-out,4096,4096,0,0.0,12.50308474314875,7.447084570826896
+tanh,Scalar ReLU MLP with linear skip,1,5,164,Adam followed by BFGS,train,observed,12,12,0,0.0,0.20995713024722543,0.02204099827082519
+tanh,Scalar ReLU MLP with linear skip,1,5,164,Adam followed by BFGS,dev,central held-out,2048,2048,0,0.0,0.2043964954202433,0.02204099827082519
+tanh,Scalar ReLU MLP with linear skip,1,5,164,Adam followed by BFGS,outer,outer held-out,4096,4096,0,0.0,1.6239328679473422,0.02204099827082519
+tanh,Scalar ReLU MLP with linear skip,1,5,164,Trust-region least squares,train,observed,12,12,0,0.0,0.10009766546293591,0.005009771315564918
+tanh,Scalar ReLU MLP with linear skip,1,5,164,Trust-region least squares,dev,central held-out,2048,2048,0,0.0,0.2309551953645034,0.005009771315564918
+tanh,Scalar ReLU MLP with linear skip,1,5,164,Trust-region least squares,outer,outer held-out,4096,4096,0,0.0,2.248535112978573,0.005009771315564918
+tanh,Scalar ReLU MLP with linear skip,4,14,164,Initial Xavier weights,train,observed,12,12,0,0.0,2.6774551344992363,3.5843829986281626
+tanh,Scalar ReLU MLP with linear skip,4,14,164,Initial Xavier weights,dev,central held-out,2048,2048,0,0.0,2.4245314174241486,3.5843829986281626
+tanh,Scalar ReLU MLP with linear skip,4,14,164,Initial Xavier weights,outer,outer held-out,4096,4096,0,0.0,7.40647546783426,3.5843829986281626
+tanh,Scalar ReLU MLP with linear skip,4,14,164,Adam followed by BFGS,train,observed,12,12,0,0.0,0.007460562706726407,2.7829997950498423e-05
+tanh,Scalar ReLU MLP with linear skip,4,14,164,Adam followed by BFGS,dev,central held-out,2048,2048,0,0.0,0.04118847078566223,2.7829997950498423e-05
+tanh,Scalar ReLU MLP with linear skip,4,14,164,Adam followed by BFGS,outer,outer held-out,4096,4096,0,0.0,0.5860139538164497,2.7829997950498423e-05
+tanh,Scalar ReLU MLP with linear skip,4,14,164,Trust-region least squares,train,observed,12,12,0,0.0,0.014629224161228983,0.00010700709977974291
+tanh,Scalar ReLU MLP with linear skip,4,14,164,Trust-region least squares,dev,central held-out,2048,2048,0,0.0,0.04227490963609754,0.00010700709977974291
+tanh,Scalar ReLU MLP with linear skip,4,14,164,Trust-region least squares,outer,outer held-out,4096,4096,0,0.0,0.7005449732339741,0.00010700709977974291
+tanh,Scalar ReLU MLP with linear skip,16,50,164,Initial Xavier weights,train,observed,12,12,0,0.0,2.7120307669216723,3.6775554403648787
+tanh,Scalar ReLU MLP with linear skip,16,50,164,Initial Xavier weights,dev,central held-out,2048,2048,0,0.0,2.563653610324632,3.6775554403648787
+tanh,Scalar ReLU MLP with linear skip,16,50,164,Initial Xavier weights,outer,outer held-out,4096,4096,0,0.0,7.961966932804523,3.6775554403648787
+tanh,Scalar ReLU MLP with linear skip,16,50,164,Adam followed by BFGS,train,observed,12,12,0,0.0,0.0031249558354645122,4.882674486801854e-06
+tanh,Scalar ReLU MLP with linear skip,16,50,164,Adam followed by BFGS,dev,central held-out,2048,2048,0,0.0,0.03228358730182349,4.882674486801854e-06
+tanh,Scalar ReLU MLP with linear skip,16,50,164,Adam followed by BFGS,outer,outer held-out,4096,4096,0,0.0,0.5920024829450411,4.882674486801854e-06
+tanh,Scalar ReLU MLP with linear skip,16,50,164,Trust-region least squares,train,observed,12,12,3,0.25,0.0031249558354645136,4.882674486801859e-06
+tanh,Scalar ReLU MLP with linear skip,16,50,164,Trust-region least squares,dev,central held-out,2048,2048,0,0.0,0.027279937881534693,4.882674486801859e-06
+tanh,Scalar ReLU MLP with linear skip,16,50,164,Trust-region least squares,outer,outer held-out,4096,4096,0,0.0,0.43851128340530593,4.882674486801859e-06
+tanh,Scalar ReLU MLP with linear skip,1,5,317,Initial Xavier weights,train,observed,12,12,0,0.0,1.8694820710414266,1.7474816069726706
+tanh,Scalar ReLU MLP with linear skip,1,5,317,Initial Xavier weights,dev,central held-out,2048,2048,0,0.0,1.9525781689281498,1.7474816069726706
+tanh,Scalar ReLU MLP with linear skip,1,5,317,Initial Xavier weights,outer,outer held-out,4096,4096,0,0.0,8.09328881188285,1.7474816069726706
+tanh,Scalar ReLU MLP with linear skip,1,5,317,Adam followed by BFGS,train,observed,12,12,0,0.0,0.17527474079703492,0.015360617380733889
+tanh,Scalar ReLU MLP with linear skip,1,5,317,Adam followed by BFGS,dev,central held-out,2048,2048,0,0.0,0.20206048542781338,0.015360617380733889
+tanh,Scalar ReLU MLP with linear skip,1,5,317,Adam followed by BFGS,outer,outer held-out,4096,4096,0,0.0,1.768122977261166,0.015360617380733889
+tanh,Scalar ReLU MLP with linear skip,1,5,317,Trust-region least squares,train,observed,12,12,0,0.0,0.19521012891247047,0.01905349721501166
+tanh,Scalar ReLU MLP with linear skip,1,5,317,Trust-region least squares,dev,central held-out,2048,2048,0,0.0,0.24983540056905004,0.01905349721501166
+tanh,Scalar ReLU MLP with linear skip,1,5,317,Trust-region least squares,outer,outer held-out,4096,4096,0,0.0,2.2634523936406086,0.01905349721501166
+tanh,Scalar ReLU MLP with linear skip,4,14,317,Initial Xavier weights,train,observed,12,12,0,0.0,4.564226513391297,10.416081832772038
+tanh,Scalar ReLU MLP with linear skip,4,14,317,Initial Xavier weights,dev,central held-out,2048,2048,0,0.0,5.053608641927015,10.416081832772038
+tanh,Scalar ReLU MLP with linear skip,4,14,317,Initial Xavier weights,outer,outer held-out,4096,4096,0,0.0,18.288615135562505,10.416081832772038
+tanh,Scalar ReLU MLP with linear skip,4,14,317,Adam followed by BFGS,train,observed,12,12,0,0.0,0.1752747407970349,0.015360617380733884
+tanh,Scalar ReLU MLP with linear skip,4,14,317,Adam followed by BFGS,dev,central held-out,2048,2048,0,0.0,0.2018659009122625,0.015360617380733884
+tanh,Scalar ReLU MLP with linear skip,4,14,317,Adam followed by BFGS,outer,outer held-out,4096,4096,0,0.0,1.7637637405158606,0.015360617380733884
+tanh,Scalar ReLU MLP with linear skip,4,14,317,Trust-region least squares,train,observed,12,12,0,0.0,0.009523224666454794,4.5345904023886526e-05
+tanh,Scalar ReLU MLP with linear skip,4,14,317,Trust-region least squares,dev,central held-out,2048,2048,0,0.0,0.036113378374436234,4.5345904023886526e-05
+tanh,Scalar ReLU MLP with linear skip,4,14,317,Trust-region least squares,outer,outer held-out,4096,4096,0,0.0,0.3431734286231404,4.5345904023886526e-05
+tanh,Scalar ReLU MLP with linear skip,16,50,317,Initial Xavier weights,train,observed,12,12,0,0.0,1.1148001620876868,0.6213897006953665
+tanh,Scalar ReLU MLP with linear skip,16,50,317,Initial Xavier weights,dev,central held-out,2048,2048,0,0.0,1.3013268941146265,0.6213897006953665
+tanh,Scalar ReLU MLP with linear skip,16,50,317,Initial Xavier weights,outer,outer held-out,4096,4096,0,0.0,7.245893575965815,0.6213897006953665
+tanh,Scalar ReLU MLP with linear skip,16,50,317,Adam followed by BFGS,train,observed,12,12,0,0.0,0.0016925751260203248,1.4324052786113589e-06
+tanh,Scalar ReLU MLP with linear skip,16,50,317,Adam followed by BFGS,dev,central held-out,2048,2048,0,0.0,0.018504099344370854,1.4324052786113589e-06
+tanh,Scalar ReLU MLP with linear skip,16,50,317,Adam followed by BFGS,outer,outer held-out,4096,4096,0,0.0,0.30659779705136936,1.4324052786113589e-06
+tanh,Scalar ReLU MLP with linear skip,16,50,317,Trust-region least squares,train,observed,12,12,0,0.0,0.013001601589818924,8.4520821950191e-05
+tanh,Scalar ReLU MLP with linear skip,16,50,317,Trust-region least squares,dev,central held-out,2048,2048,0,0.0,0.02530016062775677,8.4520821950191e-05
+tanh,Scalar ReLU MLP with linear skip,16,50,317,Trust-region least squares,outer,outer held-out,4096,4096,0,0.0,0.39447360476508525,8.4520821950191e-05
+tanh,Scalar ReLU MLP with linear skip,1,5,583,Initial Xavier weights,train,observed,12,12,0,0.0,1.5650199868284704,1.2246437795862932
+tanh,Scalar ReLU MLP with linear skip,1,5,583,Initial Xavier weights,dev,central held-out,2048,2048,0,0.0,1.500582264750452,1.2246437795862932
+tanh,Scalar ReLU MLP with linear skip,1,5,583,Initial Xavier weights,outer,outer held-out,4096,4096,0,0.0,3.758763840204117,1.2246437795862932
+tanh,Scalar ReLU MLP with linear skip,1,5,583,Adam followed by BFGS,train,observed,12,12,0,0.0,0.21188035671070904,0.022446642779928652
+tanh,Scalar ReLU MLP with linear skip,1,5,583,Adam followed by BFGS,dev,central held-out,2048,2048,0,0.0,0.2365717946663018,0.022446642779928652
+tanh,Scalar ReLU MLP with linear skip,1,5,583,Adam followed by BFGS,outer,outer held-out,4096,4096,0,0.0,2.3428061762369983,0.022446642779928652
+tanh,Scalar ReLU MLP with linear skip,1,5,583,Trust-region least squares,train,observed,12,12,0,0.0,0.211880356710709,0.02244664277992865
+tanh,Scalar ReLU MLP with linear skip,1,5,583,Trust-region least squares,dev,central held-out,2048,2048,0,0.0,0.2365717946663018,0.02244664277992865
+tanh,Scalar ReLU MLP with linear skip,1,5,583,Trust-region least squares,outer,outer held-out,4096,4096,0,0.0,2.2909917572815126,0.02244664277992865
+tanh,Scalar ReLU MLP with linear skip,4,14,583,Initial Xavier weights,train,observed,12,12,0,0.0,1.5653526994368858,1.2251645368171726
+tanh,Scalar ReLU MLP with linear skip,4,14,583,Initial Xavier weights,dev,central held-out,2048,2048,0,0.0,1.512534896962458,1.2251645368171726
+tanh,Scalar ReLU MLP with linear skip,4,14,583,Initial Xavier weights,outer,outer held-out,4096,4096,0,0.0,7.842280299717211,1.2251645368171726
+tanh,Scalar ReLU MLP with linear skip,4,14,583,Adam followed by BFGS,train,observed,12,12,0,0.0,0.013542485498545937,9.169945673916348e-05
+tanh,Scalar ReLU MLP with linear skip,4,14,583,Adam followed by BFGS,dev,central held-out,2048,2048,0,0.0,0.09228977916950404,9.169945673916348e-05
+tanh,Scalar ReLU MLP with linear skip,4,14,583,Adam followed by BFGS,outer,outer held-out,4096,4096,0,0.0,0.7406293417432278,9.169945673916348e-05
+tanh,Scalar ReLU MLP with linear skip,4,14,583,Trust-region least squares,train,observed,12,12,0,0.0,0.02613079696854621,0.0003414092751056919
+tanh,Scalar ReLU MLP with linear skip,4,14,583,Trust-region least squares,dev,central held-out,2048,2048,0,0.0,0.209596640856635,0.0003414092751056919
+tanh,Scalar ReLU MLP with linear skip,4,14,583,Trust-region least squares,outer,outer held-out,4096,4096,0,0.0,0.8349091816008529,0.0003414092751056919
+tanh,Scalar ReLU MLP with linear skip,16,50,583,Initial Xavier weights,train,observed,12,12,0,0.0,0.6174271193890544,0.1906081238785328
+tanh,Scalar ReLU MLP with linear skip,16,50,583,Initial Xavier weights,dev,central held-out,2048,2048,0,0.0,0.5706421674512774,0.1906081238785328
+tanh,Scalar ReLU MLP with linear skip,16,50,583,Initial Xavier weights,outer,outer held-out,4096,4096,0,0.0,1.1240593342228984,0.1906081238785328
+tanh,Scalar ReLU MLP with linear skip,16,50,583,Adam followed by BFGS,train,observed,12,12,0,0.0,0.007178433782227959,2.57649557829158e-05
+tanh,Scalar ReLU MLP with linear skip,16,50,583,Adam followed by BFGS,dev,central held-out,2048,2048,0,0.0,0.032219321767107054,2.57649557829158e-05
+tanh,Scalar ReLU MLP with linear skip,16,50,583,Adam followed by BFGS,outer,outer held-out,4096,4096,0,0.0,0.5201897423110967,2.57649557829158e-05
+tanh,Scalar ReLU MLP with linear skip,16,50,583,Trust-region least squares,train,observed,12,12,0,0.0,0.00708836954312544,2.512249138995418e-05
+tanh,Scalar ReLU MLP with linear skip,16,50,583,Trust-region least squares,dev,central held-out,2048,2048,0,0.0,0.04268893706200028,2.512249138995418e-05
+tanh,Scalar ReLU MLP with linear skip,16,50,583,Trust-region least squares,outer,outer held-out,4096,4096,0,0.0,0.20354099847574572,2.512249138995418e-05
+sum,Driven linear recurrent network,1,3,164,Initial Xavier weights,train,observed,12,72,0,0.0,2.6407698607668326,0.43436360067024116
+sum,Driven linear recurrent network,1,3,164,Initial Xavier weights,dev,central held-out,2048,12288,0,0.0,3.236572085233415,0.43436360067024116
+sum,Driven linear recurrent network,1,3,164,Initial Xavier weights,outer,outer held-out,2048,12288,0,0.0,12.556812553176123,0.43436360067024116
+sum,Driven linear recurrent network,1,3,164,Adam followed by BFGS,train,observed,12,72,0,0.0,3.534744264605034e-15,1.8320377500557513e-30
+sum,Driven linear recurrent network,1,3,164,Adam followed by BFGS,dev,central held-out,2048,12288,0,0.0,4.29104186694323e-15,1.8320377500557513e-30
+sum,Driven linear recurrent network,1,3,164,Adam followed by BFGS,outer,outer held-out,2048,12288,0,0.0,1.692281905892451e-14,1.8320377500557513e-30
+sum,Driven linear recurrent network,1,3,164,Trust-region least squares,train,observed,12,72,2,0.16666666666666666,2.183578270570734e-16,5.505672721810532e-33
+sum,Driven linear recurrent network,1,3,164,Trust-region least squares,dev,central held-out,2048,12288,88,0.04296875,4.230159486821894e-16,5.505672721810532e-33
+sum,Driven linear recurrent network,1,3,164,Trust-region least squares,outer,outer held-out,2048,12288,65,0.03173828125,1.7282715114768276e-15,5.505672721810532e-33
+sum,Driven linear recurrent network,2,8,164,Initial Xavier weights,train,observed,12,72,0,0.0,4.566243235905454,2.441815457176725
+sum,Driven linear recurrent network,2,8,164,Initial Xavier weights,dev,central held-out,2048,12288,0,0.0,5.021089394053656,2.441815457176725
+sum,Driven linear recurrent network,2,8,164,Initial Xavier weights,outer,outer held-out,2048,12288,0,0.0,19.64244576161854,2.441815457176725
+sum,Driven linear recurrent network,2,8,164,Adam followed by BFGS,train,observed,12,72,0,0.0,2.6094613404773415e-15,4.743919468418767e-31
+sum,Driven linear recurrent network,2,8,164,Adam followed by BFGS,dev,central held-out,2048,12288,0,0.0,3.233257635497817e-15,4.743919468418767e-31
+sum,Driven linear recurrent network,2,8,164,Adam followed by BFGS,outer,outer held-out,2048,12288,0,0.0,1.2615397836218181e-14,4.743919468418767e-31
+sum,Driven linear recurrent network,2,8,164,Trust-region least squares,train,observed,12,72,0,0.0,3.290959365323068e-16,8.382628395239832e-33
+sum,Driven linear recurrent network,2,8,164,Trust-region least squares,dev,central held-out,2048,12288,63,0.03076171875,4.540384370561946e-16,8.382628395239832e-33
+sum,Driven linear recurrent network,2,8,164,Trust-region least squares,outer,outer held-out,2048,12288,66,0.0322265625,1.7855367553839848e-15,8.382628395239832e-33
+sum,Driven linear recurrent network,1,3,317,Initial Xavier weights,train,observed,12,72,0,0.0,33.83514867076501,126.41484666164709
+sum,Driven linear recurrent network,1,3,317,Initial Xavier weights,dev,central held-out,2048,12288,0,0.0,33.916890877599,126.41484666164709
+sum,Driven linear recurrent network,1,3,317,Initial Xavier weights,outer,outer held-out,2048,12288,0,0.0,133.33850963606423,126.41484666164709
+sum,Driven linear recurrent network,1,3,317,Adam followed by BFGS,train,observed,12,72,0,0.0,5.751973466987066e-15,2.285921332588311e-30
+sum,Driven linear recurrent network,1,3,317,Adam followed by BFGS,dev,central held-out,2048,12288,0,0.0,6.652528010400744e-15,2.285921332588311e-30
+sum,Driven linear recurrent network,1,3,317,Adam followed by BFGS,outer,outer held-out,2048,12288,0,0.0,2.5922490262989e-14,2.285921332588311e-30
+sum,Driven linear recurrent network,1,3,317,Trust-region least squares,train,observed,12,72,1,0.08333333333333333,3.136285375336997e-16,9.260183949583542e-33
+sum,Driven linear recurrent network,1,3,317,Trust-region least squares,dev,central held-out,2048,12288,34,0.0166015625,5.089076671121819e-16,9.260183949583542e-33
+sum,Driven linear recurrent network,1,3,317,Trust-region least squares,outer,outer held-out,2048,12288,24,0.01171875,2.004729402528792e-15,9.260183949583542e-33
+sum,Driven linear recurrent network,2,8,317,Initial Xavier weights,train,observed,12,72,0,0.0,3.2451073543646722,0.6826309872152367
+sum,Driven linear recurrent network,2,8,317,Initial Xavier weights,dev,central held-out,2048,12288,0,0.0,3.6205136527865664,0.6826309872152367
+sum,Driven linear recurrent network,2,8,317,Initial Xavier weights,outer,outer held-out,2048,12288,0,0.0,14.09360961747239,0.6826309872152367
+sum,Driven linear recurrent network,2,8,317,Adam followed by BFGS,train,observed,12,72,0,0.0,4.840372430272362e-16,1.9395023193755483e-32
+sum,Driven linear recurrent network,2,8,317,Adam followed by BFGS,dev,central held-out,2048,12288,21,0.01025390625,5.08961066130137e-16,1.9395023193755483e-32
+sum,Driven linear recurrent network,2,8,317,Adam followed by BFGS,outer,outer held-out,2048,12288,23,0.01123046875,1.951014375504203e-15,1.9395023193755483e-32
+sum,Driven linear recurrent network,2,8,317,Trust-region least squares,train,observed,12,72,0,0.0,5.577746707176238e-16,1.9628433562950722e-32
+sum,Driven linear recurrent network,2,8,317,Trust-region least squares,dev,central held-out,2048,12288,21,0.01025390625,5.18883763395569e-16,1.9628433562950722e-32
+sum,Driven linear recurrent network,2,8,317,Trust-region least squares,outer,outer held-out,2048,12288,17,0.00830078125,2.0470766063908832e-15,1.9628433562950722e-32
+sum,Driven linear recurrent network,1,3,583,Initial Xavier weights,train,observed,12,72,0,0.0,3.0231631395330054,0.5651558498836313
+sum,Driven linear recurrent network,1,3,583,Initial Xavier weights,dev,central held-out,2048,12288,0,0.0,3.481022275055882,0.5651558498836313
+sum,Driven linear recurrent network,1,3,583,Initial Xavier weights,outer,outer held-out,2048,12288,0,0.0,13.536026987656626,0.5651558498836313
+sum,Driven linear recurrent network,1,3,583,Adam followed by BFGS,train,observed,12,72,0,0.0,5.070534079573903e-15,2.6055536027055794e-30
+sum,Driven linear recurrent network,1,3,583,Adam followed by BFGS,dev,central held-out,2048,12288,0,0.0,5.785952988432459e-15,2.6055536027055794e-30
+sum,Driven linear recurrent network,1,3,583,Adam followed by BFGS,outer,outer held-out,2048,12288,0,0.0,2.265881496983106e-14,2.6055536027055794e-30
+sum,Driven linear recurrent network,1,3,583,Trust-region least squares,train,observed,12,72,1,0.08333333333333333,3.311606476110837e-16,1.3027899313816332e-32
+sum,Driven linear recurrent network,1,3,583,Trust-region least squares,dev,central held-out,2048,12288,86,0.0419921875,4.122841816428469e-16,1.3027899313816332e-32
+sum,Driven linear recurrent network,1,3,583,Trust-region least squares,outer,outer held-out,2048,12288,92,0.044921875,1.5660298207676218e-15,1.3027899313816332e-32
+sum,Driven linear recurrent network,2,8,583,Initial Xavier weights,train,observed,12,72,0,0.0,2.4901592821018284,0.3472177833249006
+sum,Driven linear recurrent network,2,8,583,Initial Xavier weights,dev,central held-out,2048,12288,0,0.0,2.9511132891072367,0.3472177833249006
+sum,Driven linear recurrent network,2,8,583,Initial Xavier weights,outer,outer held-out,2048,12288,0,0.0,11.460844758982951,0.3472177833249006
+sum,Driven linear recurrent network,2,8,583,Adam followed by BFGS,train,observed,12,72,0,0.0,3.841282173960105e-16,2.040105550938766e-32
+sum,Driven linear recurrent network,2,8,583,Adam followed by BFGS,dev,central held-out,2048,12288,65,0.03173828125,4.716913368795095e-16,2.040105550938766e-32
+sum,Driven linear recurrent network,2,8,583,Adam followed by BFGS,outer,outer held-out,2048,12288,42,0.0205078125,1.879771051582212e-15,2.040105550938766e-32
+sum,Driven linear recurrent network,2,8,583,Trust-region least squares,train,observed,12,72,0,0.0,5.08517033257587e-16,2.7985593975777524e-32
+sum,Driven linear recurrent network,2,8,583,Trust-region least squares,dev,central held-out,2048,12288,14,0.0068359375,6.587365896464583e-16,2.7985593975777524e-32
+sum,Driven linear recurrent network,2,8,583,Trust-region least squares,outer,outer held-out,2048,12288,12,0.005859375,2.4763808908139984e-15,2.7985593975777524e-32
+sort,Four-wire residual ReLU network,4,32,164,Initial Xavier weights,train,observed,12,48,0,0.0,2.142043542508084,0.7391918707958608
+sort,Four-wire residual ReLU network,4,32,164,Initial Xavier weights,dev,central held-out,2048,8192,5,0.00244140625,1.9736192106887145,0.7391918707958608
+sort,Four-wire residual ReLU network,4,32,164,Initial Xavier weights,outer,outer held-out,2048,8192,22,0.0107421875,7.771721373368051,0.7391918707958608
+sort,Four-wire residual ReLU network,4,32,164,Adam followed by BFGS,train,observed,12,48,0,0.0,0.26137310790733936,0.011317957620171673
+sort,Four-wire residual ReLU network,4,32,164,Adam followed by BFGS,dev,central held-out,2048,8192,37,0.01806640625,1.2757592445745423,0.011317957620171673
+sort,Four-wire residual ReLU network,4,32,164,Adam followed by BFGS,outer,outer held-out,2048,8192,53,0.02587890625,4.883965284112998,0.011317957620171673
+sort,Four-wire residual ReLU network,4,32,164,Trust-region least squares,train,observed,12,48,0,0.0,0.11644627825294063,0.0018160022118164185
+sort,Four-wire residual ReLU network,4,32,164,Trust-region least squares,dev,central held-out,2048,8192,36,0.017578125,1.4955111587595133,0.0018160022118164185
+sort,Four-wire residual ReLU network,4,32,164,Trust-region least squares,outer,outer held-out,2048,8192,49,0.02392578125,5.731143297438484,0.0018160022118164185
+sort,Four-wire residual ReLU network,5,40,164,Initial Xavier weights,train,observed,12,48,0,0.0,3.543555262864219,2.3878904576085476
+sort,Four-wire residual ReLU network,5,40,164,Initial Xavier weights,dev,central held-out,2048,8192,0,0.0,3.2152439961046793,2.3878904576085476
+sort,Four-wire residual ReLU network,5,40,164,Initial Xavier weights,outer,outer held-out,2048,8192,0,0.0,12.301393563565531,2.3878904576085476
+sort,Four-wire residual ReLU network,5,40,164,Adam followed by BFGS,train,observed,12,48,0,0.0,0.09778110544772708,0.0012147703838432896
+sort,Four-wire residual ReLU network,5,40,164,Adam followed by BFGS,dev,central held-out,2048,8192,0,0.0,1.532454806057894,0.0012147703838432896
+sort,Four-wire residual ReLU network,5,40,164,Adam followed by BFGS,outer,outer held-out,2048,8192,0,0.0,5.953830933344141,0.0012147703838432896
+sort,Four-wire residual ReLU network,5,40,164,Trust-region least squares,train,observed,12,48,0,0.0,0.3366300311097142,0.02570589544301041
+sort,Four-wire residual ReLU network,5,40,164,Trust-region least squares,dev,central held-out,2048,8192,1,0.00048828125,1.402311025336913,0.02570589544301041
+sort,Four-wire residual ReLU network,5,40,164,Trust-region least squares,outer,outer held-out,2048,8192,2,0.0009765625,5.671005110311082,0.02570589544301041
+sort,Four-wire residual ReLU network,6,48,164,Initial Xavier weights,train,observed,12,48,0,0.0,10.80088371921736,18.61011897545276
+sort,Four-wire residual ReLU network,6,48,164,Initial Xavier weights,dev,central held-out,2048,8192,0,0.0,9.558746022897706,18.61011897545276
+sort,Four-wire residual ReLU network,6,48,164,Initial Xavier weights,outer,outer held-out,2048,8192,0,0.0,35.87818211595799,18.61011897545276
+sort,Four-wire residual ReLU network,6,48,164,Adam followed by BFGS,train,observed,12,48,0,0.0,0.14520022524076187,0.0026181501522997298
+sort,Four-wire residual ReLU network,6,48,164,Adam followed by BFGS,dev,central held-out,2048,8192,0,0.0,1.6447295257571317,0.0026181501522997298
+sort,Four-wire residual ReLU network,6,48,164,Adam followed by BFGS,outer,outer held-out,2048,8192,0,0.0,6.700473506663889,0.0026181501522997298
+sort,Four-wire residual ReLU network,6,48,164,Trust-region least squares,train,observed,12,48,0,0.0,0.14424297707594883,0.0027869160382583344
+sort,Four-wire residual ReLU network,6,48,164,Trust-region least squares,dev,central held-out,2048,8192,5,0.00244140625,0.9844716924849543,0.0027869160382583344
+sort,Four-wire residual ReLU network,6,48,164,Trust-region least squares,outer,outer held-out,2048,8192,4,0.001953125,4.0398271247973945,0.0027869160382583344
+sort,Four-wire residual ReLU network,4,32,317,Initial Xavier weights,train,observed,12,48,0,0.0,3.6484788306837497,4.130050554833851
+sort,Four-wire residual ReLU network,4,32,317,Initial Xavier weights,dev,central held-out,2048,8192,0,0.0,4.531515536142777,4.130050554833851
+sort,Four-wire residual ReLU network,4,32,317,Initial Xavier weights,outer,outer held-out,2048,8192,0,0.0,17.732805564559026,4.130050554833851
+sort,Four-wire residual ReLU network,4,32,317,Adam followed by BFGS,train,observed,12,48,0,0.0,0.3710760536145266,0.02757599302442464
+sort,Four-wire residual ReLU network,4,32,317,Adam followed by BFGS,dev,central held-out,2048,8192,0,0.0,7.173217046960114,0.02757599302442464
+sort,Four-wire residual ReLU network,4,32,317,Adam followed by BFGS,outer,outer held-out,2048,8192,0,0.0,30.741298965219745,0.02757599302442464
+sort,Four-wire residual ReLU network,4,32,317,Trust-region least squares,train,observed,12,48,0,0.0,0.29026019351730126,0.019406698535620628
+sort,Four-wire residual ReLU network,4,32,317,Trust-region least squares,dev,central held-out,2048,8192,27,0.01318359375,1.7660334911319662,0.019406698535620628
+sort,Four-wire residual ReLU network,4,32,317,Trust-region least squares,outer,outer held-out,2048,8192,32,0.015625,7.130787429507592,0.019406698535620628
+sort,Four-wire residual ReLU network,5,40,317,Initial Xavier weights,train,observed,12,48,0,0.0,3.3681685362539056,4.729886962061148
+sort,Four-wire residual ReLU network,5,40,317,Initial Xavier weights,dev,central held-out,2048,8192,0,0.0,3.8537388206838497,4.729886962061148
+sort,Four-wire residual ReLU network,5,40,317,Initial Xavier weights,outer,outer held-out,2048,8192,0,0.0,15.324037943242867,4.729886962061148
+sort,Four-wire residual ReLU network,5,40,317,Adam followed by BFGS,train,observed,12,48,0,0.0,0.13289868261778157,0.0043884681211857944
+sort,Four-wire residual ReLU network,5,40,317,Adam followed by BFGS,dev,central held-out,2048,8192,47,0.02294921875,1.282341359604523,0.0043884681211857944
+sort,Four-wire residual ReLU network,5,40,317,Adam followed by BFGS,outer,outer held-out,2048,8192,37,0.01806640625,4.800236831274505,0.0043884681211857944
+sort,Four-wire residual ReLU network,5,40,317,Trust-region least squares,train,observed,12,48,0,0.0,0.16146589309325157,0.006063530926018255
+sort,Four-wire residual ReLU network,5,40,317,Trust-region least squares,dev,central held-out,2048,8192,16,0.0078125,1.2709774388367368,0.006063530926018255
+sort,Four-wire residual ReLU network,5,40,317,Trust-region least squares,outer,outer held-out,2048,8192,13,0.00634765625,5.110623326000237,0.006063530926018255
+sort,Four-wire residual ReLU network,6,48,317,Initial Xavier weights,train,observed,12,48,0,0.0,2.0168754935470288,1.0621774120534246
+sort,Four-wire residual ReLU network,6,48,317,Initial Xavier weights,dev,central held-out,2048,8192,0,0.0,2.3385642591920863,1.0621774120534246
+sort,Four-wire residual ReLU network,6,48,317,Initial Xavier weights,outer,outer held-out,2048,8192,0,0.0,8.87626651704124,1.0621774120534246
+sort,Four-wire residual ReLU network,6,48,317,Adam followed by BFGS,train,observed,12,48,0,0.0,0.08573816045408358,0.0015106227114085019
+sort,Four-wire residual ReLU network,6,48,317,Adam followed by BFGS,dev,central held-out,2048,8192,0,0.0,1.9335887238512888,0.0015106227114085019
+sort,Four-wire residual ReLU network,6,48,317,Adam followed by BFGS,outer,outer held-out,2048,8192,0,0.0,7.985779030394476,0.0015106227114085019
+sort,Four-wire residual ReLU network,6,48,317,Trust-region least squares,train,observed,12,48,0,0.0,0.21343549717845123,0.008289271857002638
+sort,Four-wire residual ReLU network,6,48,317,Trust-region least squares,dev,central held-out,2048,8192,0,0.0,1.09308822220303,0.008289271857002638
+sort,Four-wire residual ReLU network,6,48,317,Trust-region least squares,outer,outer held-out,2048,8192,0,0.0,4.409355848712335,0.008289271857002638
+sort,Four-wire residual ReLU network,4,32,583,Initial Xavier weights,train,observed,12,48,0,0.0,2.6981206351295555,2.003700850828784
+sort,Four-wire residual ReLU network,4,32,583,Initial Xavier weights,dev,central held-out,2048,8192,3,0.00146484375,2.9046924783027177,2.003700850828784
+sort,Four-wire residual ReLU network,4,32,583,Initial Xavier weights,outer,outer held-out,2048,8192,4,0.001953125,11.267615285834536,2.003700850828784
+sort,Four-wire residual ReLU network,4,32,583,Adam followed by BFGS,train,observed,12,48,0,0.0,0.38607610428534267,0.019148052123555814
+sort,Four-wire residual ReLU network,4,32,583,Adam followed by BFGS,dev,central held-out,2048,8192,9,0.00439453125,1.4713920500795263,0.019148052123555814
+sort,Four-wire residual ReLU network,4,32,583,Adam followed by BFGS,outer,outer held-out,2048,8192,14,0.0068359375,6.173288692387064,0.019148052123555814
+sort,Four-wire residual ReLU network,4,32,583,Trust-region least squares,train,observed,12,48,0,0.0,0.40066674063682756,0.022628531764977044
+sort,Four-wire residual ReLU network,4,32,583,Trust-region least squares,dev,central held-out,2048,8192,27,0.01318359375,1.0579474284561634,0.022628531764977044
+sort,Four-wire residual ReLU network,4,32,583,Trust-region least squares,outer,outer held-out,2048,8192,21,0.01025390625,4.2153492688454755,0.022628531764977044
+sort,Four-wire residual ReLU network,5,40,583,Initial Xavier weights,train,observed,12,48,0,0.0,4.151307559870754,2.787896962061629
+sort,Four-wire residual ReLU network,5,40,583,Initial Xavier weights,dev,central held-out,2048,8192,4,0.001953125,4.773221725818061,2.787896962061629
+sort,Four-wire residual ReLU network,5,40,583,Initial Xavier weights,outer,outer held-out,2048,8192,4,0.001953125,18.79851854677602,2.787896962061629
+sort,Four-wire residual ReLU network,5,40,583,Adam followed by BFGS,train,observed,12,48,0,0.0,0.2099098924729775,0.005306104694418975
+sort,Four-wire residual ReLU network,5,40,583,Adam followed by BFGS,dev,central held-out,2048,8192,16,0.0078125,25.94449105962175,0.005306104694418975
+sort,Four-wire residual ReLU network,5,40,583,Adam followed by BFGS,outer,outer held-out,2048,8192,12,0.005859375,76.50491498096962,0.005306104694418975
+sort,Four-wire residual ReLU network,5,40,583,Trust-region least squares,train,observed,12,48,0,0.0,0.3034150942503966,0.010731067403013063
+sort,Four-wire residual ReLU network,5,40,583,Trust-region least squares,dev,central held-out,2048,8192,3,0.00146484375,0.8327240112477198,0.010731067403013063
+sort,Four-wire residual ReLU network,5,40,583,Trust-region least squares,outer,outer held-out,2048,8192,4,0.001953125,3.2492947059177744,0.010731067403013063
+sort,Four-wire residual ReLU network,6,48,583,Initial Xavier weights,train,observed,12,48,0,0.0,3.470270051824745,2.428333762517178
+sort,Four-wire residual ReLU network,6,48,583,Initial Xavier weights,dev,central held-out,2048,8192,0,0.0,3.5821209916449543,2.428333762517178
+sort,Four-wire residual ReLU network,6,48,583,Initial Xavier weights,outer,outer held-out,2048,8192,0,0.0,13.976542991406518,2.428333762517178
+sort,Four-wire residual ReLU network,6,48,583,Adam followed by BFGS,train,observed,12,48,0,0.0,0.19097437415670024,0.006939598273160339
+sort,Four-wire residual ReLU network,6,48,583,Adam followed by BFGS,dev,central held-out,2048,8192,0,0.0,0.8446865328163551,0.006939598273160339
+sort,Four-wire residual ReLU network,6,48,583,Adam followed by BFGS,outer,outer held-out,2048,8192,0,0.0,3.4350153561683423,0.006939598273160339
+sort,Four-wire residual ReLU network,6,48,583,Trust-region least squares,train,observed,12,48,0,0.0,0.24966012465136386,0.008107950197356347
+sort,Four-wire residual ReLU network,6,48,583,Trust-region least squares,dev,central held-out,2048,8192,0,0.0,1.1812028548999358,0.008107950197356347
+sort,Four-wire residual ReLU network,6,48,583,Trust-region least squares,outer,outer held-out,2048,8192,0,0.0,4.5693861061553385,0.008107950197356347
+fib,Autonomous linear recurrent network,1,3,164,Initial Xavier weights,train,observed,9,9,0,0.0,9.333059135492968,0.45371678421074585
+fib,Autonomous linear recurrent network,1,3,164,Initial Xavier weights,dev,early indices 9–32,24,24,0,0.0,664389.8752338598,0.45371678421074585
+fib,Autonomous linear recurrent network,1,3,164,Initial Xavier weights,outer,outer held-out,32,32,0,0.0,5032439379766.981,0.45371678421074585
+fib,Autonomous linear recurrent network,1,3,164,Adam followed by BFGS,train,observed,9,9,0,0.0,5.507946416553863,0.38890113346106026
+fib,Autonomous linear recurrent network,1,3,164,Adam followed by BFGS,dev,early indices 9–32,24,24,0,0.0,4.1454750441170545e+100,0.38890113346106026
+fib,Autonomous linear recurrent network,1,3,164,Adam followed by BFGS,outer,outer held-out,32,32,0,0.0,7.399102226067012e+233,0.38890113346106026
+fib,Autonomous linear recurrent network,1,3,164,Trust-region least squares,train,observed,9,9,0,0.0,8.906367128997001,0.4406953866580644
+fib,Autonomous linear recurrent network,1,3,164,Trust-region least squares,dev,early indices 9–32,24,24,0,0.0,565597.7655648921,0.4406953866580644
+fib,Autonomous linear recurrent network,1,3,164,Trust-region least squares,outer,outer held-out,32,32,0,0.0,2385848181558.213,0.4406953866580644
+fib,Autonomous linear recurrent network,2,8,164,Initial Xavier weights,train,observed,9,9,0,0.0,9.016842840919546,0.6030049574046035
+fib,Autonomous linear recurrent network,2,8,164,Initial Xavier weights,dev,early indices 9–32,24,24,0,0.0,565597.785932041,0.6030049574046035
+fib,Autonomous linear recurrent network,2,8,164,Initial Xavier weights,outer,outer held-out,32,32,0,0.0,2385848181558.2173,0.6030049574046035
+fib,Autonomous linear recurrent network,2,8,164,Adam followed by BFGS,train,observed,9,9,0,0.0,4.9217619624019625e-14,3.446289452278931e-29
+fib,Autonomous linear recurrent network,2,8,164,Adam followed by BFGS,dev,early indices 9–32,24,24,0,0.0,3.7347516143993274e-08,3.446289452278931e-29
+fib,Autonomous linear recurrent network,2,8,164,Adam followed by BFGS,outer,outer held-out,32,32,0,0.0,0.3534948531785887,3.446289452278931e-29
+fib,Autonomous linear recurrent network,2,8,164,Trust-region least squares,train,observed,9,9,3,0.3333333333333333,1.208421649209253e-15,1.256546764824801e-32
+fib,Autonomous linear recurrent network,2,8,164,Trust-region least squares,dev,early indices 9–32,24,24,3,0.125,1.0290758064385105e-09,1.256546764824801e-32
+fib,Autonomous linear recurrent network,2,8,164,Trust-region least squares,outer,outer held-out,32,32,0,0.0,0.010197603033797681,1.256546764824801e-32
+fib,Autonomous linear recurrent network,3,15,164,Initial Xavier weights,train,observed,9,9,0,0.0,8.898834072009457,0.2963711764719405
+fib,Autonomous linear recurrent network,3,15,164,Initial Xavier weights,dev,early indices 9–32,24,24,0,0.0,565659.5075802851,0.2963711764719405
+fib,Autonomous linear recurrent network,3,15,164,Initial Xavier weights,outer,outer held-out,32,32,0,0.0,2385848352210.097,0.2963711764719405
+fib,Autonomous linear recurrent network,3,15,164,Adam followed by BFGS,train,observed,9,9,0,0.0,3.7489754617335635e-14,8.909199227316909e-29
+fib,Autonomous linear recurrent network,3,15,164,Adam followed by BFGS,dev,early indices 9–32,24,24,0,0.0,2.266664273898171e-08,8.909199227316909e-29
+fib,Autonomous linear recurrent network,3,15,164,Adam followed by BFGS,outer,outer held-out,32,32,0,0.0,0.21236486206290967,8.909199227316909e-29
+fib,Autonomous linear recurrent network,3,15,164,Trust-region least squares,train,observed,9,9,1,0.1111111111111111,1.4004957888496364e-15,1.1857011595818986e-32
+fib,Autonomous linear recurrent network,3,15,164,Trust-region least squares,dev,early indices 9–32,24,24,9,0.375,1.4745745344064012e-10,1.1857011595818986e-32
+fib,Autonomous linear recurrent network,3,15,164,Trust-region least squares,outer,outer held-out,32,32,9,0.28125,0.00238355864680839,1.1857011595818986e-32
+fib,Autonomous linear recurrent network,1,3,317,Initial Xavier weights,train,observed,9,9,0,0.0,64.24550244033294,20.323111644190288
+fib,Autonomous linear recurrent network,1,3,317,Initial Xavier weights,dev,early indices 9–32,24,24,0,0.0,7236800.370828775,20.323111644190288
+fib,Autonomous linear recurrent network,1,3,317,Initial Xavier weights,outer,outer held-out,32,32,0,0.0,68540890869558.875,20.323111644190288
+fib,Autonomous linear recurrent network,1,3,317,Adam followed by BFGS,train,observed,9,9,0,0.0,0.2965760611310569,0.016460182565317324
+fib,Autonomous linear recurrent network,1,3,317,Adam followed by BFGS,dev,early indices 9–32,24,24,0,0.0,257154.7883568858,0.016460182565317324
+fib,Autonomous linear recurrent network,1,3,317,Adam followed by BFGS,outer,outer held-out,32,32,0,0.0,3172705886243.001,0.016460182565317324
+fib,Autonomous linear recurrent network,1,3,317,Trust-region least squares,train,observed,9,9,0,0.0,0.29657605197778053,0.016460182565317314
+fib,Autonomous linear recurrent network,1,3,317,Trust-region least squares,dev,early indices 9–32,24,24,0,0.0,257154.76131216393,0.016460182565317314
+fib,Autonomous linear recurrent network,1,3,317,Trust-region least squares,outer,outer held-out,32,32,0,0.0,3172705465564.01,0.016460182565317314
+fib,Autonomous linear recurrent network,2,8,317,Initial Xavier weights,train,observed,9,9,0,0.0,8.90630920335138,0.43809201602344383
+fib,Autonomous linear recurrent network,2,8,317,Initial Xavier weights,dev,early indices 9–32,24,24,0,0.0,565597.7655648934,0.43809201602344383
+fib,Autonomous linear recurrent network,2,8,317,Initial Xavier weights,outer,outer held-out,32,32,0,0.0,2385848181558.213,0.43809201602344383
+fib,Autonomous linear recurrent network,2,8,317,Adam followed by BFGS,train,observed,9,9,0,0.0,5.5511792689743644e-14,3.967318501694401e-29
+fib,Autonomous linear recurrent network,2,8,317,Adam followed by BFGS,dev,early indices 9–32,24,24,0,0.0,2.9121924124452648e-08,3.967318501694401e-29
+fib,Autonomous linear recurrent network,2,8,317,Adam followed by BFGS,outer,outer held-out,32,32,0,0.0,0.2687933903215357,3.967318501694401e-29
+fib,Autonomous linear recurrent network,2,8,317,Trust-region least squares,train,observed,9,9,5,0.5555555555555556,1.3327815225797332e-15,4.5294901340736805e-33
+fib,Autonomous linear recurrent network,2,8,317,Trust-region least squares,dev,early indices 9–32,24,24,0,0.0,1.1202160754540033e-09,4.5294901340736805e-33
+fib,Autonomous linear recurrent network,2,8,317,Trust-region least squares,outer,outer held-out,32,32,0,0.0,0.011201278177289924,4.5294901340736805e-33
+fib,Autonomous linear recurrent network,3,15,317,Initial Xavier weights,train,observed,9,9,0,0.0,8.904890219635513,0.42614927206186876
+fib,Autonomous linear recurrent network,3,15,317,Initial Xavier weights,dev,early indices 9–32,24,24,0,0.0,565597.7655648934,0.42614927206186876
+fib,Autonomous linear recurrent network,3,15,317,Initial Xavier weights,outer,outer held-out,32,32,0,0.0,2385848181558.213,0.42614927206186876
+fib,Autonomous linear recurrent network,3,15,317,Adam followed by BFGS,train,observed,9,9,0,0.0,4.25796403627513e-14,1.3729366063159063e-29
+fib,Autonomous linear recurrent network,3,15,317,Adam followed by BFGS,dev,early indices 9–32,24,24,0,0.0,2.9114675191205087e-08,1.3729366063159063e-29
+fib,Autonomous linear recurrent network,3,15,317,Adam followed by BFGS,outer,outer held-out,32,32,0,0.0,0.2730833988628524,1.3729366063159063e-29
+fib,Autonomous linear recurrent network,3,15,317,Trust-region least squares,train,observed,9,9,9,1.0,0.0,0.0
+fib,Autonomous linear recurrent network,3,15,317,Trust-region least squares,dev,early indices 9–32,24,24,6,0.25,1.4948074380382313e-10,0.0
+fib,Autonomous linear recurrent network,3,15,317,Trust-region least squares,outer,outer held-out,32,32,1,0.03125,0.001716441649560077,0.0
+fib,Autonomous linear recurrent network,1,3,583,Initial Xavier weights,train,observed,9,9,0,0.0,8.90674471909376,0.44334194036884544
+fib,Autonomous linear recurrent network,1,3,583,Initial Xavier weights,dev,early indices 9–32,24,24,0,0.0,565597.7655648934,0.44334194036884544
+fib,Autonomous linear recurrent network,1,3,583,Initial Xavier weights,outer,outer held-out,32,32,0,0.0,2385848181558.213,0.44334194036884544
+fib,Autonomous linear recurrent network,1,3,583,Adam followed by BFGS,train,observed,9,9,0,0.0,8.90636712902474,0.4406953866580645
+fib,Autonomous linear recurrent network,1,3,583,Adam followed by BFGS,dev,early indices 9–32,24,24,0,0.0,565597.7655648921,0.4406953866580645
+fib,Autonomous linear recurrent network,1,3,583,Adam followed by BFGS,outer,outer held-out,32,32,0,0.0,2385848181558.213,0.4406953866580645
+fib,Autonomous linear recurrent network,1,3,583,Trust-region least squares,train,observed,9,9,0,0.0,8.906367128974349,0.44069538665806446
+fib,Autonomous linear recurrent network,1,3,583,Trust-region least squares,dev,early indices 9–32,24,24,0,0.0,565597.7655648921,0.44069538665806446
+fib,Autonomous linear recurrent network,1,3,583,Trust-region least squares,outer,outer held-out,32,32,0,0.0,2385848181558.213,0.44069538665806446
+fib,Autonomous linear recurrent network,2,8,583,Initial Xavier weights,train,observed,9,9,0,0.0,8.906350291732089,0.44308278759823355
+fib,Autonomous linear recurrent network,2,8,583,Initial Xavier weights,dev,early indices 9–32,24,24,0,0.0,565597.7655648952,0.44308278759823355
+fib,Autonomous linear recurrent network,2,8,583,Initial Xavier weights,outer,outer held-out,32,32,0,0.0,2385848181558.213,0.44308278759823355
+fib,Autonomous linear recurrent network,2,8,583,Adam followed by BFGS,train,observed,9,9,1,0.1111111111111111,5.202177812917484e-15,1.2934468255799928e-31
+fib,Autonomous linear recurrent network,2,8,583,Adam followed by BFGS,dev,early indices 9–32,24,24,8,0.3333333333333333,2.473386804497421e-10,1.2934468255799928e-31
+fib,Autonomous linear recurrent network,2,8,583,Adam followed by BFGS,outer,outer held-out,32,32,1,0.03125,0.00264820711068507,1.2934468255799928e-31
+fib,Autonomous linear recurrent network,2,8,583,Trust-region least squares,train,observed,9,9,4,0.4444444444444444,2.793019484450278e-15,2.513005747159261e-32
+fib,Autonomous linear recurrent network,2,8,583,Trust-region least squares,dev,early indices 9–32,24,24,6,0.25,2.0387481571080047e-10,2.513005747159261e-32
+fib,Autonomous linear recurrent network,2,8,583,Trust-region least squares,outer,outer held-out,32,32,2,0.0625,0.0014502122370030797,2.513005747159261e-32
+fib,Autonomous linear recurrent network,3,15,583,Initial Xavier weights,train,observed,9,9,0,0.0,9.045877440591541,0.755000792069993
+fib,Autonomous linear recurrent network,3,15,583,Initial Xavier weights,dev,early indices 9–32,24,24,0,0.0,565597.7672709082,0.755000792069993
+fib,Autonomous linear recurrent network,3,15,583,Initial Xavier weights,outer,outer held-out,32,32,0,0.0,2385848181558.213,0.755000792069993
+fib,Autonomous linear recurrent network,3,15,583,Adam followed by BFGS,train,observed,9,9,2,0.2222222222222222,2.686099914351569e-15,3.6017220562649185e-32
+fib,Autonomous linear recurrent network,3,15,583,Adam followed by BFGS,dev,early indices 9–32,24,24,0,0.0,2.1283854485180295e-09,3.6017220562649185e-32
+fib,Autonomous linear recurrent network,3,15,583,Adam followed by BFGS,outer,outer held-out,32,32,0,0.0,0.01957579723728367,3.6017220562649185e-32
+fib,Autonomous linear recurrent network,3,15,583,Trust-region least squares,train,observed,9,9,6,0.6666666666666666,1.0619662964663732e-16,3.584536800139473e-33
+fib,Autonomous linear recurrent network,3,15,583,Trust-region least squares,dev,early indices 9–32,24,24,1,0.041666666666666664,3.199943121546313e-10,3.584536800139473e-33
+fib,Autonomous linear recurrent network,3,15,583,Trust-region least squares,outer,outer held-out,32,32,0,0.0,0.004542844295286815,3.584536800139473e-33
+tri,Autonomous linear recurrent network,2,8,164,Initial Xavier weights,train,observed,9,9,0,0.0,18.044593205027986,0.5288554647356639
+tri,Autonomous linear recurrent network,2,8,164,Initial Xavier weights,dev,early indices 9–32,24,24,0,0.0,285.1644735206362,0.5288554647356639
+tri,Autonomous linear recurrent network,2,8,164,Initial Xavier weights,outer,outer held-out,32,32,0,0.0,1323.3412339997124,0.5288554647356639
+tri,Autonomous linear recurrent network,2,8,164,Adam followed by BFGS,train,observed,9,9,0,0.0,0.4912835195500058,0.0005463013895789625
+tri,Autonomous linear recurrent network,2,8,164,Adam followed by BFGS,dev,early indices 9–32,24,24,0,0.0,30038.760937534524,0.0005463013895789625
+tri,Autonomous linear recurrent network,2,8,164,Adam followed by BFGS,outer,outer held-out,32,32,0,0.0,1472041241.425586,0.0005463013895789625
+tri,Autonomous linear recurrent network,2,8,164,Trust-region least squares,train,observed,9,9,0,0.0,0.4912835181689925,0.0005463013895789617
+tri,Autonomous linear recurrent network,2,8,164,Trust-region least squares,dev,early indices 9–32,24,24,0,0.0,30038.76096050126,0.0005463013895789617
+tri,Autonomous linear recurrent network,2,8,164,Trust-region least squares,outer,outer held-out,32,32,0,0.0,1472041240.5714397,0.0005463013895789617
+tri,Autonomous linear recurrent network,3,15,164,Initial Xavier weights,train,observed,9,9,0,0.0,17.790046726814115,0.3715792653087688
+tri,Autonomous linear recurrent network,3,15,164,Initial Xavier weights,dev,early indices 9–32,24,24,0,0.0,360.3386149399225,0.3715792653087688
+tri,Autonomous linear recurrent network,3,15,164,Initial Xavier weights,outer,outer held-out,32,32,0,0.0,510719.1454048985,0.3715792653087688
+tri,Autonomous linear recurrent network,3,15,164,Adam followed by BFGS,train,observed,9,9,1,0.1111111111111111,7.796545087913205e-15,9.153566870317306e-32
+tri,Autonomous linear recurrent network,3,15,164,Adam followed by BFGS,dev,early indices 9–32,24,24,0,0.0,9.019861152350948e-11,9.153566870317306e-32
+tri,Autonomous linear recurrent network,3,15,164,Adam followed by BFGS,outer,outer held-out,32,32,0,0.0,4.15110201996422e-09,9.153566870317306e-32
+tri,Autonomous linear recurrent network,3,15,164,Trust-region least squares,train,observed,9,9,2,0.2222222222222222,3.3009303617866928e-15,3.038876232496377e-32
+tri,Autonomous linear recurrent network,3,15,164,Trust-region least squares,dev,early indices 9–32,24,24,1,0.041666666666666664,9.868601753939678e-12,3.038876232496377e-32
+tri,Autonomous linear recurrent network,3,15,164,Trust-region least squares,outer,outer held-out,32,32,0,0.0,5.780078681879778e-10,3.038876232496377e-32
+tri,Autonomous linear recurrent network,4,24,164,Initial Xavier weights,train,observed,9,9,0,0.0,17.877886623944356,0.46311321108619047
+tri,Autonomous linear recurrent network,4,24,164,Initial Xavier weights,dev,early indices 9–32,24,24,0,0.0,285.10774288923267,0.46311321108619047
+tri,Autonomous linear recurrent network,4,24,164,Initial Xavier weights,outer,outer held-out,32,32,0,0.0,1323.3228891500146,0.46311321108619047
+tri,Autonomous linear recurrent network,4,24,164,Adam followed by BFGS,train,observed,9,9,0,0.0,2.177926582239727e-13,1.4087479870123493e-28
+tri,Autonomous linear recurrent network,4,24,164,Adam followed by BFGS,dev,early indices 9–32,24,24,0,0.0,2.622073613174838e-09,1.4087479870123493e-28
+tri,Autonomous linear recurrent network,4,24,164,Adam followed by BFGS,outer,outer held-out,32,32,0,0.0,1.872766177486222e-07,1.4087479870123493e-28
+tri,Autonomous linear recurrent network,4,24,164,Trust-region least squares,train,observed,9,9,9,1.0,0.0,0.0
+tri,Autonomous linear recurrent network,4,24,164,Trust-region least squares,dev,early indices 9–32,24,24,0,0.0,4.719781385859659e-11,0.0
+tri,Autonomous linear recurrent network,4,24,164,Trust-region least squares,outer,outer held-out,32,32,0,0.0,2.5538801748516968e-09,0.0
+tri,Autonomous linear recurrent network,2,8,317,Initial Xavier weights,train,observed,9,9,0,0.0,17.925817154581953,0.43642364965644165
+tri,Autonomous linear recurrent network,2,8,317,Initial Xavier weights,dev,early indices 9–32,24,24,0,0.0,285.10845891226086,0.43642364965644165
+tri,Autonomous linear recurrent network,2,8,317,Initial Xavier weights,outer,outer held-out,32,32,0,0.0,1323.3229008824717,0.43642364965644165
+tri,Autonomous linear recurrent network,2,8,317,Adam followed by BFGS,train,observed,9,9,0,0.0,0.49128351954998034,0.0005463013895789614
+tri,Autonomous linear recurrent network,2,8,317,Adam followed by BFGS,dev,early indices 9–32,24,24,0,0.0,30038.760937533425,0.0005463013895789614
+tri,Autonomous linear recurrent network,2,8,317,Adam followed by BFGS,outer,outer held-out,32,32,0,0.0,1472041241.4253533,0.0005463013895789614
+tri,Autonomous linear recurrent network,2,8,317,Trust-region least squares,train,observed,9,9,0,0.0,0.49128351602501075,0.00054630138957896
+tri,Autonomous linear recurrent network,2,8,317,Trust-region least squares,dev,early indices 9–32,24,24,0,0.0,30038.76103440627,0.00054630138957896
+tri,Autonomous linear recurrent network,2,8,317,Trust-region least squares,outer,outer held-out,32,32,0,0.0,1472041244.3537855,0.00054630138957896
+tri,Autonomous linear recurrent network,3,15,317,Initial Xavier weights,train,observed,9,9,0,0.0,17.926054445908893,0.4172552515211927
+tri,Autonomous linear recurrent network,3,15,317,Initial Xavier weights,dev,early indices 9–32,24,24,0,0.0,285.1084592093899,0.4172552515211927
+tri,Autonomous linear recurrent network,3,15,317,Initial Xavier weights,outer,outer held-out,32,32,0,0.0,1323.3229008824717,0.4172552515211927
+tri,Autonomous linear recurrent network,3,15,317,Adam followed by BFGS,train,observed,9,9,1,0.1111111111111111,1.5709862846919275e-14,1.605456419709264e-30
+tri,Autonomous linear recurrent network,3,15,317,Adam followed by BFGS,dev,early indices 9–32,24,24,0,0.0,5.69656756824756e-10,1.605456419709264e-30
+tri,Autonomous linear recurrent network,3,15,317,Adam followed by BFGS,outer,outer held-out,32,32,0,0.0,3.1072559177290234e-08,1.605456419709264e-30
+tri,Autonomous linear recurrent network,3,15,317,Trust-region least squares,train,observed,9,9,3,0.3333333333333333,2.670476829389625e-15,1.1081801183483859e-32
+tri,Autonomous linear recurrent network,3,15,317,Trust-region least squares,dev,early indices 9–32,24,24,0,0.0,3.8970517684305774e-11,1.1081801183483859e-32
+tri,Autonomous linear recurrent network,3,15,317,Trust-region least squares,outer,outer held-out,32,32,0,0.0,1.8741047767319895e-09,1.1081801183483859e-32
+tri,Autonomous linear recurrent network,4,24,317,Initial Xavier weights,train,observed,9,9,0,0.0,18.04457236223825,0.6768094239692766
+tri,Autonomous linear recurrent network,4,24,317,Initial Xavier weights,dev,early indices 9–32,24,24,0,0.0,37160.29720648434,0.6768094239692766
+tri,Autonomous linear recurrent network,4,24,317,Initial Xavier weights,outer,outer held-out,32,32,0,0.0,36990568694.34418,0.6768094239692766
+tri,Autonomous linear recurrent network,4,24,317,Adam followed by BFGS,train,observed,9,9,1,0.1111111111111111,2.1781791065780478e-14,3.5800485524576014e-31
+tri,Autonomous linear recurrent network,4,24,317,Adam followed by BFGS,dev,early indices 9–32,24,24,5,0.20833333333333334,0.0001501565529620559,3.5800485524576014e-31
+tri,Autonomous linear recurrent network,4,24,317,Adam followed by BFGS,outer,outer held-out,32,32,1,0.03125,4450005522.881114,3.5800485524576014e-31
+tri,Autonomous linear recurrent network,4,24,317,Trust-region least squares,train,observed,9,9,3,0.3333333333333333,3.3660621292780283e-15,8.904157341216864e-33
+tri,Autonomous linear recurrent network,4,24,317,Trust-region least squares,dev,early indices 9–32,24,24,0,0.0,2.187151159655693e-08,8.904157341216864e-33
+tri,Autonomous linear recurrent network,4,24,317,Trust-region least squares,outer,outer held-out,32,32,1,0.03125,70.09359928634895,8.904157341216864e-33
+tri,Autonomous linear recurrent network,2,8,583,Initial Xavier weights,train,observed,9,9,0,0.0,17.926374873705527,0.43512198080330206
+tri,Autonomous linear recurrent network,2,8,583,Initial Xavier weights,dev,early indices 9–32,24,24,0,0.0,285.1084636965101,0.43512198080330206
+tri,Autonomous linear recurrent network,2,8,583,Initial Xavier weights,outer,outer held-out,32,32,0,0.0,1323.3229008824728,0.43512198080330206
+tri,Autonomous linear recurrent network,2,8,583,Adam followed by BFGS,train,observed,9,9,0,0.0,0.49128351954997884,0.0005463013895789638
+tri,Autonomous linear recurrent network,2,8,583,Adam followed by BFGS,dev,early indices 9–32,24,24,0,0.0,30038.760937533654,0.0005463013895789638
+tri,Autonomous linear recurrent network,2,8,583,Adam followed by BFGS,outer,outer held-out,32,32,0,0.0,1472041241.4253764,0.0005463013895789638
+tri,Autonomous linear recurrent network,2,8,583,Trust-region least squares,train,observed,9,9,0,0.0,0.49128351725539715,0.0005463013895789596
+tri,Autonomous linear recurrent network,2,8,583,Trust-region least squares,dev,early indices 9–32,24,24,0,0.0,30038.760972914086,0.0005463013895789596
+tri,Autonomous linear recurrent network,2,8,583,Trust-region least squares,outer,outer held-out,32,32,0,0.0,1472041239.3006,0.0005463013895789596
+tri,Autonomous linear recurrent network,3,15,583,Initial Xavier weights,train,observed,9,9,0,0.0,18.028145001255602,0.5753097749916302
+tri,Autonomous linear recurrent network,3,15,583,Initial Xavier weights,dev,early indices 9–32,24,24,0,0.0,285.1078218525235,0.5753097749916302
+tri,Autonomous linear recurrent network,3,15,583,Initial Xavier weights,outer,outer held-out,32,32,0,0.0,1323.3227971049273,0.5753097749916302
+tri,Autonomous linear recurrent network,3,15,583,Adam followed by BFGS,train,observed,9,9,1,0.1111111111111111,6.016753275534738e-15,2.941762115715798e-31
+tri,Autonomous linear recurrent network,3,15,583,Adam followed by BFGS,dev,early indices 9–32,24,24,0,0.0,4.0522768978713185e-10,2.941762115715798e-31
+tri,Autonomous linear recurrent network,3,15,583,Adam followed by BFGS,outer,outer held-out,32,32,0,0.0,2.1176511681682707e-08,2.941762115715798e-31
+tri,Autonomous linear recurrent network,3,15,583,Trust-region least squares,train,observed,9,9,0,0.0,3.509711773141482e-15,3.199782851180885e-32
+tri,Autonomous linear recurrent network,3,15,583,Trust-region least squares,dev,early indices 9–32,24,24,1,0.041666666666666664,8.696517830343834e-12,3.199782851180885e-32
+tri,Autonomous linear recurrent network,3,15,583,Trust-region least squares,outer,outer held-out,32,32,0,0.0,5.009494843151321e-10,3.199782851180885e-32
+tri,Autonomous linear recurrent network,4,24,583,Initial Xavier weights,train,observed,9,9,0,0.0,18.215689680475794,0.4940673262176776
+tri,Autonomous linear recurrent network,4,24,583,Initial Xavier weights,dev,early indices 9–32,24,24,0,0.0,287.9308965327234,0.4940673262176776
+tri,Autonomous linear recurrent network,4,24,583,Initial Xavier weights,outer,outer held-out,32,32,0,0.0,1394.2038678294862,0.4940673262176776
+tri,Autonomous linear recurrent network,4,24,583,Adam followed by BFGS,train,observed,9,9,1,0.1111111111111111,2.6833146035984473e-14,7.264042803014411e-30
+tri,Autonomous linear recurrent network,4,24,583,Adam followed by BFGS,dev,early indices 9–32,24,24,0,0.0,4.595812400418878e-09,7.264042803014411e-30
+tri,Autonomous linear recurrent network,4,24,583,Adam followed by BFGS,outer,outer held-out,32,32,0,0.0,2.608947747869904e-07,7.264042803014411e-30
+tri,Autonomous linear recurrent network,4,24,583,Trust-region least squares,train,observed,9,9,6,0.6666666666666666,1.1957467920563633e-15,5.546522962036749e-33
+tri,Autonomous linear recurrent network,4,24,583,Trust-region least squares,dev,early indices 9–32,24,24,0,0.0,6.677843933922772e-11,5.546522962036749e-33
+tri,Autonomous linear recurrent network,4,24,583,Trust-region least squares,outer,outer held-out,32,32,0,0.0,3.131819100102349e-05,5.546522962036749e-33
+square,Scalar ReLU MLP with linear skip,1,5,164,"Weight-space programming (WSP), Formula and examples",train,observed,12,12,0,0.0,1.0746965793369512,0.02293126552713791
+square,Scalar ReLU MLP with linear skip,1,5,164,"Weight-space programming (WSP), Formula and examples",dev,central held-out,2048,2048,0,0.0,1.2461396466842871,0.02293126552713791
+square,Scalar ReLU MLP with linear skip,1,5,164,"Weight-space programming (WSP), Formula and examples",outer,outer held-out,4096,4096,0,0.0,39.96393619539398,0.02293126552713791
+square,Scalar ReLU MLP with linear skip,4,14,164,"Weight-space programming (WSP), Formula and examples",train,observed,12,12,0,0.0,0.04820907851796113,2.8129655548439572e-05
+square,Scalar ReLU MLP with linear skip,4,14,164,"Weight-space programming (WSP), Formula and examples",dev,central held-out,2048,2048,0,0.0,0.27594791574592603,2.8129655548439572e-05
+square,Scalar ReLU MLP with linear skip,4,14,164,"Weight-space programming (WSP), Formula and examples",outer,outer held-out,4096,4096,0,0.0,29.364535828804446,2.8129655548439572e-05
+square,Scalar ReLU MLP with linear skip,16,50,164,"Weight-space programming (WSP), Formula and examples",train,observed,12,12,9,0.75,5.167962219655829e-16,3.2111287742938636e-33
+square,Scalar ReLU MLP with linear skip,16,50,164,"Weight-space programming (WSP), Formula and examples",dev,central held-out,2048,2048,0,0.0,0.4375721883086897,3.2111287742938636e-33
+square,Scalar ReLU MLP with linear skip,16,50,164,"Weight-space programming (WSP), Formula and examples",outer,outer held-out,4096,4096,0,0.0,1.9102080708600566,3.2111287742938636e-33
+square,Scalar ReLU MLP with linear skip,1,5,164,"Weight-space programming (WSP), Examples only",train,observed,12,12,0,0.0,1.0738294537042672,0.02293121239874031
+square,Scalar ReLU MLP with linear skip,1,5,164,"Weight-space programming (WSP), Examples only",dev,central held-out,2048,2048,0,0.0,1.2453475628592177,0.02293121239874031
+square,Scalar ReLU MLP with linear skip,1,5,164,"Weight-space programming (WSP), Examples only",outer,outer held-out,4096,4096,0,0.0,39.958328037538344,0.02293121239874031
+square,Scalar ReLU MLP with linear skip,4,14,164,"Weight-space programming (WSP), Examples only",train,observed,12,12,0,0.0,0.056202632788698234,0.0003160008583553265
+square,Scalar ReLU MLP with linear skip,4,14,164,"Weight-space programming (WSP), Examples only",dev,central held-out,2048,2048,0,0.0,0.27837187216740966,0.0003160008583553265
+square,Scalar ReLU MLP with linear skip,4,14,164,"Weight-space programming (WSP), Examples only",outer,outer held-out,4096,4096,0,0.0,28.40161089799677,0.0003160008583553265
+square,Scalar ReLU MLP with linear skip,16,50,164,"Weight-space programming (WSP), Examples only",train,observed,12,12,0,0.0,7.544039359610691e-15,1.7467473493322212e-29
+square,Scalar ReLU MLP with linear skip,16,50,164,"Weight-space programming (WSP), Examples only",dev,central held-out,2048,2048,0,0.0,0.44096219991187496,1.7467473493322212e-29
+square,Scalar ReLU MLP with linear skip,16,50,164,"Weight-space programming (WSP), Examples only",outer,outer held-out,4096,4096,0,0.0,1.2235729924293834,1.7467473493322212e-29
+square,Scalar ReLU MLP with linear skip,1,5,317,"Weight-space programming (WSP), Formula and examples",train,observed,12,12,0,0.0,0.7923836862174894,0.019994464132344857
+square,Scalar ReLU MLP with linear skip,1,5,317,"Weight-space programming (WSP), Formula and examples",dev,central held-out,2048,2048,0,0.0,1.3588593459622336,0.019994464132344857
+square,Scalar ReLU MLP with linear skip,1,5,317,"Weight-space programming (WSP), Formula and examples",outer,outer held-out,4096,4096,0,0.0,39.39192418586,0.019994464132344857
+square,Scalar ReLU MLP with linear skip,4,14,317,"Weight-space programming (WSP), Formula and examples",train,observed,12,12,0,0.0,0.005668467452571276,1.2611130500597101e-05
+square,Scalar ReLU MLP with linear skip,4,14,317,"Weight-space programming (WSP), Formula and examples",dev,central held-out,2048,2048,0,0.0,0.2154888447194584,1.2611130500597101e-05
+square,Scalar ReLU MLP with linear skip,4,14,317,"Weight-space programming (WSP), Formula and examples",outer,outer held-out,4096,4096,0,0.0,28.424912876384663,1.2611130500597101e-05
+square,Scalar ReLU MLP with linear skip,16,50,317,"Weight-space programming (WSP), Formula and examples",train,observed,12,12,9,0.75,1.3597399555105182e-16,2.5955747384382623e-33
+square,Scalar ReLU MLP with linear skip,16,50,317,"Weight-space programming (WSP), Formula and examples",dev,central held-out,2048,2048,0,0.0,0.2949599177732513,2.5955747384382623e-33
+square,Scalar ReLU MLP with linear skip,16,50,317,"Weight-space programming (WSP), Formula and examples",outer,outer held-out,4096,4096,0,0.0,1.9049288024473672,2.5955747384382623e-33
+square,Scalar ReLU MLP with linear skip,1,5,317,"Weight-space programming (WSP), Examples only",train,observed,12,12,0,0.0,0.7916399467472741,0.019994416696825144
+square,Scalar ReLU MLP with linear skip,1,5,317,"Weight-space programming (WSP), Examples only",dev,central held-out,2048,2048,0,0.0,1.358399268596294,0.019994416696825144
+square,Scalar ReLU MLP with linear skip,1,5,317,"Weight-space programming (WSP), Examples only",outer,outer held-out,4096,4096,0,0.0,39.384662994749306,0.019994416696825144
+square,Scalar ReLU MLP with linear skip,4,14,317,"Weight-space programming (WSP), Examples only",train,observed,12,12,0,0.0,0.005665063147132522,1.2610797252662672e-05
+square,Scalar ReLU MLP with linear skip,4,14,317,"Weight-space programming (WSP), Examples only",dev,central held-out,2048,2048,0,0.0,0.2155390728882855,1.2610797252662672e-05
+square,Scalar ReLU MLP with linear skip,4,14,317,"Weight-space programming (WSP), Examples only",outer,outer held-out,4096,4096,0,0.0,28.425764181382817,1.2610797252662672e-05
+square,Scalar ReLU MLP with linear skip,16,50,317,"Weight-space programming (WSP), Examples only",train,observed,12,12,8,0.6666666666666666,2.9021946219117546e-16,3.1314598797757144e-33
+square,Scalar ReLU MLP with linear skip,16,50,317,"Weight-space programming (WSP), Examples only",dev,central held-out,2048,2048,0,0.0,0.24793070029277783,3.1314598797757144e-33
+square,Scalar ReLU MLP with linear skip,16,50,317,"Weight-space programming (WSP), Examples only",outer,outer held-out,4096,4096,0,0.0,2.0106201764263014,3.1314598797757144e-33
+square,Scalar ReLU MLP with linear skip,1,5,583,"Weight-space programming (WSP), Formula and examples",train,observed,12,12,0,0.0,0.2898859173613095,0.0036305665653663024
+square,Scalar ReLU MLP with linear skip,1,5,583,"Weight-space programming (WSP), Formula and examples",dev,central held-out,2048,2048,0,0.0,0.9568830739703114,0.0036305665653663024
+square,Scalar ReLU MLP with linear skip,1,5,583,"Weight-space programming (WSP), Formula and examples",outer,outer held-out,4096,4096,0,0.0,33.514507206510764,0.0036305665653663024
+square,Scalar ReLU MLP with linear skip,4,14,583,"Weight-space programming (WSP), Formula and examples",train,observed,12,12,0,0.0,0.006636090984254625,1.8400170981014364e-06
+square,Scalar ReLU MLP with linear skip,4,14,583,"Weight-space programming (WSP), Formula and examples",dev,central held-out,2048,2048,0,0.0,0.38307129973905574,1.8400170981014364e-06
+square,Scalar ReLU MLP with linear skip,4,14,583,"Weight-space programming (WSP), Formula and examples",outer,outer held-out,4096,4096,0,0.0,27.454339607237635,1.8400170981014364e-06
+square,Scalar ReLU MLP with linear skip,16,50,583,"Weight-space programming (WSP), Formula and examples",train,observed,12,12,8,0.6666666666666666,4.622227044373279e-16,1.0039366867299268e-32
+square,Scalar ReLU MLP with linear skip,16,50,583,"Weight-space programming (WSP), Formula and examples",dev,central held-out,2048,2048,0,0.0,0.35808634578377124,1.0039366867299268e-32
+square,Scalar ReLU MLP with linear skip,16,50,583,"Weight-space programming (WSP), Formula and examples",outer,outer held-out,4096,4096,0,0.0,1.8241927293467801,1.0039366867299268e-32
+square,Scalar ReLU MLP with linear skip,1,5,583,"Weight-space programming (WSP), Examples only",train,observed,12,12,0,0.0,0.2898613376549535,0.0036305667284514524
+square,Scalar ReLU MLP with linear skip,1,5,583,"Weight-space programming (WSP), Examples only",dev,central held-out,2048,2048,0,0.0,0.9568728506132199,0.0036305667284514524
+square,Scalar ReLU MLP with linear skip,1,5,583,"Weight-space programming (WSP), Examples only",outer,outer held-out,4096,4096,0,0.0,33.51423398696214,0.0036305667284514524
+square,Scalar ReLU MLP with linear skip,4,14,583,"Weight-space programming (WSP), Examples only",train,observed,12,12,0,0.0,0.006123543752353047,1.4614985805432395e-06
+square,Scalar ReLU MLP with linear skip,4,14,583,"Weight-space programming (WSP), Examples only",dev,central held-out,2048,2048,0,0.0,0.474910520834021,1.4614985805432395e-06
+square,Scalar ReLU MLP with linear skip,4,14,583,"Weight-space programming (WSP), Examples only",outer,outer held-out,4096,4096,0,0.0,27.453988050858516,1.4614985805432395e-06
+square,Scalar ReLU MLP with linear skip,16,50,583,"Weight-space programming (WSP), Examples only",train,observed,12,12,7,0.5833333333333334,2.8168832724973556e-16,8.648491632040247e-33
+square,Scalar ReLU MLP with linear skip,16,50,583,"Weight-space programming (WSP), Examples only",dev,central held-out,2048,2048,0,0.0,0.3826076753018965,8.648491632040247e-33
+square,Scalar ReLU MLP with linear skip,16,50,583,"Weight-space programming (WSP), Examples only",outer,outer held-out,4096,4096,0,0.0,1.828650318318485,8.648491632040247e-33
+sin,Scalar ReLU MLP with linear skip,1,5,164,"Weight-space programming (WSP), Formula and examples",train,observed,12,12,0,0.0,0.14194390182687522,0.010074035632918796
+sin,Scalar ReLU MLP with linear skip,1,5,164,"Weight-space programming (WSP), Formula and examples",dev,central held-out,2048,2048,0,0.0,0.44268073620825027,0.010074035632918796
+sin,Scalar ReLU MLP with linear skip,1,5,164,"Weight-space programming (WSP), Formula and examples",outer,outer held-out,4096,4096,0,0.0,3.685128573169856,0.010074035632918796
+sin,Scalar ReLU MLP with linear skip,4,14,164,"Weight-space programming (WSP), Formula and examples",train,observed,12,12,0,0.0,0.01659340202073398,0.00013767049531084928
+sin,Scalar ReLU MLP with linear skip,4,14,164,"Weight-space programming (WSP), Formula and examples",dev,central held-out,2048,2048,0,0.0,0.10553011647275479,0.00013767049531084928
+sin,Scalar ReLU MLP with linear skip,4,14,164,"Weight-space programming (WSP), Formula and examples",outer,outer held-out,4096,4096,0,0.0,2.601127743386626,0.00013767049531084928
+sin,Scalar ReLU MLP with linear skip,16,50,164,"Weight-space programming (WSP), Formula and examples",train,observed,12,12,0,0.0,5.1005323609247896e-08,1.30077151824205e-15
+sin,Scalar ReLU MLP with linear skip,16,50,164,"Weight-space programming (WSP), Formula and examples",dev,central held-out,2048,2048,0,0.0,0.028916589515367918,1.30077151824205e-15
+sin,Scalar ReLU MLP with linear skip,16,50,164,"Weight-space programming (WSP), Formula and examples",outer,outer held-out,4096,4096,0,0.0,0.032203954068808806,1.30077151824205e-15
+sin,Scalar ReLU MLP with linear skip,1,5,164,"Weight-space programming (WSP), Examples only",train,observed,12,12,0,0.0,0.14194390144292215,0.010074035578418997
+sin,Scalar ReLU MLP with linear skip,1,5,164,"Weight-space programming (WSP), Examples only",dev,central held-out,2048,2048,0,0.0,0.442684192289937,0.010074035578418997
+sin,Scalar ReLU MLP with linear skip,1,5,164,"Weight-space programming (WSP), Examples only",outer,outer held-out,4096,4096,0,0.0,3.6850367484076934,0.010074035578418997
+sin,Scalar ReLU MLP with linear skip,4,14,164,"Weight-space programming (WSP), Examples only",train,observed,12,12,0,0.0,0.01659309492828931,0.00013766539964961023
+sin,Scalar ReLU MLP with linear skip,4,14,164,"Weight-space programming (WSP), Examples only",dev,central held-out,2048,2048,0,0.0,0.1055250124573121,0.00013766539964961023
+sin,Scalar ReLU MLP with linear skip,4,14,164,"Weight-space programming (WSP), Examples only",outer,outer held-out,4096,4096,0,0.0,2.6011568758943704,0.00013766539964961023
+sin,Scalar ReLU MLP with linear skip,16,50,164,"Weight-space programming (WSP), Examples only",train,observed,12,12,0,0.0,6.702573917075126e-09,2.24622485569279e-17
+sin,Scalar ReLU MLP with linear skip,16,50,164,"Weight-space programming (WSP), Examples only",dev,central held-out,2048,2048,0,0.0,0.029757438393193784,2.24622485569279e-17
+sin,Scalar ReLU MLP with linear skip,16,50,164,"Weight-space programming (WSP), Examples only",outer,outer held-out,4096,4096,0,0.0,0.1724639119164793,2.24622485569279e-17
+sin,Scalar ReLU MLP with linear skip,1,5,317,"Weight-space programming (WSP), Formula and examples",train,observed,12,12,0,0.0,0.2358872257962409,0.027821391646923363
+sin,Scalar ReLU MLP with linear skip,1,5,317,"Weight-space programming (WSP), Formula and examples",dev,central held-out,2048,2048,0,0.0,0.4196547539297322,0.027821391646923363
+sin,Scalar ReLU MLP with linear skip,1,5,317,"Weight-space programming (WSP), Formula and examples",outer,outer held-out,4096,4096,0,0.0,3.5787800963474927,0.027821391646923363
+sin,Scalar ReLU MLP with linear skip,4,14,317,"Weight-space programming (WSP), Formula and examples",train,observed,12,12,0,0.0,0.0023661045782922335,2.799225437707734e-06
+sin,Scalar ReLU MLP with linear skip,4,14,317,"Weight-space programming (WSP), Formula and examples",dev,central held-out,2048,2048,0,0.0,0.07658928306574952,2.799225437707734e-06
+sin,Scalar ReLU MLP with linear skip,4,14,317,"Weight-space programming (WSP), Formula and examples",outer,outer held-out,4096,4096,0,0.0,2.4231398617660864,2.799225437707734e-06
+sin,Scalar ReLU MLP with linear skip,16,50,317,"Weight-space programming (WSP), Formula and examples",train,observed,12,12,0,0.0,8.600688877387298e-11,3.698592458280679e-21
+sin,Scalar ReLU MLP with linear skip,16,50,317,"Weight-space programming (WSP), Formula and examples",dev,central held-out,2048,2048,0,0.0,0.032555089252299496,3.698592458280679e-21
+sin,Scalar ReLU MLP with linear skip,16,50,317,"Weight-space programming (WSP), Formula and examples",outer,outer held-out,4096,4096,0,0.0,0.17526976255696453,3.698592458280679e-21
+sin,Scalar ReLU MLP with linear skip,1,5,317,"Weight-space programming (WSP), Examples only",train,observed,12,12,0,0.0,0.23588720372580327,0.0278213864407893
+sin,Scalar ReLU MLP with linear skip,1,5,317,"Weight-space programming (WSP), Examples only",dev,central held-out,2048,2048,0,0.0,0.41960520713442123,0.0278213864407893
+sin,Scalar ReLU MLP with linear skip,1,5,317,"Weight-space programming (WSP), Examples only",outer,outer held-out,4096,4096,0,0.0,3.5782691678517273,0.0278213864407893
+sin,Scalar ReLU MLP with linear skip,4,14,317,"Weight-space programming (WSP), Examples only",train,observed,12,12,0,0.0,0.002365359620478457,2.7974630670949946e-06
+sin,Scalar ReLU MLP with linear skip,4,14,317,"Weight-space programming (WSP), Examples only",dev,central held-out,2048,2048,0,0.0,0.07657490420553649,2.7974630670949946e-06
+sin,Scalar ReLU MLP with linear skip,4,14,317,"Weight-space programming (WSP), Examples only",outer,outer held-out,4096,4096,0,0.0,2.423131565800801,2.7974630670949946e-06
+sin,Scalar ReLU MLP with linear skip,16,50,317,"Weight-space programming (WSP), Examples only",train,observed,12,12,0,0.0,2.132384255936265e-08,2.27353130748243e-16
+sin,Scalar ReLU MLP with linear skip,16,50,317,"Weight-space programming (WSP), Examples only",dev,central held-out,2048,2048,0,0.0,0.03255473629606583,2.27353130748243e-16
+sin,Scalar ReLU MLP with linear skip,16,50,317,"Weight-space programming (WSP), Examples only",outer,outer held-out,4096,4096,0,0.0,0.1752707718061392,2.27353130748243e-16
+sin,Scalar ReLU MLP with linear skip,1,5,583,"Weight-space programming (WSP), Formula and examples",train,observed,12,12,0,0.0,0.23757147548955398,0.028220102983141874
+sin,Scalar ReLU MLP with linear skip,1,5,583,"Weight-space programming (WSP), Formula and examples",dev,central held-out,2048,2048,0,0.0,0.380655142060801,0.028220102983141874
+sin,Scalar ReLU MLP with linear skip,1,5,583,"Weight-space programming (WSP), Formula and examples",outer,outer held-out,4096,4096,0,0.0,3.4212715841843613,0.028220102983141874
+sin,Scalar ReLU MLP with linear skip,4,14,583,"Weight-space programming (WSP), Formula and examples",train,observed,12,12,0,0.0,0.002191196917830928,2.4006719663558795e-06
+sin,Scalar ReLU MLP with linear skip,4,14,583,"Weight-space programming (WSP), Formula and examples",dev,central held-out,2048,2048,0,0.0,0.09773450659066897,2.4006719663558795e-06
+sin,Scalar ReLU MLP with linear skip,4,14,583,"Weight-space programming (WSP), Formula and examples",outer,outer held-out,4096,4096,0,0.0,2.729494728005679,2.4006719663558795e-06
+sin,Scalar ReLU MLP with linear skip,16,50,583,"Weight-space programming (WSP), Formula and examples",train,observed,12,12,0,0.0,9.391602497807562e-09,4.4101098738412635e-17
+sin,Scalar ReLU MLP with linear skip,16,50,583,"Weight-space programming (WSP), Formula and examples",dev,central held-out,2048,2048,0,0.0,0.09115306241177852,4.4101098738412635e-17
+sin,Scalar ReLU MLP with linear skip,16,50,583,"Weight-space programming (WSP), Formula and examples",outer,outer held-out,4096,4096,0,0.0,0.1724198201632026,4.4101098738412635e-17
+sin,Scalar ReLU MLP with linear skip,1,5,583,"Weight-space programming (WSP), Examples only",train,observed,12,12,0,0.0,0.23757150544662436,0.028220110100087736
+sin,Scalar ReLU MLP with linear skip,1,5,583,"Weight-space programming (WSP), Examples only",dev,central held-out,2048,2048,0,0.0,0.3806976371728939,0.028220110100087736
+sin,Scalar ReLU MLP with linear skip,1,5,583,"Weight-space programming (WSP), Examples only",outer,outer held-out,4096,4096,0,0.0,3.4215889034824403,0.028220110100087736
+sin,Scalar ReLU MLP with linear skip,4,14,583,"Weight-space programming (WSP), Examples only",train,observed,12,12,0,0.0,0.0033396909774707144,5.576767912499647e-06
+sin,Scalar ReLU MLP with linear skip,4,14,583,"Weight-space programming (WSP), Examples only",dev,central held-out,2048,2048,0,0.0,0.07133912264738904,5.576767912499647e-06
+sin,Scalar ReLU MLP with linear skip,4,14,583,"Weight-space programming (WSP), Examples only",outer,outer held-out,4096,4096,0,0.0,2.6456299689971345,5.576767912499647e-06
+sin,Scalar ReLU MLP with linear skip,16,50,583,"Weight-space programming (WSP), Examples only",train,observed,12,12,0,0.0,2.7445317863805155e-09,3.766227363226512e-18
+sin,Scalar ReLU MLP with linear skip,16,50,583,"Weight-space programming (WSP), Examples only",dev,central held-out,2048,2048,0,0.0,0.03587291586751719,3.766227363226512e-18
+sin,Scalar ReLU MLP with linear skip,16,50,583,"Weight-space programming (WSP), Examples only",outer,outer held-out,4096,4096,0,0.0,0.17242514723076643,3.766227363226512e-18
+selfpower,Scalar ReLU MLP with linear skip,1,5,164,"Weight-space programming (WSP), Formula and examples",train,observed,12,12,0,0.0,0.6027821038818106,0.006046137802844363
+selfpower,Scalar ReLU MLP with linear skip,1,5,164,"Weight-space programming (WSP), Formula and examples",dev,central held-out,2048,2048,0,0.0,3.225050505202178,0.006046137802844363
+selfpower,Scalar ReLU MLP with linear skip,1,5,164,"Weight-space programming (WSP), Formula and examples",outer,outer held-out,2048,2048,0,0.0,1582733565.3074067,0.006046137802844363
+selfpower,Scalar ReLU MLP with linear skip,4,14,164,"Weight-space programming (WSP), Formula and examples",train,observed,12,12,0,0.0,0.008626825885036868,3.693175983478014e-05
+selfpower,Scalar ReLU MLP with linear skip,4,14,164,"Weight-space programming (WSP), Formula and examples",dev,central held-out,2048,2048,0,0.0,1.5863314918847007,3.693175983478014e-05
+selfpower,Scalar ReLU MLP with linear skip,4,14,164,"Weight-space programming (WSP), Formula and examples",outer,outer held-out,2048,2048,0,0.0,1582733544.2876246,3.693175983478014e-05
+selfpower,Scalar ReLU MLP with linear skip,16,50,164,"Weight-space programming (WSP), Formula and examples",train,observed,12,12,0,0.0,5.565089298244155e-09,9.797126445635429e-18
+selfpower,Scalar ReLU MLP with linear skip,16,50,164,"Weight-space programming (WSP), Formula and examples",dev,central held-out,2048,2048,0,0.0,0.8865070957386367,9.797126445635429e-18
+selfpower,Scalar ReLU MLP with linear skip,16,50,164,"Weight-space programming (WSP), Formula and examples",outer,outer held-out,2048,2048,0,0.0,359674545.0247118,9.797126445635429e-18
+selfpower,Scalar ReLU MLP with linear skip,1,5,164,"Weight-space programming (WSP), Examples only",train,observed,12,12,0,0.0,0.6030334942528951,0.006046138716676687
+selfpower,Scalar ReLU MLP with linear skip,1,5,164,"Weight-space programming (WSP), Examples only",dev,central held-out,2048,2048,0,0.0,3.22561306343299,0.006046138716676687
+selfpower,Scalar ReLU MLP with linear skip,1,5,164,"Weight-space programming (WSP), Examples only",outer,outer held-out,2048,2048,0,0.0,1582733565.3113194,0.006046138716676687
+selfpower,Scalar ReLU MLP with linear skip,4,14,164,"Weight-space programming (WSP), Examples only",train,observed,12,12,0,0.0,0.00862682228735346,3.6931769831733025e-05
+selfpower,Scalar ReLU MLP with linear skip,4,14,164,"Weight-space programming (WSP), Examples only",dev,central held-out,2048,2048,0,0.0,1.5863295059189895,3.6931769831733025e-05
+selfpower,Scalar ReLU MLP with linear skip,4,14,164,"Weight-space programming (WSP), Examples only",outer,outer held-out,2048,2048,0,0.0,1582733544.2876227,3.6931769831733025e-05
+selfpower,Scalar ReLU MLP with linear skip,16,50,164,"Weight-space programming (WSP), Examples only",train,observed,12,12,0,0.0,2.318956550007684e-08,7.569103915512606e-18
+selfpower,Scalar ReLU MLP with linear skip,16,50,164,"Weight-space programming (WSP), Examples only",dev,central held-out,2048,2048,0,0.0,0.22960141275611376,7.569103915512606e-18
+selfpower,Scalar ReLU MLP with linear skip,16,50,164,"Weight-space programming (WSP), Examples only",outer,outer held-out,2048,2048,0,0.0,940350758.7831047,7.569103915512606e-18
+selfpower,Scalar ReLU MLP with linear skip,1,5,317,"Weight-space programming (WSP), Formula and examples",train,observed,12,12,0,0.0,1.1064016923363775,0.010290282300203787
+selfpower,Scalar ReLU MLP with linear skip,1,5,317,"Weight-space programming (WSP), Formula and examples",dev,central held-out,2048,2048,0,0.0,3.032498098462298,0.010290282300203787
+selfpower,Scalar ReLU MLP with linear skip,1,5,317,"Weight-space programming (WSP), Formula and examples",outer,outer held-out,2048,2048,0,0.0,1582733563.018453,0.010290282300203787
+selfpower,Scalar ReLU MLP with linear skip,4,14,317,"Weight-space programming (WSP), Formula and examples",train,observed,12,12,0,0.0,0.012272088497113226,3.2740879415746207e-06
+selfpower,Scalar ReLU MLP with linear skip,4,14,317,"Weight-space programming (WSP), Formula and examples",dev,central held-out,2048,2048,0,0.0,1.2308420310331627,3.2740879415746207e-06
+selfpower,Scalar ReLU MLP with linear skip,4,14,317,"Weight-space programming (WSP), Formula and examples",outer,outer held-out,2048,2048,0,0.0,1582733540.187366,3.2740879415746207e-06
+selfpower,Scalar ReLU MLP with linear skip,16,50,317,"Weight-space programming (WSP), Formula and examples",train,observed,12,12,0,0.0,7.05392455112796e-09,1.4160677217510657e-18
+selfpower,Scalar ReLU MLP with linear skip,16,50,317,"Weight-space programming (WSP), Formula and examples",dev,central held-out,2048,2048,0,0.0,9.671527295821914,1.4160677217510657e-18
+selfpower,Scalar ReLU MLP with linear skip,16,50,317,"Weight-space programming (WSP), Formula and examples",outer,outer held-out,2048,2048,0,0.0,1611778504.8597925,1.4160677217510657e-18
+selfpower,Scalar ReLU MLP with linear skip,1,5,317,"Weight-space programming (WSP), Examples only",train,observed,12,12,0,0.0,1.106678614596435,0.010290299976895628
+selfpower,Scalar ReLU MLP with linear skip,1,5,317,"Weight-space programming (WSP), Examples only",dev,central held-out,2048,2048,0,0.0,3.032935305321049,0.010290299976895628
+selfpower,Scalar ReLU MLP with linear skip,1,5,317,"Weight-space programming (WSP), Examples only",outer,outer held-out,2048,2048,0,0.0,1582733563.0173547,0.010290299976895628
+selfpower,Scalar ReLU MLP with linear skip,4,14,317,"Weight-space programming (WSP), Examples only",train,observed,12,12,0,0.0,0.012226979499921463,3.249717743214184e-06
+selfpower,Scalar ReLU MLP with linear skip,4,14,317,"Weight-space programming (WSP), Examples only",dev,central held-out,2048,2048,0,0.0,1.2310125992476466,3.249717743214184e-06
+selfpower,Scalar ReLU MLP with linear skip,4,14,317,"Weight-space programming (WSP), Examples only",outer,outer held-out,2048,2048,0,0.0,1582733540.1901286,3.249717743214184e-06
+selfpower,Scalar ReLU MLP with linear skip,16,50,317,"Weight-space programming (WSP), Examples only",train,observed,12,12,0,0.0,4.1324463208206816e-07,3.1654148421793185e-14
+selfpower,Scalar ReLU MLP with linear skip,16,50,317,"Weight-space programming (WSP), Examples only",dev,central held-out,2048,2048,0,0.0,0.3550666775538445,3.1654148421793185e-14
+selfpower,Scalar ReLU MLP with linear skip,16,50,317,"Weight-space programming (WSP), Examples only",outer,outer held-out,2048,2048,0,0.0,2161015217.4345818,3.1654148421793185e-14
+selfpower,Scalar ReLU MLP with linear skip,1,5,583,"Weight-space programming (WSP), Formula and examples",train,observed,12,12,0,0.0,0.4433886845046864,0.0025202796841549127
+selfpower,Scalar ReLU MLP with linear skip,1,5,583,"Weight-space programming (WSP), Formula and examples",dev,central held-out,2048,2048,0,0.0,2.237242720870741,0.0025202796841549127
+selfpower,Scalar ReLU MLP with linear skip,1,5,583,"Weight-space programming (WSP), Formula and examples",outer,outer held-out,2048,2048,0,0.0,1582733556.028001,0.0025202796841549127
+selfpower,Scalar ReLU MLP with linear skip,4,14,583,"Weight-space programming (WSP), Formula and examples",train,observed,12,12,0,0.0,0.00625372211944792,1.7642110535094433e-06
+selfpower,Scalar ReLU MLP with linear skip,4,14,583,"Weight-space programming (WSP), Formula and examples",dev,central held-out,2048,2048,0,0.0,0.9505577384982783,1.7642110535094433e-06
+selfpower,Scalar ReLU MLP with linear skip,4,14,583,"Weight-space programming (WSP), Formula and examples",outer,outer held-out,2048,2048,0,0.0,1582733529.9808102,1.7642110535094433e-06
+selfpower,Scalar ReLU MLP with linear skip,16,50,583,"Weight-space programming (WSP), Formula and examples",train,observed,12,12,0,0.0,1.2149169925012716e-06,6.537012013900017e-15
+selfpower,Scalar ReLU MLP with linear skip,16,50,583,"Weight-space programming (WSP), Formula and examples",dev,central held-out,2048,2048,0,0.0,1.155138631614849,6.537012013900017e-15
+selfpower,Scalar ReLU MLP with linear skip,16,50,583,"Weight-space programming (WSP), Formula and examples",outer,outer held-out,2048,2048,0,0.0,1371117235.2653928,6.537012013900017e-15
+selfpower,Scalar ReLU MLP with linear skip,1,5,583,"Weight-space programming (WSP), Examples only",train,observed,12,12,0,0.0,0.4437918347332537,0.002520279129327313
+selfpower,Scalar ReLU MLP with linear skip,1,5,583,"Weight-space programming (WSP), Examples only",dev,central held-out,2048,2048,0,0.0,2.237861050179567,0.002520279129327313
+selfpower,Scalar ReLU MLP with linear skip,1,5,583,"Weight-space programming (WSP), Examples only",outer,outer held-out,2048,2048,0,0.0,1582733556.0329385,0.002520279129327313
+selfpower,Scalar ReLU MLP with linear skip,4,14,583,"Weight-space programming (WSP), Examples only",train,observed,12,12,0,0.0,0.006250883657257826,1.7628452942816982e-06
+selfpower,Scalar ReLU MLP with linear skip,4,14,583,"Weight-space programming (WSP), Examples only",dev,central held-out,2048,2048,0,0.0,0.654388702542081,1.7628452942816982e-06
+selfpower,Scalar ReLU MLP with linear skip,4,14,583,"Weight-space programming (WSP), Examples only",outer,outer held-out,2048,2048,0,0.0,1582733520.130874,1.7628452942816982e-06
+selfpower,Scalar ReLU MLP with linear skip,16,50,583,"Weight-space programming (WSP), Examples only",train,observed,12,12,0,0.0,5.325604380008391e-09,1.7106959687327965e-18
+selfpower,Scalar ReLU MLP with linear skip,16,50,583,"Weight-space programming (WSP), Examples only",dev,central held-out,2048,2048,0,0.0,0.5363526430572312,1.7106959687327965e-18
+selfpower,Scalar ReLU MLP with linear skip,16,50,583,"Weight-space programming (WSP), Examples only",outer,outer held-out,2048,2048,0,0.0,1794984600.3817253,1.7106959687327965e-18
+tanh,Scalar ReLU MLP with linear skip,1,5,164,"Weight-space programming (WSP), Formula and examples",train,observed,12,12,0,0.0,0.10010132771483823,0.0050101379051367195
+tanh,Scalar ReLU MLP with linear skip,1,5,164,"Weight-space programming (WSP), Formula and examples",dev,central held-out,2048,2048,0,0.0,0.23035829971387256,0.0050101379051367195
+tanh,Scalar ReLU MLP with linear skip,1,5,164,"Weight-space programming (WSP), Formula and examples",outer,outer held-out,4096,4096,0,0.0,2.2444950417803886,0.0050101379051367195
+tanh,Scalar ReLU MLP with linear skip,4,14,164,"Weight-space programming (WSP), Formula and examples",train,observed,12,12,0,0.0,0.0015138193770692322,1.1458245531951392e-06
+tanh,Scalar ReLU MLP with linear skip,4,14,164,"Weight-space programming (WSP), Formula and examples",dev,central held-out,2048,2048,0,0.0,0.023574466169834312,1.1458245531951392e-06
+tanh,Scalar ReLU MLP with linear skip,4,14,164,"Weight-space programming (WSP), Formula and examples",outer,outer held-out,4096,4096,0,0.0,0.3368298547686567,1.1458245531951392e-06
+tanh,Scalar ReLU MLP with linear skip,16,50,164,"Weight-space programming (WSP), Formula and examples",train,observed,12,12,0,0.0,2.54129647873602e-09,3.229093896418048e-18
+tanh,Scalar ReLU MLP with linear skip,16,50,164,"Weight-space programming (WSP), Formula and examples",dev,central held-out,2048,2048,0,0.0,0.011245768146819227,3.229093896418048e-18
+tanh,Scalar ReLU MLP with linear skip,16,50,164,"Weight-space programming (WSP), Formula and examples",outer,outer held-out,4096,4096,0,0.0,0.0006804683806612442,3.229093896418048e-18
+tanh,Scalar ReLU MLP with linear skip,1,5,164,"Weight-space programming (WSP), Examples only",train,observed,12,12,0,0.0,0.10009781800049826,0.005009786584230438
+tanh,Scalar ReLU MLP with linear skip,1,5,164,"Weight-space programming (WSP), Examples only",dev,central held-out,2048,2048,0,0.0,0.230942633355077,0.005009786584230438
+tanh,Scalar ReLU MLP with linear skip,1,5,164,"Weight-space programming (WSP), Examples only",outer,outer held-out,4096,4096,0,0.0,2.248253644079269,0.005009786584230438
+tanh,Scalar ReLU MLP with linear skip,4,14,164,"Weight-space programming (WSP), Examples only",train,observed,12,12,0,0.0,0.0015138206191701662,1.1458264335123723e-06
+tanh,Scalar ReLU MLP with linear skip,4,14,164,"Weight-space programming (WSP), Examples only",dev,central held-out,2048,2048,0,0.0,0.0235754603285971,1.1458264335123723e-06
+tanh,Scalar ReLU MLP with linear skip,4,14,164,"Weight-space programming (WSP), Examples only",outer,outer held-out,4096,4096,0,0.0,0.3368305115644925,1.1458264335123723e-06
+tanh,Scalar ReLU MLP with linear skip,16,50,164,"Weight-space programming (WSP), Examples only",train,observed,12,12,4,0.3333333333333333,1.7322694870203645e-13,1.5003787878308985e-26
+tanh,Scalar ReLU MLP with linear skip,16,50,164,"Weight-space programming (WSP), Examples only",dev,central held-out,2048,2048,0,0.0,0.012189086384021572,1.5003787878308985e-26
+tanh,Scalar ReLU MLP with linear skip,16,50,164,"Weight-space programming (WSP), Examples only",outer,outer held-out,4096,4096,0,0.0,0.0004445659568300054,1.5003787878308985e-26
+tanh,Scalar ReLU MLP with linear skip,1,5,317,"Weight-space programming (WSP), Formula and examples",train,observed,12,12,0,0.0,0.1544743349190257,0.011931160074337662
+tanh,Scalar ReLU MLP with linear skip,1,5,317,"Weight-space programming (WSP), Formula and examples",dev,central held-out,2048,2048,0,0.0,0.2289774365690311,0.011931160074337662
+tanh,Scalar ReLU MLP with linear skip,1,5,317,"Weight-space programming (WSP), Formula and examples",outer,outer held-out,4096,4096,0,0.0,2.0989066332593334,0.011931160074337662
+tanh,Scalar ReLU MLP with linear skip,4,14,317,"Weight-space programming (WSP), Formula and examples",train,observed,12,12,0,0.0,0.001692578932342944,1.4324117211055902e-06
+tanh,Scalar ReLU MLP with linear skip,4,14,317,"Weight-space programming (WSP), Formula and examples",dev,central held-out,2048,2048,0,0.0,0.01610990098992336,1.4324117211055902e-06
+tanh,Scalar ReLU MLP with linear skip,4,14,317,"Weight-space programming (WSP), Formula and examples",outer,outer held-out,4096,4096,0,0.0,0.29838955205717976,1.4324117211055902e-06
+tanh,Scalar ReLU MLP with linear skip,16,50,317,"Weight-space programming (WSP), Formula and examples",train,observed,12,12,0,0.0,1.4847121477507051e-08,1.1021850808392557e-16
+tanh,Scalar ReLU MLP with linear skip,16,50,317,"Weight-space programming (WSP), Formula and examples",dev,central held-out,2048,2048,0,0.0,0.010600636972245177,1.1021850808392557e-16
+tanh,Scalar ReLU MLP with linear skip,16,50,317,"Weight-space programming (WSP), Formula and examples",outer,outer held-out,4096,4096,0,0.0,0.0005281664901729045,1.1021850808392557e-16
+tanh,Scalar ReLU MLP with linear skip,1,5,317,"Weight-space programming (WSP), Examples only",train,observed,12,12,0,0.0,0.15447428700759658,0.011931152673252662
+tanh,Scalar ReLU MLP with linear skip,1,5,317,"Weight-space programming (WSP), Examples only",dev,central held-out,2048,2048,0,0.0,0.22905801088926409,0.011931152673252662
+tanh,Scalar ReLU MLP with linear skip,1,5,317,"Weight-space programming (WSP), Examples only",outer,outer held-out,4096,4096,0,0.0,2.099230845430298,0.011931152673252662
+tanh,Scalar ReLU MLP with linear skip,4,14,317,"Weight-space programming (WSP), Examples only",train,observed,12,12,0,0.0,0.0016926206433252888,1.432482321105457e-06
+tanh,Scalar ReLU MLP with linear skip,4,14,317,"Weight-space programming (WSP), Examples only",dev,central held-out,2048,2048,0,0.0,0.016110458066140046,1.432482321105457e-06
+tanh,Scalar ReLU MLP with linear skip,4,14,317,"Weight-space programming (WSP), Examples only",outer,outer held-out,4096,4096,0,0.0,0.29837971351425374,1.432482321105457e-06
+tanh,Scalar ReLU MLP with linear skip,16,50,317,"Weight-space programming (WSP), Examples only",train,observed,12,12,0,0.0,5.030914372398347e-07,1.2655049711202128e-13
+tanh,Scalar ReLU MLP with linear skip,16,50,317,"Weight-space programming (WSP), Examples only",dev,central held-out,2048,2048,0,0.0,0.01061950453033684,1.2655049711202128e-13
+tanh,Scalar ReLU MLP with linear skip,16,50,317,"Weight-space programming (WSP), Examples only",outer,outer held-out,4096,4096,0,0.0,0.0004144150309389168,1.2655049711202128e-13
+tanh,Scalar ReLU MLP with linear skip,1,5,583,"Weight-space programming (WSP), Formula and examples",train,observed,12,12,0,0.0,0.16346156824105867,0.013359842145913141
+tanh,Scalar ReLU MLP with linear skip,1,5,583,"Weight-space programming (WSP), Formula and examples",dev,central held-out,2048,2048,0,0.0,0.20938750682782456,0.013359842145913141
+tanh,Scalar ReLU MLP with linear skip,1,5,583,"Weight-space programming (WSP), Formula and examples",outer,outer held-out,4096,4096,0,0.0,1.944092442021509,0.013359842145913141
+tanh,Scalar ReLU MLP with linear skip,4,14,583,"Weight-space programming (WSP), Formula and examples",train,observed,12,12,0,0.0,0.0004940679182483268,1.220515539211177e-07
+tanh,Scalar ReLU MLP with linear skip,4,14,583,"Weight-space programming (WSP), Formula and examples",dev,central held-out,2048,2048,0,0.0,0.08685540806324515,1.220515539211177e-07
+tanh,Scalar ReLU MLP with linear skip,4,14,583,"Weight-space programming (WSP), Formula and examples",outer,outer held-out,4096,4096,0,0.0,0.20098088126791466,1.220515539211177e-07
+tanh,Scalar ReLU MLP with linear skip,16,50,583,"Weight-space programming (WSP), Formula and examples",train,observed,12,12,0,0.0,4.153735675842399e-08,8.626760032382953e-16
+tanh,Scalar ReLU MLP with linear skip,16,50,583,"Weight-space programming (WSP), Formula and examples",dev,central held-out,2048,2048,0,0.0,0.021398309910401148,8.626760032382953e-16
+tanh,Scalar ReLU MLP with linear skip,16,50,583,"Weight-space programming (WSP), Formula and examples",outer,outer held-out,4096,4096,0,0.0,0.0012657113056714021,8.626760032382953e-16
+tanh,Scalar ReLU MLP with linear skip,1,5,583,"Weight-space programming (WSP), Examples only",train,observed,12,12,0,0.0,0.16346156801521328,0.013359842108996099
+tanh,Scalar ReLU MLP with linear skip,1,5,583,"Weight-space programming (WSP), Examples only",dev,central held-out,2048,2048,0,0.0,0.20938415030651186,0.013359842108996099
+tanh,Scalar ReLU MLP with linear skip,1,5,583,"Weight-space programming (WSP), Examples only",outer,outer held-out,4096,4096,0,0.0,1.944098591002132,0.013359842108996099
+tanh,Scalar ReLU MLP with linear skip,4,14,583,"Weight-space programming (WSP), Examples only",train,observed,12,12,0,0.0,0.0004941937264862537,1.2211371964918505e-07
+tanh,Scalar ReLU MLP with linear skip,4,14,583,"Weight-space programming (WSP), Examples only",dev,central held-out,2048,2048,0,0.0,0.0868484562336466,1.2211371964918505e-07
+tanh,Scalar ReLU MLP with linear skip,4,14,583,"Weight-space programming (WSP), Examples only",outer,outer held-out,4096,4096,0,0.0,0.2009930819534783,1.2211371964918505e-07
+tanh,Scalar ReLU MLP with linear skip,16,50,583,"Weight-space programming (WSP), Examples only",train,observed,12,12,0,0.0,2.327533098461941e-07,2.7087051622179208e-14
+tanh,Scalar ReLU MLP with linear skip,16,50,583,"Weight-space programming (WSP), Examples only",dev,central held-out,2048,2048,0,0.0,0.021441286848588887,2.7087051622179208e-14
+tanh,Scalar ReLU MLP with linear skip,16,50,583,"Weight-space programming (WSP), Examples only",outer,outer held-out,4096,4096,0,0.0,0.0021604969119071622,2.7087051622179208e-14
+sum,Driven linear recurrent network,1,3,164,"Weight-space programming (WSP), Formula and examples",train,observed,12,72,12,1.0,0.0,0.0
+sum,Driven linear recurrent network,1,3,164,"Weight-space programming (WSP), Formula and examples",dev,central held-out,2048,12288,2048,1.0,0.0,0.0
+sum,Driven linear recurrent network,1,3,164,"Weight-space programming (WSP), Formula and examples",outer,outer held-out,2048,12288,2048,1.0,0.0,0.0
+sum,Driven linear recurrent network,2,8,164,"Weight-space programming (WSP), Formula and examples",train,observed,12,72,12,1.0,0.0,0.0
+sum,Driven linear recurrent network,2,8,164,"Weight-space programming (WSP), Formula and examples",dev,central held-out,2048,12288,2048,1.0,0.0,0.0
+sum,Driven linear recurrent network,2,8,164,"Weight-space programming (WSP), Formula and examples",outer,outer held-out,2048,12288,2048,1.0,0.0,0.0
+sum,Driven linear recurrent network,1,3,164,"Weight-space programming (WSP), Examples only",train,observed,12,72,12,1.0,0.0,0.0
+sum,Driven linear recurrent network,1,3,164,"Weight-space programming (WSP), Examples only",dev,central held-out,2048,12288,2048,1.0,0.0,0.0
+sum,Driven linear recurrent network,1,3,164,"Weight-space programming (WSP), Examples only",outer,outer held-out,2048,12288,2048,1.0,0.0,0.0
+sum,Driven linear recurrent network,2,8,164,"Weight-space programming (WSP), Examples only",train,observed,12,72,12,1.0,0.0,0.0
+sum,Driven linear recurrent network,2,8,164,"Weight-space programming (WSP), Examples only",dev,central held-out,2048,12288,2048,1.0,0.0,0.0
+sum,Driven linear recurrent network,2,8,164,"Weight-space programming (WSP), Examples only",outer,outer held-out,2048,12288,2048,1.0,0.0,0.0
+sum,Driven linear recurrent network,1,3,317,"Weight-space programming (WSP), Formula and examples",train,observed,12,72,12,1.0,0.0,0.0
+sum,Driven linear recurrent network,1,3,317,"Weight-space programming (WSP), Formula and examples",dev,central held-out,2048,12288,2048,1.0,0.0,0.0
+sum,Driven linear recurrent network,1,3,317,"Weight-space programming (WSP), Formula and examples",outer,outer held-out,2048,12288,2048,1.0,0.0,0.0
+sum,Driven linear recurrent network,2,8,317,"Weight-space programming (WSP), Formula and examples",train,observed,12,72,12,1.0,0.0,0.0
+sum,Driven linear recurrent network,2,8,317,"Weight-space programming (WSP), Formula and examples",dev,central held-out,2048,12288,2048,1.0,0.0,0.0
+sum,Driven linear recurrent network,2,8,317,"Weight-space programming (WSP), Formula and examples",outer,outer held-out,2048,12288,2048,1.0,0.0,0.0
+sum,Driven linear recurrent network,1,3,317,"Weight-space programming (WSP), Examples only",train,observed,12,72,12,1.0,0.0,0.0
+sum,Driven linear recurrent network,1,3,317,"Weight-space programming (WSP), Examples only",dev,central held-out,2048,12288,2048,1.0,0.0,0.0
+sum,Driven linear recurrent network,1,3,317,"Weight-space programming (WSP), Examples only",outer,outer held-out,2048,12288,2048,1.0,0.0,0.0
+sum,Driven linear recurrent network,2,8,317,"Weight-space programming (WSP), Examples only",train,observed,12,72,12,1.0,0.0,0.0
+sum,Driven linear recurrent network,2,8,317,"Weight-space programming (WSP), Examples only",dev,central held-out,2048,12288,2048,1.0,0.0,0.0
+sum,Driven linear recurrent network,2,8,317,"Weight-space programming (WSP), Examples only",outer,outer held-out,2048,12288,2048,1.0,0.0,0.0
+sum,Driven linear recurrent network,1,3,583,"Weight-space programming (WSP), Formula and examples",train,observed,12,72,12,1.0,0.0,0.0
+sum,Driven linear recurrent network,1,3,583,"Weight-space programming (WSP), Formula and examples",dev,central held-out,2048,12288,2048,1.0,0.0,0.0
+sum,Driven linear recurrent network,1,3,583,"Weight-space programming (WSP), Formula and examples",outer,outer held-out,2048,12288,2048,1.0,0.0,0.0
+sum,Driven linear recurrent network,2,8,583,"Weight-space programming (WSP), Formula and examples",train,observed,12,72,12,1.0,0.0,0.0
+sum,Driven linear recurrent network,2,8,583,"Weight-space programming (WSP), Formula and examples",dev,central held-out,2048,12288,2048,1.0,0.0,0.0
+sum,Driven linear recurrent network,2,8,583,"Weight-space programming (WSP), Formula and examples",outer,outer held-out,2048,12288,2048,1.0,0.0,0.0
+sum,Driven linear recurrent network,1,3,583,"Weight-space programming (WSP), Examples only",train,observed,12,72,12,1.0,0.0,0.0
+sum,Driven linear recurrent network,1,3,583,"Weight-space programming (WSP), Examples only",dev,central held-out,2048,12288,2048,1.0,0.0,0.0
+sum,Driven linear recurrent network,1,3,583,"Weight-space programming (WSP), Examples only",outer,outer held-out,2048,12288,2048,1.0,0.0,0.0
+sum,Driven linear recurrent network,2,8,583,"Weight-space programming (WSP), Examples only",train,observed,12,72,12,1.0,0.0,0.0
+sum,Driven linear recurrent network,2,8,583,"Weight-space programming (WSP), Examples only",dev,central held-out,2048,12288,2048,1.0,0.0,0.0
+sum,Driven linear recurrent network,2,8,583,"Weight-space programming (WSP), Examples only",outer,outer held-out,2048,12288,2048,1.0,0.0,0.0
+sort,Four-wire residual ReLU network,4,32,164,"Weight-space programming (WSP), Formula and examples",train,observed,12,48,1,0.08333333333333333,0.36181356843683127,0.040054435901760554
+sort,Four-wire residual ReLU network,4,32,164,"Weight-space programming (WSP), Formula and examples",dev,central held-out,2048,8192,207,0.10107421875,0.6002726056568014,0.040054435901760554
+sort,Four-wire residual ReLU network,4,32,164,"Weight-space programming (WSP), Formula and examples",outer,outer held-out,2048,8192,200,0.09765625,2.3901141959204213,0.040054435901760554
+sort,Four-wire residual ReLU network,5,40,164,"Weight-space programming (WSP), Formula and examples",train,observed,12,48,7,0.5833333333333334,1.199177923332954e-16,2.9204028517323677e-33
+sort,Four-wire residual ReLU network,5,40,164,"Weight-space programming (WSP), Formula and examples",dev,central held-out,2048,8192,1335,0.65185546875,1.1475428530014783e-16,2.9204028517323677e-33
+sort,Four-wire residual ReLU network,5,40,164,"Weight-space programming (WSP), Formula and examples",outer,outer held-out,2048,8192,1096,0.53515625,5.228169922230517e-16,2.9204028517323677e-33
+sort,Four-wire residual ReLU network,6,48,164,"Weight-space programming (WSP), Formula and examples",train,observed,12,48,7,0.5833333333333334,1.199177923332954e-16,2.9204028517323677e-33
+sort,Four-wire residual ReLU network,6,48,164,"Weight-space programming (WSP), Formula and examples",dev,central held-out,2048,8192,1335,0.65185546875,1.1475428530014783e-16,2.9204028517323677e-33
+sort,Four-wire residual ReLU network,6,48,164,"Weight-space programming (WSP), Formula and examples",outer,outer held-out,2048,8192,1096,0.53515625,5.228169922230517e-16,2.9204028517323677e-33
+sort,Four-wire residual ReLU network,4,32,164,"Weight-space programming (WSP), Examples only",train,observed,12,48,7,0.5833333333333334,0.4220418929426883,0.059042727559910795
+sort,Four-wire residual ReLU network,4,32,164,"Weight-space programming (WSP), Examples only",dev,central held-out,2048,8192,822,0.4013671875,0.7962164489207827,0.059042727559910795
+sort,Four-wire residual ReLU network,4,32,164,"Weight-space programming (WSP), Examples only",outer,outer held-out,2048,8192,725,0.35400390625,3.0152483219043953,0.059042727559910795
+sort,Four-wire residual ReLU network,5,40,164,"Weight-space programming (WSP), Examples only",train,observed,12,48,7,0.5833333333333334,1.199177923332954e-16,2.9204028517323677e-33
+sort,Four-wire residual ReLU network,5,40,164,"Weight-space programming (WSP), Examples only",dev,central held-out,2048,8192,1335,0.65185546875,1.1475428530014783e-16,2.9204028517323677e-33
+sort,Four-wire residual ReLU network,5,40,164,"Weight-space programming (WSP), Examples only",outer,outer held-out,2048,8192,1096,0.53515625,5.228169922230517e-16,2.9204028517323677e-33
+sort,Four-wire residual ReLU network,6,48,164,"Weight-space programming (WSP), Examples only",train,observed,12,48,7,0.5833333333333334,1.199177923332954e-16,2.9204028517323677e-33
+sort,Four-wire residual ReLU network,6,48,164,"Weight-space programming (WSP), Examples only",dev,central held-out,2048,8192,1335,0.65185546875,1.1475428530014783e-16,2.9204028517323677e-33
+sort,Four-wire residual ReLU network,6,48,164,"Weight-space programming (WSP), Examples only",outer,outer held-out,2048,8192,1096,0.53515625,5.228169922230517e-16,2.9204028517323677e-33
+sort,Four-wire residual ReLU network,4,32,317,"Weight-space programming (WSP), Formula and examples",train,observed,12,48,5,0.4166666666666667,0.4247652584273609,0.07045951172984923
+sort,Four-wire residual ReLU network,4,32,317,"Weight-space programming (WSP), Formula and examples",dev,central held-out,2048,8192,853,0.41650390625,0.6546747807524145,0.07045951172984923
+sort,Four-wire residual ReLU network,4,32,317,"Weight-space programming (WSP), Formula and examples",outer,outer held-out,2048,8192,778,0.3798828125,2.6530844928453656,0.07045951172984923
+sort,Four-wire residual ReLU network,5,40,317,"Weight-space programming (WSP), Formula and examples",train,observed,12,48,6,0.5,1.4332917616497527e-16,4.21997623085354e-33
+sort,Four-wire residual ReLU network,5,40,317,"Weight-space programming (WSP), Formula and examples",dev,central held-out,2048,8192,1286,0.6279296875,1.1626530349664903e-16,4.21997623085354e-33
+sort,Four-wire residual ReLU network,5,40,317,"Weight-space programming (WSP), Formula and examples",outer,outer held-out,2048,8192,1091,0.53271484375,4.938084700404894e-16,4.21997623085354e-33
+sort,Four-wire residual ReLU network,6,48,317,"Weight-space programming (WSP), Formula and examples",train,observed,12,48,6,0.5,1.4332917616497527e-16,4.21997623085354e-33
+sort,Four-wire residual ReLU network,6,48,317,"Weight-space programming (WSP), Formula and examples",dev,central held-out,2048,8192,1286,0.6279296875,1.1626530349664903e-16,4.21997623085354e-33
+sort,Four-wire residual ReLU network,6,48,317,"Weight-space programming (WSP), Formula and examples",outer,outer held-out,2048,8192,1091,0.53271484375,4.938084700404894e-16,4.21997623085354e-33
+sort,Four-wire residual ReLU network,4,32,317,"Weight-space programming (WSP), Examples only",train,observed,12,48,1,0.08333333333333333,0.20768515509070815,0.016562483209581726
+sort,Four-wire residual ReLU network,4,32,317,"Weight-space programming (WSP), Examples only",dev,central held-out,2048,8192,207,0.10107421875,0.5624893314538815,0.016562483209581726
+sort,Four-wire residual ReLU network,4,32,317,"Weight-space programming (WSP), Examples only",outer,outer held-out,2048,8192,200,0.09765625,2.2728274232765537,0.016562483209581726
+sort,Four-wire residual ReLU network,5,40,317,"Weight-space programming (WSP), Examples only",train,observed,12,48,6,0.5,1.4332917616497527e-16,4.21997623085354e-33
+sort,Four-wire residual ReLU network,5,40,317,"Weight-space programming (WSP), Examples only",dev,central held-out,2048,8192,1286,0.6279296875,1.1626530349664903e-16,4.21997623085354e-33
+sort,Four-wire residual ReLU network,5,40,317,"Weight-space programming (WSP), Examples only",outer,outer held-out,2048,8192,1091,0.53271484375,4.938084700404894e-16,4.21997623085354e-33
+sort,Four-wire residual ReLU network,6,48,317,"Weight-space programming (WSP), Examples only",train,observed,12,48,6,0.5,1.4332917616497527e-16,4.21997623085354e-33
+sort,Four-wire residual ReLU network,6,48,317,"Weight-space programming (WSP), Examples only",dev,central held-out,2048,8192,1286,0.6279296875,1.1626530349664903e-16,4.21997623085354e-33
+sort,Four-wire residual ReLU network,6,48,317,"Weight-space programming (WSP), Examples only",outer,outer held-out,2048,8192,1091,0.53271484375,4.938084700404894e-16,4.21997623085354e-33
+sort,Four-wire residual ReLU network,4,32,583,"Weight-space programming (WSP), Formula and examples",train,observed,12,48,3,0.25,0.24756545741276295,0.0065577442692237664
+sort,Four-wire residual ReLU network,4,32,583,"Weight-space programming (WSP), Formula and examples",dev,central held-out,2048,8192,802,0.3916015625,0.7906950866276662,0.0065577442692237664
+sort,Four-wire residual ReLU network,4,32,583,"Weight-space programming (WSP), Formula and examples",outer,outer held-out,2048,8192,715,0.34912109375,2.9874490192482566,0.0065577442692237664
+sort,Four-wire residual ReLU network,5,40,583,"Weight-space programming (WSP), Formula and examples",train,observed,12,48,5,0.4166666666666667,1.2412670766236366e-16,4.136460703567035e-33
+sort,Four-wire residual ReLU network,5,40,583,"Weight-space programming (WSP), Formula and examples",dev,central held-out,2048,8192,1335,0.65185546875,1.1475428530014783e-16,4.136460703567035e-33
+sort,Four-wire residual ReLU network,5,40,583,"Weight-space programming (WSP), Formula and examples",outer,outer held-out,2048,8192,1096,0.53515625,5.228169922230517e-16,4.136460703567035e-33
+sort,Four-wire residual ReLU network,6,48,583,"Weight-space programming (WSP), Formula and examples",train,observed,12,48,5,0.4166666666666667,1.2412670766236366e-16,4.136460703567035e-33
+sort,Four-wire residual ReLU network,6,48,583,"Weight-space programming (WSP), Formula and examples",dev,central held-out,2048,8192,1335,0.65185546875,1.1475428530014783e-16,4.136460703567035e-33
+sort,Four-wire residual ReLU network,6,48,583,"Weight-space programming (WSP), Formula and examples",outer,outer held-out,2048,8192,1096,0.53515625,5.228169922230517e-16,4.136460703567035e-33
+sort,Four-wire residual ReLU network,4,32,583,"Weight-space programming (WSP), Examples only",train,observed,12,48,3,0.25,0.24756545741276295,0.0065577442692237664
+sort,Four-wire residual ReLU network,4,32,583,"Weight-space programming (WSP), Examples only",dev,central held-out,2048,8192,802,0.3916015625,0.7906950866276662,0.0065577442692237664
+sort,Four-wire residual ReLU network,4,32,583,"Weight-space programming (WSP), Examples only",outer,outer held-out,2048,8192,715,0.34912109375,2.9874490192482566,0.0065577442692237664
+sort,Four-wire residual ReLU network,5,40,583,"Weight-space programming (WSP), Examples only",train,observed,12,48,5,0.4166666666666667,1.2412670766236366e-16,4.136460703567035e-33
+sort,Four-wire residual ReLU network,5,40,583,"Weight-space programming (WSP), Examples only",dev,central held-out,2048,8192,1335,0.65185546875,1.1475428530014783e-16,4.136460703567035e-33
+sort,Four-wire residual ReLU network,5,40,583,"Weight-space programming (WSP), Examples only",outer,outer held-out,2048,8192,1096,0.53515625,5.228169922230517e-16,4.136460703567035e-33
+sort,Four-wire residual ReLU network,6,48,583,"Weight-space programming (WSP), Examples only",train,observed,12,48,5,0.4166666666666667,1.2412670766236366e-16,4.136460703567035e-33
+sort,Four-wire residual ReLU network,6,48,583,"Weight-space programming (WSP), Examples only",dev,central held-out,2048,8192,1335,0.65185546875,1.1475428530014783e-16,4.136460703567035e-33
+sort,Four-wire residual ReLU network,6,48,583,"Weight-space programming (WSP), Examples only",outer,outer held-out,2048,8192,1096,0.53515625,5.228169922230517e-16,4.136460703567035e-33
+fib,Autonomous linear recurrent network,1,3,164,"Weight-space programming (WSP), Formula and examples",train,observed,9,9,0,0.0,0.2973383354154843,0.016460188296352582
+fib,Autonomous linear recurrent network,1,3,164,"Weight-space programming (WSP), Formula and examples",dev,early indices 9–32,24,24,0,0.0,257331.28362448062,0.016460188296352582
+fib,Autonomous linear recurrent network,1,3,164,"Weight-space programming (WSP), Formula and examples",outer,outer held-out,32,32,0,0.0,3174557755472.6787,0.016460188296352582
+fib,Autonomous linear recurrent network,2,8,164,"Weight-space programming (WSP), Formula and examples",train,observed,9,9,9,1.0,0.0,0.0
+fib,Autonomous linear recurrent network,2,8,164,"Weight-space programming (WSP), Formula and examples",dev,early indices 9–32,24,24,24,1.0,0.0,0.0
+fib,Autonomous linear recurrent network,2,8,164,"Weight-space programming (WSP), Formula and examples",outer,outer held-out,32,32,32,1.0,0.0,0.0
+fib,Autonomous linear recurrent network,3,15,164,"Weight-space programming (WSP), Formula and examples",train,observed,9,9,9,1.0,0.0,0.0
+fib,Autonomous linear recurrent network,3,15,164,"Weight-space programming (WSP), Formula and examples",dev,early indices 9–32,24,24,24,1.0,0.0,0.0
+fib,Autonomous linear recurrent network,3,15,164,"Weight-space programming (WSP), Formula and examples",outer,outer held-out,32,32,32,1.0,0.0,0.0
+fib,Autonomous linear recurrent network,1,3,164,"Weight-space programming (WSP), Examples only",train,observed,9,9,0,0.0,0.2964654444894327,0.016460182626530297
+fib,Autonomous linear recurrent network,1,3,164,"Weight-space programming (WSP), Examples only",dev,early indices 9–32,24,24,0,0.0,257093.570512292,0.016460182626530297
+fib,Autonomous linear recurrent network,1,3,164,"Weight-space programming (WSP), Examples only",outer,outer held-out,32,32,0,0.0,3171868243082.2686,0.016460182626530297
+fib,Autonomous linear recurrent network,2,8,164,"Weight-space programming (WSP), Examples only",train,observed,9,9,9,1.0,0.0,0.0
+fib,Autonomous linear recurrent network,2,8,164,"Weight-space programming (WSP), Examples only",dev,early indices 9–32,24,24,24,1.0,0.0,0.0
+fib,Autonomous linear recurrent network,2,8,164,"Weight-space programming (WSP), Examples only",outer,outer held-out,32,32,32,1.0,0.0,0.0
+fib,Autonomous linear recurrent network,3,15,164,"Weight-space programming (WSP), Examples only",train,observed,9,9,9,1.0,0.0,0.0
+fib,Autonomous linear recurrent network,3,15,164,"Weight-space programming (WSP), Examples only",dev,early indices 9–32,24,24,24,1.0,0.0,0.0
+fib,Autonomous linear recurrent network,3,15,164,"Weight-space programming (WSP), Examples only",outer,outer held-out,32,32,32,1.0,0.0,0.0
+fib,Autonomous linear recurrent network,1,3,317,"Weight-space programming (WSP), Formula and examples",train,observed,9,9,0,0.0,0.2965670671203688,0.016460182566097468
+fib,Autonomous linear recurrent network,1,3,317,"Weight-space programming (WSP), Formula and examples",dev,early indices 9–32,24,24,0,0.0,257142.80212472018,0.016460182566097468
+fib,Autonomous linear recurrent network,1,3,317,"Weight-space programming (WSP), Formula and examples",outer,outer held-out,32,32,0,0.0,3172525733550.433,0.016460182566097468
+fib,Autonomous linear recurrent network,2,8,317,"Weight-space programming (WSP), Formula and examples",train,observed,9,9,9,1.0,0.0,0.0
+fib,Autonomous linear recurrent network,2,8,317,"Weight-space programming (WSP), Formula and examples",dev,early indices 9–32,24,24,24,1.0,0.0,0.0
+fib,Autonomous linear recurrent network,2,8,317,"Weight-space programming (WSP), Formula and examples",outer,outer held-out,32,32,32,1.0,0.0,0.0
+fib,Autonomous linear recurrent network,3,15,317,"Weight-space programming (WSP), Formula and examples",train,observed,9,9,9,1.0,0.0,0.0
+fib,Autonomous linear recurrent network,3,15,317,"Weight-space programming (WSP), Formula and examples",dev,early indices 9–32,24,24,24,1.0,0.0,0.0
+fib,Autonomous linear recurrent network,3,15,317,"Weight-space programming (WSP), Formula and examples",outer,outer held-out,32,32,32,1.0,0.0,0.0
+fib,Autonomous linear recurrent network,1,3,317,"Weight-space programming (WSP), Examples only",train,observed,9,9,0,0.0,0.29603108887400476,0.016460185239168302
+fib,Autonomous linear recurrent network,1,3,317,"Weight-space programming (WSP), Examples only",dev,early indices 9–32,24,24,0,0.0,256447.22036501925,0.016460185239168302
+fib,Autonomous linear recurrent network,1,3,317,"Weight-space programming (WSP), Examples only",outer,outer held-out,32,32,0,0.0,3162094713243.512,0.016460185239168302
+fib,Autonomous linear recurrent network,2,8,317,"Weight-space programming (WSP), Examples only",train,observed,9,9,9,1.0,0.0,0.0
+fib,Autonomous linear recurrent network,2,8,317,"Weight-space programming (WSP), Examples only",dev,early indices 9–32,24,24,24,1.0,0.0,0.0
+fib,Autonomous linear recurrent network,2,8,317,"Weight-space programming (WSP), Examples only",outer,outer held-out,32,32,32,1.0,0.0,0.0
+fib,Autonomous linear recurrent network,3,15,317,"Weight-space programming (WSP), Examples only",train,observed,9,9,9,1.0,0.0,0.0
+fib,Autonomous linear recurrent network,3,15,317,"Weight-space programming (WSP), Examples only",dev,early indices 9–32,24,24,24,1.0,0.0,0.0
+fib,Autonomous linear recurrent network,3,15,317,"Weight-space programming (WSP), Examples only",outer,outer held-out,32,32,32,1.0,0.0,0.0
+fib,Autonomous linear recurrent network,1,3,583,"Weight-space programming (WSP), Formula and examples",train,observed,9,9,0,0.0,0.7066560169034266,0.024197755770725613
+fib,Autonomous linear recurrent network,1,3,583,"Weight-space programming (WSP), Formula and examples",dev,early indices 9–32,24,24,0,0.0,339919.0611936822,0.024197755770725613
+fib,Autonomous linear recurrent network,1,3,583,"Weight-space programming (WSP), Formula and examples",outer,outer held-out,32,32,0,0.0,2078323127226.7961,0.024197755770725613
+fib,Autonomous linear recurrent network,2,8,583,"Weight-space programming (WSP), Formula and examples",train,observed,9,9,9,1.0,0.0,0.0
+fib,Autonomous linear recurrent network,2,8,583,"Weight-space programming (WSP), Formula and examples",dev,early indices 9–32,24,24,24,1.0,0.0,0.0
+fib,Autonomous linear recurrent network,2,8,583,"Weight-space programming (WSP), Formula and examples",outer,outer held-out,32,32,32,1.0,0.0,0.0
+fib,Autonomous linear recurrent network,3,15,583,"Weight-space programming (WSP), Formula and examples",train,observed,9,9,9,1.0,0.0,0.0
+fib,Autonomous linear recurrent network,3,15,583,"Weight-space programming (WSP), Formula and examples",dev,early indices 9–32,24,24,24,1.0,0.0,0.0
+fib,Autonomous linear recurrent network,3,15,583,"Weight-space programming (WSP), Formula and examples",outer,outer held-out,32,32,32,1.0,0.0,0.0
+fib,Autonomous linear recurrent network,1,3,583,"Weight-space programming (WSP), Examples only",train,observed,9,9,0,0.0,0.2965235553600244,0.016460182578906392
+fib,Autonomous linear recurrent network,1,3,583,"Weight-space programming (WSP), Examples only",dev,early indices 9–32,24,24,0,0.0,257101.59769552044,0.016460182578906392
+fib,Autonomous linear recurrent network,1,3,583,"Weight-space programming (WSP), Examples only",outer,outer held-out,32,32,0,0.0,3171922503531.09,0.016460182578906392
+fib,Autonomous linear recurrent network,2,8,583,"Weight-space programming (WSP), Examples only",train,observed,9,9,9,1.0,0.0,0.0
+fib,Autonomous linear recurrent network,2,8,583,"Weight-space programming (WSP), Examples only",dev,early indices 9–32,24,24,24,1.0,0.0,0.0
+fib,Autonomous linear recurrent network,2,8,583,"Weight-space programming (WSP), Examples only",outer,outer held-out,32,32,32,1.0,0.0,0.0
+fib,Autonomous linear recurrent network,3,15,583,"Weight-space programming (WSP), Examples only",train,observed,9,9,9,1.0,0.0,0.0
+fib,Autonomous linear recurrent network,3,15,583,"Weight-space programming (WSP), Examples only",dev,early indices 9–32,24,24,24,1.0,0.0,0.0
+fib,Autonomous linear recurrent network,3,15,583,"Weight-space programming (WSP), Examples only",outer,outer held-out,32,32,32,1.0,0.0,0.0
+tri,Autonomous linear recurrent network,2,8,164,"Weight-space programming (WSP), Formula and examples",train,observed,9,9,0,0.0,0.5094871109094999,0.0005474116742548018
+tri,Autonomous linear recurrent network,2,8,164,"Weight-space programming (WSP), Formula and examples",dev,early indices 9–32,24,24,0,0.0,29902.951976116077,0.0005474116742548018
+tri,Autonomous linear recurrent network,2,8,164,"Weight-space programming (WSP), Formula and examples",outer,outer held-out,32,32,0,0.0,1504596049.8578541,0.0005474116742548018
+tri,Autonomous linear recurrent network,3,15,164,"Weight-space programming (WSP), Formula and examples",train,observed,9,9,9,1.0,0.0,0.0
+tri,Autonomous linear recurrent network,3,15,164,"Weight-space programming (WSP), Formula and examples",dev,early indices 9–32,24,24,24,1.0,0.0,0.0
+tri,Autonomous linear recurrent network,3,15,164,"Weight-space programming (WSP), Formula and examples",outer,outer held-out,32,32,32,1.0,0.0,0.0
+tri,Autonomous linear recurrent network,4,24,164,"Weight-space programming (WSP), Formula and examples",train,observed,9,9,9,1.0,0.0,0.0
+tri,Autonomous linear recurrent network,4,24,164,"Weight-space programming (WSP), Formula and examples",dev,early indices 9–32,24,24,24,1.0,0.0,0.0
+tri,Autonomous linear recurrent network,4,24,164,"Weight-space programming (WSP), Formula and examples",outer,outer held-out,32,32,32,1.0,0.0,0.0
+tri,Autonomous linear recurrent network,2,8,164,"Weight-space programming (WSP), Examples only",train,observed,9,9,0,0.0,0.5261589474698983,0.0005526470976930792
+tri,Autonomous linear recurrent network,2,8,164,"Weight-space programming (WSP), Examples only",dev,early indices 9–32,24,24,0,0.0,31318.618737619792,0.0005526470976930792
+tri,Autonomous linear recurrent network,2,8,164,"Weight-space programming (WSP), Examples only",outer,outer held-out,32,32,0,0.0,1773610801.1808238,0.0005526470976930792
+tri,Autonomous linear recurrent network,3,15,164,"Weight-space programming (WSP), Examples only",train,observed,9,9,9,1.0,0.0,0.0
+tri,Autonomous linear recurrent network,3,15,164,"Weight-space programming (WSP), Examples only",dev,early indices 9–32,24,24,24,1.0,0.0,0.0
+tri,Autonomous linear recurrent network,3,15,164,"Weight-space programming (WSP), Examples only",outer,outer held-out,32,32,32,1.0,0.0,0.0
+tri,Autonomous linear recurrent network,4,24,164,"Weight-space programming (WSP), Examples only",train,observed,9,9,9,1.0,0.0,0.0
+tri,Autonomous linear recurrent network,4,24,164,"Weight-space programming (WSP), Examples only",dev,early indices 9–32,24,24,24,1.0,0.0,0.0
+tri,Autonomous linear recurrent network,4,24,164,"Weight-space programming (WSP), Examples only",outer,outer held-out,32,32,32,1.0,0.0,0.0
+tri,Autonomous linear recurrent network,2,8,317,"Weight-space programming (WSP), Formula and examples",train,observed,9,9,0,0.0,0.4847148713859087,0.000546416544133252
+tri,Autonomous linear recurrent network,2,8,317,"Weight-space programming (WSP), Formula and examples",dev,early indices 9–32,24,24,0,0.0,29775.853055349322,0.000546416544133252
+tri,Autonomous linear recurrent network,2,8,317,"Weight-space programming (WSP), Formula and examples",outer,outer held-out,32,32,0,0.0,1415096967.6865697,0.000546416544133252
+tri,Autonomous linear recurrent network,3,15,317,"Weight-space programming (WSP), Formula and examples",train,observed,9,9,9,1.0,0.0,0.0
+tri,Autonomous linear recurrent network,3,15,317,"Weight-space programming (WSP), Formula and examples",dev,early indices 9–32,24,24,24,1.0,0.0,0.0
+tri,Autonomous linear recurrent network,3,15,317,"Weight-space programming (WSP), Formula and examples",outer,outer held-out,32,32,32,1.0,0.0,0.0
+tri,Autonomous linear recurrent network,4,24,317,"Weight-space programming (WSP), Formula and examples",train,observed,9,9,9,1.0,0.0,0.0
+tri,Autonomous linear recurrent network,4,24,317,"Weight-space programming (WSP), Formula and examples",dev,early indices 9–32,24,24,24,1.0,0.0,0.0
+tri,Autonomous linear recurrent network,4,24,317,"Weight-space programming (WSP), Formula and examples",outer,outer held-out,32,32,32,1.0,0.0,0.0
+tri,Autonomous linear recurrent network,2,8,317,"Weight-space programming (WSP), Examples only",train,observed,9,9,0,0.0,0.5348447162287674,0.0005506926639478912
+tri,Autonomous linear recurrent network,2,8,317,"Weight-space programming (WSP), Examples only",dev,early indices 9–32,24,24,0,0.0,29683.48768159741,0.0005506926639478912
+tri,Autonomous linear recurrent network,2,8,317,"Weight-space programming (WSP), Examples only",outer,outer held-out,32,32,0,0.0,1543191719.023699,0.0005506926639478912
+tri,Autonomous linear recurrent network,3,15,317,"Weight-space programming (WSP), Examples only",train,observed,9,9,9,1.0,0.0,0.0
+tri,Autonomous linear recurrent network,3,15,317,"Weight-space programming (WSP), Examples only",dev,early indices 9–32,24,24,24,1.0,0.0,0.0
+tri,Autonomous linear recurrent network,3,15,317,"Weight-space programming (WSP), Examples only",outer,outer held-out,32,32,32,1.0,0.0,0.0
+tri,Autonomous linear recurrent network,4,24,317,"Weight-space programming (WSP), Examples only",train,observed,9,9,9,1.0,0.0,0.0
+tri,Autonomous linear recurrent network,4,24,317,"Weight-space programming (WSP), Examples only",dev,early indices 9–32,24,24,24,1.0,0.0,0.0
+tri,Autonomous linear recurrent network,4,24,317,"Weight-space programming (WSP), Examples only",outer,outer held-out,32,32,32,1.0,0.0,0.0
+tri,Autonomous linear recurrent network,2,8,583,"Weight-space programming (WSP), Formula and examples",train,observed,9,9,0,0.0,0.43958611131485537,0.0005559316356383814
+tri,Autonomous linear recurrent network,2,8,583,"Weight-space programming (WSP), Formula and examples",dev,early indices 9–32,24,24,0,0.0,27890.166206428377,0.0005559316356383814
+tri,Autonomous linear recurrent network,2,8,583,"Weight-space programming (WSP), Formula and examples",outer,outer held-out,32,32,0,0.0,1043577325.3753037,0.0005559316356383814
+tri,Autonomous linear recurrent network,3,15,583,"Weight-space programming (WSP), Formula and examples",train,observed,9,9,9,1.0,0.0,0.0
+tri,Autonomous linear recurrent network,3,15,583,"Weight-space programming (WSP), Formula and examples",dev,early indices 9–32,24,24,24,1.0,0.0,0.0
+tri,Autonomous linear recurrent network,3,15,583,"Weight-space programming (WSP), Formula and examples",outer,outer held-out,32,32,32,1.0,0.0,0.0
+tri,Autonomous linear recurrent network,4,24,583,"Weight-space programming (WSP), Formula and examples",train,observed,9,9,9,1.0,0.0,0.0
+tri,Autonomous linear recurrent network,4,24,583,"Weight-space programming (WSP), Formula and examples",dev,early indices 9–32,24,24,24,1.0,0.0,0.0
+tri,Autonomous linear recurrent network,4,24,583,"Weight-space programming (WSP), Formula and examples",outer,outer held-out,32,32,32,1.0,0.0,0.0
+tri,Autonomous linear recurrent network,2,8,583,"Weight-space programming (WSP), Examples only",train,observed,9,9,0,0.0,0.5514996994940532,0.0006383035150687746
+tri,Autonomous linear recurrent network,2,8,583,"Weight-space programming (WSP), Examples only",dev,early indices 9–32,24,24,0,0.0,30404.61412522815,0.0006383035150687746
+tri,Autonomous linear recurrent network,2,8,583,"Weight-space programming (WSP), Examples only",outer,outer held-out,32,32,0,0.0,1291416961.1238527,0.0006383035150687746
+tri,Autonomous linear recurrent network,3,15,583,"Weight-space programming (WSP), Examples only",train,observed,9,9,9,1.0,0.0,0.0
+tri,Autonomous linear recurrent network,3,15,583,"Weight-space programming (WSP), Examples only",dev,early indices 9–32,24,24,24,1.0,0.0,0.0
+tri,Autonomous linear recurrent network,3,15,583,"Weight-space programming (WSP), Examples only",outer,outer held-out,32,32,32,1.0,0.0,0.0
+tri,Autonomous linear recurrent network,4,24,583,"Weight-space programming (WSP), Examples only",train,observed,9,9,9,1.0,0.0,0.0
+tri,Autonomous linear recurrent network,4,24,583,"Weight-space programming (WSP), Examples only",dev,early indices 9–32,24,24,24,1.0,0.0,0.0
+tri,Autonomous linear recurrent network,4,24,583,"Weight-space programming (WSP), Examples only",outer,outer held-out,32,32,32,1.0,0.0,0.0
+add,Two-input ReLU MLP,1,5,164,"Weight-space programming (WSP), Formula and examples",train,observed,12,12,8,0.6666666666666666,2.3111135221866393e-16,1.9376070781288126e-32
+add,Two-input ReLU MLP,1,5,164,"Weight-space programming (WSP), Formula and examples",dev,central held-out,2048,2048,1265,0.61767578125,0.43054577528760546,1.9376070781288126e-32
+add,Two-input ReLU MLP,1,5,164,"Weight-space programming (WSP), Formula and examples",outer,outer held-out,2048,2048,1153,0.56298828125,5.188417536640434,1.9376070781288126e-32
+add,Two-input ReLU MLP,1,5,164,"Weight-space programming (WSP), Examples only",train,observed,12,12,2,0.16666666666666666,1.121270291988505e-15,3.9183451612925523e-31
+add,Two-input ReLU MLP,1,5,164,"Weight-space programming (WSP), Examples only",dev,central held-out,2048,2048,333,0.16259765625,1.017429737615249e-15,3.9183451612925523e-31
+add,Two-input ReLU MLP,1,5,164,"Weight-space programming (WSP), Examples only",outer,outer held-out,2048,2048,1081,0.52783203125,1.2135726712780407e-15,3.9183451612925523e-31
+add,Two-input ReLU MLP,1,5,164,Adam followed by BFGS,train,observed,12,12,1,0.08333333333333333,6.441845274070438e-16,5.900538708112705e-32
+add,Two-input ReLU MLP,1,5,164,Adam followed by BFGS,dev,central held-out,2048,2048,455,0.22216796875,0.43043812017860805,5.900538708112705e-32
+add,Two-input ReLU MLP,1,5,164,Adam followed by BFGS,outer,outer held-out,2048,2048,323,0.15771484375,5.188226023079619,5.900538708112705e-32
+add,Two-input ReLU MLP,1,5,164,Trust-region least squares,train,observed,12,12,8,0.6666666666666666,5.476600131522343e-16,9.832218350331736e-33
+add,Two-input ReLU MLP,1,5,164,Trust-region least squares,dev,central held-out,2048,2048,727,0.35498046875,0.3436105873241007,9.832218350331736e-33
+add,Two-input ReLU MLP,1,5,164,Trust-region least squares,outer,outer held-out,2048,2048,398,0.1943359375,5.025971635739195,9.832218350331736e-33
+add,Two-input ReLU MLP,1,5,164,Initial Xavier weights,train,observed,12,12,0,0.0,2.01595419805255,0.3380774512044569
+add,Two-input ReLU MLP,1,5,164,Initial Xavier weights,dev,central held-out,2048,2048,0,0.0,2.243565889543397,0.3380774512044569
+add,Two-input ReLU MLP,1,5,164,Initial Xavier weights,outer,outer held-out,2048,2048,0,0.0,8.904275488827174,0.3380774512044569
+add,Two-input ReLU MLP,2,9,164,"Weight-space programming (WSP), Formula and examples",train,observed,12,12,12,1.0,0.0,0.0
+add,Two-input ReLU MLP,2,9,164,"Weight-space programming (WSP), Formula and examples",dev,central held-out,2048,2048,2048,1.0,0.0,0.0
+add,Two-input ReLU MLP,2,9,164,"Weight-space programming (WSP), Formula and examples",outer,outer held-out,2048,2048,2048,1.0,0.0,0.0
+add,Two-input ReLU MLP,2,9,164,"Weight-space programming (WSP), Examples only",train,observed,12,12,12,1.0,0.0,0.0
+add,Two-input ReLU MLP,2,9,164,"Weight-space programming (WSP), Examples only",dev,central held-out,2048,2048,2048,1.0,0.0,0.0
+add,Two-input ReLU MLP,2,9,164,"Weight-space programming (WSP), Examples only",outer,outer held-out,2048,2048,2048,1.0,0.0,0.0
+add,Two-input ReLU MLP,2,9,164,Adam followed by BFGS,train,observed,12,12,2,0.16666666666666666,1.6152377837323443e-15,1.5894992192896664e-31
+add,Two-input ReLU MLP,2,9,164,Adam followed by BFGS,dev,central held-out,2048,2048,145,0.07080078125,0.33541622213200417,1.5894992192896664e-31
+add,Two-input ReLU MLP,2,9,164,Adam followed by BFGS,outer,outer held-out,2048,2048,47,0.02294921875,2.1049405045546883,1.5894992192896664e-31
+add,Two-input ReLU MLP,2,9,164,Trust-region least squares,train,observed,12,12,6,0.5,2.7194799110210365e-16,2.9720294373313803e-32
+add,Two-input ReLU MLP,2,9,164,Trust-region least squares,dev,central held-out,2048,2048,825,0.40283203125,0.03265139932421721,2.9720294373313803e-32
+add,Two-input ReLU MLP,2,9,164,Trust-region least squares,outer,outer held-out,2048,2048,428,0.208984375,4.1976819525038165,2.9720294373313803e-32
+add,Two-input ReLU MLP,2,9,164,Initial Xavier weights,train,observed,12,12,0,0.0,2.646944182307209,0.5992273813142752
+add,Two-input ReLU MLP,2,9,164,Initial Xavier weights,dev,central held-out,2048,2048,0,0.0,3.1084192141373377,0.5992273813142752
+add,Two-input ReLU MLP,2,9,164,Initial Xavier weights,outer,outer held-out,2048,2048,0,0.0,12.238967302431737,0.5992273813142752
+add,Two-input ReLU MLP,4,17,164,"Weight-space programming (WSP), Formula and examples",train,observed,12,12,12,1.0,0.0,0.0
+add,Two-input ReLU MLP,4,17,164,"Weight-space programming (WSP), Formula and examples",dev,central held-out,2048,2048,2048,1.0,0.0,0.0
+add,Two-input ReLU MLP,4,17,164,"Weight-space programming (WSP), Formula and examples",outer,outer held-out,2048,2048,2048,1.0,0.0,0.0
+add,Two-input ReLU MLP,4,17,164,"Weight-space programming (WSP), Examples only",train,observed,12,12,12,1.0,0.0,0.0
+add,Two-input ReLU MLP,4,17,164,"Weight-space programming (WSP), Examples only",dev,central held-out,2048,2048,2048,1.0,0.0,0.0
+add,Two-input ReLU MLP,4,17,164,"Weight-space programming (WSP), Examples only",outer,outer held-out,2048,2048,2048,1.0,0.0,0.0
+add,Two-input ReLU MLP,4,17,164,Adam followed by BFGS,train,observed,12,12,0,0.0,4.927116331519962e-15,3.8743507891608535e-30
+add,Two-input ReLU MLP,4,17,164,Adam followed by BFGS,dev,central held-out,2048,2048,0,0.0,0.1093799684860272,3.8743507891608535e-30
+add,Two-input ReLU MLP,4,17,164,Adam followed by BFGS,outer,outer held-out,2048,2048,165,0.08056640625,0.8150179824367104,3.8743507891608535e-30
+add,Two-input ReLU MLP,4,17,164,Trust-region least squares,train,observed,12,12,7,0.5833333333333334,1.8129866073473578e-16,1.0933424426440012e-32
+add,Two-input ReLU MLP,4,17,164,Trust-region least squares,dev,central held-out,2048,2048,424,0.20703125,0.08067106390172324,1.0933424426440012e-32
+add,Two-input ReLU MLP,4,17,164,Trust-region least squares,outer,outer held-out,2048,2048,344,0.16796875,0.09208784623073768,1.0933424426440012e-32
+add,Two-input ReLU MLP,4,17,164,Initial Xavier weights,train,observed,12,12,0,0.0,2.60472754052848,0.8033605099712524
+add,Two-input ReLU MLP,4,17,164,Initial Xavier weights,dev,central held-out,2048,2048,0,0.0,3.3759731990405735,0.8033605099712524
+add,Two-input ReLU MLP,4,17,164,Initial Xavier weights,outer,outer held-out,2048,2048,0,0.0,13.440343522639482,0.8033605099712524
+add,Two-input ReLU MLP,1,5,317,"Weight-space programming (WSP), Formula and examples",train,observed,12,12,2,0.16666666666666666,1.0648885158809838e-15,3.0461053218904973e-31
+add,Two-input ReLU MLP,1,5,317,"Weight-space programming (WSP), Formula and examples",dev,central held-out,2048,2048,333,0.16259765625,1.017429737615249e-15,3.0461053218904973e-31
+add,Two-input ReLU MLP,1,5,317,"Weight-space programming (WSP), Formula and examples",outer,outer held-out,2048,2048,1081,0.52783203125,1.2135726712780407e-15,3.0461053218904973e-31
+add,Two-input ReLU MLP,1,5,317,"Weight-space programming (WSP), Examples only",train,observed,12,12,11,0.9166666666666666,6.409875621278546e-17,1.6220894020620258e-33
+add,Two-input ReLU MLP,1,5,317,"Weight-space programming (WSP), Examples only",dev,central held-out,2048,2048,1286,0.6279296875,0.605424002189298,1.6220894020620258e-33
+add,Two-input ReLU MLP,1,5,317,"Weight-space programming (WSP), Examples only",outer,outer held-out,2048,2048,1150,0.5615234375,5.477386010883479,1.6220894020620258e-33
+add,Two-input ReLU MLP,1,5,317,Adam followed by BFGS,train,observed,12,12,0,0.0,1.7165143750690715,0.3920974275159823
+add,Two-input ReLU MLP,1,5,317,Adam followed by BFGS,dev,central held-out,2048,2048,0,0.0,2.5296259681231335,0.3920974275159823
+add,Two-input ReLU MLP,1,5,317,Adam followed by BFGS,outer,outer held-out,2048,2048,0,0.0,10.949061364981986,0.3920974275159823
+add,Two-input ReLU MLP,1,5,317,Trust-region least squares,train,observed,12,12,0,0.0,1.188391133873168,0.2903195336820306
+add,Two-input ReLU MLP,1,5,317,Trust-region least squares,dev,central held-out,2048,2048,0,0.0,2.211867571277116,0.2903195336820306
+add,Two-input ReLU MLP,1,5,317,Trust-region least squares,outer,outer held-out,2048,2048,0,0.0,16.740858457930347,0.2903195336820306
+add,Two-input ReLU MLP,1,5,317,Initial Xavier weights,train,observed,12,12,0,0.0,4.142714480670559,2.7663733022913894
+add,Two-input ReLU MLP,1,5,317,Initial Xavier weights,dev,central held-out,2048,2048,0,0.0,5.5450628110129685,2.7663733022913894
+add,Two-input ReLU MLP,1,5,317,Initial Xavier weights,outer,outer held-out,2048,2048,0,0.0,21.94940127827555,2.7663733022913894
+add,Two-input ReLU MLP,2,9,317,"Weight-space programming (WSP), Formula and examples",train,observed,12,12,12,1.0,0.0,0.0
+add,Two-input ReLU MLP,2,9,317,"Weight-space programming (WSP), Formula and examples",dev,central held-out,2048,2048,2048,1.0,0.0,0.0
+add,Two-input ReLU MLP,2,9,317,"Weight-space programming (WSP), Formula and examples",outer,outer held-out,2048,2048,2048,1.0,0.0,0.0
+add,Two-input ReLU MLP,2,9,317,"Weight-space programming (WSP), Examples only",train,observed,12,12,12,1.0,0.0,0.0
+add,Two-input ReLU MLP,2,9,317,"Weight-space programming (WSP), Examples only",dev,central held-out,2048,2048,2048,1.0,0.0,0.0
+add,Two-input ReLU MLP,2,9,317,"Weight-space programming (WSP), Examples only",outer,outer held-out,2048,2048,2048,1.0,0.0,0.0
+add,Two-input ReLU MLP,2,9,317,Adam followed by BFGS,train,observed,12,12,0,0.0,3.1471608093427364e-14,1.6809489416069815e-28
+add,Two-input ReLU MLP,2,9,317,Adam followed by BFGS,dev,central held-out,2048,2048,1,0.00048828125,3.52052311179448e-14,1.6809489416069815e-28
+add,Two-input ReLU MLP,2,9,317,Adam followed by BFGS,outer,outer held-out,2048,2048,1,0.00048828125,1.2517373560155875e-13,1.6809489416069815e-28
+add,Two-input ReLU MLP,2,9,317,Trust-region least squares,train,observed,12,12,6,0.5,2.482534153247273e-16,2.66268244530085e-32
+add,Two-input ReLU MLP,2,9,317,Trust-region least squares,dev,central held-out,2048,2048,432,0.2109375,0.5122401954875351,2.66268244530085e-32
+add,Two-input ReLU MLP,2,9,317,Trust-region least squares,outer,outer held-out,2048,2048,131,0.06396484375,4.54845408747637,2.66268244530085e-32
+add,Two-input ReLU MLP,2,9,317,Initial Xavier weights,train,observed,12,12,0,0.0,1.6100883068859073,0.36629305981583665
+add,Two-input ReLU MLP,2,9,317,Initial Xavier weights,dev,central held-out,2048,2048,0,0.0,2.260534260937769,0.36629305981583665
+add,Two-input ReLU MLP,2,9,317,Initial Xavier weights,outer,outer held-out,2048,2048,0,0.0,9.029139454993377,0.36629305981583665
+add,Two-input ReLU MLP,4,17,317,"Weight-space programming (WSP), Formula and examples",train,observed,12,12,12,1.0,0.0,0.0
+add,Two-input ReLU MLP,4,17,317,"Weight-space programming (WSP), Formula and examples",dev,central held-out,2048,2048,2048,1.0,0.0,0.0
+add,Two-input ReLU MLP,4,17,317,"Weight-space programming (WSP), Formula and examples",outer,outer held-out,2048,2048,2048,1.0,0.0,0.0
+add,Two-input ReLU MLP,4,17,317,"Weight-space programming (WSP), Examples only",train,observed,12,12,12,1.0,0.0,0.0
+add,Two-input ReLU MLP,4,17,317,"Weight-space programming (WSP), Examples only",dev,central held-out,2048,2048,2048,1.0,0.0,0.0
+add,Two-input ReLU MLP,4,17,317,"Weight-space programming (WSP), Examples only",outer,outer held-out,2048,2048,2048,1.0,0.0,0.0
+add,Two-input ReLU MLP,4,17,317,Adam followed by BFGS,train,observed,12,12,0,0.0,1.9442115379207104e-15,6.023208017986696e-31
+add,Two-input ReLU MLP,4,17,317,Adam followed by BFGS,dev,central held-out,2048,2048,68,0.033203125,0.3590920896068153,6.023208017986696e-31
+add,Two-input ReLU MLP,4,17,317,Adam followed by BFGS,outer,outer held-out,2048,2048,32,0.015625,3.97167395507845,6.023208017986696e-31
+add,Two-input ReLU MLP,4,17,317,Trust-region least squares,train,observed,12,12,5,0.4166666666666667,2.0014830212433605e-16,1.0167349577888332e-32
+add,Two-input ReLU MLP,4,17,317,Trust-region least squares,dev,central held-out,2048,2048,565,0.27587890625,0.0878934809038224,1.0167349577888332e-32
+add,Two-input ReLU MLP,4,17,317,Trust-region least squares,outer,outer held-out,2048,2048,287,0.14013671875,1.0683296839605398,1.0167349577888332e-32
+add,Two-input ReLU MLP,4,17,317,Initial Xavier weights,train,observed,12,12,0,0.0,3.6501460640610093,2.956651314836663
+add,Two-input ReLU MLP,4,17,317,Initial Xavier weights,dev,central held-out,2048,2048,0,0.0,4.16314227048782,2.956651314836663
+add,Two-input ReLU MLP,4,17,317,Initial Xavier weights,outer,outer held-out,2048,2048,0,0.0,16.357567274515805,2.956651314836663
+add,Two-input ReLU MLP,1,5,583,"Weight-space programming (WSP), Formula and examples",train,observed,12,12,9,0.75,1.1102230246251565e-16,6.162975822039155e-33
+add,Two-input ReLU MLP,1,5,583,"Weight-space programming (WSP), Formula and examples",dev,central held-out,2048,2048,1262,0.6162109375,0.4612814587154881,6.162975822039155e-33
+add,Two-input ReLU MLP,1,5,583,"Weight-space programming (WSP), Formula and examples",outer,outer held-out,2048,2048,1180,0.576171875,5.242304040329367,6.162975822039155e-33
+add,Two-input ReLU MLP,1,5,583,"Weight-space programming (WSP), Examples only",train,observed,12,12,2,0.16666666666666666,1.0235750533041808e-15,4.0738077042911905e-31
+add,Two-input ReLU MLP,1,5,583,"Weight-space programming (WSP), Examples only",dev,central held-out,2048,2048,333,0.16259765625,1.017429737615249e-15,4.0738077042911905e-31
+add,Two-input ReLU MLP,1,5,583,"Weight-space programming (WSP), Examples only",outer,outer held-out,2048,2048,1081,0.52783203125,1.2135726712780407e-15,4.0738077042911905e-31
+add,Two-input ReLU MLP,1,5,583,Adam followed by BFGS,train,observed,12,12,0,0.0,2.1027934803352704,0.29066993749214237
+add,Two-input ReLU MLP,1,5,583,Adam followed by BFGS,dev,central held-out,2048,2048,0,0.0,2.4354071271302926,0.29066993749214237
+add,Two-input ReLU MLP,1,5,583,Adam followed by BFGS,outer,outer held-out,2048,2048,0,0.0,9.631134891616435,0.29066993749214237
+add,Two-input ReLU MLP,1,5,583,Trust-region least squares,train,observed,12,12,5,0.4166666666666667,4.753690988499733e-16,1.917814656927003e-32
+add,Two-input ReLU MLP,1,5,583,Trust-region least squares,dev,central held-out,2048,2048,781,0.38134765625,0.291739900088731,1.917814656927003e-32
+add,Two-input ReLU MLP,1,5,583,Trust-region least squares,outer,outer held-out,2048,2048,529,0.25830078125,4.998095457972011,1.917814656927003e-32
+add,Two-input ReLU MLP,1,5,583,Initial Xavier weights,train,observed,12,12,0,0.0,2.3384685122580153,0.4090137693000786
+add,Two-input ReLU MLP,1,5,583,Initial Xavier weights,dev,central held-out,2048,2048,0,0.0,2.641221464510324,0.4090137693000786
+add,Two-input ReLU MLP,1,5,583,Initial Xavier weights,outer,outer held-out,2048,2048,0,0.0,10.544277186640956,0.4090137693000786
+add,Two-input ReLU MLP,2,9,583,"Weight-space programming (WSP), Formula and examples",train,observed,12,12,12,1.0,0.0,0.0
+add,Two-input ReLU MLP,2,9,583,"Weight-space programming (WSP), Formula and examples",dev,central held-out,2048,2048,2048,1.0,0.0,0.0
+add,Two-input ReLU MLP,2,9,583,"Weight-space programming (WSP), Formula and examples",outer,outer held-out,2048,2048,2048,1.0,0.0,0.0
+add,Two-input ReLU MLP,2,9,583,"Weight-space programming (WSP), Examples only",train,observed,12,12,12,1.0,0.0,0.0
+add,Two-input ReLU MLP,2,9,583,"Weight-space programming (WSP), Examples only",dev,central held-out,2048,2048,2048,1.0,0.0,0.0
+add,Two-input ReLU MLP,2,9,583,"Weight-space programming (WSP), Examples only",outer,outer held-out,2048,2048,2048,1.0,0.0,0.0
+add,Two-input ReLU MLP,2,9,583,Adam followed by BFGS,train,observed,12,12,0,0.0,2.1027934803352704,0.29066993749214237
+add,Two-input ReLU MLP,2,9,583,Adam followed by BFGS,dev,central held-out,2048,2048,0,0.0,2.4354071271302926,0.29066993749214237
+add,Two-input ReLU MLP,2,9,583,Adam followed by BFGS,outer,outer held-out,2048,2048,0,0.0,9.730769944878631,0.29066993749214237
+add,Two-input ReLU MLP,2,9,583,Trust-region least squares,train,observed,12,12,2,0.16666666666666666,3.568867705432764e-16,3.511764993058251e-32
+add,Two-input ReLU MLP,2,9,583,Trust-region least squares,dev,central held-out,2048,2048,492,0.240234375,0.44751257454590976,3.511764993058251e-32
+add,Two-input ReLU MLP,2,9,583,Trust-region least squares,outer,outer held-out,2048,2048,324,0.158203125,5.218353655727475,3.511764993058251e-32
+add,Two-input ReLU MLP,2,9,583,Initial Xavier weights,train,observed,12,12,0,0.0,3.747299159187244,1.0172074453606161
+add,Two-input ReLU MLP,2,9,583,Initial Xavier weights,dev,central held-out,2048,2048,0,0.0,4.223177076004087,1.0172074453606161
+add,Two-input ReLU MLP,2,9,583,Initial Xavier weights,outer,outer held-out,2048,2048,0,0.0,16.790355647414167,1.0172074453606161
+add,Two-input ReLU MLP,4,17,583,"Weight-space programming (WSP), Formula and examples",train,observed,12,12,12,1.0,0.0,0.0
+add,Two-input ReLU MLP,4,17,583,"Weight-space programming (WSP), Formula and examples",dev,central held-out,2048,2048,2048,1.0,0.0,0.0
+add,Two-input ReLU MLP,4,17,583,"Weight-space programming (WSP), Formula and examples",outer,outer held-out,2048,2048,2048,1.0,0.0,0.0
+add,Two-input ReLU MLP,4,17,583,"Weight-space programming (WSP), Examples only",train,observed,12,12,12,1.0,0.0,0.0
+add,Two-input ReLU MLP,4,17,583,"Weight-space programming (WSP), Examples only",dev,central held-out,2048,2048,2048,1.0,0.0,0.0
+add,Two-input ReLU MLP,4,17,583,"Weight-space programming (WSP), Examples only",outer,outer held-out,2048,2048,2048,1.0,0.0,0.0
+add,Two-input ReLU MLP,4,17,583,Adam followed by BFGS,train,observed,12,12,0,0.0,1.6028029852621917e-14,2.7055370858193055e-29
+add,Two-input ReLU MLP,4,17,583,Adam followed by BFGS,dev,central held-out,2048,2048,10,0.0048828125,2.1033313730232106e-14,2.7055370858193055e-29
+add,Two-input ReLU MLP,4,17,583,Adam followed by BFGS,outer,outer held-out,2048,2048,13,0.00634765625,4.107771596012815e-14,2.7055370858193055e-29
+add,Two-input ReLU MLP,4,17,583,Trust-region least squares,train,observed,12,12,8,0.6666666666666666,2.221891181879215e-16,2.7019209377679558e-33
+add,Two-input ReLU MLP,4,17,583,Trust-region least squares,dev,central held-out,2048,2048,550,0.2685546875,1.3813210208439005e-05,2.7019209377679558e-33
+add,Two-input ReLU MLP,4,17,583,Trust-region least squares,outer,outer held-out,2048,2048,547,0.26708984375,3.444011705836139e-05,2.7019209377679558e-33
+add,Two-input ReLU MLP,4,17,583,Initial Xavier weights,train,observed,12,12,0,0.0,1.7647977049568646,0.30034247629305627
+add,Two-input ReLU MLP,4,17,583,Initial Xavier weights,dev,central held-out,2048,2048,0,0.0,2.1895030567759446,0.30034247629305627
+add,Two-input ReLU MLP,4,17,583,Initial Xavier weights,outer,outer held-out,2048,2048,0,0.0,8.723960414312872,0.30034247629305627
+subtract,Two-input ReLU MLP,1,5,164,"Weight-space programming (WSP), Formula and examples",train,observed,12,12,1,0.08333333333333333,7.280219232244092e-16,8.517288648671896e-32
+subtract,Two-input ReLU MLP,1,5,164,"Weight-space programming (WSP), Formula and examples",dev,central held-out,2048,2048,315,0.15380859375,1.0315990814727745e-15,8.517288648671896e-32
+subtract,Two-input ReLU MLP,1,5,164,"Weight-space programming (WSP), Formula and examples",outer,outer held-out,2048,2048,1097,0.53564453125,1.1967530251240512e-15,8.517288648671896e-32
+subtract,Two-input ReLU MLP,1,5,164,"Weight-space programming (WSP), Examples only",train,observed,12,12,1,0.08333333333333333,7.280219232244092e-16,8.517288648671896e-32
+subtract,Two-input ReLU MLP,1,5,164,"Weight-space programming (WSP), Examples only",dev,central held-out,2048,2048,315,0.15380859375,1.0315990814727745e-15,8.517288648671896e-32
+subtract,Two-input ReLU MLP,1,5,164,"Weight-space programming (WSP), Examples only",outer,outer held-out,2048,2048,1097,0.53564453125,1.1967530251240512e-15,8.517288648671896e-32
+subtract,Two-input ReLU MLP,1,5,164,Adam followed by BFGS,train,observed,12,12,0,0.0,8.33283830766211e-16,1.5147375500693782e-31
+subtract,Two-input ReLU MLP,1,5,164,Adam followed by BFGS,dev,central held-out,2048,2048,286,0.1396484375,0.23967228985399058,1.5147375500693782e-31
+subtract,Two-input ReLU MLP,1,5,164,Adam followed by BFGS,outer,outer held-out,2048,2048,223,0.10888671875,4.7707600278685405,1.5147375500693782e-31
+subtract,Two-input ReLU MLP,1,5,164,Trust-region least squares,train,observed,12,12,4,0.3333333333333333,5.909613325609543e-16,3.3613536544643226e-32
+subtract,Two-input ReLU MLP,1,5,164,Trust-region least squares,dev,central held-out,2048,2048,773,0.37744140625,0.20088680002464573,3.3613536544643226e-32
+subtract,Two-input ReLU MLP,1,5,164,Trust-region least squares,outer,outer held-out,2048,2048,571,0.27880859375,4.671125383175487,3.3613536544643226e-32
+subtract,Two-input ReLU MLP,1,5,164,Initial Xavier weights,train,observed,12,12,0,0.0,2.1988100049613974,0.31544206419275456
+subtract,Two-input ReLU MLP,1,5,164,Initial Xavier weights,dev,central held-out,2048,2048,0,0.0,2.254640429065151,0.31544206419275456
+subtract,Two-input ReLU MLP,1,5,164,Initial Xavier weights,outer,outer held-out,2048,2048,0,0.0,8.707107719170098,0.31544206419275456
+subtract,Two-input ReLU MLP,2,9,164,"Weight-space programming (WSP), Formula and examples",train,observed,12,12,12,1.0,0.0,0.0
+subtract,Two-input ReLU MLP,2,9,164,"Weight-space programming (WSP), Formula and examples",dev,central held-out,2048,2048,2048,1.0,0.0,0.0
+subtract,Two-input ReLU MLP,2,9,164,"Weight-space programming (WSP), Formula and examples",outer,outer held-out,2048,2048,2048,1.0,0.0,0.0
+subtract,Two-input ReLU MLP,2,9,164,"Weight-space programming (WSP), Examples only",train,observed,12,12,12,1.0,0.0,0.0
+subtract,Two-input ReLU MLP,2,9,164,"Weight-space programming (WSP), Examples only",dev,central held-out,2048,2048,2048,1.0,0.0,0.0
+subtract,Two-input ReLU MLP,2,9,164,"Weight-space programming (WSP), Examples only",outer,outer held-out,2048,2048,2048,1.0,0.0,0.0
+subtract,Two-input ReLU MLP,2,9,164,Adam followed by BFGS,train,observed,12,12,0,0.0,8.757375277205012e-15,5.030962200286367e-30
+subtract,Two-input ReLU MLP,2,9,164,Adam followed by BFGS,dev,central held-out,2048,2048,15,0.00732421875,1.1887873815585867e-14,5.030962200286367e-30
+subtract,Two-input ReLU MLP,2,9,164,Adam followed by BFGS,outer,outer held-out,2048,2048,3,0.00146484375,5.0651353246172616e-14,5.030962200286367e-30
+subtract,Two-input ReLU MLP,2,9,164,Trust-region least squares,train,observed,12,12,2,0.16666666666666666,3.173738112879707e-16,7.256532955676202e-33
+subtract,Two-input ReLU MLP,2,9,164,Trust-region least squares,dev,central held-out,2048,2048,873,0.42626953125,3.1968046244574966e-16,7.256532955676202e-33
+subtract,Two-input ReLU MLP,2,9,164,Trust-region least squares,outer,outer held-out,2048,2048,769,0.37548828125,1.2834710766174366e-15,7.256532955676202e-33
+subtract,Two-input ReLU MLP,2,9,164,Initial Xavier weights,train,observed,12,12,0,0.0,2.0299824789603407,0.3157465282720748
+subtract,Two-input ReLU MLP,2,9,164,Initial Xavier weights,dev,central held-out,2048,2048,0,0.0,2.0932995944126436,0.3157465282720748
+subtract,Two-input ReLU MLP,2,9,164,Initial Xavier weights,outer,outer held-out,2048,2048,0,0.0,8.131734470746915,0.3157465282720748
+subtract,Two-input ReLU MLP,4,17,164,"Weight-space programming (WSP), Formula and examples",train,observed,12,12,12,1.0,0.0,0.0
+subtract,Two-input ReLU MLP,4,17,164,"Weight-space programming (WSP), Formula and examples",dev,central held-out,2048,2048,2048,1.0,0.0,0.0
+subtract,Two-input ReLU MLP,4,17,164,"Weight-space programming (WSP), Formula and examples",outer,outer held-out,2048,2048,2048,1.0,0.0,0.0
+subtract,Two-input ReLU MLP,4,17,164,"Weight-space programming (WSP), Examples only",train,observed,12,12,12,1.0,0.0,0.0
+subtract,Two-input ReLU MLP,4,17,164,"Weight-space programming (WSP), Examples only",dev,central held-out,2048,2048,2048,1.0,0.0,0.0
+subtract,Two-input ReLU MLP,4,17,164,"Weight-space programming (WSP), Examples only",outer,outer held-out,2048,2048,2048,1.0,0.0,0.0
+subtract,Two-input ReLU MLP,4,17,164,Adam followed by BFGS,train,observed,12,12,0,0.0,3.0794234723091434e-14,6.215196321967051e-29
+subtract,Two-input ReLU MLP,4,17,164,Adam followed by BFGS,dev,central held-out,2048,2048,3,0.00146484375,3.8845567884351643e-14,6.215196321967051e-29
+subtract,Two-input ReLU MLP,4,17,164,Adam followed by BFGS,outer,outer held-out,2048,2048,1,0.00048828125,1.353718946039644e-13,6.215196321967051e-29
+subtract,Two-input ReLU MLP,4,17,164,Trust-region least squares,train,observed,12,12,4,0.3333333333333333,3.224470972400823e-16,4.7302375659235704e-33
+subtract,Two-input ReLU MLP,4,17,164,Trust-region least squares,dev,central held-out,2048,2048,557,0.27197265625,3.7187445425105733e-16,4.7302375659235704e-33
+subtract,Two-input ReLU MLP,4,17,164,Trust-region least squares,outer,outer held-out,2048,2048,585,0.28564453125,1.3867339704458267e-15,4.7302375659235704e-33
+subtract,Two-input ReLU MLP,4,17,164,Initial Xavier weights,train,observed,12,12,0,0.0,1.6842292079049317,0.16544807614641485
+subtract,Two-input ReLU MLP,4,17,164,Initial Xavier weights,dev,central held-out,2048,2048,0,0.0,1.4944287007595096,0.16544807614641485
+subtract,Two-input ReLU MLP,4,17,164,Initial Xavier weights,outer,outer held-out,2048,2048,0,0.0,5.752803498835133,0.16544807614641485
+subtract,Two-input ReLU MLP,1,5,317,"Weight-space programming (WSP), Formula and examples",train,observed,12,12,9,0.75,1.1102230246251565e-16,4.734507101254088e-33
+subtract,Two-input ReLU MLP,1,5,317,"Weight-space programming (WSP), Formula and examples",dev,central held-out,2048,2048,1240,0.60546875,0.602679344519014,4.734507101254088e-33
+subtract,Two-input ReLU MLP,1,5,317,"Weight-space programming (WSP), Formula and examples",outer,outer held-out,2048,2048,1272,0.62109375,5.3204687580257195,4.734507101254088e-33
+subtract,Two-input ReLU MLP,1,5,317,"Weight-space programming (WSP), Examples only",train,observed,12,12,9,0.75,1.1102230246251565e-16,4.734507101254088e-33
+subtract,Two-input ReLU MLP,1,5,317,"Weight-space programming (WSP), Examples only",dev,central held-out,2048,2048,1240,0.60546875,0.6026157216000126,4.734507101254088e-33
+subtract,Two-input ReLU MLP,1,5,317,"Weight-space programming (WSP), Examples only",outer,outer held-out,2048,2048,1272,0.62109375,5.32037696826797,4.734507101254088e-33
+subtract,Two-input ReLU MLP,1,5,317,Adam followed by BFGS,train,observed,12,12,1,0.08333333333333333,4.980353738283416e-15,6.289716254331336e-30
+subtract,Two-input ReLU MLP,1,5,317,Adam followed by BFGS,dev,central held-out,2048,2048,46,0.0224609375,0.05228319385942553,6.289716254331336e-30
+subtract,Two-input ReLU MLP,1,5,317,Adam followed by BFGS,outer,outer held-out,2048,2048,39,0.01904296875,4.183687086733069,6.289716254331336e-30
+subtract,Two-input ReLU MLP,1,5,317,Trust-region least squares,train,observed,12,12,3,0.25,5.006272899369273e-16,4.7435091671619385e-32
+subtract,Two-input ReLU MLP,1,5,317,Trust-region least squares,dev,central held-out,2048,2048,524,0.255859375,0.016897208378464108,4.7435091671619385e-32
+subtract,Two-input ReLU MLP,1,5,317,Trust-region least squares,outer,outer held-out,2048,2048,398,0.1943359375,4.001415486836394,4.7435091671619385e-32
+subtract,Two-input ReLU MLP,1,5,317,Initial Xavier weights,train,observed,12,12,0,0.0,3.903680209421677,2.8241284971619582
+subtract,Two-input ReLU MLP,1,5,317,Initial Xavier weights,dev,central held-out,2048,2048,0,0.0,4.4716858077719746,2.8241284971619582
+subtract,Two-input ReLU MLP,1,5,317,Initial Xavier weights,outer,outer held-out,2048,2048,0,0.0,17.618721814426827,2.8241284971619582
+subtract,Two-input ReLU MLP,2,9,317,"Weight-space programming (WSP), Formula and examples",train,observed,12,12,12,1.0,0.0,0.0
+subtract,Two-input ReLU MLP,2,9,317,"Weight-space programming (WSP), Formula and examples",dev,central held-out,2048,2048,2048,1.0,0.0,0.0
+subtract,Two-input ReLU MLP,2,9,317,"Weight-space programming (WSP), Formula and examples",outer,outer held-out,2048,2048,2048,1.0,0.0,0.0
+subtract,Two-input ReLU MLP,2,9,317,"Weight-space programming (WSP), Examples only",train,observed,12,12,12,1.0,0.0,0.0
+subtract,Two-input ReLU MLP,2,9,317,"Weight-space programming (WSP), Examples only",dev,central held-out,2048,2048,2048,1.0,0.0,0.0
+subtract,Two-input ReLU MLP,2,9,317,"Weight-space programming (WSP), Examples only",outer,outer held-out,2048,2048,2048,1.0,0.0,0.0
+subtract,Two-input ReLU MLP,2,9,317,Adam followed by BFGS,train,observed,12,12,6,0.5,5.661048867003676e-16,2.523015022379573e-32
+subtract,Two-input ReLU MLP,2,9,317,Adam followed by BFGS,dev,central held-out,2048,2048,518,0.2529296875,0.34236713720287576,2.523015022379573e-32
+subtract,Two-input ReLU MLP,2,9,317,Adam followed by BFGS,outer,outer held-out,2048,2048,50,0.0244140625,3.6440333906254585,2.523015022379573e-32
+subtract,Two-input ReLU MLP,2,9,317,Trust-region least squares,train,observed,12,12,7,0.5833333333333334,5.33648612019238e-16,8.94004186504197e-33
+subtract,Two-input ReLU MLP,2,9,317,Trust-region least squares,dev,central held-out,2048,2048,835,0.40771484375,3.291840630929663e-16,8.94004186504197e-33
+subtract,Two-input ReLU MLP,2,9,317,Trust-region least squares,outer,outer held-out,2048,2048,724,0.353515625,1.187688249187444e-15,8.94004186504197e-33
+subtract,Two-input ReLU MLP,2,9,317,Initial Xavier weights,train,observed,12,12,0,0.0,2.6582958640286054,0.47684749920736635
+subtract,Two-input ReLU MLP,2,9,317,Initial Xavier weights,dev,central held-out,2048,2048,0,0.0,2.6866003938915504,0.47684749920736635
+subtract,Two-input ReLU MLP,2,9,317,Initial Xavier weights,outer,outer held-out,2048,2048,0,0.0,10.290160109482512,0.47684749920736635
+subtract,Two-input ReLU MLP,4,17,317,"Weight-space programming (WSP), Formula and examples",train,observed,12,12,12,1.0,0.0,0.0
+subtract,Two-input ReLU MLP,4,17,317,"Weight-space programming (WSP), Formula and examples",dev,central held-out,2048,2048,2048,1.0,0.0,0.0
+subtract,Two-input ReLU MLP,4,17,317,"Weight-space programming (WSP), Formula and examples",outer,outer held-out,2048,2048,2048,1.0,0.0,0.0
+subtract,Two-input ReLU MLP,4,17,317,"Weight-space programming (WSP), Examples only",train,observed,12,12,12,1.0,0.0,0.0
+subtract,Two-input ReLU MLP,4,17,317,"Weight-space programming (WSP), Examples only",dev,central held-out,2048,2048,2048,1.0,0.0,0.0
+subtract,Two-input ReLU MLP,4,17,317,"Weight-space programming (WSP), Examples only",outer,outer held-out,2048,2048,2048,1.0,0.0,0.0
+subtract,Two-input ReLU MLP,4,17,317,Adam followed by BFGS,train,observed,12,12,0,0.0,6.160858380603452e-14,2.219651077504421e-28
+subtract,Two-input ReLU MLP,4,17,317,Adam followed by BFGS,dev,central held-out,2048,2048,3,0.00146484375,6.136073942749934e-14,2.219651077504421e-28
+subtract,Two-input ReLU MLP,4,17,317,Adam followed by BFGS,outer,outer held-out,2048,2048,0,0.0,2.5306166485968546e-13,2.219651077504421e-28
+subtract,Two-input ReLU MLP,4,17,317,Trust-region least squares,train,observed,12,12,5,0.4166666666666667,4.512593409410421e-16,1.4355301549711765e-32
+subtract,Two-input ReLU MLP,4,17,317,Trust-region least squares,dev,central held-out,2048,2048,362,0.1767578125,6.732007643860627e-16,1.4355301549711765e-32
+subtract,Two-input ReLU MLP,4,17,317,Trust-region least squares,outer,outer held-out,2048,2048,191,0.09326171875,2.9137218358049004e-15,1.4355301549711765e-32
+subtract,Two-input ReLU MLP,4,17,317,Initial Xavier weights,train,observed,12,12,0,0.0,0.8546745628191459,0.2054140400441922
+subtract,Two-input ReLU MLP,4,17,317,Initial Xavier weights,dev,central held-out,2048,2048,0,0.0,1.2863367887517476,0.2054140400441922
+subtract,Two-input ReLU MLP,4,17,317,Initial Xavier weights,outer,outer held-out,2048,2048,0,0.0,5.101051639837465,0.2054140400441922
+subtract,Two-input ReLU MLP,1,5,583,"Weight-space programming (WSP), Formula and examples",train,observed,12,12,2,0.16666666666666666,1.0934428697813141e-15,2.193665391708671e-31
+subtract,Two-input ReLU MLP,1,5,583,"Weight-space programming (WSP), Formula and examples",dev,central held-out,2048,2048,315,0.15380859375,1.0315990814727745e-15,2.193665391708671e-31
+subtract,Two-input ReLU MLP,1,5,583,"Weight-space programming (WSP), Formula and examples",outer,outer held-out,2048,2048,1097,0.53564453125,1.1967530251240512e-15,2.193665391708671e-31
+subtract,Two-input ReLU MLP,1,5,583,"Weight-space programming (WSP), Examples only",train,observed,12,12,2,0.16666666666666666,1.0934428697813141e-15,2.193665391708671e-31
+subtract,Two-input ReLU MLP,1,5,583,"Weight-space programming (WSP), Examples only",dev,central held-out,2048,2048,315,0.15380859375,1.0315990814727745e-15,2.193665391708671e-31
+subtract,Two-input ReLU MLP,1,5,583,"Weight-space programming (WSP), Examples only",outer,outer held-out,2048,2048,1097,0.53564453125,1.1967530251240512e-15,2.193665391708671e-31
+subtract,Two-input ReLU MLP,1,5,583,Adam followed by BFGS,train,observed,12,12,6,0.5,4.577566798522238e-16,4.6664982465853704e-32
+subtract,Two-input ReLU MLP,1,5,583,Adam followed by BFGS,dev,central held-out,2048,2048,734,0.3583984375,0.15160338126673706,4.6664982465853704e-32
+subtract,Two-input ReLU MLP,1,5,583,Adam followed by BFGS,outer,outer held-out,2048,2048,693,0.33837890625,4.461851414345104,4.6664982465853704e-32
+subtract,Two-input ReLU MLP,1,5,583,Trust-region least squares,train,observed,12,12,7,0.5833333333333334,6.114631631344405e-16,2.55091785908329e-32
+subtract,Two-input ReLU MLP,1,5,583,Trust-region least squares,dev,central held-out,2048,2048,585,0.28564453125,0.10598660019548098,2.55091785908329e-32
+subtract,Two-input ReLU MLP,1,5,583,Trust-region least squares,outer,outer held-out,2048,2048,443,0.21630859375,4.330382394970031,2.55091785908329e-32
+subtract,Two-input ReLU MLP,1,5,583,Initial Xavier weights,train,observed,12,12,0,0.0,2.7971770152728,0.531616078917155
+subtract,Two-input ReLU MLP,1,5,583,Initial Xavier weights,dev,central held-out,2048,2048,0,0.0,2.4222615905298253,0.531616078917155
+subtract,Two-input ReLU MLP,1,5,583,Initial Xavier weights,outer,outer held-out,2048,2048,0,0.0,9.303192160194323,0.531616078917155
+subtract,Two-input ReLU MLP,2,9,583,"Weight-space programming (WSP), Formula and examples",train,observed,12,12,12,1.0,0.0,0.0
+subtract,Two-input ReLU MLP,2,9,583,"Weight-space programming (WSP), Formula and examples",dev,central held-out,2048,2048,2048,1.0,0.0,0.0
+subtract,Two-input ReLU MLP,2,9,583,"Weight-space programming (WSP), Formula and examples",outer,outer held-out,2048,2048,2048,1.0,0.0,0.0
+subtract,Two-input ReLU MLP,2,9,583,"Weight-space programming (WSP), Examples only",train,observed,12,12,12,1.0,0.0,0.0
+subtract,Two-input ReLU MLP,2,9,583,"Weight-space programming (WSP), Examples only",dev,central held-out,2048,2048,2048,1.0,0.0,0.0
+subtract,Two-input ReLU MLP,2,9,583,"Weight-space programming (WSP), Examples only",outer,outer held-out,2048,2048,2048,1.0,0.0,0.0
+subtract,Two-input ReLU MLP,2,9,583,Adam followed by BFGS,train,observed,12,12,3,0.25,8.858624355242667e-16,6.59569975953678e-32
+subtract,Two-input ReLU MLP,2,9,583,Adam followed by BFGS,dev,central held-out,2048,2048,453,0.22119140625,0.08883279003505458,6.59569975953678e-32
+subtract,Two-input ReLU MLP,2,9,583,Adam followed by BFGS,outer,outer held-out,2048,2048,54,0.0263671875,4.3292304379101525,6.59569975953678e-32
+subtract,Two-input ReLU MLP,2,9,583,Trust-region least squares,train,observed,12,12,8,0.6666666666666666,2.7940000073818173e-16,5.824310283946543e-33
+subtract,Two-input ReLU MLP,2,9,583,Trust-region least squares,dev,central held-out,2048,2048,860,0.419921875,3.6819888885922903e-16,5.824310283946543e-33
+subtract,Two-input ReLU MLP,2,9,583,Trust-region least squares,outer,outer held-out,2048,2048,770,0.3759765625,1.2209514482986773e-15,5.824310283946543e-33
+subtract,Two-input ReLU MLP,2,9,583,Initial Xavier weights,train,observed,12,12,0,0.0,3.1079854967430207,1.3831489866393392
+subtract,Two-input ReLU MLP,2,9,583,Initial Xavier weights,dev,central held-out,2048,2048,0,0.0,2.9976328275977226,1.3831489866393392
+subtract,Two-input ReLU MLP,2,9,583,Initial Xavier weights,outer,outer held-out,2048,2048,0,0.0,11.755176647155105,1.3831489866393392
+subtract,Two-input ReLU MLP,4,17,583,"Weight-space programming (WSP), Formula and examples",train,observed,12,12,12,1.0,0.0,0.0
+subtract,Two-input ReLU MLP,4,17,583,"Weight-space programming (WSP), Formula and examples",dev,central held-out,2048,2048,2048,1.0,0.0,0.0
+subtract,Two-input ReLU MLP,4,17,583,"Weight-space programming (WSP), Formula and examples",outer,outer held-out,2048,2048,2048,1.0,0.0,0.0
+subtract,Two-input ReLU MLP,4,17,583,"Weight-space programming (WSP), Examples only",train,observed,12,12,12,1.0,0.0,0.0
+subtract,Two-input ReLU MLP,4,17,583,"Weight-space programming (WSP), Examples only",dev,central held-out,2048,2048,2048,1.0,0.0,0.0
+subtract,Two-input ReLU MLP,4,17,583,"Weight-space programming (WSP), Examples only",outer,outer held-out,2048,2048,2048,1.0,0.0,0.0
+subtract,Two-input ReLU MLP,4,17,583,Adam followed by BFGS,train,observed,12,12,0,0.0,8.652664961139763e-14,6.863085453535196e-28
+subtract,Two-input ReLU MLP,4,17,583,Adam followed by BFGS,dev,central held-out,2048,2048,3,0.00146484375,2.403382172738832e-13,6.863085453535196e-28
+subtract,Two-input ReLU MLP,4,17,583,Adam followed by BFGS,outer,outer held-out,2048,2048,0,0.0,1.2240291163023957e-12,6.863085453535196e-28
+subtract,Two-input ReLU MLP,4,17,583,Trust-region least squares,train,observed,12,12,7,0.5833333333333334,3.451823661381864e-16,5.219874811210115e-33
+subtract,Two-input ReLU MLP,4,17,583,Trust-region least squares,dev,central held-out,2048,2048,654,0.3193359375,0.033669217876069225,5.219874811210115e-33
+subtract,Two-input ReLU MLP,4,17,583,Trust-region least squares,outer,outer held-out,2048,2048,366,0.1787109375,0.11907371888179048,5.219874811210115e-33
+subtract,Two-input ReLU MLP,4,17,583,Initial Xavier weights,train,observed,12,12,0,0.0,3.2930501278152002,0.585416068409237
+subtract,Two-input ReLU MLP,4,17,583,Initial Xavier weights,dev,central held-out,2048,2048,0,0.0,2.7976573981439588,0.585416068409237
+subtract,Two-input ReLU MLP,4,17,583,Initial Xavier weights,outer,outer held-out,2048,2048,0,0.0,10.709788702596855,0.585416068409237

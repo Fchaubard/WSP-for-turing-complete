@@ -1,0 +1,7 @@
+\subsection{Prompts and recorded interaction traces}\label{app:prompts}
+The archive contains every original prompt and numerical reply from the 60 one-shot calls, plus every prompt, numerical reply, diagnostic, acceptance decision and event summary from the 161 iterative calls. The audit found the extrapolation instruction in all 60 original prompts and embedded in all 161 revisions. Each recorded call ended with one final model message and zero tool events.
+
+An interaction trace here consists of the supplied prompt, returned weights, measured training and development scores, and the decision to accept or reject a proposal. The original and iterative output instructions requested only numerical arrays and explicitly forbade explanations. Their recorded responses therefore contain no explanatory derivations. Token-usage metadata includes a count labeled reasoning tokens, but it contains no text for those tokens. The new architecture-selection requests ask for a short construction summary as a public final-response field.
+
+The complete example below is the examples-only Fibonacci request with random start 164, followed by its first revision. The original prompt requests state widths one, two and three. The latter two returned exact training and development outputs and stopped before feedback. The revision consequently requests only the one-state model. Formatting wraps the literal text for readability. The byte-exact source files, identifiers, and SHA-256 hashes are supplied in the companion archive.
+\input{literal_trace}

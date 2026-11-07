@@ -1,0 +1,31 @@
+\section{How closely can gradients fit the same self-power and tanh circuits?}
+\label{app:smooth-optimizer}
+We exposed all 1,352 stored coefficients of the positive self-power circuit and all 525 of the three-word hyperbolic tangent circuit to backpropagation (BP). The wiring, operation order and fixed numerical constants were those of the deployed WSP circuits. The three trials initialized every exposed coefficient by a scalar Xavier draw with seeds 11, 22 and 33. The objective was mean squared error (MSE), the mean squared difference between prediction and correctly rounded output on 1,024 central inputs. A training update sampled 32 pairs with replacement. Reverse-mode differentiation propagated derivatives of the separate operations back to the weights, taking derivative zero at the rectifier's kink. Adam made 100 updates with step size $0.01$. Its decay rates for first and second gradient moments were $\beta_1=0.9$ and $\beta_2=0.999$. The stabilizer in the update denominator was $\epsilon=10^{-8}$. The targets came from MPFR, with higher-precision cross-checks. We scored the final iterate.
+
+\begin{table}[htbp]
+\centering\small\setlength{\tabcolsep}{4pt}
+\caption{Training all exposed slots with BP and Adam. Training MSE is evaluated over all 1,024 central examples before and after fitting. A moved slot differs from its initial value. The maximum gradient is the largest absolute partial derivative of the batch objective over all slots and updates. Outer RMSE is in the output's original units against MPFR (4,096 self-power or 8,192 tanh inputs).}
+\label{tab:smooth-gradients}
+\begin{tabular}{@{}lrrrrrr@{}}\toprule
+Target & Seed & Initial MSE & Final MSE & Moved slots & Max.\ gradient & Outer RMSE\\\midrule
+Self-power & 11 & 68.2141 & 59.0062 & 2 & 59.6 & $1.46\times10^9$\\
+ & 22 & 59.0175 & 59.0123 & 2 & 0.0822 & $1.46\times10^9$\\
+ & 33 & 68.3098 & 67.7551 & 74 & 11.7 & $1.46\times10^9$\\
+Tanh & 11 & 75.9257 & 1.72681 & 439 & $2.44\times10^6$ & 1.50\\
+ & 22 & 11,772.6 & 6,168.13 & 373 & $2.52\times10^6$ & 103.83\\
+ & 33 & 26.2714 & 0.062064 & 292 & $1.75\times10^4$ & 0.0953\\\bottomrule
+\end{tabular}
+\end{table}
+On these same examples, both WSP circuits had zero training MSE and zero outer RMSE, matching every reference output. Each of the six gradient fits in Table~\ref{tab:smooth-gradients} returned zero exact outer outputs and zero within one ULP. Every update had finite loss, gradients and optimizer state. In each run the slots whose gradients were ever nonzero were exactly those whose final values changed. With seed 33 the tanh network reduced its outer mean absolute error to 0.0711 while moving 292 slots. This comparison measures achieved accuracy at three starts and the stated training budget.
+
+\begin{table}[htbp]
+\centering\small\setlength{\tabcolsep}{5pt}
+\caption{Outer predictions on the same graph and the same inputs for each target. WSP uses the stored coefficients of the deployed circuit. BP and Adam fit these slots from Xavier draws using 100 updates. The reported BP RMSE is the median of the three seed-specific raw RMSE values. Every seed has the exact-match count shown.}
+\label{tab:matched-smooth-rmse}
+\begin{tabular}{@{}lrrrrr@{}}\toprule
+Target & Outer inputs & WSP exact & BP exact & WSP RMSE & BP RMSE\\\midrule
+Sine & 8,192 & 8,192 & 0 & 0 & 15.96\\
+Self-power & 4,096 & 4,096 & 0 & 0 & $1.46\times10^{9}$\\
+Hyperbolic tangent & 8,192 & 8,192 & 0 & 0 & 1.50\\\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,18 @@
+{
+  "family": "Single linear neuron",
+  "inferred_rule": "Output the first input coordinate minus the second: y = x₁ − x₂.",
+  "construction_summary": "One bias-free affine node with weights [1, -1] computes the difference. It stores two scalar coefficients and produces one activation scalar, with no hidden layers or nonlinearities. The affine expression requires two multiplications and one addition; multiplication by ±1 can be implemented as identity and sign change.",
+  "certificate": "For every input (a,b) in [-10,10]², [1,-1]·[a,b] = a-b. This matches the displayed outputs to binary64 rounding precision and implements the inferred rule throughout the domain. Multiplication by ±1 is exact in binary64, leaving only the rounding of the subtraction.",
+  "network": {
+    "kind": "graph",
+    "nodes": [
+      {
+        "name": "difference",
+        "op": "affine",
+        "source": "input",
+        "weight": [[1, -1]]
+      }
+    ],
+    "output": "difference"
+  }
+}

@@ -1,0 +1,355 @@
+{
+  "methods": {
+    "iter_formula": {
+      "train": {
+        "settings": 87,
+        "perfect": 30
+      },
+      "feedback_dev": {
+        "settings": 87,
+        "perfect": 30
+      },
+      "dev": {
+        "settings": 87,
+        "perfect": 30
+      },
+      "outer": {
+        "settings": 87,
+        "perfect": 30
+      },
+      "confirmation_central": {
+        "settings": 69,
+        "perfect": 18
+      },
+      "confirmation_outer": {
+        "settings": 69,
+        "perfect": 18
+      },
+      "legacy_early_9_32": {
+        "settings": 18,
+        "perfect": 12
+      }
+    },
+    "iter_examples": {
+      "train": {
+        "settings": 87,
+        "perfect": 30
+      },
+      "feedback_dev": {
+        "settings": 87,
+        "perfect": 30
+      },
+      "dev": {
+        "settings": 87,
+        "perfect": 30
+      },
+      "outer": {
+        "settings": 87,
+        "perfect": 30
+      },
+      "confirmation_central": {
+        "settings": 69,
+        "perfect": 18
+      },
+      "confirmation_outer": {
+        "settings": 69,
+        "perfect": 18
+      },
+      "legacy_early_9_32": {
+        "settings": 18,
+        "perfect": 12
+      }
+    },
+    "formula": {
+      "train": {
+        "settings": 87,
+        "perfect": 30
+      },
+      "feedback_dev": {
+        "settings": 87,
+        "perfect": 30
+      },
+      "dev": {
+        "settings": 87,
+        "perfect": 30
+      },
+      "outer": {
+        "settings": 87,
+        "perfect": 30
+      },
+      "confirmation_central": {
+        "settings": 69,
+        "perfect": 18
+      },
+      "confirmation_outer": {
+        "settings": 69,
+        "perfect": 18
+      },
+      "legacy_early_9_32": {
+        "settings": 18,
+        "perfect": 12
+      }
+    },
+    "examples": {
+      "train": {
+        "settings": 87,
+        "perfect": 30
+      },
+      "feedback_dev": {
+        "settings": 87,
+        "perfect": 30
+      },
+      "dev": {
+        "settings": 87,
+        "perfect": 30
+      },
+      "outer": {
+        "settings": 87,
+        "perfect": 30
+      },
+      "confirmation_central": {
+        "settings": 69,
+        "perfect": 18
+      },
+      "confirmation_outer": {
+        "settings": 69,
+        "perfect": 18
+      },
+      "legacy_early_9_32": {
+        "settings": 18,
+        "perfect": 12
+      }
+    },
+    "gd": {
+      "train": {
+        "settings": 87,
+        "perfect": 0
+      },
+      "feedback_dev": {
+        "settings": 87,
+        "perfect": 0
+      },
+      "dev": {
+        "settings": 87,
+        "perfect": 0
+      },
+      "outer": {
+        "settings": 87,
+        "perfect": 0
+      },
+      "confirmation_central": {
+        "settings": 69,
+        "perfect": 0
+      },
+      "confirmation_outer": {
+        "settings": 69,
+        "perfect": 0
+      },
+      "legacy_early_9_32": {
+        "settings": 18,
+        "perfect": 0
+      }
+    },
+    "gd_lbfgs": {
+      "train": {
+        "settings": 87,
+        "perfect": 0
+      },
+      "feedback_dev": {
+        "settings": 87,
+        "perfect": 0
+      },
+      "dev": {
+        "settings": 87,
+        "perfect": 0
+      },
+      "outer": {
+        "settings": 87,
+        "perfect": 0
+      },
+      "confirmation_central": {
+        "settings": 69,
+        "perfect": 0
+      },
+      "confirmation_outer": {
+        "settings": 69,
+        "perfect": 0
+      },
+      "legacy_early_9_32": {
+        "settings": 18,
+        "perfect": 0
+      }
+    },
+    "adam_lbfgs": {
+      "train": {
+        "settings": 87,
+        "perfect": 0
+      },
+      "feedback_dev": {
+        "settings": 87,
+        "perfect": 0
+      },
+      "dev": {
+        "settings": 87,
+        "perfect": 0
+      },
+      "outer": {
+        "settings": 87,
+        "perfect": 0
+      },
+      "confirmation_central": {
+        "settings": 69,
+        "perfect": 0
+      },
+      "confirmation_outer": {
+        "settings": 69,
+        "perfect": 0
+      },
+      "legacy_early_9_32": {
+        "settings": 18,
+        "perfect": 0
+      }
+    },
+    "lbfgs_xavier": {
+      "train": {
+        "settings": 87,
+        "perfect": 0
+      },
+      "feedback_dev": {
+        "settings": 87,
+        "perfect": 0
+      },
+      "dev": {
+        "settings": 87,
+        "perfect": 0
+      },
+      "outer": {
+        "settings": 87,
+        "perfect": 0
+      },
+      "confirmation_central": {
+        "settings": 69,
+        "perfect": 0
+      },
+      "confirmation_outer": {
+        "settings": 69,
+        "perfect": 0
+      },
+      "legacy_early_9_32": {
+        "settings": 18,
+        "perfect": 0
+      }
+    },
+    "adam_bfgs": {
+      "train": {
+        "settings": 87,
+        "perfect": 0
+      },
+      "feedback_dev": {
+        "settings": 87,
+        "perfect": 0
+      },
+      "dev": {
+        "settings": 87,
+        "perfect": 0
+      },
+      "outer": {
+        "settings": 87,
+        "perfect": 0
+      },
+      "confirmation_central": {
+        "settings": 69,
+        "perfect": 0
+      },
+      "confirmation_outer": {
+        "settings": 69,
+        "perfect": 0
+      },
+      "legacy_early_9_32": {
+        "settings": 18,
+        "perfect": 0
+      }
+    },
+    "ls_xavier": {
+      "train": {
+        "settings": 87,
+        "perfect": 2
+      },
+      "feedback_dev": {
+        "settings": 87,
+        "perfect": 0
+      },
+      "dev": {
+        "settings": 87,
+        "perfect": 0
+      },
+      "outer": {
+        "settings": 87,
+        "perfect": 0
+      },
+      "confirmation_central": {
+        "settings": 69,
+        "perfect": 0
+      },
+      "confirmation_outer": {
+        "settings": 69,
+        "perfect": 0
+      },
+      "legacy_early_9_32": {
+        "settings": 18,
+        "perfect": 0
+      }
+    }
+  },
+  "near_certified_1e_10": {
+    "iter_formula": 0,
+    "iter_examples": 0,
+    "formula": 2,
+    "examples": 1,
+    "gd": 0,
+    "gd_lbfgs": 1,
+    "adam_lbfgs": 1,
+    "lbfgs_xavier": 3,
+    "adam_bfgs": 1,
+    "ls_xavier": 5
+  },
+  "revision_calls": {
+    "total": 161,
+    "completed": 161,
+    "recorded_tool_events": 0,
+    "requests_without_token_or_tool_metadata": 0,
+    "sum_request_seconds": 8424.25,
+    "input_tokens": 2881776,
+    "cached_input_tokens": 2333952,
+    "output_tokens": 198446,
+    "reasoning_output_tokens": 171163
+  },
+  "all_stop_reasons": {
+    "two_nonimprovements": 33,
+    "round_limit": 81,
+    "exact_train_dev": 60
+  },
+  "initial_freezes": 60,
+  "arms": {
+    "examples": {
+      "stops": {
+        "two_nonimprovements": 19,
+        "round_limit": 38,
+        "exact_train_dev": 30
+      },
+      "improved_arrays": 52,
+      "accepted_proposals": 105,
+      "attempted_proposals": 166
+    },
+    "formula": {
+      "stops": {
+        "two_nonimprovements": 14,
+        "round_limit": 43,
+        "exact_train_dev": 30
+      },
+      "improved_arrays": 52,
+      "accepted_proposals": 112,
+      "attempted_proposals": 166
+    }
+  }
+}

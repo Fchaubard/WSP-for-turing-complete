@@ -1,0 +1,23 @@
+# Optimization of the exact 90 matched writer fixtures
+
+This audit uses ten tasks × three sizes × three observation/initialization seeds. Fibonacci and triangular targets use the same nine central indices at each seed. The original prompt provides the graph and deployment range in both arms. One writer arm also sees the target formula. No numerical solver receives test outputs or selects a checkpoint by outer score.
+
+The objective is half the mean squared residual after dividing each scalar component by max(1,abs(y)). We evaluate it on the actual arrays from both writer arms, the archived BP fit, Xavier, and each additional solver. Raw exact outputs, scaled errors and training losses measure different things.
+
+## Solvers
+
+* Full-batch Adam runs for 800 steps from the exact supplied Xavier array with learning rate 0.02, beta1=0.9, beta2=0.999, epsilon=1e-8, and global gradient norm clipped to 5. Dense BFGS then minimizes the same empirical loss (up to 1,000 iterations, gradient tolerance 1e-14, retain the lower training loss of the Adam and BFGS endpoints). The replay matches the implementation including the order of floating-point updates. It reproduced all 90 saved training, dev and outer scores exactly in the pinned environment.
+* SciPy trust-region reflective least squares uses analytic forward-sensitivity Jacobians, max_nfev=250, and ftol=gtol=xtol=4e-15. Up to ten further Gauss–Newton updates use an SVD least-squares step (relative cutoff 1e-12) and backtracking fractions 1, 1/2, …, 1/64. A polish step must decrease measured training loss. The starts are the identical Xavier array, the Adam+BFGS endpoint, and both literal Astra proposals. Full Jacobians at Xavier were checked using directional finite differences and independently implemented reverse-mode gradients.
+* Exact rational weighted normal equations provide 21 linear-case certificates, including memoryless running sum. A partition/boundary enumeration certifies all 12 one-hinge smooth fits. A secant interpolant through 12 distinct sites has zero real loss for the 12 width-16 smooth settings; its binary64 weights are evaluated as a separate write. These 45 candidates contribute to the best observed feasible loss. Rational certificates use stored data interpreted as exact numbers and real model execution. Real affine residuals against already-rounded addition labels can be positive even when binary64 addition returns the exact reference.
+
+## Records
+
+results.csv stores 945 method/fixture rows: all 180 parseable writer arrays, the original 90 BP and Xavier checkpoints, each extra optimizer start, and the certificate writes. Every row gives train loss and absolute gap to the best measured feasible binary64 loss for that fixture, held-out metrics, outer exact fraction, MAE and mean scaled error, plus numerical optimizer evaluation counts. For integer sequences no unused integer indices remain inside 0..8: the dev_split field says early for 9..32; the outer indices are 33..64. Exact metrics require the whole sample, including every component of a vector. Counts for LS after Adam+BFGS exclude the preceding optimizer work. Raw writer proposals require zero additional numerical-optimizer calls; their original model token use is logged separately in the writer archive. A full Jacobian and a scalar gradient have different computation costs.
+
+summary.json contains per-method and paired counts with an additive 1e-10 threshold for material differences. Near-best means a gap no greater than 1e-10 to the best measured loss. Global refers to agreement within the same tolerance with an independent real optimum. states.npz contains every evaluated array, keyed task_size_seed_method. invalid.json is empty in this archive.
+
+Among 12 one-hinge problems, 0/12 Adam endpoints, 1/12 Adam+BFGS endpoints and 5/12 identical-Xavier LS runs reached the certified optimum within 1e-10. LS from the examples-only Astra proposals reached 9/12. Refining the examples-only proposal on all 90 fixtures improved train loss materially on 54 and worsened mean outer error materially on 48, showing why minimizing a training objective and finding a good continuation must be evaluated separately.
+
+## Reproduction
+
+Run `VECLIB_MAXIMUM_THREADS=1 OPENBLAS_NUM_THREADS=1 python run.py` and `python report.py` from this directory. The original run used Python 3.13.12, NumPy 2.5.4 and SciPy 1.18.1. The harness imports fixture definitions and objective implementations from the existing writer/sequence/scalar directories. The paper section is paper/extension_optimizer.tex. Rerunning the solvers regenerates the optimizer CSV, arrays and summaries only.

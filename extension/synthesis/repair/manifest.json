@@ -1,0 +1,38 @@
+[
+  {
+    "id": "3354251e2",
+    "task": "square",
+    "arm": "affine_relu",
+    "seed": 9213
+  },
+  {
+    "id": "54d25bc20",
+    "task": "square",
+    "arm": "arithmetic_relu",
+    "seed": 9213
+  },
+  {
+    "id": "c4bd488a9",
+    "task": "sin",
+    "arm": "affine_relu",
+    "seed": 9213
+  },
+  {
+    "id": "43a09bb78",
+    "task": "sin",
+    "arm": "arithmetic_relu",
+    "seed": 9213
+  },
+  {
+    "id": "d96064e94",
+    "task": "selfpower",
+    "arm": "affine_relu",
+    "seed": 9213
+  },
+  {
+    "id": "3d067d9fc",
+    "task": "selfpower",
+    "arm": "arithmetic_relu",
+    "seed": 9213
+  }
+]

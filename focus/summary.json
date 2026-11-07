@@ -1,0 +1,46 @@
+{
+  "examples": {
+    "n": 87,
+    "all_exact": {
+      "train": 30,
+      "dev": 30,
+      "outer": 30
+    },
+    "near_certified": 1,
+    "n_certified": 12,
+    "train_near_zero": 54
+  },
+  "formula": {
+    "n": 87,
+    "all_exact": {
+      "train": 30,
+      "dev": 30,
+      "outer": 30
+    },
+    "near_certified": 2,
+    "n_certified": 12,
+    "train_near_zero": 54
+  },
+  "adam_bfgs": {
+    "n": 87,
+    "all_exact": {
+      "train": 0,
+      "dev": 0,
+      "outer": 0
+    },
+    "near_certified": 1,
+    "n_certified": 12,
+    "train_near_zero": 33
+  },
+  "ls_xavier": {
+    "n": 87,
+    "all_exact": {
+      "train": 2,
+      "dev": 0,
+      "outer": 0
+    },
+    "near_certified": 5,
+    "n_certified": 12,
+    "train_near_zero": 35
+  }
+}

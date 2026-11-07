@@ -1,0 +1,33 @@
+\section{Computing the hyperbolic tangent with affine maps and rectifiers}
+\label{app:relu-tanh}
+For a real input $x$, the hyperbolic tangent is $\tanh x=(e^{2x}-1)/(e^{2x}+1)$, with $e$ the base of the natural logarithm. The native one-neuron control in the earlier controls (Appendix~\ref{app:additional}) reproduces the NumPy library's implementation. Here both NumPy and a weight-space programming (WSP) circuit are compared with the mathematical function correctly rounded by MPFR. The WSP circuit receives the formula and the domain $[-10,10]$.
+
+\paragraph{Building a ratio from the input bits.}
+For an integer exponent $k$, set the angle $\delta=2^k$. Before inference we compute the coefficient $t_k=\tanh\delta$ at 256-bit precision. We use $t_k=\operatorname{expm1}(2\delta)/(2+\operatorname{expm1}(2\delta))$, where $\operatorname{expm1}(z)=e^z-1$ is evaluated accurately for small $z$. Let $K$ be the number of fractional input-bit positions inspected. Read the bits of $|x|$ for $k=3,2,\ldots,-K$. Keep a numerator $N$ and denominator $D$ initialized to zero and one. When the bit for $\delta$ is one, update both using their previous values,
+\[
+             (N,D)\longleftarrow (N+t_kD,\ D+t_kN).
+\]
+The addition formula makes $N/D$ the hyperbolic tangent of the sum of selected angles in exact arithmetic. To copy a signed intermediate $z$ with $|z|\le128$ when a bit $b$ is one, the circuit uses $\relu(z-128(1-b))-\relu(-z-128(1-b))$. Each exact update grows the maximum magnitude of the coordinates by at most $1+t_k$. The factors for the four nonnegative exponents give a product at most 16. The factors for negative exponents give a product at most $\exp(\sum_{k<0}2^k)=e$. These bounds motivate the choice of 128.
+
+\paragraph{Quotient digits and rounding.}
+Start with a remainder $R=N$. At fractional position $j=1,2,\ldots$, the next quotient digit is one if $R\ge 2^{-j}D$. Subtract $2^{-j}D$ from $R$ whenever this comparison succeeds. The final circuit keeps the first 53 significant quotient bits beginning with the first one, and inspects the following bit, called the guard bit. If it is one, the circuit adds one unit at the last retained position. To see why the mathematical target has no tie at nonzero binary64 inputs, suppose $\tanh x$ were the midpoint between two consecutive representable values, which is a rational number. Then $e^{2x}=(1+\tanh x)/(1-\tanh x)$ would be rational. The Hermite--Lindemann theorem says the exponential of a nonzero algebraic number is transcendental, meaning it cannot be a root of a nonzero polynomial with integer coefficients. The nonzero rational number $2x$ meets the theorem's hypothesis. Finite-precision comparisons can still produce an incorrect bit.
+
+For $|x|\le 2^{-27}$, a final gate copies $x$ because $0\le |x|-\tanh|x|\le |x|^3/3$ lies below half the spacing toward zero. For larger magnitudes the circuit restores the sign of $x$ after extracting the quotient. The 84-fractional-bit construction uses 82 quotient positions. The input and quotient digit counts are distinct. Each coordinate uses three binary64 words representing a leading part and two corrections. The circuit combines rounded sums, constant products and their rounding residuals, recording successive corrections across the words. It stores 525 coefficient words and uses 2,146 rectifiers. Expanding repeated uses and fixed unit edges gives 75,973 affine coefficient occurrences. A traversal of the graph checks that every product has an input-independent factor.
+
+\paragraph{Evaluation.}
+The ordinary central set contains 4,096 inputs in $[-3,3]$. The ordinary outer set contains 4,096 per side in $[-10,-3]$ and $[3,10]$. A fresh draw contains 32,768 additional outer inputs. To construct targeted tests, take adjacent representable output values, compute their midpoint, and invert it at 240-bit precision using the inverse hyperbolic tangent, $\operatorname{atanh}$. Test the nearest input and its two neighbors with both signs. These give 4,608 central and 4,608 outer examples. Finally, use the independently selected \href{https://core-math.gitlabpages.inria.fr/worst.html}{CORE-MATH hard inputs}. The 53-bit MPFR results agree with the cross-check at 224 bits rounded to binary64.
+
+\begin{table}[htbp]
+\centering\small
+\caption{Exact matches to correctly rounded hyperbolic tangent. Every miss is one representable step. The hard columns use signed CORE-MATH inputs. The last two rows use 84 fractional input positions and direct guard-bit rounding.}
+\label{tab:relu-tanh}
+\begin{tabular}{@{}lrrrrrr@{}}\toprule
+Method & Central & Outer & Fresh outer & Midpoint & Hard central & Hard outer\\
+Inputs & 4,096 & 8,192 & 32,768 & 9,216 & 57,060 & 3,514\\\midrule
+Native NumPy & 3,276 & 6,268 & 25,285 & 5,458 & 42,710 & 2,660\\
+Two-word WSP & 4,096 & 8,192 & 32,768 & 9,216 & 57,024 & 3,512\\
+Three-word WSP & 4,096 & 8,192 & 32,768 & 9,216 & 57,060 & 3,514\\\bottomrule
+\end{tabular}
+\end{table}
+
+For the three methods in Table~\ref{tab:relu-tanh}, raw root mean squared error (RMSE) on the ordinary outer inputs is $5.38\times10^{-17}$, zero and zero, respectively. On the hard outer inputs it is $5.47\times10^{-17}$, $2.65\times10^{-18}$ and zero. The electronic results give exact counts and raw RMSE for every method, size and input set. In the earlier two-word variant, summing 120 quotient digits gives 55,896 of 57,060 hard central and 3,512 of 3,514 hard outer matches. In the three-word size sweep, $K=79$ misses two hard central inputs and two inputs near selected boundaries. At $K=80$ all tested outputs match using 503 stored words and 2,068 rectifiers. This establishes an observed size threshold within the tested family. A proof covering every in-domain binary64 input remains open.

@@ -1,0 +1,17 @@
+{
+  "family": "Single scalar tanh activation with no stored coefficients",
+  "inferred_rule": "y = tanh(x).",
+  "construction_summary": "Apply the standard tanh activation directly to the scalar input. The network uses one node, zero stored coefficients, and one scalar activation evaluation, with no affine arithmetic or intermediate layers. It implements the inferred rule throughout [-10,10], including the saturation regions beyond the observed inputs.",
+  "certificate": "The graph directly evaluates tanh(x), so its output equals the inferred rule over the entire deployment domain, subject only to binary64 activation rounding. The displayed pairs agree with this rule to their shown numerical precision. Finite observations do not uniquely determine an underlying function; this certificate establishes implementation of the inferred rule rather than uniqueness of inference.",
+  "network": {
+    "kind": "graph",
+    "nodes": [
+      {
+        "name": "output_tanh",
+        "op": "tanh",
+        "source": "input"
+      }
+    ],
+    "output": "output_tanh"
+  }
+}

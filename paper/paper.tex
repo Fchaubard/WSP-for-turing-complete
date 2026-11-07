@@ -1,0 +1,77 @@
+\documentclass{article}
+\usepackage[preprint,nonatbib]{neurips_2026}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsthm,booktabs,graphicx,xcolor,flafter,hyperref,listings}
+\definecolor{inklink}{RGB}{20,70,115}
+\hypersetup{pdfauthor={Francois Chaubard and Astra (AI research collaborator)},colorlinks=true,linkcolor=inklink,citecolor=inklink,urlcolor=inklink,pdftitle={Weight-Space Programming and Gradient Optimization on Nonconvex Algorithmic Tasks}}
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newcommand{\R}{\mathbb R}
+\newcommand{\relu}{\operatorname{ReLU}}
+\newcommand{\rank}{\operatorname{rank}}
+\title{Weight-Space Programming and Gradient Optimization on Nonconvex Algorithmic Tasks}
+\author{Francois Chaubard\\\href{mailto:fchaubar@stanford.edu}{\texttt{fchaubar@stanford.edu}}\And Astra\\{\small AI research collaborator (GPT-6 Astra)}}
+\input{focus_iteration_macros}
+\begin{document}
+\maketitle
+\begin{abstract}
+\input{focus_abstract}
+\end{abstract}
+\input{introduction}
+\input{focus_related}
+\input{focus_methods}
+\input{focus_results}
+\input{focus_architecture_main}
+\input{discussion}
+\bibliographystyle{plain}
+\bibliography{references}
+\clearpage
+\appendix\raggedbottom
+\section{Final weights at each network size}\label{app:finalsizes}
+Figures~\ref{fig:taskbars1}--\ref{fig:taskbars5} show the exact counts and errors from Table~\ref{tab:focusouter} as bars at one network size per task. Each task has its own error scale in the units of its output. Tables~\ref{tab:sizes_outer}--\ref{tab:sizes_train} then give all 29 task and architecture pairs on the extrapolation, central or early, and training sets.
+\input{iterative_representative}
+\input{focus_examples}
+\input{task_panels}
+\input{iterative_endpoint_tables}
+\clearpage
+\subsection{Validation feedback and additional gradient controls}\label{app:feedback}
+\input{focus_iteration_appendix}
+\clearpage
+\input{learning_appendix}
+\clearpage
+\input{focus_lbfgs_tables}
+\subsection{Alternative views of the optimizer comparison}\label{app:original-plots}
+\input{restored_plots}
+\clearpage
+\input{prompt_appendix}
+\clearpage
+\input{architecture_appendix}
+\clearpage
+\subsection{Nonconvexity witnesses for the fixed networks}\label{app:nonconvex-details}
+\input{focus_witness_details}
+\subsection{What the WSP responses encode}\label{app:coefficients}
+\input{focus_response_evidence}
+\clearpage
+\section{Numerical conventions for the additional studies}\label{app:numerics}
+\input{focus_precision}
+\input{recurrence_main}
+\input{original_proofs}
+\input{extension_main}
+\input{additional_controls}
+\input{supplement}
+\input{extension_appendix}
+\input{extension_optimizer}
+\input{extension_convex}
+\input{extension_theory_recurrent}
+\input{numerical_results}
+\input{extension_smooth}
+\input{extension_tanh}
+\input{extension_smooth_opt}
+\input{extension_machine}
+\input{extension_synthesis}
+\input{extension_repair}
+\input{extension_literal_square}
+\input{extension_fullsquare}
+\clearpage
+\input{focus_checklist}
+\end{document}

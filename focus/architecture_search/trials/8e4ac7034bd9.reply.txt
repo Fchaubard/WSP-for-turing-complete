@@ -1,0 +1,21 @@
+{
+  "family": "Single-state additive recurrent network",
+  "inferred_rule": "Each output is the running sum of the inputs through that position.",
+  "construction_summary": "Maintain one scalar state initialized to zero. Add each incoming scalar to the state and emit the updated state directly. The network stores one scalar coefficient, uses one addition per element, and requires constant scalar workspace apart from input/output storage. No learned weights or nonlinearities are needed, and the same cell handles arbitrary sequence lengths.",
+  "certificate": "In exact arithmetic, s_0=0 and s_t=s_{t-1}+x_t imply by induction that s_t=sum_{i=1}^t x_i. Thus the output is the prefix sum for every sequence over [-10,10], regardless of length. In binary64, the cell implements sequential rounded summation, matching the observed rule up to floating-point rounding.",
+  "network": {
+    "kind": "recurrent",
+    "initial_state": [0],
+    "cell": [
+      {
+        "name": "updated_sum",
+        "op": "add",
+        "left": "state",
+        "right": "input"
+      }
+    ],
+    "state_output": "updated_sum",
+    "readout": [],
+    "output": "state"
+  }
+}

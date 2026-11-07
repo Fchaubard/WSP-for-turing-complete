@@ -1,0 +1,40 @@
+{
+  "family": "Scalar polynomial network with triple-angle gates",
+  "inferred_rule": "The examples are consistent with y = sin(x), with x in radians. Finite examples alone do not uniquely determine this rule.",
+  "construction_summary": "Scale the input by 1/27 and evaluate the degree-13 sine Taylor polynomial using Horner evaluation. Three triple-angle gates then restore the original argument. This implements the inferred sine rule throughout [-10,10], rather than interpolating the displayed samples. The graph stores 14 scalar coefficients. Sequential evaluation with activation reuse requires only a few live scalars. No global resource optimality is claimed.",
+  "certificate": "Let p(t)=t-t^3/3!+t^5/5!-t^7/7!+t^9/9!-t^11/11!+t^13/13!, and T(s)=3s-4s^3. In exact arithmetic the graph computes T(T(T(p(x/27)))). For |t|<=10/27, the alternating-series bound gives |p(t)-sin(t)|<2.6e-19. On this range arcsin has derivative below 1.08, so |arcsin(p(t))-t|<2.808e-19. Since T(sin(a))=sin(3a), the uniform exact-arithmetic output error is below 7.6e-18. Stored coefficient rounding and binary64 arithmetic add floating-point roundoff; the exact-arithmetic bound is not a claim of correctly rounded sine.",
+  "network": {
+    "kind": "graph",
+    "nodes": [
+      {"name":"t","op":"affine","source":"input","weight":[[0.037037037037037035]]},
+      {"name":"z","op":"multiply","left":"t","right":"t"},
+      {"name":"h5","op":"affine","source":"z","weight":[[1.6059043836821613e-10]],"bias":[-2.505210838544172e-8]},
+      {"name":"c4","op":"constant","value":[2.7557319223985893e-6]},
+      {"name":"m4","op":"multiply","left":"h5","right":"z"},
+      {"name":"h4","op":"add","left":"m4","right":"c4"},
+      {"name":"c3","op":"constant","value":[-0.0001984126984126984]},
+      {"name":"m3","op":"multiply","left":"h4","right":"z"},
+      {"name":"h3","op":"add","left":"m3","right":"c3"},
+      {"name":"c2","op":"constant","value":[0.008333333333333333]},
+      {"name":"m2","op":"multiply","left":"h3","right":"z"},
+      {"name":"h2","op":"add","left":"m2","right":"c2"},
+      {"name":"c1","op":"constant","value":[-0.16666666666666666]},
+      {"name":"m1","op":"multiply","left":"h2","right":"z"},
+      {"name":"h1","op":"add","left":"m1","right":"c1"},
+      {"name":"c0","op":"constant","value":[1]},
+      {"name":"m0","op":"multiply","left":"h1","right":"z"},
+      {"name":"h0","op":"add","left":"m0","right":"c0"},
+      {"name":"s0","op":"multiply","left":"t","right":"h0"},
+      {"name":"q1","op":"multiply","left":"s0","right":"s0"},
+      {"name":"g1","op":"affine","source":"q1","weight":[[-4]],"bias":[3]},
+      {"name":"s1","op":"multiply","left":"s0","right":"g1"},
+      {"name":"q2","op":"multiply","left":"s1","right":"s1"},
+      {"name":"g2","op":"affine","source":"q2","weight":[[-4]],"bias":[3]},
+      {"name":"s2","op":"multiply","left":"s1","right":"g2"},
+      {"name":"q3","op":"multiply","left":"s2","right":"s2"},
+      {"name":"g3","op":"affine","source":"q3","weight":[[-4]],"bias":[3]},
+      {"name":"output","op":"multiply","left":"s2","right":"g3"}
+    ],
+    "output":"output"
+  }
+}

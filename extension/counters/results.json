@@ -1,0 +1,199 @@
+{
+  "programs": [
+    {
+      "task": "add",
+      "registers": 2,
+      "pc": 3,
+      "gates": 1,
+      "slots": 35,
+      "nonzero": 12,
+      "one_step": {
+        "inner": {
+          "total": 48,
+          "correct": 48
+        },
+        "outer": {
+          "total": 147,
+          "correct": 147
+        },
+        "boundary": {
+          "total": 108,
+          "correct": 108
+        }
+      },
+      "trajectories": {
+        "inner": {
+          "runs": 16,
+          "largest_ticks": 7,
+          "ticks": 64,
+          "whole_trace": 16,
+          "final_output": 16
+        },
+        "outer": {
+          "runs": 49,
+          "largest_ticks": 21,
+          "ticks": 735,
+          "whole_trace": 49,
+          "final_output": 49
+        }
+      }
+    },
+    {
+      "task": "subtract_floor",
+      "registers": 2,
+      "pc": 3,
+      "gates": 2,
+      "slots": 45,
+      "nonzero": 17,
+      "one_step": {
+        "inner": {
+          "total": 48,
+          "correct": 48
+        },
+        "outer": {
+          "total": 147,
+          "correct": 147
+        },
+        "boundary": {
+          "total": 108,
+          "correct": 108
+        }
+      },
+      "trajectories": {
+        "inner": {
+          "runs": 16,
+          "largest_ticks": 7,
+          "ticks": 50,
+          "whole_trace": 16,
+          "final_output": 16
+        },
+        "outer": {
+          "runs": 49,
+          "largest_ticks": 21,
+          "ticks": 644,
+          "whole_trace": 49,
+          "final_output": 49
+        }
+      }
+    },
+    {
+      "task": "multiply",
+      "registers": 4,
+      "pc": 7,
+      "gates": 3,
+      "slots": 187,
+      "nonzero": 32,
+      "one_step": {
+        "inner": {
+          "total": 1792,
+          "correct": 1792
+        },
+        "outer": {
+          "total": 16807,
+          "correct": 16807
+        },
+        "boundary": {
+          "total": 9072,
+          "correct": 9072
+        }
+      },
+      "trajectories": {
+        "inner": {
+          "runs": 16,
+          "largest_ticks": 55,
+          "ticks": 268,
+          "whole_trace": 16,
+          "final_output": 16
+        },
+        "outer": {
+          "runs": 49,
+          "largest_ticks": 531,
+          "ticks": 13083,
+          "whole_trace": 49,
+          "final_output": 49
+        }
+      }
+    },
+    {
+      "task": "triangle",
+      "registers": 3,
+      "pc": 8,
+      "gates": 3,
+      "slots": 187,
+      "nonzero": 33,
+      "one_step": {
+        "inner": {
+          "total": 512,
+          "correct": 512
+        },
+        "outer": {
+          "total": 2744,
+          "correct": 2744
+        },
+        "boundary": {
+          "total": 1728,
+          "correct": 1728
+        }
+      },
+      "trajectories": {
+        "inner": {
+          "runs": 4,
+          "largest_ticks": 28,
+          "ticks": 48,
+          "whole_trace": 4,
+          "final_output": 4
+        },
+        "outer": {
+          "runs": 7,
+          "largest_ticks": 266,
+          "ticks": 1008,
+          "whole_trace": 7,
+          "final_output": 7
+        }
+      }
+    },
+    {
+      "task": "fib",
+      "registers": 4,
+      "pc": 9,
+      "gates": 4,
+      "slots": 273,
+      "nonzero": 41,
+      "one_step": {
+        "inner": {
+          "total": 2304,
+          "correct": 2304
+        },
+        "outer": {
+          "total": 21609,
+          "correct": 21609
+        },
+        "boundary": {
+          "total": 11664,
+          "correct": 11664
+        }
+      },
+      "trajectories": {
+        "inner": {
+          "runs": 4,
+          "largest_ticks": 41,
+          "ticks": 75,
+          "whole_trace": 4,
+          "final_output": 4
+        },
+        "outer": {
+          "runs": 7,
+          "largest_ticks": 1108,
+          "ticks": 2860,
+          "whole_trace": 7,
+          "final_output": 7
+        }
+      }
+    }
+  ],
+  "overflow_witness": {
+    "initial": 9007199254740992,
+    "expected": 9007199254740993,
+    "output": 9007199254740992
+  }
+}

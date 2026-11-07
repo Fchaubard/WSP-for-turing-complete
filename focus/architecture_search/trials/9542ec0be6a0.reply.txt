@@ -1,0 +1,18 @@
+{
+  "family": "Parameter-free multiplicative graph",
+  "inferred_rule": "y = x²",
+  "construction_summary": "A single multiplication node uses the scalar input for both operands. It stores zero numerical coefficients, performs one scalar multiplication, and produces one scalar output without intermediate activations. The construction implements the inferred rule throughout [-10,10], including beyond the observed inputs.",
+  "certificate": "In exact arithmetic, the node returns x·x = x² for every real x. In binary64 it returns the rounded product, with no overflow on [-10,10]; underflow is possible only for extremely small inputs. The observed outputs agree with the square rule to displayed numerical precision. Finite examples do not uniquely determine a function, so this certificate establishes implementation of the inferred rule, not uniqueness of the inference.",
+  "network": {
+    "kind": "graph",
+    "nodes": [
+      {
+        "name": "square",
+        "op": "multiply",
+        "left": "input",
+        "right": "input"
+      }
+    ],
+    "output": "square"
+  }
+}

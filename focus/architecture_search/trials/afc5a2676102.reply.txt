@@ -1,0 +1,30 @@
+{
+  "family": "Scalar quadratic network with multiplicative gating",
+  "inferred_rule": "The triangular-number continuation: y(n) = n(n + 1)/2.",
+  "construction_summary": "Square the input, add the original input, and scale by one half. This graph stores one scalar coefficient and uses three scalar arithmetic operations with constant-size workspace. It implements the inferred rule across the entire deployment domain without iteration or a lookup table.",
+  "certificate": "The observed successive differences are 1,2,...,8, consistent with y(n)=sum_{k=1}^n k. The graph computes (n²+n)/2, which equals that sum for every nonnegative integer n. For 0≤n≤64, n²≤4096 and n²+n≤4160; these integers and multiplication by 0.5 are represented exactly in binary64. The finite observations do not uniquely determine the continuation.",
+  "network": {
+    "kind": "graph",
+    "nodes": [
+      {
+        "name": "square",
+        "op": "multiply",
+        "left": "input",
+        "right": "input"
+      },
+      {
+        "name": "numerator",
+        "op": "add",
+        "left": "square",
+        "right": "input"
+      },
+      {
+        "name": "result",
+        "op": "affine",
+        "source": "numerator",
+        "weight": [[0.5]]
+      }
+    ],
+    "output": "result"
+  }
+}
