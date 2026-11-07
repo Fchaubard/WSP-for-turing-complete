@@ -1,7 +1,3 @@
-![Square, sine, and hyperbolic-tangent predictions inside and outside the training interval](output/function-prediction-curves.png)
-
-**Improved central fit can coexist with a worse extrapolation rule.** Each panel uses a 16-unit scalar network with 50 coefficients, the first recorded random start (164), and examples-only weight-space programming (WSP). Shading marks the training and development interval; dots are the twelve training pairs. Curves are evaluations of the frozen networks, not averages over runs. These illustrative regressions show how similar central predictions conceal different outer continuations; they do not estimate how often this happens. Tables 3 and 4 in the [paper](paper.pdf) summarize errors across all three starts.
-
 # WSP-for-turing-complete
 
 **Weight-Space Programming and Gradient Optimization on Nonconvex Algorithmic Tasks**
@@ -13,6 +9,10 @@ Francois Chaubard and **Astra — AI research collaborator (GPT-6 Astra)**
 Can a language model write useful neural-network weights directly? This repository contains the experiments, saved weights, literal model requests and replies, analyses, figures, mathematical appendices, editable LaTeX, and final PDF for a study of **weight-space programming (WSP)**.
 
 The repository name identifies the research direction. The measured benchmark is finite: it does **not** establish a solver for every Turing-computable function, prove that backpropagation cannot solve these tasks, or certify globally minimal architectures. This is a research preprint, not a conference acceptance.
+
+![Square, sine, and hyperbolic-tangent predictions inside and outside the training interval](output/function-prediction-curves.png)
+
+**Improved central fit can coexist with a worse extrapolation rule.** Each panel uses a 16-unit scalar network with 50 coefficients, the first recorded random start (164), and examples-only weight-space programming (WSP). Shading marks the training and development interval; dots are the twelve training pairs. Curves are evaluations of the frozen networks, not averages over runs. These illustrative regressions show how similar central predictions conceal different outer continuations; they do not estimate how often this happens. Tables 3 and 4 in the [paper](paper.pdf) summarize errors across all three starts.
 
 ## Experiments
 
